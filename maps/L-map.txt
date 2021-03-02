@@ -1,0 +1,9 @@
+size
+10x10
+start
+9,0
+stop
+0,9
+paths
+0,9 0,0
+0,0 9,0

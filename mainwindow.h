@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "simulator.h"
+#include <string>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,10 +22,15 @@ public:
 private slots:
     void on_startButton_clicked();
 
+    void on_mapsComboBox_activated(const QString &arg1);
+
+    void on_mapsComboBox_textActivated(const QString &arg1);
 
 private:
     Ui::MainWindow *ui;
     QVector<double> xv;
     QVector<double> yv;
+    Simulator simulator;
+
 };
 #endif // MAINWINDOW_H
