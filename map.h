@@ -23,11 +23,15 @@ class Map
 {
 public:
     Map(string mapFilePath);
-    void Draw(QCustomPlot plot);
-
+    ~Map();
+    vector<Path> mapPaths;
+    Point mapStart, mapSize;
+    vector<Point> mapStop;
 private:
-    Point GetPoint(string text, string delimiter);
-    vector<string> SplitText(string text, string delimiter);
+
+
+    Point GetPoint(string text, char delimiter);
+    vector<string> SplitText(string text, char delimiter);
     Path GetPath(string line);
 };
 

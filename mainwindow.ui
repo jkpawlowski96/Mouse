@@ -17,10 +17,10 @@
    <widget class="QCustomPlot" name="plot" native="true">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>220</x>
       <y>10</y>
       <width>851</width>
-      <height>521</height>
+      <height>531</height>
      </rect>
     </property>
    </widget>
@@ -58,19 +58,6 @@
       <width>151</width>
       <height>22</height>
      </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>120</y>
-      <width>141</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Map</string>
     </property>
    </widget>
    <widget class="QSlider" name="horizontalSlider">

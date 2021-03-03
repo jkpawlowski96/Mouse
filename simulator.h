@@ -2,6 +2,7 @@
 #define SIMULATOR_H
 #include <memory>
 #include "map.h"
+#include <QMainWindow>
 
 
 class Simulator
@@ -9,8 +10,10 @@ class Simulator
 public:
     Simulator();
     bool SetMap(string mathFilePath);
-private:
+
     unique_ptr<Map> map;
+
+private:
 
 };
 

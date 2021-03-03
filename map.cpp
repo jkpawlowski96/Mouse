@@ -1,6 +1,8 @@
 #include "map.h"
 #include <iostream>
 #include <fstream>
+#include <sstream>      // std::stringstream
+
 
 Map::Map(string mapFilePath)
 {
@@ -25,8 +27,6 @@ Map::Map(string mapFilePath)
             getline (mapFile, line);
         }
 
-
-
         if(line==MAP_STOP_SIGN){
             getline(mapFile, line);
             do{
@@ -42,9 +42,23 @@ Map::Map(string mapFilePath)
         }
     }
     mapFile.close();
+    mapSize = GetPoint(sizeLine, 'x');
+    mapStart = GetPoint(startLine, ',');
+
+    mapStop.clear();
+    for(auto const& line: stopLines)
+        mapStop.push_back(GetPoint(line,','));
+
+    mapPaths.clear();
+    for(auto const& line: pathLines)
+        mapPaths.push_back(GetPath(line));
 }
 
-Point Map::GetPoint(string text, string delimiter){
+Map::~Map(){
+
+}
+
+Point Map::GetPoint(string text, char delimiter){
     auto textSplited = SplitText(text, delimiter);
     Point point;
     point.x = stoi(textSplited[0]);
@@ -52,17 +66,23 @@ Point Map::GetPoint(string text, string delimiter){
     return point;
 }
 
-vector<string> Map::SplitText(string text, string delimiter){
-    string text_1 = text.substr(0, text.find(delimiter));
-    string text_2 = text.substr(1, text.find(delimiter));
-    return {text_1, text_2};
+vector<string> Map::SplitText(string text, char delimiter){
+    stringstream textStream(text);
+    string segment;
+    vector<string> res;
+    while(std::getline(textStream, segment, delimiter))
+    {
+       res.push_back(segment);
+    }
+    return res;
 }
 
 Path Map::GetPath(string line){
-    auto textSplited = SplitText(line, " ");
+    auto textSplited = SplitText(line, ' ');
     Path path;
-    path.start = GetPoint(textSplited[0], ",");
-    path.stop = GetPoint(textSplited[1], ",");
+    path.start = GetPoint(textSplited[0], ',');
+    path.stop = GetPoint(textSplited[1], ',');
     return path;
 }
+
 
