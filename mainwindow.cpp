@@ -35,16 +35,6 @@ MainWindow::~MainWindow()
 }
 
 
-void MainWindow::click()
-{
-    xv.append(1);
-    yv.append(2);
-    ui->plot->graph(0)->setData(xv,yv);
-    ui->plot->replot();
-    ui->plot->update();
-}
-
-
 void MainWindow::on_mapsComboBox_textActivated(const QString &arg1)
 {
     QString text = ui->mapsComboBox->currentText();
@@ -72,41 +62,35 @@ void MainWindow::PlotMap(){
 
 }
 
-void MainWindow::DrawLine(double x0, double y0, double x1, double y1, int i){
+QCPGraph* MainWindow::DrawLine(double x0, double y0, double x1, double y1, int i){
         QPen pen;
-        ui->plot->addGraph();
+        auto graph = ui->plot->addGraph();
         pen.setColor(QColor(255, 0, 0));
-        ui->plot->graph(i)->setPen(pen);
-        ui->plot->graph(i)->setLineStyle((QCPGraph::LineStyle)1);
-        ui->plot->graph(i)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 5));
+        graph->setPen(pen);
+        graph->setLineStyle((QCPGraph::LineStyle)1);
+        graph->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 5));
+        //ui->plot->graph(i)->setPen(pen);
+        //ui->plot->graph(i)->setLineStyle((QCPGraph::LineStyle)1);
+        //ui->plot->graph(i)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 5));
         QVector<double> x{x0,x1},y{y0,y1};
-        xv.append(x0);
-        yv.append(y0);
-        ui->plot->graph(i)->setData(xv,yv);
-
+        //dataX.push_back(x);
+        //dataY.push_back(y);
+        //ui->plot->graph(i)->setData(x,y);
+        graph->setData(x,y);
+        return graph;
 }
-int ii =2.0;
-void MainWindow::on_pushButton_clicked()
+
+void MainWindow::on_startButton_clicked()
 {
-    ii = ii + 1.0;
-    DrawLine(ii,0.0,10.0,10.0,0);
-    //DrawLine(3.0,10.0,10.0,0.0,1);
+    DrawLine(0.0,0.0,10.0,10.0,0);
     ui->plot->replot();
     ui->plot->update();
 }
 
-void MainWindow::paintEvent(QPaintEvent *event)
+
+void MainWindow::on_stopButton_clicked()
 {
-
-    QPainter painter(this);
-    painter.setBrush(Qt::DiagCrossPattern);
-
-
-    QPen pen;
-
-    pen.setColor(Qt::green);
-    pen.setWidth(5);
-
-    painter.setPen(pen);
-    painter.drawRect(QRect(80,120,200,100));
+    DrawLine(0.0,0.0,12.0,10.0,0);
+    ui->plot->replot();
+    ui->plot->update();
 }

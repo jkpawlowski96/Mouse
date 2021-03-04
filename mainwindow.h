@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include<QPainter>
 #include "simulator.h"
 #include <string>
 #include <memory>
@@ -22,18 +21,13 @@ public:
 
 private slots:
     void on_mapsComboBox_textActivated(const QString &arg1);
-
-
-    void on_pushButton_clicked();
+    void on_startButton_clicked();
+    void on_stopButton_clicked();
 
 private:
     Ui::MainWindow *ui;
-    QVector<double> xv{0.0,1.0};
-    QVector<double> yv{1.0,0.0};
     unique_ptr<Simulator> simulator;
     void PlotMap();
-    void DrawLine(double x0, double y0, double x1, double y1, int i);
-    virtual void paintEvent(QPaintEvent *event);
-    void click();
+    QCPGraph* DrawLine(double x0, double y0, double x1, double y1, int i);
 };
 #endif // MAINWINDOW_H
