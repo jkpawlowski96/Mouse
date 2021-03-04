@@ -28,6 +28,6 @@ private:
     Ui::MainWindow *ui;
     unique_ptr<Simulator> simulator;
     void PlotMap();
-    QCPGraph* DrawLine(double x0, double y0, double x1, double y1, int i);
+    QCPGraph* DrawLine(double x0, double y0, double x1, double y1);
 };
 #endif // MAINWINDOW_H

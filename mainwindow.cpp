@@ -42,33 +42,30 @@ void MainWindow::on_mapsComboBox_textActivated(const QString &arg1)
     simulator->SetMap(path.toStdString());
     PlotMap();
 }
-/*
- * int i=1;
-    QPen pen;
-    ui->plot->addGraph();
-    pen.setColor(QColor(255, 0, 0));
-    ui->plot->graph(1)->setPen(pen);
-    ui->plot->graph(1)->setLineStyle((QCPGraph::LineStyle)i);
-    ui->plot->graph(1)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 5));
-    QVector<double> x{0.0},y{0.0};
-    Point p = simulator->map->mapSize;
-    x.push_back((double)p.x);
-    y.push_back((double)p.y);
 
-    ui->plot->graph(1)->setData({0.0, (double)p.x},{0.0,(double)p.y});
- *
- */
 void MainWindow::PlotMap(){
+    shared_ptr<Map> map(simulator->map);
+    ui->plot->yAxis->setRange(-1,map->mapSize.y+1);
+    ui->plot->xAxis->setRange(-1,map->mapSize.x+1);
+
+    DrawLine(0,0,0,map->mapSize.y);
+    DrawLine(0,map->mapSize.y,map->mapSize.x,map->mapSize.y);
+    DrawLine(map->mapSize.x,map->mapSize.y, map->mapSize.x, 0);
+    DrawLine(map->mapSize.x,0,0,0);
+
+
+    ui->plot->replot();
+    ui->plot->update();
 
 }
 
-QCPGraph* MainWindow::DrawLine(double x0, double y0, double x1, double y1, int i){
+QCPGraph* MainWindow::DrawLine(double x0, double y0, double x1, double y1){
         QPen pen;
         auto graph = ui->plot->addGraph();
         pen.setColor(QColor(255, 0, 0));
         graph->setPen(pen);
         graph->setLineStyle((QCPGraph::LineStyle)1);
-        graph->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 5));
+        //graph->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 5));
         //ui->plot->graph(i)->setPen(pen);
         //ui->plot->graph(i)->setLineStyle((QCPGraph::LineStyle)1);
         //ui->plot->graph(i)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 5));
@@ -82,7 +79,7 @@ QCPGraph* MainWindow::DrawLine(double x0, double y0, double x1, double y1, int i
 
 void MainWindow::on_startButton_clicked()
 {
-    DrawLine(0.0,0.0,10.0,10.0,0);
+    DrawLine(0.0,0.0,10.0,10.0);
     ui->plot->replot();
     ui->plot->update();
 }
@@ -90,7 +87,6 @@ void MainWindow::on_startButton_clicked()
 
 void MainWindow::on_stopButton_clicked()
 {
-    DrawLine(0.0,0.0,12.0,10.0,0);
+    ui->plot->clearGraphs();
     ui->plot->replot();
-    ui->plot->update();
 }

@@ -11,7 +11,7 @@ public:
     Simulator();
     bool SetMap(string mathFilePath);
 
-    unique_ptr<Map> map;
+    shared_ptr<Map> map;
 
 private:
 
