@@ -1,7 +1,8 @@
 #include "simulator.h"
 
-Simulator::Simulator()
+Simulator::Simulator(QCustomPlot *_plot)
 {
+    this->plot = make_shared<QCustomPlot>(_plot);
 }
 
 bool Simulator::SetMap(string mapFilePath){

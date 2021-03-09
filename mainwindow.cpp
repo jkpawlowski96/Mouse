@@ -17,7 +17,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 
     //simulator
-    simulator.reset(new Simulator());
+    simulator.reset(new Simulator(ui->plot));
 
     //maps
     auto mapFiles = GetMapFiles();

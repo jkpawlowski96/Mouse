@@ -2,16 +2,17 @@
 #define SIMULATOR_H
 #include <memory>
 #include "map.h"
-#include <QMainWindow>
+#include "qcustomplot.h"
 
 
 class Simulator
 {
 public:
-    Simulator();
+    Simulator(QCustomPlot *_plot);
     bool SetMap(string mathFilePath);
 
     shared_ptr<Map> map;
+    shared_ptr<QCustomPlot> plot;
 
 private:
 
