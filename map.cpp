@@ -3,6 +3,41 @@
 #include <fstream>
 #include <sstream>      // std::stringstream
 
+template<typename T>
+Point<T> operator+(Point<T> a, Point<T> b)
+{
+    Point<T> res;
+    res.x = a.x + b.x;
+    res.y = a.y + b.y;
+    return res;
+};
+
+template<typename T>
+Point<T> operator-(Point<T> a, Point<T> b)
+{
+    Point<T> res;
+    res.x = a.x - b.x;
+    res.y = a.y - b.y;
+    return res;
+};
+
+template<typename T>
+Point<T> operator/(Point<T> a, T dev)
+{
+    Point<T> res;
+    res.x = (T)(a.x/dev);
+    res.y = (T)(a.y/dev);
+    return res;
+};
+
+template<typename T>
+Point<T> operator*(Point<T> a, T mul)
+{
+    Point<T> res;
+    res.x = (T)(a.x*mul);
+    res.y = (T)(a.y*mul);
+    return res;
+};
 
 Map::Map(string mapFilePath)
 {
@@ -42,25 +77,28 @@ Map::Map(string mapFilePath)
         }
     }
     mapFile.close();
-    mapSize = GetPoint(sizeLine, 'x');
-    mapStart = GetPoint(startLine, ',');
+    mapSize = GetPoint<int>(sizeLine, 'x');
+    mapStart = GetPoint<int>(startLine, ',');
 
     mapStop.clear();
     for(auto const& line: stopLines)
-        mapStop.push_back(GetPoint(line,','));
+        mapStop.push_back(GetPoint<int>(line,','));
 
     mapPaths.clear();
-    for(auto const& line: pathLines)
-        mapPaths.push_back(GetPath(line));
+    for(auto const& line: pathLines){
+        auto newPaths = GetPaths<int>(line);
+        mapPaths.insert(mapPaths.end(), newPaths.begin(), newPaths.end());
+    }
 }
 
 Map::~Map(){
 
 }
-
-Point Map::GetPoint(string text, char delimiter){
+    
+template<typename T>
+Point<T> Map::GetPoint(string text, char delimiter){
     auto textSplited = SplitText(text, delimiter);
-    Point point;
+    Point<T> point;
     point.x = stoi(textSplited[0]);
     point.y = stoi(textSplited[1]);
     return point;
@@ -77,12 +115,20 @@ vector<string> Map::SplitText(string text, char delimiter){
     return res;
 }
 
-Path Map::GetPath(string line){
+template<typename T>
+vector<Path<T>> Map::GetPaths(string line){
+    vector<Path<T>> paths;
     auto textSplited = SplitText(line, ' ');
-    Path path;
-    path.start = GetPoint(textSplited[0], ',');
-    path.stop = GetPoint(textSplited[1], ',');
-    return path;
+    Point<T> start = GetPoint<T>(textSplited[0], ',');
+    Point<T> stop = GetPoint<T>(textSplited[1], ',');
+    int steps = abs((int)(stop.x - start.x) + (int)(stop.y - start.y));
+    Point<T> step= (stop - start)/steps;
+    for(int i=0; i<=steps; i++){
+        Path<T> path;
+        path.localization = start + (step * i);
+        paths.push_back(path);
+    }
+    return paths;
 }
 
 
