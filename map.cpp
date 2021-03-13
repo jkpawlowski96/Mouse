@@ -4,6 +4,33 @@
 #include <sstream>      // std::stringstream
 
 template<typename T>
+bool operator==(Point<T> a, Point<T> b)
+{
+    if ((a.x==b.x)&&(a.y==b.y))
+        return true;
+    else
+        return false;
+};
+
+template<typename T>
+Direction operator>>(Point<T> a, Point<T> b){
+    if(b.x > a.x)
+        return Right;
+    if(b.x < a.x)
+        return Left;
+    if(b.y > a.y)
+        return Up;
+    if(b.y < a.y)
+        return Down;
+    return DirectionUnnown;
+}
+
+template<typename T>
+Direction operator<<(Point<T> a, Point<T> b){
+    return a>>b;
+}
+
+template<typename T>
 Point<T> operator+(Point<T> a, Point<T> b)
 {
     Point<T> res;
@@ -38,6 +65,19 @@ Point<T> operator*(Point<T> a, T mul)
     res.y = (T)(a.y*mul);
     return res;
 };
+
+template<typename T>
+vector<Point<T>> Map::FindNearLocalizations(Point<T> localization){
+    vector<Point<T>> res;
+    T minPoint = 1;
+    if (localization.x >= minPoint)
+        res.push_back(Point<T>(localization.x-1, localization.y));
+    if (localization.y >= minPoint)
+        res.push_back(Point<T>(localization.x, localization.y-1));
+    res.push_back(Point<T>(localization.x, localization.y+1));
+    res.push_back(Point<T>(localization.x+1, localization.y));
+    return res;
+}
 
 Map::Map(string mapFilePath)
 {
@@ -89,6 +129,43 @@ Map::Map(string mapFilePath)
         auto newPaths = GetPaths<int>(line);
         mapPaths.insert(mapPaths.end(), newPaths.begin(), newPaths.end());
     }
+    InitPaths();
+
+}
+
+template<typename T>
+shared_ptr<Path<T>> Map::FindPath(Point<T> localization){
+    for(auto& path: mapPaths){
+        if(path.localization == localization)
+            return make_shared<Path<T>>(path);
+    }
+    return nullptr;
+}
+
+template<typename T>
+vector<shared_ptr<Path<T>>> Map::FindPaths(vector<Point<T>> localizations){
+    vector<shared_ptr<Path<T>>> res;
+    for(auto const& loc: localizations){
+        shared_ptr<Path<T>> p = FindPath(loc);
+        if (p != nullptr)
+            res.push_back(p);
+    }
+    return res;
+}
+
+void Map::InitPaths(){
+    for(vector<int>::size_type i = 0; i != mapPaths.size(); i++) 
+    {
+        shared_ptr<Path<int>> p = make_shared<Path<int>>(mapPaths[i]);
+        auto possible = FindNearLocalizations<int>(p->localization);
+        auto nearPaths = FindPaths(possible);
+        for(auto const& nearPath: nearPaths){
+            Direction d = p->localization >> nearPath->localization;
+            p->acces[d] = Allowed;
+        }
+        mapPaths[i] = *p;
+        continue;
+    } 
 }
 
 Map::~Map(){
