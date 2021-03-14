@@ -15,18 +15,21 @@ MainWindow::MainWindow(QWidget *parent)
     ui->plot->xAxis->setVisible(false);
     ui->plot->yAxis->setVisible(false);
 
-
-    //simulator
-    simulator.reset(new Simulator(ui->plot));
-
     //maps
     auto mapFiles = GetMapFiles();
     if(mapFiles.size()>0)
     {
         ui->mapsComboBox->addItems(mapFiles);
-        on_mapsComboBox_textActivated("");
     }
 
+    InitSimulator();
+}
+
+void MainWindow::InitSimulator(){
+    //simulator
+    QString text = ui->mapsComboBox->currentText();
+    QString path = QDir(MAPS_LOCATION).filePath(text);
+    simulator.reset(new Simulator(ui->plot, path.toStdString()));
 }
 
 MainWindow::~MainWindow()
@@ -37,51 +40,16 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_mapsComboBox_textActivated(const QString &arg1)
 {
-    QString text = ui->mapsComboBox->currentText();
-    QString path = QDir(MAPS_LOCATION).filePath(text);
-    simulator->SetMap(path.toStdString());
-    PlotMap();
+    //QString text = ui->mapsComboBox->currentText();
+    //QString path = QDir(MAPS_LOCATION).filePath(text);
+    //simulator->SetMap(path.toStdString());
 }
 
-void MainWindow::PlotMap(){
-    shared_ptr<Map> map(simulator->map);
-    ui->plot->yAxis->setRange(-1,map->mapSize.y+1);
-    ui->plot->xAxis->setRange(-1,map->mapSize.x+1);
 
-    DrawLine(0,0,0,map->mapSize.y);
-    DrawLine(0,map->mapSize.y,map->mapSize.x,map->mapSize.y);
-    DrawLine(map->mapSize.x,map->mapSize.y, map->mapSize.x, 0);
-    DrawLine(map->mapSize.x,0,0,0);
-
-
-    ui->plot->replot();
-    ui->plot->update();
-
-}
-
-QCPGraph* MainWindow::DrawLine(double x0, double y0, double x1, double y1){
-        QPen pen;
-        auto graph = ui->plot->addGraph();
-        pen.setColor(QColor(255, 0, 0));
-        graph->setPen(pen);
-        graph->setLineStyle((QCPGraph::LineStyle)1);
-        //graph->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 5));
-        //ui->plot->graph(i)->setPen(pen);
-        //ui->plot->graph(i)->setLineStyle((QCPGraph::LineStyle)1);
-        //ui->plot->graph(i)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 5));
-        QVector<double> x{x0,x1},y{y0,y1};
-        //dataX.push_back(x);
-        //dataY.push_back(y);
-        //ui->plot->graph(i)->setData(x,y);
-        graph->setData(x,y);
-        return graph;
-}
 
 void MainWindow::on_startButton_clicked()
 {
-    DrawLine(0.0,0.0,10.0,10.0);
-    ui->plot->replot();
-    ui->plot->update();
+    InitSimulator();
 }
 
 

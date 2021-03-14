@@ -208,4 +208,20 @@ vector<Path<T>> Map::GetPaths(string line){
     return paths;
 }
 
+vector<Line<double>> GetPathLines(Path<int> path){
+    vector<Line<double>> res;
+    double x = (double)path.localization.x;
+    double y = (double)path.localization.y;
+    double step = 1.0;
+    if (path.acces[Up]==Forbiden)
+        res.push_back(Line<double>(Point<double>(x, y+step), Point<double>(x+step,y+step)));
+    if (path.acces[Down]==Forbiden)
+        res.push_back(Line<double>(Point<double>(x, y), Point<double>(x+step,y)));
+    if (path.acces[Left]==Forbiden)
+        res.push_back(Line<double>(Point<double>(x, y), Point<double>(x,y+step)));
+    if (path.acces[Right]==Forbiden)
+        res.push_back(Line<double>(Point<double>(x+step, y), Point<double>(x+step,y+step)));
+    return res;
+}
+
 

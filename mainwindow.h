@@ -25,6 +25,7 @@ private slots:
     void on_stopButton_clicked();
 
 private:
+    void InitSimulator();
     Ui::MainWindow *ui;
     unique_ptr<Simulator> simulator;
     void PlotMap();

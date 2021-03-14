@@ -17,6 +17,7 @@ SOURCES += \
     utils.cpp
 
 HEADERS += \
+    geometry.h \
     mainwindow.h \
     map.h \
     qcustomplot.h \

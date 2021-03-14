@@ -47,6 +47,13 @@ struct Wall
 };
 
 template <typename T>
+struct Line{
+    Point<T> a, b;
+    Line(Point<T> _a, Point<T>_b):a(_a), b(_b){}
+    Line(){}
+};
+
+template <typename T>
 struct Path
 {
     Point<T> localization;
@@ -79,5 +86,6 @@ private:
     vector<Point<T>> FindNearLocalizations(Point<T> localization);
 };
 
+vector<Line<double>> GetPathLines(Path<int> path);
 
 #endif // MAP_H
