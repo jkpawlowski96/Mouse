@@ -2,7 +2,9 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>      // std::stringstream
+#include "geometry.h"
 
+/*
 template<typename T>
 bool operator==(Point<T> a, Point<T> b)
 {
@@ -10,7 +12,7 @@ bool operator==(Point<T> a, Point<T> b)
         return true;
     else
         return false;
-};
+}
 
 template<typename T>
 Direction operator>>(Point<T> a, Point<T> b){
@@ -37,7 +39,7 @@ Point<T> operator+(Point<T> a, Point<T> b)
     res.x = a.x + b.x;
     res.y = a.y + b.y;
     return res;
-};
+}
 
 template<typename T>
 Point<T> operator-(Point<T> a, Point<T> b)
@@ -46,7 +48,7 @@ Point<T> operator-(Point<T> a, Point<T> b)
     res.x = a.x - b.x;
     res.y = a.y - b.y;
     return res;
-};
+}
 
 template<typename T>
 Point<T> operator/(Point<T> a, T dev)
@@ -55,7 +57,7 @@ Point<T> operator/(Point<T> a, T dev)
     res.x = (T)(a.x/dev);
     res.y = (T)(a.y/dev);
     return res;
-};
+}
 
 template<typename T>
 Point<T> operator*(Point<T> a, T mul)
@@ -64,15 +66,8 @@ Point<T> operator*(Point<T> a, T mul)
     res.x = (T)(a.x*mul);
     res.y = (T)(a.y*mul);
     return res;
-};
-
-Acces operator+(Acces a, Acces b){
-    if(a==Allowed || b==Allowed)
-        return Allowed;
-    if(a==Forbiden || b==Forbiden)
-        return Forbiden;
-    return Unnown;
 }
+*/
 
 template<typename T>
 vector<Point<T>> Map::FindNearLocalizations(Point<T> localization){
@@ -214,7 +209,7 @@ vector<Path<T>> Map::GetPaths(string line){
     Point<T> start = GetPoint<T>(textSplited[0], ',');
     Point<T> stop = GetPoint<T>(textSplited[1], ',');
     int steps = abs((int)(stop.x - start.x) + (int)(stop.y - start.y));
-    Point<T> step= (stop - start)/steps;
+    Point<T> step = (stop - start)/steps;
     for(int i=0; i<=steps; i++){
         Path<T> path;
         path.localization = start + (step * i);

@@ -4,7 +4,11 @@ Simulator::Simulator(QCustomPlot *_plot, string mapFilePath)
 {
     this->plot = _plot;
     SetMap(mapFilePath);
+    mouse = make_shared<Mouse>(map->mapStart);
     PlotMap();
+    PlotMouse();
+    plot->replot();
+    plot->update();
 }
 
 bool Simulator::SetMap(string mapFilePath){
@@ -29,6 +33,18 @@ QCPGraph* Simulator::DrawLine(Line<double> line, const QColor color,const int wi
         return graph;
 }
 
+template<typename T>
+void Simulator::DrawRectangle(Point<T> point, const QColor color, const int width, const double margin, const int step){
+        Point<double> p00(point.x+margin, point.y+margin);
+        Point<double> p11(point.x+step-margin, point.y+step-margin);
+        Point<double> p01(point.x+margin, point.y+step-margin);
+        Point<double> p10(point.x+step-margin, point.y+margin);
+        DrawLine(Line<double>(p00,p01),color,width);
+        DrawLine(Line<double>(p01,p11),color,width);
+        DrawLine(Line<double>(p11,p10),color,width);
+        DrawLine(Line<double>(p10,p00),color,width);
+}
+
 void Simulator::PlotMap(){
     // borders
     plot->yAxis->setRange(-1,map->mapSize.y+1);
@@ -49,6 +65,32 @@ void Simulator::PlotMap(){
         }
     }
 
-    plot->replot();
-    plot->update();
+    DrawRectangle<int>(map->mapStart, GRAY, 1, 0.2);
+    for(auto const& stop: map->mapStop)
+        DrawRectangle<int>(stop, GREEN, 1, 0.1);
+
+}
+
+void Simulator::PlotMouse(){
+    auto pos = mouse->GetPosition();
+    Point<double> head;
+    DrawRectangle<int>(pos.localization, BLUE, 2, 0.3);
+
+    switch(pos.direction){
+        case Up:
+            head = pos.localization + Point<double>(0.5, 0.8);
+            break;
+        case Down:
+            head = pos.localization + Point<double>(0.5, 0.2);
+            break;
+        case Left:
+            head = pos.localization + Point<double>(0.2, 0.5);
+            break;
+        case Right:
+            head = pos.localization + Point<double>(0.8, 0.5);
+            break;
+        default:
+            break;
+    }
+    DrawRectangle<double>(head, YELLOW, 2, 0.2, 0);
 }
