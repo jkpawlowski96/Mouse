@@ -1,5 +1,6 @@
 #ifndef MAP_H
 #define MAP_H
+#pragma once
 #include <stdlib.h>
 #include <string>
 #include "qcustomplot.h"
@@ -33,6 +34,7 @@ enum Acces{
     Forbiden = 1
 };
 
+Acces operator+(Acces a, Acces b);
 
 template <typename T> 
 struct Position{
@@ -59,6 +61,10 @@ struct Path
     Point<T> localization;
     Acces acces[4];
     Path(Acces a=Forbiden){acces[0]=a; acces[1]=a; acces[2]=a, acces[3]=a;}
+    void append(Path<T> _path){
+        for(int i=0;i<4;i++)
+            acces[i] = acces[i] + _path.acces[i];
+    }
 };
 
 
@@ -81,7 +87,7 @@ private:
     shared_ptr<Path<T>> FindPath(Point<T> localization);
     template<typename T>
     vector<shared_ptr<Path<T>>> FindPaths(vector<Point<T>> localizations);
-    void InitPaths();
+    void InsertPaths(vector<Path<int>> newPaths);
     template<typename T>
     vector<Point<T>> FindNearLocalizations(Point<T> localization);
 };

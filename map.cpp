@@ -27,7 +27,7 @@ Direction operator>>(Point<T> a, Point<T> b){
 
 template<typename T>
 Direction operator<<(Point<T> a, Point<T> b){
-    return a>>b;
+    return b>>a;
 }
 
 template<typename T>
@@ -65,6 +65,14 @@ Point<T> operator*(Point<T> a, T mul)
     res.y = (T)(a.y*mul);
     return res;
 };
+
+Acces operator+(Acces a, Acces b){
+    if(a==Allowed || b==Allowed)
+        return Allowed;
+    if(a==Forbiden || b==Forbiden)
+        return Forbiden;
+    return Unnown;
+}
 
 template<typename T>
 vector<Point<T>> Map::FindNearLocalizations(Point<T> localization){
@@ -127,9 +135,9 @@ Map::Map(string mapFilePath)
     mapPaths.clear();
     for(auto const& line: pathLines){
         auto newPaths = GetPaths<int>(line);
-        mapPaths.insert(mapPaths.end(), newPaths.begin(), newPaths.end());
+        //mapPaths.insert(mapPaths.end(), newPaths.begin(), newPaths.end());
+        InsertPaths(newPaths);
     }
-    InitPaths();
 
 }
 
@@ -153,19 +161,26 @@ vector<shared_ptr<Path<T>>> Map::FindPaths(vector<Point<T>> localizations){
     return res;
 }
 
-void Map::InitPaths(){
-    for(vector<int>::size_type i = 0; i != mapPaths.size(); i++) 
-    {
-        shared_ptr<Path<int>> p = make_shared<Path<int>>(mapPaths[i]);
-        auto possible = FindNearLocalizations<int>(p->localization);
-        auto nearPaths = FindPaths(possible);
-        for(auto const& nearPath: nearPaths){
-            Direction d = p->localization >> nearPath->localization;
-            p->acces[d] = Allowed;
+
+
+void Map::InsertPaths(vector<Path<int>> newPaths){
+    for(auto& newPath: newPaths){
+        bool bussy = false;
+        int bussyIndex;
+        for(size_t i =0; i<mapPaths.size();i++)
+            if(newPath.localization == mapPaths[i].localization){
+                bussy=true;
+                bussyIndex=i;
+            }
+        if(bussy){
+            mapPaths[bussyIndex].append(newPath);
         }
-        mapPaths[i] = *p;
-        continue;
-    } 
+        else{
+            mapPaths.push_back(newPath);
+        }
+
+    }
+
 }
 
 Map::~Map(){
@@ -205,6 +220,14 @@ vector<Path<T>> Map::GetPaths(string line){
         path.localization = start + (step * i);
         paths.push_back(path);
     }
+    // connections
+    for(size_t i=1; i<paths.size(); i++){
+        Direction d = paths[i-1].localization >> paths[i].localization;
+        Direction _d =paths[i-1].localization << paths[i].localization;
+        paths[i-1].acces[d] = Allowed;
+        paths[i].acces[_d] = Allowed;
+    }
+
     return paths;
 }
 
