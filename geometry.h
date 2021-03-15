@@ -2,6 +2,7 @@
 #define GEOMETRY_H
 #include <vector>
 #include <stdlib.h>
+#include <memory>
 
 using namespace std;
 
@@ -52,10 +53,14 @@ struct Path
 {
     Point<T> localization;
     Acces acces[4];
+    shared_ptr<Path> next[4];
     Path(Acces a=Forbiden){acces[0]=a; acces[1]=a; acces[2]=a, acces[3]=a;}
     void append(Path<T> _path){
-        for(int i=0;i<4;i++)
+        for(int i=0;i<4;i++){
             acces[i] = acces[i] + _path.acces[i];
+            if (_path.next[i]!=nullptr)
+                next[i]=_path.next[i];
+        }
     }
 };
 
@@ -69,14 +74,6 @@ bool operator==(Point<T> a, Point<T> b)
         return false;
 }
 
-/*
-bool operator==(Point<int> a, Point<int> b)
-{
-    if ((a.x==b.x)&&(a.y==b.y))
-        return true;
-    else
-        return false;
-}*/
 
 template<typename T>
 Direction operator>>(Point<T> a, Point<T> b){

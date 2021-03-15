@@ -4,6 +4,7 @@
 #include <string>
 #include "qcustomplot.h"
 #include "geometry.h"
+#include <memory>
 
 using namespace std;
 

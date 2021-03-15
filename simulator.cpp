@@ -92,5 +92,5 @@ void Simulator::PlotMouse(){
         default:
             break;
     }
-    DrawRectangle<double>(head, YELLOW, 2, 0.2, 0);
+    DrawRectangle<double>(head, YELLOW, 1, 0.1, 0);
 }

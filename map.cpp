@@ -1,73 +1,8 @@
 #include "map.h"
 #include <iostream>
 #include <fstream>
-#include <sstream>      // std::stringstream
+#include <sstream>
 #include "geometry.h"
-
-/*
-template<typename T>
-bool operator==(Point<T> a, Point<T> b)
-{
-    if ((a.x==b.x)&&(a.y==b.y))
-        return true;
-    else
-        return false;
-}
-
-template<typename T>
-Direction operator>>(Point<T> a, Point<T> b){
-    if(b.x > a.x)
-        return Right;
-    if(b.x < a.x)
-        return Left;
-    if(b.y > a.y)
-        return Up;
-    if(b.y < a.y)
-        return Down;
-    return DirectionUnnown;
-}
-
-template<typename T>
-Direction operator<<(Point<T> a, Point<T> b){
-    return b>>a;
-}
-
-template<typename T>
-Point<T> operator+(Point<T> a, Point<T> b)
-{
-    Point<T> res;
-    res.x = a.x + b.x;
-    res.y = a.y + b.y;
-    return res;
-}
-
-template<typename T>
-Point<T> operator-(Point<T> a, Point<T> b)
-{
-    Point<T> res;
-    res.x = a.x - b.x;
-    res.y = a.y - b.y;
-    return res;
-}
-
-template<typename T>
-Point<T> operator/(Point<T> a, T dev)
-{
-    Point<T> res;
-    res.x = (T)(a.x/dev);
-    res.y = (T)(a.y/dev);
-    return res;
-}
-
-template<typename T>
-Point<T> operator*(Point<T> a, T mul)
-{
-    Point<T> res;
-    res.x = (T)(a.x*mul);
-    res.y = (T)(a.y*mul);
-    return res;
-}
-*/
 
 template<typename T>
 vector<Point<T>> Map::FindNearLocalizations(Point<T> localization){
@@ -220,7 +155,9 @@ vector<Path<T>> Map::GetPaths(string line){
         Direction d = paths[i-1].localization >> paths[i].localization;
         Direction _d =paths[i-1].localization << paths[i].localization;
         paths[i-1].acces[d] = Allowed;
+        paths[i-1].next[d] = make_shared<Path<int>>(paths[i]);
         paths[i].acces[_d] = Allowed;
+        paths[i].next[_d] = make_shared<Path<int>>(paths[i-1]);
     }
 
     return paths;
