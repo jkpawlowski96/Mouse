@@ -66,7 +66,7 @@ void MainWindow::on_startButton_clicked()
 }
 
 void MainWindow::simulator_plot(){
-    //simulator->Tick();
+    simulator->Tick();
 
     //timer
     quint64 _miliseconds = simulator->GetTimerElapsed();

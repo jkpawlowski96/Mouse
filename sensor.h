@@ -7,9 +7,10 @@
 #include "sensor_data.h"
 
 class Sensor{
-    SensorData Measure(shared_ptr<Map> map, shared_ptr<Mouse> mouse){
-        return SensorData(false);
-    }
+    public:
+        SensorData Measure(shared_ptr<Map> map, shared_ptr<Mouse> mouse){
+            return SensorData(false);
+        }
 
 };
 

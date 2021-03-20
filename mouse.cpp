@@ -4,6 +4,7 @@ Mouse::Mouse(Point<int> start, shared_ptr<SI> _si):
     si(_si)
 {
     position.localization = doublePoint(start);
+    position.direction = Up;
 }
 
 
@@ -13,23 +14,51 @@ Position<double> Mouse::GetPosition(){
 
 
 void Mouse::Call(SensorData sensorData){
-    if(task){
-        double _distance = measureDistance(position.localization, task->destination);
-        if(_distance>MOVE_STEP)
-        {//move
-            //Point<double> move = task->
+    if(task>=0){
+        if(task==Forward){
+            double _distance = measureDistance(position.localization, moveTarget);
+            if(_distance>MOVE_STEP)
+            {//move
+                position.localization = position.localization + move * MOVE_STEP;
+            }
+            else{//skip
+                position.localization = moveTarget;
+                task = TaskUnnown;
+            }
         }
-        else{//skip
-            position.localization = doublePoint(task->destination);
-            task = nullptr;
+        if(task==RotateDown){
+            position.direction=Down;
+            task=TaskUnnown;
+        }
+        if(task==RotateLeft){
+            position.direction=Left;
+            task=TaskUnnown;
+        }
+        if(task==RotateRight){
+            position.direction=Right;
+            task=TaskUnnown;
+        }
+        if(task==RotateUp){
+            position.direction=Up;        
+            task=TaskUnnown;
         }
 
     }else{
-
         Position<int> _position = roundPosition(position);
 
-        auto _task = si->Call(_position, sensorData);
-        task = make_shared<Task>(_task);
+        task = si->Call(_position, sensorData);
+        if(task==Forward){
+            move = Point<double>(0.0,0.0);
+            if(position.direction==Up)
+                move.y = 1.0;
+            if(position.direction==Down)
+                move.y = -1.0;
+            if(position.direction==Left)
+                move.x = -1.0;
+            if(position.direction==Right)
+                move.x = 1.0;
+            moveTarget = position.localization + move;
+        }
     }
 }
 

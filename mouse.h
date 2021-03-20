@@ -15,8 +15,9 @@ public:
 private:
     Position<double> position;
     shared_ptr<SI> si;
-    shared_ptr<Task> task;
-
+    Task task;
+    Point<double> move;
+    Point<double> moveTarget;
 
 };
 

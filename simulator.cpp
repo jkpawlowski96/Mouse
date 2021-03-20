@@ -3,17 +3,24 @@
 Simulator::Simulator(QCustomPlot *_plot, string mapFilePath, int _speed, int _si_mode):
     speed(_speed), si_mode(_si_mode)
 {
+    //assing plot
     this->plot = _plot;
+    //map
     SetMap(mapFilePath);
+    //si
+    si = make_shared<SI>();
+    //mouse
     mouse = make_shared<Mouse>(map->mapStart, si);
+
+    //plot
     PlotMap();
-    PlotMouse();
+    PlotMouse(true);
     plot->replot();
     plot->update();
 }
 
 void Simulator::SetSpeed(int _speed){
-    speed=speed;
+    speed=_speed;
 }
 
 Simulator::~Simulator(){
@@ -35,6 +42,8 @@ void Simulator::Stop(){
 }
 
 void Simulator::Tick(){
+    auto sensorData = sensor.Measure(map, mouse);
+    mouse->Call(sensorData);
     PlotMouse();
     plot->replot();
     plot->update();
@@ -72,16 +81,31 @@ QCPGraph* Simulator::DrawLine(Line<double> line, const QColor color,const int wi
         return graph;
 }
 
+QCPGraph* Simulator::DrawMouseLine(QVector<double>&x, QVector<double>&y, const QColor color,const int width){
+    QPen pen;
+    auto graph = plot->addGraph();
+    pen.setColor(color);
+    pen.setWidth(width);
+    graph->setPen(pen);
+    graph->setScatterStyle(QCPScatterStyle::ssCircle);
+    //ui->plot->graph(0)->setLineStyle(QCPGraph::lsNone);
+    graph->setLineStyle((QCPGraph::LineStyle)0);
+    graph->setData(x,y);
+    return graph;
+}
+
 template<typename T>
-void Simulator::DrawRectangle(Point<T> point, const QColor color, const int width, const double margin, const int step){
+vector<QCPGraph*> Simulator::DrawRectangle(Point<T> point, const QColor color, const int width, const double margin, const int step){
+        vector<QCPGraph*> res;
         Point<double> p00(point.x+margin, point.y+margin);
         Point<double> p11(point.x+step-margin, point.y+step-margin);
         Point<double> p01(point.x+margin, point.y+step-margin);
         Point<double> p10(point.x+step-margin, point.y+margin);
-        DrawLine(Line<double>(p00,p01),color,width);
-        DrawLine(Line<double>(p01,p11),color,width);
-        DrawLine(Line<double>(p11,p10),color,width);
-        DrawLine(Line<double>(p10,p00),color,width);
+        res.push_back(DrawLine(Line<double>(p00,p01),color,width));
+        res.push_back(DrawLine(Line<double>(p01,p11),color,width));
+        res.push_back(DrawLine(Line<double>(p11,p10),color,width));
+        res.push_back(DrawLine(Line<double>(p10,p00),color,width));
+        return res;
 }
 
 void Simulator::PlotMap(){
@@ -110,10 +134,14 @@ void Simulator::PlotMap(){
 
 }
 
-void Simulator::PlotMouse(){
+void Simulator::PlotMouse(bool init){
+    /*for(auto graph: bodyGraphs)
+        plot->removeGraph(graph);
+    for(auto graph: headGraphs)
+        plot->removeGraph(graph);
     auto pos = mouse->GetPosition();
     Point<double> head;
-    DrawRectangle<double>(pos.localization, BLUE, 2, 0.3);
+    bodyGraphs = DrawRectangle<double>(pos.localization, BLUE, 2, 0.3);
 
     switch(pos.direction){
         case Up:
@@ -131,5 +159,50 @@ void Simulator::PlotMouse(){
         default:
             break;
     }
-    DrawRectangle<double>(head, YELLOW, 1, 0.1, 0);
+    //headGraphs = DrawRectangle<double>(head, YELLOW, 1, 0.1, 0);
+    */
+    mouseBodyX.clear();
+    mouseBodyY.clear();
+    mouseHeadX.clear();
+    mouseHeadY.clear();
+
+    auto pos = mouse->GetPosition();
+    mouseBodyX.append(pos.localization.x+0.5);
+    mouseBodyY.append(pos.localization.y+0.5);
+    double eye_x0 = pos.localization.x + 0.3;
+    double eye_x1 = pos.localization.x + 0.7;
+    double eye_y0 = pos.localization.y + 0.3;
+    double eye_y1 = pos.localization.y + 0.7;
+    switch(pos.direction){
+        case Up:
+            mouseHeadX = {eye_x0, eye_x1};
+            mouseHeadY = {eye_y1, eye_y1};
+            break;
+        case Down:
+            mouseHeadX = {eye_x0, eye_x1};
+            mouseHeadY = {eye_y0, eye_y0};
+            break;
+        case Left:
+            mouseHeadX = {eye_x0, eye_x0};
+            mouseHeadY = {eye_y0, eye_y1};
+            break;
+        case Right:
+            mouseHeadX = {eye_x1, eye_x1};
+            mouseHeadY = {eye_y0, eye_y1};
+            break;
+        default:
+            break;
+    }
+
+    if(init){
+        mouseBody = DrawMouseLine(mouseBodyX, mouseBodyY, BLUE, 10);
+        mouseHead = DrawMouseLine(mouseHeadX, mouseHeadY, BLUE, 5);
+    }
+    else{
+        mouseBody->data()->clear();
+        mouseBody->setData(mouseBodyX, mouseBodyY);
+        mouseHead->data()->clear();
+        mouseHead->setData(mouseHeadX, mouseHeadY);
+    }
+    cout <<"mouse.loc x: "<<pos.localization.x << " y: "<<pos.localization.y << endl;
 }

@@ -5,9 +5,9 @@
 #include "geometry.h"
 #include "sensor.h"
 #include "qcustomplot.h"
+#include <iostream>
 
-
-#define DEFAULT_FRAMERATE_MS 33
+#define DEFAULT_FRAMERATE_MS 50
 
 #define RED QColor(255, 0, 0)
 #define GREEN QColor(0, 255, 0)
@@ -31,12 +31,13 @@ private:
     bool SetMap(string mapFilePath);
     void Loop();
     void PlotMap();
-    void PlotMouse();
+    void PlotMouse(bool init=false);
     void PlotSI();
 
     QCPGraph* DrawLine(Line<double> line, const QColor color=GRAY, const int width=2);
+    QCPGraph* DrawMouseLine(QVector<double>&x, QVector<double>&y, const QColor color,const int width);
     template<typename T>
-    void DrawRectangle(Point<T> point, const QColor color=GRAY, const int width=1, const double margin=0.1, const int step=1);
+    vector<QCPGraph*> DrawRectangle(Point<T> point, const QColor color=GRAY, const int width=1, const double margin=0.1, const int step=1);
     bool running;
     shared_ptr<Map> map;
     shared_ptr<Mouse> mouse;
@@ -46,6 +47,13 @@ private:
     shared_ptr<QElapsedTimer> timer;
     quint64 timeElapsed;
     int speed, si_mode;
+
+    QVector<double> mouseBodyX, mouseBodyY;
+    QCPGraph* mouseBody;
+    QVector<double> mouseHeadX, mouseHeadY;
+    QCPGraph* mouseHead;
+    //vector<QCPGraph*> bodyGraphs, headGraphs;
+
 };
 
 #endif // SIMULATOR_H

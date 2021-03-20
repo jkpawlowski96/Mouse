@@ -3,9 +3,13 @@
 #include "geometry.h"
 #include "sensor_data.h"
 
-struct Task{
-    Point<int> destination;
-    Direction direction;
+enum Task{
+    TaskUnnown=-1,
+    Forward=0,
+    RotateUp=1,
+    RotateLeft=2,
+    RotateRight=3,
+    RotateDown=4
 };
 
 class SI
