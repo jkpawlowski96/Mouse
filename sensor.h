@@ -1,13 +1,10 @@
 #ifndef SENSOR_H
 #define SENSOR_H
+#include "geometry.h"
 #include "map.h"
 #include "mouse.h"
 #include <memory>
-
-struct SensorData{
-    bool wallDetected;
-    SensorData(bool _wallDetected):wallDetected(_wallDetected){}
-};
+#include "sensor_data.h"
 
 class Sensor{
     SensorData Measure(shared_ptr<Map> map, shared_ptr<Mouse> mouse){

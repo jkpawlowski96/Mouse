@@ -41,6 +41,7 @@ struct Wall
     Point<T> start, stop;
 };
 
+
 template <typename T>
 struct Line{
     Point<T> a, b;
@@ -136,5 +137,20 @@ Point<double> operator+(Point<T> i, Point<double> d){
     return Point<double>((double)i.x+d.x, (double)i.y+d.y);
 }
 
+template <typename T>
+T measureDistance(Point<T>a, Point<T>b){
+    Point<T> d = a-b;
+    T _d = abs(d.x) + abs(d.y);
+    return _d;
+}
+
+Point<double> doublePoint(Point<int> p);
+
+double measureDistance(Point<double>a, Point<int>b);
+
+
+Position<int> roundPosition(Position<double> pos);
+
+Point<double> operator+(Point<double> a, Point<double> b);
 
 #endif // GEOMETRY_H

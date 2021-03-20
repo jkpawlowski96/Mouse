@@ -1,11 +1,11 @@
 #include "simulator.h"
 
-Simulator::Simulator(QCustomPlot *_plot, string mapFilePath, int _speed):
-    speed(_speed)
+Simulator::Simulator(QCustomPlot *_plot, string mapFilePath, int _speed, int _si_mode):
+    speed(_speed), si_mode(_si_mode)
 {
     this->plot = _plot;
     SetMap(mapFilePath);
-    mouse = make_shared<Mouse>(map->mapStart);
+    mouse = make_shared<Mouse>(map->mapStart, si);
     PlotMap();
     PlotMouse();
     plot->replot();
@@ -113,7 +113,7 @@ void Simulator::PlotMap(){
 void Simulator::PlotMouse(){
     auto pos = mouse->GetPosition();
     Point<double> head;
-    DrawRectangle<int>(pos.localization, BLUE, 2, 0.3);
+    DrawRectangle<double>(pos.localization, BLUE, 2, 0.3);
 
     switch(pos.direction){
         case Up:

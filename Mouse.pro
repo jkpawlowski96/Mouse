@@ -15,6 +15,7 @@ SOURCES += \
     map.cpp \
     mouse.cpp \
     qcustomplot.cpp \
+    si.cpp \
     simulator.cpp \
     utils.cpp
 
@@ -24,7 +25,9 @@ HEADERS += \
     map.h \
     mouse.h \
     qcustomplot.h \
-    sensor.hpp \
+    sensor.h \
+    sensor_data.h \
+    si.h \
     simulator.h \
     utils.h
 

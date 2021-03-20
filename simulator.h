@@ -3,12 +3,9 @@
 #include <memory>
 #include "map.h"
 #include "geometry.h"
-#include "sensor.hpp"
+#include "sensor.h"
 #include "qcustomplot.h"
-#include <thread>
-#include <mutex>
-#include <chrono>
-#include <QtConcurrent/QtConcurrent>
+
 
 #define DEFAULT_FRAMERATE_MS 33
 
@@ -22,15 +19,13 @@
 class Simulator
 {
 public:
-    Simulator(QCustomPlot *_plot, string mapFilePath, int _speed);
+    Simulator(QCustomPlot *_plot, string mapFilePath, int _speed, int _si_mode);
     ~Simulator();
     void Start();
     void Stop();
     void Tick();
     void SetSpeed(int _speed);
     quint64 GetTimerElapsed();
-    mutex simMutex;
-    shared_ptr<thread> simThread;
 
 private:
     bool SetMap(string mapFilePath);
@@ -45,12 +40,12 @@ private:
     bool running;
     shared_ptr<Map> map;
     shared_ptr<Mouse> mouse;
+    shared_ptr<SI> si;
     Sensor sensor;
     QCustomPlot *plot;
     shared_ptr<QElapsedTimer> timer;
     quint64 timeElapsed;
-    bool closeThread=false;
-    int speed;
+    int speed, si_mode;
 };
 
 #endif // SIMULATOR_H

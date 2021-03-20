@@ -111,7 +111,7 @@
      <number>6</number>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton">
+   <widget class="QRadioButton" name="humanButton">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -124,7 +124,7 @@
      <string>Human</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_2">
+   <widget class="QRadioButton" name="siButton">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -135,6 +135,9 @@
     </property>
     <property name="text">
      <string>SI</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">

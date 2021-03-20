@@ -31,7 +31,14 @@ void MainWindow::InitSimulator(){
     //simulator
     QString text = ui->mapsComboBox->currentText();
     QString path = QDir(MAPS_LOCATION).filePath(text);
-    simulator = make_shared<Simulator>(ui->plot, path.toStdString(), ui->speedSlider->value());
+
+    int si_mode = 0;
+    if(ui->siButton->isChecked())
+        si_mode = 0;
+    if(ui->humanButton->isChecked())
+        si_mode = 1;
+
+    simulator = make_shared<Simulator>(ui->plot, path.toStdString(), ui->speedSlider->value(), si_mode);
     time_seconds = 0.0;
 }
 
