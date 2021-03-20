@@ -6,6 +6,7 @@ Mouse::Mouse(Point<int> start)
 }
 
 Position<int> Mouse::GetPosition(){
+    position.localization = position.localization + Point<int>(-1,0);
     return position;
 }
 

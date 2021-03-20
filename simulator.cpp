@@ -1,6 +1,7 @@
 #include "simulator.h"
 
-Simulator::Simulator(QCustomPlot *_plot, string mapFilePath)
+Simulator::Simulator(QCustomPlot *_plot, string mapFilePath, int _speed):
+    speed(_speed)
 {
     this->plot = _plot;
     SetMap(mapFilePath);
@@ -9,6 +10,44 @@ Simulator::Simulator(QCustomPlot *_plot, string mapFilePath)
     PlotMouse();
     plot->replot();
     plot->update();
+}
+
+void Simulator::SetSpeed(int _speed){
+    speed=speed;
+}
+
+Simulator::~Simulator(){
+}
+
+void Simulator::Start(){
+    running = true;
+    timer = make_shared<QElapsedTimer>();
+    timer->start();
+}
+
+void Simulator::Stop(){
+    //simMutex.lock();
+    //closeThread = true;
+    //simMutex.unlock();
+    //simThread->join();
+    timeElapsed = timer->elapsed();
+    running = false;
+}
+
+void Simulator::Tick(){
+    PlotMouse();
+    plot->replot();
+    plot->update();
+}
+
+quint64 Simulator::GetTimerElapsed(){
+    if (running){
+        auto _res = timer->elapsed();
+        timer->restart();
+        return _res;
+    }
+    else
+        return 0;
 }
 
 bool Simulator::SetMap(string mapFilePath){
