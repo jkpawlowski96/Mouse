@@ -2,8 +2,8 @@
 #define SIMULATOR_H
 #include <memory>
 #include "map.h"
+#include "mouse.h"
 #include "geometry.h"
-#include "sensor.h"
 #include "qcustomplot.h"
 #include <iostream>
 
@@ -20,6 +20,8 @@ class Simulator
 {
 public:
     Simulator(QCustomPlot *_plot, string mapFilePath, int _speed, int _si_mode);
+    Simulator(){};
+
     ~Simulator();
     void Start();
     void Stop();
@@ -35,23 +37,25 @@ private:
     void PlotSI();
 
     QCPGraph* DrawLine(Line<double> line, const QColor color=GRAY, const int width=2);
+    QCPGraph* DrawMouseCircle(QVector<double>&x, QVector<double>&y, const QColor color,const int width);
     QCPGraph* DrawMouseLine(QVector<double>&x, QVector<double>&y, const QColor color,const int width);
+
     template<typename T>
     vector<QCPGraph*> DrawRectangle(Point<T> point, const QColor color=GRAY, const int width=1, const double margin=0.1, const int step=1);
     bool running;
     shared_ptr<Map> map;
     shared_ptr<Mouse> mouse;
     shared_ptr<SI> si;
-    Sensor sensor;
     QCustomPlot *plot;
     shared_ptr<QElapsedTimer> timer;
     quint64 timeElapsed;
     int si_mode;
 
     QVector<double> mouseBodyX, mouseBodyY;
-    QCPGraph* mouseBody;
     QVector<double> mouseHeadX, mouseHeadY;
-    QCPGraph* mouseHead;
+    QVector<double> mouseTailX, mouseTailY;
+    QCPGraph *mouseBody, *mouseHead, *mouseTail;
+
     //vector<QCPGraph*> bodyGraphs, headGraphs;
 
 };

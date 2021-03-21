@@ -17,7 +17,10 @@ void Mouse::SetSpeed(int _speed){
     speed = (double)_speed / 100;
 }
 
-void Mouse::Call(SensorData sensorData){
+void Mouse::Call(shared_ptr<Map> map){
+    Position<double> _loc = GetPosition();
+    Position<int> loc = roundPosition(_loc);
+    SensorData sensorData = sensor.Measure(map, loc);
     if(task>=0){
         if(task==Forward){
             double _distance = measureDistance(position.localization, moveTarget);

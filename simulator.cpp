@@ -8,7 +8,8 @@ Simulator::Simulator(QCustomPlot *_plot, string mapFilePath, int _speed, int _si
     //map
     SetMap(mapFilePath);
     //si
-    si = make_shared<SI>();
+    if(_si_mode==0)
+        si = make_shared<SI>();
     //mouse
     mouse = make_shared<Mouse>(map->mapStart, si);
     mouse->SetSpeed(_speed);
@@ -42,8 +43,7 @@ void Simulator::Stop(){
 }
 
 void Simulator::Tick(){
-    auto sensorData = sensor.Measure(map, mouse);
-    mouse->Call(sensorData);
+    mouse->Call(map);
     PlotMouse();
     plot->replot();
     plot->update();
@@ -81,7 +81,7 @@ QCPGraph* Simulator::DrawLine(Line<double> line, const QColor color,const int wi
         return graph;
 }
 
-QCPGraph* Simulator::DrawMouseLine(QVector<double>&x, QVector<double>&y, const QColor color,const int width){
+QCPGraph* Simulator::DrawMouseCircle(QVector<double>&x, QVector<double>&y, const QColor color,const int width){
     QPen pen;
     auto graph = plot->addGraph();
     pen.setColor(color);
@@ -90,6 +90,17 @@ QCPGraph* Simulator::DrawMouseLine(QVector<double>&x, QVector<double>&y, const Q
     graph->setScatterStyle(QCPScatterStyle::ssCircle);
     //ui->plot->graph(0)->setLineStyle(QCPGraph::lsNone);
     graph->setLineStyle((QCPGraph::LineStyle)0);
+    graph->setData(x,y);
+    return graph;
+}
+
+QCPGraph* Simulator::DrawMouseLine(QVector<double>&x, QVector<double>&y, const QColor color,const int width){
+    QPen pen;
+    auto graph = plot->addGraph();
+    pen.setColor(color);
+    pen.setWidth(width);
+    graph->setPen(pen);
+    graph->setLineStyle((QCPGraph::LineStyle)1);
     graph->setData(x,y);
     return graph;
 }
@@ -165,7 +176,8 @@ void Simulator::PlotMouse(bool init){
     mouseBodyY.clear();
     mouseHeadX.clear();
     mouseHeadY.clear();
-
+    mouseTailX.clear();
+    mouseTailY.clear();
     auto pos = mouse->GetPosition();
     mouseBodyX.append(pos.localization.x+0.5);
     mouseBodyY.append(pos.localization.y+0.5);
@@ -173,36 +185,51 @@ void Simulator::PlotMouse(bool init){
     double eye_x1 = pos.localization.x + 0.7;
     double eye_y0 = pos.localization.y + 0.3;
     double eye_y1 = pos.localization.y + 0.7;
+    double tail_s = 0.1;
+    double cx = pos.localization.x + 0.5;
+    double cy = pos.localization.y + 0.5;
+
     switch(pos.direction){
         case Up:
             mouseHeadX = {eye_x0, eye_x1};
             mouseHeadY = {eye_y1, eye_y1};
+            mouseTailX = {cx, cx};
+            mouseTailY = {pos.localization.y + tail_s, cy - tail_s};
             break;
         case Down:
             mouseHeadX = {eye_x0, eye_x1};
             mouseHeadY = {eye_y0, eye_y0};
+            mouseTailX = {cx, cx};
+            mouseTailY = {cy + tail_s, pos.localization.y + 1 - tail_s};
             break;
         case Left:
             mouseHeadX = {eye_x0, eye_x0};
             mouseHeadY = {eye_y0, eye_y1};
+            mouseTailX = {cx + tail_s, pos.localization.x + 1 - tail_s};
+            mouseTailY = {cy, cy};
             break;
         case Right:
             mouseHeadX = {eye_x1, eye_x1};
             mouseHeadY = {eye_y0, eye_y1};
+            mouseTailX = {cx - tail_s, pos.localization.x + tail_s};
+            mouseTailY = {cy, cy};
             break;
         default:
             break;
     }
 
     if(init){
-        mouseBody = DrawMouseLine(mouseBodyX, mouseBodyY, BLUE, 10);
-        mouseHead = DrawMouseLine(mouseHeadX, mouseHeadY, BLUE, 5);
+        mouseBody = DrawMouseCircle(mouseBodyX, mouseBodyY, BLUE, 10);
+        mouseHead = DrawMouseCircle(mouseHeadX, mouseHeadY, BLUE, 5);
+        mouseTail = DrawMouseLine(mouseTailX, mouseTailY, GRAY, 3);
     }
     else{
         mouseBody->data()->clear();
         mouseBody->setData(mouseBodyX, mouseBodyY);
         mouseHead->data()->clear();
         mouseHead->setData(mouseHeadX, mouseHeadY);
+        mouseTail->data()->clear();
+        mouseTail->setData(mouseTailX, mouseTailY);
     }
     cout <<"mouse.loc x: "<<pos.localization.x << " y: "<<pos.localization.y << endl;
 }

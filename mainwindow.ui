@@ -134,7 +134,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>SI</string>
+     <string>Dummy SI</string>
     </property>
     <property name="checked">
      <bool>true</bool>

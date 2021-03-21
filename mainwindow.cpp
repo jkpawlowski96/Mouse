@@ -3,9 +3,10 @@
 #include "utils.h"
 
 
-MainWindow::MainWindow(QWidget *parent)
+MainWindow::MainWindow(QWidget *parent, shared_ptr<Simulator> _simulator)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    , simulator(_simulator)
 {
     ui->setupUi(this);
 

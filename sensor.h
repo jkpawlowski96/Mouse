@@ -2,17 +2,14 @@
 #define SENSOR_H
 #include "geometry.h"
 #include "map.h"
-#include "mouse.h"
 #include <memory>
 #include "sensor_data.h"
 
 class Sensor{
     public:
-        SensorData Measure(shared_ptr<Map> map, shared_ptr<Mouse> mouse){
+        SensorData Measure(shared_ptr<Map> map, Position<int> loc){
             SensorData res;
-            Position<double> loc = mouse->GetPosition();
-            Position<int> _loc = roundPosition(loc);
-            auto path = map->FindPathConst(_loc.localization);
+            auto path = map->FindPathConst(loc.localization);
             Direction d = loc.direction;
             if(path.acces[d]==Forbiden)
                 res.wallDetected = true;
