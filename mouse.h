@@ -1,6 +1,7 @@
 #ifndef MOUSE_H
 #define MOUSE_H
 #include "si.h"
+#include <iostream>
 
 #define MOUSE_LINES {Line<double>(Point<double>(0.2,0.5),Point<double>(0.8,0.8))}
 #define MOVE_STEP 0.1
@@ -12,12 +13,14 @@ public:
     Mouse(Point<int> start, shared_ptr<SI> _si);
     Mouse(){}
     void Call(SensorData sensorData);
+    void SetSpeed(int _speed);
 private:
     Position<double> position;
     shared_ptr<SI> si;
     Task task;
     Point<double> move;
     Point<double> moveTarget;
+    double speed;
 
 };
 

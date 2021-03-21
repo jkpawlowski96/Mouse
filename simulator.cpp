@@ -1,7 +1,7 @@
 #include "simulator.h"
 
 Simulator::Simulator(QCustomPlot *_plot, string mapFilePath, int _speed, int _si_mode):
-    speed(_speed), si_mode(_si_mode)
+    si_mode(_si_mode)
 {
     //assing plot
     this->plot = _plot;
@@ -11,7 +11,7 @@ Simulator::Simulator(QCustomPlot *_plot, string mapFilePath, int _speed, int _si
     si = make_shared<SI>();
     //mouse
     mouse = make_shared<Mouse>(map->mapStart, si);
-
+    mouse->SetSpeed(_speed);
     //plot
     PlotMap();
     PlotMouse(true);
@@ -20,7 +20,7 @@ Simulator::Simulator(QCustomPlot *_plot, string mapFilePath, int _speed, int _si
 }
 
 void Simulator::SetSpeed(int _speed){
-    speed=_speed;
+    mouse->SetSpeed(_speed);
 }
 
 Simulator::~Simulator(){

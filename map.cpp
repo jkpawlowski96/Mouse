@@ -179,4 +179,22 @@ vector<Line<double>> GetPathLines(Path<int> path){
     return res;
 }
 
+void Map::UpdateConnections(shared_ptr<Path<int>> path){
+    auto nearLocalizations = FindNearLocalizations<int>(path->localization);
+    auto nearPaths = FindPaths(nearLocalizations);
+    for(auto& nearPath: nearPaths){
+        Direction d = path->localization >> nearPath->localization;
+        Direction _d =path->localization << nearPath->localization;
+        path->acces[d] = Allowed;
+        path->next[d] = nearPath;
+        nearPath->acces[_d] = Allowed;
+        nearPath->next[_d] = path;
+    }
 
+}
+
+const Path<int> Map::FindPathConst(Point<int> localization){
+    auto path = FindPath(localization);
+    Path<int> res = *path;
+    return res;
+}

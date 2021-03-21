@@ -46,7 +46,7 @@ private:
     QCustomPlot *plot;
     shared_ptr<QElapsedTimer> timer;
     quint64 timeElapsed;
-    int speed, si_mode;
+    int si_mode;
 
     QVector<double> mouseBodyX, mouseBodyY;
     QCPGraph* mouseBody;

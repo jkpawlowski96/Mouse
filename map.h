@@ -18,12 +18,14 @@ class Map
 {
 public:
     Map(string mapFilePath);
+    Map(){};
     ~Map();
     vector<Path<int>> mapPaths;
     Point<int> mapStart, mapSize;
     vector<Point<int>> mapStop;
+    const Path<int> FindPathConst(Point<int> localization);
 
-private:
+protected:
     vector<string> SplitText(string text, char delimiter);
     template<typename T>
     Point<T> GetPoint(string text, char delimiter);
@@ -36,6 +38,8 @@ private:
     void InsertPaths(vector<Path<int>> newPaths);
     template<typename T>
     vector<Point<T>> FindNearLocalizations(Point<T> localization);
+    void UpdateConnections(shared_ptr<Path<int>> path);
+
 };
 
 vector<Line<double>> GetPathLines(Path<int> path);

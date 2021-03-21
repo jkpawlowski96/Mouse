@@ -5,6 +5,7 @@ Mouse::Mouse(Point<int> start, shared_ptr<SI> _si):
 {
     position.localization = doublePoint(start);
     position.direction = Up;
+    task = TaskUnnown;
 }
 
 
@@ -12,6 +13,9 @@ Position<double> Mouse::GetPosition(){
     return position;
 }
 
+void Mouse::SetSpeed(int _speed){
+    speed = (double)_speed / 100;
+}
 
 void Mouse::Call(SensorData sensorData){
     if(task>=0){
@@ -19,7 +23,7 @@ void Mouse::Call(SensorData sensorData){
             double _distance = measureDistance(position.localization, moveTarget);
             if(_distance>MOVE_STEP)
             {//move
-                position.localization = position.localization + move * MOVE_STEP;
+                position.localization = position.localization + move * MOVE_STEP * speed;
             }
             else{//skip
                 position.localization = moveTarget;
@@ -49,6 +53,7 @@ void Mouse::Call(SensorData sensorData){
         task = si->Call(_position, sensorData);
         if(task==Forward){
             move = Point<double>(0.0,0.0);
+            cout << "task: move direction: " << position.direction << endl;
             if(position.direction==Up)
                 move.y = 1.0;
             if(position.direction==Down)

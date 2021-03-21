@@ -3,6 +3,7 @@
 
 struct SensorData{
     bool wallDetected;
+    SensorData(){};
     SensorData(bool _wallDetected):wallDetected(_wallDetected){}
 };
 
