@@ -32,3 +32,43 @@ Point<double> doublePoint(Point<int> p){
     return Point<double>(p.x, p.y);
 }
 
+Direction RotateDirectionLeft(Direction d){
+    if(d==Left)
+        return Down;
+    if(d==Up)
+        return Left;
+    if(d==Right)
+        return Up;
+    if(d==Down)
+        return Right;
+    return DirectionUnnown;
+}
+
+Direction RotateDirectionRight(Direction d){
+    if(d==Left)
+        return Up;
+    if(d==Up)
+        return Right;
+    if(d==Right)
+        return Down;
+    if(d==Down)
+        return Left;
+    return DirectionUnnown;
+}
+Direction TurnAroundDirection(Direction d){
+    return RotateDirectionRight(RotateDirectionRight(d));
+}
+
+Direction DirectionFromInt(int x){
+    if(x==0)
+        return Left;
+    if(x==1)
+        return Up;
+    if(x==2)
+        return Right;
+    if(x==3)
+        return Down;
+}
+
+
+

@@ -1,6 +1,6 @@
 #include "mouse.h"
 
-Mouse::Mouse(Point<int> start, shared_ptr<SI> _si):
+Mouse::Mouse(Point<int> start, SI *_si):
     si(_si)
 {
     position.localization = doublePoint(start);
@@ -33,27 +33,25 @@ void Mouse::Call(shared_ptr<Map> map){
                 task = TaskUnnown;
             }
         }
-        if(task==RotateDown){
-            position.direction=Down;
+        if(task==RotateRight){
+            position.direction = RotateDirectionRight(position.direction);
             task=TaskUnnown;
         }
         if(task==RotateLeft){
-            position.direction=Left;
+            position.direction= RotateDirectionLeft(position.direction);
             task=TaskUnnown;
         }
-        if(task==RotateRight){
-            position.direction=Right;
+        if(task==TurnAround){
+            position.direction=RotateDirectionRight(RotateDirectionRight(position.direction));
             task=TaskUnnown;
         }
-        if(task==RotateUp){
-            position.direction=Up;        
-            task=TaskUnnown;
-        }
+
+
 
     }else{
-        Position<int> _position = roundPosition(position);
+        //Position<int> _position = roundPosition(position);
 
-        task = si->Call(_position, sensorData);
+        task = si->Call(sensorData);
         if(task==Forward){
             move = Point<double>(0.0,0.0);
             cout << "task: move direction: " << position.direction << endl;

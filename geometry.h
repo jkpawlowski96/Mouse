@@ -15,8 +15,8 @@ struct Point{
 
 enum Direction{
     Left = 0,
-    Right = 1,
-    Up = 2,
+    Up = 1,
+    Right = 2,
     Down = 3,
     DirectionUnnown = -1
 };
@@ -153,4 +153,9 @@ Position<int> roundPosition(Position<double> pos);
 
 Point<double> operator+(Point<double> a, Point<double> b);
 
+Direction RotateDirectionLeft(Direction d);
+Direction RotateDirectionRight(Direction d);
+Direction TurnAroundDirection(Direction d);
+
+Direction DirectionFromInt(int x);
 #endif // GEOMETRY_H

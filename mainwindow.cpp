@@ -36,7 +36,7 @@ void MainWindow::InitSimulator(){
     int si_mode = 0;
     if(ui->siButton->isChecked())
         si_mode = 0;
-    if(ui->humanButton->isChecked())
+    if(ui->expanderButton->isChecked())
         si_mode = 1;
 
     simulator = make_shared<Simulator>(ui->plot, path.toStdString(), ui->speedSlider->value(), si_mode);

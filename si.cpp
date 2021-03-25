@@ -4,11 +4,16 @@ SI::SI()
 {
 }
 
-Task SI::Call(Position<int> position, SensorData sensorData)
+Task SI::Call(SensorData sensorData)
 {
     //UpdateMap(position, sensorData);
-    return RandomTask(position, sensorData);
+    return Logic(sensorData);
 }
+
+Task SI::Logic(SensorData sensorData){
+    return RandomTask(sensorData);
+}
+
 
 void SI::UpdateMap(Position<int> position, SensorData sensorData){
     Path<int> newPath;
@@ -27,35 +32,11 @@ void SI::UpdateMap(Position<int> position, SensorData sensorData){
     UpdateConnections(path);
 }
 
-shared_ptr<Path<int>> SI::FirstUnnown(){
-    for(auto& path: mapPaths)
-        for(int i=0; i<4;i++)
-            if(path.acces[i]==Unnown)
-                return make_shared<Path<int>>(path);
-    return nullptr;
-}
 
-Task SI::RandomTask(Position<int> position, SensorData sensorData){
+Task SI::RandomTask(SensorData sensorData){
     int n = rand() % 100;
     if(sensorData.wallDetected || n>=50 ){
-        vector<Task> possible;
-        switch(position.direction){
-            case Up:
-                possible = {RotateLeft, RotateDown, RotateRight};
-            break;
-            case Down:
-                possible = {RotateLeft, RotateUp, RotateRight};
-            break;
-            case Left:
-                possible = {RotateUp, RotateDown, RotateRight};
-            break;
-            case Right:
-                possible = {RotateLeft, RotateDown, RotateUp};
-            break;
-            default:
-                return RotateUp;
-            break;
-        }
+        vector<Task> possible = {RotateLeft, RotateRight, TurnAround};
         n = rand() % 3;
         return possible[n];
     }

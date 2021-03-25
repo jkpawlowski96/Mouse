@@ -5,6 +5,7 @@
 #include "mouse.h"
 #include "geometry.h"
 #include "qcustomplot.h"
+#include "expander.h"
 #include <iostream>
 
 #define DEFAULT_FRAMERATE_MS 50
@@ -45,7 +46,8 @@ private:
     bool running;
     shared_ptr<Map> map;
     shared_ptr<Mouse> mouse;
-    shared_ptr<SI> si;
+    //shared_ptr<SI> si;
+    SI * si;
     QCustomPlot *plot;
     shared_ptr<QElapsedTimer> timer;
     quint64 timeElapsed;

@@ -10,22 +10,21 @@
 enum Task{
     TaskUnnown=-1,
     Forward=0,
-    RotateUp=1,
-    RotateLeft=2,
-    RotateRight=3,
-    RotateDown=4
+    RotateLeft=1,
+    RotateRight=2,
+    TurnAround=3
 };
 
-class SI :private Map
+class SI :protected Map
 {
 public:
     SI();
-    virtual Task Call(Position<int> position, SensorData sensorData);
+    virtual Task Call(SensorData sensorData);
+    virtual Task Logic(SensorData sensorData);
 private:
     void UpdateMap(Position<int> position, SensorData sensorData);
-    shared_ptr<Path<int>> FirstUnnown();
     shared_ptr<Path<int>> PathTo(shared_ptr<Path<int>> start, shared_ptr<Path<int>> stop);
-    Task RandomTask(Position<int> position, SensorData sensorData);
+    Task RandomTask(SensorData sensorData);
     //vector<Path<int>> mapPaths;
 };
 

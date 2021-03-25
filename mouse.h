@@ -11,13 +11,14 @@ class Mouse
 {
 public:
     Position<double> GetPosition();
-    Mouse(Point<int> start, shared_ptr<SI> _si);
+    Mouse(Point<int> start, SI *_si);
     Mouse(){}
     void Call(shared_ptr<Map> map);
     void SetSpeed(int _speed);
 private:
     Position<double> position;
-    shared_ptr<SI> si;
+    //shared_ptr<SI> si;
+    SI *si;
     Sensor sensor;
     Task task;
     Point<double> move;

@@ -9,7 +9,14 @@ Simulator::Simulator(QCustomPlot *_plot, string mapFilePath, int _speed, int _si
     SetMap(mapFilePath);
     //si
     if(_si_mode==0)
-        si = make_shared<SI>();
+        si = new SI();
+    //si
+    if(_si_mode==1){
+        //SI *ex = new Expander();
+        si = new Expander();
+
+    }
+        //Expander ex;
     //mouse
     mouse = make_shared<Mouse>(map->mapStart, si);
     mouse->SetSpeed(_speed);
