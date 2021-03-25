@@ -60,6 +60,7 @@ void MainWindow::on_mapsComboBox_textActivated(const QString &arg1)
 
 void MainWindow::on_startButton_clicked()
 {
+    InitSimulator();
     simulator->Start();
     timer = new QTimer(this);
     QObject::connect(timer, SIGNAL(timeout()), this, SLOT(simulator_plot()));

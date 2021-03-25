@@ -50,10 +50,18 @@ void Simulator::Stop(){
 }
 
 void Simulator::Tick(){
-    mouse->Call(map);
-    PlotMouse();
-    plot->replot();
-    plot->update();
+    if(running){
+        if (mouse->Call(map))
+            Finish();
+        PlotMouse();
+        plot->replot();
+        plot->update();
+    }
+}
+
+void Simulator::Finish(){
+    timeElapsed = timer->elapsed();
+    running = false;
 }
 
 quint64 Simulator::GetTimerElapsed(){

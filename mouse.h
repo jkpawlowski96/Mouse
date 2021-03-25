@@ -13,7 +13,7 @@ public:
     Position<double> GetPosition();
     Mouse(Point<int> start, SI *_si);
     Mouse(){}
-    void Call(shared_ptr<Map> map);
+    bool Call(shared_ptr<Map> map);
     void SetSpeed(int _speed);
 private:
     Position<double> position;

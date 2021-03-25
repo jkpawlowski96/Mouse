@@ -37,9 +37,9 @@ Task Expander::Logic(SensorData sensorData){
             return Forward;
         }
     }
-    auto next = FirstUnnown();
-    auto taskDirection = NearestPath(next);
-
+    //auto next = FirstUnnown();
+    //auto taskDirection = NearestPath(next);
+    auto taskDirection = NearestPathToUnnown();
     if(taskDirection == DirectionUnnown)
         for(int i=0;i<4;i++){
             if(nowPath->acces[i]==Unnown)
@@ -102,6 +102,45 @@ Direction Expander::NearestPath(shared_ptr<Path<int>> target){
             if(ep.path->localization == target->localization){
                 return ep.origin;
             }
+        }
+        nodes = newNodes;
+    }
+}
+
+Direction Expander::NearestPathToUnnown(){
+    ExpanderPath ep;
+    ep.path = nowPath;
+    ep.origin = DirectionUnnown;
+    vector<ExpanderPath> nodes ={ep};
+    for(int d=0; d<4; d++){
+        if(nowPath->next[d] != nullptr){
+            ExpanderPath _ep;
+            _ep.path = nowPath->next[d];
+            _ep.origin = DirectionFromInt(d);
+            nodes.push_back(_ep);
+        }}
+
+    while(true){
+        // find target
+        //vector<shared_ptr<Path<int>>> new_nodes;
+        vector<ExpanderPath> newNodes;
+        // new nodes
+        for(auto &ep : nodes){
+            for(int d=0; d<4; d++){
+                if(ep.path->next[d] != nullptr){
+                    ExpanderPath _ep;
+                    _ep.path = ep.path->next[d];
+                    _ep.origin = ep.origin;
+                    newNodes.push_back(_ep);
+                }
+            }
+        }
+
+        for(auto &ep : nodes){
+            for(int i=0; i<4;i++)
+                if(ep.path->acces[i]==Unnown){
+                    return ep.origin;
+                }
         }
         nodes = newNodes;
     }

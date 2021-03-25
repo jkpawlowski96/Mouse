@@ -17,7 +17,7 @@ void Mouse::SetSpeed(int _speed){
     speed = (double)_speed / 100;
 }
 
-void Mouse::Call(shared_ptr<Map> map){
+bool Mouse::Call(shared_ptr<Map> map){
     Position<double> _loc = GetPosition();
     Position<int> loc = roundPosition(_loc);
     SensorData sensorData = sensor.Measure(map, loc);
@@ -31,6 +31,9 @@ void Mouse::Call(shared_ptr<Map> map){
             else{//skip
                 position.localization = moveTarget;
                 task = TaskUnnown;
+                for(auto const stop : map->mapStop)
+                    if(roundPosition(position).localization == stop)
+                        return true;
             }
         }
         if(task==RotateRight){
@@ -66,6 +69,7 @@ void Mouse::Call(shared_ptr<Map> map){
             moveTarget = position.localization + move;
         }
     }
+    return false;
 }
 
 

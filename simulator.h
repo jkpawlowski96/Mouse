@@ -36,6 +36,7 @@ private:
     void PlotMap();
     void PlotMouse(bool init=false);
     void PlotSI();
+    void Finish();
 
     QCPGraph* DrawLine(Line<double> line, const QColor color=GRAY, const int width=2);
     QCPGraph* DrawMouseCircle(QVector<double>&x, QVector<double>&y, const QColor color,const int width);
