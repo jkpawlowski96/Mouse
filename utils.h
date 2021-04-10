@@ -10,6 +10,12 @@
 
 using namespace std;
 
+/**
+ * @brief Get the Map Files list
+ * 
+ * @param path 
+ * @return QStringList 
+ */
 QStringList GetMapFiles(const char *path=MAPS_LOCATION);
 
 

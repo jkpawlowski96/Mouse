@@ -9,10 +9,6 @@ MainWindow::MainWindow(QWidget *parent, shared_ptr<Simulator> _simulator)
     , simulator(_simulator)
 {
     ui->setupUi(this);
-
-    //ui->plot->addGraph();
-    //ui->plot->graph(0)->setScatterStyle(QCPScatterStyle::ssCircle);
-    //ui->plot->graph(0)->setLineStyle(QCPGraph::lsNone);
     ui->plot->xAxis->setVisible(false);
     ui->plot->yAxis->setVisible(false);
 
@@ -53,10 +49,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_mapsComboBox_textActivated(const QString &arg1)
 {
-    //QString text = ui->mapsComboBox->currentText();
-    //QString path = QDir(MAPS_LOCATION).filePath(text);
-    //simulator->SetMap(path.toStdString());
-    InitSimulator();
+    if(!simulator->isRunning())
+        InitSimulator();
 }
 
 void MainWindow::keyPressEvent(QKeyEvent *event)
@@ -106,7 +100,6 @@ void MainWindow::simulator_plot(){
 
 void MainWindow::on_stopButton_clicked()
 {
-    //simulator->Stop();
     timer->stop();
     InitSimulator();
 }

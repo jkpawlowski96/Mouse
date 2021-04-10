@@ -37,8 +37,6 @@ Task Expander::Logic(SensorData sensorData){
             return Forward;
         }
     }
-    //auto next = FirstUnnown();
-    //auto taskDirection = NearestPath(next);
     auto taskDirection = NearestPathToUnnown();
     if(taskDirection == DirectionUnnown)
         for(int i=0;i<4;i++){
@@ -84,7 +82,6 @@ Direction Expander::NearestPath(shared_ptr<Path<int>> target){
 
     while(true){
         // find target
-        //vector<shared_ptr<Path<int>>> new_nodes;
         vector<ExpanderPath> newNodes;
         // new nodes
         for(auto &ep : nodes){
@@ -122,7 +119,6 @@ Direction Expander::NearestPathToUnnown(){
 
     while(true){
         // find target
-        //vector<shared_ptr<Path<int>>> new_nodes;
         vector<ExpanderPath> newNodes;
         // new nodes
         for(auto &ep : nodes){

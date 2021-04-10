@@ -7,6 +7,10 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+ * @brief Task for mouse
+ * 
+ */
 enum Task{
     TaskUnnown=-1,
     Forward=0,
@@ -15,11 +19,31 @@ enum Task{
     TurnAround=3
 };
 
+/**
+ * @brief SI - mouse controll logic
+ * 
+ */
 class SI :protected Map
 {
 public:
+    /**
+     * @brief Construct a new SI object
+     * 
+     */
     SI();
+    /**
+     * @brief Call SI to get task
+     * 
+     * @param sensorData 
+     * @return Task 
+     */
     virtual Task Call(SensorData sensorData);
+    /**
+     * @brief Logic implementation
+     * 
+     * @param sensorData 
+     * @return Task 
+     */
     virtual Task Logic(SensorData sensorData);
 private:
     void UpdateMap(Position<int> position, SensorData sensorData);
@@ -28,6 +52,13 @@ private:
     //vector<Path<int>> mapPaths;
 };
 
+/**
+ * @brief Get task of rotation from start direction to target direction
+ * 
+ * @param a 
+ * @param b 
+ * @return Task 
+ */
 Task operator>(Direction a, Direction b);
 
 #endif // SI_H

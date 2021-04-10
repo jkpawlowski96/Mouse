@@ -18,19 +18,72 @@
 #define GRAY QColor(137, 137, 136)
 #define YELLOW QColor(255,255,0)
 
+/**
+ * @brief Simulator of micromouse experiment environment
+ * 
+ */
 class Simulator
 {
 public:
+    /**
+     * @brief Construct a new Simulator object
+     * 
+     * @param _plot 
+     * @param mapFilePath 
+     * @param _speed 
+     * @param _si_mode 
+     */
     Simulator(QCustomPlot *_plot, string mapFilePath, int _speed, int _si_mode);
+    /**
+     * @brief Construct a new Simulator object
+     * 
+     */
     Simulator(){};
-
+    /**
+     * @brief Destroy the Simulator object
+     * 
+     */
     ~Simulator();
+    /**
+     * @brief Start simulation
+     * 
+     */
     void Start();
+    /**
+     * @brief Stop simulation
+     * 
+     */
     void Stop();
+    /**
+     * @brief Single tick (step) of simulation
+     * 
+     */
     void Tick();
+    /**
+     * @brief Set the Speed object
+     * 
+     * @param _speed 
+     */
     void SetSpeed(int _speed);
+    /**
+     * @brief Get the Timer Elapsed object
+     * 
+     * @return quint64 
+     */
     quint64 GetTimerElapsed();
+    /**
+     * @brief Human controll set direction
+     * 
+     * @param d 
+     */
     void ControllDirection(Direction d);
+    /**
+     * @brief Is simulation running?
+     * 
+     * @return true 
+     * @return false 
+     */
+    bool isRunning(){return running;}
 
 private:
     bool SetMap(string mapFilePath);
@@ -50,7 +103,6 @@ private:
     shared_ptr<Map> map;
     shared_ptr<Mouse> mouse;
 
-    //shared_ptr<SI> si;
     SI * si;
     HumanControll *controll;
     QCustomPlot *plot;
@@ -62,9 +114,6 @@ private:
     QVector<double> mouseHeadX, mouseHeadY;
     QVector<double> mouseTailX, mouseTailY;
     QCPGraph *mouseBody, *mouseHead, *mouseTail;
-
-    //vector<QCPGraph*> bodyGraphs, headGraphs;
-
 };
 
 #endif // SIMULATOR_H

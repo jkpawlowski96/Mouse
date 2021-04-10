@@ -49,11 +49,7 @@ bool Mouse::Call(shared_ptr<Map> map){
             task=TaskUnnown;
         }
 
-
-
     }else{
-        //Position<int> _position = roundPosition(position);
-
         task = si->Call(sensorData);
         if(task==Forward){
             move = Point<double>(0.0,0.0);

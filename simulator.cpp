@@ -77,6 +77,8 @@ void Simulator::Finish(){
 
 quint64 Simulator::GetTimerElapsed(){
     if (running){
+        if(timer == nullptr)
+            Start();
         auto _res = timer->elapsed();
         timer->restart();
         return _res;
