@@ -24,6 +24,5 @@ private:
 
 
 };
-Task operator>(Direction a, Direction b);
 
 #endif // EXPANDER_H

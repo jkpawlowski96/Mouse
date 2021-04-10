@@ -1,10 +1,10 @@
 #include "mouse.h"
 
-Mouse::Mouse(Point<int> start, SI *_si):
+Mouse::Mouse(Point<int> start, Direction direction, SI *_si):
     si(_si)
 {
     position.localization = doublePoint(start);
-    position.direction = Up;
+    position.direction = direction;
     task = TaskUnnown;
 }
 

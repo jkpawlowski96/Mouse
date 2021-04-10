@@ -28,4 +28,6 @@ private:
     //vector<Path<int>> mapPaths;
 };
 
+Task operator>(Direction a, Direction b);
+
 #endif // SI_H

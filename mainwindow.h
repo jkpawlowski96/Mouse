@@ -28,6 +28,10 @@ private slots:
 
     void on_speedSlider_valueChanged(int value);
 
+protected:
+    void keyPressEvent(QKeyEvent *event) override;
+
+
 private:
     void InitSimulator();
     Ui::MainWindow *ui;

@@ -146,22 +146,4 @@ Direction Expander::NearestPathToUnnown(){
     }
 }
 
-Task operator>(Direction a, Direction b){
-    int d = a-b;
-    if(d==3)
-        return RotateRight;
-    if(d == 2)
-        return TurnAround;
-    if(d == 1)
-        return RotateLeft;
-    if(d == 0)
-        return Forward;
-    if(d == -1)
-        return RotateRight;
-    if(d == -2)
-        return TurnAround;
-    if(d == -3)
-        return RotateLeft;
-    return RotateLeft;
-}
 

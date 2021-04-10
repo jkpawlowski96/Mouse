@@ -34,6 +34,8 @@ void MainWindow::InitSimulator(){
     QString path = QDir(MAPS_LOCATION).filePath(text);
 
     int si_mode = 0;
+    if(ui->humanButton->isChecked())
+        si_mode = -1;
     if(ui->siButton->isChecked())
         si_mode = 0;
     if(ui->expanderButton->isChecked())
@@ -57,6 +59,25 @@ void MainWindow::on_mapsComboBox_textActivated(const QString &arg1)
     InitSimulator();
 }
 
+void MainWindow::keyPressEvent(QKeyEvent *event)
+{
+     if(event->key() == Qt::Key_Up)
+     {
+         simulator->ControllDirection(Up);
+     }
+     if(event->key() == Qt::Key_Down)
+     {
+         simulator->ControllDirection(Down);
+     }
+     if(event->key() == Qt::Key_Left)
+     {
+         simulator->ControllDirection(Left);
+     }
+     if(event->key() == Qt::Key_Right)
+     {
+         simulator->ControllDirection(Right);
+     }
+}
 
 void MainWindow::on_startButton_clicked()
 {

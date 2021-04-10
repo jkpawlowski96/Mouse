@@ -11,6 +11,7 @@ CONFIG += c++11
 SOURCES += \
     expander.cpp \
     geometry.cpp \
+    humancontroll.cpp \
     main.cpp \
     mainwindow.cpp \
     map.cpp \
@@ -23,6 +24,7 @@ SOURCES += \
 HEADERS += \
     expander.h \
     geometry.h \
+    humancontroll.h \
     mainwindow.h \
     map.h \
     mouse.h \

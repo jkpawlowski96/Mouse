@@ -1,13 +1,24 @@
 #include "simulator.h"
 
+void Simulator::ControllDirection(Direction d){
+    if(si_mode==-1)
+        controll->SetDirection(d);
+}
+
+
 Simulator::Simulator(QCustomPlot *_plot, string mapFilePath, int _speed, int _si_mode):
     si_mode(_si_mode)
 {
+    Direction initDirection = Up;
     //assing plot
     this->plot = _plot;
     //map
     SetMap(mapFilePath);
     //si
+    if(_si_mode==-1){
+        controll = new HumanControll(initDirection);
+        si = controll;
+    }
     if(_si_mode==0)
         si = new SI();
     //si
@@ -18,7 +29,7 @@ Simulator::Simulator(QCustomPlot *_plot, string mapFilePath, int _speed, int _si
     }
         //Expander ex;
     //mouse
-    mouse = make_shared<Mouse>(map->mapStart, si);
+    mouse = make_shared<Mouse>(map->mapStart, initDirection, si);
     mouse->SetSpeed(_speed);
     //plot
     PlotMap();

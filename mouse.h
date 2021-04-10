@@ -11,7 +11,7 @@ class Mouse
 {
 public:
     Position<double> GetPosition();
-    Mouse(Point<int> start, SI *_si);
+    Mouse(Point<int> start, Direction direction, SI *_si);
     Mouse(){}
     bool Call(shared_ptr<Map> map);
     void SetSpeed(int _speed);

@@ -6,6 +6,7 @@
 #include "geometry.h"
 #include "qcustomplot.h"
 #include "expander.h"
+#include "humancontroll.h"
 #include <iostream>
 
 #define DEFAULT_FRAMERATE_MS 50
@@ -29,6 +30,7 @@ public:
     void Tick();
     void SetSpeed(int _speed);
     quint64 GetTimerElapsed();
+    void ControllDirection(Direction d);
 
 private:
     bool SetMap(string mapFilePath);
@@ -47,8 +49,10 @@ private:
     bool running;
     shared_ptr<Map> map;
     shared_ptr<Mouse> mouse;
+
     //shared_ptr<SI> si;
     SI * si;
+    HumanControll *controll;
     QCustomPlot *plot;
     shared_ptr<QElapsedTimer> timer;
     quint64 timeElapsed;
