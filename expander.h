@@ -36,7 +36,7 @@ private:
     shared_ptr<Path<int>> FirstUnnown();
     Direction NearestPath(shared_ptr<Path<int>> target);
     Direction NearestPathToUnnown();
-
+    shared_ptr<Path<int>> GetPathByLoc(Point<int> loc);
     shared_ptr<Path<int>> nowPath;
     Direction nowDireciton;
     vector<shared_ptr<Path<int>>> pathList;

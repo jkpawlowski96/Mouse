@@ -17,22 +17,26 @@ Task Expander::Logic(SensorData sensorData){
     else{
         if(nowPath->next[nowDireciton] == nullptr){
             //new path ahead
-            auto newPath = make_shared<Path<int>>(Unnown);
-            pathList.push_back(newPath);
-            newPath->localization = nowPath->localization;
+            auto newLoc = nowPath->localization;
+            if(nowDireciton==Up)
+                newLoc.y += 1;
+            if(nowDireciton==Down)
+                newLoc.y -= 1;
+            if(nowDireciton==Left)
+                newLoc.x -= 1;
+            if(nowDireciton==Right)
+                newLoc.x += 1;
+            shared_ptr<Path<int>> newPath = GetPathByLoc(newLoc);
+            if(newPath == nullptr){
+                newPath = make_shared<Path<int>>(Unnown);
+                newPath->localization = newLoc;
+                pathList.push_back(newPath);
+            }
             Direction _d = TurnAroundDirection(nowDireciton);
             nowPath->acces[nowDireciton] = Allowed;
             newPath->acces[_d] = Allowed;
             nowPath->next[nowDireciton] = newPath;
             newPath->next[_d]= nowPath;
-            if(nowDireciton==Up)
-                newPath->localization.y += 1;
-            if(nowDireciton==Down)
-                newPath->localization.y -= 1;
-            if(nowDireciton==Left)
-                newPath->localization.x -= 1;
-            if(nowDireciton==Right)
-                newPath->localization.x += 1;
             nowPath = newPath;
             return Forward;
         }
@@ -141,5 +145,13 @@ Direction Expander::NearestPathToUnnown(){
         nodes = newNodes;
     }
 }
+
+shared_ptr<Path<int>> Expander::GetPathByLoc(Point<int> loc){
+    for(auto& path: pathList)
+        if(path->localization == loc)
+            return path;
+    return nullptr;
+}
+
 
 
