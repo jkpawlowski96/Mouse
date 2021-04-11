@@ -1,0 +1,12 @@
+<map id="QCustomPlot::addPlottable" name="QCustomPlot::addPlottable">
+<area shape="rect" id="node1" title=" " alt="" coords="860,81,1040,108"/>
+<area shape="rect" id="node2" href="$class_q_custom_plot.html#a6fb2873d35a8a8089842d81a70a54167" title=" " alt="" coords="648,81,812,108"/>
+<area shape="rect" id="node3" href="$class_simulator.html#a214b53f24cdf3663eda13331d63929bd" title=" " alt="" coords="437,31,576,57"/>
+<area shape="rect" id="node7" href="$class_simulator.html#ab35c732a81b08e2304b6c4f11f44c7e2" title=" " alt="" coords="413,81,600,108"/>
+<area shape="rect" id="node10" href="$class_simulator.html#a4c40d6b8d3e664fee6affb9ef24dc67d" title=" " alt="" coords="418,132,595,159"/>
+<area shape="rect" id="node4" href="$class_simulator.html#a6e524c09f3165db6b5a9aa8523e0f377" title=" " alt="" coords="193,5,365,32"/>
+<area shape="rect" id="node5" href="$class_simulator.html#a1f65da606a393ae498e214119f23e970" title=" " alt="" coords="213,56,346,83"/>
+<area shape="rect" id="node6" href="$class_simulator.html#a960bd333fe2c1ce66f45eca8f26a81f7" title="Construct a new Simulator object." alt="" coords="5,56,145,83"/>
+<area shape="rect" id="node8" href="$class_simulator.html#a5a7f9537737abd907827b552fcd7f172" title=" " alt="" coords="206,107,353,133"/>
+<area shape="rect" id="node9" href="$class_simulator.html#a1a18b212eda4277c622502177f302c11" title="Single tick (step) of simulation." alt="" coords="21,107,130,133"/>
+</map>

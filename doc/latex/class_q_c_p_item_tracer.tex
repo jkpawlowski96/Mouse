@@ -1,0 +1,1170 @@
+\hypertarget{class_q_c_p_item_tracer}{}\doxysection{QCPItem\+Tracer Class Reference}
+\label{class_q_c_p_item_tracer}\index{QCPItemTracer@{QCPItemTracer}}
+
+
+Item that sticks to \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} data points.  
+
+
+
+
+{\ttfamily \#include $<$qcustomplot.\+h$>$}
+
+
+
+Inheritance diagram for QCPItem\+Tracer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_q_c_p_item_tracer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for QCPItem\+Tracer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_q_c_p_item_tracer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500}{Tracer\+Style}} \{ \newline
+\mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500aac27462c79146225bfa8fba24d2ee8a4}{ts\+None}}
+, \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500a3323fb04017146e4885e080a459472fa}{ts\+Plus}}
+, \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500af562ec81ac3ba99e26ef8540cf1ec16f}{ts\+Crosshair}}
+, \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500ae2252c28f4842880d71e9f94e69de94e}{ts\+Circle}}
+, \newline
+\mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500a4ed5f01f2c5fd86d980366d79f481b9b}{ts\+Square}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_tracer_adc5ca846eeac323db4aa1fc4081e36be}{QCPItem\+Tracer}} (\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$\mbox{\hyperlink{class_q_c_p_layerable_a473edb813a4c1929d6b6a8fe3ff3faf7}{parent\+Plot}})
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_item_tracer_a43686565a9b70815915618636b9bdf0f}{$\sim$\+QCPItem\+Tracer}} ()
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_tracer_a789cdc627868f5a4a0956816072571c9}{pen}} () const
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_tracer_ad231a97bac99e01778618d1a5720b17d}{selected\+Pen}} () const
+\item 
+QBrush \mbox{\hyperlink{class_q_c_p_item_tracer_a6dd4660e70f58bb00390bcda56be568d}{brush}} () const
+\item 
+QBrush \mbox{\hyperlink{class_q_c_p_item_tracer_ae3e48270b4a6ec20f7a9e1f63e778243}{selected\+Brush}} () const
+\item 
+double \mbox{\hyperlink{class_q_c_p_item_tracer_a4e42d7b49f293273a74a49a2457856e2}{size}} () const
+\item 
+\mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500}{Tracer\+Style}} \mbox{\hyperlink{class_q_c_p_item_tracer_afdaee32c9ccc9c14502b28d3d86bf5ed}{style}} () const
+\item 
+\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$ \mbox{\hyperlink{class_q_c_p_item_tracer_ac6526e3e1fff79894f034823461b138a}{graph}} () const
+\item 
+double \mbox{\hyperlink{class_q_c_p_item_tracer_ac39a0791109588d11bb97cd643da2470}{graph\+Key}} () const
+\item 
+bool \mbox{\hyperlink{class_q_c_p_item_tracer_ae9ab6d72e0a35e1769c0b5a9b58181f2}{interpolating}} () const
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_tracer_af8048636fc1ef0152e51809b008df2ca}{set\+Pen}} (const QPen \&\mbox{\hyperlink{class_q_c_p_item_tracer_a789cdc627868f5a4a0956816072571c9}{pen}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_tracer_ae1bf70db7f13f928660168cd3e5069f3}{set\+Selected\+Pen}} (const QPen \&\mbox{\hyperlink{class_q_c_p_item_tracer_a789cdc627868f5a4a0956816072571c9}{pen}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_tracer_a2c303f7470a30084daa201ed556b3c36}{set\+Brush}} (const QBrush \&\mbox{\hyperlink{class_q_c_p_item_tracer_a6dd4660e70f58bb00390bcda56be568d}{brush}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_tracer_a0f55c084980a7a312af859d3e7b558ef}{set\+Selected\+Brush}} (const QBrush \&\mbox{\hyperlink{class_q_c_p_item_tracer_a6dd4660e70f58bb00390bcda56be568d}{brush}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_tracer_ae47fe0617f5fef5fdb766999569be10a}{set\+Size}} (double \mbox{\hyperlink{class_q_c_p_item_tracer_a4e42d7b49f293273a74a49a2457856e2}{size}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_tracer_a41a2ac4f1acd7897b4e2a2579c03204e}{set\+Style}} (\mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500}{Tracer\+Style}} \mbox{\hyperlink{class_q_c_p_item_tracer_afdaee32c9ccc9c14502b28d3d86bf5ed}{style}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_tracer_af5886f4ded8dd68cb4f3388f390790c0}{set\+Graph}} (\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$\mbox{\hyperlink{class_q_c_p_item_tracer_ac6526e3e1fff79894f034823461b138a}{graph}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_tracer_a6840143b42f3b685cedf7c6d83a704c8}{set\+Graph\+Key}} (double key)
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_tracer_a6c244a9d1175bef12b50afafd4f5fcd2}{set\+Interpolating}} (bool enabled)
+\item 
+virtual double \mbox{\hyperlink{class_q_c_p_item_tracer_ae1dc728384936184e7552a6d0d67fd75}{select\+Test}} (const QPointF \&pos, bool only\+Selectable, QVariant $\ast$details=0) const
+\item 
+void \mbox{\hyperlink{class_q_c_p_item_tracer_a5b90296109e36384aedbc8908a670413}{update\+Position}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}} $\ast$const \mbox{\hyperlink{class_q_c_p_item_tracer_a69917e2fdb2b3a929c196958feee7cbe}{position}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_item_tracer_aaaf49b48382c730ec9be0e74c2538315}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter)
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_tracer_abffdcf64d0f84f7b41bd4af07d144642}{main\+Pen}} () const
+\item 
+QBrush \mbox{\hyperlink{class_q_c_p_item_tracer_a94f81c54197577e86c53a60cf39155cd}{main\+Brush}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_tracer_a579e3bd6bd16d6aaff03638dc8a99a69}{m\+Pen}}
+\item 
+QPen \mbox{\hyperlink{class_q_c_p_item_tracer_a3f61829784200819661d1e2a5354d866}{m\+Selected\+Pen}}
+\item 
+QBrush \mbox{\hyperlink{class_q_c_p_item_tracer_a6597be63a17a266233941354200b2340}{m\+Brush}}
+\item 
+QBrush \mbox{\hyperlink{class_q_c_p_item_tracer_a1c15d2adde40efdcc0ef1ff78fd256a6}{m\+Selected\+Brush}}
+\item 
+double \mbox{\hyperlink{class_q_c_p_item_tracer_a575153a24bb357d1e006f6bc3bd099b9}{m\+Size}}
+\item 
+\mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500}{Tracer\+Style}} \mbox{\hyperlink{class_q_c_p_item_tracer_afb1f236bebf417544e0138fef22a292e}{m\+Style}}
+\item 
+\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$ \mbox{\hyperlink{class_q_c_p_item_tracer_a2d70cf616b579563aa15f796dfc143ac}{m\+Graph}}
+\item 
+double \mbox{\hyperlink{class_q_c_p_item_tracer_a8fa20f2e9ee07d21fd7c8d30ba4702ca}{m\+Graph\+Key}}
+\item 
+bool \mbox{\hyperlink{class_q_c_p_item_tracer_afab37c22ad39f235921e86f93cd84595}{m\+Interpolating}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Item that sticks to \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} data points. 
+
+
+
+The tracer can be connected with a \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} via \mbox{\hyperlink{class_q_c_p_item_tracer_af5886f4ded8dd68cb4f3388f390790c0}{set\+Graph}}. Then it will automatically adopt the coordinate axes of the graph and update its {\itshape position} to be on the graph\textquotesingle{}s data. This means the key stays controllable via \mbox{\hyperlink{class_q_c_p_item_tracer_a6840143b42f3b685cedf7c6d83a704c8}{set\+Graph\+Key}}, but the value will follow the graph data. If a \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} is connected, note that setting the coordinates of the tracer item directly via {\itshape position} will have no effect because they will be overriden in the next redraw (this is when the coordinate update happens).
+
+If the specified key in \mbox{\hyperlink{class_q_c_p_item_tracer_a6840143b42f3b685cedf7c6d83a704c8}{set\+Graph\+Key}} is outside the key bounds of the graph, the tracer will stay at the corresponding end of the graph.
+
+With \mbox{\hyperlink{class_q_c_p_item_tracer_a6c244a9d1175bef12b50afafd4f5fcd2}{set\+Interpolating}} you may specify whether the tracer may only stay exactly on data points or whether it interpolates data points linearly, if given a key that lies between two data points of the graph.
+
+The tracer has different visual styles, see \mbox{\hyperlink{class_q_c_p_item_tracer_a41a2ac4f1acd7897b4e2a2579c03204e}{set\+Style}}. It is also possible to make the tracer have no own visual appearance (set the style to \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500aac27462c79146225bfa8fba24d2ee8a4}{ts\+None}}), and just connect other item positions to the tracer {\itshape position} (used as an anchor) via \mbox{\hyperlink{class_q_c_p_item_position_ac094d67a95d2dceafa0d50b9db3a7e51}{QCPItem\+Position\+::set\+Parent\+Anchor}}.
+
+\begin{DoxyNote}{Note}
+The tracer position is only automatically updated upon redraws. So when the data of the graph changes and immediately afterwards (without a redraw) the a position coordinates of the tracer are retrieved, they will not reflect the updated data of the graph. In this case \mbox{\hyperlink{class_q_c_p_item_tracer_a5b90296109e36384aedbc8908a670413}{update\+Position}} must be called manually, prior to reading the tracer coordinates. 
+\end{DoxyNote}
+
+
+Definition at line 3634 of file qcustomplot.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500}\label{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500}} 
+\index{QCPItemTracer@{QCPItemTracer}!TracerStyle@{TracerStyle}}
+\index{TracerStyle@{TracerStyle}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{TracerStyle}{TracerStyle}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500}{QCPItem\+Tracer\+::\+Tracer\+Style}}}
+
+The different visual appearances a tracer item can have. Some styles size may be controlled with \mbox{\hyperlink{class_q_c_p_item_tracer_ae47fe0617f5fef5fdb766999569be10a}{set\+Size}}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_item_tracer_a41a2ac4f1acd7897b4e2a2579c03204e}{set\+Style}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{tsNone@{tsNone}!QCPItemTracer@{QCPItemTracer}}\index{QCPItemTracer@{QCPItemTracer}!tsNone@{tsNone}}}\mbox{\Hypertarget{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500aac27462c79146225bfa8fba24d2ee8a4}\label{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500aac27462c79146225bfa8fba24d2ee8a4}} 
+ts\+None&The tracer is not visible. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{tsPlus@{tsPlus}!QCPItemTracer@{QCPItemTracer}}\index{QCPItemTracer@{QCPItemTracer}!tsPlus@{tsPlus}}}\mbox{\Hypertarget{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500a3323fb04017146e4885e080a459472fa}\label{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500a3323fb04017146e4885e080a459472fa}} 
+ts\+Plus&A plus shaped crosshair with limited size. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{tsCrosshair@{tsCrosshair}!QCPItemTracer@{QCPItemTracer}}\index{QCPItemTracer@{QCPItemTracer}!tsCrosshair@{tsCrosshair}}}\mbox{\Hypertarget{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500af562ec81ac3ba99e26ef8540cf1ec16f}\label{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500af562ec81ac3ba99e26ef8540cf1ec16f}} 
+ts\+Crosshair&A plus shaped crosshair which spans the complete axis rect. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{tsCircle@{tsCircle}!QCPItemTracer@{QCPItemTracer}}\index{QCPItemTracer@{QCPItemTracer}!tsCircle@{tsCircle}}}\mbox{\Hypertarget{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500ae2252c28f4842880d71e9f94e69de94e}\label{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500ae2252c28f4842880d71e9f94e69de94e}} 
+ts\+Circle&A circle. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{tsSquare@{tsSquare}!QCPItemTracer@{QCPItemTracer}}\index{QCPItemTracer@{QCPItemTracer}!tsSquare@{tsSquare}}}\mbox{\Hypertarget{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500a4ed5f01f2c5fd86d980366d79f481b9b}\label{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500a4ed5f01f2c5fd86d980366d79f481b9b}} 
+ts\+Square&A square. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 3654 of file qcustomplot.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3654                    \{ \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500aac27462c79146225bfa8fba24d2ee8a4}{tsNone}}        }
+\DoxyCodeLine{3655                      ,\mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500a3323fb04017146e4885e080a459472fa}{tsPlus}}       }
+\DoxyCodeLine{3656                      ,\mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500af562ec81ac3ba99e26ef8540cf1ec16f}{tsCrosshair}}  }
+\DoxyCodeLine{3657                      ,\mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500ae2252c28f4842880d71e9f94e69de94e}{tsCircle}}     }
+\DoxyCodeLine{3658                      ,\mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500a4ed5f01f2c5fd86d980366d79f481b9b}{tsSquare}}     }
+\DoxyCodeLine{3659                    \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_adc5ca846eeac323db4aa1fc4081e36be}\label{class_q_c_p_item_tracer_adc5ca846eeac323db4aa1fc4081e36be}} 
+\index{QCPItemTracer@{QCPItemTracer}!QCPItemTracer@{QCPItemTracer}}
+\index{QCPItemTracer@{QCPItemTracer}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{QCPItemTracer()}{QCPItemTracer()}}
+{\footnotesize\ttfamily QCPItem\+Tracer\+::\+QCPItem\+Tracer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} $\ast$}]{parent\+Plot }\end{DoxyParamCaption})}
+
+Creates a tracer item and sets default values.
+
+The constructed item can be added to the plot with \mbox{\hyperlink{class_q_custom_plot_aa500620379262321685cb7a7674cbd2a}{QCustom\+Plot\+::add\+Item}}. 
+
+Definition at line 22994 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22994                                                     :}
+\DoxyCodeLine{22995   \mbox{\hyperlink{class_q_c_p_abstract_item_a9922507d8b4503a1fe1ed0b1030e23b6}{QCPAbstractItem}}(\mbox{\hyperlink{class_q_c_p_layerable_a473edb813a4c1929d6b6a8fe3ff3faf7}{parentPlot}}),}
+\DoxyCodeLine{22996   \mbox{\hyperlink{class_q_c_p_item_tracer_a69917e2fdb2b3a929c196958feee7cbe}{position}}(\mbox{\hyperlink{class_q_c_p_abstract_item_a75036d39c4d4e2e1a7dd145fff915d32}{createPosition}}(QLatin1String(\textcolor{stringliteral}{"{}position"{}}))),}
+\DoxyCodeLine{22997   \mbox{\hyperlink{class_q_c_p_item_tracer_a2d70cf616b579563aa15f796dfc143ac}{mGraph}}(0)}
+\DoxyCodeLine{22998 \{}
+\DoxyCodeLine{22999   \mbox{\hyperlink{class_q_c_p_item_tracer_a69917e2fdb2b3a929c196958feee7cbe}{position}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_aa988ba4e87ab684c9021017dcaba945f}{setCoords}}(0, 0);}
+\DoxyCodeLine{23000 }
+\DoxyCodeLine{23001   \mbox{\hyperlink{class_q_c_p_item_tracer_a2c303f7470a30084daa201ed556b3c36}{setBrush}}(Qt::NoBrush);}
+\DoxyCodeLine{23002   \mbox{\hyperlink{class_q_c_p_item_tracer_a0f55c084980a7a312af859d3e7b558ef}{setSelectedBrush}}(Qt::NoBrush);}
+\DoxyCodeLine{23003   \mbox{\hyperlink{class_q_c_p_item_tracer_af8048636fc1ef0152e51809b008df2ca}{setPen}}(QPen(Qt::black));}
+\DoxyCodeLine{23004   \mbox{\hyperlink{class_q_c_p_item_tracer_ae1bf70db7f13f928660168cd3e5069f3}{setSelectedPen}}(QPen(Qt::blue, 2));}
+\DoxyCodeLine{23005   \mbox{\hyperlink{class_q_c_p_item_tracer_a41a2ac4f1acd7897b4e2a2579c03204e}{setStyle}}(\mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500af562ec81ac3ba99e26ef8540cf1ec16f}{tsCrosshair}});}
+\DoxyCodeLine{23006   \mbox{\hyperlink{class_q_c_p_item_tracer_ae47fe0617f5fef5fdb766999569be10a}{setSize}}(6);}
+\DoxyCodeLine{23007   \mbox{\hyperlink{class_q_c_p_item_tracer_a6c244a9d1175bef12b50afafd4f5fcd2}{setInterpolating}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{23008   \mbox{\hyperlink{class_q_c_p_item_tracer_a6840143b42f3b685cedf7c6d83a704c8}{setGraphKey}}(0);}
+\DoxyCodeLine{23009 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_adc5ca846eeac323db4aa1fc4081e36be_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a43686565a9b70815915618636b9bdf0f}\label{class_q_c_p_item_tracer_a43686565a9b70815915618636b9bdf0f}} 
+\index{QCPItemTracer@{QCPItemTracer}!````~QCPItemTracer@{$\sim$QCPItemTracer}}
+\index{````~QCPItemTracer@{$\sim$QCPItemTracer}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{$\sim$QCPItemTracer()}{~QCPItemTracer()}}
+{\footnotesize\ttfamily QCPItem\+Tracer\+::$\sim$\+QCPItem\+Tracer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 23011 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23012 \{}
+\DoxyCodeLine{23013 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a6dd4660e70f58bb00390bcda56be568d}\label{class_q_c_p_item_tracer_a6dd4660e70f58bb00390bcda56be568d}} 
+\index{QCPItemTracer@{QCPItemTracer}!brush@{brush}}
+\index{brush@{brush}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{brush()}{brush()}}
+{\footnotesize\ttfamily QBrush QCPItem\+Tracer\+::brush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 3668 of file qcustomplot.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3668 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_tracer_a6597be63a17a266233941354200b2340}{mBrush}}; \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_a6dd4660e70f58bb00390bcda56be568d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_aaaf49b48382c730ec9be0e74c2538315}\label{class_q_c_p_item_tracer_aaaf49b48382c730ec9be0e74c2538315}} 
+\index{QCPItemTracer@{QCPItemTracer}!draw@{draw}}
+\index{draw@{draw}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void QCPItem\+Tracer\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_item_ad0dc056f650c3ca73414e6b4f01674ef}{QCPAbstract\+Item}}.
+
+
+
+Definition at line 23191 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23192 \{}
+\DoxyCodeLine{23193   \mbox{\hyperlink{class_q_c_p_item_tracer_a5b90296109e36384aedbc8908a670413}{updatePosition}}();}
+\DoxyCodeLine{23194   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_item_tracer_afb1f236bebf417544e0138fef22a292e}{mStyle}} == \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500aac27462c79146225bfa8fba24d2ee8a4}{tsNone}})}
+\DoxyCodeLine{23195     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{23196 }
+\DoxyCodeLine{23197   painter-\/>\mbox{\hyperlink{class_q_c_p_painter_af9c7a4cd1791403901f8c5b82a150195}{setPen}}(\mbox{\hyperlink{class_q_c_p_item_tracer_abffdcf64d0f84f7b41bd4af07d144642}{mainPen}}());}
+\DoxyCodeLine{23198   painter-\/>setBrush(\mbox{\hyperlink{class_q_c_p_item_tracer_a94f81c54197577e86c53a60cf39155cd}{mainBrush}}());}
+\DoxyCodeLine{23199   QPointF center(\mbox{\hyperlink{class_q_c_p_item_tracer_a69917e2fdb2b3a929c196958feee7cbe}{position}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a6cad070c22801295231f5bd6045afe70}{pixelPoint}}());}
+\DoxyCodeLine{23200   \textcolor{keywordtype}{double} w = \mbox{\hyperlink{class_q_c_p_item_tracer_a575153a24bb357d1e006f6bc3bd099b9}{mSize}}/2.0;}
+\DoxyCodeLine{23201   QRect clip = \mbox{\hyperlink{class_q_c_p_abstract_item_a550ecff39195d9ff3d5cf239eb802ea7}{clipRect}}();}
+\DoxyCodeLine{23202   \textcolor{keywordflow}{switch} (\mbox{\hyperlink{class_q_c_p_item_tracer_afb1f236bebf417544e0138fef22a292e}{mStyle}})}
+\DoxyCodeLine{23203   \{}
+\DoxyCodeLine{23204     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500aac27462c79146225bfa8fba24d2ee8a4}{tsNone}}: \textcolor{keywordflow}{return};}
+\DoxyCodeLine{23205     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500a3323fb04017146e4885e080a459472fa}{tsPlus}}:}
+\DoxyCodeLine{23206     \{}
+\DoxyCodeLine{23207       \textcolor{keywordflow}{if} (clip.intersects(QRectF(center-\/QPointF(w, w), center+QPointF(w, w)).toRect()))}
+\DoxyCodeLine{23208       \{}
+\DoxyCodeLine{23209         painter-\/>\mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{drawLine}}(QLineF(center+QPointF(-\/w, 0), center+QPointF(w, 0)));}
+\DoxyCodeLine{23210         painter-\/>\mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{drawLine}}(QLineF(center+QPointF(0, -\/w), center+QPointF(0, w)));}
+\DoxyCodeLine{23211       \}}
+\DoxyCodeLine{23212       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{23213     \}}
+\DoxyCodeLine{23214     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500af562ec81ac3ba99e26ef8540cf1ec16f}{tsCrosshair}}:}
+\DoxyCodeLine{23215     \{}
+\DoxyCodeLine{23216       \textcolor{keywordflow}{if} (center.y() > clip.top() \&\& center.y() < clip.bottom())}
+\DoxyCodeLine{23217         painter-\/>\mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{drawLine}}(QLineF(clip.left(), center.y(), clip.right(), center.y()));}
+\DoxyCodeLine{23218       \textcolor{keywordflow}{if} (center.x() > clip.left() \&\& center.x() < clip.right())}
+\DoxyCodeLine{23219         painter-\/>\mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{drawLine}}(QLineF(center.x(), clip.top(), center.x(), clip.bottom()));}
+\DoxyCodeLine{23220       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{23221     \}}
+\DoxyCodeLine{23222     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500ae2252c28f4842880d71e9f94e69de94e}{tsCircle}}:}
+\DoxyCodeLine{23223     \{}
+\DoxyCodeLine{23224       \textcolor{keywordflow}{if} (clip.intersects(QRectF(center-\/QPointF(w, w), center+QPointF(w, w)).toRect()))}
+\DoxyCodeLine{23225         painter-\/>drawEllipse(center, w, w);}
+\DoxyCodeLine{23226       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{23227     \}}
+\DoxyCodeLine{23228     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500a4ed5f01f2c5fd86d980366d79f481b9b}{tsSquare}}:}
+\DoxyCodeLine{23229     \{}
+\DoxyCodeLine{23230       \textcolor{keywordflow}{if} (clip.intersects(QRectF(center-\/QPointF(w, w), center+QPointF(w, w)).toRect()))}
+\DoxyCodeLine{23231         painter-\/>drawRect(QRectF(center-\/QPointF(w, w), center+QPointF(w, w)));}
+\DoxyCodeLine{23232       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{23233     \}}
+\DoxyCodeLine{23234   \}}
+\DoxyCodeLine{23235 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_aaaf49b48382c730ec9be0e74c2538315_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_ac6526e3e1fff79894f034823461b138a}\label{class_q_c_p_item_tracer_ac6526e3e1fff79894f034823461b138a}} 
+\index{QCPItemTracer@{QCPItemTracer}!graph@{graph}}
+\index{graph@{graph}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{graph()}{graph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}}$\ast$ QCPItem\+Tracer\+::graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 3672 of file qcustomplot.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3672 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_tracer_a2d70cf616b579563aa15f796dfc143ac}{mGraph}}; \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_ac6526e3e1fff79894f034823461b138a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_ac39a0791109588d11bb97cd643da2470}\label{class_q_c_p_item_tracer_ac39a0791109588d11bb97cd643da2470}} 
+\index{QCPItemTracer@{QCPItemTracer}!graphKey@{graphKey}}
+\index{graphKey@{graphKey}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{graphKey()}{graphKey()}}
+{\footnotesize\ttfamily double QCPItem\+Tracer\+::graph\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 3673 of file qcustomplot.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3673 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_tracer_a8fa20f2e9ee07d21fd7c8d30ba4702ca}{mGraphKey}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_ae9ab6d72e0a35e1769c0b5a9b58181f2}\label{class_q_c_p_item_tracer_ae9ab6d72e0a35e1769c0b5a9b58181f2}} 
+\index{QCPItemTracer@{QCPItemTracer}!interpolating@{interpolating}}
+\index{interpolating@{interpolating}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{interpolating()}{interpolating()}}
+{\footnotesize\ttfamily bool QCPItem\+Tracer\+::interpolating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 3674 of file qcustomplot.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3674 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_tracer_afab37c22ad39f235921e86f93cd84595}{mInterpolating}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a94f81c54197577e86c53a60cf39155cd}\label{class_q_c_p_item_tracer_a94f81c54197577e86c53a60cf39155cd}} 
+\index{QCPItemTracer@{QCPItemTracer}!mainBrush@{mainBrush}}
+\index{mainBrush@{mainBrush}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{mainBrush()}{mainBrush()}}
+{\footnotesize\ttfamily QBrush QCPItem\+Tracer\+::main\+Brush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 23312 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23313 \{}
+\DoxyCodeLine{23314   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_abstract_item_a4bdb3457dad1d268c0f78a44152b9645}{mSelected}} ? \mbox{\hyperlink{class_q_c_p_item_tracer_a1c15d2adde40efdcc0ef1ff78fd256a6}{mSelectedBrush}} : \mbox{\hyperlink{class_q_c_p_item_tracer_a6597be63a17a266233941354200b2340}{mBrush}};}
+\DoxyCodeLine{23315 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_a94f81c54197577e86c53a60cf39155cd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_abffdcf64d0f84f7b41bd4af07d144642}\label{class_q_c_p_item_tracer_abffdcf64d0f84f7b41bd4af07d144642}} 
+\index{QCPItemTracer@{QCPItemTracer}!mainPen@{mainPen}}
+\index{mainPen@{mainPen}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{mainPen()}{mainPen()}}
+{\footnotesize\ttfamily QPen QCPItem\+Tracer\+::main\+Pen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 23302 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23303 \{}
+\DoxyCodeLine{23304   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_abstract_item_a4bdb3457dad1d268c0f78a44152b9645}{mSelected}} ? \mbox{\hyperlink{class_q_c_p_item_tracer_a3f61829784200819661d1e2a5354d866}{mSelectedPen}} : \mbox{\hyperlink{class_q_c_p_item_tracer_a579e3bd6bd16d6aaff03638dc8a99a69}{mPen}};}
+\DoxyCodeLine{23305 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_abffdcf64d0f84f7b41bd4af07d144642_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a789cdc627868f5a4a0956816072571c9}\label{class_q_c_p_item_tracer_a789cdc627868f5a4a0956816072571c9}} 
+\index{QCPItemTracer@{QCPItemTracer}!pen@{pen}}
+\index{pen@{pen}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{pen()}{pen()}}
+{\footnotesize\ttfamily QPen QCPItem\+Tracer\+::pen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 3666 of file qcustomplot.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3666 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_tracer_a579e3bd6bd16d6aaff03638dc8a99a69}{mPen}}; \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_a789cdc627868f5a4a0956816072571c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_ae3e48270b4a6ec20f7a9e1f63e778243}\label{class_q_c_p_item_tracer_ae3e48270b4a6ec20f7a9e1f63e778243}} 
+\index{QCPItemTracer@{QCPItemTracer}!selectedBrush@{selectedBrush}}
+\index{selectedBrush@{selectedBrush}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{selectedBrush()}{selectedBrush()}}
+{\footnotesize\ttfamily QBrush QCPItem\+Tracer\+::selected\+Brush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 3669 of file qcustomplot.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3669 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_tracer_a1c15d2adde40efdcc0ef1ff78fd256a6}{mSelectedBrush}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_ad231a97bac99e01778618d1a5720b17d}\label{class_q_c_p_item_tracer_ad231a97bac99e01778618d1a5720b17d}} 
+\index{QCPItemTracer@{QCPItemTracer}!selectedPen@{selectedPen}}
+\index{selectedPen@{selectedPen}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{selectedPen()}{selectedPen()}}
+{\footnotesize\ttfamily QPen QCPItem\+Tracer\+::selected\+Pen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 3667 of file qcustomplot.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3667 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_tracer_a3f61829784200819661d1e2a5354d866}{mSelectedPen}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_ae1dc728384936184e7552a6d0d67fd75}\label{class_q_c_p_item_tracer_ae1dc728384936184e7552a6d0d67fd75}} 
+\index{QCPItemTracer@{QCPItemTracer}!selectTest@{selectTest}}
+\index{selectTest@{selectTest}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{selectTest()}{selectTest()}}
+{\footnotesize\ttfamily double QCPItem\+Tracer\+::select\+Test (\begin{DoxyParamCaption}\item[{const QPointF \&}]{pos,  }\item[{bool}]{only\+Selectable,  }\item[{QVariant $\ast$}]{details = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function is used to decide whether a click hits a layerable object or not.
+
+{\itshape pos} is a point in pixel coordinates on the \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} surface. This function returns the shortest pixel distance of this point to the object. If the object is either invisible or the distance couldn\textquotesingle{}t be determined, -\/1.\+0 is returned. Further, if {\itshape only\+Selectable} is true and the object is not selectable, -\/1.\+0 is returned, too.
+
+If the object is represented not by single lines but by an area like a \mbox{\hyperlink{class_q_c_p_item_text}{QCPItem\+Text}} or the bars of a \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} plottable, a click inside the area should also be considered a hit. In these cases this function thus returns a constant value greater zero but still below the parent plot\textquotesingle{}s selection tolerance. (typically the selection\+Tolerance multiplied by 0.\+99).
+
+Providing a constant value for area objects allows selecting line objects even when they are obscured by such area objects, by clicking close to the lines (i.\+e. closer than 0.\+99$\ast$selection\+Tolerance).
+
+The actual setting of the selection state is not done by this function. This is handled by the parent \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} when the mouse\+Release\+Event occurs, and the finally selected object is notified via the select\+Event/deselect\+Event methods.
+
+{\itshape details} is an optional output parameter. Every layerable subclass may place any information in {\itshape details}. This information will be passed to \mbox{\hyperlink{class_q_c_p_abstract_item_aaf92af7b9893712959a6c073d334d88d}{select\+Event}} when the parent \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} decides on the basis of this select\+Test call, that the object was successfully selected. The subsequent call to \mbox{\hyperlink{class_q_c_p_abstract_item_aaf92af7b9893712959a6c073d334d88d}{select\+Event}} will carry the {\itshape details}. This is useful for multi-\/part objects (like \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}}). This way, a possibly complex calculation to decide which part was clicked is only done once in \mbox{\hyperlink{class_q_c_p_item_tracer_ae1dc728384936184e7552a6d0d67fd75}{select\+Test}}. The result (i.\+e. the actually clicked part) can then be placed in {\itshape details}. So in the subsequent \mbox{\hyperlink{class_q_c_p_abstract_item_aaf92af7b9893712959a6c073d334d88d}{select\+Event}}, the decision which part was selected doesn\textquotesingle{}t have to be done a second time for a single selection operation.
+
+You may pass 0 as {\itshape details} to indicate that you are not interested in those selection details.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_abstract_item_aaf92af7b9893712959a6c073d334d88d}{select\+Event}}, \mbox{\hyperlink{class_q_c_p_abstract_item_a91f090d6763cfedb0749219c63788ae9}{deselect\+Event}}, \mbox{\hyperlink{class_q_custom_plot_a5ee1e2f6ae27419deca53e75907c27e5}{QCustom\+Plot\+::set\+Interactions}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_item_a96d522d10ffc0413b9a366c6f7f0476b}{QCPAbstract\+Item}}.
+
+
+
+Definition at line 23134 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23135 \{}
+\DoxyCodeLine{23136   Q\_UNUSED(details)}
+\DoxyCodeLine{23137   \textcolor{keywordflow}{if} (onlySelectable \&\& !\mbox{\hyperlink{class_q_c_p_abstract_item_ad81eb35c8726a0f458db9df9732e0e41}{mSelectable}})}
+\DoxyCodeLine{23138     \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{23139 }
+\DoxyCodeLine{23140   QPointF center(\mbox{\hyperlink{class_q_c_p_item_tracer_a69917e2fdb2b3a929c196958feee7cbe}{position}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a6cad070c22801295231f5bd6045afe70}{pixelPoint}}());}
+\DoxyCodeLine{23141   \textcolor{keywordtype}{double} w = \mbox{\hyperlink{class_q_c_p_item_tracer_a575153a24bb357d1e006f6bc3bd099b9}{mSize}}/2.0;}
+\DoxyCodeLine{23142   QRect clip = \mbox{\hyperlink{class_q_c_p_abstract_item_a550ecff39195d9ff3d5cf239eb802ea7}{clipRect}}();}
+\DoxyCodeLine{23143   \textcolor{keywordflow}{switch} (\mbox{\hyperlink{class_q_c_p_item_tracer_afb1f236bebf417544e0138fef22a292e}{mStyle}})}
+\DoxyCodeLine{23144   \{}
+\DoxyCodeLine{23145     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500aac27462c79146225bfa8fba24d2ee8a4}{tsNone}}: \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{23146     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500a3323fb04017146e4885e080a459472fa}{tsPlus}}:}
+\DoxyCodeLine{23147     \{}
+\DoxyCodeLine{23148       \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_abstract_item_a550ecff39195d9ff3d5cf239eb802ea7}{clipRect}}().intersects(QRectF(center-\/QPointF(w, w), center+QPointF(w, w)).toRect()))}
+\DoxyCodeLine{23149         \textcolor{keywordflow}{return} qSqrt(qMin(\mbox{\hyperlink{class_q_c_p_abstract_item_a8f4d23e883cbb55219959ed6ce8f10ac}{distSqrToLine}}(center+QPointF(-\/w, 0), center+QPointF(w, 0), pos),}
+\DoxyCodeLine{23150                           \mbox{\hyperlink{class_q_c_p_abstract_item_a8f4d23e883cbb55219959ed6ce8f10ac}{distSqrToLine}}(center+QPointF(0, -\/w), center+QPointF(0, w), pos)));}
+\DoxyCodeLine{23151       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{23152     \}}
+\DoxyCodeLine{23153     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500af562ec81ac3ba99e26ef8540cf1ec16f}{tsCrosshair}}:}
+\DoxyCodeLine{23154     \{}
+\DoxyCodeLine{23155       \textcolor{keywordflow}{return} qSqrt(qMin(\mbox{\hyperlink{class_q_c_p_abstract_item_a8f4d23e883cbb55219959ed6ce8f10ac}{distSqrToLine}}(QPointF(clip.left(), center.y()), QPointF(clip.right(), center.y()), pos),}
+\DoxyCodeLine{23156                         \mbox{\hyperlink{class_q_c_p_abstract_item_a8f4d23e883cbb55219959ed6ce8f10ac}{distSqrToLine}}(QPointF(center.x(), clip.top()), QPointF(center.x(), clip.bottom()), pos)));}
+\DoxyCodeLine{23157     \}}
+\DoxyCodeLine{23158     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500ae2252c28f4842880d71e9f94e69de94e}{tsCircle}}:}
+\DoxyCodeLine{23159     \{}
+\DoxyCodeLine{23160       \textcolor{keywordflow}{if} (clip.intersects(QRectF(center-\/QPointF(w, w), center+QPointF(w, w)).toRect()))}
+\DoxyCodeLine{23161       \{}
+\DoxyCodeLine{23162         \textcolor{comment}{// distance to border:}}
+\DoxyCodeLine{23163         \textcolor{keywordtype}{double} centerDist = QVector2D(center-\/pos).length();}
+\DoxyCodeLine{23164         \textcolor{keywordtype}{double} circleLine = w;}
+\DoxyCodeLine{23165         \textcolor{keywordtype}{double} result = qAbs(centerDist-\/circleLine);}
+\DoxyCodeLine{23166         \textcolor{comment}{// filled ellipse, allow click inside to count as hit:}}
+\DoxyCodeLine{23167         \textcolor{keywordflow}{if} (result > \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a5441d11013afeaf4b8f2ea06e8624a25}{selectionTolerance}}()*0.99 \&\& \mbox{\hyperlink{class_q_c_p_item_tracer_a6597be63a17a266233941354200b2340}{mBrush}}.style() != Qt::NoBrush \&\& \mbox{\hyperlink{class_q_c_p_item_tracer_a6597be63a17a266233941354200b2340}{mBrush}}.color().alpha() != 0)}
+\DoxyCodeLine{23168         \{}
+\DoxyCodeLine{23169           \textcolor{keywordflow}{if} (centerDist <= circleLine)}
+\DoxyCodeLine{23170             result = \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a5441d11013afeaf4b8f2ea06e8624a25}{selectionTolerance}}()*0.99;}
+\DoxyCodeLine{23171         \}}
+\DoxyCodeLine{23172         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{23173       \}}
+\DoxyCodeLine{23174       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{23175     \}}
+\DoxyCodeLine{23176     \textcolor{keywordflow}{case} \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500a4ed5f01f2c5fd86d980366d79f481b9b}{tsSquare}}:}
+\DoxyCodeLine{23177     \{}
+\DoxyCodeLine{23178       \textcolor{keywordflow}{if} (clip.intersects(QRectF(center-\/QPointF(w, w), center+QPointF(w, w)).toRect()))}
+\DoxyCodeLine{23179       \{}
+\DoxyCodeLine{23180         QRectF rect = QRectF(center-\/QPointF(w, w), center+QPointF(w, w));}
+\DoxyCodeLine{23181         \textcolor{keywordtype}{bool} filledRect = \mbox{\hyperlink{class_q_c_p_item_tracer_a6597be63a17a266233941354200b2340}{mBrush}}.style() != Qt::NoBrush \&\& \mbox{\hyperlink{class_q_c_p_item_tracer_a6597be63a17a266233941354200b2340}{mBrush}}.color().alpha() != 0;}
+\DoxyCodeLine{23182         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_abstract_item_a26aa3828d398e29116afee16216d6b36}{rectSelectTest}}(rect, pos, filledRect);}
+\DoxyCodeLine{23183       \}}
+\DoxyCodeLine{23184       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{23185     \}}
+\DoxyCodeLine{23186   \}}
+\DoxyCodeLine{23187   \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{23188 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_ae1dc728384936184e7552a6d0d67fd75_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a2c303f7470a30084daa201ed556b3c36}\label{class_q_c_p_item_tracer_a2c303f7470a30084daa201ed556b3c36}} 
+\index{QCPItemTracer@{QCPItemTracer}!setBrush@{setBrush}}
+\index{setBrush@{setBrush}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{setBrush()}{setBrush()}}
+{\footnotesize\ttfamily void QCPItem\+Tracer\+::set\+Brush (\begin{DoxyParamCaption}\item[{const QBrush \&}]{brush }\end{DoxyParamCaption})}
+
+Sets the brush that will be used to draw any fills of the tracer
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_item_tracer_a0f55c084980a7a312af859d3e7b558ef}{set\+Selected\+Brush}}, \mbox{\hyperlink{class_q_c_p_item_tracer_af8048636fc1ef0152e51809b008df2ca}{set\+Pen}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 23040 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23041 \{}
+\DoxyCodeLine{23042   \mbox{\hyperlink{class_q_c_p_item_tracer_a6597be63a17a266233941354200b2340}{mBrush}} = \mbox{\hyperlink{class_q_c_p_item_tracer_a6dd4660e70f58bb00390bcda56be568d}{brush}};}
+\DoxyCodeLine{23043 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_a2c303f7470a30084daa201ed556b3c36_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_a2c303f7470a30084daa201ed556b3c36_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_af5886f4ded8dd68cb4f3388f390790c0}\label{class_q_c_p_item_tracer_af5886f4ded8dd68cb4f3388f390790c0}} 
+\index{QCPItemTracer@{QCPItemTracer}!setGraph@{setGraph}}
+\index{setGraph@{setGraph}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{setGraph()}{setGraph()}}
+{\footnotesize\ttfamily void QCPItem\+Tracer\+::set\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$}]{graph }\end{DoxyParamCaption})}
+
+Sets the \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} this tracer sticks to. The tracer {\itshape position} will be set to type \mbox{\hyperlink{class_q_c_p_item_position_aad9936c22bf43e3d358552f6e86dbdc8ad5ffb8dc99ad73263f7010c77342294c}{QCPItem\+Position\+::pt\+Plot\+Coords}} and the axes will be set to the axes of {\itshape graph}.
+
+To free the tracer from any graph, set {\itshape graph} to 0. The tracer {\itshape position} can then be placed freely like any other item position. This is the state the tracer will assume when its graph gets deleted while still attached to it.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_item_tracer_a6840143b42f3b685cedf7c6d83a704c8}{set\+Graph\+Key}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 23085 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23086 \{}
+\DoxyCodeLine{23087   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_item_tracer_ac6526e3e1fff79894f034823461b138a}{graph}})}
+\DoxyCodeLine{23088   \{}
+\DoxyCodeLine{23089     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_item_tracer_ac6526e3e1fff79894f034823461b138a}{graph}}-\/>\mbox{\hyperlink{class_q_c_p_layerable_a473edb813a4c1929d6b6a8fe3ff3faf7}{parentPlot}}() == \mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}})}
+\DoxyCodeLine{23090     \{}
+\DoxyCodeLine{23091       \mbox{\hyperlink{class_q_c_p_item_tracer_a69917e2fdb2b3a929c196958feee7cbe}{position}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_aa476abf71ed8fa4c537457ebb1a754ad}{setType}}(\mbox{\hyperlink{class_q_c_p_item_position_aad9936c22bf43e3d358552f6e86dbdc8ad5ffb8dc99ad73263f7010c77342294c}{QCPItemPosition::ptPlotCoords}});}
+\DoxyCodeLine{23092       \mbox{\hyperlink{class_q_c_p_item_tracer_a69917e2fdb2b3a929c196958feee7cbe}{position}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_a2185f45c75ac8cb9be89daeaaad50e37}{setAxes}}(\mbox{\hyperlink{class_q_c_p_item_tracer_ac6526e3e1fff79894f034823461b138a}{graph}}-\/>\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{keyAxis}}(), \mbox{\hyperlink{class_q_c_p_item_tracer_ac6526e3e1fff79894f034823461b138a}{graph}}-\/>\mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{valueAxis}}());}
+\DoxyCodeLine{23093       \mbox{\hyperlink{class_q_c_p_item_tracer_a2d70cf616b579563aa15f796dfc143ac}{mGraph}} = \mbox{\hyperlink{class_q_c_p_item_tracer_ac6526e3e1fff79894f034823461b138a}{graph}};}
+\DoxyCodeLine{23094       \mbox{\hyperlink{class_q_c_p_item_tracer_a5b90296109e36384aedbc8908a670413}{updatePosition}}();}
+\DoxyCodeLine{23095     \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{23096       qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}graph isn't in same QCustomPlot instance as this item"{}};}
+\DoxyCodeLine{23097   \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{23098   \{}
+\DoxyCodeLine{23099     \mbox{\hyperlink{class_q_c_p_item_tracer_a2d70cf616b579563aa15f796dfc143ac}{mGraph}} = 0;}
+\DoxyCodeLine{23100   \}}
+\DoxyCodeLine{23101 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_af5886f4ded8dd68cb4f3388f390790c0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a6840143b42f3b685cedf7c6d83a704c8}\label{class_q_c_p_item_tracer_a6840143b42f3b685cedf7c6d83a704c8}} 
+\index{QCPItemTracer@{QCPItemTracer}!setGraphKey@{setGraphKey}}
+\index{setGraphKey@{setGraphKey}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{setGraphKey()}{setGraphKey()}}
+{\footnotesize\ttfamily void QCPItem\+Tracer\+::set\+Graph\+Key (\begin{DoxyParamCaption}\item[{double}]{key }\end{DoxyParamCaption})}
+
+Sets the key of the graph\textquotesingle{}s data point the tracer will be positioned at. This is the only free coordinate of a tracer when attached to a graph.
+
+Depending on \mbox{\hyperlink{class_q_c_p_item_tracer_a6c244a9d1175bef12b50afafd4f5fcd2}{set\+Interpolating}}, the tracer will be either positioned on the data point closest to {\itshape key}, or will stay exactly at {\itshape key} and interpolate the value linearly.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_item_tracer_af5886f4ded8dd68cb4f3388f390790c0}{set\+Graph}}, \mbox{\hyperlink{class_q_c_p_item_tracer_a6c244a9d1175bef12b50afafd4f5fcd2}{set\+Interpolating}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 23112 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23113 \{}
+\DoxyCodeLine{23114   \mbox{\hyperlink{class_q_c_p_item_tracer_a8fa20f2e9ee07d21fd7c8d30ba4702ca}{mGraphKey}} = key;}
+\DoxyCodeLine{23115 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_a6840143b42f3b685cedf7c6d83a704c8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a6c244a9d1175bef12b50afafd4f5fcd2}\label{class_q_c_p_item_tracer_a6c244a9d1175bef12b50afafd4f5fcd2}} 
+\index{QCPItemTracer@{QCPItemTracer}!setInterpolating@{setInterpolating}}
+\index{setInterpolating@{setInterpolating}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{setInterpolating()}{setInterpolating()}}
+{\footnotesize\ttfamily void QCPItem\+Tracer\+::set\+Interpolating (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+Sets whether the value of the graph\textquotesingle{}s data points shall be interpolated, when positioning the tracer.
+
+If {\itshape enabled} is set to false and a key is given with \mbox{\hyperlink{class_q_c_p_item_tracer_a6840143b42f3b685cedf7c6d83a704c8}{set\+Graph\+Key}}, the tracer is placed on the data point of the graph which is closest to the key, but which is not necessarily exactly there. If {\itshape enabled} is true, the tracer will be positioned exactly at the specified key, and the appropriate value will be interpolated from the graph\textquotesingle{}s data points linearly.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_item_tracer_af5886f4ded8dd68cb4f3388f390790c0}{set\+Graph}}, \mbox{\hyperlink{class_q_c_p_item_tracer_a6840143b42f3b685cedf7c6d83a704c8}{set\+Graph\+Key}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 23128 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23129 \{}
+\DoxyCodeLine{23130   \mbox{\hyperlink{class_q_c_p_item_tracer_afab37c22ad39f235921e86f93cd84595}{mInterpolating}} = enabled;}
+\DoxyCodeLine{23131 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_a6c244a9d1175bef12b50afafd4f5fcd2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_af8048636fc1ef0152e51809b008df2ca}\label{class_q_c_p_item_tracer_af8048636fc1ef0152e51809b008df2ca}} 
+\index{QCPItemTracer@{QCPItemTracer}!setPen@{setPen}}
+\index{setPen@{setPen}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{setPen()}{setPen()}}
+{\footnotesize\ttfamily void QCPItem\+Tracer\+::set\+Pen (\begin{DoxyParamCaption}\item[{const QPen \&}]{pen }\end{DoxyParamCaption})}
+
+Sets the pen that will be used to draw the line of the tracer
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_item_tracer_ae1bf70db7f13f928660168cd3e5069f3}{set\+Selected\+Pen}}, \mbox{\hyperlink{class_q_c_p_item_tracer_a2c303f7470a30084daa201ed556b3c36}{set\+Brush}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 23020 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23021 \{}
+\DoxyCodeLine{23022   \mbox{\hyperlink{class_q_c_p_item_tracer_a579e3bd6bd16d6aaff03638dc8a99a69}{mPen}} = \mbox{\hyperlink{class_q_c_p_item_tracer_a789cdc627868f5a4a0956816072571c9}{pen}};}
+\DoxyCodeLine{23023 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_q_c_p_item_tracer_af8048636fc1ef0152e51809b008df2ca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_af8048636fc1ef0152e51809b008df2ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a0f55c084980a7a312af859d3e7b558ef}\label{class_q_c_p_item_tracer_a0f55c084980a7a312af859d3e7b558ef}} 
+\index{QCPItemTracer@{QCPItemTracer}!setSelectedBrush@{setSelectedBrush}}
+\index{setSelectedBrush@{setSelectedBrush}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{setSelectedBrush()}{setSelectedBrush()}}
+{\footnotesize\ttfamily void QCPItem\+Tracer\+::set\+Selected\+Brush (\begin{DoxyParamCaption}\item[{const QBrush \&}]{brush }\end{DoxyParamCaption})}
+
+Sets the brush that will be used to draw any fills of the tracer, when selected.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_item_tracer_a2c303f7470a30084daa201ed556b3c36}{set\+Brush}}, \mbox{\hyperlink{class_q_c_p_abstract_item_a203de94ad586cc44d16c9565f49d3378}{set\+Selected}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 23050 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23051 \{}
+\DoxyCodeLine{23052   \mbox{\hyperlink{class_q_c_p_item_tracer_a1c15d2adde40efdcc0ef1ff78fd256a6}{mSelectedBrush}} = \mbox{\hyperlink{class_q_c_p_item_tracer_a6dd4660e70f58bb00390bcda56be568d}{brush}};}
+\DoxyCodeLine{23053 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_a0f55c084980a7a312af859d3e7b558ef_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_a0f55c084980a7a312af859d3e7b558ef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_ae1bf70db7f13f928660168cd3e5069f3}\label{class_q_c_p_item_tracer_ae1bf70db7f13f928660168cd3e5069f3}} 
+\index{QCPItemTracer@{QCPItemTracer}!setSelectedPen@{setSelectedPen}}
+\index{setSelectedPen@{setSelectedPen}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{setSelectedPen()}{setSelectedPen()}}
+{\footnotesize\ttfamily void QCPItem\+Tracer\+::set\+Selected\+Pen (\begin{DoxyParamCaption}\item[{const QPen \&}]{pen }\end{DoxyParamCaption})}
+
+Sets the pen that will be used to draw the line of the tracer when selected
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_item_tracer_af8048636fc1ef0152e51809b008df2ca}{set\+Pen}}, \mbox{\hyperlink{class_q_c_p_abstract_item_a203de94ad586cc44d16c9565f49d3378}{set\+Selected}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 23030 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23031 \{}
+\DoxyCodeLine{23032   \mbox{\hyperlink{class_q_c_p_item_tracer_a3f61829784200819661d1e2a5354d866}{mSelectedPen}} = \mbox{\hyperlink{class_q_c_p_item_tracer_a789cdc627868f5a4a0956816072571c9}{pen}};}
+\DoxyCodeLine{23033 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_ae1bf70db7f13f928660168cd3e5069f3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_ae1bf70db7f13f928660168cd3e5069f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_ae47fe0617f5fef5fdb766999569be10a}\label{class_q_c_p_item_tracer_ae47fe0617f5fef5fdb766999569be10a}} 
+\index{QCPItemTracer@{QCPItemTracer}!setSize@{setSize}}
+\index{setSize@{setSize}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void QCPItem\+Tracer\+::set\+Size (\begin{DoxyParamCaption}\item[{double}]{size }\end{DoxyParamCaption})}
+
+Sets the size of the tracer in pixels, if the style supports setting a size (e.\+g. \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500a4ed5f01f2c5fd86d980366d79f481b9b}{ts\+Square}} does, \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500af562ec81ac3ba99e26ef8540cf1ec16f}{ts\+Crosshair}} does not). 
+
+Definition at line 23059 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23060 \{}
+\DoxyCodeLine{23061   \mbox{\hyperlink{class_q_c_p_item_tracer_a575153a24bb357d1e006f6bc3bd099b9}{mSize}} = \mbox{\hyperlink{class_q_c_p_item_tracer_a4e42d7b49f293273a74a49a2457856e2}{size}};}
+\DoxyCodeLine{23062 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_q_c_p_item_tracer_ae47fe0617f5fef5fdb766999569be10a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_ae47fe0617f5fef5fdb766999569be10a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a41a2ac4f1acd7897b4e2a2579c03204e}\label{class_q_c_p_item_tracer_a41a2ac4f1acd7897b4e2a2579c03204e}} 
+\index{QCPItemTracer@{QCPItemTracer}!setStyle@{setStyle}}
+\index{setStyle@{setStyle}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{setStyle()}{setStyle()}}
+{\footnotesize\ttfamily void QCPItem\+Tracer\+::set\+Style (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500}{QCPItem\+Tracer\+::\+Tracer\+Style}}}]{style }\end{DoxyParamCaption})}
+
+Sets the style/visual appearance of the tracer.
+
+If you only want to use the tracer {\itshape position} as an anchor for other items, set {\itshape style} to \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500aac27462c79146225bfa8fba24d2ee8a4}{ts\+None}}. 
+
+Definition at line 23070 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23071 \{}
+\DoxyCodeLine{23072   \mbox{\hyperlink{class_q_c_p_item_tracer_afb1f236bebf417544e0138fef22a292e}{mStyle}} = \mbox{\hyperlink{class_q_c_p_item_tracer_afdaee32c9ccc9c14502b28d3d86bf5ed}{style}};}
+\DoxyCodeLine{23073 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_a41a2ac4f1acd7897b4e2a2579c03204e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_a41a2ac4f1acd7897b4e2a2579c03204e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a4e42d7b49f293273a74a49a2457856e2}\label{class_q_c_p_item_tracer_a4e42d7b49f293273a74a49a2457856e2}} 
+\index{QCPItemTracer@{QCPItemTracer}!size@{size}}
+\index{size@{size}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily double QCPItem\+Tracer\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 3670 of file qcustomplot.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3670 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_tracer_a575153a24bb357d1e006f6bc3bd099b9}{mSize}}; \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_a4e42d7b49f293273a74a49a2457856e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_afdaee32c9ccc9c14502b28d3d86bf5ed}\label{class_q_c_p_item_tracer_afdaee32c9ccc9c14502b28d3d86bf5ed}} 
+\index{QCPItemTracer@{QCPItemTracer}!style@{style}}
+\index{style@{style}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{style()}{style()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500}{Tracer\+Style}} QCPItem\+Tracer\+::style (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 3671 of file qcustomplot.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3671 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_item_tracer_afb1f236bebf417544e0138fef22a292e}{mStyle}}; \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_afdaee32c9ccc9c14502b28d3d86bf5ed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a5b90296109e36384aedbc8908a670413}\label{class_q_c_p_item_tracer_a5b90296109e36384aedbc8908a670413}} 
+\index{QCPItemTracer@{QCPItemTracer}!updatePosition@{updatePosition}}
+\index{updatePosition@{updatePosition}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{updatePosition()}{updatePosition()}}
+{\footnotesize\ttfamily void QCPItem\+Tracer\+::update\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+If the tracer is connected with a graph (\mbox{\hyperlink{class_q_c_p_item_tracer_af5886f4ded8dd68cb4f3388f390790c0}{set\+Graph}}), this function updates the tracer\textquotesingle{}s {\itshape position} to reside on the graph data, depending on the configured key (\mbox{\hyperlink{class_q_c_p_item_tracer_a6840143b42f3b685cedf7c6d83a704c8}{set\+Graph\+Key}}).
+
+It is called automatically on every redraw and normally doesn\textquotesingle{}t need to be called manually. One exception is when you want to read the tracer coordinates via {\itshape position} and are not sure that the graph\textquotesingle{}s data (or the tracer key with \mbox{\hyperlink{class_q_c_p_item_tracer_a6840143b42f3b685cedf7c6d83a704c8}{set\+Graph\+Key}}) hasn\textquotesingle{}t changed since the last redraw. In that situation, call this function before accessing {\itshape position}, to make sure you don\textquotesingle{}t get out-\/of-\/date coordinates.
+
+If there is no graph set on this tracer, this function does nothing. 
+
+Definition at line 23249 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23250 \{}
+\DoxyCodeLine{23251   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_item_tracer_a2d70cf616b579563aa15f796dfc143ac}{mGraph}})}
+\DoxyCodeLine{23252   \{}
+\DoxyCodeLine{23253     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_a72cefbfbb9e699940e37be605bd9c51e}{hasPlottable}}(\mbox{\hyperlink{class_q_c_p_item_tracer_a2d70cf616b579563aa15f796dfc143ac}{mGraph}}))}
+\DoxyCodeLine{23254     \{}
+\DoxyCodeLine{23255       \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_item_tracer_a2d70cf616b579563aa15f796dfc143ac}{mGraph}}-\/>\mbox{\hyperlink{class_q_c_p_graph_acde1c0d1f6a817930489548396e6b3e6}{data}}()-\/>size() > 1)}
+\DoxyCodeLine{23256       \{}
+\DoxyCodeLine{23257         QCPDataMap::const\_iterator first = \mbox{\hyperlink{class_q_c_p_item_tracer_a2d70cf616b579563aa15f796dfc143ac}{mGraph}}-\/>\mbox{\hyperlink{class_q_c_p_graph_acde1c0d1f6a817930489548396e6b3e6}{data}}()-\/>constBegin();}
+\DoxyCodeLine{23258         QCPDataMap::const\_iterator last = \mbox{\hyperlink{class_q_c_p_item_tracer_a2d70cf616b579563aa15f796dfc143ac}{mGraph}}-\/>\mbox{\hyperlink{class_q_c_p_graph_acde1c0d1f6a817930489548396e6b3e6}{data}}()-\/>constEnd()-\/1;}
+\DoxyCodeLine{23259         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_item_tracer_a8fa20f2e9ee07d21fd7c8d30ba4702ca}{mGraphKey}} < first.key())}
+\DoxyCodeLine{23260           \mbox{\hyperlink{class_q_c_p_item_tracer_a69917e2fdb2b3a929c196958feee7cbe}{position}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_aa988ba4e87ab684c9021017dcaba945f}{setCoords}}(first.key(), first.value().value);}
+\DoxyCodeLine{23261         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_item_tracer_a8fa20f2e9ee07d21fd7c8d30ba4702ca}{mGraphKey}} > last.key())}
+\DoxyCodeLine{23262           \mbox{\hyperlink{class_q_c_p_item_tracer_a69917e2fdb2b3a929c196958feee7cbe}{position}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_aa988ba4e87ab684c9021017dcaba945f}{setCoords}}(last.key(), last.value().value);}
+\DoxyCodeLine{23263         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{23264         \{}
+\DoxyCodeLine{23265           QCPDataMap::const\_iterator it = \mbox{\hyperlink{class_q_c_p_item_tracer_a2d70cf616b579563aa15f796dfc143ac}{mGraph}}-\/>\mbox{\hyperlink{class_q_c_p_graph_acde1c0d1f6a817930489548396e6b3e6}{data}}()-\/>lowerBound(\mbox{\hyperlink{class_q_c_p_item_tracer_a8fa20f2e9ee07d21fd7c8d30ba4702ca}{mGraphKey}});}
+\DoxyCodeLine{23266           \textcolor{keywordflow}{if} (it != first) \textcolor{comment}{// mGraphKey is somewhere between iterators}}
+\DoxyCodeLine{23267           \{}
+\DoxyCodeLine{23268             QCPDataMap::const\_iterator prevIt = it-\/1;}
+\DoxyCodeLine{23269             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_item_tracer_afab37c22ad39f235921e86f93cd84595}{mInterpolating}})}
+\DoxyCodeLine{23270             \{}
+\DoxyCodeLine{23271               \textcolor{comment}{// interpolate between iterators around mGraphKey:}}
+\DoxyCodeLine{23272               \textcolor{keywordtype}{double} slope = 0;}
+\DoxyCodeLine{23273               \textcolor{keywordflow}{if} (!qFuzzyCompare((\textcolor{keywordtype}{double})it.key(), (\textcolor{keywordtype}{double})prevIt.key()))}
+\DoxyCodeLine{23274                 slope = (it.value().value-\/prevIt.value().value)/(it.key()-\/prevIt.key());}
+\DoxyCodeLine{23275               \mbox{\hyperlink{class_q_c_p_item_tracer_a69917e2fdb2b3a929c196958feee7cbe}{position}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_aa988ba4e87ab684c9021017dcaba945f}{setCoords}}(\mbox{\hyperlink{class_q_c_p_item_tracer_a8fa20f2e9ee07d21fd7c8d30ba4702ca}{mGraphKey}}, (\mbox{\hyperlink{class_q_c_p_item_tracer_a8fa20f2e9ee07d21fd7c8d30ba4702ca}{mGraphKey}}-\/prevIt.key())*slope+prevIt.value().value);}
+\DoxyCodeLine{23276             \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{23277             \{}
+\DoxyCodeLine{23278               \textcolor{comment}{// find iterator with key closest to mGraphKey:}}
+\DoxyCodeLine{23279               \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_item_tracer_a8fa20f2e9ee07d21fd7c8d30ba4702ca}{mGraphKey}} < (prevIt.key()+it.key())*0.5)}
+\DoxyCodeLine{23280                 it = prevIt;}
+\DoxyCodeLine{23281               \mbox{\hyperlink{class_q_c_p_item_tracer_a69917e2fdb2b3a929c196958feee7cbe}{position}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_aa988ba4e87ab684c9021017dcaba945f}{setCoords}}(it.key(), it.value().value);}
+\DoxyCodeLine{23282             \}}
+\DoxyCodeLine{23283           \} \textcolor{keywordflow}{else} \textcolor{comment}{// mGraphKey is exactly on first iterator}}
+\DoxyCodeLine{23284             \mbox{\hyperlink{class_q_c_p_item_tracer_a69917e2fdb2b3a929c196958feee7cbe}{position}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_aa988ba4e87ab684c9021017dcaba945f}{setCoords}}(it.key(), it.value().value);}
+\DoxyCodeLine{23285         \}}
+\DoxyCodeLine{23286       \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_item_tracer_a2d70cf616b579563aa15f796dfc143ac}{mGraph}}-\/>\mbox{\hyperlink{class_q_c_p_graph_acde1c0d1f6a817930489548396e6b3e6}{data}}()-\/>size() == 1)}
+\DoxyCodeLine{23287       \{}
+\DoxyCodeLine{23288         QCPDataMap::const\_iterator it = \mbox{\hyperlink{class_q_c_p_item_tracer_a2d70cf616b579563aa15f796dfc143ac}{mGraph}}-\/>\mbox{\hyperlink{class_q_c_p_graph_acde1c0d1f6a817930489548396e6b3e6}{data}}()-\/>constBegin();}
+\DoxyCodeLine{23289         \mbox{\hyperlink{class_q_c_p_item_tracer_a69917e2fdb2b3a929c196958feee7cbe}{position}}-\/>\mbox{\hyperlink{class_q_c_p_item_position_aa988ba4e87ab684c9021017dcaba945f}{setCoords}}(it.key(), it.value().value);}
+\DoxyCodeLine{23290       \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{23291         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}graph has no data"{}};}
+\DoxyCodeLine{23292     \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{23293       qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}graph not contained in QCustomPlot instance (anymore)"{}};}
+\DoxyCodeLine{23294   \}}
+\DoxyCodeLine{23295 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_a5b90296109e36384aedbc8908a670413_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_item_tracer_a5b90296109e36384aedbc8908a670413_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a6597be63a17a266233941354200b2340}\label{class_q_c_p_item_tracer_a6597be63a17a266233941354200b2340}} 
+\index{QCPItemTracer@{QCPItemTracer}!mBrush@{mBrush}}
+\index{mBrush@{mBrush}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{mBrush}{mBrush}}
+{\footnotesize\ttfamily QBrush QCPItem\+Tracer\+::m\+Brush\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 3698 of file qcustomplot.\+h.
+
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a2d70cf616b579563aa15f796dfc143ac}\label{class_q_c_p_item_tracer_a2d70cf616b579563aa15f796dfc143ac}} 
+\index{QCPItemTracer@{QCPItemTracer}!mGraph@{mGraph}}
+\index{mGraph@{mGraph}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{mGraph}{mGraph}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}}$\ast$ QCPItem\+Tracer\+::m\+Graph\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 3701 of file qcustomplot.\+h.
+
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a8fa20f2e9ee07d21fd7c8d30ba4702ca}\label{class_q_c_p_item_tracer_a8fa20f2e9ee07d21fd7c8d30ba4702ca}} 
+\index{QCPItemTracer@{QCPItemTracer}!mGraphKey@{mGraphKey}}
+\index{mGraphKey@{mGraphKey}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{mGraphKey}{mGraphKey}}
+{\footnotesize\ttfamily double QCPItem\+Tracer\+::m\+Graph\+Key\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 3702 of file qcustomplot.\+h.
+
+\mbox{\Hypertarget{class_q_c_p_item_tracer_afab37c22ad39f235921e86f93cd84595}\label{class_q_c_p_item_tracer_afab37c22ad39f235921e86f93cd84595}} 
+\index{QCPItemTracer@{QCPItemTracer}!mInterpolating@{mInterpolating}}
+\index{mInterpolating@{mInterpolating}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{mInterpolating}{mInterpolating}}
+{\footnotesize\ttfamily bool QCPItem\+Tracer\+::m\+Interpolating\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 3703 of file qcustomplot.\+h.
+
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a579e3bd6bd16d6aaff03638dc8a99a69}\label{class_q_c_p_item_tracer_a579e3bd6bd16d6aaff03638dc8a99a69}} 
+\index{QCPItemTracer@{QCPItemTracer}!mPen@{mPen}}
+\index{mPen@{mPen}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{mPen}{mPen}}
+{\footnotesize\ttfamily QPen QCPItem\+Tracer\+::m\+Pen\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 3697 of file qcustomplot.\+h.
+
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a1c15d2adde40efdcc0ef1ff78fd256a6}\label{class_q_c_p_item_tracer_a1c15d2adde40efdcc0ef1ff78fd256a6}} 
+\index{QCPItemTracer@{QCPItemTracer}!mSelectedBrush@{mSelectedBrush}}
+\index{mSelectedBrush@{mSelectedBrush}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{mSelectedBrush}{mSelectedBrush}}
+{\footnotesize\ttfamily QBrush QCPItem\+Tracer\+::m\+Selected\+Brush\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 3698 of file qcustomplot.\+h.
+
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a3f61829784200819661d1e2a5354d866}\label{class_q_c_p_item_tracer_a3f61829784200819661d1e2a5354d866}} 
+\index{QCPItemTracer@{QCPItemTracer}!mSelectedPen@{mSelectedPen}}
+\index{mSelectedPen@{mSelectedPen}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{mSelectedPen}{mSelectedPen}}
+{\footnotesize\ttfamily QPen QCPItem\+Tracer\+::m\+Selected\+Pen\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 3697 of file qcustomplot.\+h.
+
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a575153a24bb357d1e006f6bc3bd099b9}\label{class_q_c_p_item_tracer_a575153a24bb357d1e006f6bc3bd099b9}} 
+\index{QCPItemTracer@{QCPItemTracer}!mSize@{mSize}}
+\index{mSize@{mSize}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{mSize}{mSize}}
+{\footnotesize\ttfamily double QCPItem\+Tracer\+::m\+Size\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 3699 of file qcustomplot.\+h.
+
+\mbox{\Hypertarget{class_q_c_p_item_tracer_afb1f236bebf417544e0138fef22a292e}\label{class_q_c_p_item_tracer_afb1f236bebf417544e0138fef22a292e}} 
+\index{QCPItemTracer@{QCPItemTracer}!mStyle@{mStyle}}
+\index{mStyle@{mStyle}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{mStyle}{mStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_tracer_a2f05ddb13978036f902ca3ab47076500}{Tracer\+Style}} QCPItem\+Tracer\+::m\+Style\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 3700 of file qcustomplot.\+h.
+
+\mbox{\Hypertarget{class_q_c_p_item_tracer_a69917e2fdb2b3a929c196958feee7cbe}\label{class_q_c_p_item_tracer_a69917e2fdb2b3a929c196958feee7cbe}} 
+\index{QCPItemTracer@{QCPItemTracer}!position@{position}}
+\index{position@{position}!QCPItemTracer@{QCPItemTracer}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_item_position}{QCPItem\+Position}}$\ast$ const QCPItem\+Tracer\+::position}
+
+
+
+Definition at line 3693 of file qcustomplot.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\item 
+\mbox{\hyperlink{qcustomplot_8cpp}{qcustomplot.\+cpp}}\end{DoxyCompactItemize}

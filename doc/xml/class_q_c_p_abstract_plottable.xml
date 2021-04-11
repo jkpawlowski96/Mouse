@@ -1,0 +1,2094 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_q_c_p_abstract_plottable" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>QCPAbstractPlottable</compoundname>
+    <basecompoundref refid="class_q_c_p_layerable" prot="public" virt="non-virtual">QCPLayerable</basecompoundref>
+    <derivedcompoundref refid="class_q_c_p_bars" prot="public" virt="non-virtual">QCPBars</derivedcompoundref>
+    <derivedcompoundref refid="class_q_c_p_color_map" prot="public" virt="non-virtual">QCPColorMap</derivedcompoundref>
+    <derivedcompoundref refid="class_q_c_p_curve" prot="public" virt="non-virtual">QCPCurve</derivedcompoundref>
+    <derivedcompoundref refid="class_q_c_p_financial" prot="public" virt="non-virtual">QCPFinancial</derivedcompoundref>
+    <derivedcompoundref refid="class_q_c_p_graph" prot="public" virt="non-virtual">QCPGraph</derivedcompoundref>
+    <derivedcompoundref refid="class_q_c_p_statistical_box" prot="public" virt="non-virtual">QCPStatisticalBox</derivedcompoundref>
+    <includes refid="qcustomplot_8h" local="no">qcustomplot.h</includes>
+      <sectiondef kind="protected-type">
+      <memberdef kind="enum" id="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8" prot="protected" static="no" strong="no">
+        <type></type>
+        <name>SignDomain</name>
+        <enumvalue id="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a0fc9a70796ef60ad18ddd18056e6dc63" prot="protected">
+          <name>sdNegative</name>
+          <briefdescription>
+<para>The negative sign domain, i.e. numbers smaller than zero. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a082b98cfb91a7363a3b5cd17b0c1cd60" prot="protected">
+          <name>sdBoth</name>
+          <briefdescription>
+<para>Both sign domains, including zero, i.e. all (rational) numbers. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a02951859f243a4d24e779cfbb5471030" prot="protected">
+          <name>sdPositive</name>
+          <briefdescription>
+<para>The positive sign domain, i.e. numbers greater than zero. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Represents negative and positive sign domain for passing to <ref refid="class_q_c_p_abstract_plottable_1a345d702b2e7e12c8cfdddff65ba85e8c" kindref="member">getKeyRange</ref> and <ref refid="class_q_c_p_abstract_plottable_1aa3331b415b5939fe4df60b78831b2799" kindref="member">getValueRange</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1455" column="3" bodyfile="qcustomplot.h" bodystart="1455" bodyend="1458"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_q_c_p_abstract_plottable_1ac29ffef424e2488675930de18cde612a" prot="protected" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString QCPAbstractPlottable::mName</definition>
+        <argsstring></argsstring>
+        <name>mName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1461" column="11" bodyfile="qcustomplot.h" bodystart="1461" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_curve_1adc3ab8051946f9097cdf7c0707ef1a25" compoundref="qcustomplot_8cpp" startline="17915" endline="17940">QCPCurve::pointDistance</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1ab79c7ba76bc7fa89a4b3580e12149f1f" compoundref="qcustomplot_8cpp" startline="6865" endline="6868">setName</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_abstract_plottable_1a152ac765bedf927fb240545d11d453ea" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QCPAbstractPlottable::mAntialiasedFill</definition>
+        <argsstring></argsstring>
+        <name>mAntialiasedFill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1462" column="8" bodyfile="qcustomplot.h" bodystart="1462" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a8d06a59ea23324cce6330ebf2262c0ed" compoundref="qcustomplot_8cpp" startline="7313" endline="7316">applyFillAntialiasingHint</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a089d6b5577120239b55c39ed27c39536" compoundref="qcustomplot_8cpp" startline="6876" endline="6879">setAntialiasedFill</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_abstract_plottable_1aa115755e525a8e3a86dc683f9cab755b" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QCPAbstractPlottable::mAntialiasedScatters</definition>
+        <argsstring></argsstring>
+        <name>mAntialiasedScatters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1462" column="25" bodyfile="qcustomplot.h" bodystart="1462" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_abstract_plottable_1ac95f26b15a1e5d9c7bd2c0a46d760fc9" compoundref="qcustomplot_8cpp" startline="7329" endline="7332">applyScattersAntialiasingHint</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a2f03f067ede2ed4da6f7d0e4777a3f02" compoundref="qcustomplot_8cpp" startline="6887" endline="6890">setAntialiasedScatters</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_abstract_plottable_1ad48660b2bd301576e92fb033d8f455ea" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QCPAbstractPlottable::mAntialiasedErrorBars</definition>
+        <argsstring></argsstring>
+        <name>mAntialiasedErrorBars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1462" column="46" bodyfile="qcustomplot.h" bodystart="1462" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a0889abc8dbfd357053f40bfafff8bf7d" compoundref="qcustomplot_8cpp" startline="7345" endline="7348">applyErrorBarsAntialiasingHint</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a757beb744b96cf1855cca5ab9d3ecf52" compoundref="qcustomplot_8cpp" startline="6898" endline="6901">setAntialiasedErrorBars</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_abstract_plottable_1a67bc0622fd1b9fa14e54c14922dcec66" prot="protected" static="no" mutable="no">
+        <type>QPen</type>
+        <definition>QPen QCPAbstractPlottable::mPen</definition>
+        <argsstring></argsstring>
+        <name>mPen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1463" column="8" bodyfile="qcustomplot.h" bodystart="1463" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_financial_1a71f5081da0e5ab9c40a488ad40cff122" compoundref="qcustomplot_8cpp" startline="21230" endline="21314">QCPFinancial::drawCandlestickPlot</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ae962caca309faae29ce0988d0d0eff4b" compoundref="qcustomplot_8cpp" startline="15125" endline="15157">QCPGraph::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_curve_1acccc86e9f496bb0392529f59f3a69dbc" compoundref="qcustomplot_8cpp" startline="17159" endline="17191">QCPCurve::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_bars_1ad466f06b0fa561b6e12c92fdb8fa3c7f" compoundref="qcustomplot_8cpp" startline="18815" endline="18824">QCPBars::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a41c6193fd24f5c1b6c754e7bcfe3e174" compoundref="qcustomplot_8cpp" startline="19431" endline="19440">QCPStatisticalBox::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a474a3994b081892f1dbdd1162e055b96" compoundref="qcustomplot_8cpp" startline="21024" endline="21080">QCPFinancial::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a3c3007a7434e29d042c77ccf4f497e66" compoundref="qcustomplot_8cpp" startline="21169" endline="21222">QCPFinancial::drawOhlcPlot</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a8550e16af27b4e05d92bb337fb34324f" compoundref="qcustomplot_8cpp" startline="19499" endline="19505">QCPStatisticalBox::drawOutliers</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a00d17c020796ac84c84f881201c2ed10" compoundref="qcustomplot_8cpp" startline="17198" endline="17206">QCPCurve::drawScatterPlot</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ae1f3edd5eb41aa5782e61673488fd3e0" compoundref="qcustomplot_8cpp" startline="15513" endline="15549">QCPGraph::drawScatterPlot</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1abd790a3b229239f49067f136633a4b98" compoundref="qcustomplot_8cpp" startline="7269" endline="7272">mainPen</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a64006999ad9dff308f40df41cef176ad" compoundref="qcustomplot_8cpp" startline="18456" endline="18473">QCPBars::QCPBars</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a36de58e2652b3fa47bdf9187d421d3ce" compoundref="qcustomplot_8cpp" startline="16812" endline="16827">QCPCurve::QCPCurve</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1ab74b09ae4c0e7e13142fe4b5bf46cac7" compoundref="qcustomplot_8cpp" startline="6912" endline="6915">setPen</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_abstract_plottable_1a10619472f5d5e10e9519a599f1cf5576" prot="protected" static="no" mutable="no">
+        <type>QPen</type>
+        <definition>QPen QCPAbstractPlottable::mSelectedPen</definition>
+        <argsstring></argsstring>
+        <name>mSelectedPen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1463" column="13" bodyfile="qcustomplot.h" bodystart="1463" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_financial_1a71f5081da0e5ab9c40a488ad40cff122" compoundref="qcustomplot_8cpp" startline="21230" endline="21314">QCPFinancial::drawCandlestickPlot</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a3c3007a7434e29d042c77ccf4f497e66" compoundref="qcustomplot_8cpp" startline="21169" endline="21222">QCPFinancial::drawOhlcPlot</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1abd790a3b229239f49067f136633a4b98" compoundref="qcustomplot_8cpp" startline="7269" endline="7272">mainPen</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a64006999ad9dff308f40df41cef176ad" compoundref="qcustomplot_8cpp" startline="18456" endline="18473">QCPBars::QCPBars</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a36de58e2652b3fa47bdf9187d421d3ce" compoundref="qcustomplot_8cpp" startline="16812" endline="16827">QCPCurve::QCPCurve</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a6911603cad23ab0469b108224517516f" compoundref="qcustomplot_8cpp" startline="6923" endline="6926">setSelectedPen</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_abstract_plottable_1a33f00674c0161c13315ab9da0895418e" prot="protected" static="no" mutable="no">
+        <type>QBrush</type>
+        <definition>QBrush QCPAbstractPlottable::mBrush</definition>
+        <argsstring></argsstring>
+        <name>mBrush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1464" column="10" bodyfile="qcustomplot.h" bodystart="1464" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_financial_1a71f5081da0e5ab9c40a488ad40cff122" compoundref="qcustomplot_8cpp" startline="21230" endline="21314">QCPFinancial::drawCandlestickPlot</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ae962caca309faae29ce0988d0d0eff4b" compoundref="qcustomplot_8cpp" startline="15125" endline="15157">QCPGraph::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_curve_1acccc86e9f496bb0392529f59f3a69dbc" compoundref="qcustomplot_8cpp" startline="17159" endline="17191">QCPCurve::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_bars_1ad466f06b0fa561b6e12c92fdb8fa3c7f" compoundref="qcustomplot_8cpp" startline="18815" endline="18824">QCPBars::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a41c6193fd24f5c1b6c754e7bcfe3e174" compoundref="qcustomplot_8cpp" startline="19431" endline="19440">QCPStatisticalBox::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a474a3994b081892f1dbdd1162e055b96" compoundref="qcustomplot_8cpp" startline="21024" endline="21080">QCPFinancial::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1ac9147022a662e92b46c39e7cb821b0af" compoundref="qcustomplot_8cpp" startline="7279" endline="7282">mainBrush</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a64006999ad9dff308f40df41cef176ad" compoundref="qcustomplot_8cpp" startline="18456" endline="18473">QCPBars::QCPBars</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a36de58e2652b3fa47bdf9187d421d3ce" compoundref="qcustomplot_8cpp" startline="16812" endline="16827">QCPCurve::QCPCurve</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a7a4b92144dca6453a1f0f210e27edc74" compoundref="qcustomplot_8cpp" startline="6937" endline="6940">setBrush</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_abstract_plottable_1aea3c0da30c7a8be23ad5f2d9bca36762" prot="protected" static="no" mutable="no">
+        <type>QBrush</type>
+        <definition>QBrush QCPAbstractPlottable::mSelectedBrush</definition>
+        <argsstring></argsstring>
+        <name>mSelectedBrush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1464" column="17" bodyfile="qcustomplot.h" bodystart="1464" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_financial_1a71f5081da0e5ab9c40a488ad40cff122" compoundref="qcustomplot_8cpp" startline="21230" endline="21314">QCPFinancial::drawCandlestickPlot</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1ac9147022a662e92b46c39e7cb821b0af" compoundref="qcustomplot_8cpp" startline="7279" endline="7282">mainBrush</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a64006999ad9dff308f40df41cef176ad" compoundref="qcustomplot_8cpp" startline="18456" endline="18473">QCPBars::QCPBars</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a36de58e2652b3fa47bdf9187d421d3ce" compoundref="qcustomplot_8cpp" startline="16812" endline="16827">QCPCurve::QCPCurve</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1ae8c816874089f7a44001e8618e81a9dc" compoundref="qcustomplot_8cpp" startline="6948" endline="6951">setSelectedBrush</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_abstract_plottable_1a426f42e254d0f8ce5436a868c61a6827" prot="protected" static="no" mutable="no">
+        <type>QPointer&lt; <ref refid="class_q_c_p_axis" kindref="compound">QCPAxis</ref> &gt;</type>
+        <definition>QPointer&lt;QCPAxis&gt; QCPAbstractPlottable::mKeyAxis</definition>
+        <argsstring></argsstring>
+        <name>mKeyAxis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1465" column="12" bodyfile="qcustomplot.h" bodystart="1465" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_graph_1a8e517dcd3baba1b41daed0248841c092" compoundref="qcustomplot_8cpp" startline="16019" endline="16035">QCPGraph::addFillBasePoints</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a6fa1e18f18b37d3a0502b97d864a6d15" compoundref="qcustomplot_8cpp" startline="21359" endline="21417">QCPFinancial::candlestickSelectTest</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1aafb817dbea97d2798967f3371a701413" compoundref="qcustomplot_8cpp" startline="7169" endline="7175">clipRect</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a7ad84a36472441cf1f555c5683d0da93" compoundref="qcustomplot_8cpp" startline="7193" endline="7208">coordsToPixels</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a659218cc62c2a7786213d9dd429c1c8d" compoundref="qcustomplot_8cpp" startline="15077" endline="15122">QCPGraph::draw</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a42b894e34dac799f90ff3700706b31df" compoundref="qcustomplot_8cpp" startline="18780" endline="18812">QCPBars::draw</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317" compoundref="qcustomplot_8cpp" startline="19403" endline="19428">QCPStatisticalBox::draw</referencedby>
+        <referencedby refid="class_q_c_p_color_map_1a3b0f45a3177be9522d5e9b8cd8ae122d" compoundref="qcustomplot_8cpp" startline="20404" endline="20470">QCPColorMap::draw</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a71f5081da0e5ab9c40a488ad40cff122" compoundref="qcustomplot_8cpp" startline="21230" endline="21314">QCPFinancial::drawCandlestickPlot</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ab51aeba7e9d29754e58852cfad3436cc" compoundref="qcustomplot_8cpp" startline="15849" endline="15944">QCPGraph::drawError</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a3c3007a7434e29d042c77ccf4f497e66" compoundref="qcustomplot_8cpp" startline="21169" endline="21222">QCPFinancial::drawOhlcPlot</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ae1f3edd5eb41aa5782e61673488fd3e0" compoundref="qcustomplot_8cpp" startline="15513" endline="15549">QCPGraph::drawScatterPlot</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a3a4ca0069f003929284763caef1856a8" compoundref="qcustomplot_8cpp" startline="18894" endline="18923">QCPBars::getBarPolygon</referencedby>
+        <referencedby refid="class_q_c_p_graph_1add26655bd2338adaa7fc99e27bd06550" compoundref="qcustomplot_8cpp" startline="16190" endline="16323">QCPGraph::getChannelFillPolygon</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a3ca9d2c315c643f732cc85e20d18b551" compoundref="qcustomplot_8cpp" startline="17221" endline="17298">QCPCurve::getCurveData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1aae73c001a78cbe54e55e6779d7a70957" compoundref="qcustomplot_8cpp" startline="15429" endline="15466">QCPGraph::getImpulsePlotData</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a0161ff6af64e025543c66130bcaa7ffd" compoundref="qcustomplot_8cpp" startline="19048" endline="19095">QCPBars::getKeyRange</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a13da88ffd42ad192a672d54f3f233d15" compoundref="qcustomplot_8cpp" startline="21083" endline="21116">QCPFinancial::getKeyRange</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a77314984a7af578a66e939db0db48556" compoundref="qcustomplot_8cpp" startline="15217" endline="15245">QCPGraph::getLinePlotData</referencedby>
+        <referencedby refid="class_q_c_p_bars_1ad87586cc5e9806740bc0e867667da409" compoundref="qcustomplot_8cpp" startline="18934" endline="18975">QCPBars::getPixelWidth</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ae853c297da9d21b6720d2d1c3b0121bf" compoundref="qcustomplot_8cpp" startline="15661" endline="15840">QCPGraph::getPreparedData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ab860d67ecc7e2d7253ab1f19032958c2" compoundref="qcustomplot_8cpp" startline="15364" endline="15416">QCPGraph::getStepCenterPlotData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a8f8ae9cb4aa312c2085c3f6f298f19d4" compoundref="qcustomplot_8cpp" startline="15258" endline="15298">QCPGraph::getStepLeftPlotData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a59fecb135f47db10e14d75018210bf80" compoundref="qcustomplot_8cpp" startline="15311" endline="15351">QCPGraph::getStepRightPlotData</referencedby>
+        <referencedby refid="class_q_c_p_bars_1adce71831920cf0426722fdd47ba34261" compoundref="qcustomplot_8cpp" startline="18840" endline="18886">QCPBars::getVisibleDataBounds</referencedby>
+        <referencedby refid="class_q_c_p_graph_1abda485a2f71ebe00d890840acbb91516" compoundref="qcustomplot_8cpp" startline="15960" endline="15978">QCPGraph::getVisibleDataBounds</referencedby>
+        <referencedby refid="class_q_c_p_financial_1ab74167a55319771c5da0e06406c2c2f2" compoundref="qcustomplot_8cpp" startline="21435" endline="21453">QCPFinancial::getVisibleDataBounds</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ace7c17a07e9aa824853e469816a5aa1c" compoundref="qcustomplot_8cpp" startline="16065" endline="16114">QCPGraph::lowerFillBasePoint</referencedby>
+        <referencedby refid="class_q_c_p_bars_1ac22e00a6a41509538c21b04f0a57318c" compoundref="qcustomplot_8cpp" startline="18632" endline="18649">QCPBars::moveAbove</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a69fc371346980f19177c3d1ecdad78ee" compoundref="qcustomplot_8cpp" startline="18599" endline="18616">QCPBars::moveBelow</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a9df2d86e6ad3b58b51798d720e0f4739" compoundref="qcustomplot_8cpp" startline="21321" endline="21351">QCPFinancial::ohlcSelectTest</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a3903c1120ab5c27e7fa46b597ef267bd" compoundref="qcustomplot_8cpp" startline="7237" endline="7252">pixelsToCoords</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a051fb77b459ba1ae8d65552c67f45e94" compoundref="qcustomplot_8cpp" startline="15011" endline="15038">QCPGraph::rescaleKeyAxis</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1ae96b83c961e257da116c6acf9c7da308" compoundref="qcustomplot_8cpp" startline="7050" endline="7080">rescaleKeyAxis</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a36011c34aca4f7a477de25961e2f6c13" compoundref="qcustomplot_8cpp" startline="14978" endline="14989">QCPGraph::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a87a9fb34a2a48dcae4c1245ada235e7d" compoundref="qcustomplot_8cpp" startline="17057" endline="17068">QCPCurve::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a62d66cc8eedca6bedfc1f6513164d418" compoundref="qcustomplot_8cpp" startline="18760" endline="18777">QCPBars::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a0153ac16326b94450afbca208e3f9961" compoundref="qcustomplot_8cpp" startline="19378" endline="19400">QCPStatisticalBox::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_color_map_1aba91ea58b489031157ecb777fe79e309" compoundref="qcustomplot_8cpp" startline="20311" endline="20326">QCPColorMap::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a77bffad8f3fcbcccbef03ead1c538e3a" compoundref="qcustomplot_8cpp" startline="20926" endline="20950">QCPFinancial::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a8524fa2994c63c0913ebd9bb2ffa3920" compoundref="qcustomplot_8cpp" startline="6964" endline="6967">setKeyAxis</referencedby>
+        <referencedby refid="class_q_c_p_color_map_1a5efcea591bb5486d968af520a4d43c3a" compoundref="qcustomplot_8cpp" startline="20342" endline="20401">QCPColorMap::updateMapImage</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a7a255fc7260d96ed6f9d972839941f93" compoundref="qcustomplot_8cpp" startline="16130" endline="16179">QCPGraph::upperFillBasePoint</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_abstract_plottable_1a2901452ca4aea911a1827717934a4bda" prot="protected" static="no" mutable="no">
+        <type>QPointer&lt; <ref refid="class_q_c_p_axis" kindref="compound">QCPAxis</ref> &gt;</type>
+        <definition>QPointer&lt;QCPAxis&gt; QCPAbstractPlottable::mValueAxis</definition>
+        <argsstring></argsstring>
+        <name>mValueAxis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1465" column="21" bodyfile="qcustomplot.h" bodystart="1465" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_financial_1a6fa1e18f18b37d3a0502b97d864a6d15" compoundref="qcustomplot_8cpp" startline="21359" endline="21417">QCPFinancial::candlestickSelectTest</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1aafb817dbea97d2798967f3371a701413" compoundref="qcustomplot_8cpp" startline="7169" endline="7175">clipRect</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a7ad84a36472441cf1f555c5683d0da93" compoundref="qcustomplot_8cpp" startline="7193" endline="7208">coordsToPixels</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a659218cc62c2a7786213d9dd429c1c8d" compoundref="qcustomplot_8cpp" startline="15077" endline="15122">QCPGraph::draw</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a42b894e34dac799f90ff3700706b31df" compoundref="qcustomplot_8cpp" startline="18780" endline="18812">QCPBars::draw</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317" compoundref="qcustomplot_8cpp" startline="19403" endline="19428">QCPStatisticalBox::draw</referencedby>
+        <referencedby refid="class_q_c_p_color_map_1a3b0f45a3177be9522d5e9b8cd8ae122d" compoundref="qcustomplot_8cpp" startline="20404" endline="20470">QCPColorMap::draw</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a71f5081da0e5ab9c40a488ad40cff122" compoundref="qcustomplot_8cpp" startline="21230" endline="21314">QCPFinancial::drawCandlestickPlot</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ab51aeba7e9d29754e58852cfad3436cc" compoundref="qcustomplot_8cpp" startline="15849" endline="15944">QCPGraph::drawError</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a3c3007a7434e29d042c77ccf4f497e66" compoundref="qcustomplot_8cpp" startline="21169" endline="21222">QCPFinancial::drawOhlcPlot</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ae1f3edd5eb41aa5782e61673488fd3e0" compoundref="qcustomplot_8cpp" startline="15513" endline="15549">QCPGraph::drawScatterPlot</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a3a4ca0069f003929284763caef1856a8" compoundref="qcustomplot_8cpp" startline="18894" endline="18923">QCPBars::getBarPolygon</referencedby>
+        <referencedby refid="class_q_c_p_graph_1add26655bd2338adaa7fc99e27bd06550" compoundref="qcustomplot_8cpp" startline="16190" endline="16323">QCPGraph::getChannelFillPolygon</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a3ca9d2c315c643f732cc85e20d18b551" compoundref="qcustomplot_8cpp" startline="17221" endline="17298">QCPCurve::getCurveData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1aae73c001a78cbe54e55e6779d7a70957" compoundref="qcustomplot_8cpp" startline="15429" endline="15466">QCPGraph::getImpulsePlotData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a77314984a7af578a66e939db0db48556" compoundref="qcustomplot_8cpp" startline="15217" endline="15245">QCPGraph::getLinePlotData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ae853c297da9d21b6720d2d1c3b0121bf" compoundref="qcustomplot_8cpp" startline="15661" endline="15840">QCPGraph::getPreparedData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ab860d67ecc7e2d7253ab1f19032958c2" compoundref="qcustomplot_8cpp" startline="15364" endline="15416">QCPGraph::getStepCenterPlotData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a8f8ae9cb4aa312c2085c3f6f298f19d4" compoundref="qcustomplot_8cpp" startline="15258" endline="15298">QCPGraph::getStepLeftPlotData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a59fecb135f47db10e14d75018210bf80" compoundref="qcustomplot_8cpp" startline="15311" endline="15351">QCPGraph::getStepRightPlotData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ace7c17a07e9aa824853e469816a5aa1c" compoundref="qcustomplot_8cpp" startline="16065" endline="16114">QCPGraph::lowerFillBasePoint</referencedby>
+        <referencedby refid="class_q_c_p_bars_1ac22e00a6a41509538c21b04f0a57318c" compoundref="qcustomplot_8cpp" startline="18632" endline="18649">QCPBars::moveAbove</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a69fc371346980f19177c3d1ecdad78ee" compoundref="qcustomplot_8cpp" startline="18599" endline="18616">QCPBars::moveBelow</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a9df2d86e6ad3b58b51798d720e0f4739" compoundref="qcustomplot_8cpp" startline="21321" endline="21351">QCPFinancial::ohlcSelectTest</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a3903c1120ab5c27e7fa46b597ef267bd" compoundref="qcustomplot_8cpp" startline="7237" endline="7252">pixelsToCoords</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a9e0e620a56932c4df80a3762c2f93608" compoundref="qcustomplot_8cpp" startline="15047" endline="15074">QCPGraph::rescaleValueAxis</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1aa1e408bb2d13999150c3f7f8a8579ca9" compoundref="qcustomplot_8cpp" startline="7090" endline="7120">rescaleValueAxis</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a36011c34aca4f7a477de25961e2f6c13" compoundref="qcustomplot_8cpp" startline="14978" endline="14989">QCPGraph::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a87a9fb34a2a48dcae4c1245ada235e7d" compoundref="qcustomplot_8cpp" startline="17057" endline="17068">QCPCurve::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a62d66cc8eedca6bedfc1f6513164d418" compoundref="qcustomplot_8cpp" startline="18760" endline="18777">QCPBars::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a0153ac16326b94450afbca208e3f9961" compoundref="qcustomplot_8cpp" startline="19378" endline="19400">QCPStatisticalBox::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_color_map_1aba91ea58b489031157ecb777fe79e309" compoundref="qcustomplot_8cpp" startline="20311" endline="20326">QCPColorMap::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a77bffad8f3fcbcccbef03ead1c538e3a" compoundref="qcustomplot_8cpp" startline="20926" endline="20950">QCPFinancial::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a71626a07367e241ec62ad2c34baf21cb" compoundref="qcustomplot_8cpp" startline="6980" endline="6983">setValueAxis</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a7a255fc7260d96ed6f9d972839941f93" compoundref="qcustomplot_8cpp" startline="16130" endline="16179">QCPGraph::upperFillBasePoint</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_abstract_plottable_1aceee52342c8e75727abcbd164986fdcb" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QCPAbstractPlottable::mSelectable</definition>
+        <argsstring></argsstring>
+        <name>mSelectable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1466" column="8" bodyfile="qcustomplot.h" bodystart="1466" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a6fa0d0f95560ea8b01ee13f296dab2b1" compoundref="qcustomplot_8cpp" startline="7396" endline="7405">deselectEvent</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a16aaad02456aa23a759efd1ac90c79bf" compoundref="qcustomplot_8cpp" startline="7382" endline="7393">selectEvent</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a36011c34aca4f7a477de25961e2f6c13" compoundref="qcustomplot_8cpp" startline="14978" endline="14989">QCPGraph::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a87a9fb34a2a48dcae4c1245ada235e7d" compoundref="qcustomplot_8cpp" startline="17057" endline="17068">QCPCurve::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a62d66cc8eedca6bedfc1f6513164d418" compoundref="qcustomplot_8cpp" startline="18760" endline="18777">QCPBars::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a0153ac16326b94450afbca208e3f9961" compoundref="qcustomplot_8cpp" startline="19378" endline="19400">QCPStatisticalBox::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_color_map_1aba91ea58b489031157ecb777fe79e309" compoundref="qcustomplot_8cpp" startline="20311" endline="20326">QCPColorMap::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a77bffad8f3fcbcccbef03ead1c538e3a" compoundref="qcustomplot_8cpp" startline="20926" endline="20950">QCPFinancial::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a22c69299eb5569e0f6bf084877a37dc4" compoundref="qcustomplot_8cpp" startline="6994" endline="7001">setSelectable</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_abstract_plottable_1a43f68a0603e9bcd016bdfa6d9d5c41c9" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QCPAbstractPlottable::mSelected</definition>
+        <argsstring></argsstring>
+        <name>mSelected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1466" column="20" bodyfile="qcustomplot.h" bodystart="1466" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a6fa0d0f95560ea8b01ee13f296dab2b1" compoundref="qcustomplot_8cpp" startline="7396" endline="7405">deselectEvent</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a71f5081da0e5ab9c40a488ad40cff122" compoundref="qcustomplot_8cpp" startline="21230" endline="21314">QCPFinancial::drawCandlestickPlot</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a3c3007a7434e29d042c77ccf4f497e66" compoundref="qcustomplot_8cpp" startline="21169" endline="21222">QCPFinancial::drawOhlcPlot</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1ac9147022a662e92b46c39e7cb821b0af" compoundref="qcustomplot_8cpp" startline="7279" endline="7282">mainBrush</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1abd790a3b229239f49067f136633a4b98" compoundref="qcustomplot_8cpp" startline="7269" endline="7272">mainPen</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a16aaad02456aa23a759efd1ac90c79bf" compoundref="qcustomplot_8cpp" startline="7382" endline="7393">selectEvent</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1afbd5428c2952f59d952e11ab5cd79176" compoundref="qcustomplot_8cpp" startline="7017" endline="7024">setSelected</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_q_c_p_abstract_plottable_1a1cdf9df76adcfae45261690aa0ca2198" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class QCustomPlot</definition>
+        <argsstring></argsstring>
+        <name>QCustomPlot</name>
+        <param>
+          <type><ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1497" column="3" bodyfile="qcustomplot.h" bodystart="1497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_q_c_p_abstract_plottable_1af123edeca169ec7a31958a1d714e1a8a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class QCPAxis</definition>
+        <argsstring></argsstring>
+        <name>QCPAxis</name>
+        <param>
+          <type><ref refid="class_q_c_p_axis" kindref="compound">QCPAxis</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1498" column="3" bodyfile="qcustomplot.h" bodystart="1498" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_q_c_p_abstract_plottable_1a104c78e91302afd6842a903e472f552f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class QCPPlottableLegendItem</definition>
+        <argsstring></argsstring>
+        <name>QCPPlottableLegendItem</name>
+        <param>
+          <type><ref refid="class_q_c_p_plottable_legend_item" kindref="compound">QCPPlottableLegendItem</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1499" column="3" bodyfile="qcustomplot.h" bodystart="1499" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a70f8cabfd808f7d5204b9f18c45c13f5" compoundref="qcustomplot_8cpp" startline="7134" endline="7145">addToLegend</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1af78a036e40db6f53a31abadc5323715a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPAbstractPlottable::QCPAbstractPlottable</definition>
+        <argsstring>(QCPAxis *keyAxis, QCPAxis *valueAxis)</argsstring>
+        <name>QCPAbstractPlottable</name>
+        <param>
+          <type><ref refid="class_q_c_p_axis" kindref="compound">QCPAxis</ref> *</type>
+          <declname>keyAxis</declname>
+        </param>
+        <param>
+          <type><ref refid="class_q_c_p_axis" kindref="compound">QCPAxis</ref> *</type>
+          <declname>valueAxis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs an abstract plottable which uses <emphasis>keyAxis</emphasis> as its key axis (&quot;x&quot;) and <emphasis>valueAxis</emphasis> as its value axis (&quot;y&quot;). <emphasis>keyAxis</emphasis> and <emphasis>valueAxis</emphasis> must reside in the same <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> instance and have perpendicular orientations. If either of these restrictions is violated, a corresponding message is printed to the debug output (qDebug), the construction is not aborted, though.</para>
+<para>Since <ref refid="class_q_c_p_abstract_plottable" kindref="compound">QCPAbstractPlottable</ref> is an abstract class that defines the basic interface to plottables, it can&apos;t be directly instantiated.</para>
+<para>You probably want one of the subclasses like <ref refid="class_q_c_p_graph" kindref="compound">QCPGraph</ref> or <ref refid="class_q_c_p_curve" kindref="compound">QCPCurve</ref> instead. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1406" column="3" bodyfile="qcustomplot.cpp" bodystart="6840" bodyend="6859"/>
+        <references refid="class_q_c_p_abstract_plottable_1a2cdd6f0dd5e9a979037f86b4000d9cfe" compoundref="qcustomplot_8h" startline="1417" endline="1417">keyAxis</references>
+        <references refid="class_q_c_p_axis_1ab988ef4538e2655bb77bd138189cd42e" compoundref="qcustomplot_8h" startline="1206" endline="1206">QCPAxis::orientation</references>
+        <references refid="class_q_c_p_layerable_1a473edb813a4c1929d6b6a8fe3ff3faf7" compoundref="qcustomplot_8h" startline="424" endline="424">QCPLayerable::parentPlot</references>
+        <references refid="class_q_c_p_abstract_plottable_1af47809a644a68ffd955fb30b01fb4f2f" compoundref="qcustomplot_8h" startline="1418" endline="1418">valueAxis</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a52c226eefcb1920240eeabae574d28c0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString QCPAbstractPlottable::name</definition>
+        <argsstring>() const</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1409" column="11" bodyfile="qcustomplot.h" bodystart="1409" bodyend="1409"/>
+        <referencedby refid="class_q_c_p_plottable_legend_item_1a68a781c3de4f9959fdf82075052d43aa" compoundref="qcustomplot_8cpp" startline="12865" endline="12887">QCPPlottableLegendItem::draw</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a659218cc62c2a7786213d9dd429c1c8d" compoundref="qcustomplot_8cpp" startline="15077" endline="15122">QCPGraph::draw</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a2361302d2fc6ec669849bd3bca00c4b2" compoundref="qcustomplot_8cpp" startline="17071" endline="17156">QCPCurve::draw</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a42b894e34dac799f90ff3700706b31df" compoundref="qcustomplot_8cpp" startline="18780" endline="18812">QCPBars::draw</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317" compoundref="qcustomplot_8cpp" startline="19403" endline="19428">QCPStatisticalBox::draw</referencedby>
+        <referencedby refid="class_q_c_p_plottable_legend_item_1a3adf8154c7e61538656d80464e5695dd" compoundref="qcustomplot_8cpp" startline="12894" endline="12905">QCPPlottableLegendItem::minimumSizeHint</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1ab79c7ba76bc7fa89a4b3580e12149f1f" compoundref="qcustomplot_8cpp" startline="6865" endline="6868">setName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a022717896dc57b638a7b5a7be7212ba9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPAbstractPlottable::antialiasedFill</definition>
+        <argsstring>() const</argsstring>
+        <name>antialiasedFill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1410" column="8" bodyfile="qcustomplot.h" bodystart="1410" bodyend="1410"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a795370db6b1309de0ab60b633efb5ec2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPAbstractPlottable::antialiasedScatters</definition>
+        <argsstring>() const</argsstring>
+        <name>antialiasedScatters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1411" column="8" bodyfile="qcustomplot.h" bodystart="1411" bodyend="1411"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1add06e122d84deb9f451ace9bb8ad9c96" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPAbstractPlottable::antialiasedErrorBars</definition>
+        <argsstring>() const</argsstring>
+        <name>antialiasedErrorBars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1412" column="8" bodyfile="qcustomplot.h" bodystart="1412" bodyend="1412"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1ad5972efc31344e5a7a78ab4f8864b2d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QPen</type>
+        <definition>QPen QCPAbstractPlottable::pen</definition>
+        <argsstring>() const</argsstring>
+        <name>pen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1413" column="8" bodyfile="qcustomplot.h" bodystart="1413" bodyend="1413"/>
+        <referencedby refid="class_q_c_p_graph_1ac62c84f51d85b78ee583455b8c37ba56" compoundref="qcustomplot_8cpp" startline="15635" endline="15647">QCPGraph::drawImpulsePlot</referencedby>
+        <referencedby refid="class_q_c_p_graph_1abd4c7f81939e10776ea64603a704f22a" compoundref="qcustomplot_8cpp" startline="14760" endline="14763">QCPGraph::setErrorPen</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a7260ac55b669f5d0a74f16d5ca84c52c" compoundref="qcustomplot_8cpp" startline="19350" endline="19353">QCPStatisticalBox::setMedianPen</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1ab74b09ae4c0e7e13142fe4b5bf46cac7" compoundref="qcustomplot_8cpp" startline="6912" endline="6915">setPen</referencedby>
+        <referencedby refid="class_q_c_p_financial_1afe5c07e94ccea01a75b3a2476993c346" compoundref="qcustomplot_8cpp" startline="20792" endline="20795">QCPFinancial::setPenNegative</referencedby>
+        <referencedby refid="class_q_c_p_financial_1ac58aa3adc7a35aab0088764b840683e5" compoundref="qcustomplot_8cpp" startline="20778" endline="20781">QCPFinancial::setPenPositive</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a6911603cad23ab0469b108224517516f" compoundref="qcustomplot_8cpp" startline="6923" endline="6926">setSelectedPen</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1aa8d3e503897788e1abf68dc74b5f147f" compoundref="qcustomplot_8cpp" startline="19342" endline="19345">QCPStatisticalBox::setWhiskerBarPen</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a4a5034cb3b9b040444df05ab1684620b" compoundref="qcustomplot_8cpp" startline="19331" endline="19334">QCPStatisticalBox::setWhiskerPen</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1aafdfd0946b18364321ffce01cc6045a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QPen</type>
+        <definition>QPen QCPAbstractPlottable::selectedPen</definition>
+        <argsstring>() const</argsstring>
+        <name>selectedPen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1414" column="8" bodyfile="qcustomplot.h" bodystart="1414" bodyend="1414"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a893b4896dfd92b68b05b2600b80f5826" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QBrush</type>
+        <definition>QBrush QCPAbstractPlottable::brush</definition>
+        <argsstring>() const</argsstring>
+        <name>brush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1415" column="10" bodyfile="qcustomplot.h" bodystart="1415" bodyend="1415"/>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a7a4b92144dca6453a1f0f210e27edc74" compoundref="qcustomplot_8cpp" startline="6937" endline="6940">setBrush</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a8bbdd87629f9144b3ef51af660c0961a" compoundref="qcustomplot_8cpp" startline="20764" endline="20767">QCPFinancial::setBrushNegative</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a5ebff2b1764efd07cc44942e67821829" compoundref="qcustomplot_8cpp" startline="20750" endline="20753">QCPFinancial::setBrushPositive</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1ae8c816874089f7a44001e8618e81a9dc" compoundref="qcustomplot_8cpp" startline="6948" endline="6951">setSelectedBrush</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1afe5f3f74b09e89713ba39da04079a337" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QBrush</type>
+        <definition>QBrush QCPAbstractPlottable::selectedBrush</definition>
+        <argsstring>() const</argsstring>
+        <name>selectedBrush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1416" column="10" bodyfile="qcustomplot.h" bodystart="1416" bodyend="1416"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a2cdd6f0dd5e9a979037f86b4000d9cfe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_q_c_p_axis" kindref="compound">QCPAxis</ref> *</type>
+        <definition>QCPAxis* QCPAbstractPlottable::keyAxis</definition>
+        <argsstring>() const</argsstring>
+        <name>keyAxis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1417" column="11" bodyfile="qcustomplot.h" bodystart="1417" bodyend="1417"/>
+        <referencedby refid="class_q_c_p_financial_1a6fa1e18f18b37d3a0502b97d864a6d15" compoundref="qcustomplot_8cpp" startline="21359" endline="21417">QCPFinancial::candlestickSelectTest</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a7ad84a36472441cf1f555c5683d0da93" compoundref="qcustomplot_8cpp" startline="7193" endline="7208">coordsToPixels</referencedby>
+        <referencedby refid="class_q_c_p_color_map_1a3b0f45a3177be9522d5e9b8cd8ae122d" compoundref="qcustomplot_8cpp" startline="20404" endline="20470">QCPColorMap::draw</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a71f5081da0e5ab9c40a488ad40cff122" compoundref="qcustomplot_8cpp" startline="21230" endline="21314">QCPFinancial::drawCandlestickPlot</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ab51aeba7e9d29754e58852cfad3436cc" compoundref="qcustomplot_8cpp" startline="15849" endline="15944">QCPGraph::drawError</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a3c3007a7434e29d042c77ccf4f497e66" compoundref="qcustomplot_8cpp" startline="21169" endline="21222">QCPFinancial::drawOhlcPlot</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ae1f3edd5eb41aa5782e61673488fd3e0" compoundref="qcustomplot_8cpp" startline="15513" endline="15549">QCPGraph::drawScatterPlot</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a3a4ca0069f003929284763caef1856a8" compoundref="qcustomplot_8cpp" startline="18894" endline="18923">QCPBars::getBarPolygon</referencedby>
+        <referencedby refid="class_q_c_p_graph_1add26655bd2338adaa7fc99e27bd06550" compoundref="qcustomplot_8cpp" startline="16190" endline="16323">QCPGraph::getChannelFillPolygon</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a3ca9d2c315c643f732cc85e20d18b551" compoundref="qcustomplot_8cpp" startline="17221" endline="17298">QCPCurve::getCurveData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1aae73c001a78cbe54e55e6779d7a70957" compoundref="qcustomplot_8cpp" startline="15429" endline="15466">QCPGraph::getImpulsePlotData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a77314984a7af578a66e939db0db48556" compoundref="qcustomplot_8cpp" startline="15217" endline="15245">QCPGraph::getLinePlotData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ae853c297da9d21b6720d2d1c3b0121bf" compoundref="qcustomplot_8cpp" startline="15661" endline="15840">QCPGraph::getPreparedData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ab860d67ecc7e2d7253ab1f19032958c2" compoundref="qcustomplot_8cpp" startline="15364" endline="15416">QCPGraph::getStepCenterPlotData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a8f8ae9cb4aa312c2085c3f6f298f19d4" compoundref="qcustomplot_8cpp" startline="15258" endline="15298">QCPGraph::getStepLeftPlotData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a59fecb135f47db10e14d75018210bf80" compoundref="qcustomplot_8cpp" startline="15311" endline="15351">QCPGraph::getStepRightPlotData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ace7c17a07e9aa824853e469816a5aa1c" compoundref="qcustomplot_8cpp" startline="16065" endline="16114">QCPGraph::lowerFillBasePoint</referencedby>
+        <referencedby refid="class_q_c_p_bars_1ac22e00a6a41509538c21b04f0a57318c" compoundref="qcustomplot_8cpp" startline="18632" endline="18649">QCPBars::moveAbove</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a69fc371346980f19177c3d1ecdad78ee" compoundref="qcustomplot_8cpp" startline="18599" endline="18616">QCPBars::moveBelow</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a9df2d86e6ad3b58b51798d720e0f4739" compoundref="qcustomplot_8cpp" startline="21321" endline="21351">QCPFinancial::ohlcSelectTest</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a3903c1120ab5c27e7fa46b597ef267bd" compoundref="qcustomplot_8cpp" startline="7237" endline="7252">pixelsToCoords</referencedby>
+        <referencedby refid="class_q_custom_plot_1acddbbd8b16dd633f0d94e5a736fbd8cf" compoundref="qcustomplot_8cpp" startline="9616" endline="9637">QCustomPlot::plottableAt</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1af78a036e40db6f53a31abadc5323715a" compoundref="qcustomplot_8cpp" startline="6840" endline="6859">QCPAbstractPlottable</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a051fb77b459ba1ae8d65552c67f45e94" compoundref="qcustomplot_8cpp" startline="15011" endline="15038">QCPGraph::rescaleKeyAxis</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1ae96b83c961e257da116c6acf9c7da308" compoundref="qcustomplot_8cpp" startline="7050" endline="7080">rescaleKeyAxis</referencedby>
+        <referencedby refid="class_q_c_p_item_tracer_1af5886f4ded8dd68cb4f3388f390790c0" compoundref="qcustomplot_8cpp" startline="23085" endline="23101">QCPItemTracer::setGraph</referencedby>
+        <referencedby refid="class_q_c_p_color_map_1a5d8158b62d55fcfeaabcb68ce0083e87" compoundref="qcustomplot_8cpp" startline="20288" endline="20299">QCPColorMap::updateLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_color_map_1a5efcea591bb5486d968af520a4d43c3a" compoundref="qcustomplot_8cpp" startline="20342" endline="20401">QCPColorMap::updateMapImage</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a7a255fc7260d96ed6f9d972839941f93" compoundref="qcustomplot_8cpp" startline="16130" endline="16179">QCPGraph::upperFillBasePoint</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1af47809a644a68ffd955fb30b01fb4f2f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_q_c_p_axis" kindref="compound">QCPAxis</ref> *</type>
+        <definition>QCPAxis* QCPAbstractPlottable::valueAxis</definition>
+        <argsstring>() const</argsstring>
+        <name>valueAxis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1418" column="11" bodyfile="qcustomplot.h" bodystart="1418" bodyend="1418"/>
+        <referencedby refid="class_q_c_p_financial_1a6fa1e18f18b37d3a0502b97d864a6d15" compoundref="qcustomplot_8cpp" startline="21359" endline="21417">QCPFinancial::candlestickSelectTest</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a7ad84a36472441cf1f555c5683d0da93" compoundref="qcustomplot_8cpp" startline="7193" endline="7208">coordsToPixels</referencedby>
+        <referencedby refid="class_q_c_p_color_map_1a3b0f45a3177be9522d5e9b8cd8ae122d" compoundref="qcustomplot_8cpp" startline="20404" endline="20470">QCPColorMap::draw</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a71f5081da0e5ab9c40a488ad40cff122" compoundref="qcustomplot_8cpp" startline="21230" endline="21314">QCPFinancial::drawCandlestickPlot</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ab51aeba7e9d29754e58852cfad3436cc" compoundref="qcustomplot_8cpp" startline="15849" endline="15944">QCPGraph::drawError</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a3c3007a7434e29d042c77ccf4f497e66" compoundref="qcustomplot_8cpp" startline="21169" endline="21222">QCPFinancial::drawOhlcPlot</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ae1f3edd5eb41aa5782e61673488fd3e0" compoundref="qcustomplot_8cpp" startline="15513" endline="15549">QCPGraph::drawScatterPlot</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a3a4ca0069f003929284763caef1856a8" compoundref="qcustomplot_8cpp" startline="18894" endline="18923">QCPBars::getBarPolygon</referencedby>
+        <referencedby refid="class_q_c_p_graph_1add26655bd2338adaa7fc99e27bd06550" compoundref="qcustomplot_8cpp" startline="16190" endline="16323">QCPGraph::getChannelFillPolygon</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a3ca9d2c315c643f732cc85e20d18b551" compoundref="qcustomplot_8cpp" startline="17221" endline="17298">QCPCurve::getCurveData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1aae73c001a78cbe54e55e6779d7a70957" compoundref="qcustomplot_8cpp" startline="15429" endline="15466">QCPGraph::getImpulsePlotData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a77314984a7af578a66e939db0db48556" compoundref="qcustomplot_8cpp" startline="15217" endline="15245">QCPGraph::getLinePlotData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ae853c297da9d21b6720d2d1c3b0121bf" compoundref="qcustomplot_8cpp" startline="15661" endline="15840">QCPGraph::getPreparedData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ab860d67ecc7e2d7253ab1f19032958c2" compoundref="qcustomplot_8cpp" startline="15364" endline="15416">QCPGraph::getStepCenterPlotData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a8f8ae9cb4aa312c2085c3f6f298f19d4" compoundref="qcustomplot_8cpp" startline="15258" endline="15298">QCPGraph::getStepLeftPlotData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a59fecb135f47db10e14d75018210bf80" compoundref="qcustomplot_8cpp" startline="15311" endline="15351">QCPGraph::getStepRightPlotData</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ace7c17a07e9aa824853e469816a5aa1c" compoundref="qcustomplot_8cpp" startline="16065" endline="16114">QCPGraph::lowerFillBasePoint</referencedby>
+        <referencedby refid="class_q_c_p_bars_1ac22e00a6a41509538c21b04f0a57318c" compoundref="qcustomplot_8cpp" startline="18632" endline="18649">QCPBars::moveAbove</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a69fc371346980f19177c3d1ecdad78ee" compoundref="qcustomplot_8cpp" startline="18599" endline="18616">QCPBars::moveBelow</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a9df2d86e6ad3b58b51798d720e0f4739" compoundref="qcustomplot_8cpp" startline="21321" endline="21351">QCPFinancial::ohlcSelectTest</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a3903c1120ab5c27e7fa46b597ef267bd" compoundref="qcustomplot_8cpp" startline="7237" endline="7252">pixelsToCoords</referencedby>
+        <referencedby refid="class_q_custom_plot_1acddbbd8b16dd633f0d94e5a736fbd8cf" compoundref="qcustomplot_8cpp" startline="9616" endline="9637">QCustomPlot::plottableAt</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1af78a036e40db6f53a31abadc5323715a" compoundref="qcustomplot_8cpp" startline="6840" endline="6859">QCPAbstractPlottable</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a9e0e620a56932c4df80a3762c2f93608" compoundref="qcustomplot_8cpp" startline="15047" endline="15074">QCPGraph::rescaleValueAxis</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1aa1e408bb2d13999150c3f7f8a8579ca9" compoundref="qcustomplot_8cpp" startline="7090" endline="7120">rescaleValueAxis</referencedby>
+        <referencedby refid="class_q_c_p_item_tracer_1af5886f4ded8dd68cb4f3388f390790c0" compoundref="qcustomplot_8cpp" startline="23085" endline="23101">QCPItemTracer::setGraph</referencedby>
+        <referencedby refid="class_q_c_p_color_map_1a5d8158b62d55fcfeaabcb68ce0083e87" compoundref="qcustomplot_8cpp" startline="20288" endline="20299">QCPColorMap::updateLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a7a255fc7260d96ed6f9d972839941f93" compoundref="qcustomplot_8cpp" startline="16130" endline="16179">QCPGraph::upperFillBasePoint</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1adf896b8a213fea74440c7bc969cf6e4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPAbstractPlottable::selectable</definition>
+        <argsstring>() const</argsstring>
+        <name>selectable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1419" column="8" bodyfile="qcustomplot.h" bodystart="1419" bodyend="1419"/>
+        <referencedby refid="class_q_custom_plot_1acddbbd8b16dd633f0d94e5a736fbd8cf" compoundref="qcustomplot_8cpp" startline="9616" endline="9637">QCustomPlot::plottableAt</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a22c69299eb5569e0f6bf084877a37dc4" compoundref="qcustomplot_8cpp" startline="6994" endline="7001">setSelectable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a0b3b514474fe93354fc74cfc144184b4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPAbstractPlottable::selected</definition>
+        <argsstring>() const</argsstring>
+        <name>selected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1420" column="8" bodyfile="qcustomplot.h" bodystart="1420" bodyend="1420"/>
+        <referencedby refid="class_q_custom_plot_1ad3547aded026d8a9ae6ef13a69080d06" compoundref="qcustomplot_8cpp" startline="9783" endline="9792">QCustomPlot::selectedGraphs</referencedby>
+        <referencedby refid="class_q_custom_plot_1a747faaab57c56891e901a1e97fa4359a" compoundref="qcustomplot_8cpp" startline="9593" endline="9602">QCustomPlot::selectedPlottables</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1afbd5428c2952f59d952e11ab5cd79176" compoundref="qcustomplot_8cpp" startline="7017" endline="7024">setSelected</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1ab79c7ba76bc7fa89a4b3580e12149f1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::setName</definition>
+        <argsstring>(const QString &amp;name)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The name is the textual representation of this plottable as it is displayed in the legend (<ref refid="class_q_c_p_legend" kindref="compound">QCPLegend</ref>). It may contain any UTF-8 characters, including newlines. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1423" column="8" bodyfile="qcustomplot.cpp" bodystart="6865" bodyend="6868"/>
+        <references refid="class_q_c_p_abstract_plottable_1ac29ffef424e2488675930de18cde612a" compoundref="qcustomplot_8h" startline="1461">mName</references>
+        <references refid="class_q_c_p_abstract_plottable_1a52c226eefcb1920240eeabae574d28c0" compoundref="qcustomplot_8h" startline="1409" endline="1409">name</references>
+        <referencedby refid="class_q_custom_plot_1a6fb2873d35a8a8089842d81a70a54167" compoundref="qcustomplot_8cpp" startline="9697" endline="9722">QCustomPlot::addGraph</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a089d6b5577120239b55c39ed27c39536" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::setAntialiasedFill</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>setAntialiasedFill</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets whether fills of this plottable are drawn antialiased or not.</para>
+<para>Note that this setting may be overridden by <ref refid="class_q_custom_plot_1af6f91e5eab1be85f67c556e98c3745e8" kindref="member">QCustomPlot::setAntialiasedElements</ref> and <ref refid="class_q_custom_plot_1ae10d685b5eabea2999fb8775ca173c24" kindref="member">QCustomPlot::setNotAntialiasedElements</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1424" column="8" bodyfile="qcustomplot.cpp" bodystart="6876" bodyend="6879"/>
+        <references refid="class_q_c_p_abstract_plottable_1a152ac765bedf927fb240545d11d453ea" compoundref="qcustomplot_8h" startline="1462">mAntialiasedFill</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a2f03f067ede2ed4da6f7d0e4777a3f02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::setAntialiasedScatters</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>setAntialiasedScatters</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets whether the scatter symbols of this plottable are drawn antialiased or not.</para>
+<para>Note that this setting may be overridden by <ref refid="class_q_custom_plot_1af6f91e5eab1be85f67c556e98c3745e8" kindref="member">QCustomPlot::setAntialiasedElements</ref> and <ref refid="class_q_custom_plot_1ae10d685b5eabea2999fb8775ca173c24" kindref="member">QCustomPlot::setNotAntialiasedElements</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1425" column="8" bodyfile="qcustomplot.cpp" bodystart="6887" bodyend="6890"/>
+        <references refid="class_q_c_p_abstract_plottable_1aa115755e525a8e3a86dc683f9cab755b" compoundref="qcustomplot_8h" startline="1462">mAntialiasedScatters</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a757beb744b96cf1855cca5ab9d3ecf52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::setAntialiasedErrorBars</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>setAntialiasedErrorBars</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets whether the error bars of this plottable are drawn antialiased or not.</para>
+<para>Note that this setting may be overridden by <ref refid="class_q_custom_plot_1af6f91e5eab1be85f67c556e98c3745e8" kindref="member">QCustomPlot::setAntialiasedElements</ref> and <ref refid="class_q_custom_plot_1ae10d685b5eabea2999fb8775ca173c24" kindref="member">QCustomPlot::setNotAntialiasedElements</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1426" column="8" bodyfile="qcustomplot.cpp" bodystart="6898" bodyend="6901"/>
+        <references refid="class_q_c_p_abstract_plottable_1ad48660b2bd301576e92fb033d8f455ea" compoundref="qcustomplot_8h" startline="1462">mAntialiasedErrorBars</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1ab74b09ae4c0e7e13142fe4b5bf46cac7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::setPen</definition>
+        <argsstring>(const QPen &amp;pen)</argsstring>
+        <name>setPen</name>
+        <param>
+          <type>const QPen &amp;</type>
+          <declname>pen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The pen is used to draw basic lines that make up the plottable representation in the plot.</para>
+<para>For example, the <ref refid="class_q_c_p_graph" kindref="compound">QCPGraph</ref> subclass draws its graph lines with this pen.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_plottable_1a7a4b92144dca6453a1f0f210e27edc74" kindref="member">setBrush</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1427" column="8" bodyfile="qcustomplot.cpp" bodystart="6912" bodyend="6915"/>
+        <references refid="class_q_c_p_abstract_plottable_1a67bc0622fd1b9fa14e54c14922dcec66" compoundref="qcustomplot_8h" startline="1463">mPen</references>
+        <references refid="class_q_c_p_abstract_plottable_1ad5972efc31344e5a7a78ab4f8864b2d3" compoundref="qcustomplot_8h" startline="1413" endline="1413">pen</references>
+        <referencedby refid="class_simulator_1a214b53f24cdf3663eda13331d63929bd" compoundref="simulator_8cpp" startline="95" endline="110">Simulator::DrawLine</referencedby>
+        <referencedby refid="class_simulator_1ab35c732a81b08e2304b6c4f11f44c7e2" compoundref="simulator_8cpp" startline="112" endline="123">Simulator::DrawMouseCircle</referencedby>
+        <referencedby refid="class_simulator_1a4c40d6b8d3e664fee6affb9ef24dc67d" compoundref="simulator_8cpp" startline="125" endline="134">Simulator::DrawMouseLine</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a0393a38cf7183cbf46348eb6cf9a5a6c" compoundref="qcustomplot_8cpp" startline="14483" endline="14500">QCPGraph::QCPGraph</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a75c2b3e7fcd0741cc981693a2ba63b27" compoundref="qcustomplot_8cpp" startline="19188" endline="19208">QCPStatisticalBox::QCPStatisticalBox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a6911603cad23ab0469b108224517516f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::setSelectedPen</definition>
+        <argsstring>(const QPen &amp;pen)</argsstring>
+        <name>setSelectedPen</name>
+        <param>
+          <type>const QPen &amp;</type>
+          <declname>pen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When the plottable is selected, this pen is used to draw basic lines instead of the normal pen set via <ref refid="class_q_c_p_abstract_plottable_1ab74b09ae4c0e7e13142fe4b5bf46cac7" kindref="member">setPen</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_plottable_1afbd5428c2952f59d952e11ab5cd79176" kindref="member">setSelected</ref>, <ref refid="class_q_c_p_abstract_plottable_1a22c69299eb5569e0f6bf084877a37dc4" kindref="member">setSelectable</ref>, <ref refid="class_q_c_p_abstract_plottable_1ae8c816874089f7a44001e8618e81a9dc" kindref="member">setSelectedBrush</ref>, <ref refid="class_q_c_p_abstract_plottable_1a38efe9641d972992a3d44204bc80ec1d" kindref="member">selectTest</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1428" column="8" bodyfile="qcustomplot.cpp" bodystart="6923" bodyend="6926"/>
+        <references refid="class_q_c_p_abstract_plottable_1a10619472f5d5e10e9519a599f1cf5576" compoundref="qcustomplot_8h" startline="1463">mSelectedPen</references>
+        <references refid="class_q_c_p_abstract_plottable_1ad5972efc31344e5a7a78ab4f8864b2d3" compoundref="qcustomplot_8h" startline="1413" endline="1413">pen</references>
+        <referencedby refid="class_q_c_p_financial_1a4702d5248feeb9d1ec6e3ce725b10b32" compoundref="qcustomplot_8cpp" startline="20637" endline="20652">QCPFinancial::QCPFinancial</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a0393a38cf7183cbf46348eb6cf9a5a6c" compoundref="qcustomplot_8cpp" startline="14483" endline="14500">QCPGraph::QCPGraph</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a75c2b3e7fcd0741cc981693a2ba63b27" compoundref="qcustomplot_8cpp" startline="19188" endline="19208">QCPStatisticalBox::QCPStatisticalBox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a7a4b92144dca6453a1f0f210e27edc74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::setBrush</definition>
+        <argsstring>(const QBrush &amp;brush)</argsstring>
+        <name>setBrush</name>
+        <param>
+          <type>const QBrush &amp;</type>
+          <declname>brush</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The brush is used to draw basic fills of the plottable representation in the plot. The Fill can be a color, gradient or texture, see the usage of QBrush.</para>
+<para>For example, the <ref refid="class_q_c_p_graph" kindref="compound">QCPGraph</ref> subclass draws the fill under the graph with this brush, when it&apos;s not set to Qt::NoBrush.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_plottable_1ab74b09ae4c0e7e13142fe4b5bf46cac7" kindref="member">setPen</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1429" column="8" bodyfile="qcustomplot.cpp" bodystart="6937" bodyend="6940"/>
+        <references refid="class_q_c_p_abstract_plottable_1a893b4896dfd92b68b05b2600b80f5826" compoundref="qcustomplot_8h" startline="1415" endline="1415">brush</references>
+        <references refid="class_q_c_p_abstract_plottable_1a33f00674c0161c13315ab9da0895418e" compoundref="qcustomplot_8h" startline="1464">mBrush</references>
+        <referencedby refid="class_q_c_p_graph_1a0393a38cf7183cbf46348eb6cf9a5a6c" compoundref="qcustomplot_8cpp" startline="14483" endline="14500">QCPGraph::QCPGraph</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a75c2b3e7fcd0741cc981693a2ba63b27" compoundref="qcustomplot_8cpp" startline="19188" endline="19208">QCPStatisticalBox::QCPStatisticalBox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1ae8c816874089f7a44001e8618e81a9dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::setSelectedBrush</definition>
+        <argsstring>(const QBrush &amp;brush)</argsstring>
+        <name>setSelectedBrush</name>
+        <param>
+          <type>const QBrush &amp;</type>
+          <declname>brush</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>When the plottable is selected, this brush is used to draw fills instead of the normal brush set via <ref refid="class_q_c_p_abstract_plottable_1a7a4b92144dca6453a1f0f210e27edc74" kindref="member">setBrush</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_plottable_1afbd5428c2952f59d952e11ab5cd79176" kindref="member">setSelected</ref>, <ref refid="class_q_c_p_abstract_plottable_1a22c69299eb5569e0f6bf084877a37dc4" kindref="member">setSelectable</ref>, <ref refid="class_q_c_p_abstract_plottable_1a6911603cad23ab0469b108224517516f" kindref="member">setSelectedPen</ref>, <ref refid="class_q_c_p_abstract_plottable_1a38efe9641d972992a3d44204bc80ec1d" kindref="member">selectTest</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1430" column="8" bodyfile="qcustomplot.cpp" bodystart="6948" bodyend="6951"/>
+        <references refid="class_q_c_p_abstract_plottable_1a893b4896dfd92b68b05b2600b80f5826" compoundref="qcustomplot_8h" startline="1415" endline="1415">brush</references>
+        <references refid="class_q_c_p_abstract_plottable_1aea3c0da30c7a8be23ad5f2d9bca36762" compoundref="qcustomplot_8h" startline="1464">mSelectedBrush</references>
+        <referencedby refid="class_q_c_p_financial_1a4702d5248feeb9d1ec6e3ce725b10b32" compoundref="qcustomplot_8cpp" startline="20637" endline="20652">QCPFinancial::QCPFinancial</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a0393a38cf7183cbf46348eb6cf9a5a6c" compoundref="qcustomplot_8cpp" startline="14483" endline="14500">QCPGraph::QCPGraph</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a75c2b3e7fcd0741cc981693a2ba63b27" compoundref="qcustomplot_8cpp" startline="19188" endline="19208">QCPStatisticalBox::QCPStatisticalBox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a8524fa2994c63c0913ebd9bb2ffa3920" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::setKeyAxis</definition>
+        <argsstring>(QCPAxis *axis)</argsstring>
+        <name>setKeyAxis</name>
+        <param>
+          <type><ref refid="class_q_c_p_axis" kindref="compound">QCPAxis</ref> *</type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The key axis of a plottable can be set to any axis of a <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref>, as long as it is orthogonal to the plottable&apos;s value axis. This function performs no checks to make sure this is the case. The typical mathematical choice is to use the x-axis (<ref refid="class_q_custom_plot_1a9a79cd0158a4c7f30cbc702f0fd800e4" kindref="member">QCustomPlot::xAxis</ref>) as key axis and the y-axis (<ref refid="class_q_custom_plot_1af6fea5679725b152c14facd920b19367" kindref="member">QCustomPlot::yAxis</ref>) as value axis.</para>
+<para>Normally, the key and value axes are set in the constructor of the plottable (or <ref refid="class_q_custom_plot_1a6fb2873d35a8a8089842d81a70a54167" kindref="member">QCustomPlot::addGraph</ref> when working with QCPGraphs through the dedicated graph interface).</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_plottable_1a71626a07367e241ec62ad2c34baf21cb" kindref="member">setValueAxis</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1431" column="8" bodyfile="qcustomplot.cpp" bodystart="6964" bodyend="6967"/>
+        <references refid="class_q_c_p_abstract_plottable_1a426f42e254d0f8ce5436a868c61a6827" compoundref="qcustomplot_8h" startline="1465">mKeyAxis</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a71626a07367e241ec62ad2c34baf21cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::setValueAxis</definition>
+        <argsstring>(QCPAxis *axis)</argsstring>
+        <name>setValueAxis</name>
+        <param>
+          <type><ref refid="class_q_c_p_axis" kindref="compound">QCPAxis</ref> *</type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The value axis of a plottable can be set to any axis of a <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref>, as long as it is orthogonal to the plottable&apos;s key axis. This function performs no checks to make sure this is the case. The typical mathematical choice is to use the x-axis (<ref refid="class_q_custom_plot_1a9a79cd0158a4c7f30cbc702f0fd800e4" kindref="member">QCustomPlot::xAxis</ref>) as key axis and the y-axis (<ref refid="class_q_custom_plot_1af6fea5679725b152c14facd920b19367" kindref="member">QCustomPlot::yAxis</ref>) as value axis.</para>
+<para>Normally, the key and value axes are set in the constructor of the plottable (or <ref refid="class_q_custom_plot_1a6fb2873d35a8a8089842d81a70a54167" kindref="member">QCustomPlot::addGraph</ref> when working with QCPGraphs through the dedicated graph interface).</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_plottable_1a8524fa2994c63c0913ebd9bb2ffa3920" kindref="member">setKeyAxis</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1432" column="8" bodyfile="qcustomplot.cpp" bodystart="6980" bodyend="6983"/>
+        <references refid="class_q_c_p_abstract_plottable_1a2901452ca4aea911a1827717934a4bda" compoundref="qcustomplot_8h" startline="1465">mValueAxis</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a22c69299eb5569e0f6bf084877a37dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Q_SLOT void</type>
+        <definition>void QCPAbstractPlottable::setSelectable</definition>
+        <argsstring>(bool selectable)</argsstring>
+        <name>setSelectable</name>
+        <param>
+          <type>bool</type>
+          <declname>selectable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets whether the user can (de-)select this plottable by clicking on the <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> surface. (When <ref refid="class_q_custom_plot_1a5ee1e2f6ae27419deca53e75907c27e5" kindref="member">QCustomPlot::setInteractions</ref> contains iSelectPlottables.)</para>
+<para>However, even when <emphasis>selectable</emphasis> was set to false, it is possible to set the selection manually, by calling <ref refid="class_q_c_p_abstract_plottable_1afbd5428c2952f59d952e11ab5cd79176" kindref="member">setSelected</ref> directly.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_plottable_1afbd5428c2952f59d952e11ab5cd79176" kindref="member">setSelected</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1433" column="15" bodyfile="qcustomplot.cpp" bodystart="6994" bodyend="7001"/>
+        <references refid="class_q_c_p_abstract_plottable_1aceee52342c8e75727abcbd164986fdcb" compoundref="qcustomplot_8h" startline="1466">mSelectable</references>
+        <references refid="class_q_c_p_abstract_plottable_1adf896b8a213fea74440c7bc969cf6e4c" compoundref="qcustomplot_8h" startline="1419" endline="1419">selectable</references>
+        <references refid="class_q_c_p_abstract_plottable_1a0059caa3f3581f3959660fef8cbb71c4">selectableChanged</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1afbd5428c2952f59d952e11ab5cd79176" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Q_SLOT void</type>
+        <definition>void QCPAbstractPlottable::setSelected</definition>
+        <argsstring>(bool selected)</argsstring>
+        <name>setSelected</name>
+        <param>
+          <type>bool</type>
+          <declname>selected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets whether this plottable is selected or not. When selected, it uses a different pen and brush to draw its lines and fills, see <ref refid="class_q_c_p_abstract_plottable_1a6911603cad23ab0469b108224517516f" kindref="member">setSelectedPen</ref> and <ref refid="class_q_c_p_abstract_plottable_1ae8c816874089f7a44001e8618e81a9dc" kindref="member">setSelectedBrush</ref>.</para>
+<para>The entire selection mechanism for plottables is handled automatically when <ref refid="class_q_custom_plot_1a5ee1e2f6ae27419deca53e75907c27e5" kindref="member">QCustomPlot::setInteractions</ref> contains iSelectPlottables. You only need to call this function when you wish to change the selection state manually.</para>
+<para>This function can change the selection state even when <ref refid="class_q_c_p_abstract_plottable_1a22c69299eb5569e0f6bf084877a37dc4" kindref="member">setSelectable</ref> was set to false.</para>
+<para>emits the <ref refid="class_q_c_p_abstract_plottable_1a3af66432b1dca93b28e00e78a8c7c1d9" kindref="member">selectionChanged</ref> signal when <emphasis>selected</emphasis> is different from the previous selection state.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_plottable_1a22c69299eb5569e0f6bf084877a37dc4" kindref="member">setSelectable</ref>, <ref refid="class_q_c_p_abstract_plottable_1a38efe9641d972992a3d44204bc80ec1d" kindref="member">selectTest</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1434" column="15" bodyfile="qcustomplot.cpp" bodystart="7017" bodyend="7024"/>
+        <references refid="class_q_c_p_abstract_plottable_1a43f68a0603e9bcd016bdfa6d9d5c41c9" compoundref="qcustomplot_8h" startline="1466">mSelected</references>
+        <references refid="class_q_c_p_abstract_plottable_1a0b3b514474fe93354fc74cfc144184b4" compoundref="qcustomplot_8h" startline="1420" endline="1420">selected</references>
+        <references refid="class_q_c_p_abstract_plottable_1a3af66432b1dca93b28e00e78a8c7c1d9">selectionChanged</references>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a6fa0d0f95560ea8b01ee13f296dab2b1" compoundref="qcustomplot_8cpp" startline="7396" endline="7405">deselectEvent</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a16aaad02456aa23a759efd1ac90c79bf" compoundref="qcustomplot_8cpp" startline="7382" endline="7393">selectEvent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a86e5b8fd4b6ff4f4084e7ea4c573fc53" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::clearData</definition>
+        <argsstring>()=0</argsstring>
+        <name>clearData</name>
+        <reimplementedby refid="class_q_c_p_graph_1ad4e94a4e44e5e76fbec81a72a977157d">clearData</reimplementedby>
+        <reimplementedby refid="class_q_c_p_curve_1ae0462c61dbfbac07db0736ec64110241">clearData</reimplementedby>
+        <reimplementedby refid="class_q_c_p_bars_1a11dbbd707132f07f862dff13c5789c2b">clearData</reimplementedby>
+        <reimplementedby refid="class_q_c_p_statistical_box_1a19112994449df0c20287858436cc68e3">clearData</reimplementedby>
+        <reimplementedby refid="class_q_c_p_color_map_1a0545dce5383766885912331705a8e099">clearData</reimplementedby>
+        <reimplementedby refid="class_q_c_p_financial_1a11fd49928c33e55e27b7319c6927864a">clearData</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clears all data in the plottable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1437" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a38efe9641d972992a3d44204bc80ec1d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double QCPAbstractPlottable::selectTest</definition>
+        <argsstring>(const QPointF &amp;pos, bool onlySelectable, QVariant *details=0) const =0</argsstring>
+        <name>selectTest</name>
+        <reimplements refid="class_q_c_p_layerable_1a04db8351fefd44cfdb77958e75c6288e">selectTest</reimplements>
+        <reimplementedby refid="class_q_c_p_graph_1a36011c34aca4f7a477de25961e2f6c13">selectTest</reimplementedby>
+        <reimplementedby refid="class_q_c_p_curve_1a87a9fb34a2a48dcae4c1245ada235e7d">selectTest</reimplementedby>
+        <reimplementedby refid="class_q_c_p_bars_1a62d66cc8eedca6bedfc1f6513164d418">selectTest</reimplementedby>
+        <reimplementedby refid="class_q_c_p_statistical_box_1a0153ac16326b94450afbca208e3f9961">selectTest</reimplementedby>
+        <reimplementedby refid="class_q_c_p_color_map_1aba91ea58b489031157ecb777fe79e309">selectTest</reimplementedby>
+        <reimplementedby refid="class_q_c_p_financial_1a77bffad8f3fcbcccbef03ead1c538e3a">selectTest</reimplementedby>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>onlySelectable</declname>
+        </param>
+        <param>
+          <type>QVariant *</type>
+          <declname>details</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to decide whether a click hits a layerable object or not.</para>
+<para><emphasis>pos</emphasis> is a point in pixel coordinates on the <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> surface. This function returns the shortest pixel distance of this point to the object. If the object is either invisible or the distance couldn&apos;t be determined, -1.0 is returned. Further, if <emphasis>onlySelectable</emphasis> is true and the object is not selectable, -1.0 is returned, too.</para>
+<para>If the object is represented not by single lines but by an area like a <ref refid="class_q_c_p_item_text" kindref="compound">QCPItemText</ref> or the bars of a <ref refid="class_q_c_p_bars" kindref="compound">QCPBars</ref> plottable, a click inside the area should also be considered a hit. In these cases this function thus returns a constant value greater zero but still below the parent plot&apos;s selection tolerance. (typically the selectionTolerance multiplied by 0.99).</para>
+<para>Providing a constant value for area objects allows selecting line objects even when they are obscured by such area objects, by clicking close to the lines (i.e. closer than 0.99*selectionTolerance).</para>
+<para>The actual setting of the selection state is not done by this function. This is handled by the parent <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> when the mouseReleaseEvent occurs, and the finally selected object is notified via the selectEvent/deselectEvent methods.</para>
+<para><emphasis>details</emphasis> is an optional output parameter. Every layerable subclass may place any information in <emphasis>details</emphasis>. This information will be passed to <ref refid="class_q_c_p_abstract_plottable_1a16aaad02456aa23a759efd1ac90c79bf" kindref="member">selectEvent</ref> when the parent <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> decides on the basis of this selectTest call, that the object was successfully selected. The subsequent call to <ref refid="class_q_c_p_abstract_plottable_1a16aaad02456aa23a759efd1ac90c79bf" kindref="member">selectEvent</ref> will carry the <emphasis>details</emphasis>. This is useful for multi-part objects (like <ref refid="class_q_c_p_axis" kindref="compound">QCPAxis</ref>). This way, a possibly complex calculation to decide which part was clicked is only done once in <ref refid="class_q_c_p_abstract_plottable_1a38efe9641d972992a3d44204bc80ec1d" kindref="member">selectTest</ref>. The result (i.e. the actually clicked part) can then be placed in <emphasis>details</emphasis>. So in the subsequent <ref refid="class_q_c_p_abstract_plottable_1a16aaad02456aa23a759efd1ac90c79bf" kindref="member">selectEvent</ref>, the decision which part was selected doesn&apos;t have to be done a second time for a single selection operation.</para>
+<para>You may pass 0 as <emphasis>details</emphasis> to indicate that you are not interested in those selection details.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_plottable_1a16aaad02456aa23a759efd1ac90c79bf" kindref="member">selectEvent</ref>, <ref refid="class_q_c_p_abstract_plottable_1a6fa0d0f95560ea8b01ee13f296dab2b1" kindref="member">deselectEvent</ref>, <ref refid="class_q_custom_plot_1a5ee1e2f6ae27419deca53e75907c27e5" kindref="member">QCustomPlot::setInteractions</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1438" column="18"/>
+        <referencedby refid="class_q_custom_plot_1acddbbd8b16dd633f0d94e5a736fbd8cf" compoundref="qcustomplot_8cpp" startline="9616" endline="9637">QCustomPlot::plottableAt</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a70f8cabfd808f7d5204b9f18c45c13f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool QCPAbstractPlottable::addToLegend</definition>
+        <argsstring>()</argsstring>
+        <name>addToLegend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds this plottable to the legend of the parent <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> (<ref refid="class_q_custom_plot_1a4eadcd237dc6a09938b68b16877fa6af" kindref="member">QCustomPlot::legend</ref>).</para>
+<para>Normally, a <ref refid="class_q_c_p_plottable_legend_item" kindref="compound">QCPPlottableLegendItem</ref> is created and inserted into the legend. If the plottable needs a more specialized representation in the legend, this function will take this into account and instead create the specialized subclass of <ref refid="class_q_c_p_abstract_legend_item" kindref="compound">QCPAbstractLegendItem</ref>.</para>
+<para>Returns true on success, i.e. when the legend exists and a legend item associated with this plottable isn&apos;t already in the legend.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_plottable_1ac95fb2604d9106d0852ad9ceb326fe8c" kindref="member">removeFromLegend</ref>, <ref refid="class_q_c_p_legend_1a3ab274de52d2951faea45a6d975e6b3f" kindref="member">QCPLegend::addItem</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1439" column="16" bodyfile="qcustomplot.cpp" bodystart="7134" bodyend="7145"/>
+        <references refid="class_q_c_p_legend_1a3ab274de52d2951faea45a6d975e6b3f" compoundref="qcustomplot_8cpp" startline="13294" endline="13301">QCPLegend::addItem</references>
+        <references refid="class_q_c_p_legend_1a4b90a442af871582df85c2bc13f91e88" compoundref="qcustomplot_8cpp" startline="13282" endline="13285">QCPLegend::hasItemWithPlottable</references>
+        <references refid="class_q_custom_plot_1a4eadcd237dc6a09938b68b16877fa6af" compoundref="qcustomplot_8h" startline="1820">QCustomPlot::legend</references>
+        <references refid="class_q_c_p_layerable_1aa2a528433e44db02b8aef23c1f9f90ed" compoundref="qcustomplot_8h" startline="447">QCPLayerable::mParentPlot</references>
+        <references refid="class_q_c_p_abstract_plottable_1a104c78e91302afd6842a903e472f552f" compoundref="qcustomplot_8h" startline="1499">QCPPlottableLegendItem</references>
+        <referencedby refid="class_q_custom_plot_1ab7ad9174f701f9c6f64e378df77927a6" compoundref="qcustomplot_8cpp" startline="9495" endline="9518">QCustomPlot::addPlottable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1ac95fb2604d9106d0852ad9ceb326fe8c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool QCPAbstractPlottable::removeFromLegend</definition>
+        <argsstring>() const</argsstring>
+        <name>removeFromLegend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes the plottable from the legend of the parent <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref>. This means the <ref refid="class_q_c_p_abstract_legend_item" kindref="compound">QCPAbstractLegendItem</ref> (usually a <ref refid="class_q_c_p_plottable_legend_item" kindref="compound">QCPPlottableLegendItem</ref>) that is associated with this plottable is removed.</para>
+<para>Returns true on success, i.e. if the legend exists and a legend item associated with this plottable was found and removed.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_plottable_1a70f8cabfd808f7d5204b9f18c45c13f5" kindref="member">addToLegend</ref>, <ref refid="class_q_c_p_legend_1ac91595c3eaa746fe6321d2eb952c63bb" kindref="member">QCPLegend::removeItem</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1440" column="16" bodyfile="qcustomplot.cpp" bodystart="7157" bodyend="7166"/>
+        <references refid="class_q_c_p_legend_1a91e790002d8bf15a20628a8e8841e397" compoundref="qcustomplot_8cpp" startline="13241" endline="13252">QCPLegend::itemWithPlottable</references>
+        <references refid="class_q_custom_plot_1a4eadcd237dc6a09938b68b16877fa6af" compoundref="qcustomplot_8h" startline="1820">QCustomPlot::legend</references>
+        <references refid="class_q_c_p_layerable_1aa2a528433e44db02b8aef23c1f9f90ed" compoundref="qcustomplot_8h" startline="447">QCPLayerable::mParentPlot</references>
+        <references refid="class_q_c_p_legend_1ac91595c3eaa746fe6321d2eb952c63bb" compoundref="qcustomplot_8cpp" startline="13310" endline="13319">QCPLegend::removeItem</references>
+        <referencedby refid="class_q_custom_plot_1af3dafd56884208474f311d6226513ab2" compoundref="qcustomplot_8cpp" startline="9527" endline="9544">QCustomPlot::removePlottable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a1491c4a606bccd2d09e65e11b79eb882" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::rescaleAxes</definition>
+        <argsstring>(bool onlyEnlarge=false) const</argsstring>
+        <name>rescaleAxes</name>
+        <param>
+          <type>bool</type>
+          <declname>onlyEnlarge</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rescales the key and value axes associated with this plottable to contain all displayed data, so the whole plottable is visible. If the scaling of an axis is logarithmic, rescaleAxes will make sure not to rescale to an illegal range i.e. a range containing different signs and/or zero. Instead it will stay in the current sign domain and ignore all parts of the plottable that lie outside of that domain.</para>
+<para><emphasis>onlyEnlarge</emphasis> makes sure the ranges are only expanded, never reduced. So it&apos;s possible to show multiple plottables in their entirety by multiple calls to rescaleAxes where the first call has <emphasis>onlyEnlarge</emphasis> set to false (the default), and all subsequent set to true.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_plottable_1ae96b83c961e257da116c6acf9c7da308" kindref="member">rescaleKeyAxis</ref>, <ref refid="class_q_c_p_abstract_plottable_1aa1e408bb2d13999150c3f7f8a8579ca9" kindref="member">rescaleValueAxis</ref>, <ref refid="class_q_custom_plot_1ad86528f2cee6c7e446dea4a6e8839935" kindref="member">QCustomPlot::rescaleAxes</ref>, <ref refid="class_q_c_p_axis_1a499345f02ebce4b23d8ccec96e58daa9" kindref="member">QCPAxis::rescale</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1443" column="8" bodyfile="qcustomplot.cpp" bodystart="7039" bodyend="7043"/>
+        <references refid="class_q_c_p_abstract_plottable_1ae96b83c961e257da116c6acf9c7da308" compoundref="qcustomplot_8cpp" startline="7050" endline="7080">rescaleKeyAxis</references>
+        <references refid="class_q_c_p_abstract_plottable_1aa1e408bb2d13999150c3f7f8a8579ca9" compoundref="qcustomplot_8cpp" startline="7090" endline="7120">rescaleValueAxis</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1ae96b83c961e257da116c6acf9c7da308" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::rescaleKeyAxis</definition>
+        <argsstring>(bool onlyEnlarge=false) const</argsstring>
+        <name>rescaleKeyAxis</name>
+        <param>
+          <type>bool</type>
+          <declname>onlyEnlarge</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rescales the key axis of the plottable so the whole plottable is visible.</para>
+<para>See <ref refid="class_q_c_p_abstract_plottable_1a1491c4a606bccd2d09e65e11b79eb882" kindref="member">rescaleAxes</ref> for detailed behaviour. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1444" column="8" bodyfile="qcustomplot.cpp" bodystart="7050" bodyend="7080"/>
+        <references refid="class_q_c_p_range_1a0fa1bc8048be50d52bea93a8caf08305" compoundref="qcustomplot_8cpp" startline="1353" endline="1359">QCPRange::expand</references>
+        <references refid="class_q_c_p_abstract_plottable_1a345d702b2e7e12c8cfdddff65ba85e8c">getKeyRange</references>
+        <references refid="class_q_c_p_abstract_plottable_1a2cdd6f0dd5e9a979037f86b4000d9cfe" compoundref="qcustomplot_8h" startline="1417" endline="1417">keyAxis</references>
+        <references refid="class_q_c_p_range_1aa3aca3edb14f7ca0c85d912647b91745" compoundref="qcustomplot_8h" startline="479">QCPRange::lower</references>
+        <references refid="class_q_c_p_abstract_plottable_1a426f42e254d0f8ce5436a868c61a6827" compoundref="qcustomplot_8h" startline="1465">mKeyAxis</references>
+        <references refid="class_q_c_p_axis_1ac4058855a81f1a883cf2e754f6a6acb1" compoundref="qcustomplot_8h" startline="1096" endline="1096">QCPAxis::range</references>
+        <references refid="class_q_c_p_axis_1ad23e9ad97b44e9aeaf4fab8904280098" compoundref="qcustomplot_8h" startline="1094" endline="1094">QCPAxis::scaleType</references>
+        <references refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a082b98cfb91a7363a3b5cd17b0c1cd60" compoundref="qcustomplot_8h" startline="1456">sdBoth</references>
+        <references refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a0fc9a70796ef60ad18ddd18056e6dc63" compoundref="qcustomplot_8h" startline="1455">sdNegative</references>
+        <references refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a02951859f243a4d24e779cfbb5471030" compoundref="qcustomplot_8h" startline="1457">sdPositive</references>
+        <references refid="class_q_c_p_axis_1aebdfea5d44c3a0ad2b4700cd4d25b641" compoundref="qcustomplot_8cpp" startline="4206" endline="4223">QCPAxis::setRange</references>
+        <references refid="class_q_c_p_range_1a62326e7cc4316b96df6a60813230e63f" compoundref="qcustomplot_8cpp" startline="1322" endline="1325">QCPRange::size</references>
+        <references refid="class_q_c_p_axis_1a36d8e8658dbaa179bf2aeb973db2d6f0aff6e30a11a828bc850caffab0ff994f6" compoundref="qcustomplot_8h" startline="1072">QCPAxis::stLinear</references>
+        <references refid="class_q_c_p_axis_1a36d8e8658dbaa179bf2aeb973db2d6f0abf5b785ad976618816dc6f79b73216d4" compoundref="qcustomplot_8h" startline="1073">QCPAxis::stLogarithmic</references>
+        <references refid="class_q_c_p_range_1ae44eb3aafe1d0e2ed34b499b6d2e074f" compoundref="qcustomplot_8h" startline="479">QCPRange::upper</references>
+        <references refid="class_q_c_p_range_1ab38bd4841c77c7bb86c9eea0f142dcc0" compoundref="qcustomplot_8cpp" startline="1459" endline="1467">QCPRange::validRange</references>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a1491c4a606bccd2d09e65e11b79eb882" compoundref="qcustomplot_8cpp" startline="7039" endline="7043">rescaleAxes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1aa1e408bb2d13999150c3f7f8a8579ca9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::rescaleValueAxis</definition>
+        <argsstring>(bool onlyEnlarge=false) const</argsstring>
+        <name>rescaleValueAxis</name>
+        <param>
+          <type>bool</type>
+          <declname>onlyEnlarge</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rescales the value axis of the plottable so the whole plottable is visible.</para>
+<para>Returns true if the axis was actually scaled. This might not be the case if this plottable has an invalid range, e.g. because it has no data points.</para>
+<para>See <ref refid="class_q_c_p_abstract_plottable_1a1491c4a606bccd2d09e65e11b79eb882" kindref="member">rescaleAxes</ref> for detailed behaviour. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1445" column="8" bodyfile="qcustomplot.cpp" bodystart="7090" bodyend="7120"/>
+        <references refid="class_q_c_p_range_1a0fa1bc8048be50d52bea93a8caf08305" compoundref="qcustomplot_8cpp" startline="1353" endline="1359">QCPRange::expand</references>
+        <references refid="class_q_c_p_abstract_plottable_1aa3331b415b5939fe4df60b78831b2799">getValueRange</references>
+        <references refid="class_q_c_p_range_1aa3aca3edb14f7ca0c85d912647b91745" compoundref="qcustomplot_8h" startline="479">QCPRange::lower</references>
+        <references refid="class_q_c_p_abstract_plottable_1a2901452ca4aea911a1827717934a4bda" compoundref="qcustomplot_8h" startline="1465">mValueAxis</references>
+        <references refid="class_q_c_p_axis_1ac4058855a81f1a883cf2e754f6a6acb1" compoundref="qcustomplot_8h" startline="1096" endline="1096">QCPAxis::range</references>
+        <references refid="class_q_c_p_axis_1ad23e9ad97b44e9aeaf4fab8904280098" compoundref="qcustomplot_8h" startline="1094" endline="1094">QCPAxis::scaleType</references>
+        <references refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a082b98cfb91a7363a3b5cd17b0c1cd60" compoundref="qcustomplot_8h" startline="1456">sdBoth</references>
+        <references refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a0fc9a70796ef60ad18ddd18056e6dc63" compoundref="qcustomplot_8h" startline="1455">sdNegative</references>
+        <references refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a02951859f243a4d24e779cfbb5471030" compoundref="qcustomplot_8h" startline="1457">sdPositive</references>
+        <references refid="class_q_c_p_axis_1aebdfea5d44c3a0ad2b4700cd4d25b641" compoundref="qcustomplot_8cpp" startline="4206" endline="4223">QCPAxis::setRange</references>
+        <references refid="class_q_c_p_range_1a62326e7cc4316b96df6a60813230e63f" compoundref="qcustomplot_8cpp" startline="1322" endline="1325">QCPRange::size</references>
+        <references refid="class_q_c_p_axis_1a36d8e8658dbaa179bf2aeb973db2d6f0aff6e30a11a828bc850caffab0ff994f6" compoundref="qcustomplot_8h" startline="1072">QCPAxis::stLinear</references>
+        <references refid="class_q_c_p_axis_1a36d8e8658dbaa179bf2aeb973db2d6f0abf5b785ad976618816dc6f79b73216d4" compoundref="qcustomplot_8h" startline="1073">QCPAxis::stLogarithmic</references>
+        <references refid="class_q_c_p_range_1ae44eb3aafe1d0e2ed34b499b6d2e074f" compoundref="qcustomplot_8h" startline="479">QCPRange::upper</references>
+        <references refid="class_q_c_p_range_1ab38bd4841c77c7bb86c9eea0f142dcc0" compoundref="qcustomplot_8cpp" startline="1459" endline="1467">QCPRange::validRange</references>
+        <references refid="class_q_c_p_abstract_plottable_1af47809a644a68ffd955fb30b01fb4f2f" compoundref="qcustomplot_8h" startline="1418" endline="1418">valueAxis</references>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a1491c4a606bccd2d09e65e11b79eb882" compoundref="qcustomplot_8cpp" startline="7039" endline="7043">rescaleAxes</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_q_c_p_abstract_plottable_1a3af66432b1dca93b28e00e78a8c7c1d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::selectionChanged</definition>
+        <argsstring>(bool selected)</argsstring>
+        <name>selectionChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>selected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This signal is emitted when the selection state of this plottable has changed, either by user interaction or by a direct call to <ref refid="class_q_c_p_abstract_plottable_1afbd5428c2952f59d952e11ab5cd79176" kindref="member">setSelected</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1448" column="8"/>
+        <referencedby refid="class_q_c_p_abstract_plottable_1afbd5428c2952f59d952e11ab5cd79176" compoundref="qcustomplot_8cpp" startline="7017" endline="7024">setSelected</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="class_q_c_p_abstract_plottable_1a0059caa3f3581f3959660fef8cbb71c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::selectableChanged</definition>
+        <argsstring>(bool selectable)</argsstring>
+        <name>selectableChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>selectable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This signal is emitted when the selectability of this plottable has changed.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_plottable_1a22c69299eb5569e0f6bf084877a37dc4" kindref="member">setSelectable</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1449" column="8"/>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a22c69299eb5569e0f6bf084877a37dc4" compoundref="qcustomplot_8cpp" startline="6994" endline="7001">setSelectable</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1aafb817dbea97d2798967f3371a701413" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QRect</type>
+        <definition>QRect QCPAbstractPlottable::clipRect</definition>
+        <argsstring>() const</argsstring>
+        <name>clipRect</name>
+        <reimplements refid="class_q_c_p_layerable_1acbcfc9ecc75433747b1978a77b1864b3">clipRect</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1469" column="17" bodyfile="qcustomplot.cpp" bodystart="7169" bodyend="7175"/>
+        <references refid="class_q_c_p_abstract_plottable_1a426f42e254d0f8ce5436a868c61a6827" compoundref="qcustomplot_8h" startline="1465">mKeyAxis</references>
+        <references refid="class_q_c_p_abstract_plottable_1a2901452ca4aea911a1827717934a4bda" compoundref="qcustomplot_8h" startline="1465">mValueAxis</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1acbab5e30dcd04fd302b4a5902ac2c482" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void QCPAbstractPlottable::draw</definition>
+        <argsstring>(QCPPainter *painter)=0</argsstring>
+        <name>draw</name>
+        <reimplements refid="class_q_c_p_layerable_1aecf2f7087482d4b6a78cb2770e5ed12d">draw</reimplements>
+        <reimplementedby refid="class_q_c_p_graph_1a659218cc62c2a7786213d9dd429c1c8d">draw</reimplementedby>
+        <reimplementedby refid="class_q_c_p_curve_1a2361302d2fc6ec669849bd3bca00c4b2">draw</reimplementedby>
+        <reimplementedby refid="class_q_c_p_bars_1a42b894e34dac799f90ff3700706b31df">draw</reimplementedby>
+        <reimplementedby refid="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317">draw</reimplementedby>
+        <reimplementedby refid="class_q_c_p_color_map_1a3b0f45a3177be9522d5e9b8cd8ae122d">draw</reimplementedby>
+        <reimplementedby refid="class_q_c_p_financial_1ad71a59a1b42616594831e04e52c92120">draw</reimplementedby>
+        <param>
+          <type><ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1470" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1afb5e4718c232a16d0fb06b00e172be9e" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespace_q_c_p_1a2ad6bb6281c7c2d593d4277b44c2b037" kindref="member">QCP::Interaction</ref></type>
+        <definition>QCP::Interaction QCPAbstractPlottable::selectionCategory</definition>
+        <argsstring>() const</argsstring>
+        <name>selectionCategory</name>
+        <reimplements refid="class_q_c_p_layerable_1a908c9edda761886f33893be326dab77d">selectionCategory</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1471" column="28" bodyfile="qcustomplot.cpp" bodystart="7178" bodyend="7181"/>
+        <references refid="namespace_q_c_p_1a2ad6bb6281c7c2d593d4277b44c2b037a67148c8227b4155eca49135fc274c7ec" compoundref="qcustomplot_8h" startline="158">QCP::iSelectPlottables</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a59a80773c5cefc05a0646ac8e1149ed5" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::applyDefaultAntialiasingHint</definition>
+        <argsstring>(QCPPainter *painter) const</argsstring>
+        <name>applyDefaultAntialiasingHint</name>
+        <reimplements refid="class_q_c_p_layerable_1afdf83ddc6a265cbf4c89fe99d3d93473">applyDefaultAntialiasingHint</reimplements>
+        <param>
+          <type><ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1472" column="8" bodyfile="qcustomplot.cpp" bodystart="7297" bodyend="7300"/>
+        <references refid="namespace_q_c_p_1ae55dbe315d41fe80f29ba88100843a0ca4145e4251b0cf2dbedabeea0a38f84f6" compoundref="qcustomplot_8h" startline="123">QCP::aePlottables</references>
+        <references refid="class_q_c_p_layerable_1acb663e375d2d36dc5c55021ee5a2119b" compoundref="qcustomplot_8cpp" startline="1152" endline="1160">QCPLayerable::applyAntialiasingHint</references>
+        <references refid="class_q_c_p_layerable_1a3ab45a4c76a3333ce42eb217a81733ec" compoundref="qcustomplot_8h" startline="450">QCPLayerable::mAntialiased</references>
+        <referencedby refid="class_q_c_p_curve_1a2361302d2fc6ec669849bd3bca00c4b2" compoundref="qcustomplot_8cpp" startline="17071" endline="17156">QCPCurve::draw</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a42b894e34dac799f90ff3700706b31df" compoundref="qcustomplot_8cpp" startline="18780" endline="18812">QCPBars::draw</referencedby>
+        <referencedby refid="class_q_c_p_color_map_1a3b0f45a3177be9522d5e9b8cd8ae122d" compoundref="qcustomplot_8cpp" startline="20404" endline="20470">QCPColorMap::draw</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ac62c84f51d85b78ee583455b8c37ba56" compoundref="qcustomplot_8cpp" startline="15635" endline="15647">QCPGraph::drawImpulsePlot</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ae962caca309faae29ce0988d0d0eff4b" compoundref="qcustomplot_8cpp" startline="15125" endline="15157">QCPGraph::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_curve_1acccc86e9f496bb0392529f59f3a69dbc" compoundref="qcustomplot_8cpp" startline="17159" endline="17191">QCPCurve::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_bars_1ad466f06b0fa561b6e12c92fdb8fa3c7f" compoundref="qcustomplot_8cpp" startline="18815" endline="18824">QCPBars::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a41c6193fd24f5c1b6c754e7bcfe3e174" compoundref="qcustomplot_8cpp" startline="19431" endline="19440">QCPStatisticalBox::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_color_map_1a63584cbf7aa7463e81b58f6e4254423b" compoundref="qcustomplot_8cpp" startline="20473" endline="20490">QCPColorMap::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_graph_1af460db06d4d6466806721fe101f512e3" compoundref="qcustomplot_8cpp" startline="15560" endline="15626">QCPGraph::drawLinePlot</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a642b90dd4ab5ab6e16188a9230401bcc" compoundref="qcustomplot_8cpp" startline="19465" endline="19473">QCPStatisticalBox::drawMedian</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a699ede353d6a7207d9fb36dd3aabf348" compoundref="qcustomplot_8cpp" startline="19448" endline="19459">QCPStatisticalBox::drawQuartileBox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a16aaad02456aa23a759efd1ac90c79bf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::selectEvent</definition>
+        <argsstring>(QMouseEvent *event, bool additive, const QVariant &amp;details, bool *selectionStateChanged)</argsstring>
+        <name>selectEvent</name>
+        <reimplements refid="class_q_c_p_layerable_1a7498c2d0d081cf7cad0fb3bb93aa0e91">selectEvent</reimplements>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>additive</declname>
+        </param>
+        <param>
+          <type>const QVariant &amp;</type>
+          <declname>details</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>selectionStateChanged</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1474" column="16" bodyfile="qcustomplot.cpp" bodystart="7382" bodyend="7393"/>
+        <references refid="class_q_c_p_abstract_plottable_1aceee52342c8e75727abcbd164986fdcb" compoundref="qcustomplot_8h" startline="1466">mSelectable</references>
+        <references refid="class_q_c_p_abstract_plottable_1a43f68a0603e9bcd016bdfa6d9d5c41c9" compoundref="qcustomplot_8h" startline="1466">mSelected</references>
+        <references refid="class_q_c_p_abstract_plottable_1afbd5428c2952f59d952e11ab5cd79176" compoundref="qcustomplot_8cpp" startline="7017" endline="7024">setSelected</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a6fa0d0f95560ea8b01ee13f296dab2b1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::deselectEvent</definition>
+        <argsstring>(bool *selectionStateChanged)</argsstring>
+        <name>deselectEvent</name>
+        <reimplements refid="class_q_c_p_layerable_1ae546370644a5551c76af739afc008bee">deselectEvent</reimplements>
+        <param>
+          <type>bool *</type>
+          <declname>selectionStateChanged</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1475" column="16" bodyfile="qcustomplot.cpp" bodystart="7396" bodyend="7405"/>
+        <references refid="class_q_c_p_abstract_plottable_1aceee52342c8e75727abcbd164986fdcb" compoundref="qcustomplot_8h" startline="1466">mSelectable</references>
+        <references refid="class_q_c_p_abstract_plottable_1a43f68a0603e9bcd016bdfa6d9d5c41c9" compoundref="qcustomplot_8h" startline="1466">mSelected</references>
+        <references refid="class_q_c_p_abstract_plottable_1afbd5428c2952f59d952e11ab5cd79176" compoundref="qcustomplot_8cpp" startline="7017" endline="7024">setSelected</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a9a450783fd9ed539e589999fd390cdf7" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::drawLegendIcon</definition>
+        <argsstring>(QCPPainter *painter, const QRectF &amp;rect) const =0</argsstring>
+        <name>drawLegendIcon</name>
+        <reimplementedby refid="class_q_c_p_graph_1ae962caca309faae29ce0988d0d0eff4b">drawLegendIcon</reimplementedby>
+        <reimplementedby refid="class_q_c_p_curve_1acccc86e9f496bb0392529f59f3a69dbc">drawLegendIcon</reimplementedby>
+        <reimplementedby refid="class_q_c_p_bars_1ad466f06b0fa561b6e12c92fdb8fa3c7f">drawLegendIcon</reimplementedby>
+        <reimplementedby refid="class_q_c_p_statistical_box_1a41c6193fd24f5c1b6c754e7bcfe3e174">drawLegendIcon</reimplementedby>
+        <reimplementedby refid="class_q_c_p_color_map_1a63584cbf7aa7463e81b58f6e4254423b">drawLegendIcon</reimplementedby>
+        <reimplementedby refid="class_q_c_p_financial_1a474a3994b081892f1dbdd1162e055b96">drawLegendIcon</reimplementedby>
+        <param>
+          <type><ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <param>
+          <type>const QRectF &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1478" column="16"/>
+        <referencedby refid="class_q_c_p_plottable_legend_item_1a68a781c3de4f9959fdf82075052d43aa" compoundref="qcustomplot_8cpp" startline="12865" endline="12887">QCPPlottableLegendItem::draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a345d702b2e7e12c8cfdddff65ba85e8c" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_q_c_p_range" kindref="compound">QCPRange</ref></type>
+        <definition>QCPRange QCPAbstractPlottable::getKeyRange</definition>
+        <argsstring>(bool &amp;foundRange, SignDomain inSignDomain=sdBoth) const =0</argsstring>
+        <name>getKeyRange</name>
+        <reimplementedby refid="class_q_c_p_graph_1ad65bc571de3bd0af36296a3cbd0d77ee">getKeyRange</reimplementedby>
+        <reimplementedby refid="class_q_c_p_curve_1a1b24b1384d72862e8294688501ffa01d">getKeyRange</reimplementedby>
+        <reimplementedby refid="class_q_c_p_bars_1a0161ff6af64e025543c66130bcaa7ffd">getKeyRange</reimplementedby>
+        <reimplementedby refid="class_q_c_p_statistical_box_1ac17d9d68e41be25b7f0e8a47f9a5d225">getKeyRange</reimplementedby>
+        <reimplementedby refid="class_q_c_p_color_map_1af294ea4d207e6e3411fb05c69e2c7fa9">getKeyRange</reimplementedby>
+        <reimplementedby refid="class_q_c_p_financial_1a13da88ffd42ad192a672d54f3f233d15">getKeyRange</reimplementedby>
+        <param>
+          <type>bool &amp;</type>
+          <declname>foundRange</declname>
+        </param>
+        <param>
+          <type><ref refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8" kindref="member">SignDomain</ref></type>
+          <declname>inSignDomain</declname>
+          <defval><ref refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a082b98cfb91a7363a3b5cd17b0c1cd60" kindref="member">sdBoth</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1479" column="20"/>
+        <referencedby refid="class_q_c_p_abstract_plottable_1ae96b83c961e257da116c6acf9c7da308" compoundref="qcustomplot_8cpp" startline="7050" endline="7080">rescaleKeyAxis</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1aa3331b415b5939fe4df60b78831b2799" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_q_c_p_range" kindref="compound">QCPRange</ref></type>
+        <definition>QCPRange QCPAbstractPlottable::getValueRange</definition>
+        <argsstring>(bool &amp;foundRange, SignDomain inSignDomain=sdBoth) const =0</argsstring>
+        <name>getValueRange</name>
+        <reimplementedby refid="class_q_c_p_graph_1ac205efd80b4a70d67b163429dc6cba8d">getValueRange</reimplementedby>
+        <reimplementedby refid="class_q_c_p_curve_1a12fcfce09ffa9965b3e01555d968d378">getValueRange</reimplementedby>
+        <reimplementedby refid="class_q_c_p_bars_1af71b8e6ee0b800f0b79f2b6e692afee2">getValueRange</reimplementedby>
+        <reimplementedby refid="class_q_c_p_statistical_box_1a13958798713d4bb58b94e148b409877d">getValueRange</reimplementedby>
+        <reimplementedby refid="class_q_c_p_color_map_1a06cebc3006df6a156be2c9395be6fa0b">getValueRange</reimplementedby>
+        <reimplementedby refid="class_q_c_p_financial_1a91c698076647d58223f49e7248d1487e">getValueRange</reimplementedby>
+        <param>
+          <type>bool &amp;</type>
+          <declname>foundRange</declname>
+        </param>
+        <param>
+          <type><ref refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8" kindref="member">SignDomain</ref></type>
+          <declname>inSignDomain</declname>
+          <defval><ref refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a082b98cfb91a7363a3b5cd17b0c1cd60" kindref="member">sdBoth</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1480" column="20"/>
+        <referencedby refid="class_q_c_p_abstract_plottable_1aa1e408bb2d13999150c3f7f8a8579ca9" compoundref="qcustomplot_8cpp" startline="7090" endline="7120">rescaleValueAxis</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a7ad84a36472441cf1f555c5683d0da93" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::coordsToPixels</definition>
+        <argsstring>(double key, double value, double &amp;x, double &amp;y) const</argsstring>
+        <name>coordsToPixels</name>
+        <param>
+          <type>double</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1483" column="8" bodyfile="qcustomplot.cpp" bodystart="7193" bodyend="7208"/>
+        <references refid="class_q_c_p_axis_1af15d1b3a7f7e9b53d759d3ccff1fe4b4" compoundref="qcustomplot_8cpp" startline="5324" endline="5371">QCPAxis::coordToPixel</references>
+        <references refid="class_q_c_p_abstract_plottable_1a2cdd6f0dd5e9a979037f86b4000d9cfe" compoundref="qcustomplot_8h" startline="1417" endline="1417">keyAxis</references>
+        <references refid="class_q_c_p_abstract_plottable_1a426f42e254d0f8ce5436a868c61a6827" compoundref="qcustomplot_8h" startline="1465">mKeyAxis</references>
+        <references refid="class_q_c_p_abstract_plottable_1a2901452ca4aea911a1827717934a4bda" compoundref="qcustomplot_8h" startline="1465">mValueAxis</references>
+        <references refid="class_q_c_p_axis_1ab988ef4538e2655bb77bd138189cd42e" compoundref="qcustomplot_8h" startline="1206" endline="1206">QCPAxis::orientation</references>
+        <references refid="class_q_c_p_abstract_plottable_1af47809a644a68ffd955fb30b01fb4f2f" compoundref="qcustomplot_8h" startline="1418" endline="1418">valueAxis</references>
+        <referencedby refid="class_q_c_p_color_map_1a3b0f45a3177be9522d5e9b8cd8ae122d" compoundref="qcustomplot_8cpp" startline="20404" endline="20470">QCPColorMap::draw</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a642b90dd4ab5ab6e16188a9230401bcc" compoundref="qcustomplot_8cpp" startline="19465" endline="19473">QCPStatisticalBox::drawMedian</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a8550e16af27b4e05d92bb337fb34324f" compoundref="qcustomplot_8cpp" startline="19499" endline="19505">QCPStatisticalBox::drawOutliers</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a699ede353d6a7207d9fb36dd3aabf348" compoundref="qcustomplot_8cpp" startline="19448" endline="19459">QCPStatisticalBox::drawQuartileBox</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1ae64401aa18b9c45d4d33f9b46cf4bbd0" compoundref="qcustomplot_8cpp" startline="19479" endline="19493">QCPStatisticalBox::drawWhiskers</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a3ca9d2c315c643f732cc85e20d18b551" compoundref="qcustomplot_8cpp" startline="17221" endline="17298">QCPCurve::getCurveData</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a2f1455455d71de9ef9190c50a90f0abc" compoundref="qcustomplot_8cpp" startline="17462" endline="17612">QCPCurve::getOptimizedCornerPoints</referencedby>
+        <referencedby refid="class_q_c_p_curve_1ae729c9aef90af9b7463c379cb88459f6" compoundref="qcustomplot_8cpp" startline="17362" endline="17442">QCPCurve::getOptimizedPoint</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a82a78dffde71e7b9c40217fa7e381057" compoundref="qcustomplot_8cpp" startline="17729" endline="17798">QCPCurve::getTraverse</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a592d6e3dbd42cb8cea35eda889ece1b1" compoundref="qcustomplot_8cpp" startline="17825" endline="17907">QCPCurve::getTraverseCornerPoints</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a96146099a5e68f49c7326a765f768da2" compoundref="qcustomplot_8cpp" startline="16400" endline="16459">QCPGraph::pointDistance</referencedby>
+        <referencedby refid="class_q_c_p_curve_1adc3ab8051946f9097cdf7c0707ef1a25" compoundref="qcustomplot_8cpp" startline="17915" endline="17940">QCPCurve::pointDistance</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a5acb50ae984eef09a7ab92315d2ad708" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const QPointF</type>
+        <definition>const QPointF QCPAbstractPlottable::coordsToPixels</definition>
+        <argsstring>(double key, double value) const</argsstring>
+        <name>coordsToPixels</name>
+        <param>
+          <type>double</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1484" column="17" bodyfile="qcustomplot.cpp" bodystart="7215" bodyend="7225"/>
+        <references refid="class_q_c_p_axis_1af15d1b3a7f7e9b53d759d3ccff1fe4b4" compoundref="qcustomplot_8cpp" startline="5324" endline="5371">QCPAxis::coordToPixel</references>
+        <references refid="class_q_c_p_abstract_plottable_1a2cdd6f0dd5e9a979037f86b4000d9cfe" compoundref="qcustomplot_8h" startline="1417" endline="1417">keyAxis</references>
+        <references refid="class_q_c_p_abstract_plottable_1a426f42e254d0f8ce5436a868c61a6827" compoundref="qcustomplot_8h" startline="1465">mKeyAxis</references>
+        <references refid="class_q_c_p_abstract_plottable_1a2901452ca4aea911a1827717934a4bda" compoundref="qcustomplot_8h" startline="1465">mValueAxis</references>
+        <references refid="class_q_c_p_axis_1ab988ef4538e2655bb77bd138189cd42e" compoundref="qcustomplot_8h" startline="1206" endline="1206">QCPAxis::orientation</references>
+        <references refid="class_q_c_p_abstract_plottable_1af47809a644a68ffd955fb30b01fb4f2f" compoundref="qcustomplot_8h" startline="1418" endline="1418">valueAxis</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a3903c1120ab5c27e7fa46b597ef267bd" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::pixelsToCoords</definition>
+        <argsstring>(double x, double y, double &amp;key, double &amp;value) const</argsstring>
+        <name>pixelsToCoords</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1485" column="8" bodyfile="qcustomplot.cpp" bodystart="7237" bodyend="7252"/>
+        <references refid="class_q_c_p_abstract_plottable_1a2cdd6f0dd5e9a979037f86b4000d9cfe" compoundref="qcustomplot_8h" startline="1417" endline="1417">keyAxis</references>
+        <references refid="class_q_c_p_abstract_plottable_1a426f42e254d0f8ce5436a868c61a6827" compoundref="qcustomplot_8h" startline="1465">mKeyAxis</references>
+        <references refid="class_q_c_p_abstract_plottable_1a2901452ca4aea911a1827717934a4bda" compoundref="qcustomplot_8h" startline="1465">mValueAxis</references>
+        <references refid="class_q_c_p_axis_1ab988ef4538e2655bb77bd138189cd42e" compoundref="qcustomplot_8h" startline="1206" endline="1206">QCPAxis::orientation</references>
+        <references refid="class_q_c_p_axis_1a536ef8f624cac59b6b6fdcb495723c57" compoundref="qcustomplot_8cpp" startline="5286" endline="5319">QCPAxis::pixelToCoord</references>
+        <references refid="class_q_c_p_abstract_plottable_1af47809a644a68ffd955fb30b01fb4f2f" compoundref="qcustomplot_8h" startline="1418" endline="1418">valueAxis</references>
+        <referencedby refid="class_q_c_p_financial_1a6fa1e18f18b37d3a0502b97d864a6d15" compoundref="qcustomplot_8cpp" startline="21359" endline="21417">QCPFinancial::candlestickSelectTest</referencedby>
+        <referencedby refid="class_q_c_p_abstract_plottable_1a28d32c0062b9450847851ffdee1c5f69" compoundref="qcustomplot_8cpp" startline="7259" endline="7262">pixelsToCoords</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a0153ac16326b94450afbca208e3f9961" compoundref="qcustomplot_8cpp" startline="19378" endline="19400">QCPStatisticalBox::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_color_map_1aba91ea58b489031157ecb777fe79e309" compoundref="qcustomplot_8cpp" startline="20311" endline="20326">QCPColorMap::selectTest</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a28d32c0062b9450847851ffdee1c5f69" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::pixelsToCoords</definition>
+        <argsstring>(const QPointF &amp;pixelPos, double &amp;key, double &amp;value) const</argsstring>
+        <name>pixelsToCoords</name>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>pixelPos</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1486" column="8" bodyfile="qcustomplot.cpp" bodystart="7259" bodyend="7262"/>
+        <references refid="class_q_c_p_abstract_plottable_1a3903c1120ab5c27e7fa46b597ef267bd" compoundref="qcustomplot_8cpp" startline="7237" endline="7252">pixelsToCoords</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1abd790a3b229239f49067f136633a4b98" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QPen</type>
+        <definition>QPen QCPAbstractPlottable::mainPen</definition>
+        <argsstring>() const</argsstring>
+        <name>mainPen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1487" column="8" bodyfile="qcustomplot.cpp" bodystart="7269" bodyend="7272"/>
+        <references refid="class_q_c_p_abstract_plottable_1a67bc0622fd1b9fa14e54c14922dcec66" compoundref="qcustomplot_8h" startline="1463">mPen</references>
+        <references refid="class_q_c_p_abstract_plottable_1a43f68a0603e9bcd016bdfa6d9d5c41c9" compoundref="qcustomplot_8h" startline="1466">mSelected</references>
+        <references refid="class_q_c_p_abstract_plottable_1a10619472f5d5e10e9519a599f1cf5576" compoundref="qcustomplot_8h" startline="1463">mSelectedPen</references>
+        <referencedby refid="class_q_c_p_curve_1a2361302d2fc6ec669849bd3bca00c4b2" compoundref="qcustomplot_8cpp" startline="17071" endline="17156">QCPCurve::draw</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a42b894e34dac799f90ff3700706b31df" compoundref="qcustomplot_8cpp" startline="18780" endline="18812">QCPBars::draw</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ac62c84f51d85b78ee583455b8c37ba56" compoundref="qcustomplot_8cpp" startline="15635" endline="15647">QCPGraph::drawImpulsePlot</referencedby>
+        <referencedby refid="class_q_c_p_graph_1af460db06d4d6466806721fe101f512e3" compoundref="qcustomplot_8cpp" startline="15560" endline="15626">QCPGraph::drawLinePlot</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a699ede353d6a7207d9fb36dd3aabf348" compoundref="qcustomplot_8cpp" startline="19448" endline="19459">QCPStatisticalBox::drawQuartileBox</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a3ca9d2c315c643f732cc85e20d18b551" compoundref="qcustomplot_8cpp" startline="17221" endline="17298">QCPCurve::getCurveData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1ac9147022a662e92b46c39e7cb821b0af" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QBrush</type>
+        <definition>QBrush QCPAbstractPlottable::mainBrush</definition>
+        <argsstring>() const</argsstring>
+        <name>mainBrush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1488" column="10" bodyfile="qcustomplot.cpp" bodystart="7279" bodyend="7282"/>
+        <references refid="class_q_c_p_abstract_plottable_1a33f00674c0161c13315ab9da0895418e" compoundref="qcustomplot_8h" startline="1464">mBrush</references>
+        <references refid="class_q_c_p_abstract_plottable_1a43f68a0603e9bcd016bdfa6d9d5c41c9" compoundref="qcustomplot_8h" startline="1466">mSelected</references>
+        <references refid="class_q_c_p_abstract_plottable_1aea3c0da30c7a8be23ad5f2d9bca36762" compoundref="qcustomplot_8h" startline="1464">mSelectedBrush</references>
+        <referencedby refid="class_q_c_p_curve_1a2361302d2fc6ec669849bd3bca00c4b2" compoundref="qcustomplot_8cpp" startline="17071" endline="17156">QCPCurve::draw</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a42b894e34dac799f90ff3700706b31df" compoundref="qcustomplot_8cpp" startline="18780" endline="18812">QCPBars::draw</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a9e6ce6db9aa7b29fc397c724fcf7b126" compoundref="qcustomplot_8cpp" startline="15481" endline="15502">QCPGraph::drawFill</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a699ede353d6a7207d9fb36dd3aabf348" compoundref="qcustomplot_8cpp" startline="19448" endline="19459">QCPStatisticalBox::drawQuartileBox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a8d06a59ea23324cce6330ebf2262c0ed" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::applyFillAntialiasingHint</definition>
+        <argsstring>(QCPPainter *painter) const</argsstring>
+        <name>applyFillAntialiasingHint</name>
+        <param>
+          <type><ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1489" column="8" bodyfile="qcustomplot.cpp" bodystart="7313" bodyend="7316"/>
+        <references refid="namespace_q_c_p_1ae55dbe315d41fe80f29ba88100843a0ca788810f0aa930137de6ad6cc6d83d354" compoundref="qcustomplot_8h" startline="127">QCP::aeFills</references>
+        <references refid="class_q_c_p_layerable_1acb663e375d2d36dc5c55021ee5a2119b" compoundref="qcustomplot_8cpp" startline="1152" endline="1160">QCPLayerable::applyAntialiasingHint</references>
+        <references refid="class_q_c_p_abstract_plottable_1a152ac765bedf927fb240545d11d453ea" compoundref="qcustomplot_8h" startline="1462">mAntialiasedFill</references>
+        <referencedby refid="class_q_c_p_curve_1a2361302d2fc6ec669849bd3bca00c4b2" compoundref="qcustomplot_8cpp" startline="17071" endline="17156">QCPCurve::draw</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a42b894e34dac799f90ff3700706b31df" compoundref="qcustomplot_8cpp" startline="18780" endline="18812">QCPBars::draw</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a9e6ce6db9aa7b29fc397c724fcf7b126" compoundref="qcustomplot_8cpp" startline="15481" endline="15502">QCPGraph::drawFill</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ae962caca309faae29ce0988d0d0eff4b" compoundref="qcustomplot_8cpp" startline="15125" endline="15157">QCPGraph::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_curve_1acccc86e9f496bb0392529f59f3a69dbc" compoundref="qcustomplot_8cpp" startline="17159" endline="17191">QCPCurve::drawLegendIcon</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1ac95f26b15a1e5d9c7bd2c0a46d760fc9" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::applyScattersAntialiasingHint</definition>
+        <argsstring>(QCPPainter *painter) const</argsstring>
+        <name>applyScattersAntialiasingHint</name>
+        <param>
+          <type><ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1490" column="8" bodyfile="qcustomplot.cpp" bodystart="7329" bodyend="7332"/>
+        <references refid="namespace_q_c_p_1ae55dbe315d41fe80f29ba88100843a0cae45ed8cd167bffe27d7f40da4bc17e9c" compoundref="qcustomplot_8h" startline="125">QCP::aeScatters</references>
+        <references refid="class_q_c_p_layerable_1acb663e375d2d36dc5c55021ee5a2119b" compoundref="qcustomplot_8cpp" startline="1152" endline="1160">QCPLayerable::applyAntialiasingHint</references>
+        <references refid="class_q_c_p_abstract_plottable_1aa115755e525a8e3a86dc683f9cab755b" compoundref="qcustomplot_8h" startline="1462">mAntialiasedScatters</references>
+        <referencedby refid="class_q_c_p_graph_1ae962caca309faae29ce0988d0d0eff4b" compoundref="qcustomplot_8cpp" startline="15125" endline="15157">QCPGraph::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_curve_1acccc86e9f496bb0392529f59f3a69dbc" compoundref="qcustomplot_8cpp" startline="17159" endline="17191">QCPCurve::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a8550e16af27b4e05d92bb337fb34324f" compoundref="qcustomplot_8cpp" startline="19499" endline="19505">QCPStatisticalBox::drawOutliers</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a00d17c020796ac84c84f881201c2ed10" compoundref="qcustomplot_8cpp" startline="17198" endline="17206">QCPCurve::drawScatterPlot</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ae1f3edd5eb41aa5782e61673488fd3e0" compoundref="qcustomplot_8cpp" startline="15513" endline="15549">QCPGraph::drawScatterPlot</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1a0889abc8dbfd357053f40bfafff8bf7d" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractPlottable::applyErrorBarsAntialiasingHint</definition>
+        <argsstring>(QCPPainter *painter) const</argsstring>
+        <name>applyErrorBarsAntialiasingHint</name>
+        <param>
+          <type><ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1491" column="8" bodyfile="qcustomplot.cpp" bodystart="7345" bodyend="7348"/>
+        <references refid="namespace_q_c_p_1ae55dbe315d41fe80f29ba88100843a0ca9dcf3882cb321bb305f71fdc0f09f63d" compoundref="qcustomplot_8h" startline="126">QCP::aeErrorBars</references>
+        <references refid="class_q_c_p_layerable_1acb663e375d2d36dc5c55021ee5a2119b" compoundref="qcustomplot_8cpp" startline="1152" endline="1160">QCPLayerable::applyAntialiasingHint</references>
+        <references refid="class_q_c_p_abstract_plottable_1ad48660b2bd301576e92fb033d8f455ea" compoundref="qcustomplot_8h" startline="1462">mAntialiasedErrorBars</references>
+        <referencedby refid="class_q_c_p_graph_1ae1f3edd5eb41aa5782e61673488fd3e0" compoundref="qcustomplot_8cpp" startline="15513" endline="15549">QCPGraph::drawScatterPlot</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1ae64401aa18b9c45d4d33f9b46cf4bbd0" compoundref="qcustomplot_8cpp" startline="19479" endline="19493">QCPStatisticalBox::drawWhiskers</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_plottable_1af7e992b638c8aa688abceac579bb90d7" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPAbstractPlottable::distSqrToLine</definition>
+        <argsstring>(const QPointF &amp;start, const QPointF &amp;end, const QPointF &amp;point) const</argsstring>
+        <name>distSqrToLine</name>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1492" column="10" bodyfile="qcustomplot.cpp" bodystart="7360" bodyend="7379"/>
+        <referencedby refid="class_q_c_p_financial_1a6fa1e18f18b37d3a0502b97d864a6d15" compoundref="qcustomplot_8cpp" startline="21359" endline="21417">QCPFinancial::candlestickSelectTest</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a9df2d86e6ad3b58b51798d720e0f4739" compoundref="qcustomplot_8cpp" startline="21321" endline="21351">QCPFinancial::ohlcSelectTest</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a96146099a5e68f49c7326a765f768da2" compoundref="qcustomplot_8cpp" startline="16400" endline="16459">QCPGraph::pointDistance</referencedby>
+        <referencedby refid="class_q_c_p_curve_1adc3ab8051946f9097cdf7c0707ef1a25" compoundref="qcustomplot_8cpp" startline="17915" endline="17940">QCPCurve::pointDistance</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The abstract base class for all data representing objects in a plot. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It defines a very basic interface like name, pen, brush, visibility etc. Since this class is abstract, it can&apos;t be instantiated. Use one of the subclasses or create a subclass yourself to create new ways of displaying data (see &quot;Creating own plottables&quot; below).</para>
+<para>All further specifics are in the subclasses, for example: <itemizedlist>
+<listitem><para>A normal graph with possibly a line, scatter points and error bars: <ref refid="class_q_c_p_graph" kindref="compound">QCPGraph</ref> (typically created with <ref refid="class_q_custom_plot_1a6fb2873d35a8a8089842d81a70a54167" kindref="member">QCustomPlot::addGraph</ref>) </para>
+</listitem>
+<listitem><para>A parametric curve: <ref refid="class_q_c_p_curve" kindref="compound">QCPCurve</ref> </para>
+</listitem>
+<listitem><para>A bar chart: <ref refid="class_q_c_p_bars" kindref="compound">QCPBars</ref> </para>
+</listitem>
+<listitem><para>A statistical box plot: <ref refid="class_q_c_p_statistical_box" kindref="compound">QCPStatisticalBox</ref> </para>
+</listitem>
+<listitem><para>A color encoded two-dimensional map: <ref refid="class_q_c_p_color_map" kindref="compound">QCPColorMap</ref> </para>
+</listitem>
+<listitem><para>An OHLC/Candlestick chart: <ref refid="class_q_c_p_financial" kindref="compound">QCPFinancial</ref></para>
+</listitem>
+</itemizedlist>
+</para>
+<sect1 id="class_q_c_p_abstract_plottable_1plottables-subclassing">
+<title>Creating own plottables</title>
+<para>To create an own plottable, you implement a subclass of <ref refid="class_q_c_p_abstract_plottable" kindref="compound">QCPAbstractPlottable</ref>. These are the pure virtual functions, you must implement: <itemizedlist>
+<listitem><para><ref refid="class_q_c_p_abstract_plottable_1a86e5b8fd4b6ff4f4084e7ea4c573fc53" kindref="member">clearData</ref> </para>
+</listitem>
+<listitem><para><ref refid="class_q_c_p_abstract_plottable_1a38efe9641d972992a3d44204bc80ec1d" kindref="member">selectTest</ref> </para>
+</listitem>
+<listitem><para><ref refid="class_q_c_p_abstract_plottable_1acbab5e30dcd04fd302b4a5902ac2c482" kindref="member">draw</ref> </para>
+</listitem>
+<listitem><para><ref refid="class_q_c_p_abstract_plottable_1a9a450783fd9ed539e589999fd390cdf7" kindref="member">drawLegendIcon</ref> </para>
+</listitem>
+<listitem><para><ref refid="class_q_c_p_abstract_plottable_1a345d702b2e7e12c8cfdddff65ba85e8c" kindref="member">getKeyRange</ref> </para>
+</listitem>
+<listitem><para><ref refid="class_q_c_p_abstract_plottable_1aa3331b415b5939fe4df60b78831b2799" kindref="member">getValueRange</ref></para>
+</listitem>
+</itemizedlist>
+See the documentation of those functions for what they need to do.</para>
+<para>For drawing your plot, you can use the <ref refid="class_q_c_p_abstract_plottable_1a7ad84a36472441cf1f555c5683d0da93" kindref="member">coordsToPixels</ref> functions to translate a point in plot coordinates to pixel coordinates. This function is quite convenient, because it takes the orientation of the key and value axes into account for you (x and y are swapped when the key axis is vertical and the value axis horizontal). If you are worried about performance (i.e. you need to translate many points in a loop like <ref refid="class_q_c_p_graph" kindref="compound">QCPGraph</ref>), you can directly use <ref refid="class_q_c_p_axis_1af15d1b3a7f7e9b53d759d3ccff1fe4b4" kindref="member">QCPAxis::coordToPixel</ref>. However, you must then take care about the orientation of the axis yourself.</para>
+<para>Here are some important members you inherit from <ref refid="class_q_c_p_abstract_plottable" kindref="compound">QCPAbstractPlottable</ref>: <table rows="8" cols="2"><row>
+<entry thead="no"><para><ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> *<bold>mParentPlot</bold>  </para>
+</entry><entry thead="no"><para>A pointer to the parent <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> instance. The parent plot is inferred from the axes that are passed in the constructor. </para>
+</entry></row>
+<row>
+<entry thead="no"><para>QString <bold>mName</bold>  </para>
+</entry><entry thead="no"><para>The name of the plottable. </para>
+</entry></row>
+<row>
+<entry thead="no"><para>QPen <bold>mPen</bold>  </para>
+</entry><entry thead="no"><para>The generic pen of the plottable. You should use this pen for the most prominent data representing lines in the plottable (e.g <ref refid="class_q_c_p_graph" kindref="compound">QCPGraph</ref> uses this pen for its graph lines and scatters) </para>
+</entry></row>
+<row>
+<entry thead="no"><para>QPen <bold>mSelectedPen</bold>  </para>
+</entry><entry thead="no"><para>The generic pen that should be used when the plottable is selected (hint: <ref refid="class_q_c_p_abstract_plottable_1abd790a3b229239f49067f136633a4b98" kindref="member">mainPen</ref> gives you the right pen, depending on selection state). </para>
+</entry></row>
+<row>
+<entry thead="no"><para>QBrush <bold>mBrush</bold>  </para>
+</entry><entry thead="no"><para>The generic brush of the plottable. You should use this brush for the most prominent fillable structures in the plottable (e.g. <ref refid="class_q_c_p_graph" kindref="compound">QCPGraph</ref> uses this brush to control filling under the graph) </para>
+</entry></row>
+<row>
+<entry thead="no"><para>QBrush <bold>mSelectedBrush</bold>  </para>
+</entry><entry thead="no"><para>The generic brush that should be used when the plottable is selected (hint: <ref refid="class_q_c_p_abstract_plottable_1ac9147022a662e92b46c39e7cb821b0af" kindref="member">mainBrush</ref> gives you the right brush, depending on selection state). </para>
+</entry></row>
+<row>
+<entry thead="no"><para>QPointer&lt;QCPAxis&gt;<bold>mKeyAxis</bold>, <bold>mValueAxis</bold>  </para>
+</entry><entry thead="no"><para>The key and value axes this plottable is attached to. Call their <ref refid="class_q_c_p_axis_1af15d1b3a7f7e9b53d759d3ccff1fe4b4" kindref="member">QCPAxis::coordToPixel</ref> functions to translate coordinates to pixels in either the key or value dimension. Make sure to check whether the pointer is null before using it. If one of the axes is null, don&apos;t draw the plottable. </para>
+</entry></row>
+<row>
+<entry thead="no"><para>bool <bold>mSelected</bold>  </para>
+</entry><entry thead="no"><para>indicates whether the plottable is selected or not.  </para>
+</entry></row>
+</table>
+</para>
+</sect1>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>QCPFinancial</label>
+        <link refid="class_q_c_p_financial"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="4">
+        <label>QCPBars</label>
+        <link refid="class_q_c_p_bars"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>QCPAbstractPlottable</label>
+        <link refid="class_q_c_p_abstract_plottable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>QCPGraph</label>
+        <link refid="class_q_c_p_graph"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>QCPStatisticalBox</label>
+        <link refid="class_q_c_p_statistical_box"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QCPColorMap</label>
+        <link refid="class_q_c_p_color_map"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QCPLayerable</label>
+        <link refid="class_q_c_p_layerable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QCPCurve</label>
+        <link refid="class_q_c_p_curve"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="16">
+        <label>QCPLayoutInset</label>
+        <link refid="class_q_c_p_layout_inset"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>QCPLayoutElement</label>
+        <link refid="class_q_c_p_layout_element"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>#mParentLayout</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="11">
+        <label>QCPRange</label>
+        <link refid="class_q_c_p_range"/>
+      </node>
+      <node id="17">
+        <label>QCPLegend</label>
+        <link refid="class_q_c_p_legend"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>QCPAbstractPlottable</label>
+        <link refid="class_q_c_p_abstract_plottable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>QCPLineEnding</label>
+        <link refid="class_q_c_p_line_ending"/>
+      </node>
+      <node id="8">
+        <label>QCPLayout</label>
+        <link refid="class_q_c_p_layout"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>QCPGrid</label>
+        <link refid="class_q_c_p_grid"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>#mParentAxis</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>QCPAxisPainterPrivate</label>
+        <link refid="class_q_c_p_axis_painter_private"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>+lowerEnding</edgelabel>
+          <edgelabel>+upperEnding</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>#mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QWidget</label>
+      </node>
+      <node id="4">
+        <label>QCPLayer</label>
+        <link refid="class_q_c_p_layer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>#mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QCPLayoutGrid</label>
+        <link refid="class_q_c_p_layout_grid"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QCPLayerable</label>
+        <link refid="class_q_c_p_layerable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>#mLayer</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>#mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>QCPAxis</label>
+        <link refid="class_q_c_p_axis"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>#mRange</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>#mAxisPainter</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>#mGrid</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>#mAxisRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>QCPAxisRect</label>
+        <link refid="class_q_c_p_axis_rect"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>#mInsetLayout</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>#mDragStartHorzRange</edgelabel>
+          <edgelabel>#mDragStartVertRange</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QCustomPlot</label>
+        <link refid="class_q_custom_plot"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>#mCurrentLayer</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>#mPlotLayout</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+xAxis</edgelabel>
+          <edgelabel>+xAxis2</edgelabel>
+          <edgelabel>+yAxis</edgelabel>
+          <edgelabel>+yAxis2</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>+legend</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="qcustomplot.h" line="1388" column="1" bodyfile="qcustomplot.h" bodystart="1389" bodyend="1500"/>
+    <listofallmembers>
+      <member refid="class_q_c_p_abstract_plottable_1a70f8cabfd808f7d5204b9f18c45c13f5" prot="public" virt="virtual"><scope>QCPAbstractPlottable</scope><name>addToLegend</name></member>
+      <member refid="class_q_c_p_layerable_1a71cbd212fde2703cee076e204a475709" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>antialiased</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1add06e122d84deb9f451ace9bb8ad9c96" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>antialiasedErrorBars</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a022717896dc57b638a7b5a7be7212ba9" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>antialiasedFill</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a795370db6b1309de0ab60b633efb5ec2" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>antialiasedScatters</name></member>
+      <member refid="class_q_c_p_layerable_1acb663e375d2d36dc5c55021ee5a2119b" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>applyAntialiasingHint</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a59a80773c5cefc05a0646ac8e1149ed5" prot="protected" virt="virtual"><scope>QCPAbstractPlottable</scope><name>applyDefaultAntialiasingHint</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a0889abc8dbfd357053f40bfafff8bf7d" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>applyErrorBarsAntialiasingHint</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a8d06a59ea23324cce6330ebf2262c0ed" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>applyFillAntialiasingHint</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ac95f26b15a1e5d9c7bd2c0a46d760fc9" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>applyScattersAntialiasingHint</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a893b4896dfd92b68b05b2600b80f5826" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>brush</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a86e5b8fd4b6ff4f4084e7ea4c573fc53" prot="public" virt="pure-virtual"><scope>QCPAbstractPlottable</scope><name>clearData</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1aafb817dbea97d2798967f3371a701413" prot="protected" virt="virtual"><scope>QCPAbstractPlottable</scope><name>clipRect</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a7ad84a36472441cf1f555c5683d0da93" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>coordsToPixels</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a5acb50ae984eef09a7ab92315d2ad708" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>coordsToPixels</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a6fa0d0f95560ea8b01ee13f296dab2b1" prot="protected" virt="virtual"><scope>QCPAbstractPlottable</scope><name>deselectEvent</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1af7e992b638c8aa688abceac579bb90d7" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>distSqrToLine</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1acbab5e30dcd04fd302b4a5902ac2c482" prot="protected" virt="pure-virtual"><scope>QCPAbstractPlottable</scope><name>draw</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a9a450783fd9ed539e589999fd390cdf7" prot="protected" virt="pure-virtual"><scope>QCPAbstractPlottable</scope><name>drawLegendIcon</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a345d702b2e7e12c8cfdddff65ba85e8c" prot="protected" virt="pure-virtual"><scope>QCPAbstractPlottable</scope><name>getKeyRange</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1aa3331b415b5939fe4df60b78831b2799" prot="protected" virt="pure-virtual"><scope>QCPAbstractPlottable</scope><name>getValueRange</name></member>
+      <member refid="class_q_c_p_layerable_1a8cbe5a0c9a5674249982f5ca5f8e02bc" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>initializeParentPlot</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a2cdd6f0dd5e9a979037f86b4000d9cfe" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>keyAxis</name></member>
+      <member refid="class_q_c_p_layerable_1a5ff4862e8c784c9f5986dbc1533ba2a4" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>layer</name></member>
+      <member refid="class_q_c_p_layerable_1abbf8657cedea73ac1c3499b521c90eba" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>layerChanged</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ac9147022a662e92b46c39e7cb821b0af" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mainBrush</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1abd790a3b229239f49067f136633a4b98" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mainPen</name></member>
+      <member refid="class_q_c_p_layerable_1a3ab45a4c76a3333ce42eb217a81733ec" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mAntialiased</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ad48660b2bd301576e92fb033d8f455ea" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mAntialiasedErrorBars</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a152ac765bedf927fb240545d11d453ea" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mAntialiasedFill</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1aa115755e525a8e3a86dc683f9cab755b" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mAntialiasedScatters</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a33f00674c0161c13315ab9da0895418e" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mBrush</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a426f42e254d0f8ce5436a868c61a6827" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mKeyAxis</name></member>
+      <member refid="class_q_c_p_layerable_1aa38ec5891aff0f50b36fd63e9372a0cd" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mLayer</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ac29ffef424e2488675930de18cde612a" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mName</name></member>
+      <member refid="class_q_c_p_layerable_1af94484cfb7cbbddb7de522e9be71d9a4" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>moveToLayer</name></member>
+      <member refid="class_q_c_p_layerable_1a3291445a980053e2d17a21d15957624e" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mParentLayerable</name></member>
+      <member refid="class_q_c_p_layerable_1aa2a528433e44db02b8aef23c1f9f90ed" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mParentPlot</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a67bc0622fd1b9fa14e54c14922dcec66" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mPen</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1aceee52342c8e75727abcbd164986fdcb" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mSelectable</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a43f68a0603e9bcd016bdfa6d9d5c41c9" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mSelected</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1aea3c0da30c7a8be23ad5f2d9bca36762" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mSelectedBrush</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a10619472f5d5e10e9519a599f1cf5576" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mSelectedPen</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a2901452ca4aea911a1827717934a4bda" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mValueAxis</name></member>
+      <member refid="class_q_c_p_layerable_1a62e3aed8427d6ce3ccf716f285106cb3" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>mVisible</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a52c226eefcb1920240eeabae574d28c0" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>name</name></member>
+      <member refid="class_q_c_p_layerable_1aa78b7e644d2c519e1a9a6f2ac5fcd858" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>parentLayerable</name></member>
+      <member refid="class_q_c_p_layerable_1a473edb813a4c1929d6b6a8fe3ff3faf7" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>parentPlot</name></member>
+      <member refid="class_q_c_p_layerable_1ab20b7dbd8e0249ed61adb9622c427382" prot="protected" virt="virtual"><scope>QCPAbstractPlottable</scope><name>parentPlotInitialized</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ad5972efc31344e5a7a78ab4f8864b2d3" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>pen</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a3903c1120ab5c27e7fa46b597ef267bd" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>pixelsToCoords</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a28d32c0062b9450847851ffdee1c5f69" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>pixelsToCoords</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1af78a036e40db6f53a31abadc5323715a" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>QCPAbstractPlottable</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1af123edeca169ec7a31958a1d714e1a8a" prot="private" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>QCPAxis</name></member>
+      <member refid="class_q_c_p_layerable_1a74c0fa237f29bf0e49565013fc5d1ec0" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>QCPLayerable</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a104c78e91302afd6842a903e472f552f" prot="private" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>QCPPlottableLegendItem</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a1cdf9df76adcfae45261690aa0ca2198" prot="private" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>QCustomPlot</name></member>
+      <member refid="class_q_c_p_layerable_1ab054e88f15d485defcb95e7376f119e7" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>realVisibility</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ac95fb2604d9106d0852ad9ceb326fe8c" prot="public" virt="virtual"><scope>QCPAbstractPlottable</scope><name>removeFromLegend</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a1491c4a606bccd2d09e65e11b79eb882" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>rescaleAxes</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ae96b83c961e257da116c6acf9c7da308" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>rescaleKeyAxis</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1aa1e408bb2d13999150c3f7f8a8579ca9" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>rescaleValueAxis</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a082b98cfb91a7363a3b5cd17b0c1cd60" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>sdBoth</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a0fc9a70796ef60ad18ddd18056e6dc63" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>sdNegative</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a02951859f243a4d24e779cfbb5471030" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>sdPositive</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1adf896b8a213fea74440c7bc969cf6e4c" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>selectable</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a0059caa3f3581f3959660fef8cbb71c4" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>selectableChanged</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a0b3b514474fe93354fc74cfc144184b4" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>selected</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1afe5f3f74b09e89713ba39da04079a337" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>selectedBrush</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1aafdfd0946b18364321ffce01cc6045a0" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>selectedPen</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a16aaad02456aa23a759efd1ac90c79bf" prot="protected" virt="virtual"><scope>QCPAbstractPlottable</scope><name>selectEvent</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1afb5e4718c232a16d0fb06b00e172be9e" prot="protected" virt="virtual"><scope>QCPAbstractPlottable</scope><name>selectionCategory</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a3af66432b1dca93b28e00e78a8c7c1d9" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>selectionChanged</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a38efe9641d972992a3d44204bc80ec1d" prot="public" virt="pure-virtual"><scope>QCPAbstractPlottable</scope><name>selectTest</name></member>
+      <member refid="class_q_c_p_layerable_1a4fd43e89be4a553ead41652565ff0581" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>setAntialiased</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a757beb744b96cf1855cca5ab9d3ecf52" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>setAntialiasedErrorBars</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a089d6b5577120239b55c39ed27c39536" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>setAntialiasedFill</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a2f03f067ede2ed4da6f7d0e4777a3f02" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>setAntialiasedScatters</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a7a4b92144dca6453a1f0f210e27edc74" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>setBrush</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a8524fa2994c63c0913ebd9bb2ffa3920" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>setKeyAxis</name></member>
+      <member refid="class_q_c_p_layerable_1ab0d0da6d2de45a118886d2c8e16d5a54" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>setLayer</name></member>
+      <member refid="class_q_c_p_layerable_1ab25a0e7b897993b44447caee0f142083" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>setLayer</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ab79c7ba76bc7fa89a4b3580e12149f1f" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>setName</name></member>
+      <member refid="class_q_c_p_layerable_1aa23c893671f1f6744ac235cf2204cf3a" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>setParentLayerable</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ab74b09ae4c0e7e13142fe4b5bf46cac7" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>setPen</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a22c69299eb5569e0f6bf084877a37dc4" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>setSelectable</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1afbd5428c2952f59d952e11ab5cd79176" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>setSelected</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ae8c816874089f7a44001e8618e81a9dc" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>setSelectedBrush</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a6911603cad23ab0469b108224517516f" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>setSelectedPen</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a71626a07367e241ec62ad2c34baf21cb" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>setValueAxis</name></member>
+      <member refid="class_q_c_p_layerable_1a3bed99ddc396b48ce3ebfdc0418744f8" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>setVisible</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8" prot="protected" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>SignDomain</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1af47809a644a68ffd955fb30b01fb4f2f" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>valueAxis</name></member>
+      <member refid="class_q_c_p_layerable_1af0297b944b6192b6d67d00bff41b6b70" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>visible</name></member>
+      <member refid="class_q_c_p_layerable_1a4231cf5b3601d6d3a5781283e7a9735b" prot="public" virt="non-virtual"><scope>QCPAbstractPlottable</scope><name>~QCPLayerable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_main_window" kind="class" language="C++" prot="public">
+    <compoundname>MainWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QMainWindow</basecompoundref>
+    <includes refid="mainwindow_8h" local="no">mainwindow.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_main_window_1a35466a70ed47252a0191168126a352a5" prot="private" static="no" mutable="no">
+        <type>Ui::MainWindow *</type>
+        <definition>Ui::MainWindow* MainWindow::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="55" column="20" bodyfile="mainwindow.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a7c5de18a3099b890fab55bef52ffab03" compoundref="mainwindow_8cpp" startline="24" endline="42">InitSimulator</referencedby>
+        <referencedby refid="class_main_window_1a472a8fb0458be9e28d2e138d24f05ba0" compoundref="mainwindow_8cpp" startline="6" endline="22">MainWindow</referencedby>
+        <referencedby refid="class_main_window_1a69efa09d058fbf25a6c940b0e11b6322" compoundref="mainwindow_8cpp" startline="85" endline="99">simulator_plot</referencedby>
+        <referencedby refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" compoundref="mainwindow_8cpp" startline="44" endline="47">~MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" prot="private" static="no" mutable="no">
+        <type>shared_ptr&lt; <ref refid="class_simulator" kindref="compound">Simulator</ref> &gt;</type>
+        <definition>shared_ptr&lt;Simulator&gt; MainWindow::simulator</definition>
+        <argsstring></argsstring>
+        <name>simulator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="56" column="16" bodyfile="mainwindow.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a7c5de18a3099b890fab55bef52ffab03" compoundref="mainwindow_8cpp" startline="24" endline="42">InitSimulator</referencedby>
+        <referencedby refid="class_main_window_1a55ae3e0d4303334ccabae0a5050cfd88" compoundref="mainwindow_8cpp" startline="56" endline="74">keyPressEvent</referencedby>
+        <referencedby refid="class_main_window_1a3c7f7e81db750a0acadddd00d4b27405" compoundref="mainwindow_8cpp" startline="50" endline="54">on_mapsComboBox_textActivated</referencedby>
+        <referencedby refid="class_main_window_1a9fdec4edb19b978b5ab67df5590479c3" compoundref="mainwindow_8cpp" startline="107" endline="111">on_speedSlider_valueChanged</referencedby>
+        <referencedby refid="class_main_window_1abcc096120205197b50fa55cb603acb95" compoundref="mainwindow_8cpp" startline="76" endline="83">on_startButton_clicked</referencedby>
+        <referencedby refid="class_main_window_1a69efa09d058fbf25a6c940b0e11b6322" compoundref="mainwindow_8cpp" startline="85" endline="99">simulator_plot</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a356578805ed1248a7f2807434cb0e5ee" prot="private" static="no" mutable="no">
+        <type>QTimer *</type>
+        <definition>QTimer* MainWindow::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="57" column="12" bodyfile="mainwindow.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_main_window_1abcc096120205197b50fa55cb603acb95" compoundref="mainwindow_8cpp" startline="76" endline="83">on_startButton_clicked</referencedby>
+        <referencedby refid="class_main_window_1abf27a1e863dc2350626ba16c83e925f4" compoundref="mainwindow_8cpp" startline="101" endline="105">on_stopButton_clicked</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a7849e1daf757f67c0a376d4f0511130c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double MainWindow::time_seconds</definition>
+        <argsstring></argsstring>
+        <name>time_seconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="59" column="12" bodyfile="mainwindow.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a7c5de18a3099b890fab55bef52ffab03" compoundref="mainwindow_8cpp" startline="24" endline="42">InitSimulator</referencedby>
+        <referencedby refid="class_main_window_1a69efa09d058fbf25a6c940b0e11b6322" compoundref="mainwindow_8cpp" startline="85" endline="99">simulator_plot</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_main_window_1a472a8fb0458be9e28d2e138d24f05ba0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::MainWindow</definition>
+        <argsstring>(QWidget *parent=nullptr, shared_ptr&lt; Simulator &gt; _simulator=nullptr)</argsstring>
+        <name>MainWindow</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>shared_ptr&lt; <ref refid="class_simulator" kindref="compound">Simulator</ref> &gt;</type>
+          <declname>_simulator</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new Main Window object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_simulator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="28" column="5" bodyfile="mainwindow.cpp" bodystart="6" bodyend="22"/>
+        <references refid="utils_8cpp_1ae02648d07b0195cde8676a5cb2582760" compoundref="utils_8cpp" startline="3" endline="18">GetMapFiles</references>
+        <references refid="class_main_window_1a7c5de18a3099b890fab55bef52ffab03" compoundref="mainwindow_8cpp" startline="24" endline="42">InitSimulator</references>
+        <references refid="class_main_window_1a35466a70ed47252a0191168126a352a5" compoundref="mainwindow_8h" startline="55">ui</references>
+      </memberdef>
+      <memberdef kind="function" id="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::~MainWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~MainWindow</name>
+        <briefdescription>
+<para>Destroy the Main Window object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="33" column="5" bodyfile="mainwindow.cpp" bodystart="44" bodyend="47"/>
+        <references refid="class_main_window_1a35466a70ed47252a0191168126a352a5" compoundref="mainwindow_8h" startline="55">ui</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-slot">
+      <memberdef kind="slot" id="class_main_window_1a3c7f7e81db750a0acadddd00d4b27405" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_mapsComboBox_textActivated</definition>
+        <argsstring>(const QString &amp;arg1)</argsstring>
+        <name>on_mapsComboBox_textActivated</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>arg1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="37" column="10" bodyfile="mainwindow.cpp" bodystart="50" bodyend="54"/>
+        <references refid="class_main_window_1a7c5de18a3099b890fab55bef52ffab03" compoundref="mainwindow_8cpp" startline="24" endline="42">InitSimulator</references>
+        <references refid="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" compoundref="mainwindow_8h" startline="56">simulator</references>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1abcc096120205197b50fa55cb603acb95" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_startButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_startButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="38" column="10" bodyfile="mainwindow.cpp" bodystart="76" bodyend="83"/>
+        <references refid="class_main_window_1a7c5de18a3099b890fab55bef52ffab03" compoundref="mainwindow_8cpp" startline="24" endline="42">InitSimulator</references>
+        <references refid="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" compoundref="mainwindow_8h" startline="56">simulator</references>
+        <references refid="class_main_window_1a69efa09d058fbf25a6c940b0e11b6322" compoundref="mainwindow_8cpp" startline="85" endline="99">simulator_plot</references>
+        <references refid="class_main_window_1a356578805ed1248a7f2807434cb0e5ee" compoundref="mainwindow_8h" startline="57">timer</references>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1abf27a1e863dc2350626ba16c83e925f4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_stopButton_clicked</definition>
+        <argsstring>()</argsstring>
+        <name>on_stopButton_clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="39" column="10" bodyfile="mainwindow.cpp" bodystart="101" bodyend="105"/>
+        <references refid="class_main_window_1a7c5de18a3099b890fab55bef52ffab03" compoundref="mainwindow_8cpp" startline="24" endline="42">InitSimulator</references>
+        <references refid="class_main_window_1a356578805ed1248a7f2807434cb0e5ee" compoundref="mainwindow_8h" startline="57">timer</references>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a69efa09d058fbf25a6c940b0e11b6322" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::simulator_plot</definition>
+        <argsstring>()</argsstring>
+        <name>simulator_plot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="40" column="10" bodyfile="mainwindow.cpp" bodystart="85" bodyend="99"/>
+        <references refid="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" compoundref="mainwindow_8h" startline="56">simulator</references>
+        <references refid="class_main_window_1a7849e1daf757f67c0a376d4f0511130c" compoundref="mainwindow_8h" startline="59">time_seconds</references>
+        <references refid="class_main_window_1a35466a70ed47252a0191168126a352a5" compoundref="mainwindow_8h" startline="55">ui</references>
+        <referencedby refid="class_main_window_1abcc096120205197b50fa55cb603acb95" compoundref="mainwindow_8cpp" startline="76" endline="83">on_startButton_clicked</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a9fdec4edb19b978b5ab67df5590479c3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::on_speedSlider_valueChanged</definition>
+        <argsstring>(int value)</argsstring>
+        <name>on_speedSlider_valueChanged</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="42" column="10" bodyfile="mainwindow.cpp" bodystart="107" bodyend="111"/>
+        <references refid="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" compoundref="mainwindow_8h" startline="56">simulator</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_main_window_1a55ae3e0d4303334ccabae0a5050cfd88" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::keyPressEvent</definition>
+        <argsstring>(QKeyEvent *event) override</argsstring>
+        <name>keyPressEvent</name>
+        <param>
+          <type>QKeyEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>keyboard key events handles </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="50" column="10" bodyfile="mainwindow.cpp" bodystart="56" bodyend="74"/>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaabcf8c79e9a5f5f9d606fb35645a0fb27" compoundref="geometry_8h" startline="29">Down</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa9d4d8b0b72fc2659da772d761a3c5ecb" compoundref="geometry_8h" startline="26">Left</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaad48f7af8c070184f3774c8e85854eb66" compoundref="geometry_8h" startline="28">Right</references>
+        <references refid="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" compoundref="mainwindow_8h" startline="56">simulator</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2" compoundref="geometry_8h" startline="27">Up</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_main_window_1a7c5de18a3099b890fab55bef52ffab03" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::InitSimulator</definition>
+        <argsstring>()</argsstring>
+        <name>InitSimulator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="54" column="10" bodyfile="mainwindow.cpp" bodystart="24" bodyend="42"/>
+        <references refid="utils_8h_1ae11f03ae1d868d9f02f43ae00d975727" compoundref="utils_8h" startline="9">MAPS_LOCATION</references>
+        <references refid="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" compoundref="mainwindow_8h" startline="56">simulator</references>
+        <references refid="class_main_window_1a7849e1daf757f67c0a376d4f0511130c" compoundref="mainwindow_8h" startline="59">time_seconds</references>
+        <references refid="class_main_window_1a35466a70ed47252a0191168126a352a5" compoundref="mainwindow_8h" startline="55">ui</references>
+        <referencedby refid="class_main_window_1a472a8fb0458be9e28d2e138d24f05ba0" compoundref="mainwindow_8cpp" startline="6" endline="22">MainWindow</referencedby>
+        <referencedby refid="class_main_window_1a3c7f7e81db750a0acadddd00d4b27405" compoundref="mainwindow_8cpp" startline="50" endline="54">on_mapsComboBox_textActivated</referencedby>
+        <referencedby refid="class_main_window_1abcc096120205197b50fa55cb603acb95" compoundref="mainwindow_8cpp" startline="76" endline="83">on_startButton_clicked</referencedby>
+        <referencedby refid="class_main_window_1abf27a1e863dc2350626ba16c83e925f4" compoundref="mainwindow_8cpp" startline="101" endline="105">on_stopButton_clicked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_main_window_1abcd9c185928c2ce785b0831248fd534b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::PlotMap</definition>
+        <argsstring>()</argsstring>
+        <name>PlotMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="61" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_window_1a52dccaa3ccabdf7b048f116960cf8ddc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_q_c_p_graph" kindref="compound">QCPGraph</ref> *</type>
+        <definition>QCPGraph* MainWindow::DrawLine</definition>
+        <argsstring>(double x0, double y0, double x1, double y1)</argsstring>
+        <name>DrawLine</name>
+        <param>
+          <type>double</type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mainwindow.h" line="62" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Application main window. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+      <node id="1">
+        <label>MainWindow</label>
+        <link refid="class_main_window"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>QMainWindow</label>
+      </node>
+      <node id="1">
+        <label>MainWindow</label>
+        <link refid="class_main_window"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="mainwindow.h" line="17" column="1" bodyfile="mainwindow.h" bodystart="18" bodyend="63"/>
+    <listofallmembers>
+      <member refid="class_main_window_1a52dccaa3ccabdf7b048f116960cf8ddc" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>DrawLine</name></member>
+      <member refid="class_main_window_1a7c5de18a3099b890fab55bef52ffab03" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>InitSimulator</name></member>
+      <member refid="class_main_window_1a55ae3e0d4303334ccabae0a5050cfd88" prot="protected" virt="non-virtual"><scope>MainWindow</scope><name>keyPressEvent</name></member>
+      <member refid="class_main_window_1a472a8fb0458be9e28d2e138d24f05ba0" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>MainWindow</name></member>
+      <member refid="class_main_window_1a3c7f7e81db750a0acadddd00d4b27405" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_mapsComboBox_textActivated</name></member>
+      <member refid="class_main_window_1a9fdec4edb19b978b5ab67df5590479c3" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_speedSlider_valueChanged</name></member>
+      <member refid="class_main_window_1abcc096120205197b50fa55cb603acb95" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_startButton_clicked</name></member>
+      <member refid="class_main_window_1abf27a1e863dc2350626ba16c83e925f4" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>on_stopButton_clicked</name></member>
+      <member refid="class_main_window_1abcd9c185928c2ce785b0831248fd534b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>PlotMap</name></member>
+      <member refid="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>simulator</name></member>
+      <member refid="class_main_window_1a69efa09d058fbf25a6c940b0e11b6322" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>simulator_plot</name></member>
+      <member refid="class_main_window_1a7849e1daf757f67c0a376d4f0511130c" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>time_seconds</name></member>
+      <member refid="class_main_window_1a356578805ed1248a7f2807434cb0e5ee" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>timer</name></member>
+      <member refid="class_main_window_1a35466a70ed47252a0191168126a352a5" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>ui</name></member>
+      <member refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>~MainWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

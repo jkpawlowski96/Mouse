@@ -1,0 +1,6 @@
+<map id="RotateDirectionRight" name="RotateDirectionRight">
+<area shape="rect" id="node1" title="Rotate direction to right." alt="" coords="356,56,497,83"/>
+<area shape="rect" id="node2" href="$class_mouse.html#adc87ac2f6bf3df7db585f913fcc2a03e" title="Call mouse object (single tick)" alt="" coords="193,5,284,32"/>
+<area shape="rect" id="node3" href="$class_expander.html#ae87a3f6bccca98e9fa3b39b6f32b0da9" title="Logic implementation of Expander." alt="" coords="5,81,121,108"/>
+<area shape="rect" id="node4" href="$geometry_8cpp.html#af1435e77f75031bb0bd2296a923c9ec4" title="Rotate direction of 180 degree." alt="" coords="169,107,308,133"/>
+</map>

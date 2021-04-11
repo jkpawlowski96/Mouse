@@ -1,0 +1,6 @@
+<map id="doublePoint" name="doublePoint">
+<area shape="rect" id="node1" title="Point of double from point of int." alt="" coords="315,31,405,57"/>
+<area shape="rect" id="node2" href="$geometry_8cpp.html#a264f0b2001150ace7a2e82b20ec7a3f3" title="Distance from double point to int point." alt="" coords="144,5,267,32"/>
+<area shape="rect" id="node4" href="$class_mouse.html#ac667b83b66fa518363a0c457dba2b392" title="Construct a new Mouse object." alt="" coords="151,56,259,83"/>
+<area shape="rect" id="node3" href="$class_mouse.html#adc87ac2f6bf3df7db585f913fcc2a03e" title="Call mouse object (single tick)" alt="" coords="5,5,96,32"/>
+</map>

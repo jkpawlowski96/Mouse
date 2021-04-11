@@ -1,0 +1,87 @@
+\hypertarget{class_sensor}{}\doxysection{Sensor Class Reference}
+\label{class_sensor}\index{Sensor@{Sensor}}
+
+
+\mbox{\hyperlink{class_sensor}{Sensor}} device for wall detection.  
+
+
+
+
+{\ttfamily \#include $<$sensor.\+h$>$}
+
+
+
+Collaboration diagram for Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{class_sensor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_sensor_data}{Sensor\+Data}} \mbox{\hyperlink{class_sensor_a3577f9e8eb65eb3bc8f69e6396e97002}{Measure}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_map}{Map}} $>$ map, \mbox{\hyperlink{struct_position}{Position}}$<$ int $>$ loc)
+\begin{DoxyCompactList}\small\item\em Measure distance to wall to make detection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_sensor}{Sensor}} device for wall detection. 
+
+Definition at line 12 of file sensor.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sensor_a3577f9e8eb65eb3bc8f69e6396e97002}\label{class_sensor_a3577f9e8eb65eb3bc8f69e6396e97002}} 
+\index{Sensor@{Sensor}!Measure@{Measure}}
+\index{Measure@{Measure}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{Measure()}{Measure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sensor_data}{Sensor\+Data}} Sensor\+::\+Measure (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_map}{Map}} $>$}]{map,  }\item[{\mbox{\hyperlink{struct_position}{Position}}$<$ int $>$}]{loc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Measure distance to wall to make detection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & \\
+\hline
+{\em loc} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_sensor_data}{Sensor\+Data}} 
+\end{DoxyReturn}
+
+
+Definition at line 21 of file sensor.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21                                                                   \{}
+\DoxyCodeLine{22             \mbox{\hyperlink{struct_sensor_data}{SensorData}} res;}
+\DoxyCodeLine{23             \textcolor{keyword}{auto} path = map-\/>FindPathConst(loc.\mbox{\hyperlink{struct_position_aca485c4302d36798c29923a99a5f249d}{localization}});}
+\DoxyCodeLine{24             \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} d = loc.\mbox{\hyperlink{struct_position_a7f5e11bbcbaaef0e8aa43e464c2da154}{direction}};}
+\DoxyCodeLine{25             \textcolor{keywordflow}{if}(path.acces[d]==\mbox{\hyperlink{geometry_8h_a65cbcc4c6a0978be9e0985af854d7a0dae9dc4935ee596f33afde5762140c661c}{Forbiden}})}
+\DoxyCodeLine{26                 res.\mbox{\hyperlink{struct_sensor_data_a1a6a48546a1fece90c78c2b1704b9ee3}{wallDetected}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{27             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{28                 res.\mbox{\hyperlink{struct_sensor_data_a1a6a48546a1fece90c78c2b1704b9ee3}{wallDetected}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{29             \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{30         \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{class_sensor_a3577f9e8eb65eb3bc8f69e6396e97002_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{sensor_8h}{sensor.\+h}}\end{DoxyCompactItemize}

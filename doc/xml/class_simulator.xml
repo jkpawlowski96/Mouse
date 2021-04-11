@@ -1,0 +1,1051 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_simulator" kind="class" language="C++" prot="public">
+    <compoundname>Simulator</compoundname>
+    <includes refid="simulator_8h" local="no">simulator.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_simulator_1ab4975b1dd1640f83ad745552dcf11c4c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Simulator::running</definition>
+        <argsstring></argsstring>
+        <name>running</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="102" column="10" bodyfile="simulator.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="class_simulator_1aa527d93be499b1c2e6307b4a1fc211a3" compoundref="simulator_8cpp" startline="73" endline="76">Finish</referencedby>
+        <referencedby refid="class_simulator_1a130532d06105b866550fbd27aa88f228" compoundref="simulator_8cpp" startline="78" endline="88">GetTimerElapsed</referencedby>
+        <referencedby refid="class_simulator_1a166832314a3c4c510c28771372c372b6" compoundref="simulator_8h" startline="86" endline="86">isRunning</referencedby>
+        <referencedby refid="class_simulator_1a137c742a9af58c656b26604f9270ffc7" compoundref="simulator_8cpp" startline="48" endline="52">Start</referencedby>
+        <referencedby refid="class_simulator_1ad493423e80256f53c715bb59c16ec78e" compoundref="simulator_8cpp" startline="54" endline="61">Stop</referencedby>
+        <referencedby refid="class_simulator_1a1a18b212eda4277c622502177f302c11" compoundref="simulator_8cpp" startline="63" endline="71">Tick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulator_1adfe129fc210671784125a8dd004d793d" prot="private" static="no" mutable="no">
+        <type>shared_ptr&lt; <ref refid="class_map" kindref="compound">Map</ref> &gt;</type>
+        <definition>shared_ptr&lt;Map&gt; Simulator::map</definition>
+        <argsstring></argsstring>
+        <name>map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="103" column="16" bodyfile="simulator.h" bodystart="103" bodyend="-1"/>
+        <referencedby refid="class_simulator_1a1f65da606a393ae498e214119f23e970" compoundref="simulator_8cpp" startline="150" endline="174">PlotMap</referencedby>
+        <referencedby refid="class_simulator_1a7d7a873efaa84b61428d2f738a95a56d" compoundref="simulator_8cpp" startline="90" endline="93">SetMap</referencedby>
+        <referencedby refid="class_simulator_1a960bd333fe2c1ce66f45eca8f26a81f7" compoundref="simulator_8cpp" startline="9" endline="39">Simulator</referencedby>
+        <referencedby refid="class_simulator_1a1a18b212eda4277c622502177f302c11" compoundref="simulator_8cpp" startline="63" endline="71">Tick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulator_1a7588230f8c6c63102402b3dc2bca0757" prot="private" static="no" mutable="no">
+        <type>shared_ptr&lt; <ref refid="class_mouse" kindref="compound">Mouse</ref> &gt;</type>
+        <definition>shared_ptr&lt;Mouse&gt; Simulator::mouse</definition>
+        <argsstring></argsstring>
+        <name>mouse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="104" column="16" bodyfile="simulator.h" bodystart="104" bodyend="-1"/>
+        <referencedby refid="class_simulator_1a5a7f9537737abd907827b552fcd7f172" compoundref="simulator_8cpp" startline="176" endline="263">PlotMouse</referencedby>
+        <referencedby refid="class_simulator_1a40ae6a4cbf86c2716792e2feaf18979a" compoundref="simulator_8cpp" startline="41" endline="43">SetSpeed</referencedby>
+        <referencedby refid="class_simulator_1a960bd333fe2c1ce66f45eca8f26a81f7" compoundref="simulator_8cpp" startline="9" endline="39">Simulator</referencedby>
+        <referencedby refid="class_simulator_1a1a18b212eda4277c622502177f302c11" compoundref="simulator_8cpp" startline="63" endline="71">Tick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulator_1a549920c61abb53e0198cd5d68d9742ad" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_i" kindref="compound">SI</ref> *</type>
+        <definition>SI* Simulator::si</definition>
+        <argsstring></argsstring>
+        <name>si</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="106" column="9" bodyfile="simulator.h" bodystart="106" bodyend="-1"/>
+        <referencedby refid="class_simulator_1a960bd333fe2c1ce66f45eca8f26a81f7" compoundref="simulator_8cpp" startline="9" endline="39">Simulator</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulator_1aabd269150b8f659c112ffd3d221593db" prot="private" static="no" mutable="no">
+        <type><ref refid="class_human_controll" kindref="compound">HumanControll</ref> *</type>
+        <definition>HumanControll* Simulator::controll</definition>
+        <argsstring></argsstring>
+        <name>controll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="107" column="19" bodyfile="simulator.h" bodystart="107" bodyend="-1"/>
+        <referencedby refid="class_simulator_1a73ef93cbf264c985f97531b873365d63" compoundref="simulator_8cpp" startline="3" endline="6">ControllDirection</referencedby>
+        <referencedby refid="class_simulator_1a960bd333fe2c1ce66f45eca8f26a81f7" compoundref="simulator_8cpp" startline="9" endline="39">Simulator</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulator_1a141cc77cf206e4539050cf37fb585f35" prot="private" static="no" mutable="no">
+        <type><ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> *</type>
+        <definition>QCustomPlot* Simulator::plot</definition>
+        <argsstring></argsstring>
+        <name>plot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="108" column="17" bodyfile="simulator.h" bodystart="108" bodyend="-1"/>
+        <referencedby refid="class_simulator_1a214b53f24cdf3663eda13331d63929bd" compoundref="simulator_8cpp" startline="95" endline="110">DrawLine</referencedby>
+        <referencedby refid="class_simulator_1ab35c732a81b08e2304b6c4f11f44c7e2" compoundref="simulator_8cpp" startline="112" endline="123">DrawMouseCircle</referencedby>
+        <referencedby refid="class_simulator_1a4c40d6b8d3e664fee6affb9ef24dc67d" compoundref="simulator_8cpp" startline="125" endline="134">DrawMouseLine</referencedby>
+        <referencedby refid="class_simulator_1a1f65da606a393ae498e214119f23e970" compoundref="simulator_8cpp" startline="150" endline="174">PlotMap</referencedby>
+        <referencedby refid="class_simulator_1a960bd333fe2c1ce66f45eca8f26a81f7" compoundref="simulator_8cpp" startline="9" endline="39">Simulator</referencedby>
+        <referencedby refid="class_simulator_1a1a18b212eda4277c622502177f302c11" compoundref="simulator_8cpp" startline="63" endline="71">Tick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulator_1abc14c2667855c6054f77f65f67e5daa8" prot="private" static="no" mutable="no">
+        <type>shared_ptr&lt; QElapsedTimer &gt;</type>
+        <definition>shared_ptr&lt;QElapsedTimer&gt; Simulator::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="109" column="16" bodyfile="simulator.h" bodystart="109" bodyend="-1"/>
+        <referencedby refid="class_simulator_1aa527d93be499b1c2e6307b4a1fc211a3" compoundref="simulator_8cpp" startline="73" endline="76">Finish</referencedby>
+        <referencedby refid="class_simulator_1a130532d06105b866550fbd27aa88f228" compoundref="simulator_8cpp" startline="78" endline="88">GetTimerElapsed</referencedby>
+        <referencedby refid="class_simulator_1a137c742a9af58c656b26604f9270ffc7" compoundref="simulator_8cpp" startline="48" endline="52">Start</referencedby>
+        <referencedby refid="class_simulator_1ad493423e80256f53c715bb59c16ec78e" compoundref="simulator_8cpp" startline="54" endline="61">Stop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulator_1ac02ace450da433def659342aff32d775" prot="private" static="no" mutable="no">
+        <type>quint64</type>
+        <definition>quint64 Simulator::timeElapsed</definition>
+        <argsstring></argsstring>
+        <name>timeElapsed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="110" column="13" bodyfile="simulator.h" bodystart="110" bodyend="-1"/>
+        <referencedby refid="class_simulator_1aa527d93be499b1c2e6307b4a1fc211a3" compoundref="simulator_8cpp" startline="73" endline="76">Finish</referencedby>
+        <referencedby refid="class_simulator_1ad493423e80256f53c715bb59c16ec78e" compoundref="simulator_8cpp" startline="54" endline="61">Stop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulator_1ac9d711ee47910a134913e6a20bcd95c0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Simulator::si_mode</definition>
+        <argsstring></argsstring>
+        <name>si_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="111" column="9" bodyfile="simulator.h" bodystart="111" bodyend="-1"/>
+        <referencedby refid="class_simulator_1a73ef93cbf264c985f97531b873365d63" compoundref="simulator_8cpp" startline="3" endline="6">ControllDirection</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulator_1a3097b946002a4ac9189e183754b69d3e" prot="private" static="no" mutable="no">
+        <type>QVector&lt; double &gt;</type>
+        <definition>QVector&lt;double&gt; Simulator::mouseBodyX</definition>
+        <argsstring></argsstring>
+        <name>mouseBodyX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="113" column="13" bodyfile="simulator.h" bodystart="113" bodyend="-1"/>
+        <referencedby refid="class_simulator_1a5a7f9537737abd907827b552fcd7f172" compoundref="simulator_8cpp" startline="176" endline="263">PlotMouse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulator_1ad82c8ec3b3635f006686eab65cd738ae" prot="private" static="no" mutable="no">
+        <type>QVector&lt; double &gt;</type>
+        <definition>QVector&lt;double&gt; Simulator::mouseBodyY</definition>
+        <argsstring></argsstring>
+        <name>mouseBodyY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="113" column="24" bodyfile="simulator.h" bodystart="113" bodyend="-1"/>
+        <referencedby refid="class_simulator_1a5a7f9537737abd907827b552fcd7f172" compoundref="simulator_8cpp" startline="176" endline="263">PlotMouse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulator_1a81499304926edec10b08d577c6f21445" prot="private" static="no" mutable="no">
+        <type>QVector&lt; double &gt;</type>
+        <definition>QVector&lt;double&gt; Simulator::mouseHeadX</definition>
+        <argsstring></argsstring>
+        <name>mouseHeadX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="114" column="13" bodyfile="simulator.h" bodystart="114" bodyend="-1"/>
+        <referencedby refid="class_simulator_1a5a7f9537737abd907827b552fcd7f172" compoundref="simulator_8cpp" startline="176" endline="263">PlotMouse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulator_1a555ba2732d5203262323391af4d7f2df" prot="private" static="no" mutable="no">
+        <type>QVector&lt; double &gt;</type>
+        <definition>QVector&lt;double&gt; Simulator::mouseHeadY</definition>
+        <argsstring></argsstring>
+        <name>mouseHeadY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="114" column="24" bodyfile="simulator.h" bodystart="114" bodyend="-1"/>
+        <referencedby refid="class_simulator_1a5a7f9537737abd907827b552fcd7f172" compoundref="simulator_8cpp" startline="176" endline="263">PlotMouse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulator_1ac3cb6cf071c1036355b752dc14f8f5b2" prot="private" static="no" mutable="no">
+        <type>QVector&lt; double &gt;</type>
+        <definition>QVector&lt;double&gt; Simulator::mouseTailX</definition>
+        <argsstring></argsstring>
+        <name>mouseTailX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="115" column="13" bodyfile="simulator.h" bodystart="115" bodyend="-1"/>
+        <referencedby refid="class_simulator_1a5a7f9537737abd907827b552fcd7f172" compoundref="simulator_8cpp" startline="176" endline="263">PlotMouse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulator_1a1b21298c3db07c25b8dc512a2c412d17" prot="private" static="no" mutable="no">
+        <type>QVector&lt; double &gt;</type>
+        <definition>QVector&lt;double&gt; Simulator::mouseTailY</definition>
+        <argsstring></argsstring>
+        <name>mouseTailY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="115" column="24" bodyfile="simulator.h" bodystart="115" bodyend="-1"/>
+        <referencedby refid="class_simulator_1a5a7f9537737abd907827b552fcd7f172" compoundref="simulator_8cpp" startline="176" endline="263">PlotMouse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulator_1ab0cf9650867fc66ea82a10fc28731424" prot="private" static="no" mutable="no">
+        <type><ref refid="class_q_c_p_graph" kindref="compound">QCPGraph</ref> *</type>
+        <definition>QCPGraph* Simulator::mouseBody</definition>
+        <argsstring></argsstring>
+        <name>mouseBody</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="116" column="14" bodyfile="simulator.h" bodystart="116" bodyend="-1"/>
+        <referencedby refid="class_simulator_1a5a7f9537737abd907827b552fcd7f172" compoundref="simulator_8cpp" startline="176" endline="263">PlotMouse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulator_1afdae70cc793847fd04d04e50e815fa4d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_q_c_p_graph" kindref="compound">QCPGraph</ref> *</type>
+        <definition>QCPGraph * Simulator::mouseHead</definition>
+        <argsstring></argsstring>
+        <name>mouseHead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="116" column="24" bodyfile="simulator.h" bodystart="116" bodyend="-1"/>
+        <referencedby refid="class_simulator_1a5a7f9537737abd907827b552fcd7f172" compoundref="simulator_8cpp" startline="176" endline="263">PlotMouse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulator_1a9a873b75dfc8ae26a17e2462bef5dd16" prot="private" static="no" mutable="no">
+        <type><ref refid="class_q_c_p_graph" kindref="compound">QCPGraph</ref> *</type>
+        <definition>QCPGraph * Simulator::mouseTail</definition>
+        <argsstring></argsstring>
+        <name>mouseTail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="116" column="34" bodyfile="simulator.h" bodystart="116" bodyend="-1"/>
+        <referencedby refid="class_simulator_1a5a7f9537737abd907827b552fcd7f172" compoundref="simulator_8cpp" startline="176" endline="263">PlotMouse</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_simulator_1a960bd333fe2c1ce66f45eca8f26a81f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Simulator::Simulator</definition>
+        <argsstring>(QCustomPlot *_plot, string mapFilePath, int _speed, int _si_mode)</argsstring>
+        <name>Simulator</name>
+        <param>
+          <type><ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> *</type>
+          <declname>_plot</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mapFilePath</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_speed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_si_mode</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="class_simulator" kindref="compound">Simulator</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_plot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mapFilePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_si_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="36" column="5" bodyfile="simulator.cpp" bodystart="9" bodyend="39"/>
+        <references refid="class_simulator_1aabd269150b8f659c112ffd3d221593db" compoundref="simulator_8h" startline="107">controll</references>
+        <references refid="class_simulator_1adfe129fc210671784125a8dd004d793d" compoundref="simulator_8h" startline="103">map</references>
+        <references refid="class_simulator_1a7588230f8c6c63102402b3dc2bca0757" compoundref="simulator_8h" startline="104">mouse</references>
+        <references refid="class_simulator_1a141cc77cf206e4539050cf37fb585f35" compoundref="simulator_8h" startline="108">plot</references>
+        <references refid="class_simulator_1a1f65da606a393ae498e214119f23e970" compoundref="simulator_8cpp" startline="150" endline="174">PlotMap</references>
+        <references refid="class_simulator_1a5a7f9537737abd907827b552fcd7f172" compoundref="simulator_8cpp" startline="176" endline="263">PlotMouse</references>
+        <references refid="class_q_custom_plot_1a606fd384b2a637ce2c24899bcbde77d6" compoundref="qcustomplot_8cpp" startline="10366" endline="10392">QCustomPlot::replot</references>
+        <references refid="class_simulator_1a7d7a873efaa84b61428d2f738a95a56d" compoundref="simulator_8cpp" startline="90" endline="93">SetMap</references>
+        <references refid="class_simulator_1a549920c61abb53e0198cd5d68d9742ad" compoundref="simulator_8h" startline="106">si</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2" compoundref="geometry_8h" startline="27">Up</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simulator_1a031573bfcfe2e0f5c9539bcc1c7fc5d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Simulator::Simulator</definition>
+        <argsstring>()</argsstring>
+        <name>Simulator</name>
+        <briefdescription>
+<para>Construct a new <ref refid="class_simulator" kindref="compound">Simulator</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="41" column="5" bodyfile="simulator.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simulator_1a0f49aa04f42060a785adf77346b9de9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Simulator::~Simulator</definition>
+        <argsstring>()</argsstring>
+        <name>~Simulator</name>
+        <briefdescription>
+<para>Destroy the <ref refid="class_simulator" kindref="compound">Simulator</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="46" column="5" bodyfile="simulator.cpp" bodystart="45" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simulator_1a137c742a9af58c656b26604f9270ffc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simulator::Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+<para>Start simulation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="51" column="10" bodyfile="simulator.cpp" bodystart="48" bodyend="52"/>
+        <references refid="class_simulator_1ab4975b1dd1640f83ad745552dcf11c4c" compoundref="simulator_8h" startline="102">running</references>
+        <references refid="class_simulator_1abc14c2667855c6054f77f65f67e5daa8" compoundref="simulator_8h" startline="109">timer</references>
+        <referencedby refid="class_simulator_1a130532d06105b866550fbd27aa88f228" compoundref="simulator_8cpp" startline="78" endline="88">GetTimerElapsed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_simulator_1ad493423e80256f53c715bb59c16ec78e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simulator::Stop</definition>
+        <argsstring>()</argsstring>
+        <name>Stop</name>
+        <briefdescription>
+<para>Stop simulation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="56" column="10" bodyfile="simulator.cpp" bodystart="54" bodyend="61"/>
+        <references refid="class_simulator_1ab4975b1dd1640f83ad745552dcf11c4c" compoundref="simulator_8h" startline="102">running</references>
+        <references refid="class_simulator_1ac02ace450da433def659342aff32d775" compoundref="simulator_8h" startline="110">timeElapsed</references>
+        <references refid="class_simulator_1abc14c2667855c6054f77f65f67e5daa8" compoundref="simulator_8h" startline="109">timer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simulator_1a1a18b212eda4277c622502177f302c11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simulator::Tick</definition>
+        <argsstring>()</argsstring>
+        <name>Tick</name>
+        <briefdescription>
+<para>Single tick (step) of simulation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="61" column="10" bodyfile="simulator.cpp" bodystart="63" bodyend="71"/>
+        <references refid="class_simulator_1aa527d93be499b1c2e6307b4a1fc211a3" compoundref="simulator_8cpp" startline="73" endline="76">Finish</references>
+        <references refid="class_simulator_1adfe129fc210671784125a8dd004d793d" compoundref="simulator_8h" startline="103">map</references>
+        <references refid="class_simulator_1a7588230f8c6c63102402b3dc2bca0757" compoundref="simulator_8h" startline="104">mouse</references>
+        <references refid="class_simulator_1a141cc77cf206e4539050cf37fb585f35" compoundref="simulator_8h" startline="108">plot</references>
+        <references refid="class_simulator_1a5a7f9537737abd907827b552fcd7f172" compoundref="simulator_8cpp" startline="176" endline="263">PlotMouse</references>
+        <references refid="class_q_custom_plot_1a606fd384b2a637ce2c24899bcbde77d6" compoundref="qcustomplot_8cpp" startline="10366" endline="10392">QCustomPlot::replot</references>
+        <references refid="class_simulator_1ab4975b1dd1640f83ad745552dcf11c4c" compoundref="simulator_8h" startline="102">running</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simulator_1a40ae6a4cbf86c2716792e2feaf18979a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simulator::SetSpeed</definition>
+        <argsstring>(int _speed)</argsstring>
+        <name>SetSpeed</name>
+        <param>
+          <type>int</type>
+          <declname>_speed</declname>
+        </param>
+        <briefdescription>
+<para>Set the Speed object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="67" column="10" bodyfile="simulator.cpp" bodystart="41" bodyend="43"/>
+        <references refid="class_simulator_1a7588230f8c6c63102402b3dc2bca0757" compoundref="simulator_8h" startline="104">mouse</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simulator_1a130532d06105b866550fbd27aa88f228" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>quint64</type>
+        <definition>quint64 Simulator::GetTimerElapsed</definition>
+        <argsstring>()</argsstring>
+        <name>GetTimerElapsed</name>
+        <briefdescription>
+<para>Get the Timer Elapsed object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>quint64 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="73" column="13" bodyfile="simulator.cpp" bodystart="78" bodyend="88"/>
+        <references refid="class_simulator_1ab4975b1dd1640f83ad745552dcf11c4c" compoundref="simulator_8h" startline="102">running</references>
+        <references refid="class_simulator_1a137c742a9af58c656b26604f9270ffc7" compoundref="simulator_8cpp" startline="48" endline="52">Start</references>
+        <references refid="class_simulator_1abc14c2667855c6054f77f65f67e5daa8" compoundref="simulator_8h" startline="109">timer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simulator_1a73ef93cbf264c985f97531b873365d63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simulator::ControllDirection</definition>
+        <argsstring>(Direction d)</argsstring>
+        <name>ControllDirection</name>
+        <param>
+          <type><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref></type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Human controll set direction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="79" column="10" bodyfile="simulator.cpp" bodystart="3" bodyend="6"/>
+        <references refid="class_simulator_1aabd269150b8f659c112ffd3d221593db" compoundref="simulator_8h" startline="107">controll</references>
+        <references refid="class_human_controll_1aab90c06e0820ab85915206d4a6137a6f" compoundref="humancontroll_8cpp" startline="24" endline="26">HumanControll::SetDirection</references>
+        <references refid="class_simulator_1ac9d711ee47910a134913e6a20bcd95c0" compoundref="simulator_8h" startline="111">si_mode</references>
+      </memberdef>
+      <memberdef kind="function" id="class_simulator_1a166832314a3c4c510c28771372c372b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Simulator::isRunning</definition>
+        <argsstring>()</argsstring>
+        <name>isRunning</name>
+        <briefdescription>
+<para>Is simulation running? </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="86" column="10" bodyfile="simulator.h" bodystart="86" bodyend="86"/>
+        <references refid="class_simulator_1ab4975b1dd1640f83ad745552dcf11c4c" compoundref="simulator_8h" startline="102">running</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_simulator_1a7d7a873efaa84b61428d2f738a95a56d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Simulator::SetMap</definition>
+        <argsstring>(string mapFilePath)</argsstring>
+        <name>SetMap</name>
+        <param>
+          <type>string</type>
+          <declname>mapFilePath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="89" column="10" bodyfile="simulator.cpp" bodystart="90" bodyend="93"/>
+        <references refid="class_simulator_1adfe129fc210671784125a8dd004d793d" compoundref="simulator_8h" startline="103">map</references>
+        <referencedby refid="class_simulator_1a960bd333fe2c1ce66f45eca8f26a81f7" compoundref="simulator_8cpp" startline="9" endline="39">Simulator</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_simulator_1a0a391fbace185bc06f55e7a6fc7dfd2d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simulator::Loop</definition>
+        <argsstring>()</argsstring>
+        <name>Loop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="90" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simulator_1a1f65da606a393ae498e214119f23e970" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simulator::PlotMap</definition>
+        <argsstring>()</argsstring>
+        <name>PlotMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="91" column="10" bodyfile="simulator.cpp" bodystart="150" bodyend="174"/>
+        <references refid="simulator_8h_1a7b3b25cba33b07c303f3060fe41887f6" compoundref="simulator_8h" startline="17">BLACK</references>
+        <references refid="class_simulator_1a214b53f24cdf3663eda13331d63929bd" compoundref="simulator_8cpp" startline="95" endline="110">DrawLine</references>
+        <references refid="map_8cpp_1a9de8fa2fd01f8830fce582101246bf6a" compoundref="map_8cpp" startline="166" endline="180">GetPathLines</references>
+        <references refid="simulator_8h_1ae5f70677050eecd8909e0248e07b9e73" compoundref="simulator_8h" startline="18">GRAY</references>
+        <references refid="simulator_8h_1acfbc006ea433ad708fdee3e82996e721" compoundref="simulator_8h" startline="15">GREEN</references>
+        <references refid="class_simulator_1adfe129fc210671784125a8dd004d793d" compoundref="simulator_8h" startline="103">map</references>
+        <references refid="class_simulator_1a141cc77cf206e4539050cf37fb585f35" compoundref="simulator_8h" startline="108">plot</references>
+        <references refid="class_q_c_p_axis_1aebdfea5d44c3a0ad2b4700cd4d25b641" compoundref="qcustomplot_8cpp" startline="4206" endline="4223">QCPAxis::setRange</references>
+        <references refid="class_q_c_p_axis_1af4bbd446dcaee5a83ac30ce9bcd6e125" compoundref="qcustomplot_8cpp" startline="5213" endline="5229">QCPAxis::setScaleRatio</references>
+        <references refid="class_q_custom_plot_1a9a79cd0158a4c7f30cbc702f0fd800e4" compoundref="qcustomplot_8h" startline="1819">QCustomPlot::xAxis</references>
+        <references refid="class_q_custom_plot_1af6fea5679725b152c14facd920b19367" compoundref="qcustomplot_8h" startline="1819">QCustomPlot::yAxis</references>
+        <referencedby refid="class_simulator_1a960bd333fe2c1ce66f45eca8f26a81f7" compoundref="simulator_8cpp" startline="9" endline="39">Simulator</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_simulator_1a5a7f9537737abd907827b552fcd7f172" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simulator::PlotMouse</definition>
+        <argsstring>(bool init=false)</argsstring>
+        <name>PlotMouse</name>
+        <param>
+          <type>bool</type>
+          <declname>init</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="92" column="10" bodyfile="simulator.cpp" bodystart="176" bodyend="263"/>
+        <references refid="simulator_8h_1a79d10e672abb49ad63eeaa8aaef57c38" compoundref="simulator_8h" startline="16">BLUE</references>
+        <references refid="class_q_c_p_graph_1acde1c0d1f6a817930489548396e6b3e6" compoundref="qcustomplot_8h" startline="2532" endline="2532">QCPGraph::data</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaabcf8c79e9a5f5f9d606fb35645a0fb27" compoundref="geometry_8h" startline="29">Down</references>
+        <references refid="class_simulator_1ab35c732a81b08e2304b6c4f11f44c7e2" compoundref="simulator_8cpp" startline="112" endline="123">DrawMouseCircle</references>
+        <references refid="class_simulator_1a4c40d6b8d3e664fee6affb9ef24dc67d" compoundref="simulator_8cpp" startline="125" endline="134">DrawMouseLine</references>
+        <references refid="simulator_8h_1ae5f70677050eecd8909e0248e07b9e73" compoundref="simulator_8h" startline="18">GRAY</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa9d4d8b0b72fc2659da772d761a3c5ecb" compoundref="geometry_8h" startline="26">Left</references>
+        <references refid="class_simulator_1a7588230f8c6c63102402b3dc2bca0757" compoundref="simulator_8h" startline="104">mouse</references>
+        <references refid="class_simulator_1ab0cf9650867fc66ea82a10fc28731424" compoundref="simulator_8h" startline="116">mouseBody</references>
+        <references refid="class_simulator_1a3097b946002a4ac9189e183754b69d3e" compoundref="simulator_8h" startline="113">mouseBodyX</references>
+        <references refid="class_simulator_1ad82c8ec3b3635f006686eab65cd738ae" compoundref="simulator_8h" startline="113">mouseBodyY</references>
+        <references refid="class_simulator_1afdae70cc793847fd04d04e50e815fa4d" compoundref="simulator_8h" startline="116">mouseHead</references>
+        <references refid="class_simulator_1a81499304926edec10b08d577c6f21445" compoundref="simulator_8h" startline="114">mouseHeadX</references>
+        <references refid="class_simulator_1a555ba2732d5203262323391af4d7f2df" compoundref="simulator_8h" startline="114">mouseHeadY</references>
+        <references refid="class_simulator_1a9a873b75dfc8ae26a17e2462bef5dd16" compoundref="simulator_8h" startline="116">mouseTail</references>
+        <references refid="class_simulator_1ac3cb6cf071c1036355b752dc14f8f5b2" compoundref="simulator_8h" startline="115">mouseTailX</references>
+        <references refid="class_simulator_1a1b21298c3db07c25b8dc512a2c412d17" compoundref="simulator_8h" startline="115">mouseTailY</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaad48f7af8c070184f3774c8e85854eb66" compoundref="geometry_8h" startline="28">Right</references>
+        <references refid="class_q_c_p_graph_1a1df2fd710545c8ba3b2c99a39a27bf8b" compoundref="qcustomplot_8cpp" startline="14517" endline="14532">QCPGraph::setData</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2" compoundref="geometry_8h" startline="27">Up</references>
+        <referencedby refid="class_simulator_1a960bd333fe2c1ce66f45eca8f26a81f7" compoundref="simulator_8cpp" startline="9" endline="39">Simulator</referencedby>
+        <referencedby refid="class_simulator_1a1a18b212eda4277c622502177f302c11" compoundref="simulator_8cpp" startline="63" endline="71">Tick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_simulator_1ababf9a8dfd8821f97927e16e1b6d76ca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simulator::PlotSI</definition>
+        <argsstring>()</argsstring>
+        <name>PlotSI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="93" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simulator_1aa527d93be499b1c2e6307b4a1fc211a3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simulator::Finish</definition>
+        <argsstring>()</argsstring>
+        <name>Finish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="94" column="10" bodyfile="simulator.cpp" bodystart="73" bodyend="76"/>
+        <references refid="class_simulator_1ab4975b1dd1640f83ad745552dcf11c4c" compoundref="simulator_8h" startline="102">running</references>
+        <references refid="class_simulator_1ac02ace450da433def659342aff32d775" compoundref="simulator_8h" startline="110">timeElapsed</references>
+        <references refid="class_simulator_1abc14c2667855c6054f77f65f67e5daa8" compoundref="simulator_8h" startline="109">timer</references>
+        <referencedby refid="class_simulator_1a1a18b212eda4277c622502177f302c11" compoundref="simulator_8cpp" startline="63" endline="71">Tick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_simulator_1a214b53f24cdf3663eda13331d63929bd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_q_c_p_graph" kindref="compound">QCPGraph</ref> *</type>
+        <definition>QCPGraph * Simulator::DrawLine</definition>
+        <argsstring>(Line&lt; double &gt; line, const QColor color=GRAY, const int width=2)</argsstring>
+        <name>DrawLine</name>
+        <param>
+          <type><ref refid="struct_line" kindref="compound">Line</ref>&lt; double &gt;</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const QColor</type>
+          <declname>color</declname>
+          <defval><ref refid="simulator_8h_1ae5f70677050eecd8909e0248e07b9e73" kindref="member">GRAY</ref></defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>width</declname>
+          <defval>2</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="96" column="14" bodyfile="simulator.cpp" bodystart="95" bodyend="110"/>
+        <references refid="struct_line_1a1e19fb73f0a7f3f012487d2062d5a1d0" compoundref="geometry_8h" startline="62">Line&lt; T &gt;::a</references>
+        <references refid="class_q_custom_plot_1a6fb2873d35a8a8089842d81a70a54167" compoundref="qcustomplot_8cpp" startline="9697" endline="9722">QCustomPlot::addGraph</references>
+        <references refid="struct_line_1a0f3363ff3e427df2dd3f540ee0a4018b" compoundref="geometry_8h" startline="62">Line&lt; T &gt;::b</references>
+        <references refid="class_simulator_1a141cc77cf206e4539050cf37fb585f35" compoundref="simulator_8h" startline="108">plot</references>
+        <references refid="class_q_c_p_abstract_plottable_1ab74b09ae4c0e7e13142fe4b5bf46cac7" compoundref="qcustomplot_8cpp" startline="6912" endline="6915">QCPAbstractPlottable::setPen</references>
+        <referencedby refid="class_simulator_1a6e524c09f3165db6b5a9aa8523e0f377" compoundref="simulator_8cpp" startline="137" endline="148">DrawRectangle</referencedby>
+        <referencedby refid="class_simulator_1a1f65da606a393ae498e214119f23e970" compoundref="simulator_8cpp" startline="150" endline="174">PlotMap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_simulator_1ab35c732a81b08e2304b6c4f11f44c7e2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_q_c_p_graph" kindref="compound">QCPGraph</ref> *</type>
+        <definition>QCPGraph * Simulator::DrawMouseCircle</definition>
+        <argsstring>(QVector&lt; double &gt; &amp;x, QVector&lt; double &gt; &amp;y, const QColor color, const int width)</argsstring>
+        <name>DrawMouseCircle</name>
+        <param>
+          <type>QVector&lt; double &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>QVector&lt; double &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const QColor</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="97" column="14" bodyfile="simulator.cpp" bodystart="112" bodyend="123"/>
+        <references refid="class_q_custom_plot_1a6fb2873d35a8a8089842d81a70a54167" compoundref="qcustomplot_8cpp" startline="9697" endline="9722">QCustomPlot::addGraph</references>
+        <references refid="class_simulator_1a141cc77cf206e4539050cf37fb585f35" compoundref="simulator_8h" startline="108">plot</references>
+        <references refid="class_q_c_p_abstract_plottable_1ab74b09ae4c0e7e13142fe4b5bf46cac7" compoundref="qcustomplot_8cpp" startline="6912" endline="6915">QCPAbstractPlottable::setPen</references>
+        <references refid="class_q_c_p_scatter_style_1adb31525af6b680e6f1b7472e43859349a7c92a110880d0ef2170dff3a5b4f7779" compoundref="qcustomplot_8h" startline="250">QCPScatterStyle::ssCircle</references>
+        <referencedby refid="class_simulator_1a5a7f9537737abd907827b552fcd7f172" compoundref="simulator_8cpp" startline="176" endline="263">PlotMouse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_simulator_1a4c40d6b8d3e664fee6affb9ef24dc67d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_q_c_p_graph" kindref="compound">QCPGraph</ref> *</type>
+        <definition>QCPGraph * Simulator::DrawMouseLine</definition>
+        <argsstring>(QVector&lt; double &gt; &amp;x, QVector&lt; double &gt; &amp;y, const QColor color, const int width)</argsstring>
+        <name>DrawMouseLine</name>
+        <param>
+          <type>QVector&lt; double &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>QVector&lt; double &gt; &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const QColor</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="98" column="14" bodyfile="simulator.cpp" bodystart="125" bodyend="134"/>
+        <references refid="class_q_custom_plot_1a6fb2873d35a8a8089842d81a70a54167" compoundref="qcustomplot_8cpp" startline="9697" endline="9722">QCustomPlot::addGraph</references>
+        <references refid="class_simulator_1a141cc77cf206e4539050cf37fb585f35" compoundref="simulator_8h" startline="108">plot</references>
+        <references refid="class_q_c_p_abstract_plottable_1ab74b09ae4c0e7e13142fe4b5bf46cac7" compoundref="qcustomplot_8cpp" startline="6912" endline="6915">QCPAbstractPlottable::setPen</references>
+        <referencedby refid="class_simulator_1a5a7f9537737abd907827b552fcd7f172" compoundref="simulator_8cpp" startline="176" endline="263">PlotMouse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_simulator_1a6e524c09f3165db6b5a9aa8523e0f377" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>vector&lt; <ref refid="class_q_c_p_graph" kindref="compound">QCPGraph</ref> * &gt;</type>
+        <definition>vector&lt; QCPGraph * &gt; Simulator::DrawRectangle</definition>
+        <argsstring>(Point&lt; T &gt; point, const QColor color=GRAY, const int width=1, const double margin=0.1, const int step=1)</argsstring>
+        <name>DrawRectangle</name>
+        <param>
+          <type><ref refid="struct_point" kindref="compound">Point</ref>&lt; T &gt;</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>const QColor</type>
+          <declname>color</declname>
+          <defval><ref refid="simulator_8h_1ae5f70677050eecd8909e0248e07b9e73" kindref="member">GRAY</ref></defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>width</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>margin</declname>
+          <defval>0.1</defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>step</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="simulator.h" line="101" column="12" bodyfile="simulator.cpp" bodystart="137" bodyend="148"/>
+        <references refid="class_simulator_1a214b53f24cdf3663eda13331d63929bd" compoundref="simulator_8cpp" startline="95" endline="110">DrawLine</references>
+        <references refid="struct_point_1a401d07562afaf0079121218025e66b76" compoundref="geometry_8h" startline="16">Point&lt; T &gt;::x</references>
+        <references refid="struct_point_1a65146418a33ebb2cd9acb85cade60ac9" compoundref="geometry_8h" startline="16">Point&lt; T &gt;::y</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_simulator" kindref="compound">Simulator</ref> of micromouse experiment environment. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="20">
+        <label>QCPLayoutInset</label>
+        <link refid="class_q_c_p_layout_inset"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>QCPLayoutElement</label>
+        <link refid="class_q_c_p_layout_element"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>#mParentLayout</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QObject</label>
+      </node>
+      <node id="15">
+        <label>QCPRange</label>
+        <link refid="class_q_c_p_range"/>
+      </node>
+      <node id="2">
+        <label>HumanControll</label>
+        <link refid="class_human_controll"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>QCPLegend</label>
+        <link refid="class_q_c_p_legend"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QCPAbstractPlottable</label>
+        <link refid="class_q_c_p_abstract_plottable"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>QCPLineEnding</label>
+        <link refid="class_q_c_p_line_ending"/>
+      </node>
+      <node id="12">
+        <label>QCPLayout</label>
+        <link refid="class_q_c_p_layout"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>SI</label>
+        <link refid="class_s_i"/>
+      </node>
+      <node id="18">
+        <label>QCPGrid</label>
+        <link refid="class_q_c_p_grid"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>#mParentAxis</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>QCPAxisPainterPrivate</label>
+        <link refid="class_q_c_p_axis_painter_private"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>+lowerEnding</edgelabel>
+          <edgelabel>+upperEnding</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>#mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QCPGraph</label>
+        <link refid="class_q_c_p_graph"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>#mScatterStyle</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>QWidget</label>
+      </node>
+      <node id="8">
+        <label>QCPLayer</label>
+        <link refid="class_q_c_p_layer"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>#mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>QCPLayoutGrid</label>
+        <link refid="class_q_c_p_layout_grid"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QCPLayerable</label>
+        <link refid="class_q_c_p_layerable"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>#mLayer</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>#mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>QCPAxis</label>
+        <link refid="class_q_c_p_axis"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>#mRange</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>#mAxisPainter</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>#mGrid</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>#mAxisRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>QCPAxisRect</label>
+        <link refid="class_q_c_p_axis_rect"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>#mInsetLayout</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>#mDragStartHorzRange</edgelabel>
+          <edgelabel>#mDragStartVertRange</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>QCustomPlot</label>
+        <link refid="class_q_custom_plot"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>#mCurrentLayer</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>#mPlotLayout</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>+xAxis</edgelabel>
+          <edgelabel>+xAxis2</edgelabel>
+          <edgelabel>+yAxis</edgelabel>
+          <edgelabel>+yAxis2</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>+legend</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>QCPScatterStyle</label>
+        <link refid="class_q_c_p_scatter_style"/>
+      </node>
+      <node id="1">
+        <label>Simulator</label>
+        <link refid="class_simulator"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-controll</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-si</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-mouseBody</edgelabel>
+          <edgelabel>-mouseHead</edgelabel>
+          <edgelabel>-mouseTail</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>-plot</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="simulator.h" line="25" column="1" bodyfile="simulator.h" bodystart="26" bodyend="117"/>
+    <listofallmembers>
+      <member refid="class_simulator_1aabd269150b8f659c112ffd3d221593db" prot="private" virt="non-virtual"><scope>Simulator</scope><name>controll</name></member>
+      <member refid="class_simulator_1a73ef93cbf264c985f97531b873365d63" prot="public" virt="non-virtual"><scope>Simulator</scope><name>ControllDirection</name></member>
+      <member refid="class_simulator_1a214b53f24cdf3663eda13331d63929bd" prot="private" virt="non-virtual"><scope>Simulator</scope><name>DrawLine</name></member>
+      <member refid="class_simulator_1ab35c732a81b08e2304b6c4f11f44c7e2" prot="private" virt="non-virtual"><scope>Simulator</scope><name>DrawMouseCircle</name></member>
+      <member refid="class_simulator_1a4c40d6b8d3e664fee6affb9ef24dc67d" prot="private" virt="non-virtual"><scope>Simulator</scope><name>DrawMouseLine</name></member>
+      <member refid="class_simulator_1a6e524c09f3165db6b5a9aa8523e0f377" prot="private" virt="non-virtual"><scope>Simulator</scope><name>DrawRectangle</name></member>
+      <member refid="class_simulator_1aa527d93be499b1c2e6307b4a1fc211a3" prot="private" virt="non-virtual"><scope>Simulator</scope><name>Finish</name></member>
+      <member refid="class_simulator_1a130532d06105b866550fbd27aa88f228" prot="public" virt="non-virtual"><scope>Simulator</scope><name>GetTimerElapsed</name></member>
+      <member refid="class_simulator_1a166832314a3c4c510c28771372c372b6" prot="public" virt="non-virtual"><scope>Simulator</scope><name>isRunning</name></member>
+      <member refid="class_simulator_1a0a391fbace185bc06f55e7a6fc7dfd2d" prot="private" virt="non-virtual"><scope>Simulator</scope><name>Loop</name></member>
+      <member refid="class_simulator_1adfe129fc210671784125a8dd004d793d" prot="private" virt="non-virtual"><scope>Simulator</scope><name>map</name></member>
+      <member refid="class_simulator_1a7588230f8c6c63102402b3dc2bca0757" prot="private" virt="non-virtual"><scope>Simulator</scope><name>mouse</name></member>
+      <member refid="class_simulator_1ab0cf9650867fc66ea82a10fc28731424" prot="private" virt="non-virtual"><scope>Simulator</scope><name>mouseBody</name></member>
+      <member refid="class_simulator_1a3097b946002a4ac9189e183754b69d3e" prot="private" virt="non-virtual"><scope>Simulator</scope><name>mouseBodyX</name></member>
+      <member refid="class_simulator_1ad82c8ec3b3635f006686eab65cd738ae" prot="private" virt="non-virtual"><scope>Simulator</scope><name>mouseBodyY</name></member>
+      <member refid="class_simulator_1afdae70cc793847fd04d04e50e815fa4d" prot="private" virt="non-virtual"><scope>Simulator</scope><name>mouseHead</name></member>
+      <member refid="class_simulator_1a81499304926edec10b08d577c6f21445" prot="private" virt="non-virtual"><scope>Simulator</scope><name>mouseHeadX</name></member>
+      <member refid="class_simulator_1a555ba2732d5203262323391af4d7f2df" prot="private" virt="non-virtual"><scope>Simulator</scope><name>mouseHeadY</name></member>
+      <member refid="class_simulator_1a9a873b75dfc8ae26a17e2462bef5dd16" prot="private" virt="non-virtual"><scope>Simulator</scope><name>mouseTail</name></member>
+      <member refid="class_simulator_1ac3cb6cf071c1036355b752dc14f8f5b2" prot="private" virt="non-virtual"><scope>Simulator</scope><name>mouseTailX</name></member>
+      <member refid="class_simulator_1a1b21298c3db07c25b8dc512a2c412d17" prot="private" virt="non-virtual"><scope>Simulator</scope><name>mouseTailY</name></member>
+      <member refid="class_simulator_1a141cc77cf206e4539050cf37fb585f35" prot="private" virt="non-virtual"><scope>Simulator</scope><name>plot</name></member>
+      <member refid="class_simulator_1a1f65da606a393ae498e214119f23e970" prot="private" virt="non-virtual"><scope>Simulator</scope><name>PlotMap</name></member>
+      <member refid="class_simulator_1a5a7f9537737abd907827b552fcd7f172" prot="private" virt="non-virtual"><scope>Simulator</scope><name>PlotMouse</name></member>
+      <member refid="class_simulator_1ababf9a8dfd8821f97927e16e1b6d76ca" prot="private" virt="non-virtual"><scope>Simulator</scope><name>PlotSI</name></member>
+      <member refid="class_simulator_1ab4975b1dd1640f83ad745552dcf11c4c" prot="private" virt="non-virtual"><scope>Simulator</scope><name>running</name></member>
+      <member refid="class_simulator_1a7d7a873efaa84b61428d2f738a95a56d" prot="private" virt="non-virtual"><scope>Simulator</scope><name>SetMap</name></member>
+      <member refid="class_simulator_1a40ae6a4cbf86c2716792e2feaf18979a" prot="public" virt="non-virtual"><scope>Simulator</scope><name>SetSpeed</name></member>
+      <member refid="class_simulator_1a549920c61abb53e0198cd5d68d9742ad" prot="private" virt="non-virtual"><scope>Simulator</scope><name>si</name></member>
+      <member refid="class_simulator_1ac9d711ee47910a134913e6a20bcd95c0" prot="private" virt="non-virtual"><scope>Simulator</scope><name>si_mode</name></member>
+      <member refid="class_simulator_1a960bd333fe2c1ce66f45eca8f26a81f7" prot="public" virt="non-virtual"><scope>Simulator</scope><name>Simulator</name></member>
+      <member refid="class_simulator_1a031573bfcfe2e0f5c9539bcc1c7fc5d9" prot="public" virt="non-virtual"><scope>Simulator</scope><name>Simulator</name></member>
+      <member refid="class_simulator_1a137c742a9af58c656b26604f9270ffc7" prot="public" virt="non-virtual"><scope>Simulator</scope><name>Start</name></member>
+      <member refid="class_simulator_1ad493423e80256f53c715bb59c16ec78e" prot="public" virt="non-virtual"><scope>Simulator</scope><name>Stop</name></member>
+      <member refid="class_simulator_1a1a18b212eda4277c622502177f302c11" prot="public" virt="non-virtual"><scope>Simulator</scope><name>Tick</name></member>
+      <member refid="class_simulator_1ac02ace450da433def659342aff32d775" prot="private" virt="non-virtual"><scope>Simulator</scope><name>timeElapsed</name></member>
+      <member refid="class_simulator_1abc14c2667855c6054f77f65f67e5daa8" prot="private" virt="non-virtual"><scope>Simulator</scope><name>timer</name></member>
+      <member refid="class_simulator_1a0f49aa04f42060a785adf77346b9de9f" prot="public" virt="non-virtual"><scope>Simulator</scope><name>~Simulator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_path" kind="struct" language="C++" prot="public">
+    <compoundname>Path</compoundname>
+    <includes refid="geometry_8h" local="no">geometry.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_path_1ab5a37001eb09cf5c7dfb43338b46fd17" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_point" kindref="compound">Point</ref>&lt; T &gt;</type>
+        <definition>Point&lt;T&gt; Path&lt; T &gt;::localization</definition>
+        <argsstring></argsstring>
+        <name>localization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="geometry.h" line="75" column="11" bodyfile="geometry.h" bodystart="75" bodyend="-1"/>
+        <referencedby refid="class_expander_1a019c4cd00bcf2c8dab680af3d92ebcbc" compoundref="expander_8cpp" startline="3" endline="11">Expander::Expander</referencedby>
+        <referencedby refid="map_8cpp_1a9de8fa2fd01f8830fce582101246bf6a" compoundref="map_8cpp" startline="166" endline="180">GetPathLines</referencedby>
+        <referencedby refid="class_map_1afd92cd2f6e36fc50a8b5c8f9d9078291" compoundref="map_8cpp" startline="141" endline="164">Map::GetPaths</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_path_1a3307f8d6b275f17ff24007e48a834c8c" prot="public" static="no" mutable="no">
+        <type><ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0d" kindref="member">Acces</ref></type>
+        <definition>Acces Path&lt; T &gt;::acces[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>acces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="geometry.h" line="76" column="11" bodyfile="geometry.h" bodystart="76" bodyend="-1"/>
+        <referencedby refid="struct_path_1a376992afdb22907502773eded446b323" compoundref="geometry_8h" startline="79" endline="85">Path&lt; T &gt;::append</referencedby>
+        <referencedby refid="map_8cpp_1a9de8fa2fd01f8830fce582101246bf6a" compoundref="map_8cpp" startline="166" endline="180">GetPathLines</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_path_1a88368b60afc1c5a9bf3eeb4767e32d8c" prot="public" static="no" mutable="no">
+        <type>shared_ptr&lt; <ref refid="struct_path" kindref="compound">Path</ref> &gt;</type>
+        <definition>shared_ptr&lt;Path&gt; Path&lt; T &gt;::next[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="geometry.h" line="77" column="16" bodyfile="geometry.h" bodystart="77" bodyend="-1"/>
+        <referencedby refid="struct_path_1a376992afdb22907502773eded446b323" compoundref="geometry_8h" startline="79" endline="85">Path&lt; T &gt;::append</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_path_1a41aad1302e0345f9e8aa3f41e498c698" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Path&lt; T &gt;::Path</definition>
+        <argsstring>(Acces a=Forbiden)</argsstring>
+        <name>Path</name>
+        <param>
+          <type><ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0d" kindref="member">Acces</ref></type>
+          <declname>a</declname>
+          <defval><ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dae9dc4935ee596f33afde5762140c661c" kindref="member">Forbiden</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="geometry.h" line="78" column="5" bodyfile="geometry.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_path_1a376992afdb22907502773eded446b323" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Path&lt; T &gt;::append</definition>
+        <argsstring>(Path&lt; T &gt; _path)</argsstring>
+        <name>append</name>
+        <param>
+          <type><ref refid="struct_path" kindref="compound">Path</ref>&lt; T &gt;</type>
+          <declname>_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="geometry.h" line="79" column="10" bodyfile="geometry.h" bodystart="79" bodyend="85"/>
+        <references refid="struct_path_1a3307f8d6b275f17ff24007e48a834c8c" compoundref="geometry_8h" startline="76">Path&lt; T &gt;::acces</references>
+        <references refid="struct_path_1a88368b60afc1c5a9bf3eeb4767e32d8c" compoundref="geometry_8h" startline="77">Path&lt; T &gt;::next</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_map" kindref="compound">Map</ref> path. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Path&lt; T &gt;</label>
+        <link refid="struct_path"/>
+      </node>
+    </collaborationgraph>
+    <location file="geometry.h" line="73" column="1" bodyfile="geometry.h" bodystart="74" bodyend="86"/>
+    <listofallmembers>
+      <member refid="struct_path_1a3307f8d6b275f17ff24007e48a834c8c" prot="public" virt="non-virtual"><scope>Path</scope><name>acces</name></member>
+      <member refid="struct_path_1a376992afdb22907502773eded446b323" prot="public" virt="non-virtual"><scope>Path</scope><name>append</name></member>
+      <member refid="struct_path_1ab5a37001eb09cf5c7dfb43338b46fd17" prot="public" virt="non-virtual"><scope>Path</scope><name>localization</name></member>
+      <member refid="struct_path_1a88368b60afc1c5a9bf3eeb4767e32d8c" prot="public" virt="non-virtual"><scope>Path</scope><name>next</name></member>
+      <member refid="struct_path_1a41aad1302e0345f9e8aa3f41e498c698" prot="public" virt="non-virtual"><scope>Path</scope><name>Path</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

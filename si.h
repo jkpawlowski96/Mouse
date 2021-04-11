@@ -23,7 +23,7 @@ enum Task{
  * @brief SI - mouse controll logic
  * 
  */
-class SI :protected Map
+class SI
 {
 public:
     /**
@@ -46,10 +46,7 @@ public:
      */
     virtual Task Logic(SensorData sensorData);
 private:
-    void UpdateMap(Position<int> position, SensorData sensorData);
-    shared_ptr<Path<int>> PathTo(shared_ptr<Path<int>> start, shared_ptr<Path<int>> stop);
     Task RandomTask(SensorData sensorData);
-    //vector<Path<int>> mapPaths;
 };
 
 /**

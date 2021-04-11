@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_point" kind="struct" language="C++" prot="public">
+    <compoundname>Point</compoundname>
+    <includes refid="geometry_8h" local="no">geometry.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_point_1a401d07562afaf0079121218025e66b76" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Point&lt; T &gt;::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="geometry.h" line="16" column="7" bodyfile="geometry.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_mouse_1adc87ac2f6bf3df7db585f913fcc2a03e" compoundref="mouse_8cpp" startline="20" endline="69">Mouse::Call</referencedby>
+        <referencedby refid="geometry_8cpp_1a78c7e9b84a6d9b52a0717595eebf0c97" compoundref="geometry_8cpp" startline="31" endline="33">doublePoint</referencedby>
+        <referencedby refid="class_simulator_1a6e524c09f3165db6b5a9aa8523e0f377" compoundref="simulator_8cpp" startline="137" endline="148">Simulator::DrawRectangle</referencedby>
+        <referencedby refid="class_map_1a77fec3d1886703ce694bf20ebd05782e" compoundref="map_8cpp" startline="8" endline="18">Map::FindNearLocalizations</referencedby>
+        <referencedby refid="class_map_1afd92cd2f6e36fc50a8b5c8f9d9078291" compoundref="map_8cpp" startline="141" endline="164">Map::GetPaths</referencedby>
+        <referencedby refid="class_map_1a3b9c2edd63fe7824d08753bb4538afaf" compoundref="map_8cpp" startline="121" endline="127">Map::GetPoint</referencedby>
+        <referencedby refid="geometry_8h_1adb6797e76c6f2f68779fd68c168a87af" compoundref="geometry_8h" startline="237" endline="241">measureDistance</referencedby>
+        <referencedby refid="geometry_8h_1a55861d592c94f64e9b6d0987f5775a2b" compoundref="geometry_8h" startline="200" endline="206">operator*</referencedby>
+        <referencedby refid="geometry_8cpp_1ab68f2572d521a97e8e9b7b16f429109c" compoundref="geometry_8cpp" startline="23" endline="29">operator+</referencedby>
+        <referencedby refid="geometry_8h_1a9def6b0861cad4c16a1d9fbf456ea215" compoundref="geometry_8h" startline="166" endline="172">operator-</referencedby>
+        <referencedby refid="geometry_8h_1a0c81640355b822664be04e76015c67c8" compoundref="geometry_8h" startline="183" endline="189">operator/</referencedby>
+        <referencedby refid="geometry_8h_1addb4a0e712a44b76a3764b1c3efd26df" compoundref="geometry_8h" startline="98" endline="104">operator==</referencedby>
+        <referencedby refid="geometry_8h_1a134761b8072b4212ccfb8669c2cb0a86" compoundref="geometry_8h" startline="115" endline="125">operator&gt;&gt;</referencedby>
+        <referencedby refid="geometry_8cpp_1a15cfcdfc2a5e2beed54d3e46ae601b5e" compoundref="geometry_8cpp" startline="16" endline="21">roundPosition</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_point_1a65146418a33ebb2cd9acb85cade60ac9" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Point&lt; T &gt;::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="geometry.h" line="16" column="8" bodyfile="geometry.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_mouse_1adc87ac2f6bf3df7db585f913fcc2a03e" compoundref="mouse_8cpp" startline="20" endline="69">Mouse::Call</referencedby>
+        <referencedby refid="geometry_8cpp_1a78c7e9b84a6d9b52a0717595eebf0c97" compoundref="geometry_8cpp" startline="31" endline="33">doublePoint</referencedby>
+        <referencedby refid="class_simulator_1a6e524c09f3165db6b5a9aa8523e0f377" compoundref="simulator_8cpp" startline="137" endline="148">Simulator::DrawRectangle</referencedby>
+        <referencedby refid="class_map_1a77fec3d1886703ce694bf20ebd05782e" compoundref="map_8cpp" startline="8" endline="18">Map::FindNearLocalizations</referencedby>
+        <referencedby refid="class_map_1afd92cd2f6e36fc50a8b5c8f9d9078291" compoundref="map_8cpp" startline="141" endline="164">Map::GetPaths</referencedby>
+        <referencedby refid="class_map_1a3b9c2edd63fe7824d08753bb4538afaf" compoundref="map_8cpp" startline="121" endline="127">Map::GetPoint</referencedby>
+        <referencedby refid="geometry_8h_1adb6797e76c6f2f68779fd68c168a87af" compoundref="geometry_8h" startline="237" endline="241">measureDistance</referencedby>
+        <referencedby refid="geometry_8h_1a55861d592c94f64e9b6d0987f5775a2b" compoundref="geometry_8h" startline="200" endline="206">operator*</referencedby>
+        <referencedby refid="geometry_8cpp_1ab68f2572d521a97e8e9b7b16f429109c" compoundref="geometry_8cpp" startline="23" endline="29">operator+</referencedby>
+        <referencedby refid="geometry_8h_1a9def6b0861cad4c16a1d9fbf456ea215" compoundref="geometry_8h" startline="166" endline="172">operator-</referencedby>
+        <referencedby refid="geometry_8h_1a0c81640355b822664be04e76015c67c8" compoundref="geometry_8h" startline="183" endline="189">operator/</referencedby>
+        <referencedby refid="geometry_8h_1addb4a0e712a44b76a3764b1c3efd26df" compoundref="geometry_8h" startline="98" endline="104">operator==</referencedby>
+        <referencedby refid="geometry_8h_1a134761b8072b4212ccfb8669c2cb0a86" compoundref="geometry_8h" startline="115" endline="125">operator&gt;&gt;</referencedby>
+        <referencedby refid="geometry_8cpp_1a15cfcdfc2a5e2beed54d3e46ae601b5e" compoundref="geometry_8cpp" startline="16" endline="21">roundPosition</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_point_1a6c9dfecb50ffd2084df4d0c423ef0c07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Point&lt; T &gt;::Point</definition>
+        <argsstring>(T _x, T _y)</argsstring>
+        <name>Point</name>
+        <param>
+          <type>T</type>
+          <declname>_x</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="geometry.h" line="17" column="5" bodyfile="geometry.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_point_1aea76b1130f1a203722d8f2254ced8e66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Point&lt; T &gt;::Point</definition>
+        <argsstring>()</argsstring>
+        <name>Point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="geometry.h" line="18" column="5" bodyfile="geometry.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="struct_point" kindref="compound">Point</ref> representation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Point&lt; T &gt;</label>
+        <link refid="struct_point"/>
+      </node>
+    </collaborationgraph>
+    <location file="geometry.h" line="15" column="1" bodyfile="geometry.h" bodystart="15" bodyend="19"/>
+    <listofallmembers>
+      <member refid="struct_point_1a6c9dfecb50ffd2084df4d0c423ef0c07" prot="public" virt="non-virtual"><scope>Point</scope><name>Point</name></member>
+      <member refid="struct_point_1aea76b1130f1a203722d8f2254ced8e66" prot="public" virt="non-virtual"><scope>Point</scope><name>Point</name></member>
+      <member refid="struct_point_1a401d07562afaf0079121218025e66b76" prot="public" virt="non-virtual"><scope>Point</scope><name>x</name></member>
+      <member refid="struct_point_1a65146418a33ebb2cd9acb85cade60ac9" prot="public" virt="non-virtual"><scope>Point</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

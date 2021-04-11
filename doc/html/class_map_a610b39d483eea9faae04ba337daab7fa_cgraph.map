@@ -1,0 +1,5 @@
+<map id="Map::UpdateConnections" name="Map::UpdateConnections">
+<area shape="rect" id="node1" title="Update/refresh connections in specyfic paths." alt="" coords="5,5,173,32"/>
+<area shape="rect" id="node2" href="$class_map.html#ad45eb0a8f95e00370fee56d29afcc333" title="Get vector of paths by localizations in vector." alt="" coords="221,5,336,32"/>
+<area shape="rect" id="node3" href="$class_map.html#a860494855f77aac9fbeaf5d6a5d4d121" title="Get path ptr by localization." alt="" coords="384,5,491,32"/>
+</map>

@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_expander" kind="class" language="C++" prot="public">
+    <compoundname>Expander</compoundname>
+    <basecompoundref refid="class_s_i" prot="public" virt="non-virtual">SI</basecompoundref>
+    <includes refid="expander_8h" local="no">expander.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_expander_1a7bc6040112b83c9f5a1f83a571378096" prot="private" static="no" mutable="no">
+        <type>shared_ptr&lt; <ref refid="struct_path" kindref="compound">Path</ref>&lt; int &gt; &gt;</type>
+        <definition>shared_ptr&lt;Path&lt;int&gt; &gt; Expander::nowPath</definition>
+        <argsstring></argsstring>
+        <name>nowPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="expander.h" line="40" column="16" bodyfile="expander.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_expander_1a019c4cd00bcf2c8dab680af3d92ebcbc" compoundref="expander_8cpp" startline="3" endline="11">Expander</referencedby>
+        <referencedby refid="class_expander_1ae87a3f6bccca98e9fa3b39b6f32b0da9" compoundref="expander_8cpp" startline="13" endline="64">Logic</referencedby>
+        <referencedby refid="class_expander_1aff009bd0ad90f2d37dc9bc803b315167" compoundref="expander_8cpp" startline="74" endline="109">NearestPath</referencedby>
+        <referencedby refid="class_expander_1a5c9fd9863c6b709d8ad6abad05a8c073" compoundref="expander_8cpp" startline="111" endline="147">NearestPathToUnnown</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_expander_1a859ba68af4df072dfc93bd36bf089021" prot="private" static="no" mutable="no">
+        <type><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref></type>
+        <definition>Direction Expander::nowDireciton</definition>
+        <argsstring></argsstring>
+        <name>nowDireciton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="expander.h" line="41" column="15" bodyfile="expander.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_expander_1a019c4cd00bcf2c8dab680af3d92ebcbc" compoundref="expander_8cpp" startline="3" endline="11">Expander</referencedby>
+        <referencedby refid="class_expander_1ae87a3f6bccca98e9fa3b39b6f32b0da9" compoundref="expander_8cpp" startline="13" endline="64">Logic</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_expander_1a3c94a32fa9d3fa7a583609e20c4c1682" prot="private" static="no" mutable="no">
+        <type>vector&lt; shared_ptr&lt; <ref refid="struct_path" kindref="compound">Path</ref>&lt; int &gt; &gt; &gt;</type>
+        <definition>vector&lt;shared_ptr&lt;Path&lt;int&gt; &gt; &gt; Expander::pathList</definition>
+        <argsstring></argsstring>
+        <name>pathList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="expander.h" line="42" column="12" bodyfile="expander.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_expander_1a019c4cd00bcf2c8dab680af3d92ebcbc" compoundref="expander_8cpp" startline="3" endline="11">Expander</referencedby>
+        <referencedby refid="class_expander_1a5f4d9f016e0a1a2156bd34e99f3ff987" compoundref="expander_8cpp" startline="66" endline="72">FirstUnnown</referencedby>
+        <referencedby refid="class_expander_1aa7b7d5bfc67172f3ec47aa78466dbe5a" compoundref="expander_8cpp" startline="149" endline="154">GetPathByLoc</referencedby>
+        <referencedby refid="class_expander_1ae87a3f6bccca98e9fa3b39b6f32b0da9" compoundref="expander_8cpp" startline="13" endline="64">Logic</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_expander_1a019c4cd00bcf2c8dab680af3d92ebcbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Expander::Expander</definition>
+        <argsstring>()</argsstring>
+        <name>Expander</name>
+        <briefdescription>
+<para>Construct a new <ref refid="class_expander" kindref="compound">Expander</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="expander.h" line="26" column="5" bodyfile="expander.cpp" bodystart="3" bodyend="11"/>
+        <references refid="struct_path_1ab5a37001eb09cf5c7dfb43338b46fd17" compoundref="geometry_8h" startline="75">Path&lt; T &gt;::localization</references>
+        <references refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" compoundref="expander_8h" startline="41">nowDireciton</references>
+        <references refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" compoundref="expander_8h" startline="40">nowPath</references>
+        <references refid="class_expander_1a3c94a32fa9d3fa7a583609e20c4c1682" compoundref="expander_8h" startline="42">pathList</references>
+        <references refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dac5f8b58110236bdfd956a108f5c45730" compoundref="geometry_8h" startline="38">Unnown</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2" compoundref="geometry_8h" startline="27">Up</references>
+      </memberdef>
+      <memberdef kind="function" id="class_expander_1ae87a3f6bccca98e9fa3b39b6f32b0da9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="si_8h_1a8564c478026655cd8718601a4514e1b7" kindref="member">Task</ref></type>
+        <definition>Task Expander::Logic</definition>
+        <argsstring>(SensorData sensorData)</argsstring>
+        <name>Logic</name>
+        <reimplements refid="class_s_i_1a326ec6f6f3ed4d936f9dc09db30dd973">Logic</reimplements>
+        <param>
+          <type><ref refid="struct_sensor_data" kindref="compound">SensorData</ref></type>
+          <declname>sensorData</declname>
+        </param>
+        <briefdescription>
+<para>Logic implementation of <ref refid="class_expander" kindref="compound">Expander</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sensorData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Task </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="expander.h" line="33" column="10" bodyfile="expander.cpp" bodystart="13" bodyend="64"/>
+        <references refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0da4520b0236b62bed6c4529ec77b8e2543" compoundref="geometry_8h" startline="39">Allowed</references>
+        <references refid="geometry_8cpp_1a61962e8d7ea292ce72316170122aa2fb" compoundref="geometry_8cpp" startline="62" endline="71">DirectionFromInt</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaac70c33bc5461cd83bab03a1fb84ed21a" compoundref="geometry_8h" startline="30">DirectionUnnown</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaabcf8c79e9a5f5f9d606fb35645a0fb27" compoundref="geometry_8h" startline="29">Down</references>
+        <references refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dae9dc4935ee596f33afde5762140c661c" compoundref="geometry_8h" startline="40">Forbiden</references>
+        <references refid="si_8h_1a8564c478026655cd8718601a4514e1b7ae204c9c3e62b1e9a6b60e40cd05256c5" compoundref="si_8h" startline="16">Forward</references>
+        <references refid="class_expander_1aa7b7d5bfc67172f3ec47aa78466dbe5a" compoundref="expander_8cpp" startline="149" endline="154">GetPathByLoc</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa9d4d8b0b72fc2659da772d761a3c5ecb" compoundref="geometry_8h" startline="26">Left</references>
+        <references refid="class_expander_1a5c9fd9863c6b709d8ad6abad05a8c073" compoundref="expander_8cpp" startline="111" endline="147">NearestPathToUnnown</references>
+        <references refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" compoundref="expander_8h" startline="41">nowDireciton</references>
+        <references refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" compoundref="expander_8h" startline="40">nowPath</references>
+        <references refid="class_expander_1a3c94a32fa9d3fa7a583609e20c4c1682" compoundref="expander_8h" startline="42">pathList</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaad48f7af8c070184f3774c8e85854eb66" compoundref="geometry_8h" startline="28">Right</references>
+        <references refid="geometry_8cpp_1a0dc9f6b40d25cf8616686f98e47fdf77" compoundref="geometry_8cpp" startline="35" endline="45">RotateDirectionLeft</references>
+        <references refid="geometry_8cpp_1ab7059afff94c264c019615f0a68c96b5" compoundref="geometry_8cpp" startline="47" endline="57">RotateDirectionRight</references>
+        <references refid="si_8h_1a8564c478026655cd8718601a4514e1b7a71a430c6d5330629f5c6c5373553bb63" compoundref="si_8h" startline="17">RotateLeft</references>
+        <references refid="si_8h_1a8564c478026655cd8718601a4514e1b7a82a1fed01fbf25cc855cd02b12b6f63c" compoundref="si_8h" startline="18">RotateRight</references>
+        <references refid="si_8h_1a8564c478026655cd8718601a4514e1b7a4a3ae1217253da6a37e695ce19e883d3" compoundref="si_8h" startline="19">TurnAround</references>
+        <references refid="geometry_8cpp_1af1435e77f75031bb0bd2296a923c9ec4" compoundref="geometry_8cpp" startline="58" endline="60">TurnAroundDirection</references>
+        <references refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dac5f8b58110236bdfd956a108f5c45730" compoundref="geometry_8h" startline="38">Unnown</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2" compoundref="geometry_8h" startline="27">Up</references>
+        <references refid="struct_sensor_data_1a1a6a48546a1fece90c78c2b1704b9ee3" compoundref="sensor__data_8h" startline="9">SensorData::wallDetected</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_expander_1a5f4d9f016e0a1a2156bd34e99f3ff987" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>shared_ptr&lt; <ref refid="struct_path" kindref="compound">Path</ref>&lt; int &gt; &gt;</type>
+        <definition>shared_ptr&lt; Path&lt; int &gt; &gt; Expander::FirstUnnown</definition>
+        <argsstring>()</argsstring>
+        <name>FirstUnnown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="expander.h" line="36" column="16" bodyfile="expander.cpp" bodystart="66" bodyend="72"/>
+        <references refid="class_expander_1a3c94a32fa9d3fa7a583609e20c4c1682" compoundref="expander_8h" startline="42">pathList</references>
+        <references refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dac5f8b58110236bdfd956a108f5c45730" compoundref="geometry_8h" startline="38">Unnown</references>
+      </memberdef>
+      <memberdef kind="function" id="class_expander_1aff009bd0ad90f2d37dc9bc803b315167" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref></type>
+        <definition>Direction Expander::NearestPath</definition>
+        <argsstring>(shared_ptr&lt; Path&lt; int &gt;&gt; target)</argsstring>
+        <name>NearestPath</name>
+        <param>
+          <type>shared_ptr&lt; <ref refid="struct_path" kindref="compound">Path</ref>&lt; int &gt;&gt;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="expander.h" line="37" column="15" bodyfile="expander.cpp" bodystart="74" bodyend="109"/>
+        <references refid="geometry_8cpp_1a61962e8d7ea292ce72316170122aa2fb" compoundref="geometry_8cpp" startline="62" endline="71">DirectionFromInt</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaac70c33bc5461cd83bab03a1fb84ed21a" compoundref="geometry_8h" startline="30">DirectionUnnown</references>
+        <references refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" compoundref="expander_8h" startline="40">nowPath</references>
+        <references refid="struct_expander_path_1a900996a46bbc238e3139b80001f0fa2e" compoundref="expander_8h" startline="12">ExpanderPath::origin</references>
+        <references refid="struct_expander_path_1a1a931915c102b9249561e7426e1734cb" compoundref="expander_8h" startline="11">ExpanderPath::path</references>
+      </memberdef>
+      <memberdef kind="function" id="class_expander_1a5c9fd9863c6b709d8ad6abad05a8c073" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref></type>
+        <definition>Direction Expander::NearestPathToUnnown</definition>
+        <argsstring>()</argsstring>
+        <name>NearestPathToUnnown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="expander.h" line="38" column="15" bodyfile="expander.cpp" bodystart="111" bodyend="147"/>
+        <references refid="geometry_8cpp_1a61962e8d7ea292ce72316170122aa2fb" compoundref="geometry_8cpp" startline="62" endline="71">DirectionFromInt</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaac70c33bc5461cd83bab03a1fb84ed21a" compoundref="geometry_8h" startline="30">DirectionUnnown</references>
+        <references refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" compoundref="expander_8h" startline="40">nowPath</references>
+        <references refid="struct_expander_path_1a900996a46bbc238e3139b80001f0fa2e" compoundref="expander_8h" startline="12">ExpanderPath::origin</references>
+        <references refid="struct_expander_path_1a1a931915c102b9249561e7426e1734cb" compoundref="expander_8h" startline="11">ExpanderPath::path</references>
+        <references refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dac5f8b58110236bdfd956a108f5c45730" compoundref="geometry_8h" startline="38">Unnown</references>
+        <referencedby refid="class_expander_1ae87a3f6bccca98e9fa3b39b6f32b0da9" compoundref="expander_8cpp" startline="13" endline="64">Logic</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_expander_1aa7b7d5bfc67172f3ec47aa78466dbe5a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>shared_ptr&lt; <ref refid="struct_path" kindref="compound">Path</ref>&lt; int &gt; &gt;</type>
+        <definition>shared_ptr&lt; Path&lt; int &gt; &gt; Expander::GetPathByLoc</definition>
+        <argsstring>(Point&lt; int &gt; loc)</argsstring>
+        <name>GetPathByLoc</name>
+        <param>
+          <type><ref refid="struct_point" kindref="compound">Point</ref>&lt; int &gt;</type>
+          <declname>loc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="expander.h" line="39" column="16" bodyfile="expander.cpp" bodystart="149" bodyend="154"/>
+        <references refid="class_expander_1a3c94a32fa9d3fa7a583609e20c4c1682" compoundref="expander_8h" startline="42">pathList</references>
+        <referencedby refid="class_expander_1ae87a3f6bccca98e9fa3b39b6f32b0da9" compoundref="expander_8cpp" startline="13" endline="64">Logic</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_expander" kindref="compound">Expander</ref> <ref refid="class_s_i" kindref="compound">SI</ref> algorithm. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Expander</label>
+        <link refid="class_expander"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SI</label>
+        <link refid="class_s_i"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Expander</label>
+        <link refid="class_expander"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SI</label>
+        <link refid="class_s_i"/>
+      </node>
+    </collaborationgraph>
+    <location file="expander.h" line="19" column="1" bodyfile="expander.h" bodystart="20" bodyend="43"/>
+    <listofallmembers>
+      <member refid="class_s_i_1a5737c9e037d2019fee1db9f969638bf4" prot="public" virt="virtual"><scope>Expander</scope><name>Call</name></member>
+      <member refid="class_expander_1a019c4cd00bcf2c8dab680af3d92ebcbc" prot="public" virt="non-virtual"><scope>Expander</scope><name>Expander</name></member>
+      <member refid="class_expander_1a5f4d9f016e0a1a2156bd34e99f3ff987" prot="private" virt="non-virtual"><scope>Expander</scope><name>FirstUnnown</name></member>
+      <member refid="class_expander_1aa7b7d5bfc67172f3ec47aa78466dbe5a" prot="private" virt="non-virtual"><scope>Expander</scope><name>GetPathByLoc</name></member>
+      <member refid="class_expander_1ae87a3f6bccca98e9fa3b39b6f32b0da9" prot="public" virt="virtual"><scope>Expander</scope><name>Logic</name></member>
+      <member refid="class_expander_1aff009bd0ad90f2d37dc9bc803b315167" prot="private" virt="non-virtual"><scope>Expander</scope><name>NearestPath</name></member>
+      <member refid="class_expander_1a5c9fd9863c6b709d8ad6abad05a8c073" prot="private" virt="non-virtual"><scope>Expander</scope><name>NearestPathToUnnown</name></member>
+      <member refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" prot="private" virt="non-virtual"><scope>Expander</scope><name>nowDireciton</name></member>
+      <member refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" prot="private" virt="non-virtual"><scope>Expander</scope><name>nowPath</name></member>
+      <member refid="class_expander_1a3c94a32fa9d3fa7a583609e20c4c1682" prot="private" virt="non-virtual"><scope>Expander</scope><name>pathList</name></member>
+      <member refid="class_s_i_1acdfb2bcec6d3a99c84bf5cae7097a37f" prot="private" virt="non-virtual"><scope>Expander</scope><name>RandomTask</name></member>
+      <member refid="class_s_i_1a8baebeea11cb5472a2141f7d49ecfb9e" prot="public" virt="non-virtual"><scope>Expander</scope><name>SI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

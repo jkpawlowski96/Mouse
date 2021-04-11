@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_position" kind="struct" language="C++" prot="public">
+    <compoundname>Position</compoundname>
+    <includes refid="geometry_8h" local="no">geometry.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_position_1aca485c4302d36798c29923a99a5f249d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_point" kindref="compound">Point</ref>&lt; T &gt;</type>
+        <definition>Point&lt;T&gt; Position&lt; T &gt;::localization</definition>
+        <argsstring></argsstring>
+        <name>localization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="geometry.h" line="50" column="11" bodyfile="geometry.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_mouse_1adc87ac2f6bf3df7db585f913fcc2a03e" compoundref="mouse_8cpp" startline="20" endline="69">Mouse::Call</referencedby>
+        <referencedby refid="class_sensor_1a3577f9e8eb65eb3bc8f69e6396e97002" compoundref="sensor_8h" startline="21" endline="30">Sensor::Measure</referencedby>
+        <referencedby refid="class_mouse_1ac667b83b66fa518363a0c457dba2b392" compoundref="mouse_8cpp" startline="3" endline="9">Mouse::Mouse</referencedby>
+        <referencedby refid="geometry_8cpp_1a15cfcdfc2a5e2beed54d3e46ae601b5e" compoundref="geometry_8cpp" startline="16" endline="21">roundPosition</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_position_1a7f5e11bbcbaaef0e8aa43e464c2da154" prot="public" static="no" mutable="no">
+        <type><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref></type>
+        <definition>Direction Position&lt; T &gt;::direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="geometry.h" line="51" column="15" bodyfile="geometry.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_mouse_1adc87ac2f6bf3df7db585f913fcc2a03e" compoundref="mouse_8cpp" startline="20" endline="69">Mouse::Call</referencedby>
+        <referencedby refid="class_sensor_1a3577f9e8eb65eb3bc8f69e6396e97002" compoundref="sensor_8h" startline="21" endline="30">Sensor::Measure</referencedby>
+        <referencedby refid="class_mouse_1ac667b83b66fa518363a0c457dba2b392" compoundref="mouse_8cpp" startline="3" endline="9">Mouse::Mouse</referencedby>
+        <referencedby refid="geometry_8cpp_1a15cfcdfc2a5e2beed54d3e46ae601b5e" compoundref="geometry_8cpp" startline="16" endline="21">roundPosition</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_position_1a88fa59db441fdb549c11d96a765ab659" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Position&lt; T &gt;::Position</definition>
+        <argsstring>()</argsstring>
+        <name>Position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="geometry.h" line="52" column="5" bodyfile="geometry.h" bodystart="52" bodyend="52"/>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2" compoundref="geometry_8h" startline="27">Up</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="struct_position" kindref="compound">Position</ref> of mouse. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Position&lt; T &gt;</label>
+        <link refid="struct_position"/>
+      </node>
+    </collaborationgraph>
+    <location file="geometry.h" line="49" column="1" bodyfile="geometry.h" bodystart="49" bodyend="53"/>
+    <listofallmembers>
+      <member refid="struct_position_1a7f5e11bbcbaaef0e8aa43e464c2da154" prot="public" virt="non-virtual"><scope>Position</scope><name>direction</name></member>
+      <member refid="struct_position_1aca485c4302d36798c29923a99a5f249d" prot="public" virt="non-virtual"><scope>Position</scope><name>localization</name></member>
+      <member refid="struct_position_1a88fa59db441fdb549c11d96a765ab659" prot="public" virt="non-virtual"><scope>Position</scope><name>Position</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

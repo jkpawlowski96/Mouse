@@ -1,0 +1,13 @@
+<map id="Mouse::Call" name="Mouse::Call">
+<area shape="rect" id="node1" title="Call mouse object (single tick)" alt="" coords="5,157,96,184"/>
+<area shape="rect" id="node2" href="$class_s_i.html#a5737c9e037d2019fee1db9f969638bf4" title="Call SI to get task." alt="" coords="183,5,247,32"/>
+<area shape="rect" id="node5" href="$class_mouse.html#a2c17b092ad22586a4fe3a30403b6b58a" title="Get the Position object." alt="" coords="146,56,283,83"/>
+<area shape="rect" id="node6" href="$class_sensor.html#a3577f9e8eb65eb3bc8f69e6396e97002" title="Measure distance to wall to make detection." alt="" coords="154,107,275,133"/>
+<area shape="rect" id="node7" href="$geometry_8cpp.html#a264f0b2001150ace7a2e82b20ec7a3f3" title="Distance from double point to int point." alt="" coords="153,157,276,184"/>
+<area shape="rect" id="node9" href="$geometry_8cpp.html#a0dc9f6b40d25cf8616686f98e47fdf77" title="Rotate direction to left." alt="" coords="149,208,281,235"/>
+<area shape="rect" id="node10" href="$geometry_8cpp.html#ab7059afff94c264c019615f0a68c96b5" title="Rotate direction to right." alt="" coords="144,259,285,285"/>
+<area shape="rect" id="node11" href="$geometry_8cpp.html#a15cfcdfc2a5e2beed54d3e46ae601b5e" title="Point&lt;int&gt; from Point&lt;double&gt;" alt="" coords="164,309,265,336"/>
+<area shape="rect" id="node3" href="$class_s_i.html#a326ec6f6f3ed4d936f9dc09db30dd973" title="Logic implementation." alt="" coords="342,5,415,32"/>
+<area shape="rect" id="node4" href="$class_s_i.html#acdfb2bcec6d3a99c84bf5cae7097a37f" title=" " alt="" coords="472,5,591,32"/>
+<area shape="rect" id="node8" href="$geometry_8cpp.html#a78c7e9b84a6d9b52a0717595eebf0c97" title="Point of double from point of int." alt="" coords="333,157,424,184"/>
+</map>

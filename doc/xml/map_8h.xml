@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="map_8h" kind="file" language="C++">
+    <compoundname>map.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string</includes>
+    <includes refid="qcustomplot_8h" local="yes">qcustomplot.h</includes>
+    <includes refid="geometry_8h" local="yes">geometry.h</includes>
+    <includes local="no">memory</includes>
+    <includedby refid="map_8cpp" local="yes">map.cpp</includedby>
+    <includedby refid="sensor_8h" local="yes">sensor.h</includedby>
+    <includedby refid="si_8h" local="yes">si.h</includedby>
+    <includedby refid="simulator_8h" local="yes">simulator.h</includedby>
+    <incdepgraph>
+      <node id="24">
+        <label>QtNumeric</label>
+      </node>
+      <node id="18">
+        <label>QVector2D</label>
+      </node>
+      <node id="23">
+        <label>limits</label>
+      </node>
+      <node id="14">
+        <label>QDateTime</label>
+      </node>
+      <node id="5">
+        <label>QObject</label>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="4">
+        <label>qcustomplot.h</label>
+        <link refid="qcustomplot_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>QStack</label>
+      </node>
+      <node id="22">
+        <label>qmath.h</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="16">
+        <label>QFlags</label>
+      </node>
+      <node id="20">
+        <label>QCache</label>
+      </node>
+      <node id="8">
+        <label>QPainter</label>
+      </node>
+      <node id="10">
+        <label>QMouseEvent</label>
+      </node>
+      <node id="6">
+        <label>QPointer</label>
+      </node>
+      <node id="17">
+        <label>QDebug</label>
+      </node>
+      <node id="27">
+        <label>vector</label>
+      </node>
+      <node id="7">
+        <label>QWidget</label>
+      </node>
+      <node id="13">
+        <label>QString</label>
+      </node>
+      <node id="26">
+        <label>geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>QMargins</label>
+      </node>
+      <node id="25">
+        <label>QtPrintSupport/QtPrintSupport</label>
+      </node>
+      <node id="11">
+        <label>QPixmap</label>
+      </node>
+      <node id="9">
+        <label>QPaintEvent</label>
+      </node>
+      <node id="1">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>memory</label>
+      </node>
+      <node id="12">
+        <label>QVector</label>
+      </node>
+      <node id="15">
+        <label>QMultiMap</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="16">
+        <label>si.cpp</label>
+        <link refid="si_8cpp"/>
+      </node>
+      <node id="13">
+        <label>expander.cpp</label>
+        <link refid="expander_8cpp"/>
+      </node>
+      <node id="5">
+        <label>mouse.cpp</label>
+        <link refid="mouse_8cpp"/>
+      </node>
+      <node id="12">
+        <label>expander.h</label>
+        <link refid="expander_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>humancontroll.cpp</label>
+        <link refid="humancontroll_8cpp"/>
+      </node>
+      <node id="2">
+        <label>map.cpp</label>
+        <link refid="map_8cpp"/>
+      </node>
+      <node id="7">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="9">
+        <label>mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="14">
+        <label>humancontroll.h</label>
+        <link refid="humancontroll_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>simulator.h</label>
+        <link refid="simulator_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>si.h</label>
+        <link refid="si_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mouse.h</label>
+        <link refid="mouse_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>simulator.cpp</label>
+        <link refid="simulator_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_map" prot="public">Map</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="map_8h_1af13456759f34c6e6de4534edc715528f" prot="public" static="no">
+        <name>MAP_SIZE_SIGN</name>
+        <initializer>&quot;size&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="map.h" line="11" column="9" bodyfile="map.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="map_8h_1aba8aa35bacac1357c33193a0fd2ec264" prot="public" static="no">
+        <name>MAP_START_SIGN</name>
+        <initializer>&quot;start&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="map.h" line="12" column="9" bodyfile="map.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="map_8h_1a804357ab75f2069b9c4576ff63f51ecb" prot="public" static="no">
+        <name>MAP_STOP_SIGN</name>
+        <initializer>&quot;stop&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="map.h" line="13" column="9" bodyfile="map.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="map_8h_1a36d2cfbe2f5e5149981862c05f18b99b" prot="public" static="no">
+        <name>MAP_PATHS_SIGN</name>
+        <initializer>&quot;paths&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="map.h" line="14" column="9" bodyfile="map.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="map_8h_1a9de8fa2fd01f8830fce582101246bf6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="struct_line" kindref="compound">Line</ref>&lt; double &gt; &gt;</type>
+        <definition>vector&lt;Line&lt;double&gt; &gt; GetPathLines</definition>
+        <argsstring>(Path&lt; int &gt; path)</argsstring>
+        <name>GetPathLines</name>
+        <param>
+          <type><ref refid="struct_path" kindref="compound">Path</ref>&lt; int &gt;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="map.h" line="120" column="8" bodyfile="map.cpp" bodystart="166" bodyend="180" declfile="map.h" declline="120" declcolumn="8"/>
+        <references refid="struct_path_1a3307f8d6b275f17ff24007e48a834c8c" compoundref="geometry_8h" startline="76">Path&lt; T &gt;::acces</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaabcf8c79e9a5f5f9d606fb35645a0fb27" compoundref="geometry_8h" startline="29">Down</references>
+        <references refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dae9dc4935ee596f33afde5762140c661c" compoundref="geometry_8h" startline="40">Forbiden</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa9d4d8b0b72fc2659da772d761a3c5ecb" compoundref="geometry_8h" startline="26">Left</references>
+        <references refid="struct_path_1ab5a37001eb09cf5c7dfb43338b46fd17" compoundref="geometry_8h" startline="75">Path&lt; T &gt;::localization</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaad48f7af8c070184f3774c8e85854eb66" compoundref="geometry_8h" startline="28">Right</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2" compoundref="geometry_8h" startline="27">Up</references>
+        <referencedby refid="class_simulator_1a1f65da606a393ae498e214119f23e970" compoundref="simulator_8cpp" startline="150" endline="174">Simulator::PlotMap</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MAP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="qcustomplot_8h" kindref="compound">qcustomplot.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="geometry_8h" kindref="compound">geometry.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="map_8h_1af13456759f34c6e6de4534edc715528f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAP_SIZE_SIGN<sp/>&quot;size&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="map_8h_1aba8aa35bacac1357c33193a0fd2ec264" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAP_START_SIGN<sp/>&quot;start&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="map_8h_1a804357ab75f2069b9c4576ff63f51ecb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAP_STOP_SIGN<sp/>&quot;stop&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="map_8h_1a36d2cfbe2f5e5149981862c05f18b99b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAP_PATHS_SIGN<sp/>&quot;paths&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_map" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_map" kindref="compound">Map</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_map" kindref="compound">Map</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>mapFilePath);</highlight></codeline>
+<codeline lineno="33" refid="class_map_1a0f5ad0fd4563497b4214038cbca8b582" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_map_1a0f5ad0fd4563497b4214038cbca8b582" kindref="member">Map</ref>(){};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="class_map" kindref="compound">Map</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_path" kindref="compound">Path&lt;int&gt;</ref><sp/>FindPathConst(<ref refid="struct_point" kindref="compound">Point&lt;int&gt;</ref><sp/>localization);</highlight></codeline>
+<codeline lineno="50" refid="class_map_1a6bf2ea7d8cdcc7435b58e5ac2413420e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Path&lt;int&gt;&gt;<sp/><ref refid="class_map_1a6bf2ea7d8cdcc7435b58e5ac2413420e" kindref="member">mapPaths</ref>;</highlight></codeline>
+<codeline lineno="55" refid="class_map_1ac6831175a9f1884245a24798bb1889d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_point" kindref="compound">Point&lt;int&gt;</ref><sp/><ref refid="class_map_1ac6831175a9f1884245a24798bb1889d5" kindref="member">mapStart</ref>;</highlight></codeline>
+<codeline lineno="60" refid="class_map_1a278e41b54d4aaf606bd5170e996f84da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_point" kindref="compound">Point&lt;int&gt;</ref><sp/><ref refid="class_map_1a278e41b54d4aaf606bd5170e996f84da" kindref="member">mapSize</ref>;</highlight></codeline>
+<codeline lineno="65" refid="class_map_1a05cf7f3f41bd3db34bb1e84e7554afe4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Point&lt;int&gt;&gt;<sp/><ref refid="class_map_1a05cf7f3f41bd3db34bb1e84e7554afe4" kindref="member">mapStop</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>shared_ptr&lt;Path&lt;T&gt;&gt;<sp/>FindPath(<ref refid="struct_point" kindref="compound">Point&lt;T&gt;</ref><sp/>localization);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;shared_ptr&lt;Path&lt;T&gt;&gt;&gt;<sp/>FindPaths(vector&lt;<ref refid="struct_point" kindref="compound">Point&lt;T&gt;</ref>&gt;<sp/>localizations);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>InsertPaths(vector&lt;<ref refid="struct_path" kindref="compound">Path&lt;int&gt;</ref>&gt;<sp/>newPaths);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Point&lt;T&gt;&gt;<sp/>FindNearLocalizations(<ref refid="struct_point" kindref="compound">Point&lt;T&gt;</ref><sp/>localization);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateConnections(shared_ptr&lt;<ref refid="struct_path" kindref="compound">Path&lt;int&gt;</ref>&gt;<sp/>path);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Path&lt;T&gt;&gt;<sp/>GetPaths(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>line);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/>SplitText(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>text,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>delimiter);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_point" kindref="compound">Point&lt;T&gt;</ref><sp/>GetPoint(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>text,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>delimiter);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">vector&lt;Line&lt;double&gt;&gt;<sp/><ref refid="map_8h_1a9de8fa2fd01f8830fce582101246bf6a" kindref="member">GetPathLines</ref>(<ref refid="struct_path" kindref="compound">Path&lt;int&gt;</ref><sp/>path);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>MAP_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="map.h"/>
+  </compounddef>
+</doxygen>

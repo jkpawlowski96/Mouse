@@ -1,0 +1,6 @@
+<map id="QCPCurve" name="QCPCurve">
+<area shape="rect" id="node1" title="A plottable representing a parametric curve in a plot." alt="" coords="5,1276,199,1720"/>
+<area shape="rect" id="node2" href="$class_q_c_p_abstract_plottable.html" title="The abstract base class for all data representing objects in a plot." alt="" coords="17,667,187,1228"/>
+<area shape="rect" id="node3" href="$class_q_c_p_layerable.html" title="Base class for all drawable objects." alt="" coords="17,131,187,619"/>
+<area shape="rect" id="node4" title=" " alt="" coords="67,5,137,83"/>
+</map>

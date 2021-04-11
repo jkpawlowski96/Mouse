@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="map_8cpp" kind="file" language="C++">
+    <compoundname>map.cpp</compoundname>
+    <includes refid="map_8h" local="yes">map.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">sstream</includes>
+    <includes refid="geometry_8h" local="yes">geometry.h</includes>
+    <incdepgraph>
+      <node id="25">
+        <label>QtNumeric</label>
+      </node>
+      <node id="19">
+        <label>QVector2D</label>
+      </node>
+      <node id="24">
+        <label>limits</label>
+      </node>
+      <node id="15">
+        <label>QDateTime</label>
+      </node>
+      <node id="6">
+        <label>QObject</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>qcustomplot.h</label>
+        <link refid="qcustomplot_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>QStack</label>
+      </node>
+      <node id="23">
+        <label>qmath.h</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="31">
+        <label>fstream</label>
+      </node>
+      <node id="17">
+        <label>QFlags</label>
+      </node>
+      <node id="21">
+        <label>QCache</label>
+      </node>
+      <node id="9">
+        <label>QPainter</label>
+      </node>
+      <node id="11">
+        <label>QMouseEvent</label>
+      </node>
+      <node id="7">
+        <label>QPointer</label>
+      </node>
+      <node id="18">
+        <label>QDebug</label>
+      </node>
+      <node id="28">
+        <label>vector</label>
+      </node>
+      <node id="1">
+        <label>map.cpp</label>
+        <link refid="map_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>QWidget</label>
+      </node>
+      <node id="32">
+        <label>sstream</label>
+      </node>
+      <node id="14">
+        <label>QString</label>
+      </node>
+      <node id="27">
+        <label>geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>QMargins</label>
+      </node>
+      <node id="30">
+        <label>iostream</label>
+      </node>
+      <node id="26">
+        <label>QtPrintSupport/QtPrintSupport</label>
+      </node>
+      <node id="12">
+        <label>QPixmap</label>
+      </node>
+      <node id="10">
+        <label>QPaintEvent</label>
+      </node>
+      <node id="2">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>memory</label>
+      </node>
+      <node id="13">
+        <label>QVector</label>
+      </node>
+      <node id="16">
+        <label>QMultiMap</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="map_8cpp_1a9de8fa2fd01f8830fce582101246bf6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="struct_line" kindref="compound">Line</ref>&lt; double &gt; &gt;</type>
+        <definition>vector&lt;Line&lt;double&gt; &gt; GetPathLines</definition>
+        <argsstring>(Path&lt; int &gt; path)</argsstring>
+        <name>GetPathLines</name>
+        <param>
+          <type><ref refid="struct_path" kindref="compound">Path</ref>&lt; int &gt;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="map.cpp" line="166" column="8" bodyfile="map.cpp" bodystart="166" bodyend="180"/>
+        <references refid="struct_path_1a3307f8d6b275f17ff24007e48a834c8c" compoundref="geometry_8h" startline="76">Path&lt; T &gt;::acces</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaabcf8c79e9a5f5f9d606fb35645a0fb27" compoundref="geometry_8h" startline="29">Down</references>
+        <references refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dae9dc4935ee596f33afde5762140c661c" compoundref="geometry_8h" startline="40">Forbiden</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa9d4d8b0b72fc2659da772d761a3c5ecb" compoundref="geometry_8h" startline="26">Left</references>
+        <references refid="struct_path_1ab5a37001eb09cf5c7dfb43338b46fd17" compoundref="geometry_8h" startline="75">Path&lt; T &gt;::localization</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaad48f7af8c070184f3774c8e85854eb66" compoundref="geometry_8h" startline="28">Right</references>
+        <references refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2" compoundref="geometry_8h" startline="27">Up</references>
+        <referencedby refid="class_simulator_1a1f65da606a393ae498e214119f23e970" compoundref="simulator_8cpp" startline="150" endline="174">Simulator::PlotMap</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map_8h" kindref="compound">map.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="geometry_8h" kindref="compound">geometry.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="8" refid="class_map_1a77fec3d1886703ce694bf20ebd05782e" refkind="member"><highlight class="normal">vector&lt;Point&lt;T&gt;&gt;<sp/><ref refid="class_map_1a77fec3d1886703ce694bf20ebd05782e" kindref="member">Map::FindNearLocalizations</ref>(<ref refid="struct_point" kindref="compound">Point&lt;T&gt;</ref><sp/>localization){</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Point&lt;T&gt;&gt;<sp/>res;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>minPoint<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(localization.<ref refid="struct_point_1a401d07562afaf0079121218025e66b76" kindref="member">x</ref><sp/>&gt;=<sp/>minPoint)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res.push_back(<ref refid="struct_point" kindref="compound">Point&lt;T&gt;</ref>(localization.<ref refid="struct_point_1a401d07562afaf0079121218025e66b76" kindref="member">x</ref>-1,<sp/>localization.<ref refid="struct_point_1a65146418a33ebb2cd9acb85cade60ac9" kindref="member">y</ref>));</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(localization.<ref refid="struct_point_1a65146418a33ebb2cd9acb85cade60ac9" kindref="member">y</ref><sp/>&gt;=<sp/>minPoint)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res.push_back(<ref refid="struct_point" kindref="compound">Point&lt;T&gt;</ref>(localization.<ref refid="struct_point_1a401d07562afaf0079121218025e66b76" kindref="member">x</ref>,<sp/>localization.<ref refid="struct_point_1a65146418a33ebb2cd9acb85cade60ac9" kindref="member">y</ref>-1));</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>res.push_back(<ref refid="struct_point" kindref="compound">Point&lt;T&gt;</ref>(localization.<ref refid="struct_point_1a401d07562afaf0079121218025e66b76" kindref="member">x</ref>,<sp/>localization.<ref refid="struct_point_1a65146418a33ebb2cd9acb85cade60ac9" kindref="member">y</ref>+1));</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>res.push_back(<ref refid="struct_point" kindref="compound">Point&lt;T&gt;</ref>(localization.<ref refid="struct_point_1a401d07562afaf0079121218025e66b76" kindref="member">x</ref>+1,<sp/>localization.<ref refid="struct_point_1a65146418a33ebb2cd9acb85cade60ac9" kindref="member">y</ref>));</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_map_1a308c016cec645bd08cfa7fa37288217b" refkind="member"><highlight class="normal"><ref refid="class_map_1a0f5ad0fd4563497b4214038cbca8b582" kindref="member">Map::Map</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>mapFilePath)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>line,<sp/>sizeLine,<sp/>startLine;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/>stopLines;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/>pathLines;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>ifstream<sp/>mapFile;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>mapFile.open(mapFilePath);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mapFile.is_open())</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getline<sp/>(mapFile,<sp/>line);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(line==<ref refid="map_8h_1af13456759f34c6e6de4534edc715528f" kindref="member">MAP_SIZE_SIGN</ref>){</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getline(mapFile,<sp/>line);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sizeLine<sp/>=<sp/>line;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getline<sp/>(mapFile,<sp/>line);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(line==<ref refid="map_8h_1aba8aa35bacac1357c33193a0fd2ec264" kindref="member">MAP_START_SIGN</ref>){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getline(mapFile,<sp/>line);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>startLine<sp/>=<sp/>line;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getline<sp/>(mapFile,<sp/>line);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(line==<ref refid="map_8h_1a804357ab75f2069b9c4576ff63f51ecb" kindref="member">MAP_STOP_SIGN</ref>){</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getline(mapFile,<sp/>line);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stopLines.push_back(line);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getline(mapFile,<sp/>line);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(line<sp/>!=<sp/><ref refid="map_8h_1a36d2cfbe2f5e5149981862c05f18b99b" kindref="member">MAP_PATHS_SIGN</ref>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(line==<ref refid="map_8h_1a36d2cfbe2f5e5149981862c05f18b99b" kindref="member">MAP_PATHS_SIGN</ref>){</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(getline(mapFile,<sp/>line))</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(line!=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pathLines.push_back(line);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>mapFile.close();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_map_1a278e41b54d4aaf606bd5170e996f84da" kindref="member">mapSize</ref><sp/>=<sp/>GetPoint&lt;int&gt;(sizeLine,<sp/></highlight><highlight class="charliteral">&apos;x&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_map_1ac6831175a9f1884245a24798bb1889d5" kindref="member">mapStart</ref><sp/>=<sp/>GetPoint&lt;int&gt;(startLine,<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_map_1a05cf7f3f41bd3db34bb1e84e7554afe4" kindref="member">mapStop</ref>.clear();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>line:<sp/>stopLines)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_map_1a05cf7f3f41bd3db34bb1e84e7554afe4" kindref="member">mapStop</ref>.push_back(GetPoint&lt;int&gt;(line,</highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_map_1a6bf2ea7d8cdcc7435b58e5ac2413420e" kindref="member">mapPaths</ref>.clear();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>line:<sp/>pathLines){</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>newPaths<sp/>=<sp/>GetPaths&lt;int&gt;(line);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//mapPaths.insert(mapPaths.end(),<sp/>newPaths.begin(),<sp/>newPaths.end());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_map_1ab6ea163356eaeca08efc6d3570a4610d" kindref="member">InsertPaths</ref>(newPaths);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="75" refid="class_map_1a860494855f77aac9fbeaf5d6a5d4d121" refkind="member"><highlight class="normal">shared_ptr&lt;Path&lt;T&gt;&gt;<sp/><ref refid="class_map_1a860494855f77aac9fbeaf5d6a5d4d121" kindref="member">Map::FindPath</ref>(<ref refid="struct_point" kindref="compound">Point&lt;T&gt;</ref><sp/>localization){</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>path:<sp/><ref refid="class_map_1a6bf2ea7d8cdcc7435b58e5ac2413420e" kindref="member">mapPaths</ref>){</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(path.localization<sp/>==<sp/>localization)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>make_shared&lt;Path&lt;T&gt;&gt;(path);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="84" refid="class_map_1ad45eb0a8f95e00370fee56d29afcc333" refkind="member"><highlight class="normal">vector&lt;shared_ptr&lt;Path&lt;T&gt;&gt;&gt;<sp/><ref refid="class_map_1ad45eb0a8f95e00370fee56d29afcc333" kindref="member">Map::FindPaths</ref>(vector&lt;<ref refid="struct_point" kindref="compound">Point&lt;T&gt;</ref>&gt;<sp/>localizations){</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;shared_ptr&lt;Path&lt;T&gt;&gt;&gt;<sp/>res;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>loc:<sp/>localizations){</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shared_ptr&lt;Path&lt;T&gt;&gt;<sp/>p<sp/>=<sp/><ref refid="class_map_1a860494855f77aac9fbeaf5d6a5d4d121" kindref="member">FindPath</ref>(loc);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res.push_back(p);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="class_map_1ab6ea163356eaeca08efc6d3570a4610d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_map_1ab6ea163356eaeca08efc6d3570a4610d" kindref="member">Map::InsertPaths</ref>(vector&lt;<ref refid="struct_path" kindref="compound">Path&lt;int&gt;</ref>&gt;<sp/>newPaths){</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>newPath:<sp/>newPaths){</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bussy<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bussyIndex;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=0;<sp/>i&lt;<ref refid="class_map_1a6bf2ea7d8cdcc7435b58e5ac2413420e" kindref="member">mapPaths</ref>.size();i++)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(newPath.localization<sp/>==<sp/><ref refid="class_map_1a6bf2ea7d8cdcc7435b58e5ac2413420e" kindref="member">mapPaths</ref>[i].localization){</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bussy=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bussyIndex=i;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(bussy){</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_map_1a6bf2ea7d8cdcc7435b58e5ac2413420e" kindref="member">mapPaths</ref>[bussyIndex].append(newPath);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_map_1a6bf2ea7d8cdcc7435b58e5ac2413420e" kindref="member">mapPaths</ref>.push_back(newPath);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="class_map_1aa403fbe09394ccf39747588f5168e3b2" refkind="member"><highlight class="normal"><ref refid="class_map_1aa403fbe09394ccf39747588f5168e3b2" kindref="member">Map::~Map</ref>(){</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="121" refid="class_map_1a3b9c2edd63fe7824d08753bb4538afaf" refkind="member"><highlight class="normal"><ref refid="struct_point" kindref="compound">Point&lt;T&gt;</ref><sp/><ref refid="class_map_1a3b9c2edd63fe7824d08753bb4538afaf" kindref="member">Map::GetPoint</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>text,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>delimiter){</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>textSplited<sp/>=<sp/><ref refid="class_map_1ac352f0fd62774d4da14c8626dcee5d6c" kindref="member">SplitText</ref>(text,<sp/>delimiter);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_point" kindref="compound">Point&lt;T&gt;</ref><sp/>point;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>point.<ref refid="struct_point_1a401d07562afaf0079121218025e66b76" kindref="member">x</ref><sp/>=<sp/>stoi(textSplited[0]);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>point.<ref refid="struct_point_1a65146418a33ebb2cd9acb85cade60ac9" kindref="member">y</ref><sp/>=<sp/>stoi(textSplited[1]);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>point;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="class_map_1ac352f0fd62774d4da14c8626dcee5d6c" refkind="member"><highlight class="normal">vector&lt;string&gt;<sp/><ref refid="class_map_1ac352f0fd62774d4da14c8626dcee5d6c" kindref="member">Map::SplitText</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>text,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>delimiter){</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>textStream(text);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>segment;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;string&gt;<sp/>res;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(std::getline(textStream,<sp/>segment,<sp/>delimiter))</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res.push_back(segment);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="141" refid="class_map_1afd92cd2f6e36fc50a8b5c8f9d9078291" refkind="member"><highlight class="normal">vector&lt;Path&lt;T&gt;&gt;<sp/><ref refid="class_map_1afd92cd2f6e36fc50a8b5c8f9d9078291" kindref="member">Map::GetPaths</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>line){</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Path&lt;T&gt;&gt;<sp/>paths;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>textSplited<sp/>=<sp/><ref refid="class_map_1ac352f0fd62774d4da14c8626dcee5d6c" kindref="member">SplitText</ref>(line,<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_point" kindref="compound">Point&lt;T&gt;</ref><sp/>start<sp/>=<sp/>GetPoint&lt;T&gt;(textSplited[0],<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_point" kindref="compound">Point&lt;T&gt;</ref><sp/>stop<sp/>=<sp/>GetPoint&lt;T&gt;(textSplited[1],<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>steps<sp/>=<sp/>abs((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(stop.<ref refid="struct_point_1a401d07562afaf0079121218025e66b76" kindref="member">x</ref><sp/>-<sp/>start.<ref refid="struct_point_1a401d07562afaf0079121218025e66b76" kindref="member">x</ref>)<sp/>+<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(stop.<ref refid="struct_point_1a65146418a33ebb2cd9acb85cade60ac9" kindref="member">y</ref><sp/>-<sp/>start.<ref refid="struct_point_1a65146418a33ebb2cd9acb85cade60ac9" kindref="member">y</ref>));</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_point" kindref="compound">Point&lt;T&gt;</ref><sp/>step<sp/>=<sp/>(stop<sp/>-<sp/>start)/steps;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;=steps;<sp/>i++){</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_path" kindref="compound">Path&lt;T&gt;</ref><sp/>path;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>path.<ref refid="struct_path_1ab5a37001eb09cf5c7dfb43338b46fd17" kindref="member">localization</ref><sp/>=<sp/>start<sp/>+<sp/>(step<sp/>*<sp/>i);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>paths.push_back(path);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>connections</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i=1;<sp/>i&lt;paths.size();<sp/>i++){</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref><sp/>d<sp/>=<sp/>paths[i-1].localization<sp/>&gt;&gt;<sp/>paths[i].localization;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref><sp/>_d<sp/>=paths[i-1].localization<sp/>&lt;&lt;<sp/>paths[i].localization;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>paths[i-1].acces[d]<sp/>=<sp/><ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0da4520b0236b62bed6c4529ec77b8e2543" kindref="member">Allowed</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>paths[i-1].next[d]<sp/>=<sp/>make_shared&lt;Path&lt;int&gt;&gt;(paths[i]);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>paths[i].acces[_d]<sp/>=<sp/><ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0da4520b0236b62bed6c4529ec77b8e2543" kindref="member">Allowed</ref>;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>paths[i].next[_d]<sp/>=<sp/>make_shared&lt;Path&lt;int&gt;&gt;(paths[i-1]);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>paths;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="map_8cpp_1a9de8fa2fd01f8830fce582101246bf6a" refkind="member"><highlight class="normal">vector&lt;Line&lt;double&gt;&gt;<sp/><ref refid="map_8cpp_1a9de8fa2fd01f8830fce582101246bf6a" kindref="member">GetPathLines</ref>(<ref refid="struct_path" kindref="compound">Path&lt;int&gt;</ref><sp/>path){</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Line&lt;double&gt;&gt;<sp/>res;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>(double)path.<ref refid="struct_path_1ab5a37001eb09cf5c7dfb43338b46fd17" kindref="member">localization</ref>.x;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)path.<ref refid="struct_path_1ab5a37001eb09cf5c7dfb43338b46fd17" kindref="member">localization</ref>.y;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>step<sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(path.<ref refid="struct_path_1a3307f8d6b275f17ff24007e48a834c8c" kindref="member">acces</ref>[<ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2" kindref="member">Up</ref>]==<ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dae9dc4935ee596f33afde5762140c661c" kindref="member">Forbiden</ref>)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res.push_back(<ref refid="struct_line" kindref="compound">Line&lt;double&gt;</ref>(<ref refid="struct_point" kindref="compound">Point&lt;double&gt;</ref>(x,<sp/>y+step),<sp/><ref refid="struct_point" kindref="compound">Point&lt;double&gt;</ref>(x+step,y+step)));</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(path.<ref refid="struct_path_1a3307f8d6b275f17ff24007e48a834c8c" kindref="member">acces</ref>[<ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaabcf8c79e9a5f5f9d606fb35645a0fb27" kindref="member">Down</ref>]==<ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dae9dc4935ee596f33afde5762140c661c" kindref="member">Forbiden</ref>)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res.push_back(<ref refid="struct_line" kindref="compound">Line&lt;double&gt;</ref>(<ref refid="struct_point" kindref="compound">Point&lt;double&gt;</ref>(x,<sp/>y),<sp/><ref refid="struct_point" kindref="compound">Point&lt;double&gt;</ref>(x+step,y)));</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(path.<ref refid="struct_path_1a3307f8d6b275f17ff24007e48a834c8c" kindref="member">acces</ref>[<ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa9d4d8b0b72fc2659da772d761a3c5ecb" kindref="member">Left</ref>]==<ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dae9dc4935ee596f33afde5762140c661c" kindref="member">Forbiden</ref>)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res.push_back(<ref refid="struct_line" kindref="compound">Line&lt;double&gt;</ref>(<ref refid="struct_point" kindref="compound">Point&lt;double&gt;</ref>(x,<sp/>y),<sp/><ref refid="struct_point" kindref="compound">Point&lt;double&gt;</ref>(x,y+step)));</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(path.<ref refid="struct_path_1a3307f8d6b275f17ff24007e48a834c8c" kindref="member">acces</ref>[<ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaad48f7af8c070184f3774c8e85854eb66" kindref="member">Right</ref>]==<ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dae9dc4935ee596f33afde5762140c661c" kindref="member">Forbiden</ref>)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res.push_back(<ref refid="struct_line" kindref="compound">Line&lt;double&gt;</ref>(<ref refid="struct_point" kindref="compound">Point&lt;double&gt;</ref>(x+step,<sp/>y),<sp/><ref refid="struct_point" kindref="compound">Point&lt;double&gt;</ref>(x+step,y+step)));</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="class_map_1a610b39d483eea9faae04ba337daab7fa" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_map_1a610b39d483eea9faae04ba337daab7fa" kindref="member">Map::UpdateConnections</ref>(shared_ptr&lt;<ref refid="struct_path" kindref="compound">Path&lt;int&gt;</ref>&gt;<sp/>path){</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>nearLocalizations<sp/>=<sp/>FindNearLocalizations&lt;int&gt;(path-&gt;localization);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>nearPaths<sp/>=<sp/><ref refid="class_map_1ad45eb0a8f95e00370fee56d29afcc333" kindref="member">FindPaths</ref>(nearLocalizations);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>nearPath:<sp/>nearPaths){</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref><sp/>d<sp/>=<sp/>path-&gt;localization<sp/>&gt;&gt;<sp/>nearPath-&gt;localization;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref><sp/>_d<sp/>=path-&gt;localization<sp/>&lt;&lt;<sp/>nearPath-&gt;localization;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>path-&gt;acces[d]<sp/>=<sp/><ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0da4520b0236b62bed6c4529ec77b8e2543" kindref="member">Allowed</ref>;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>path-&gt;next[d]<sp/>=<sp/>nearPath;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nearPath-&gt;acces[_d]<sp/>=<sp/><ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0da4520b0236b62bed6c4529ec77b8e2543" kindref="member">Allowed</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nearPath-&gt;next[_d]<sp/>=<sp/>path;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="class_map_1a3a77d131081f7ab04f66c451b9737538" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_path" kindref="compound">Path&lt;int&gt;</ref><sp/><ref refid="class_map_1a3a77d131081f7ab04f66c451b9737538" kindref="member">Map::FindPathConst</ref>(<ref refid="struct_point" kindref="compound">Point&lt;int&gt;</ref><sp/>localization){</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>path<sp/>=<sp/><ref refid="class_map_1a860494855f77aac9fbeaf5d6a5d4d121" kindref="member">FindPath</ref>(localization);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_path" kindref="compound">Path&lt;int&gt;</ref><sp/>res<sp/>=<sp/>*path;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="map.cpp"/>
+  </compounddef>
+</doxygen>

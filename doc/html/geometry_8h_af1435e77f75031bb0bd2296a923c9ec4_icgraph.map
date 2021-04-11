@@ -1,0 +1,4 @@
+<map id="TurnAroundDirection" name="TurnAroundDirection">
+<area shape="rect" id="node1" title="Rotate direction of 180 degree." alt="" coords="169,5,308,32"/>
+<area shape="rect" id="node2" href="$class_expander.html#ae87a3f6bccca98e9fa3b39b6f32b0da9" title="Logic implementation of Expander." alt="" coords="5,5,121,32"/>
+</map>

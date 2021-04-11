@@ -1,0 +1,7 @@
+<map id="QCPLayoutInset" name="QCPLayoutInset">
+<area shape="rect" id="node1" title="A layout that places child elements aligned to the border or arbitrarily positioned." alt="" coords="21,1548,172,1816"/>
+<area shape="rect" id="node2" href="$class_q_c_p_layout.html" title="The abstract base class for layouts." alt="" coords="5,1203,188,1500"/>
+<area shape="rect" id="node3" href="$class_q_c_p_layout_element.html" title="The abstract base class for all objects that form the layout system." alt="" coords="6,667,187,1155"/>
+<area shape="rect" id="node4" href="$class_q_c_p_layerable.html" title="Base class for all drawable objects." alt="" coords="11,131,182,619"/>
+<area shape="rect" id="node5" title=" " alt="" coords="61,5,132,83"/>
+</map>

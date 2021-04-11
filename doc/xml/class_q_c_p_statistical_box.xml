@@ -1,0 +1,1510 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_q_c_p_statistical_box" kind="class" language="C++" prot="public">
+    <compoundname>QCPStatisticalBox</compoundname>
+    <basecompoundref refid="class_q_c_p_abstract_plottable" prot="public" virt="non-virtual">QCPAbstractPlottable</basecompoundref>
+    <includes refid="qcustomplot_8h" local="no">qcustomplot.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_q_c_p_statistical_box_1a415e2f77a89396c2af999afe027bdf6c" prot="protected" static="no" mutable="no">
+        <type>QVector&lt; double &gt;</type>
+        <definition>QVector&lt;double&gt; QCPStatisticalBox::mOutliers</definition>
+        <argsstring></argsstring>
+        <name>mOutliers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2973" column="11" bodyfile="qcustomplot.h" bodystart="2973" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317" compoundref="qcustomplot_8cpp" startline="19403" endline="19428">draw</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a8550e16af27b4e05d92bb337fb34324f" compoundref="qcustomplot_8cpp" startline="19499" endline="19505">drawOutliers</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a13958798713d4bb58b94e148b409877d" compoundref="qcustomplot_8cpp" startline="19542" endline="19581">getValueRange</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1af9bc09620e0bf93bf444ee35e5800d1d" compoundref="qcustomplot_8cpp" startline="19283" endline="19286">setOutliers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_statistical_box_1a86fd1d3be5c5bc11d11eda7517069af4" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPStatisticalBox::mKey</definition>
+        <argsstring></argsstring>
+        <name>mKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2974" column="10" bodyfile="qcustomplot.h" bodystart="2974" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317" compoundref="qcustomplot_8cpp" startline="19403" endline="19428">draw</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a642b90dd4ab5ab6e16188a9230401bcc" compoundref="qcustomplot_8cpp" startline="19465" endline="19473">drawMedian</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a8550e16af27b4e05d92bb337fb34324f" compoundref="qcustomplot_8cpp" startline="19499" endline="19505">drawOutliers</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a699ede353d6a7207d9fb36dd3aabf348" compoundref="qcustomplot_8cpp" startline="19448" endline="19459">drawQuartileBox</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1ae64401aa18b9c45d4d33f9b46cf4bbd0" compoundref="qcustomplot_8cpp" startline="19479" endline="19493">drawWhiskers</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1ac17d9d68e41be25b7f0e8a47f9a5d225" compoundref="qcustomplot_8cpp" startline="19508" endline="19539">getKeyRange</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a0153ac16326b94450afbca208e3f9961" compoundref="qcustomplot_8cpp" startline="19378" endline="19400">selectTest</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a84a1c6d34b2f9af40bca0c527d51e97e" compoundref="qcustomplot_8cpp" startline="19213" endline="19216">setKey</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_statistical_box_1a7143ece4e7e5f9ac010739fbc390bf0c" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPStatisticalBox::mMinimum</definition>
+        <argsstring></argsstring>
+        <name>mMinimum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2974" column="15" bodyfile="qcustomplot.h" bodystart="2974" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317" compoundref="qcustomplot_8cpp" startline="19403" endline="19428">draw</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1ae64401aa18b9c45d4d33f9b46cf4bbd0" compoundref="qcustomplot_8cpp" startline="19479" endline="19493">drawWhiskers</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a13958798713d4bb58b94e148b409877d" compoundref="qcustomplot_8cpp" startline="19542" endline="19581">getValueRange</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a0153ac16326b94450afbca208e3f9961" compoundref="qcustomplot_8cpp" startline="19378" endline="19400">selectTest</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a84ff7cc61ba44890f0c3e0c99c19941e" compoundref="qcustomplot_8cpp" startline="19224" endline="19227">setMinimum</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_statistical_box_1acac86cac93d9fa3d820b5aaa04ed96f6" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPStatisticalBox::mLowerQuartile</definition>
+        <argsstring></argsstring>
+        <name>mLowerQuartile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2974" column="24" bodyfile="qcustomplot.h" bodystart="2974" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317" compoundref="qcustomplot_8cpp" startline="19403" endline="19428">draw</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a699ede353d6a7207d9fb36dd3aabf348" compoundref="qcustomplot_8cpp" startline="19448" endline="19459">drawQuartileBox</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1ae64401aa18b9c45d4d33f9b46cf4bbd0" compoundref="qcustomplot_8cpp" startline="19479" endline="19493">drawWhiskers</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a13958798713d4bb58b94e148b409877d" compoundref="qcustomplot_8cpp" startline="19542" endline="19581">getValueRange</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a0153ac16326b94450afbca208e3f9961" compoundref="qcustomplot_8cpp" startline="19378" endline="19400">selectTest</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a680941af5e23d902013962fa67223f9e" compoundref="qcustomplot_8cpp" startline="19236" endline="19239">setLowerQuartile</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_statistical_box_1ae43287ca13c8166bde2ac19bf0969d23" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPStatisticalBox::mMedian</definition>
+        <argsstring></argsstring>
+        <name>mMedian</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2974" column="39" bodyfile="qcustomplot.h" bodystart="2974" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317" compoundref="qcustomplot_8cpp" startline="19403" endline="19428">draw</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a642b90dd4ab5ab6e16188a9230401bcc" compoundref="qcustomplot_8cpp" startline="19465" endline="19473">drawMedian</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a13958798713d4bb58b94e148b409877d" compoundref="qcustomplot_8cpp" startline="19542" endline="19581">getValueRange</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a65970e77a897da4ecb4b15300868aad3" compoundref="qcustomplot_8cpp" startline="19248" endline="19251">setMedian</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_statistical_box_1a865afbcca332ee851aa45807381bc80e" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPStatisticalBox::mUpperQuartile</definition>
+        <argsstring></argsstring>
+        <name>mUpperQuartile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2974" column="47" bodyfile="qcustomplot.h" bodystart="2974" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317" compoundref="qcustomplot_8cpp" startline="19403" endline="19428">draw</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a699ede353d6a7207d9fb36dd3aabf348" compoundref="qcustomplot_8cpp" startline="19448" endline="19459">drawQuartileBox</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1ae64401aa18b9c45d4d33f9b46cf4bbd0" compoundref="qcustomplot_8cpp" startline="19479" endline="19493">drawWhiskers</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a13958798713d4bb58b94e148b409877d" compoundref="qcustomplot_8cpp" startline="19542" endline="19581">getValueRange</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a0153ac16326b94450afbca208e3f9961" compoundref="qcustomplot_8cpp" startline="19378" endline="19400">selectTest</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a65a1375f941c5a2077b5201229e89346" compoundref="qcustomplot_8cpp" startline="19260" endline="19263">setUpperQuartile</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_statistical_box_1a16266f1e0e4e8e95b5d141c49479ef2e" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPStatisticalBox::mMaximum</definition>
+        <argsstring></argsstring>
+        <name>mMaximum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2974" column="62" bodyfile="qcustomplot.h" bodystart="2974" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317" compoundref="qcustomplot_8cpp" startline="19403" endline="19428">draw</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1ae64401aa18b9c45d4d33f9b46cf4bbd0" compoundref="qcustomplot_8cpp" startline="19479" endline="19493">drawWhiskers</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a13958798713d4bb58b94e148b409877d" compoundref="qcustomplot_8cpp" startline="19542" endline="19581">getValueRange</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a0153ac16326b94450afbca208e3f9961" compoundref="qcustomplot_8cpp" startline="19378" endline="19400">selectTest</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1acec5ad1901f00f2c5387cfb4d9787eb3" compoundref="qcustomplot_8cpp" startline="19271" endline="19274">setMaximum</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_statistical_box_1af365e40b0f706c3d76f857c7957f629d" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPStatisticalBox::mWidth</definition>
+        <argsstring></argsstring>
+        <name>mWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2975" column="10" bodyfile="qcustomplot.h" bodystart="2975" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_statistical_box_1a642b90dd4ab5ab6e16188a9230401bcc" compoundref="qcustomplot_8cpp" startline="19465" endline="19473">drawMedian</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a699ede353d6a7207d9fb36dd3aabf348" compoundref="qcustomplot_8cpp" startline="19448" endline="19459">drawQuartileBox</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1ac17d9d68e41be25b7f0e8a47f9a5d225" compoundref="qcustomplot_8cpp" startline="19508" endline="19539">getKeyRange</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a0153ac16326b94450afbca208e3f9961" compoundref="qcustomplot_8cpp" startline="19378" endline="19400">selectTest</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a0b62775bd67301b1eba5c785f2b26f14" compoundref="qcustomplot_8cpp" startline="19308" endline="19311">setWidth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_statistical_box_1a4d166474f845d5db626e8b11a0815a6f" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double QCPStatisticalBox::mWhiskerWidth</definition>
+        <argsstring></argsstring>
+        <name>mWhiskerWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2976" column="10" bodyfile="qcustomplot.h" bodystart="2976" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_statistical_box_1ae64401aa18b9c45d4d33f9b46cf4bbd0" compoundref="qcustomplot_8cpp" startline="19479" endline="19493">drawWhiskers</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1adf378812446bd66f34d1f7f293d991cd" compoundref="qcustomplot_8cpp" startline="19318" endline="19321">setWhiskerWidth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_statistical_box_1a25b7552499f0f090fcff02858b2265a5" prot="protected" static="no" mutable="no">
+        <type>QPen</type>
+        <definition>QPen QCPStatisticalBox::mWhiskerPen</definition>
+        <argsstring></argsstring>
+        <name>mWhiskerPen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2977" column="8" bodyfile="qcustomplot.h" bodystart="2977" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_statistical_box_1ae64401aa18b9c45d4d33f9b46cf4bbd0" compoundref="qcustomplot_8cpp" startline="19479" endline="19493">drawWhiskers</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a4a5034cb3b9b040444df05ab1684620b" compoundref="qcustomplot_8cpp" startline="19331" endline="19334">setWhiskerPen</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_statistical_box_1aa719b1d722a9f82364df1497a6dc1da8" prot="protected" static="no" mutable="no">
+        <type>QPen</type>
+        <definition>QPen QCPStatisticalBox::mWhiskerBarPen</definition>
+        <argsstring></argsstring>
+        <name>mWhiskerBarPen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2977" column="20" bodyfile="qcustomplot.h" bodystart="2977" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_statistical_box_1ae64401aa18b9c45d4d33f9b46cf4bbd0" compoundref="qcustomplot_8cpp" startline="19479" endline="19493">drawWhiskers</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1aa8d3e503897788e1abf68dc74b5f147f" compoundref="qcustomplot_8cpp" startline="19342" endline="19345">setWhiskerBarPen</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_statistical_box_1a1af5b601049c575f778ae270f40c9443" prot="protected" static="no" mutable="no">
+        <type>QPen</type>
+        <definition>QPen QCPStatisticalBox::mMedianPen</definition>
+        <argsstring></argsstring>
+        <name>mMedianPen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2977" column="35" bodyfile="qcustomplot.h" bodystart="2977" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_statistical_box_1a642b90dd4ab5ab6e16188a9230401bcc" compoundref="qcustomplot_8cpp" startline="19465" endline="19473">drawMedian</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a7260ac55b669f5d0a74f16d5ca84c52c" compoundref="qcustomplot_8cpp" startline="19350" endline="19353">setMedianPen</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_statistical_box_1ae102e4187e1e6ba1f2df0f622b5171a4" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_q_c_p_scatter_style" kindref="compound">QCPScatterStyle</ref></type>
+        <definition>QCPScatterStyle QCPStatisticalBox::mOutlierStyle</definition>
+        <argsstring></argsstring>
+        <name>mOutlierStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2978" column="19" bodyfile="qcustomplot.h" bodystart="2978" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_statistical_box_1a8550e16af27b4e05d92bb337fb34324f" compoundref="qcustomplot_8cpp" startline="19499" endline="19505">drawOutliers</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1ad5241943422eb8e58360a97e99ad6aa7" compoundref="qcustomplot_8cpp" startline="19360" endline="19363">setOutlierStyle</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_q_c_p_statistical_box_1a1cdf9df76adcfae45261690aa0ca2198" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class QCustomPlot</definition>
+        <argsstring></argsstring>
+        <name>QCustomPlot</name>
+        <param>
+          <type><ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2992" column="3" bodyfile="qcustomplot.h" bodystart="2992" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_q_c_p_statistical_box_1a8429035e7adfbd7f05805a6530ad5e3b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class QCPLegend</definition>
+        <argsstring></argsstring>
+        <name>QCPLegend</name>
+        <param>
+          <type><ref refid="class_q_c_p_legend" kindref="compound">QCPLegend</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2993" column="3" bodyfile="qcustomplot.h" bodystart="2993" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a75c2b3e7fcd0741cc981693a2ba63b27" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPStatisticalBox::QCPStatisticalBox</definition>
+        <argsstring>(QCPAxis *keyAxis, QCPAxis *valueAxis)</argsstring>
+        <name>QCPStatisticalBox</name>
+        <param>
+          <type><ref refid="class_q_c_p_axis" kindref="compound">QCPAxis</ref> *</type>
+          <declname>keyAxis</declname>
+        </param>
+        <param>
+          <type><ref refid="class_q_c_p_axis" kindref="compound">QCPAxis</ref> *</type>
+          <declname>valueAxis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs a statistical box which uses <emphasis>keyAxis</emphasis> as its key axis (&quot;x&quot;) and <emphasis>valueAxis</emphasis> as its value axis (&quot;y&quot;). <emphasis>keyAxis</emphasis> and <emphasis>valueAxis</emphasis> must reside in the same <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> instance and not have the same orientation. If either of these restrictions is violated, a corresponding message is printed to the debug output (qDebug), the construction is not aborted, though.</para>
+<para>The constructed statistical box can be added to the plot with <ref refid="class_q_custom_plot_1ab7ad9174f701f9c6f64e378df77927a6" kindref="member">QCustomPlot::addPlottable</ref>, <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> then takes ownership of the statistical box. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2934" column="12" bodyfile="qcustomplot.cpp" bodystart="19188" bodyend="19208"/>
+        <references refid="class_q_c_p_abstract_plottable_1a7a4b92144dca6453a1f0f210e27edc74" compoundref="qcustomplot_8cpp" startline="6937" endline="6940">QCPAbstractPlottable::setBrush</references>
+        <references refid="class_q_c_p_statistical_box_1a7260ac55b669f5d0a74f16d5ca84c52c" compoundref="qcustomplot_8cpp" startline="19350" endline="19353">setMedianPen</references>
+        <references refid="class_q_c_p_statistical_box_1ad5241943422eb8e58360a97e99ad6aa7" compoundref="qcustomplot_8cpp" startline="19360" endline="19363">setOutlierStyle</references>
+        <references refid="class_q_c_p_abstract_plottable_1ab74b09ae4c0e7e13142fe4b5bf46cac7" compoundref="qcustomplot_8cpp" startline="6912" endline="6915">QCPAbstractPlottable::setPen</references>
+        <references refid="class_q_c_p_abstract_plottable_1ae8c816874089f7a44001e8618e81a9dc" compoundref="qcustomplot_8cpp" startline="6948" endline="6951">QCPAbstractPlottable::setSelectedBrush</references>
+        <references refid="class_q_c_p_abstract_plottable_1a6911603cad23ab0469b108224517516f" compoundref="qcustomplot_8cpp" startline="6923" endline="6926">QCPAbstractPlottable::setSelectedPen</references>
+        <references refid="class_q_c_p_statistical_box_1aa8d3e503897788e1abf68dc74b5f147f" compoundref="qcustomplot_8cpp" startline="19342" endline="19345">setWhiskerBarPen</references>
+        <references refid="class_q_c_p_statistical_box_1a4a5034cb3b9b040444df05ab1684620b" compoundref="qcustomplot_8cpp" startline="19331" endline="19334">setWhiskerPen</references>
+        <references refid="class_q_c_p_statistical_box_1adf378812446bd66f34d1f7f293d991cd" compoundref="qcustomplot_8cpp" startline="19318" endline="19321">setWhiskerWidth</references>
+        <references refid="class_q_c_p_statistical_box_1a0b62775bd67301b1eba5c785f2b26f14" compoundref="qcustomplot_8cpp" startline="19308" endline="19311">setWidth</references>
+        <references refid="class_q_c_p_scatter_style_1adb31525af6b680e6f1b7472e43859349a7c92a110880d0ef2170dff3a5b4f7779" compoundref="qcustomplot_8h" startline="250">QCPScatterStyle::ssCircle</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a0543a2d25346376ba44a42817206cc42" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPStatisticalBox::key</definition>
+        <argsstring>() const</argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2937" column="10" bodyfile="qcustomplot.h" bodystart="2937" bodyend="2937"/>
+        <referencedby refid="class_q_c_p_statistical_box_1adf50c57b635edb12470c0e4a986aff37" compoundref="qcustomplot_8cpp" startline="19293" endline="19301">setData</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a84a1c6d34b2f9af40bca0c527d51e97e" compoundref="qcustomplot_8cpp" startline="19213" endline="19216">setKey</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1ac5d07f908a9c49c81e2c7ff9dc8831e2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPStatisticalBox::minimum</definition>
+        <argsstring>() const</argsstring>
+        <name>minimum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2938" column="10" bodyfile="qcustomplot.h" bodystart="2938" bodyend="2938"/>
+        <referencedby refid="class_q_c_p_statistical_box_1adf50c57b635edb12470c0e4a986aff37" compoundref="qcustomplot_8cpp" startline="19293" endline="19301">setData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1afe9c3814cb02e3dffbe260f6bdb42d5e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPStatisticalBox::lowerQuartile</definition>
+        <argsstring>() const</argsstring>
+        <name>lowerQuartile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2939" column="10" bodyfile="qcustomplot.h" bodystart="2939" bodyend="2939"/>
+        <referencedby refid="class_q_c_p_statistical_box_1adf50c57b635edb12470c0e4a986aff37" compoundref="qcustomplot_8cpp" startline="19293" endline="19301">setData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1acde7599a12b0f73653ae8c681bf0bda0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPStatisticalBox::median</definition>
+        <argsstring>() const</argsstring>
+        <name>median</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2940" column="10" bodyfile="qcustomplot.h" bodystart="2940" bodyend="2940"/>
+        <referencedby refid="class_q_c_p_statistical_box_1adf50c57b635edb12470c0e4a986aff37" compoundref="qcustomplot_8cpp" startline="19293" endline="19301">setData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1affa4149e6abe33edb734c611410939b6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPStatisticalBox::upperQuartile</definition>
+        <argsstring>() const</argsstring>
+        <name>upperQuartile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2941" column="10" bodyfile="qcustomplot.h" bodystart="2941" bodyend="2941"/>
+        <referencedby refid="class_q_c_p_statistical_box_1adf50c57b635edb12470c0e4a986aff37" compoundref="qcustomplot_8cpp" startline="19293" endline="19301">setData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a5ca15d360056689b6fe9180b835e26c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPStatisticalBox::maximum</definition>
+        <argsstring>() const</argsstring>
+        <name>maximum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2942" column="10" bodyfile="qcustomplot.h" bodystart="2942" bodyend="2942"/>
+        <referencedby refid="class_q_c_p_statistical_box_1adf50c57b635edb12470c0e4a986aff37" compoundref="qcustomplot_8cpp" startline="19293" endline="19301">setData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a0a2c04824caeeabc4987a7a3ccf6b693" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QVector&lt; double &gt;</type>
+        <definition>QVector&lt;double&gt; QCPStatisticalBox::outliers</definition>
+        <argsstring>() const</argsstring>
+        <name>outliers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2943" column="11" bodyfile="qcustomplot.h" bodystart="2943" bodyend="2943"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1ae589b7481dec6ef8e50ebb6492d296f1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPStatisticalBox::width</definition>
+        <argsstring>() const</argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2944" column="10" bodyfile="qcustomplot.h" bodystart="2944" bodyend="2944"/>
+        <referencedby refid="class_q_c_p_statistical_box_1adf378812446bd66f34d1f7f293d991cd" compoundref="qcustomplot_8cpp" startline="19318" endline="19321">setWhiskerWidth</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a0b62775bd67301b1eba5c785f2b26f14" compoundref="qcustomplot_8cpp" startline="19308" endline="19311">setWidth</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1aacfa6686c7cf4af18794ec02354f4782" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPStatisticalBox::whiskerWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>whiskerWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2945" column="10" bodyfile="qcustomplot.h" bodystart="2945" bodyend="2945"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a67e5144f07645fe25c31001c460817fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QPen</type>
+        <definition>QPen QCPStatisticalBox::whiskerPen</definition>
+        <argsstring>() const</argsstring>
+        <name>whiskerPen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2946" column="8" bodyfile="qcustomplot.h" bodystart="2946" bodyend="2946"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a47ed9ad9d2ca65640319a2f071982ed4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QPen</type>
+        <definition>QPen QCPStatisticalBox::whiskerBarPen</definition>
+        <argsstring>() const</argsstring>
+        <name>whiskerBarPen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2947" column="8" bodyfile="qcustomplot.h" bodystart="2947" bodyend="2947"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1af767bc7b6b477d005535314b35aca683" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QPen</type>
+        <definition>QPen QCPStatisticalBox::medianPen</definition>
+        <argsstring>() const</argsstring>
+        <name>medianPen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2948" column="8" bodyfile="qcustomplot.h" bodystart="2948" bodyend="2948"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1aef92e38fcb8e5041a44c2e01886e3b66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_q_c_p_scatter_style" kindref="compound">QCPScatterStyle</ref></type>
+        <definition>QCPScatterStyle QCPStatisticalBox::outlierStyle</definition>
+        <argsstring>() const</argsstring>
+        <name>outlierStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2949" column="19" bodyfile="qcustomplot.h" bodystart="2949" bodyend="2949"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a84a1c6d34b2f9af40bca0c527d51e97e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::setKey</definition>
+        <argsstring>(double key)</argsstring>
+        <name>setKey</name>
+        <param>
+          <type>double</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the key coordinate of the statistical box. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2952" column="8" bodyfile="qcustomplot.cpp" bodystart="19213" bodyend="19216"/>
+        <references refid="class_q_c_p_statistical_box_1a0543a2d25346376ba44a42817206cc42" compoundref="qcustomplot_8h" startline="2937" endline="2937">key</references>
+        <references refid="class_q_c_p_statistical_box_1a86fd1d3be5c5bc11d11eda7517069af4" compoundref="qcustomplot_8h" startline="2974">mKey</references>
+        <referencedby refid="class_q_c_p_statistical_box_1a19112994449df0c20287858436cc68e3" compoundref="qcustomplot_8cpp" startline="19366" endline="19375">clearData</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1adf50c57b635edb12470c0e4a986aff37" compoundref="qcustomplot_8cpp" startline="19293" endline="19301">setData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a84ff7cc61ba44890f0c3e0c99c19941e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::setMinimum</definition>
+        <argsstring>(double value)</argsstring>
+        <name>setMinimum</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the parameter &quot;minimum&quot; of the statistical box plot. This is the position of the lower whisker, typically the minimum measurement of the sample that&apos;s not considered an outlier.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_statistical_box_1acec5ad1901f00f2c5387cfb4d9787eb3" kindref="member">setMaximum</ref>, <ref refid="class_q_c_p_statistical_box_1a4a5034cb3b9b040444df05ab1684620b" kindref="member">setWhiskerPen</ref>, <ref refid="class_q_c_p_statistical_box_1aa8d3e503897788e1abf68dc74b5f147f" kindref="member">setWhiskerBarPen</ref>, <ref refid="class_q_c_p_statistical_box_1adf378812446bd66f34d1f7f293d991cd" kindref="member">setWhiskerWidth</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2953" column="8" bodyfile="qcustomplot.cpp" bodystart="19224" bodyend="19227"/>
+        <references refid="class_q_c_p_statistical_box_1a7143ece4e7e5f9ac010739fbc390bf0c" compoundref="qcustomplot_8h" startline="2974">mMinimum</references>
+        <referencedby refid="class_q_c_p_statistical_box_1a19112994449df0c20287858436cc68e3" compoundref="qcustomplot_8cpp" startline="19366" endline="19375">clearData</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1adf50c57b635edb12470c0e4a986aff37" compoundref="qcustomplot_8cpp" startline="19293" endline="19301">setData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a680941af5e23d902013962fa67223f9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::setLowerQuartile</definition>
+        <argsstring>(double value)</argsstring>
+        <name>setLowerQuartile</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the parameter &quot;lower Quartile&quot; of the statistical box plot. This is the lower end of the box. The lower and the upper quartiles are the two statistical quartiles around the median of the sample, they contain 50% of the sample data.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_statistical_box_1a65a1375f941c5a2077b5201229e89346" kindref="member">setUpperQuartile</ref>, <ref refid="class_q_c_p_abstract_plottable_1ab74b09ae4c0e7e13142fe4b5bf46cac7" kindref="member">setPen</ref>, <ref refid="class_q_c_p_abstract_plottable_1a7a4b92144dca6453a1f0f210e27edc74" kindref="member">setBrush</ref>, <ref refid="class_q_c_p_statistical_box_1a0b62775bd67301b1eba5c785f2b26f14" kindref="member">setWidth</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2954" column="8" bodyfile="qcustomplot.cpp" bodystart="19236" bodyend="19239"/>
+        <references refid="class_q_c_p_statistical_box_1acac86cac93d9fa3d820b5aaa04ed96f6" compoundref="qcustomplot_8h" startline="2974">mLowerQuartile</references>
+        <referencedby refid="class_q_c_p_statistical_box_1a19112994449df0c20287858436cc68e3" compoundref="qcustomplot_8cpp" startline="19366" endline="19375">clearData</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1adf50c57b635edb12470c0e4a986aff37" compoundref="qcustomplot_8cpp" startline="19293" endline="19301">setData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a65970e77a897da4ecb4b15300868aad3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::setMedian</definition>
+        <argsstring>(double value)</argsstring>
+        <name>setMedian</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the parameter &quot;median&quot; of the statistical box plot. This is the value of the median mark inside the quartile box. The median separates the sample data in half (50% of the sample data is below/above the median).</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_statistical_box_1a7260ac55b669f5d0a74f16d5ca84c52c" kindref="member">setMedianPen</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2955" column="8" bodyfile="qcustomplot.cpp" bodystart="19248" bodyend="19251"/>
+        <references refid="class_q_c_p_statistical_box_1ae43287ca13c8166bde2ac19bf0969d23" compoundref="qcustomplot_8h" startline="2974">mMedian</references>
+        <referencedby refid="class_q_c_p_statistical_box_1a19112994449df0c20287858436cc68e3" compoundref="qcustomplot_8cpp" startline="19366" endline="19375">clearData</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1adf50c57b635edb12470c0e4a986aff37" compoundref="qcustomplot_8cpp" startline="19293" endline="19301">setData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a65a1375f941c5a2077b5201229e89346" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::setUpperQuartile</definition>
+        <argsstring>(double value)</argsstring>
+        <name>setUpperQuartile</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the parameter &quot;upper Quartile&quot; of the statistical box plot. This is the upper end of the box. The lower and the upper quartiles are the two statistical quartiles around the median of the sample, they contain 50% of the sample data.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_statistical_box_1a680941af5e23d902013962fa67223f9e" kindref="member">setLowerQuartile</ref>, <ref refid="class_q_c_p_abstract_plottable_1ab74b09ae4c0e7e13142fe4b5bf46cac7" kindref="member">setPen</ref>, <ref refid="class_q_c_p_abstract_plottable_1a7a4b92144dca6453a1f0f210e27edc74" kindref="member">setBrush</ref>, <ref refid="class_q_c_p_statistical_box_1a0b62775bd67301b1eba5c785f2b26f14" kindref="member">setWidth</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2956" column="8" bodyfile="qcustomplot.cpp" bodystart="19260" bodyend="19263"/>
+        <references refid="class_q_c_p_statistical_box_1a865afbcca332ee851aa45807381bc80e" compoundref="qcustomplot_8h" startline="2974">mUpperQuartile</references>
+        <referencedby refid="class_q_c_p_statistical_box_1a19112994449df0c20287858436cc68e3" compoundref="qcustomplot_8cpp" startline="19366" endline="19375">clearData</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1adf50c57b635edb12470c0e4a986aff37" compoundref="qcustomplot_8cpp" startline="19293" endline="19301">setData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1acec5ad1901f00f2c5387cfb4d9787eb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::setMaximum</definition>
+        <argsstring>(double value)</argsstring>
+        <name>setMaximum</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the parameter &quot;maximum&quot; of the statistical box plot. This is the position of the upper whisker, typically the maximum measurement of the sample that&apos;s not considered an outlier.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_statistical_box_1a84ff7cc61ba44890f0c3e0c99c19941e" kindref="member">setMinimum</ref>, <ref refid="class_q_c_p_statistical_box_1a4a5034cb3b9b040444df05ab1684620b" kindref="member">setWhiskerPen</ref>, <ref refid="class_q_c_p_statistical_box_1aa8d3e503897788e1abf68dc74b5f147f" kindref="member">setWhiskerBarPen</ref>, <ref refid="class_q_c_p_statistical_box_1adf378812446bd66f34d1f7f293d991cd" kindref="member">setWhiskerWidth</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2957" column="8" bodyfile="qcustomplot.cpp" bodystart="19271" bodyend="19274"/>
+        <references refid="class_q_c_p_statistical_box_1a16266f1e0e4e8e95b5d141c49479ef2e" compoundref="qcustomplot_8h" startline="2974">mMaximum</references>
+        <referencedby refid="class_q_c_p_statistical_box_1a19112994449df0c20287858436cc68e3" compoundref="qcustomplot_8cpp" startline="19366" endline="19375">clearData</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1adf50c57b635edb12470c0e4a986aff37" compoundref="qcustomplot_8cpp" startline="19293" endline="19301">setData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1af9bc09620e0bf93bf444ee35e5800d1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::setOutliers</definition>
+        <argsstring>(const QVector&lt; double &gt; &amp;values)</argsstring>
+        <name>setOutliers</name>
+        <param>
+          <type>const QVector&lt; double &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets a vector of outlier values that will be drawn as scatters. Any data points in the sample that are not within the whiskers (<ref refid="class_q_c_p_statistical_box_1a84ff7cc61ba44890f0c3e0c99c19941e" kindref="member">setMinimum</ref>, <ref refid="class_q_c_p_statistical_box_1acec5ad1901f00f2c5387cfb4d9787eb3" kindref="member">setMaximum</ref>) should be considered outliers and displayed as such.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_statistical_box_1ad5241943422eb8e58360a97e99ad6aa7" kindref="member">setOutlierStyle</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2958" column="8" bodyfile="qcustomplot.cpp" bodystart="19283" bodyend="19286"/>
+        <references refid="class_q_c_p_statistical_box_1a415e2f77a89396c2af999afe027bdf6c" compoundref="qcustomplot_8h" startline="2973">mOutliers</references>
+        <referencedby refid="class_q_c_p_statistical_box_1a19112994449df0c20287858436cc68e3" compoundref="qcustomplot_8cpp" startline="19366" endline="19375">clearData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1adf50c57b635edb12470c0e4a986aff37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::setData</definition>
+        <argsstring>(double key, double minimum, double lowerQuartile, double median, double upperQuartile, double maximum)</argsstring>
+        <name>setData</name>
+        <param>
+          <type>double</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>minimum</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lowerQuartile</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>median</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>upperQuartile</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>maximum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets all parameters of the statistical box plot at once.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_statistical_box_1a84a1c6d34b2f9af40bca0c527d51e97e" kindref="member">setKey</ref>, <ref refid="class_q_c_p_statistical_box_1a84ff7cc61ba44890f0c3e0c99c19941e" kindref="member">setMinimum</ref>, <ref refid="class_q_c_p_statistical_box_1a680941af5e23d902013962fa67223f9e" kindref="member">setLowerQuartile</ref>, <ref refid="class_q_c_p_statistical_box_1a65970e77a897da4ecb4b15300868aad3" kindref="member">setMedian</ref>, <ref refid="class_q_c_p_statistical_box_1a65a1375f941c5a2077b5201229e89346" kindref="member">setUpperQuartile</ref>, <ref refid="class_q_c_p_statistical_box_1acec5ad1901f00f2c5387cfb4d9787eb3" kindref="member">setMaximum</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2959" column="8" bodyfile="qcustomplot.cpp" bodystart="19293" bodyend="19301"/>
+        <references refid="class_q_c_p_statistical_box_1a0543a2d25346376ba44a42817206cc42" compoundref="qcustomplot_8h" startline="2937" endline="2937">key</references>
+        <references refid="class_q_c_p_statistical_box_1afe9c3814cb02e3dffbe260f6bdb42d5e" compoundref="qcustomplot_8h" startline="2939" endline="2939">lowerQuartile</references>
+        <references refid="class_q_c_p_statistical_box_1a5ca15d360056689b6fe9180b835e26c9" compoundref="qcustomplot_8h" startline="2942" endline="2942">maximum</references>
+        <references refid="class_q_c_p_statistical_box_1acde7599a12b0f73653ae8c681bf0bda0" compoundref="qcustomplot_8h" startline="2940" endline="2940">median</references>
+        <references refid="class_q_c_p_statistical_box_1ac5d07f908a9c49c81e2c7ff9dc8831e2" compoundref="qcustomplot_8h" startline="2938" endline="2938">minimum</references>
+        <references refid="class_q_c_p_statistical_box_1a84a1c6d34b2f9af40bca0c527d51e97e" compoundref="qcustomplot_8cpp" startline="19213" endline="19216">setKey</references>
+        <references refid="class_q_c_p_statistical_box_1a680941af5e23d902013962fa67223f9e" compoundref="qcustomplot_8cpp" startline="19236" endline="19239">setLowerQuartile</references>
+        <references refid="class_q_c_p_statistical_box_1acec5ad1901f00f2c5387cfb4d9787eb3" compoundref="qcustomplot_8cpp" startline="19271" endline="19274">setMaximum</references>
+        <references refid="class_q_c_p_statistical_box_1a65970e77a897da4ecb4b15300868aad3" compoundref="qcustomplot_8cpp" startline="19248" endline="19251">setMedian</references>
+        <references refid="class_q_c_p_statistical_box_1a84ff7cc61ba44890f0c3e0c99c19941e" compoundref="qcustomplot_8cpp" startline="19224" endline="19227">setMinimum</references>
+        <references refid="class_q_c_p_statistical_box_1a65a1375f941c5a2077b5201229e89346" compoundref="qcustomplot_8cpp" startline="19260" endline="19263">setUpperQuartile</references>
+        <references refid="class_q_c_p_statistical_box_1affa4149e6abe33edb734c611410939b6" compoundref="qcustomplot_8h" startline="2941" endline="2941">upperQuartile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a0b62775bd67301b1eba5c785f2b26f14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::setWidth</definition>
+        <argsstring>(double width)</argsstring>
+        <name>setWidth</name>
+        <param>
+          <type>double</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the width of the box in key coordinates.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_statistical_box_1adf378812446bd66f34d1f7f293d991cd" kindref="member">setWhiskerWidth</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2960" column="8" bodyfile="qcustomplot.cpp" bodystart="19308" bodyend="19311"/>
+        <references refid="class_q_c_p_statistical_box_1af365e40b0f706c3d76f857c7957f629d" compoundref="qcustomplot_8h" startline="2975">mWidth</references>
+        <references refid="class_q_c_p_statistical_box_1ae589b7481dec6ef8e50ebb6492d296f1" compoundref="qcustomplot_8h" startline="2944" endline="2944">width</references>
+        <referencedby refid="class_q_c_p_statistical_box_1a75c2b3e7fcd0741cc981693a2ba63b27" compoundref="qcustomplot_8cpp" startline="19188" endline="19208">QCPStatisticalBox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1adf378812446bd66f34d1f7f293d991cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::setWhiskerWidth</definition>
+        <argsstring>(double width)</argsstring>
+        <name>setWhiskerWidth</name>
+        <param>
+          <type>double</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the width of the whiskers (<ref refid="class_q_c_p_statistical_box_1a84ff7cc61ba44890f0c3e0c99c19941e" kindref="member">setMinimum</ref>, <ref refid="class_q_c_p_statistical_box_1acec5ad1901f00f2c5387cfb4d9787eb3" kindref="member">setMaximum</ref>) in key coordinates.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_statistical_box_1a0b62775bd67301b1eba5c785f2b26f14" kindref="member">setWidth</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2961" column="8" bodyfile="qcustomplot.cpp" bodystart="19318" bodyend="19321"/>
+        <references refid="class_q_c_p_statistical_box_1a4d166474f845d5db626e8b11a0815a6f" compoundref="qcustomplot_8h" startline="2976">mWhiskerWidth</references>
+        <references refid="class_q_c_p_statistical_box_1ae589b7481dec6ef8e50ebb6492d296f1" compoundref="qcustomplot_8h" startline="2944" endline="2944">width</references>
+        <referencedby refid="class_q_c_p_statistical_box_1a75c2b3e7fcd0741cc981693a2ba63b27" compoundref="qcustomplot_8cpp" startline="19188" endline="19208">QCPStatisticalBox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a4a5034cb3b9b040444df05ab1684620b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::setWhiskerPen</definition>
+        <argsstring>(const QPen &amp;pen)</argsstring>
+        <name>setWhiskerPen</name>
+        <param>
+          <type>const QPen &amp;</type>
+          <declname>pen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the pen used for drawing the whisker backbone (That&apos;s the line parallel to the value axis).</para>
+<para>Make sure to set the <emphasis>pen</emphasis> capStyle to Qt::FlatCap to prevent the whisker backbone from reaching a few pixels past the whisker bars, when using a non-zero pen width.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_statistical_box_1aa8d3e503897788e1abf68dc74b5f147f" kindref="member">setWhiskerBarPen</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2962" column="8" bodyfile="qcustomplot.cpp" bodystart="19331" bodyend="19334"/>
+        <references refid="class_q_c_p_statistical_box_1a25b7552499f0f090fcff02858b2265a5" compoundref="qcustomplot_8h" startline="2977">mWhiskerPen</references>
+        <references refid="class_q_c_p_abstract_plottable_1ad5972efc31344e5a7a78ab4f8864b2d3" compoundref="qcustomplot_8h" startline="1413" endline="1413">QCPAbstractPlottable::pen</references>
+        <referencedby refid="class_q_c_p_statistical_box_1a75c2b3e7fcd0741cc981693a2ba63b27" compoundref="qcustomplot_8cpp" startline="19188" endline="19208">QCPStatisticalBox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1aa8d3e503897788e1abf68dc74b5f147f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::setWhiskerBarPen</definition>
+        <argsstring>(const QPen &amp;pen)</argsstring>
+        <name>setWhiskerBarPen</name>
+        <param>
+          <type>const QPen &amp;</type>
+          <declname>pen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the pen used for drawing the whisker bars (Those are the lines parallel to the key axis at each end of the whisker backbone).</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_statistical_box_1a4a5034cb3b9b040444df05ab1684620b" kindref="member">setWhiskerPen</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2963" column="8" bodyfile="qcustomplot.cpp" bodystart="19342" bodyend="19345"/>
+        <references refid="class_q_c_p_statistical_box_1aa719b1d722a9f82364df1497a6dc1da8" compoundref="qcustomplot_8h" startline="2977">mWhiskerBarPen</references>
+        <references refid="class_q_c_p_abstract_plottable_1ad5972efc31344e5a7a78ab4f8864b2d3" compoundref="qcustomplot_8h" startline="1413" endline="1413">QCPAbstractPlottable::pen</references>
+        <referencedby refid="class_q_c_p_statistical_box_1a75c2b3e7fcd0741cc981693a2ba63b27" compoundref="qcustomplot_8cpp" startline="19188" endline="19208">QCPStatisticalBox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a7260ac55b669f5d0a74f16d5ca84c52c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::setMedianPen</definition>
+        <argsstring>(const QPen &amp;pen)</argsstring>
+        <name>setMedianPen</name>
+        <param>
+          <type>const QPen &amp;</type>
+          <declname>pen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the pen used for drawing the median indicator line inside the statistical box. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2964" column="8" bodyfile="qcustomplot.cpp" bodystart="19350" bodyend="19353"/>
+        <references refid="class_q_c_p_statistical_box_1a1af5b601049c575f778ae270f40c9443" compoundref="qcustomplot_8h" startline="2977">mMedianPen</references>
+        <references refid="class_q_c_p_abstract_plottable_1ad5972efc31344e5a7a78ab4f8864b2d3" compoundref="qcustomplot_8h" startline="1413" endline="1413">QCPAbstractPlottable::pen</references>
+        <referencedby refid="class_q_c_p_statistical_box_1a75c2b3e7fcd0741cc981693a2ba63b27" compoundref="qcustomplot_8cpp" startline="19188" endline="19208">QCPStatisticalBox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1ad5241943422eb8e58360a97e99ad6aa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::setOutlierStyle</definition>
+        <argsstring>(const QCPScatterStyle &amp;style)</argsstring>
+        <name>setOutlierStyle</name>
+        <param>
+          <type>const <ref refid="class_q_c_p_scatter_style" kindref="compound">QCPScatterStyle</ref> &amp;</type>
+          <declname>style</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the appearance of the outlier data points.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_statistical_box_1af9bc09620e0bf93bf444ee35e5800d1d" kindref="member">setOutliers</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2965" column="8" bodyfile="qcustomplot.cpp" bodystart="19360" bodyend="19363"/>
+        <references refid="class_q_c_p_statistical_box_1ae102e4187e1e6ba1f2df0f622b5171a4" compoundref="qcustomplot_8h" startline="2978">mOutlierStyle</references>
+        <referencedby refid="class_q_c_p_statistical_box_1a75c2b3e7fcd0741cc981693a2ba63b27" compoundref="qcustomplot_8cpp" startline="19188" endline="19208">QCPStatisticalBox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a19112994449df0c20287858436cc68e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::clearData</definition>
+        <argsstring>()</argsstring>
+        <name>clearData</name>
+        <reimplements refid="class_q_c_p_abstract_plottable_1a86e5b8fd4b6ff4f4084e7ea4c573fc53">clearData</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clears all data in the plottable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2968" column="16" bodyfile="qcustomplot.cpp" bodystart="19366" bodyend="19375"/>
+        <references refid="class_q_c_p_statistical_box_1a84a1c6d34b2f9af40bca0c527d51e97e" compoundref="qcustomplot_8cpp" startline="19213" endline="19216">setKey</references>
+        <references refid="class_q_c_p_statistical_box_1a680941af5e23d902013962fa67223f9e" compoundref="qcustomplot_8cpp" startline="19236" endline="19239">setLowerQuartile</references>
+        <references refid="class_q_c_p_statistical_box_1acec5ad1901f00f2c5387cfb4d9787eb3" compoundref="qcustomplot_8cpp" startline="19271" endline="19274">setMaximum</references>
+        <references refid="class_q_c_p_statistical_box_1a65970e77a897da4ecb4b15300868aad3" compoundref="qcustomplot_8cpp" startline="19248" endline="19251">setMedian</references>
+        <references refid="class_q_c_p_statistical_box_1a84ff7cc61ba44890f0c3e0c99c19941e" compoundref="qcustomplot_8cpp" startline="19224" endline="19227">setMinimum</references>
+        <references refid="class_q_c_p_statistical_box_1af9bc09620e0bf93bf444ee35e5800d1d" compoundref="qcustomplot_8cpp" startline="19283" endline="19286">setOutliers</references>
+        <references refid="class_q_c_p_statistical_box_1a65a1375f941c5a2077b5201229e89346" compoundref="qcustomplot_8cpp" startline="19260" endline="19263">setUpperQuartile</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a0153ac16326b94450afbca208e3f9961" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double QCPStatisticalBox::selectTest</definition>
+        <argsstring>(const QPointF &amp;pos, bool onlySelectable, QVariant *details=0) const</argsstring>
+        <name>selectTest</name>
+        <reimplements refid="class_q_c_p_abstract_plottable_1a38efe9641d972992a3d44204bc80ec1d">selectTest</reimplements>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>onlySelectable</declname>
+        </param>
+        <param>
+          <type>QVariant *</type>
+          <declname>details</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to decide whether a click hits a layerable object or not.</para>
+<para><emphasis>pos</emphasis> is a point in pixel coordinates on the <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> surface. This function returns the shortest pixel distance of this point to the object. If the object is either invisible or the distance couldn&apos;t be determined, -1.0 is returned. Further, if <emphasis>onlySelectable</emphasis> is true and the object is not selectable, -1.0 is returned, too.</para>
+<para>If the object is represented not by single lines but by an area like a <ref refid="class_q_c_p_item_text" kindref="compound">QCPItemText</ref> or the bars of a <ref refid="class_q_c_p_bars" kindref="compound">QCPBars</ref> plottable, a click inside the area should also be considered a hit. In these cases this function thus returns a constant value greater zero but still below the parent plot&apos;s selection tolerance. (typically the selectionTolerance multiplied by 0.99).</para>
+<para>Providing a constant value for area objects allows selecting line objects even when they are obscured by such area objects, by clicking close to the lines (i.e. closer than 0.99*selectionTolerance).</para>
+<para>The actual setting of the selection state is not done by this function. This is handled by the parent <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> when the mouseReleaseEvent occurs, and the finally selected object is notified via the selectEvent/deselectEvent methods.</para>
+<para><emphasis>details</emphasis> is an optional output parameter. Every layerable subclass may place any information in <emphasis>details</emphasis>. This information will be passed to <ref refid="class_q_c_p_abstract_plottable_1a16aaad02456aa23a759efd1ac90c79bf" kindref="member">selectEvent</ref> when the parent <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> decides on the basis of this selectTest call, that the object was successfully selected. The subsequent call to <ref refid="class_q_c_p_abstract_plottable_1a16aaad02456aa23a759efd1ac90c79bf" kindref="member">selectEvent</ref> will carry the <emphasis>details</emphasis>. This is useful for multi-part objects (like <ref refid="class_q_c_p_axis" kindref="compound">QCPAxis</ref>). This way, a possibly complex calculation to decide which part was clicked is only done once in <ref refid="class_q_c_p_statistical_box_1a0153ac16326b94450afbca208e3f9961" kindref="member">selectTest</ref>. The result (i.e. the actually clicked part) can then be placed in <emphasis>details</emphasis>. So in the subsequent <ref refid="class_q_c_p_abstract_plottable_1a16aaad02456aa23a759efd1ac90c79bf" kindref="member">selectEvent</ref>, the decision which part was selected doesn&apos;t have to be done a second time for a single selection operation.</para>
+<para>You may pass 0 as <emphasis>details</emphasis> to indicate that you are not interested in those selection details.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_plottable_1a16aaad02456aa23a759efd1ac90c79bf" kindref="member">selectEvent</ref>, <ref refid="class_q_c_p_abstract_plottable_1a6fa0d0f95560ea8b01ee13f296dab2b1" kindref="member">deselectEvent</ref>, <ref refid="class_q_custom_plot_1a5ee1e2f6ae27419deca53e75907c27e5" kindref="member">QCustomPlot::setInteractions</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2969" column="18" bodyfile="qcustomplot.cpp" bodystart="19378" bodyend="19400"/>
+        <references refid="class_q_c_p_range_1ae9842b48b6d38dc5e9607358e3083cc8" compoundref="qcustomplot_8cpp" startline="1446" endline="1449">QCPRange::contains</references>
+        <references refid="class_q_c_p_statistical_box_1a86fd1d3be5c5bc11d11eda7517069af4" compoundref="qcustomplot_8h" startline="2974">mKey</references>
+        <references refid="class_q_c_p_abstract_plottable_1a426f42e254d0f8ce5436a868c61a6827" compoundref="qcustomplot_8h" startline="1465">QCPAbstractPlottable::mKeyAxis</references>
+        <references refid="class_q_c_p_statistical_box_1acac86cac93d9fa3d820b5aaa04ed96f6" compoundref="qcustomplot_8h" startline="2974">mLowerQuartile</references>
+        <references refid="class_q_c_p_statistical_box_1a16266f1e0e4e8e95b5d141c49479ef2e" compoundref="qcustomplot_8h" startline="2974">mMaximum</references>
+        <references refid="class_q_c_p_statistical_box_1a7143ece4e7e5f9ac010739fbc390bf0c" compoundref="qcustomplot_8h" startline="2974">mMinimum</references>
+        <references refid="class_q_c_p_layerable_1aa2a528433e44db02b8aef23c1f9f90ed" compoundref="qcustomplot_8h" startline="447">QCPLayerable::mParentPlot</references>
+        <references refid="class_q_c_p_abstract_plottable_1aceee52342c8e75727abcbd164986fdcb" compoundref="qcustomplot_8h" startline="1466">QCPAbstractPlottable::mSelectable</references>
+        <references refid="class_q_c_p_statistical_box_1a865afbcca332ee851aa45807381bc80e" compoundref="qcustomplot_8h" startline="2974">mUpperQuartile</references>
+        <references refid="class_q_c_p_abstract_plottable_1a2901452ca4aea911a1827717934a4bda" compoundref="qcustomplot_8h" startline="1465">QCPAbstractPlottable::mValueAxis</references>
+        <references refid="class_q_c_p_statistical_box_1af365e40b0f706c3d76f857c7957f629d" compoundref="qcustomplot_8h" startline="2975">mWidth</references>
+        <references refid="class_q_c_p_abstract_plottable_1a3903c1120ab5c27e7fa46b597ef267bd" compoundref="qcustomplot_8cpp" startline="7237" endline="7252">QCPAbstractPlottable::pixelsToCoords</references>
+        <references refid="class_q_custom_plot_1a5441d11013afeaf4b8f2ea06e8624a25" compoundref="qcustomplot_8h" startline="1728" endline="1728">QCustomPlot::selectionTolerance</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::draw</definition>
+        <argsstring>(QCPPainter *painter)</argsstring>
+        <name>draw</name>
+        <reimplements refid="class_q_c_p_abstract_plottable_1acbab5e30dcd04fd302b4a5902ac2c482">draw</reimplements>
+        <param>
+          <type><ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2981" column="16" bodyfile="qcustomplot.cpp" bodystart="19403" bodyend="19428"/>
+        <references refid="class_q_c_p_statistical_box_1a642b90dd4ab5ab6e16188a9230401bcc" compoundref="qcustomplot_8cpp" startline="19465" endline="19473">drawMedian</references>
+        <references refid="class_q_c_p_statistical_box_1a8550e16af27b4e05d92bb337fb34324f" compoundref="qcustomplot_8cpp" startline="19499" endline="19505">drawOutliers</references>
+        <references refid="class_q_c_p_statistical_box_1a699ede353d6a7207d9fb36dd3aabf348" compoundref="qcustomplot_8cpp" startline="19448" endline="19459">drawQuartileBox</references>
+        <references refid="class_q_c_p_statistical_box_1ae64401aa18b9c45d4d33f9b46cf4bbd0" compoundref="qcustomplot_8cpp" startline="19479" endline="19493">drawWhiskers</references>
+        <references refid="namespace_q_c_p_1a07ab701c05329089f933b9cae2638a63" compoundref="qcustomplot_8h" startline="172" endline="175">QCP::isInvalidData</references>
+        <references refid="class_q_c_p_statistical_box_1a86fd1d3be5c5bc11d11eda7517069af4" compoundref="qcustomplot_8h" startline="2974">mKey</references>
+        <references refid="class_q_c_p_abstract_plottable_1a426f42e254d0f8ce5436a868c61a6827" compoundref="qcustomplot_8h" startline="1465">QCPAbstractPlottable::mKeyAxis</references>
+        <references refid="class_q_c_p_statistical_box_1acac86cac93d9fa3d820b5aaa04ed96f6" compoundref="qcustomplot_8h" startline="2974">mLowerQuartile</references>
+        <references refid="class_q_c_p_statistical_box_1a16266f1e0e4e8e95b5d141c49479ef2e" compoundref="qcustomplot_8h" startline="2974">mMaximum</references>
+        <references refid="class_q_c_p_statistical_box_1ae43287ca13c8166bde2ac19bf0969d23" compoundref="qcustomplot_8h" startline="2974">mMedian</references>
+        <references refid="class_q_c_p_statistical_box_1a7143ece4e7e5f9ac010739fbc390bf0c" compoundref="qcustomplot_8h" startline="2974">mMinimum</references>
+        <references refid="class_q_c_p_statistical_box_1a415e2f77a89396c2af999afe027bdf6c" compoundref="qcustomplot_8h" startline="2973">mOutliers</references>
+        <references refid="class_q_c_p_statistical_box_1a865afbcca332ee851aa45807381bc80e" compoundref="qcustomplot_8h" startline="2974">mUpperQuartile</references>
+        <references refid="class_q_c_p_abstract_plottable_1a2901452ca4aea911a1827717934a4bda" compoundref="qcustomplot_8h" startline="1465">QCPAbstractPlottable::mValueAxis</references>
+        <references refid="class_q_c_p_abstract_plottable_1a52c226eefcb1920240eeabae574d28c0" compoundref="qcustomplot_8h" startline="1409" endline="1409">QCPAbstractPlottable::name</references>
+        <references refid="class_q_c_p_painter_1a64908e6298d5bbd83457dc987cc3a022" compoundref="qcustomplot_8cpp" startline="224" endline="231">QCPPainter::restore</references>
+        <references refid="class_q_c_p_painter_1a8fd6821ee6fecbfa04444c9062912abd" compoundref="qcustomplot_8cpp" startline="210" endline="214">QCPPainter::save</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a41c6193fd24f5c1b6c754e7bcfe3e174" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::drawLegendIcon</definition>
+        <argsstring>(QCPPainter *painter, const QRectF &amp;rect) const</argsstring>
+        <name>drawLegendIcon</name>
+        <reimplements refid="class_q_c_p_abstract_plottable_1a9a450783fd9ed539e589999fd390cdf7">drawLegendIcon</reimplements>
+        <param>
+          <type><ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <param>
+          <type>const QRectF &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2982" column="16" bodyfile="qcustomplot.cpp" bodystart="19431" bodyend="19440"/>
+        <references refid="class_q_c_p_abstract_plottable_1a59a80773c5cefc05a0646ac8e1149ed5" compoundref="qcustomplot_8cpp" startline="7297" endline="7300">QCPAbstractPlottable::applyDefaultAntialiasingHint</references>
+        <references refid="class_q_c_p_abstract_plottable_1a33f00674c0161c13315ab9da0895418e" compoundref="qcustomplot_8h" startline="1464">QCPAbstractPlottable::mBrush</references>
+        <references refid="class_q_c_p_abstract_plottable_1a67bc0622fd1b9fa14e54c14922dcec66" compoundref="qcustomplot_8h" startline="1463">QCPAbstractPlottable::mPen</references>
+        <references refid="class_q_c_p_painter_1af9c7a4cd1791403901f8c5b82a150195" compoundref="qcustomplot_8cpp" startline="86" endline="91">QCPPainter::setPen</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1ac17d9d68e41be25b7f0e8a47f9a5d225" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_q_c_p_range" kindref="compound">QCPRange</ref></type>
+        <definition>QCPRange QCPStatisticalBox::getKeyRange</definition>
+        <argsstring>(bool &amp;foundRange, SignDomain inSignDomain=sdBoth) const</argsstring>
+        <name>getKeyRange</name>
+        <reimplements refid="class_q_c_p_abstract_plottable_1a345d702b2e7e12c8cfdddff65ba85e8c">getKeyRange</reimplements>
+        <param>
+          <type>bool &amp;</type>
+          <declname>foundRange</declname>
+        </param>
+        <param>
+          <type><ref refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8" kindref="member">SignDomain</ref></type>
+          <declname>inSignDomain</declname>
+          <defval><ref refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a082b98cfb91a7363a3b5cd17b0c1cd60" kindref="member">sdBoth</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2983" column="20" bodyfile="qcustomplot.cpp" bodystart="19508" bodyend="19539"/>
+        <references refid="class_q_c_p_statistical_box_1a86fd1d3be5c5bc11d11eda7517069af4" compoundref="qcustomplot_8h" startline="2974">mKey</references>
+        <references refid="class_q_c_p_statistical_box_1af365e40b0f706c3d76f857c7957f629d" compoundref="qcustomplot_8h" startline="2975">mWidth</references>
+        <references refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a082b98cfb91a7363a3b5cd17b0c1cd60" compoundref="qcustomplot_8h" startline="1456">QCPAbstractPlottable::sdBoth</references>
+        <references refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a0fc9a70796ef60ad18ddd18056e6dc63" compoundref="qcustomplot_8h" startline="1455">QCPAbstractPlottable::sdNegative</references>
+        <references refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a02951859f243a4d24e779cfbb5471030" compoundref="qcustomplot_8h" startline="1457">QCPAbstractPlottable::sdPositive</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a13958798713d4bb58b94e148b409877d" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_q_c_p_range" kindref="compound">QCPRange</ref></type>
+        <definition>QCPRange QCPStatisticalBox::getValueRange</definition>
+        <argsstring>(bool &amp;foundRange, SignDomain inSignDomain=sdBoth) const</argsstring>
+        <name>getValueRange</name>
+        <reimplements refid="class_q_c_p_abstract_plottable_1aa3331b415b5939fe4df60b78831b2799">getValueRange</reimplements>
+        <param>
+          <type>bool &amp;</type>
+          <declname>foundRange</declname>
+        </param>
+        <param>
+          <type><ref refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8" kindref="member">SignDomain</ref></type>
+          <declname>inSignDomain</declname>
+          <defval><ref refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a082b98cfb91a7363a3b5cd17b0c1cd60" kindref="member">sdBoth</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2984" column="20" bodyfile="qcustomplot.cpp" bodystart="19542" bodyend="19581"/>
+        <references refid="class_q_c_p_statistical_box_1acac86cac93d9fa3d820b5aaa04ed96f6" compoundref="qcustomplot_8h" startline="2974">mLowerQuartile</references>
+        <references refid="class_q_c_p_statistical_box_1a16266f1e0e4e8e95b5d141c49479ef2e" compoundref="qcustomplot_8h" startline="2974">mMaximum</references>
+        <references refid="class_q_c_p_statistical_box_1ae43287ca13c8166bde2ac19bf0969d23" compoundref="qcustomplot_8h" startline="2974">mMedian</references>
+        <references refid="class_q_c_p_statistical_box_1a7143ece4e7e5f9ac010739fbc390bf0c" compoundref="qcustomplot_8h" startline="2974">mMinimum</references>
+        <references refid="class_q_c_p_statistical_box_1a415e2f77a89396c2af999afe027bdf6c" compoundref="qcustomplot_8h" startline="2973">mOutliers</references>
+        <references refid="class_q_c_p_statistical_box_1a865afbcca332ee851aa45807381bc80e" compoundref="qcustomplot_8h" startline="2974">mUpperQuartile</references>
+        <references refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a082b98cfb91a7363a3b5cd17b0c1cd60" compoundref="qcustomplot_8h" startline="1456">QCPAbstractPlottable::sdBoth</references>
+        <references refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a0fc9a70796ef60ad18ddd18056e6dc63" compoundref="qcustomplot_8h" startline="1455">QCPAbstractPlottable::sdNegative</references>
+        <references refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a02951859f243a4d24e779cfbb5471030" compoundref="qcustomplot_8h" startline="1457">QCPAbstractPlottable::sdPositive</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a699ede353d6a7207d9fb36dd3aabf348" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::drawQuartileBox</definition>
+        <argsstring>(QCPPainter *painter, QRectF *quartileBox=0) const</argsstring>
+        <name>drawQuartileBox</name>
+        <param>
+          <type><ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <param>
+          <type>QRectF *</type>
+          <declname>quartileBox</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2987" column="16" bodyfile="qcustomplot.cpp" bodystart="19448" bodyend="19459"/>
+        <references refid="class_q_c_p_abstract_plottable_1a59a80773c5cefc05a0646ac8e1149ed5" compoundref="qcustomplot_8cpp" startline="7297" endline="7300">QCPAbstractPlottable::applyDefaultAntialiasingHint</references>
+        <references refid="class_q_c_p_abstract_plottable_1a7ad84a36472441cf1f555c5683d0da93" compoundref="qcustomplot_8cpp" startline="7193" endline="7208">QCPAbstractPlottable::coordsToPixels</references>
+        <references refid="class_q_c_p_abstract_plottable_1ac9147022a662e92b46c39e7cb821b0af" compoundref="qcustomplot_8cpp" startline="7279" endline="7282">QCPAbstractPlottable::mainBrush</references>
+        <references refid="class_q_c_p_abstract_plottable_1abd790a3b229239f49067f136633a4b98" compoundref="qcustomplot_8cpp" startline="7269" endline="7272">QCPAbstractPlottable::mainPen</references>
+        <references refid="class_q_c_p_statistical_box_1a86fd1d3be5c5bc11d11eda7517069af4" compoundref="qcustomplot_8h" startline="2974">mKey</references>
+        <references refid="class_q_c_p_statistical_box_1acac86cac93d9fa3d820b5aaa04ed96f6" compoundref="qcustomplot_8h" startline="2974">mLowerQuartile</references>
+        <references refid="class_q_c_p_statistical_box_1a865afbcca332ee851aa45807381bc80e" compoundref="qcustomplot_8h" startline="2974">mUpperQuartile</references>
+        <references refid="class_q_c_p_statistical_box_1af365e40b0f706c3d76f857c7957f629d" compoundref="qcustomplot_8h" startline="2975">mWidth</references>
+        <references refid="class_q_c_p_painter_1af9c7a4cd1791403901f8c5b82a150195" compoundref="qcustomplot_8cpp" startline="86" endline="91">QCPPainter::setPen</references>
+        <referencedby refid="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317" compoundref="qcustomplot_8cpp" startline="19403" endline="19428">draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a642b90dd4ab5ab6e16188a9230401bcc" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::drawMedian</definition>
+        <argsstring>(QCPPainter *painter) const</argsstring>
+        <name>drawMedian</name>
+        <param>
+          <type><ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2988" column="16" bodyfile="qcustomplot.cpp" bodystart="19465" bodyend="19473"/>
+        <references refid="class_q_c_p_abstract_plottable_1a59a80773c5cefc05a0646ac8e1149ed5" compoundref="qcustomplot_8cpp" startline="7297" endline="7300">QCPAbstractPlottable::applyDefaultAntialiasingHint</references>
+        <references refid="class_q_c_p_abstract_plottable_1a7ad84a36472441cf1f555c5683d0da93" compoundref="qcustomplot_8cpp" startline="7193" endline="7208">QCPAbstractPlottable::coordsToPixels</references>
+        <references refid="class_q_c_p_painter_1a0b4b1b9bd495e182c731774dc800e6e0" compoundref="qcustomplot_8cpp" startline="129" endline="135">QCPPainter::drawLine</references>
+        <references refid="class_q_c_p_statistical_box_1a86fd1d3be5c5bc11d11eda7517069af4" compoundref="qcustomplot_8h" startline="2974">mKey</references>
+        <references refid="class_q_c_p_statistical_box_1ae43287ca13c8166bde2ac19bf0969d23" compoundref="qcustomplot_8h" startline="2974">mMedian</references>
+        <references refid="class_q_c_p_statistical_box_1a1af5b601049c575f778ae270f40c9443" compoundref="qcustomplot_8h" startline="2977">mMedianPen</references>
+        <references refid="class_q_c_p_statistical_box_1af365e40b0f706c3d76f857c7957f629d" compoundref="qcustomplot_8h" startline="2975">mWidth</references>
+        <references refid="class_q_c_p_painter_1af9c7a4cd1791403901f8c5b82a150195" compoundref="qcustomplot_8cpp" startline="86" endline="91">QCPPainter::setPen</references>
+        <referencedby refid="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317" compoundref="qcustomplot_8cpp" startline="19403" endline="19428">draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1ae64401aa18b9c45d4d33f9b46cf4bbd0" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::drawWhiskers</definition>
+        <argsstring>(QCPPainter *painter) const</argsstring>
+        <name>drawWhiskers</name>
+        <param>
+          <type><ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2989" column="16" bodyfile="qcustomplot.cpp" bodystart="19479" bodyend="19493"/>
+        <references refid="class_q_c_p_abstract_plottable_1a0889abc8dbfd357053f40bfafff8bf7d" compoundref="qcustomplot_8cpp" startline="7345" endline="7348">QCPAbstractPlottable::applyErrorBarsAntialiasingHint</references>
+        <references refid="class_q_c_p_abstract_plottable_1a7ad84a36472441cf1f555c5683d0da93" compoundref="qcustomplot_8cpp" startline="7193" endline="7208">QCPAbstractPlottable::coordsToPixels</references>
+        <references refid="class_q_c_p_painter_1a0b4b1b9bd495e182c731774dc800e6e0" compoundref="qcustomplot_8cpp" startline="129" endline="135">QCPPainter::drawLine</references>
+        <references refid="class_q_c_p_statistical_box_1a86fd1d3be5c5bc11d11eda7517069af4" compoundref="qcustomplot_8h" startline="2974">mKey</references>
+        <references refid="class_q_c_p_statistical_box_1acac86cac93d9fa3d820b5aaa04ed96f6" compoundref="qcustomplot_8h" startline="2974">mLowerQuartile</references>
+        <references refid="class_q_c_p_statistical_box_1a16266f1e0e4e8e95b5d141c49479ef2e" compoundref="qcustomplot_8h" startline="2974">mMaximum</references>
+        <references refid="class_q_c_p_statistical_box_1a7143ece4e7e5f9ac010739fbc390bf0c" compoundref="qcustomplot_8h" startline="2974">mMinimum</references>
+        <references refid="class_q_c_p_statistical_box_1a865afbcca332ee851aa45807381bc80e" compoundref="qcustomplot_8h" startline="2974">mUpperQuartile</references>
+        <references refid="class_q_c_p_statistical_box_1aa719b1d722a9f82364df1497a6dc1da8" compoundref="qcustomplot_8h" startline="2977">mWhiskerBarPen</references>
+        <references refid="class_q_c_p_statistical_box_1a25b7552499f0f090fcff02858b2265a5" compoundref="qcustomplot_8h" startline="2977">mWhiskerPen</references>
+        <references refid="class_q_c_p_statistical_box_1a4d166474f845d5db626e8b11a0815a6f" compoundref="qcustomplot_8h" startline="2976">mWhiskerWidth</references>
+        <references refid="class_q_c_p_painter_1af9c7a4cd1791403901f8c5b82a150195" compoundref="qcustomplot_8cpp" startline="86" endline="91">QCPPainter::setPen</references>
+        <referencedby refid="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317" compoundref="qcustomplot_8cpp" startline="19403" endline="19428">draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_statistical_box_1a8550e16af27b4e05d92bb337fb34324f" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void QCPStatisticalBox::drawOutliers</definition>
+        <argsstring>(QCPPainter *painter) const</argsstring>
+        <name>drawOutliers</name>
+        <param>
+          <type><ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="2990" column="16" bodyfile="qcustomplot.cpp" bodystart="19499" bodyend="19505"/>
+        <references refid="class_q_c_p_abstract_plottable_1ac95f26b15a1e5d9c7bd2c0a46d760fc9" compoundref="qcustomplot_8cpp" startline="7329" endline="7332">QCPAbstractPlottable::applyScattersAntialiasingHint</references>
+        <references refid="class_q_c_p_scatter_style_1afd8044ece445300499ca0dc164821e0f" compoundref="qcustomplot_8cpp" startline="520" endline="524">QCPScatterStyle::applyTo</references>
+        <references refid="class_q_c_p_abstract_plottable_1a7ad84a36472441cf1f555c5683d0da93" compoundref="qcustomplot_8cpp" startline="7193" endline="7208">QCPAbstractPlottable::coordsToPixels</references>
+        <references refid="class_q_c_p_scatter_style_1a2b3964961b6cbfbc87be6e1e3a6f3c96" compoundref="qcustomplot_8cpp" startline="534" endline="537">QCPScatterStyle::drawShape</references>
+        <references refid="class_q_c_p_statistical_box_1a86fd1d3be5c5bc11d11eda7517069af4" compoundref="qcustomplot_8h" startline="2974">mKey</references>
+        <references refid="class_q_c_p_statistical_box_1a415e2f77a89396c2af999afe027bdf6c" compoundref="qcustomplot_8h" startline="2973">mOutliers</references>
+        <references refid="class_q_c_p_statistical_box_1ae102e4187e1e6ba1f2df0f622b5171a4" compoundref="qcustomplot_8h" startline="2978">mOutlierStyle</references>
+        <references refid="class_q_c_p_abstract_plottable_1a67bc0622fd1b9fa14e54c14922dcec66" compoundref="qcustomplot_8h" startline="1463">QCPAbstractPlottable::mPen</references>
+        <referencedby refid="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317" compoundref="qcustomplot_8cpp" startline="19403" endline="19428">draw</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A plottable representing a single statistical box in a plot. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><image type="html" name="QCPStatisticalBox.png"></image>
+</para>
+<para>To plot data, assign it with the individual parameter functions or use <ref refid="class_q_c_p_statistical_box_1adf50c57b635edb12470c0e4a986aff37" kindref="member">setData</ref> to set all parameters at once. The individual functions are: <itemizedlist>
+<listitem><para><ref refid="class_q_c_p_statistical_box_1a84ff7cc61ba44890f0c3e0c99c19941e" kindref="member">setMinimum</ref> </para>
+</listitem>
+<listitem><para><ref refid="class_q_c_p_statistical_box_1a680941af5e23d902013962fa67223f9e" kindref="member">setLowerQuartile</ref> </para>
+</listitem>
+<listitem><para><ref refid="class_q_c_p_statistical_box_1a65970e77a897da4ecb4b15300868aad3" kindref="member">setMedian</ref> </para>
+</listitem>
+<listitem><para><ref refid="class_q_c_p_statistical_box_1a65a1375f941c5a2077b5201229e89346" kindref="member">setUpperQuartile</ref> </para>
+</listitem>
+<listitem><para><ref refid="class_q_c_p_statistical_box_1acec5ad1901f00f2c5387cfb4d9787eb3" kindref="member">setMaximum</ref></para>
+</listitem>
+</itemizedlist>
+Additionally you can define a list of outliers, drawn as scatter datapoints: <itemizedlist>
+<listitem><para><ref refid="class_q_c_p_statistical_box_1af9bc09620e0bf93bf444ee35e5800d1d" kindref="member">setOutliers</ref></para>
+</listitem>
+</itemizedlist>
+</para>
+<sect1 id="class_q_c_p_statistical_box_1appearance">
+<title>Changing the appearance</title>
+<para>The appearance of the box itself is controlled via <ref refid="class_q_c_p_abstract_plottable_1ab74b09ae4c0e7e13142fe4b5bf46cac7" kindref="member">setPen</ref> and <ref refid="class_q_c_p_abstract_plottable_1a7a4b92144dca6453a1f0f210e27edc74" kindref="member">setBrush</ref>. You may change the width of the box with <ref refid="class_q_c_p_statistical_box_1a0b62775bd67301b1eba5c785f2b26f14" kindref="member">setWidth</ref> in plot coordinates (not pixels).</para>
+<para>Analog functions exist for the minimum/maximum-whiskers: <ref refid="class_q_c_p_statistical_box_1a4a5034cb3b9b040444df05ab1684620b" kindref="member">setWhiskerPen</ref>, <ref refid="class_q_c_p_statistical_box_1aa8d3e503897788e1abf68dc74b5f147f" kindref="member">setWhiskerBarPen</ref>, <ref refid="class_q_c_p_statistical_box_1adf378812446bd66f34d1f7f293d991cd" kindref="member">setWhiskerWidth</ref>. The whisker width is the width of the bar at the top (maximum) and bottom (minimum).</para>
+<para>The median indicator line has its own pen, <ref refid="class_q_c_p_statistical_box_1a7260ac55b669f5d0a74f16d5ca84c52c" kindref="member">setMedianPen</ref>.</para>
+<para>If the whisker backbone pen is changed, make sure to set the capStyle to Qt::FlatCap. Else, the backbone line might exceed the whisker bars by a few pixels due to the pen cap being not perfectly flat.</para>
+<para>The Outlier data points are drawn as normal scatter points. Their look can be controlled with <ref refid="class_q_c_p_statistical_box_1ad5241943422eb8e58360a97e99ad6aa7" kindref="member">setOutlierStyle</ref></para>
+</sect1>
+<sect1 id="class_q_c_p_statistical_box_1usage">
+<title>Usage</title>
+<para>Like all data representing objects in <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref>, the <ref refid="class_q_c_p_statistical_box" kindref="compound">QCPStatisticalBox</ref> is a plottable. Usually, you first create an instance and add it to the customPlot: <programlisting filename="documentation/doc-code-snippets/mainwindow.cpp"></programlisting>and then modify the properties of the newly created plottable, e.g.: <programlisting filename="documentation/doc-code-snippets/mainwindow.cpp"></programlisting></para>
+</sect1>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="2">
+        <label>QCPAbstractPlottable</label>
+        <link refid="class_q_c_p_abstract_plottable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>QCPStatisticalBox</label>
+        <link refid="class_q_c_p_statistical_box"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QCPLayerable</label>
+        <link refid="class_q_c_p_layerable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="17">
+        <label>QCPLayoutInset</label>
+        <link refid="class_q_c_p_layout_inset"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>QCPLayoutElement</label>
+        <link refid="class_q_c_p_layout_element"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>#mParentLayout</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>QObject</label>
+      </node>
+      <node id="12">
+        <label>QCPRange</label>
+        <link refid="class_q_c_p_range"/>
+      </node>
+      <node id="18">
+        <label>QCPLegend</label>
+        <link refid="class_q_c_p_legend"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QCPAbstractPlottable</label>
+        <link refid="class_q_c_p_abstract_plottable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>QCPLineEnding</label>
+        <link refid="class_q_c_p_line_ending"/>
+      </node>
+      <node id="9">
+        <label>QCPLayout</label>
+        <link refid="class_q_c_p_layout"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>QCPGrid</label>
+        <link refid="class_q_c_p_grid"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>#mParentAxis</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>QCPAxisPainterPrivate</label>
+        <link refid="class_q_c_p_axis_painter_private"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>+lowerEnding</edgelabel>
+          <edgelabel>+upperEnding</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>#mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QWidget</label>
+      </node>
+      <node id="1">
+        <label>QCPStatisticalBox</label>
+        <link refid="class_q_c_p_statistical_box"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>#mOutlierStyle</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QCPLayer</label>
+        <link refid="class_q_c_p_layer"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>#mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>QCPLayoutGrid</label>
+        <link refid="class_q_c_p_layout_grid"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QCPLayerable</label>
+        <link refid="class_q_c_p_layerable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>#mLayer</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>#mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>QCPAxis</label>
+        <link refid="class_q_c_p_axis"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>#mRange</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>#mAxisPainter</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>#mGrid</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>#mAxisRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>QCPAxisRect</label>
+        <link refid="class_q_c_p_axis_rect"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>#mInsetLayout</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>#mDragStartHorzRange</edgelabel>
+          <edgelabel>#mDragStartVertRange</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QCustomPlot</label>
+        <link refid="class_q_custom_plot"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>#mCurrentLayer</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>#mPlotLayout</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>+xAxis</edgelabel>
+          <edgelabel>+xAxis2</edgelabel>
+          <edgelabel>+yAxis</edgelabel>
+          <edgelabel>+yAxis2</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>+legend</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>QCPScatterStyle</label>
+        <link refid="class_q_c_p_scatter_style"/>
+      </node>
+    </collaborationgraph>
+    <location file="qcustomplot.h" line="2915" column="1" bodyfile="qcustomplot.h" bodystart="2916" bodyend="2994"/>
+    <listofallmembers>
+      <member refid="class_q_c_p_abstract_plottable_1a70f8cabfd808f7d5204b9f18c45c13f5" prot="public" virt="virtual"><scope>QCPStatisticalBox</scope><name>addToLegend</name></member>
+      <member refid="class_q_c_p_layerable_1a71cbd212fde2703cee076e204a475709" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>antialiased</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1add06e122d84deb9f451ace9bb8ad9c96" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>antialiasedErrorBars</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a022717896dc57b638a7b5a7be7212ba9" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>antialiasedFill</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a795370db6b1309de0ab60b633efb5ec2" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>antialiasedScatters</name></member>
+      <member refid="class_q_c_p_layerable_1acb663e375d2d36dc5c55021ee5a2119b" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>applyAntialiasingHint</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a59a80773c5cefc05a0646ac8e1149ed5" prot="protected" virt="virtual"><scope>QCPStatisticalBox</scope><name>applyDefaultAntialiasingHint</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a0889abc8dbfd357053f40bfafff8bf7d" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>applyErrorBarsAntialiasingHint</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a8d06a59ea23324cce6330ebf2262c0ed" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>applyFillAntialiasingHint</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ac95f26b15a1e5d9c7bd2c0a46d760fc9" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>applyScattersAntialiasingHint</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a893b4896dfd92b68b05b2600b80f5826" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>brush</name></member>
+      <member refid="class_q_c_p_statistical_box_1a19112994449df0c20287858436cc68e3" prot="public" virt="virtual"><scope>QCPStatisticalBox</scope><name>clearData</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1aafb817dbea97d2798967f3371a701413" prot="protected" virt="virtual"><scope>QCPStatisticalBox</scope><name>clipRect</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a7ad84a36472441cf1f555c5683d0da93" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>coordsToPixels</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a5acb50ae984eef09a7ab92315d2ad708" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>coordsToPixels</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a6fa0d0f95560ea8b01ee13f296dab2b1" prot="protected" virt="virtual"><scope>QCPStatisticalBox</scope><name>deselectEvent</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1af7e992b638c8aa688abceac579bb90d7" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>distSqrToLine</name></member>
+      <member refid="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317" prot="protected" virt="virtual"><scope>QCPStatisticalBox</scope><name>draw</name></member>
+      <member refid="class_q_c_p_statistical_box_1a41c6193fd24f5c1b6c754e7bcfe3e174" prot="protected" virt="virtual"><scope>QCPStatisticalBox</scope><name>drawLegendIcon</name></member>
+      <member refid="class_q_c_p_statistical_box_1a642b90dd4ab5ab6e16188a9230401bcc" prot="protected" virt="virtual"><scope>QCPStatisticalBox</scope><name>drawMedian</name></member>
+      <member refid="class_q_c_p_statistical_box_1a8550e16af27b4e05d92bb337fb34324f" prot="protected" virt="virtual"><scope>QCPStatisticalBox</scope><name>drawOutliers</name></member>
+      <member refid="class_q_c_p_statistical_box_1a699ede353d6a7207d9fb36dd3aabf348" prot="protected" virt="virtual"><scope>QCPStatisticalBox</scope><name>drawQuartileBox</name></member>
+      <member refid="class_q_c_p_statistical_box_1ae64401aa18b9c45d4d33f9b46cf4bbd0" prot="protected" virt="virtual"><scope>QCPStatisticalBox</scope><name>drawWhiskers</name></member>
+      <member refid="class_q_c_p_statistical_box_1ac17d9d68e41be25b7f0e8a47f9a5d225" prot="protected" virt="virtual"><scope>QCPStatisticalBox</scope><name>getKeyRange</name></member>
+      <member refid="class_q_c_p_statistical_box_1a13958798713d4bb58b94e148b409877d" prot="protected" virt="virtual"><scope>QCPStatisticalBox</scope><name>getValueRange</name></member>
+      <member refid="class_q_c_p_layerable_1a8cbe5a0c9a5674249982f5ca5f8e02bc" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>initializeParentPlot</name></member>
+      <member refid="class_q_c_p_statistical_box_1a0543a2d25346376ba44a42817206cc42" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>key</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a2cdd6f0dd5e9a979037f86b4000d9cfe" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>keyAxis</name></member>
+      <member refid="class_q_c_p_layerable_1a5ff4862e8c784c9f5986dbc1533ba2a4" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>layer</name></member>
+      <member refid="class_q_c_p_layerable_1abbf8657cedea73ac1c3499b521c90eba" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>layerChanged</name></member>
+      <member refid="class_q_c_p_statistical_box_1afe9c3814cb02e3dffbe260f6bdb42d5e" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>lowerQuartile</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ac9147022a662e92b46c39e7cb821b0af" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mainBrush</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1abd790a3b229239f49067f136633a4b98" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mainPen</name></member>
+      <member refid="class_q_c_p_layerable_1a3ab45a4c76a3333ce42eb217a81733ec" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mAntialiased</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ad48660b2bd301576e92fb033d8f455ea" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mAntialiasedErrorBars</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a152ac765bedf927fb240545d11d453ea" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mAntialiasedFill</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1aa115755e525a8e3a86dc683f9cab755b" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mAntialiasedScatters</name></member>
+      <member refid="class_q_c_p_statistical_box_1a5ca15d360056689b6fe9180b835e26c9" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>maximum</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a33f00674c0161c13315ab9da0895418e" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mBrush</name></member>
+      <member refid="class_q_c_p_statistical_box_1acde7599a12b0f73653ae8c681bf0bda0" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>median</name></member>
+      <member refid="class_q_c_p_statistical_box_1af767bc7b6b477d005535314b35aca683" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>medianPen</name></member>
+      <member refid="class_q_c_p_statistical_box_1ac5d07f908a9c49c81e2c7ff9dc8831e2" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>minimum</name></member>
+      <member refid="class_q_c_p_statistical_box_1a86fd1d3be5c5bc11d11eda7517069af4" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mKey</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a426f42e254d0f8ce5436a868c61a6827" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mKeyAxis</name></member>
+      <member refid="class_q_c_p_layerable_1aa38ec5891aff0f50b36fd63e9372a0cd" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mLayer</name></member>
+      <member refid="class_q_c_p_statistical_box_1acac86cac93d9fa3d820b5aaa04ed96f6" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mLowerQuartile</name></member>
+      <member refid="class_q_c_p_statistical_box_1a16266f1e0e4e8e95b5d141c49479ef2e" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mMaximum</name></member>
+      <member refid="class_q_c_p_statistical_box_1ae43287ca13c8166bde2ac19bf0969d23" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mMedian</name></member>
+      <member refid="class_q_c_p_statistical_box_1a1af5b601049c575f778ae270f40c9443" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mMedianPen</name></member>
+      <member refid="class_q_c_p_statistical_box_1a7143ece4e7e5f9ac010739fbc390bf0c" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mMinimum</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ac29ffef424e2488675930de18cde612a" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mName</name></member>
+      <member refid="class_q_c_p_statistical_box_1a415e2f77a89396c2af999afe027bdf6c" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mOutliers</name></member>
+      <member refid="class_q_c_p_statistical_box_1ae102e4187e1e6ba1f2df0f622b5171a4" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mOutlierStyle</name></member>
+      <member refid="class_q_c_p_layerable_1af94484cfb7cbbddb7de522e9be71d9a4" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>moveToLayer</name></member>
+      <member refid="class_q_c_p_layerable_1a3291445a980053e2d17a21d15957624e" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mParentLayerable</name></member>
+      <member refid="class_q_c_p_layerable_1aa2a528433e44db02b8aef23c1f9f90ed" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mParentPlot</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a67bc0622fd1b9fa14e54c14922dcec66" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mPen</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1aceee52342c8e75727abcbd164986fdcb" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mSelectable</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a43f68a0603e9bcd016bdfa6d9d5c41c9" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mSelected</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1aea3c0da30c7a8be23ad5f2d9bca36762" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mSelectedBrush</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a10619472f5d5e10e9519a599f1cf5576" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mSelectedPen</name></member>
+      <member refid="class_q_c_p_statistical_box_1a865afbcca332ee851aa45807381bc80e" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mUpperQuartile</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a2901452ca4aea911a1827717934a4bda" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mValueAxis</name></member>
+      <member refid="class_q_c_p_layerable_1a62e3aed8427d6ce3ccf716f285106cb3" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mVisible</name></member>
+      <member refid="class_q_c_p_statistical_box_1aa719b1d722a9f82364df1497a6dc1da8" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mWhiskerBarPen</name></member>
+      <member refid="class_q_c_p_statistical_box_1a25b7552499f0f090fcff02858b2265a5" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mWhiskerPen</name></member>
+      <member refid="class_q_c_p_statistical_box_1a4d166474f845d5db626e8b11a0815a6f" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mWhiskerWidth</name></member>
+      <member refid="class_q_c_p_statistical_box_1af365e40b0f706c3d76f857c7957f629d" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>mWidth</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a52c226eefcb1920240eeabae574d28c0" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>name</name></member>
+      <member refid="class_q_c_p_statistical_box_1a0a2c04824caeeabc4987a7a3ccf6b693" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>outliers</name></member>
+      <member refid="class_q_c_p_statistical_box_1aef92e38fcb8e5041a44c2e01886e3b66" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>outlierStyle</name></member>
+      <member refid="class_q_c_p_layerable_1aa78b7e644d2c519e1a9a6f2ac5fcd858" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>parentLayerable</name></member>
+      <member refid="class_q_c_p_layerable_1a473edb813a4c1929d6b6a8fe3ff3faf7" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>parentPlot</name></member>
+      <member refid="class_q_c_p_layerable_1ab20b7dbd8e0249ed61adb9622c427382" prot="protected" virt="virtual"><scope>QCPStatisticalBox</scope><name>parentPlotInitialized</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ad5972efc31344e5a7a78ab4f8864b2d3" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>pen</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a3903c1120ab5c27e7fa46b597ef267bd" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>pixelsToCoords</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a28d32c0062b9450847851ffdee1c5f69" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>pixelsToCoords</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1af78a036e40db6f53a31abadc5323715a" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>QCPAbstractPlottable</name></member>
+      <member refid="class_q_c_p_layerable_1a74c0fa237f29bf0e49565013fc5d1ec0" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>QCPLayerable</name></member>
+      <member refid="class_q_c_p_statistical_box_1a8429035e7adfbd7f05805a6530ad5e3b" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>QCPLegend</name></member>
+      <member refid="class_q_c_p_statistical_box_1a75c2b3e7fcd0741cc981693a2ba63b27" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>QCPStatisticalBox</name></member>
+      <member refid="class_q_c_p_statistical_box_1a1cdf9df76adcfae45261690aa0ca2198" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>QCustomPlot</name></member>
+      <member refid="class_q_c_p_layerable_1ab054e88f15d485defcb95e7376f119e7" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>realVisibility</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ac95fb2604d9106d0852ad9ceb326fe8c" prot="public" virt="virtual"><scope>QCPStatisticalBox</scope><name>removeFromLegend</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a1491c4a606bccd2d09e65e11b79eb882" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>rescaleAxes</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ae96b83c961e257da116c6acf9c7da308" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>rescaleKeyAxis</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1aa1e408bb2d13999150c3f7f8a8579ca9" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>rescaleValueAxis</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a082b98cfb91a7363a3b5cd17b0c1cd60" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>sdBoth</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a0fc9a70796ef60ad18ddd18056e6dc63" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>sdNegative</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8a02951859f243a4d24e779cfbb5471030" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>sdPositive</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1adf896b8a213fea74440c7bc969cf6e4c" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>selectable</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a0059caa3f3581f3959660fef8cbb71c4" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>selectableChanged</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a0b3b514474fe93354fc74cfc144184b4" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>selected</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1afe5f3f74b09e89713ba39da04079a337" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>selectedBrush</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1aafdfd0946b18364321ffce01cc6045a0" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>selectedPen</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a16aaad02456aa23a759efd1ac90c79bf" prot="protected" virt="virtual"><scope>QCPStatisticalBox</scope><name>selectEvent</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1afb5e4718c232a16d0fb06b00e172be9e" prot="protected" virt="virtual"><scope>QCPStatisticalBox</scope><name>selectionCategory</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a3af66432b1dca93b28e00e78a8c7c1d9" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>selectionChanged</name></member>
+      <member refid="class_q_c_p_statistical_box_1a0153ac16326b94450afbca208e3f9961" prot="public" virt="virtual"><scope>QCPStatisticalBox</scope><name>selectTest</name></member>
+      <member refid="class_q_c_p_layerable_1a4fd43e89be4a553ead41652565ff0581" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setAntialiased</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a757beb744b96cf1855cca5ab9d3ecf52" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setAntialiasedErrorBars</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a089d6b5577120239b55c39ed27c39536" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setAntialiasedFill</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a2f03f067ede2ed4da6f7d0e4777a3f02" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setAntialiasedScatters</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a7a4b92144dca6453a1f0f210e27edc74" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setBrush</name></member>
+      <member refid="class_q_c_p_statistical_box_1adf50c57b635edb12470c0e4a986aff37" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setData</name></member>
+      <member refid="class_q_c_p_statistical_box_1a84a1c6d34b2f9af40bca0c527d51e97e" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setKey</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a8524fa2994c63c0913ebd9bb2ffa3920" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setKeyAxis</name></member>
+      <member refid="class_q_c_p_layerable_1ab0d0da6d2de45a118886d2c8e16d5a54" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setLayer</name></member>
+      <member refid="class_q_c_p_layerable_1ab25a0e7b897993b44447caee0f142083" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setLayer</name></member>
+      <member refid="class_q_c_p_statistical_box_1a680941af5e23d902013962fa67223f9e" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setLowerQuartile</name></member>
+      <member refid="class_q_c_p_statistical_box_1acec5ad1901f00f2c5387cfb4d9787eb3" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setMaximum</name></member>
+      <member refid="class_q_c_p_statistical_box_1a65970e77a897da4ecb4b15300868aad3" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setMedian</name></member>
+      <member refid="class_q_c_p_statistical_box_1a7260ac55b669f5d0a74f16d5ca84c52c" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setMedianPen</name></member>
+      <member refid="class_q_c_p_statistical_box_1a84ff7cc61ba44890f0c3e0c99c19941e" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setMinimum</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ab79c7ba76bc7fa89a4b3580e12149f1f" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setName</name></member>
+      <member refid="class_q_c_p_statistical_box_1af9bc09620e0bf93bf444ee35e5800d1d" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setOutliers</name></member>
+      <member refid="class_q_c_p_statistical_box_1ad5241943422eb8e58360a97e99ad6aa7" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setOutlierStyle</name></member>
+      <member refid="class_q_c_p_layerable_1aa23c893671f1f6744ac235cf2204cf3a" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setParentLayerable</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ab74b09ae4c0e7e13142fe4b5bf46cac7" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setPen</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a22c69299eb5569e0f6bf084877a37dc4" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setSelectable</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1afbd5428c2952f59d952e11ab5cd79176" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setSelected</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1ae8c816874089f7a44001e8618e81a9dc" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setSelectedBrush</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a6911603cad23ab0469b108224517516f" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setSelectedPen</name></member>
+      <member refid="class_q_c_p_statistical_box_1a65a1375f941c5a2077b5201229e89346" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setUpperQuartile</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a71626a07367e241ec62ad2c34baf21cb" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setValueAxis</name></member>
+      <member refid="class_q_c_p_layerable_1a3bed99ddc396b48ce3ebfdc0418744f8" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setVisible</name></member>
+      <member refid="class_q_c_p_statistical_box_1aa8d3e503897788e1abf68dc74b5f147f" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setWhiskerBarPen</name></member>
+      <member refid="class_q_c_p_statistical_box_1a4a5034cb3b9b040444df05ab1684620b" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setWhiskerPen</name></member>
+      <member refid="class_q_c_p_statistical_box_1adf378812446bd66f34d1f7f293d991cd" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setWhiskerWidth</name></member>
+      <member refid="class_q_c_p_statistical_box_1a0b62775bd67301b1eba5c785f2b26f14" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>setWidth</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1a661743478a1d3c09d28ec2711d7653d8" prot="protected" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>SignDomain</name></member>
+      <member refid="class_q_c_p_statistical_box_1affa4149e6abe33edb734c611410939b6" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>upperQuartile</name></member>
+      <member refid="class_q_c_p_abstract_plottable_1af47809a644a68ffd955fb30b01fb4f2f" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>valueAxis</name></member>
+      <member refid="class_q_c_p_layerable_1af0297b944b6192b6d67d00bff41b6b70" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>visible</name></member>
+      <member refid="class_q_c_p_statistical_box_1a47ed9ad9d2ca65640319a2f071982ed4" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>whiskerBarPen</name></member>
+      <member refid="class_q_c_p_statistical_box_1a67e5144f07645fe25c31001c460817fc" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>whiskerPen</name></member>
+      <member refid="class_q_c_p_statistical_box_1aacfa6686c7cf4af18794ec02354f4782" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>whiskerWidth</name></member>
+      <member refid="class_q_c_p_statistical_box_1ae589b7481dec6ef8e50ebb6492d296f1" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>width</name></member>
+      <member refid="class_q_c_p_layerable_1a4231cf5b3601d6d3a5781283e7a9735b" prot="public" virt="non-virtual"><scope>QCPStatisticalBox</scope><name>~QCPLayerable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

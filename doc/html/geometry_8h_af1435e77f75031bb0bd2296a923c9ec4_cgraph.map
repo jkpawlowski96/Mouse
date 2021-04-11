@@ -1,0 +1,4 @@
+<map id="TurnAroundDirection" name="TurnAroundDirection">
+<area shape="rect" id="node1" title="Rotate direction of 180 degree." alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node2" href="$geometry_8cpp.html#ab7059afff94c264c019615f0a68c96b5" title="Rotate direction to right." alt="" coords="192,5,333,32"/>
+</map>

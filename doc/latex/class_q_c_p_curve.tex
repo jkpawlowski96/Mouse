@@ -1,0 +1,1961 @@
+\hypertarget{class_q_c_p_curve}{}\doxysection{QCPCurve Class Reference}
+\label{class_q_c_p_curve}\index{QCPCurve@{QCPCurve}}
+
+
+A plottable representing a parametric curve in a plot.  
+
+
+
+
+{\ttfamily \#include $<$qcustomplot.\+h$>$}
+
+
+
+Inheritance diagram for QCPCurve\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_q_c_p_curve__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for QCPCurve\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_q_c_p_curve__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}{Line\+Style}} \{ \mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1aec1601a191cdf0b4e761c4c66092cc48}{ls\+None}}
+, \mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1ade5822ce6fbf131d3df131795c2e1003}{ls\+Line}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_curve_a36de58e2652b3fa47bdf9187d421d3ce}{QCPCurve}} (\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{key\+Axis}}, \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$\mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{value\+Axis}})
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_curve_a99ee5136754884a220cc0bcacfe419a3}{$\sim$\+QCPCurve}} ()
+\item 
+\mbox{\hyperlink{qcustomplot_8h_a444d37ec9cb2951b3a7fe443c34d1658}{QCPCurve\+Data\+Map}} $\ast$ \mbox{\hyperlink{class_q_c_p_curve_a667ca2594cf651e3032c624dbaa95add}{data}} () const
+\item 
+\mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} \mbox{\hyperlink{class_q_c_p_curve_afa6bd72a3a331a5ed45d3e0c5843b592}{scatter\+Style}} () const
+\item 
+\mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}{Line\+Style}} \mbox{\hyperlink{class_q_c_p_curve_a06e3cf3f8f1add689254b3cda66e040e}{line\+Style}} () const
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a631ac886708460013b30052f49cbc9da}{set\+Data}} (\mbox{\hyperlink{qcustomplot_8h_a444d37ec9cb2951b3a7fe443c34d1658}{QCPCurve\+Data\+Map}} $\ast$\mbox{\hyperlink{class_q_c_p_curve_a667ca2594cf651e3032c624dbaa95add}{data}}, bool copy=false)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_affe80e011e2ced62a88f614acd6ab8d1}{set\+Data}} (const QVector$<$ double $>$ \&t, const QVector$<$ double $>$ \&key, const QVector$<$ double $>$ \&value)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a963d4c45777deef15848a8f56172d066}{set\+Data}} (const QVector$<$ double $>$ \&key, const QVector$<$ double $>$ \&value)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a55e43b44709bf50a35500644988aa706}{set\+Scatter\+Style}} (const \mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} \&style)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a4a377ec863ff81a1875c3094a6177c19}{set\+Line\+Style}} (\mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}{Line\+Style}} style)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a4e24023c3b9ac75440c7a260172c99af}{add\+Data}} (const \mbox{\hyperlink{qcustomplot_8h_a444d37ec9cb2951b3a7fe443c34d1658}{QCPCurve\+Data\+Map}} \&data\+Map)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_ad304326aba096911f92452d8bfe0470e}{add\+Data}} (const \mbox{\hyperlink{class_q_c_p_curve_data}{QCPCurve\+Data}} \&\mbox{\hyperlink{class_q_c_p_curve_a667ca2594cf651e3032c624dbaa95add}{data}})
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a13398b236f6926014e404eeb5b9f415c}{add\+Data}} (double t, double key, double value)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_ada4762e793cd5707b33f35b8a4b0f8fb}{add\+Data}} (double key, double value)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a27c8b3dddd4067d626397ee199626722}{add\+Data}} (const QVector$<$ double $>$ \&ts, const QVector$<$ double $>$ \&keys, const QVector$<$ double $>$ \&values)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_af6f4284fbc2f34e676f24dce03c34fe5}{remove\+Data\+Before}} (double t)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a0365cb947c4e6d405ee22e00191d5f52}{remove\+Data\+After}} (double t)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_ad45bb5479be799163028ef2b776f7221}{remove\+Data}} (double fromt, double tot)
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a30c91acfa591ec534c49fed4c0fca39a}{remove\+Data}} (double t)
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_curve_ae0462c61dbfbac07db0736ec64110241}{clear\+Data}} ()
+\item 
+virtual double \mbox{\hyperlink{class_q_c_p_curve_a87a9fb34a2a48dcae4c1245ada235e7d}{select\+Test}} (const QPointF \&pos, bool only\+Selectable, QVariant $\ast$details=0) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_curve_a2361302d2fc6ec669849bd3bca00c4b2}{draw}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter)
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_curve_acccc86e9f496bb0392529f59f3a69dbc}{draw\+Legend\+Icon}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter, const QRectF \&rect) const
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \mbox{\hyperlink{class_q_c_p_curve_a1b24b1384d72862e8294688501ffa01d}{get\+Key\+Range}} (bool \&found\+Range, \mbox{\hyperlink{class_q_c_p_abstract_plottable_a661743478a1d3c09d28ec2711d7653d8}{Sign\+Domain}} in\+Sign\+Domain=\mbox{\hyperlink{class_q_c_p_abstract_plottable_a661743478a1d3c09d28ec2711d7653d8a082b98cfb91a7363a3b5cd17b0c1cd60}{sd\+Both}}) const
+\item 
+virtual \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} \mbox{\hyperlink{class_q_c_p_curve_a12fcfce09ffa9965b3e01555d968d378}{get\+Value\+Range}} (bool \&found\+Range, \mbox{\hyperlink{class_q_c_p_abstract_plottable_a661743478a1d3c09d28ec2711d7653d8}{Sign\+Domain}} in\+Sign\+Domain=\mbox{\hyperlink{class_q_c_p_abstract_plottable_a661743478a1d3c09d28ec2711d7653d8a082b98cfb91a7363a3b5cd17b0c1cd60}{sd\+Both}}) const
+\item 
+virtual void \mbox{\hyperlink{class_q_c_p_curve_a00d17c020796ac84c84f881201c2ed10}{draw\+Scatter\+Plot}} (\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$painter, const QVector$<$ QPointF $>$ $\ast$point\+Data) const
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a3ca9d2c315c643f732cc85e20d18b551}{get\+Curve\+Data}} (QVector$<$ QPointF $>$ $\ast$line\+Data) const
+\item 
+int \mbox{\hyperlink{class_q_c_p_curve_a316b216383dbff606f59c38bd72e6501}{get\+Region}} (double x, double y, double rect\+Left, double rect\+Top, double rect\+Right, double rect\+Bottom) const
+\item 
+QPointF \mbox{\hyperlink{class_q_c_p_curve_ae729c9aef90af9b7463c379cb88459f6}{get\+Optimized\+Point}} (int prev\+Region, double prev\+Key, double prev\+Value, double key, double value, double rect\+Left, double rect\+Top, double rect\+Right, double rect\+Bottom) const
+\item 
+QVector$<$ QPointF $>$ \mbox{\hyperlink{class_q_c_p_curve_a2f1455455d71de9ef9190c50a90f0abc}{get\+Optimized\+Corner\+Points}} (int prev\+Region, int current\+Region, double prev\+Key, double prev\+Value, double key, double value, double rect\+Left, double rect\+Top, double rect\+Right, double rect\+Bottom) const
+\item 
+bool \mbox{\hyperlink{class_q_c_p_curve_af5df2560b30333fe662ec676bd355415}{may\+Traverse}} (int prev\+Region, int current\+Region) const
+\item 
+bool \mbox{\hyperlink{class_q_c_p_curve_a82a78dffde71e7b9c40217fa7e381057}{get\+Traverse}} (double prev\+Key, double prev\+Value, double key, double value, double rect\+Left, double rect\+Top, double rect\+Right, double rect\+Bottom, QPointF \&crossA, QPointF \&crossB) const
+\item 
+void \mbox{\hyperlink{class_q_c_p_curve_a592d6e3dbd42cb8cea35eda889ece1b1}{get\+Traverse\+Corner\+Points}} (int prev\+Region, int current\+Region, double rect\+Left, double rect\+Top, double rect\+Right, double rect\+Bottom, QVector$<$ QPointF $>$ \&before\+Traverse, QVector$<$ QPointF $>$ \&after\+Traverse) const
+\item 
+double \mbox{\hyperlink{class_q_c_p_curve_adc3ab8051946f9097cdf7c0707ef1a25}{point\+Distance}} (const QPointF \&pixel\+Point) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{qcustomplot_8h_a444d37ec9cb2951b3a7fe443c34d1658}{QCPCurve\+Data\+Map}} $\ast$ \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{m\+Data}}
+\item 
+\mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} \mbox{\hyperlink{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}{m\+Scatter\+Style}}
+\item 
+\mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}{Line\+Style}} \mbox{\hyperlink{class_q_c_p_curve_ae1f35ae2b15aee8e15bcdfec5be95156}{m\+Line\+Style}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_q_c_p_curve_a1cdf9df76adcfae45261690aa0ca2198}{QCustom\+Plot}}
+\item 
+class \mbox{\hyperlink{class_q_c_p_curve_a8429035e7adfbd7f05805a6530ad5e3b}{QCPLegend}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A plottable representing a parametric curve in a plot. 
+
+
+
+Unlike \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}}, plottables of this type may have multiple points with the same key coordinate, so their visual representation can have {\itshape loops}. This is realized by introducing a third coordinate {\itshape t}, which defines the order of the points described by the other two coordinates {\itshape x} and {\itshape y}.
+
+To plot data, assign it with the \mbox{\hyperlink{class_q_c_p_curve_a631ac886708460013b30052f49cbc9da}{set\+Data}} or \mbox{\hyperlink{class_q_c_p_curve_a4e24023c3b9ac75440c7a260172c99af}{add\+Data}} functions.
+
+Gaps in the curve can be created by adding data points with NaN as key and value ({\ttfamily q\+QNa\+N()} or {\ttfamily std\+::numeric\+\_\+limits$<$double$>$\+::quiet\+\_\+\+Na\+N()}) in between the two data points that shall be separated.\hypertarget{class_q_c_p_statistical_box_appearance}{}\doxysubsection{Changing the appearance}\label{class_q_c_p_statistical_box_appearance}
+The appearance of the curve is determined by the pen and the brush (\mbox{\hyperlink{class_q_c_p_abstract_plottable_ab74b09ae4c0e7e13142fe4b5bf46cac7}{set\+Pen}}, \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7a4b92144dca6453a1f0f210e27edc74}{set\+Brush}}). \hypertarget{class_q_c_p_statistical_box_usage}{}\doxysubsection{Usage}\label{class_q_c_p_statistical_box_usage}
+Like all data representing objects in \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}}, the \mbox{\hyperlink{class_q_c_p_curve}{QCPCurve}} is a plottable (\mbox{\hyperlink{class_q_c_p_abstract_plottable}{QCPAbstract\+Plottable}}). So the plottable-\/interface of \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} applies (\mbox{\hyperlink{class_q_custom_plot_a32de81ff53e263e785b83b52ecd99d6f}{QCustom\+Plot\+::plottable}}, \mbox{\hyperlink{class_q_custom_plot_ab7ad9174f701f9c6f64e378df77927a6}{QCustom\+Plot\+::add\+Plottable}}, \mbox{\hyperlink{class_q_custom_plot_af3dafd56884208474f311d6226513ab2}{QCustom\+Plot\+::remove\+Plottable}}, etc.)
+
+Usually, you first create an instance and add it to the custom\+Plot\+: 
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+and then modify the properties of the newly created plottable, e.\+g.\+: 
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+
+
+Definition at line 2660 of file qcustomplot.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}\label{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}} 
+\index{QCPCurve@{QCPCurve}!LineStyle@{LineStyle}}
+\index{LineStyle@{LineStyle}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{LineStyle}{LineStyle}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}{QCPCurve\+::\+Line\+Style}}}
+
+Defines how the curve\textquotesingle{}s line is represented visually in the plot. The line is drawn with the current pen of the curve (\mbox{\hyperlink{class_q_c_p_abstract_plottable_ab74b09ae4c0e7e13142fe4b5bf46cac7}{set\+Pen}}). \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_curve_a4a377ec863ff81a1875c3094a6177c19}{set\+Line\+Style}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lsNone@{lsNone}!QCPCurve@{QCPCurve}}\index{QCPCurve@{QCPCurve}!lsNone@{lsNone}}}\mbox{\Hypertarget{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1aec1601a191cdf0b4e761c4c66092cc48}\label{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1aec1601a191cdf0b4e761c4c66092cc48}} 
+ls\+None&No line is drawn between data points (e.\+g. only scatters) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{lsLine@{lsLine}!QCPCurve@{QCPCurve}}\index{QCPCurve@{QCPCurve}!lsLine@{lsLine}}}\mbox{\Hypertarget{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1ade5822ce6fbf131d3df131795c2e1003}\label{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1ade5822ce6fbf131d3df131795c2e1003}} 
+ls\+Line&Data points are connected with a straight line. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 2673 of file qcustomplot.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2673                  \{ \mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1aec1601a191cdf0b4e761c4c66092cc48}{lsNone}}  }
+\DoxyCodeLine{2674                    ,\mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1ade5822ce6fbf131d3df131795c2e1003}{lsLine}} }
+\DoxyCodeLine{2675                  \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_c_p_curve_a36de58e2652b3fa47bdf9187d421d3ce}\label{class_q_c_p_curve_a36de58e2652b3fa47bdf9187d421d3ce}} 
+\index{QCPCurve@{QCPCurve}!QCPCurve@{QCPCurve}}
+\index{QCPCurve@{QCPCurve}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{QCPCurve()}{QCPCurve()}}
+{\footnotesize\ttfamily QCPCurve\+::\+QCPCurve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$}]{key\+Axis,  }\item[{\mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} $\ast$}]{value\+Axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructs a curve which uses {\itshape key\+Axis} as its key axis (\char`\"{}x\char`\"{}) and {\itshape value\+Axis} as its value axis (\char`\"{}y\char`\"{}). {\itshape key\+Axis} and {\itshape value\+Axis} must reside in the same \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} instance and not have the same orientation. If either of these restrictions is violated, a corresponding message is printed to the debug output (q\+Debug), the construction is not aborted, though.
+
+The constructed \mbox{\hyperlink{class_q_c_p_curve}{QCPCurve}} can be added to the plot with \mbox{\hyperlink{class_q_custom_plot_ab7ad9174f701f9c6f64e378df77927a6}{QCustom\+Plot\+::add\+Plottable}}, \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} then takes ownership of the graph. 
+
+Definition at line 16812 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16812                                                        :}
+\DoxyCodeLine{16813   \mbox{\hyperlink{class_q_c_p_abstract_plottable_af78a036e40db6f53a31abadc5323715a}{QCPAbstractPlottable}}(\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{keyAxis}}, \mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{valueAxis}})}
+\DoxyCodeLine{16814 \{}
+\DoxyCodeLine{16815   \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}} = \textcolor{keyword}{new} \mbox{\hyperlink{qcustomplot_8h_a444d37ec9cb2951b3a7fe443c34d1658}{QCPCurveDataMap}};}
+\DoxyCodeLine{16816   \mbox{\hyperlink{class_q_c_p_abstract_plottable_a67bc0622fd1b9fa14e54c14922dcec66}{mPen}}.setColor(Qt::blue);}
+\DoxyCodeLine{16817   \mbox{\hyperlink{class_q_c_p_abstract_plottable_a67bc0622fd1b9fa14e54c14922dcec66}{mPen}}.setStyle(Qt::SolidLine);}
+\DoxyCodeLine{16818   \mbox{\hyperlink{class_q_c_p_abstract_plottable_a33f00674c0161c13315ab9da0895418e}{mBrush}}.setColor(Qt::blue);}
+\DoxyCodeLine{16819   \mbox{\hyperlink{class_q_c_p_abstract_plottable_a33f00674c0161c13315ab9da0895418e}{mBrush}}.setStyle(Qt::NoBrush);}
+\DoxyCodeLine{16820   \mbox{\hyperlink{class_q_c_p_abstract_plottable_a10619472f5d5e10e9519a599f1cf5576}{mSelectedPen}} = \mbox{\hyperlink{class_q_c_p_abstract_plottable_a67bc0622fd1b9fa14e54c14922dcec66}{mPen}};}
+\DoxyCodeLine{16821   \mbox{\hyperlink{class_q_c_p_abstract_plottable_a10619472f5d5e10e9519a599f1cf5576}{mSelectedPen}}.setWidthF(2.5);}
+\DoxyCodeLine{16822   \mbox{\hyperlink{class_q_c_p_abstract_plottable_a10619472f5d5e10e9519a599f1cf5576}{mSelectedPen}}.setColor(QColor(80, 80, 255)); \textcolor{comment}{// lighter than Qt::blue of mPen}}
+\DoxyCodeLine{16823   \mbox{\hyperlink{class_q_c_p_abstract_plottable_aea3c0da30c7a8be23ad5f2d9bca36762}{mSelectedBrush}} = \mbox{\hyperlink{class_q_c_p_abstract_plottable_a33f00674c0161c13315ab9da0895418e}{mBrush}};}
+\DoxyCodeLine{16824   }
+\DoxyCodeLine{16825   \mbox{\hyperlink{class_q_c_p_curve_a55e43b44709bf50a35500644988aa706}{setScatterStyle}}(\mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatterStyle}}());}
+\DoxyCodeLine{16826   \mbox{\hyperlink{class_q_c_p_curve_a4a377ec863ff81a1875c3094a6177c19}{setLineStyle}}(\mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1ade5822ce6fbf131d3df131795c2e1003}{lsLine}});}
+\DoxyCodeLine{16827 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_a36de58e2652b3fa47bdf9187d421d3ce_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_curve_a99ee5136754884a220cc0bcacfe419a3}\label{class_q_c_p_curve_a99ee5136754884a220cc0bcacfe419a3}} 
+\index{QCPCurve@{QCPCurve}!````~QCPCurve@{$\sim$QCPCurve}}
+\index{````~QCPCurve@{$\sim$QCPCurve}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{$\sim$QCPCurve()}{~QCPCurve()}}
+{\footnotesize\ttfamily QCPCurve\+::$\sim$\+QCPCurve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 16829 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16830 \{}
+\DoxyCodeLine{16831   \textcolor{keyword}{delete} \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}};}
+\DoxyCodeLine{16832 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_q_c_p_curve_ad304326aba096911f92452d8bfe0470e}\label{class_q_c_p_curve_ad304326aba096911f92452d8bfe0470e}} 
+\index{QCPCurve@{QCPCurve}!addData@{addData}}
+\index{addData@{addData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{addData()}{addData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void QCPCurve\+::add\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_p_curve_data}{QCPCurve\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. Adds the provided single data point in {\itshape data} to the current data. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_curve_ad45bb5479be799163028ef2b776f7221}{remove\+Data}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 16937 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16938 \{}
+\DoxyCodeLine{16939   \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>insertMulti(\mbox{\hyperlink{class_q_c_p_curve_a667ca2594cf651e3032c624dbaa95add}{data}}.t, \mbox{\hyperlink{class_q_c_p_curve_a667ca2594cf651e3032c624dbaa95add}{data}});}
+\DoxyCodeLine{16940 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_q_c_p_curve_ad304326aba096911f92452d8bfe0470e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_curve_a4e24023c3b9ac75440c7a260172c99af}\label{class_q_c_p_curve_a4e24023c3b9ac75440c7a260172c99af}} 
+\index{QCPCurve@{QCPCurve}!addData@{addData}}
+\index{addData@{addData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{addData()}{addData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily void QCPCurve\+::add\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{qcustomplot_8h_a444d37ec9cb2951b3a7fe443c34d1658}{QCPCurve\+Data\+Map}} \&}]{data\+Map }\end{DoxyParamCaption})}
+
+Adds the provided data points in {\itshape data\+Map} to the current data. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_curve_ad45bb5479be799163028ef2b776f7221}{remove\+Data}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 16928 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16929 \{}
+\DoxyCodeLine{16930   \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>unite(dataMap);}
+\DoxyCodeLine{16931 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_curve_a27c8b3dddd4067d626397ee199626722}\label{class_q_c_p_curve_a27c8b3dddd4067d626397ee199626722}} 
+\index{QCPCurve@{QCPCurve}!addData@{addData}}
+\index{addData@{addData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{addData()}{addData()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily void QCPCurve\+::add\+Data (\begin{DoxyParamCaption}\item[{const QVector$<$ double $>$ \&}]{ts,  }\item[{const QVector$<$ double $>$ \&}]{keys,  }\item[{const QVector$<$ double $>$ \&}]{values }\end{DoxyParamCaption})}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. Adds the provided data points as {\itshape t}, {\itshape key} and {\itshape value} tuples to the current data. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_curve_ad45bb5479be799163028ef2b776f7221}{remove\+Data}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 16979 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16980 \{}
+\DoxyCodeLine{16981   \textcolor{keywordtype}{int} n = ts.size();}
+\DoxyCodeLine{16982   n = qMin(n, keys.size());}
+\DoxyCodeLine{16983   n = qMin(n, values.size());}
+\DoxyCodeLine{16984   \mbox{\hyperlink{class_q_c_p_curve_data}{QCPCurveData}} newData;}
+\DoxyCodeLine{16985   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<n; ++i)}
+\DoxyCodeLine{16986   \{}
+\DoxyCodeLine{16987     newData.\mbox{\hyperlink{class_q_c_p_curve_data_aecc395525be28e9178a088793beb3ff3}{t}} = ts[i];}
+\DoxyCodeLine{16988     newData.\mbox{\hyperlink{class_q_c_p_curve_data_a8a4ec5f2b9a396149fd842e309701bd4}{key}} = keys[i];}
+\DoxyCodeLine{16989     newData.\mbox{\hyperlink{class_q_c_p_curve_data_a72b39b8e1dbf7b45382ebd48419b6828}{value}} = values[i];}
+\DoxyCodeLine{16990     \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>insertMulti(newData.\mbox{\hyperlink{class_q_c_p_curve_data_aecc395525be28e9178a088793beb3ff3}{t}}, newData);}
+\DoxyCodeLine{16991   \}}
+\DoxyCodeLine{16992 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_curve_ada4762e793cd5707b33f35b8a4b0f8fb}\label{class_q_c_p_curve_ada4762e793cd5707b33f35b8a4b0f8fb}} 
+\index{QCPCurve@{QCPCurve}!addData@{addData}}
+\index{addData@{addData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{addData()}{addData()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily void QCPCurve\+::add\+Data (\begin{DoxyParamCaption}\item[{double}]{key,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.
+
+Adds the provided single data point as {\itshape key} and {\itshape value} pair to the current data The t parameter of the data point is set to the t of the last data point plus 1. If there is no last data point, t will be set to 0.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_curve_ad45bb5479be799163028ef2b776f7221}{remove\+Data}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 16963 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16964 \{}
+\DoxyCodeLine{16965   \mbox{\hyperlink{class_q_c_p_curve_data}{QCPCurveData}} newData;}
+\DoxyCodeLine{16966   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>isEmpty())}
+\DoxyCodeLine{16967     newData.\mbox{\hyperlink{class_q_c_p_curve_data_aecc395525be28e9178a088793beb3ff3}{t}} = (\mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>constEnd()-\/1).key()+1;}
+\DoxyCodeLine{16968   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{16969     newData.\mbox{\hyperlink{class_q_c_p_curve_data_aecc395525be28e9178a088793beb3ff3}{t}} = 0;}
+\DoxyCodeLine{16970   newData.\mbox{\hyperlink{class_q_c_p_curve_data_a8a4ec5f2b9a396149fd842e309701bd4}{key}} = key;}
+\DoxyCodeLine{16971   newData.\mbox{\hyperlink{class_q_c_p_curve_data_a72b39b8e1dbf7b45382ebd48419b6828}{value}} = value;}
+\DoxyCodeLine{16972   \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>insertMulti(newData.\mbox{\hyperlink{class_q_c_p_curve_data_aecc395525be28e9178a088793beb3ff3}{t}}, newData);}
+\DoxyCodeLine{16973 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_curve_a13398b236f6926014e404eeb5b9f415c}\label{class_q_c_p_curve_a13398b236f6926014e404eeb5b9f415c}} 
+\index{QCPCurve@{QCPCurve}!addData@{addData}}
+\index{addData@{addData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{addData()}{addData()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily void QCPCurve\+::add\+Data (\begin{DoxyParamCaption}\item[{double}]{t,  }\item[{double}]{key,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. Adds the provided single data point as {\itshape t}, {\itshape key} and {\itshape value} tuple to the current data \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_curve_ad45bb5479be799163028ef2b776f7221}{remove\+Data}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 16946 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16947 \{}
+\DoxyCodeLine{16948   \mbox{\hyperlink{class_q_c_p_curve_data}{QCPCurveData}} newData;}
+\DoxyCodeLine{16949   newData.\mbox{\hyperlink{class_q_c_p_curve_data_aecc395525be28e9178a088793beb3ff3}{t}} = t;}
+\DoxyCodeLine{16950   newData.\mbox{\hyperlink{class_q_c_p_curve_data_a8a4ec5f2b9a396149fd842e309701bd4}{key}} = key;}
+\DoxyCodeLine{16951   newData.\mbox{\hyperlink{class_q_c_p_curve_data_a72b39b8e1dbf7b45382ebd48419b6828}{value}} = value;}
+\DoxyCodeLine{16952   \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>insertMulti(newData.\mbox{\hyperlink{class_q_c_p_curve_data_aecc395525be28e9178a088793beb3ff3}{t}}, newData);}
+\DoxyCodeLine{16953 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_curve_ae0462c61dbfbac07db0736ec64110241}\label{class_q_c_p_curve_ae0462c61dbfbac07db0736ec64110241}} 
+\index{QCPCurve@{QCPCurve}!clearData@{clearData}}
+\index{clearData@{clearData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{clearData()}{clearData()}}
+{\footnotesize\ttfamily void QCPCurve\+::clear\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Removes all data points. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_curve_ad45bb5479be799163028ef2b776f7221}{remove\+Data}}, \mbox{\hyperlink{class_q_c_p_curve_a0365cb947c4e6d405ee22e00191d5f52}{remove\+Data\+After}}, \mbox{\hyperlink{class_q_c_p_curve_af6f4284fbc2f34e676f24dce03c34fe5}{remove\+Data\+Before}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_plottable_a86e5b8fd4b6ff4f4084e7ea4c573fc53}{QCPAbstract\+Plottable}}.
+
+
+
+Definition at line 17051 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17052 \{}
+\DoxyCodeLine{17053   \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>clear();}
+\DoxyCodeLine{17054 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_curve_a667ca2594cf651e3032c624dbaa95add}\label{class_q_c_p_curve_a667ca2594cf651e3032c624dbaa95add}} 
+\index{QCPCurve@{QCPCurve}!data@{data}}
+\index{data@{data}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{qcustomplot_8h_a444d37ec9cb2951b3a7fe443c34d1658}{QCPCurve\+Data\+Map}}$\ast$ QCPCurve\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 2680 of file qcustomplot.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2680 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}; \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_q_c_p_curve_a667ca2594cf651e3032c624dbaa95add_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_curve_a2361302d2fc6ec669849bd3bca00c4b2}\label{class_q_c_p_curve_a2361302d2fc6ec669849bd3bca00c4b2}} 
+\index{QCPCurve@{QCPCurve}!draw@{draw}}
+\index{draw@{draw}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void QCPCurve\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_plottable_acbab5e30dcd04fd302b4a5902ac2c482}{QCPAbstract\+Plottable}}.
+
+
+
+Definition at line 17071 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17072 \{}
+\DoxyCodeLine{17073   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>isEmpty()) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{17074   }
+\DoxyCodeLine{17075   \textcolor{comment}{// allocate line vector:}}
+\DoxyCodeLine{17076   QVector<QPointF> *lineData = \textcolor{keyword}{new} QVector<QPointF>;}
+\DoxyCodeLine{17077   }
+\DoxyCodeLine{17078   \textcolor{comment}{// fill with curve data:}}
+\DoxyCodeLine{17079   \mbox{\hyperlink{class_q_c_p_curve_a3ca9d2c315c643f732cc85e20d18b551}{getCurveData}}(lineData);}
+\DoxyCodeLine{17080   }
+\DoxyCodeLine{17081   \textcolor{comment}{// check data validity if flag set:}}
+\DoxyCodeLine{17082 \textcolor{preprocessor}{\#ifdef QCUSTOMPLOT\_CHECK\_DATA}}
+\DoxyCodeLine{17083   QCPCurveDataMap::const\_iterator it;}
+\DoxyCodeLine{17084   \textcolor{keywordflow}{for} (it = \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>constBegin(); it != \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>constEnd(); ++it)}
+\DoxyCodeLine{17085   \{}
+\DoxyCodeLine{17086     \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespace_q_c_p_a07ab701c05329089f933b9cae2638a63}{QCP::isInvalidData}}(it.value().t) ||}
+\DoxyCodeLine{17087         \mbox{\hyperlink{namespace_q_c_p_a07ab701c05329089f933b9cae2638a63}{QCP::isInvalidData}}(it.value().key, it.value().value))}
+\DoxyCodeLine{17088       qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}Data point at"{}} << it.key() << \textcolor{stringliteral}{"{}invalid."{}} << \textcolor{stringliteral}{"{}Plottable name:"{}} << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a52c226eefcb1920240eeabae574d28c0}{name}}();}
+\DoxyCodeLine{17089   \}}
+\DoxyCodeLine{17090 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{17091   }
+\DoxyCodeLine{17092   \textcolor{comment}{// draw curve fill:}}
+\DoxyCodeLine{17093   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_abstract_plottable_ac9147022a662e92b46c39e7cb821b0af}{mainBrush}}().style() != Qt::NoBrush \&\& \mbox{\hyperlink{class_q_c_p_abstract_plottable_ac9147022a662e92b46c39e7cb821b0af}{mainBrush}}().color().alpha() != 0)}
+\DoxyCodeLine{17094   \{}
+\DoxyCodeLine{17095     \mbox{\hyperlink{class_q_c_p_abstract_plottable_a8d06a59ea23324cce6330ebf2262c0ed}{applyFillAntialiasingHint}}(painter);}
+\DoxyCodeLine{17096     painter-\/>\mbox{\hyperlink{class_q_c_p_painter_af9c7a4cd1791403901f8c5b82a150195}{setPen}}(Qt::NoPen);}
+\DoxyCodeLine{17097     painter-\/>setBrush(\mbox{\hyperlink{class_q_c_p_abstract_plottable_ac9147022a662e92b46c39e7cb821b0af}{mainBrush}}());}
+\DoxyCodeLine{17098     painter-\/>drawPolygon(QPolygonF(*lineData));}
+\DoxyCodeLine{17099   \}}
+\DoxyCodeLine{17100   }
+\DoxyCodeLine{17101   \textcolor{comment}{// draw curve line:}}
+\DoxyCodeLine{17102   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_curve_ae1f35ae2b15aee8e15bcdfec5be95156}{mLineStyle}} != \mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1aec1601a191cdf0b4e761c4c66092cc48}{lsNone}} \&\& \mbox{\hyperlink{class_q_c_p_abstract_plottable_abd790a3b229239f49067f136633a4b98}{mainPen}}().style() != Qt::NoPen \&\& \mbox{\hyperlink{class_q_c_p_abstract_plottable_abd790a3b229239f49067f136633a4b98}{mainPen}}().color().alpha() != 0)}
+\DoxyCodeLine{17103   \{}
+\DoxyCodeLine{17104     \mbox{\hyperlink{class_q_c_p_abstract_plottable_a59a80773c5cefc05a0646ac8e1149ed5}{applyDefaultAntialiasingHint}}(painter);}
+\DoxyCodeLine{17105     painter-\/>\mbox{\hyperlink{class_q_c_p_painter_af9c7a4cd1791403901f8c5b82a150195}{setPen}}(\mbox{\hyperlink{class_q_c_p_abstract_plottable_abd790a3b229239f49067f136633a4b98}{mainPen}}());}
+\DoxyCodeLine{17106     painter-\/>setBrush(Qt::NoBrush);}
+\DoxyCodeLine{17107     \textcolor{comment}{// if drawing solid line and not in PDF, use much faster line drawing instead of polyline:}}
+\DoxyCodeLine{17108     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_layerable_aa2a528433e44db02b8aef23c1f9f90ed}{mParentPlot}}-\/>\mbox{\hyperlink{class_q_custom_plot_ac724f4075822f74f7b676a790095b877}{plottingHints}}().testFlag(\mbox{\hyperlink{namespace_q_c_p_a5400e5fcb9528d92002ddb938c1f4ef4aa5fd227bc878c56ad2a87ea32c74ee4d}{QCP::phFastPolylines}}) \&\&}
+\DoxyCodeLine{17109         painter-\/>pen().style() == Qt::SolidLine \&\&}
+\DoxyCodeLine{17110         !painter-\/>\mbox{\hyperlink{class_q_c_p_painter_aef102658219b24165f7ee2aad1b9e48f}{modes}}().testFlag(\mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156daeda679cd55dcd468341d07d48a30b6ab}{QCPPainter::pmVectorized}}) \&\&}
+\DoxyCodeLine{17111         !painter-\/>\mbox{\hyperlink{class_q_c_p_painter_aef102658219b24165f7ee2aad1b9e48f}{modes}}().testFlag(\mbox{\hyperlink{class_q_c_p_painter_a156cf16444ff5e0d81a73c615fdb156dae78f9a4eb277a5f9207f50850a51a0b0}{QCPPainter::pmNoCaching}}))}
+\DoxyCodeLine{17112     \{}
+\DoxyCodeLine{17113       \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{17114       \textcolor{keywordtype}{bool} lastIsNan = \textcolor{keyword}{false};}
+\DoxyCodeLine{17115       \textcolor{keyword}{const} \textcolor{keywordtype}{int} lineDataSize = lineData-\/>size();}
+\DoxyCodeLine{17116       \textcolor{keywordflow}{while} (i < lineDataSize \&\& (qIsNaN(lineData-\/>at(i).y()) || qIsNaN(lineData-\/>at(i).x()))) \textcolor{comment}{// make sure first point is not NaN}}
+\DoxyCodeLine{17117         ++i;}
+\DoxyCodeLine{17118       ++i; \textcolor{comment}{// because drawing works in 1 point retrospect}}
+\DoxyCodeLine{17119       \textcolor{keywordflow}{while} (i < lineDataSize)}
+\DoxyCodeLine{17120       \{}
+\DoxyCodeLine{17121         \textcolor{keywordflow}{if} (!qIsNaN(lineData-\/>at(i).y()) \&\& !qIsNaN(lineData-\/>at(i).x())) \textcolor{comment}{// NaNs create a gap in the line}}
+\DoxyCodeLine{17122         \{}
+\DoxyCodeLine{17123           \textcolor{keywordflow}{if} (!lastIsNan)}
+\DoxyCodeLine{17124             painter-\/>\mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{drawLine}}(lineData-\/>at(i-\/1), lineData-\/>at(i));}
+\DoxyCodeLine{17125           \textcolor{keywordflow}{else}}
+\DoxyCodeLine{17126             lastIsNan = \textcolor{keyword}{false};}
+\DoxyCodeLine{17127         \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{17128           lastIsNan = \textcolor{keyword}{true};}
+\DoxyCodeLine{17129         ++i;}
+\DoxyCodeLine{17130       \}}
+\DoxyCodeLine{17131     \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{17132     \{}
+\DoxyCodeLine{17133       \textcolor{keywordtype}{int} segmentStart = 0;}
+\DoxyCodeLine{17134       \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{17135       \textcolor{keyword}{const} \textcolor{keywordtype}{int} lineDataSize = lineData-\/>size();}
+\DoxyCodeLine{17136       \textcolor{keywordflow}{while} (i < lineDataSize)}
+\DoxyCodeLine{17137       \{}
+\DoxyCodeLine{17138         \textcolor{keywordflow}{if} (qIsNaN(lineData-\/>at(i).y()) || qIsNaN(lineData-\/>at(i).x())) \textcolor{comment}{// NaNs create a gap in the line}}
+\DoxyCodeLine{17139         \{}
+\DoxyCodeLine{17140           painter-\/>drawPolyline(lineData-\/>constData()+segmentStart, i-\/segmentStart); \textcolor{comment}{// i, because we don't want to include the current NaN point}}
+\DoxyCodeLine{17141           segmentStart = i+1;}
+\DoxyCodeLine{17142         \}}
+\DoxyCodeLine{17143         ++i;}
+\DoxyCodeLine{17144       \}}
+\DoxyCodeLine{17145       \textcolor{comment}{// draw last segment:}}
+\DoxyCodeLine{17146       painter-\/>drawPolyline(lineData-\/>constData()+segmentStart, lineDataSize-\/segmentStart);}
+\DoxyCodeLine{17147     \}}
+\DoxyCodeLine{17148   \}}
+\DoxyCodeLine{17149   }
+\DoxyCodeLine{17150   \textcolor{comment}{// draw scatters:}}
+\DoxyCodeLine{17151   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}{mScatterStyle}}.\mbox{\hyperlink{class_q_c_p_scatter_style_a72db6bcb1e1abd6e53c1315dd3dea7e4}{isNone}}())}
+\DoxyCodeLine{17152     \mbox{\hyperlink{class_q_c_p_curve_a00d17c020796ac84c84f881201c2ed10}{drawScatterPlot}}(painter, lineData);}
+\DoxyCodeLine{17153   }
+\DoxyCodeLine{17154   \textcolor{comment}{// free allocated line data:}}
+\DoxyCodeLine{17155   \textcolor{keyword}{delete} lineData;}
+\DoxyCodeLine{17156 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_a2361302d2fc6ec669849bd3bca00c4b2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_curve_acccc86e9f496bb0392529f59f3a69dbc}\label{class_q_c_p_curve_acccc86e9f496bb0392529f59f3a69dbc}} 
+\index{QCPCurve@{QCPCurve}!drawLegendIcon@{drawLegendIcon}}
+\index{drawLegendIcon@{drawLegendIcon}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{drawLegendIcon()}{drawLegendIcon()}}
+{\footnotesize\ttfamily void QCPCurve\+::draw\+Legend\+Icon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter,  }\item[{const QRectF \&}]{rect }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_plottable_a9a450783fd9ed539e589999fd390cdf7}{QCPAbstract\+Plottable}}.
+
+
+
+Definition at line 17159 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17160 \{}
+\DoxyCodeLine{17161   \textcolor{comment}{// draw fill:}}
+\DoxyCodeLine{17162   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_abstract_plottable_a33f00674c0161c13315ab9da0895418e}{mBrush}}.style() != Qt::NoBrush)}
+\DoxyCodeLine{17163   \{}
+\DoxyCodeLine{17164     \mbox{\hyperlink{class_q_c_p_abstract_plottable_a8d06a59ea23324cce6330ebf2262c0ed}{applyFillAntialiasingHint}}(painter);}
+\DoxyCodeLine{17165     painter-\/>fillRect(QRectF(rect.left(), rect.top()+rect.height()/2.0, rect.width(), rect.height()/3.0), \mbox{\hyperlink{class_q_c_p_abstract_plottable_a33f00674c0161c13315ab9da0895418e}{mBrush}});}
+\DoxyCodeLine{17166   \}}
+\DoxyCodeLine{17167   \textcolor{comment}{// draw line vertically centered:}}
+\DoxyCodeLine{17168   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_curve_ae1f35ae2b15aee8e15bcdfec5be95156}{mLineStyle}} != \mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1aec1601a191cdf0b4e761c4c66092cc48}{lsNone}})}
+\DoxyCodeLine{17169   \{}
+\DoxyCodeLine{17170     \mbox{\hyperlink{class_q_c_p_abstract_plottable_a59a80773c5cefc05a0646ac8e1149ed5}{applyDefaultAntialiasingHint}}(painter);}
+\DoxyCodeLine{17171     painter-\/>\mbox{\hyperlink{class_q_c_p_painter_af9c7a4cd1791403901f8c5b82a150195}{setPen}}(\mbox{\hyperlink{class_q_c_p_abstract_plottable_a67bc0622fd1b9fa14e54c14922dcec66}{mPen}});}
+\DoxyCodeLine{17172     painter-\/>\mbox{\hyperlink{class_q_c_p_painter_a0b4b1b9bd495e182c731774dc800e6e0}{drawLine}}(QLineF(rect.left(), rect.top()+rect.height()/2.0, rect.right()+5, rect.top()+rect.height()/2.0)); \textcolor{comment}{// +5 on x2 else last segment is missing from dashed/dotted pens}}
+\DoxyCodeLine{17173   \}}
+\DoxyCodeLine{17174   \textcolor{comment}{// draw scatter symbol:}}
+\DoxyCodeLine{17175   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}{mScatterStyle}}.\mbox{\hyperlink{class_q_c_p_scatter_style_a72db6bcb1e1abd6e53c1315dd3dea7e4}{isNone}}())}
+\DoxyCodeLine{17176   \{}
+\DoxyCodeLine{17177     \mbox{\hyperlink{class_q_c_p_abstract_plottable_ac95f26b15a1e5d9c7bd2c0a46d760fc9}{applyScattersAntialiasingHint}}(painter);}
+\DoxyCodeLine{17178     \textcolor{comment}{// scale scatter pixmap if it's too large to fit in legend icon rect:}}
+\DoxyCodeLine{17179     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}{mScatterStyle}}.\mbox{\hyperlink{class_q_c_p_scatter_style_af04cad55bd7f58a96da4fc6bc46a0a1e}{shape}}() == \mbox{\hyperlink{class_q_c_p_scatter_style_adb31525af6b680e6f1b7472e43859349a8718b849ca7c307b07b8e091efb0c31e}{QCPScatterStyle::ssPixmap}} \&\& (\mbox{\hyperlink{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}{mScatterStyle}}.\mbox{\hyperlink{class_q_c_p_scatter_style_a9b2d1a2ec0aac0c74f7582d14050e93a}{pixmap}}().size().width() > rect.width() || \mbox{\hyperlink{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}{mScatterStyle}}.\mbox{\hyperlink{class_q_c_p_scatter_style_a9b2d1a2ec0aac0c74f7582d14050e93a}{pixmap}}().size().height() > rect.height()))}
+\DoxyCodeLine{17180     \{}
+\DoxyCodeLine{17181       \mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatterStyle}} scaledStyle(\mbox{\hyperlink{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}{mScatterStyle}});}
+\DoxyCodeLine{17182       scaledStyle.setPixmap(scaledStyle.pixmap().scaled(rect.size().toSize(), Qt::KeepAspectRatio, Qt::SmoothTransformation));}
+\DoxyCodeLine{17183       scaledStyle.applyTo(painter, \mbox{\hyperlink{class_q_c_p_abstract_plottable_a67bc0622fd1b9fa14e54c14922dcec66}{mPen}});}
+\DoxyCodeLine{17184       scaledStyle.drawShape(painter, QRectF(rect).center());}
+\DoxyCodeLine{17185     \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{17186     \{}
+\DoxyCodeLine{17187       \mbox{\hyperlink{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}{mScatterStyle}}.\mbox{\hyperlink{class_q_c_p_scatter_style_afd8044ece445300499ca0dc164821e0f}{applyTo}}(painter, \mbox{\hyperlink{class_q_c_p_abstract_plottable_a67bc0622fd1b9fa14e54c14922dcec66}{mPen}});}
+\DoxyCodeLine{17188       \mbox{\hyperlink{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}{mScatterStyle}}.\mbox{\hyperlink{class_q_c_p_scatter_style_a2b3964961b6cbfbc87be6e1e3a6f3c96}{drawShape}}(painter, QRectF(rect).center());}
+\DoxyCodeLine{17189     \}}
+\DoxyCodeLine{17190   \}}
+\DoxyCodeLine{17191 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_acccc86e9f496bb0392529f59f3a69dbc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_curve_a00d17c020796ac84c84f881201c2ed10}\label{class_q_c_p_curve_a00d17c020796ac84c84f881201c2ed10}} 
+\index{QCPCurve@{QCPCurve}!drawScatterPlot@{drawScatterPlot}}
+\index{drawScatterPlot@{drawScatterPlot}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{drawScatterPlot()}{drawScatterPlot()}}
+{\footnotesize\ttfamily void QCPCurve\+::draw\+Scatter\+Plot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_painter}{QCPPainter}} $\ast$}]{painter,  }\item[{const QVector$<$ QPointF $>$ $\ast$}]{point\+Data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 17198 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17199 \{}
+\DoxyCodeLine{17200   \textcolor{comment}{// draw scatter point symbols:}}
+\DoxyCodeLine{17201   \mbox{\hyperlink{class_q_c_p_abstract_plottable_ac95f26b15a1e5d9c7bd2c0a46d760fc9}{applyScattersAntialiasingHint}}(painter);}
+\DoxyCodeLine{17202   \mbox{\hyperlink{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}{mScatterStyle}}.\mbox{\hyperlink{class_q_c_p_scatter_style_afd8044ece445300499ca0dc164821e0f}{applyTo}}(painter, \mbox{\hyperlink{class_q_c_p_abstract_plottable_a67bc0622fd1b9fa14e54c14922dcec66}{mPen}});}
+\DoxyCodeLine{17203   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<pointData-\/>size(); ++i)}
+\DoxyCodeLine{17204     \textcolor{keywordflow}{if} (!qIsNaN(pointData-\/>at(i).x()) \&\& !qIsNaN(pointData-\/>at(i).y()))}
+\DoxyCodeLine{17205       \mbox{\hyperlink{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}{mScatterStyle}}.\mbox{\hyperlink{class_q_c_p_scatter_style_a2b3964961b6cbfbc87be6e1e3a6f3c96}{drawShape}}(painter,  pointData-\/>at(i));}
+\DoxyCodeLine{17206 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_a00d17c020796ac84c84f881201c2ed10_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_q_c_p_curve_a00d17c020796ac84c84f881201c2ed10_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_curve_a3ca9d2c315c643f732cc85e20d18b551}\label{class_q_c_p_curve_a3ca9d2c315c643f732cc85e20d18b551}} 
+\index{QCPCurve@{QCPCurve}!getCurveData@{getCurveData}}
+\index{getCurveData@{getCurveData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{getCurveData()}{getCurveData()}}
+{\footnotesize\ttfamily void QCPCurve\+::get\+Curve\+Data (\begin{DoxyParamCaption}\item[{QVector$<$ QPointF $>$ $\ast$}]{line\+Data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 17221 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17222 \{}
+\DoxyCodeLine{17223   \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{keyAxis}} = \mbox{\hyperlink{class_q_c_p_abstract_plottable_a426f42e254d0f8ce5436a868c61a6827}{mKeyAxis}}.data();}
+\DoxyCodeLine{17224   \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}} *\mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{valueAxis}} = \mbox{\hyperlink{class_q_c_p_abstract_plottable_a2901452ca4aea911a1827717934a4bda}{mValueAxis}}.data();}
+\DoxyCodeLine{17225   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{keyAxis}} || !\mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{valueAxis}}) \{ qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}invalid key or value axis"{}}; \textcolor{keywordflow}{return}; \}}
+\DoxyCodeLine{17226   }
+\DoxyCodeLine{17227   \textcolor{comment}{// add margins to rect to compensate for stroke width}}
+\DoxyCodeLine{17228   \textcolor{keywordtype}{double} strokeMargin = qMax(qreal(1.0), qreal(\mbox{\hyperlink{class_q_c_p_abstract_plottable_abd790a3b229239f49067f136633a4b98}{mainPen}}().widthF()*0.75)); \textcolor{comment}{// stroke radius + 50\% safety}}
+\DoxyCodeLine{17229   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}{mScatterStyle}}.\mbox{\hyperlink{class_q_c_p_scatter_style_a72db6bcb1e1abd6e53c1315dd3dea7e4}{isNone}}())}
+\DoxyCodeLine{17230     strokeMargin = qMax(strokeMargin, \mbox{\hyperlink{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}{mScatterStyle}}.\mbox{\hyperlink{class_q_c_p_scatter_style_a0e94526d9165d9f50e262102bdd71a47}{size}}());}
+\DoxyCodeLine{17231   \textcolor{keywordtype}{double} rectLeft = \mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{keyAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_a536ef8f624cac59b6b6fdcb495723c57}{pixelToCoord}}(\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{keyAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_af15d1b3a7f7e9b53d759d3ccff1fe4b4}{coordToPixel}}(\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{keyAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_ac4058855a81f1a883cf2e754f6a6acb1}{range}}().\mbox{\hyperlink{class_q_c_p_range_aa3aca3edb14f7ca0c85d912647b91745}{lower}})-\/strokeMargin*((\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{keyAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_ab988ef4538e2655bb77bd138189cd42e}{orientation}}()==Qt::Vertical)!=\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{keyAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_ab9866dd1a78f1920f491ec12a794bec2}{rangeReversed}}()?-\/1:1));}
+\DoxyCodeLine{17232   \textcolor{keywordtype}{double} rectRight = \mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{keyAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_a536ef8f624cac59b6b6fdcb495723c57}{pixelToCoord}}(\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{keyAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_af15d1b3a7f7e9b53d759d3ccff1fe4b4}{coordToPixel}}(\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{keyAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_ac4058855a81f1a883cf2e754f6a6acb1}{range}}().\mbox{\hyperlink{class_q_c_p_range_ae44eb3aafe1d0e2ed34b499b6d2e074f}{upper}})+strokeMargin*((\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{keyAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_ab988ef4538e2655bb77bd138189cd42e}{orientation}}()==Qt::Vertical)!=\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2cdd6f0dd5e9a979037f86b4000d9cfe}{keyAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_ab9866dd1a78f1920f491ec12a794bec2}{rangeReversed}}()?-\/1:1));}
+\DoxyCodeLine{17233   \textcolor{keywordtype}{double} rectBottom = \mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{valueAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_a536ef8f624cac59b6b6fdcb495723c57}{pixelToCoord}}(\mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{valueAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_af15d1b3a7f7e9b53d759d3ccff1fe4b4}{coordToPixel}}(\mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{valueAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_ac4058855a81f1a883cf2e754f6a6acb1}{range}}().\mbox{\hyperlink{class_q_c_p_range_aa3aca3edb14f7ca0c85d912647b91745}{lower}})+strokeMargin*((\mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{valueAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_ab988ef4538e2655bb77bd138189cd42e}{orientation}}()==Qt::Horizontal)!=\mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{valueAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_ab9866dd1a78f1920f491ec12a794bec2}{rangeReversed}}()?-\/1:1));}
+\DoxyCodeLine{17234   \textcolor{keywordtype}{double} rectTop = \mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{valueAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_a536ef8f624cac59b6b6fdcb495723c57}{pixelToCoord}}(\mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{valueAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_af15d1b3a7f7e9b53d759d3ccff1fe4b4}{coordToPixel}}(\mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{valueAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_ac4058855a81f1a883cf2e754f6a6acb1}{range}}().\mbox{\hyperlink{class_q_c_p_range_ae44eb3aafe1d0e2ed34b499b6d2e074f}{upper}})-\/strokeMargin*((\mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{valueAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_ab988ef4538e2655bb77bd138189cd42e}{orientation}}()==Qt::Horizontal)!=\mbox{\hyperlink{class_q_c_p_abstract_plottable_af47809a644a68ffd955fb30b01fb4f2f}{valueAxis}}-\/>\mbox{\hyperlink{class_q_c_p_axis_ab9866dd1a78f1920f491ec12a794bec2}{rangeReversed}}()?-\/1:1));}
+\DoxyCodeLine{17235   \textcolor{keywordtype}{int} currentRegion;}
+\DoxyCodeLine{17236   QCPCurveDataMap::const\_iterator it = \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>constBegin();}
+\DoxyCodeLine{17237   QCPCurveDataMap::const\_iterator prevIt = \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>constEnd()-\/1;}
+\DoxyCodeLine{17238   \textcolor{keywordtype}{int} prevRegion = \mbox{\hyperlink{class_q_c_p_curve_a316b216383dbff606f59c38bd72e6501}{getRegion}}(prevIt.value().key, prevIt.value().value, rectLeft, rectTop, rectRight, rectBottom);}
+\DoxyCodeLine{17239   QVector<QPointF> trailingPoints; \textcolor{comment}{// points that must be applied after all other points (are generated only when handling first point to get virtual segment between last and first point right)}}
+\DoxyCodeLine{17240   \textcolor{keywordflow}{while} (it != \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>constEnd())}
+\DoxyCodeLine{17241   \{}
+\DoxyCodeLine{17242     currentRegion = \mbox{\hyperlink{class_q_c_p_curve_a316b216383dbff606f59c38bd72e6501}{getRegion}}(it.value().key, it.value().value, rectLeft, rectTop, rectRight, rectBottom);}
+\DoxyCodeLine{17243     \textcolor{keywordflow}{if} (currentRegion != prevRegion) \textcolor{comment}{// changed region, possibly need to add some optimized edge points or original points if entering R}}
+\DoxyCodeLine{17244     \{}
+\DoxyCodeLine{17245       \textcolor{keywordflow}{if} (currentRegion != 5) \textcolor{comment}{// segment doesn't end in R, so it's a candidate for removal}}
+\DoxyCodeLine{17246       \{}
+\DoxyCodeLine{17247         QPointF crossA, crossB;}
+\DoxyCodeLine{17248         \textcolor{keywordflow}{if} (prevRegion == 5) \textcolor{comment}{// we're coming from R, so add this point optimized}}
+\DoxyCodeLine{17249         \{}
+\DoxyCodeLine{17250           lineData-\/>append(\mbox{\hyperlink{class_q_c_p_curve_ae729c9aef90af9b7463c379cb88459f6}{getOptimizedPoint}}(currentRegion, it.value().key, it.value().value, prevIt.value().key, prevIt.value().value, rectLeft, rectTop, rectRight, rectBottom));}
+\DoxyCodeLine{17251           \textcolor{comment}{// in the situations 5-\/>1/7/9/3 the segment may leave R and directly cross through two outer regions. In these cases we need to add an additional corner point}}
+\DoxyCodeLine{17252           *lineData << \mbox{\hyperlink{class_q_c_p_curve_a2f1455455d71de9ef9190c50a90f0abc}{getOptimizedCornerPoints}}(prevRegion, currentRegion, prevIt.value().key, prevIt.value().value, it.value().key, it.value().value, rectLeft, rectTop, rectRight, rectBottom);}
+\DoxyCodeLine{17253         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_curve_af5df2560b30333fe662ec676bd355415}{mayTraverse}}(prevRegion, currentRegion) \&\&}
+\DoxyCodeLine{17254                    \mbox{\hyperlink{class_q_c_p_curve_a82a78dffde71e7b9c40217fa7e381057}{getTraverse}}(prevIt.value().key, prevIt.value().value, it.value().key, it.value().value, rectLeft, rectTop, rectRight, rectBottom, crossA, crossB))}
+\DoxyCodeLine{17255         \{}
+\DoxyCodeLine{17256           \textcolor{comment}{// add the two cross points optimized if segment crosses R and if segment isn't virtual zeroth segment between last and first curve point:}}
+\DoxyCodeLine{17257           QVector<QPointF> beforeTraverseCornerPoints, afterTraverseCornerPoints;}
+\DoxyCodeLine{17258           \mbox{\hyperlink{class_q_c_p_curve_a592d6e3dbd42cb8cea35eda889ece1b1}{getTraverseCornerPoints}}(prevRegion, currentRegion, rectLeft, rectTop, rectRight, rectBottom, beforeTraverseCornerPoints, afterTraverseCornerPoints);}
+\DoxyCodeLine{17259           \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>constBegin())}
+\DoxyCodeLine{17260           \{}
+\DoxyCodeLine{17261             *lineData << beforeTraverseCornerPoints;}
+\DoxyCodeLine{17262             lineData-\/>append(crossA);}
+\DoxyCodeLine{17263             lineData-\/>append(crossB);}
+\DoxyCodeLine{17264             *lineData << afterTraverseCornerPoints;}
+\DoxyCodeLine{17265           \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{17266           \{}
+\DoxyCodeLine{17267             lineData-\/>append(crossB);}
+\DoxyCodeLine{17268             *lineData << afterTraverseCornerPoints;}
+\DoxyCodeLine{17269             trailingPoints << beforeTraverseCornerPoints << crossA ;}
+\DoxyCodeLine{17270           \}}
+\DoxyCodeLine{17271         \} \textcolor{keywordflow}{else} \textcolor{comment}{// doesn't cross R, line is just moving around in outside regions, so only need to add optimized point(s) at the boundary corner(s)}}
+\DoxyCodeLine{17272         \{}
+\DoxyCodeLine{17273           *lineData << \mbox{\hyperlink{class_q_c_p_curve_a2f1455455d71de9ef9190c50a90f0abc}{getOptimizedCornerPoints}}(prevRegion, currentRegion, prevIt.value().key, prevIt.value().value, it.value().key, it.value().value, rectLeft, rectTop, rectRight, rectBottom);}
+\DoxyCodeLine{17274         \}}
+\DoxyCodeLine{17275       \} \textcolor{keywordflow}{else} \textcolor{comment}{// segment does end in R, so we add previous point optimized and this point at original position}}
+\DoxyCodeLine{17276       \{}
+\DoxyCodeLine{17277         \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>constBegin()) \textcolor{comment}{// it is first point in curve and prevIt is last one. So save optimized point for adding it to the lineData in the end}}
+\DoxyCodeLine{17278           trailingPoints << \mbox{\hyperlink{class_q_c_p_curve_ae729c9aef90af9b7463c379cb88459f6}{getOptimizedPoint}}(prevRegion, prevIt.value().key, prevIt.value().value, it.value().key, it.value().value, rectLeft, rectTop, rectRight, rectBottom);}
+\DoxyCodeLine{17279         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{17280           lineData-\/>append(\mbox{\hyperlink{class_q_c_p_curve_ae729c9aef90af9b7463c379cb88459f6}{getOptimizedPoint}}(prevRegion, prevIt.value().key, prevIt.value().value, it.value().key, it.value().value, rectLeft, rectTop, rectRight, rectBottom));}
+\DoxyCodeLine{17281         lineData-\/>append(\mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(it.value().key, it.value().value));}
+\DoxyCodeLine{17282       \}}
+\DoxyCodeLine{17283     \} \textcolor{keywordflow}{else} \textcolor{comment}{// region didn't change}}
+\DoxyCodeLine{17284     \{}
+\DoxyCodeLine{17285       \textcolor{keywordflow}{if} (currentRegion == 5) \textcolor{comment}{// still in R, keep adding original points}}
+\DoxyCodeLine{17286       \{}
+\DoxyCodeLine{17287         lineData-\/>append(\mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(it.value().key, it.value().value));}
+\DoxyCodeLine{17288       \} \textcolor{keywordflow}{else} \textcolor{comment}{// still outside R, no need to add anything}}
+\DoxyCodeLine{17289       \{}
+\DoxyCodeLine{17290         \textcolor{comment}{// see how this is not doing anything? That's the main optimization...}}
+\DoxyCodeLine{17291       \}}
+\DoxyCodeLine{17292     \}}
+\DoxyCodeLine{17293     prevIt = it;}
+\DoxyCodeLine{17294     prevRegion = currentRegion;}
+\DoxyCodeLine{17295     ++it;}
+\DoxyCodeLine{17296   \}}
+\DoxyCodeLine{17297   *lineData << trailingPoints;}
+\DoxyCodeLine{17298 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_a3ca9d2c315c643f732cc85e20d18b551_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_a3ca9d2c315c643f732cc85e20d18b551_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_curve_a1b24b1384d72862e8294688501ffa01d}\label{class_q_c_p_curve_a1b24b1384d72862e8294688501ffa01d}} 
+\index{QCPCurve@{QCPCurve}!getKeyRange@{getKeyRange}}
+\index{getKeyRange@{getKeyRange}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{getKeyRange()}{getKeyRange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} QCPCurve\+::get\+Key\+Range (\begin{DoxyParamCaption}\item[{bool \&}]{found\+Range,  }\item[{\mbox{\hyperlink{class_q_c_p_abstract_plottable_a661743478a1d3c09d28ec2711d7653d8}{Sign\+Domain}}}]{in\+Sign\+Domain = {\ttfamily \mbox{\hyperlink{class_q_c_p_abstract_plottable_a661743478a1d3c09d28ec2711d7653d8a082b98cfb91a7363a3b5cd17b0c1cd60}{sd\+Both}}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_plottable_a345d702b2e7e12c8cfdddff65ba85e8c}{QCPAbstract\+Plottable}}.
+
+
+
+Definition at line 17943 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17944 \{}
+\DoxyCodeLine{17945   \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} range;}
+\DoxyCodeLine{17946   \textcolor{keywordtype}{bool} haveLower = \textcolor{keyword}{false};}
+\DoxyCodeLine{17947   \textcolor{keywordtype}{bool} haveUpper = \textcolor{keyword}{false};}
+\DoxyCodeLine{17948   }
+\DoxyCodeLine{17949   \textcolor{keywordtype}{double} current;}
+\DoxyCodeLine{17950   }
+\DoxyCodeLine{17951   QCPCurveDataMap::const\_iterator it = \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>constBegin();}
+\DoxyCodeLine{17952   \textcolor{keywordflow}{while} (it != \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>constEnd())}
+\DoxyCodeLine{17953   \{}
+\DoxyCodeLine{17954     current = it.value().key;}
+\DoxyCodeLine{17955     \textcolor{keywordflow}{if} (!qIsNaN(current) \&\& !qIsNaN(it.value().value))}
+\DoxyCodeLine{17956     \{}
+\DoxyCodeLine{17957       \textcolor{keywordflow}{if} (inSignDomain == \mbox{\hyperlink{class_q_c_p_abstract_plottable_a661743478a1d3c09d28ec2711d7653d8a082b98cfb91a7363a3b5cd17b0c1cd60}{sdBoth}} || (inSignDomain == \mbox{\hyperlink{class_q_c_p_abstract_plottable_a661743478a1d3c09d28ec2711d7653d8a0fc9a70796ef60ad18ddd18056e6dc63}{sdNegative}} \&\& current < 0) || (inSignDomain == \mbox{\hyperlink{class_q_c_p_abstract_plottable_a661743478a1d3c09d28ec2711d7653d8a02951859f243a4d24e779cfbb5471030}{sdPositive}} \&\& current > 0))}
+\DoxyCodeLine{17958       \{}
+\DoxyCodeLine{17959         \textcolor{keywordflow}{if} (current < range.\mbox{\hyperlink{class_q_c_p_range_aa3aca3edb14f7ca0c85d912647b91745}{lower}} || !haveLower)}
+\DoxyCodeLine{17960         \{}
+\DoxyCodeLine{17961           range.\mbox{\hyperlink{class_q_c_p_range_aa3aca3edb14f7ca0c85d912647b91745}{lower}} = current;}
+\DoxyCodeLine{17962           haveLower = \textcolor{keyword}{true};}
+\DoxyCodeLine{17963         \}}
+\DoxyCodeLine{17964         \textcolor{keywordflow}{if} (current > range.\mbox{\hyperlink{class_q_c_p_range_ae44eb3aafe1d0e2ed34b499b6d2e074f}{upper}} || !haveUpper)}
+\DoxyCodeLine{17965         \{}
+\DoxyCodeLine{17966           range.\mbox{\hyperlink{class_q_c_p_range_ae44eb3aafe1d0e2ed34b499b6d2e074f}{upper}} = current;}
+\DoxyCodeLine{17967           haveUpper = \textcolor{keyword}{true};}
+\DoxyCodeLine{17968         \}}
+\DoxyCodeLine{17969       \}}
+\DoxyCodeLine{17970     \}}
+\DoxyCodeLine{17971     ++it;}
+\DoxyCodeLine{17972   \}}
+\DoxyCodeLine{17973   }
+\DoxyCodeLine{17974   foundRange = haveLower \&\& haveUpper;}
+\DoxyCodeLine{17975   \textcolor{keywordflow}{return} range;}
+\DoxyCodeLine{17976 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_curve_a2f1455455d71de9ef9190c50a90f0abc}\label{class_q_c_p_curve_a2f1455455d71de9ef9190c50a90f0abc}} 
+\index{QCPCurve@{QCPCurve}!getOptimizedCornerPoints@{getOptimizedCornerPoints}}
+\index{getOptimizedCornerPoints@{getOptimizedCornerPoints}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{getOptimizedCornerPoints()}{getOptimizedCornerPoints()}}
+{\footnotesize\ttfamily QVector$<$ QPointF $>$ QCPCurve\+::get\+Optimized\+Corner\+Points (\begin{DoxyParamCaption}\item[{int}]{prev\+Region,  }\item[{int}]{current\+Region,  }\item[{double}]{prev\+Key,  }\item[{double}]{prev\+Value,  }\item[{double}]{key,  }\item[{double}]{value,  }\item[{double}]{rect\+Left,  }\item[{double}]{rect\+Top,  }\item[{double}]{rect\+Right,  }\item[{double}]{rect\+Bottom }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 17462 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17463 \{}
+\DoxyCodeLine{17464   QVector<QPointF> result;}
+\DoxyCodeLine{17465   \textcolor{keywordflow}{switch} (prevRegion)}
+\DoxyCodeLine{17466   \{}
+\DoxyCodeLine{17467     \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{17468     \{}
+\DoxyCodeLine{17469       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17470       \{}
+\DoxyCodeLine{17471         \textcolor{keywordflow}{case} 2: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17472         \textcolor{keywordflow}{case} 4: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17473         \textcolor{keywordflow}{case} 3: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17474         \textcolor{keywordflow}{case} 7: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17475         \textcolor{keywordflow}{case} 6: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); result.append(result.last()); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17476         \textcolor{keywordflow}{case} 8: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); result.append(result.last()); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17477         \textcolor{keywordflow}{case} 9: \{ \textcolor{comment}{// in this case we need another distinction of cases: segment may pass below or above rect, requiring either bottom right or top left corner points}}
+\DoxyCodeLine{17478           \textcolor{keywordflow}{if} ((value-\/prevValue)/(key-\/prevKey)*(rectLeft-\/key)+value < rectBottom) \textcolor{comment}{// segment passes below R}}
+\DoxyCodeLine{17479           \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); result.append(result.last()); result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); \}}
+\DoxyCodeLine{17480           \textcolor{keywordflow}{else}}
+\DoxyCodeLine{17481           \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); result.append(result.last()); result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); \}}
+\DoxyCodeLine{17482           \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17483         \}}
+\DoxyCodeLine{17484       \}}
+\DoxyCodeLine{17485       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17486     \}}
+\DoxyCodeLine{17487     \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{17488     \{}
+\DoxyCodeLine{17489       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17490       \{}
+\DoxyCodeLine{17491         \textcolor{keywordflow}{case} 1: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17492         \textcolor{keywordflow}{case} 3: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17493         \textcolor{keywordflow}{case} 4: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); result.append(result.last()); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17494         \textcolor{keywordflow}{case} 6: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); result.append(result.last()); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17495         \textcolor{keywordflow}{case} 7: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); result.append(result.last()); result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17496         \textcolor{keywordflow}{case} 9: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); result.append(result.last()); result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17497       \}}
+\DoxyCodeLine{17498       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17499     \}}
+\DoxyCodeLine{17500     \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{17501     \{}
+\DoxyCodeLine{17502       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17503       \{}
+\DoxyCodeLine{17504         \textcolor{keywordflow}{case} 2: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17505         \textcolor{keywordflow}{case} 6: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17506         \textcolor{keywordflow}{case} 1: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17507         \textcolor{keywordflow}{case} 9: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17508         \textcolor{keywordflow}{case} 4: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); result.append(result.last()); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17509         \textcolor{keywordflow}{case} 8: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); result.append(result.last()); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17510         \textcolor{keywordflow}{case} 7: \{ \textcolor{comment}{// in this case we need another distinction of cases: segment may pass below or above rect, requiring either bottom right or top left corner points}}
+\DoxyCodeLine{17511           \textcolor{keywordflow}{if} ((value-\/prevValue)/(key-\/prevKey)*(rectRight-\/key)+value < rectBottom) \textcolor{comment}{// segment passes below R}}
+\DoxyCodeLine{17512           \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); result.append(result.last()); result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); \}}
+\DoxyCodeLine{17513           \textcolor{keywordflow}{else}}
+\DoxyCodeLine{17514           \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); result.append(result.last()); result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); \}}
+\DoxyCodeLine{17515           \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17516         \}}
+\DoxyCodeLine{17517       \}}
+\DoxyCodeLine{17518       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17519     \}}
+\DoxyCodeLine{17520     \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{17521     \{}
+\DoxyCodeLine{17522       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17523       \{}
+\DoxyCodeLine{17524         \textcolor{keywordflow}{case} 1: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17525         \textcolor{keywordflow}{case} 7: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17526         \textcolor{keywordflow}{case} 2: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); result.append(result.last()); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17527         \textcolor{keywordflow}{case} 8: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); result.append(result.last()); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17528         \textcolor{keywordflow}{case} 3: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); result.append(result.last()); result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17529         \textcolor{keywordflow}{case} 9: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); result.append(result.last()); result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17530       \}}
+\DoxyCodeLine{17531       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17532     \}}
+\DoxyCodeLine{17533     \textcolor{keywordflow}{case} 5:}
+\DoxyCodeLine{17534     \{}
+\DoxyCodeLine{17535       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17536       \{}
+\DoxyCodeLine{17537         \textcolor{keywordflow}{case} 1: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17538         \textcolor{keywordflow}{case} 7: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17539         \textcolor{keywordflow}{case} 9: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17540         \textcolor{keywordflow}{case} 3: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17541       \}}
+\DoxyCodeLine{17542       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17543     \}}
+\DoxyCodeLine{17544     \textcolor{keywordflow}{case} 6:}
+\DoxyCodeLine{17545     \{}
+\DoxyCodeLine{17546       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17547       \{}
+\DoxyCodeLine{17548         \textcolor{keywordflow}{case} 3: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17549         \textcolor{keywordflow}{case} 9: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17550         \textcolor{keywordflow}{case} 2: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); result.append(result.last()); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17551         \textcolor{keywordflow}{case} 8: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); result.append(result.last()); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17552         \textcolor{keywordflow}{case} 1: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); result.append(result.last()); result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17553         \textcolor{keywordflow}{case} 7: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); result.append(result.last()); result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17554       \}}
+\DoxyCodeLine{17555       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17556     \}}
+\DoxyCodeLine{17557     \textcolor{keywordflow}{case} 7:}
+\DoxyCodeLine{17558     \{}
+\DoxyCodeLine{17559       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17560       \{}
+\DoxyCodeLine{17561         \textcolor{keywordflow}{case} 4: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17562         \textcolor{keywordflow}{case} 8: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17563         \textcolor{keywordflow}{case} 1: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17564         \textcolor{keywordflow}{case} 9: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17565         \textcolor{keywordflow}{case} 2: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); result.append(result.last()); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17566         \textcolor{keywordflow}{case} 6: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); result.append(result.last()); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17567         \textcolor{keywordflow}{case} 3: \{ \textcolor{comment}{// in this case we need another distinction of cases: segment may pass below or above rect, requiring either bottom right or top left corner points}}
+\DoxyCodeLine{17568           \textcolor{keywordflow}{if} ((value-\/prevValue)/(key-\/prevKey)*(rectRight-\/key)+value < rectBottom) \textcolor{comment}{// segment passes below R}}
+\DoxyCodeLine{17569           \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); result.append(result.last()); result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); \}}
+\DoxyCodeLine{17570           \textcolor{keywordflow}{else}}
+\DoxyCodeLine{17571           \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); result.append(result.last()); result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); \}}
+\DoxyCodeLine{17572           \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17573         \}}
+\DoxyCodeLine{17574       \}}
+\DoxyCodeLine{17575       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17576     \}}
+\DoxyCodeLine{17577     \textcolor{keywordflow}{case} 8:}
+\DoxyCodeLine{17578     \{}
+\DoxyCodeLine{17579       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17580       \{}
+\DoxyCodeLine{17581         \textcolor{keywordflow}{case} 7: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17582         \textcolor{keywordflow}{case} 9: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17583         \textcolor{keywordflow}{case} 4: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); result.append(result.last()); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17584         \textcolor{keywordflow}{case} 6: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); result.append(result.last()); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17585         \textcolor{keywordflow}{case} 1: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); result.append(result.last()); result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17586         \textcolor{keywordflow}{case} 3: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); result.append(result.last()); result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17587       \}}
+\DoxyCodeLine{17588       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17589     \}}
+\DoxyCodeLine{17590     \textcolor{keywordflow}{case} 9:}
+\DoxyCodeLine{17591     \{}
+\DoxyCodeLine{17592       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17593       \{}
+\DoxyCodeLine{17594         \textcolor{keywordflow}{case} 6: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17595         \textcolor{keywordflow}{case} 8: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17596         \textcolor{keywordflow}{case} 3: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17597         \textcolor{keywordflow}{case} 7: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17598         \textcolor{keywordflow}{case} 2: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); result.append(result.last()); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17599         \textcolor{keywordflow}{case} 4: \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); result.append(result.last()); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17600         \textcolor{keywordflow}{case} 1: \{ \textcolor{comment}{// in this case we need another distinction of cases: segment may pass below or above rect, requiring either bottom right or top left corner points}}
+\DoxyCodeLine{17601           \textcolor{keywordflow}{if} ((value-\/prevValue)/(key-\/prevKey)*(rectLeft-\/key)+value < rectBottom) \textcolor{comment}{// segment passes below R}}
+\DoxyCodeLine{17602           \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); result.append(result.last()); result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); \}}
+\DoxyCodeLine{17603           \textcolor{keywordflow}{else}}
+\DoxyCodeLine{17604           \{ result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom) << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); result.append(result.last()); result << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); \}}
+\DoxyCodeLine{17605           \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17606         \}}
+\DoxyCodeLine{17607       \}}
+\DoxyCodeLine{17608       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17609     \}}
+\DoxyCodeLine{17610   \}}
+\DoxyCodeLine{17611   \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{17612 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_a2f1455455d71de9ef9190c50a90f0abc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_a2f1455455d71de9ef9190c50a90f0abc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_curve_ae729c9aef90af9b7463c379cb88459f6}\label{class_q_c_p_curve_ae729c9aef90af9b7463c379cb88459f6}} 
+\index{QCPCurve@{QCPCurve}!getOptimizedPoint@{getOptimizedPoint}}
+\index{getOptimizedPoint@{getOptimizedPoint}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{getOptimizedPoint()}{getOptimizedPoint()}}
+{\footnotesize\ttfamily QPointF QCPCurve\+::get\+Optimized\+Point (\begin{DoxyParamCaption}\item[{int}]{prev\+Region,  }\item[{double}]{prev\+Key,  }\item[{double}]{prev\+Value,  }\item[{double}]{key,  }\item[{double}]{value,  }\item[{double}]{rect\+Left,  }\item[{double}]{rect\+Top,  }\item[{double}]{rect\+Right,  }\item[{double}]{rect\+Bottom }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 17362 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17363 \{}
+\DoxyCodeLine{17364   \textcolor{keywordtype}{double} intersectKey = rectLeft; \textcolor{comment}{// initial value is just fail-\/safe}}
+\DoxyCodeLine{17365   \textcolor{keywordtype}{double} intersectValue = rectTop; \textcolor{comment}{// initial value is just fail-\/safe}}
+\DoxyCodeLine{17366   \textcolor{keywordflow}{switch} (otherRegion)}
+\DoxyCodeLine{17367   \{}
+\DoxyCodeLine{17368     \textcolor{keywordflow}{case} 1: \textcolor{comment}{// top and left edge}}
+\DoxyCodeLine{17369     \{}
+\DoxyCodeLine{17370       intersectValue = rectTop;}
+\DoxyCodeLine{17371       intersectKey = otherKey + (key-\/otherKey)/(value-\/otherValue)*(intersectValue-\/otherValue);}
+\DoxyCodeLine{17372       \textcolor{keywordflow}{if} (intersectKey < rectLeft || intersectKey > rectRight) \textcolor{comment}{// doesn't intersect, so must intersect other:}}
+\DoxyCodeLine{17373       \{}
+\DoxyCodeLine{17374         intersectKey = rectLeft;}
+\DoxyCodeLine{17375         intersectValue = otherValue + (value-\/otherValue)/(key-\/otherKey)*(intersectKey-\/otherKey);}
+\DoxyCodeLine{17376       \}}
+\DoxyCodeLine{17377       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17378     \}}
+\DoxyCodeLine{17379     \textcolor{keywordflow}{case} 2: \textcolor{comment}{// left edge}}
+\DoxyCodeLine{17380     \{}
+\DoxyCodeLine{17381       intersectKey = rectLeft;}
+\DoxyCodeLine{17382       intersectValue = otherValue + (value-\/otherValue)/(key-\/otherKey)*(intersectKey-\/otherKey);}
+\DoxyCodeLine{17383       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17384     \}}
+\DoxyCodeLine{17385     \textcolor{keywordflow}{case} 3: \textcolor{comment}{// bottom and left edge}}
+\DoxyCodeLine{17386     \{}
+\DoxyCodeLine{17387       intersectValue = rectBottom;}
+\DoxyCodeLine{17388       intersectKey = otherKey + (key-\/otherKey)/(value-\/otherValue)*(intersectValue-\/otherValue);}
+\DoxyCodeLine{17389       \textcolor{keywordflow}{if} (intersectKey < rectLeft || intersectKey > rectRight) \textcolor{comment}{// doesn't intersect, so must intersect other:}}
+\DoxyCodeLine{17390       \{}
+\DoxyCodeLine{17391         intersectKey = rectLeft;}
+\DoxyCodeLine{17392         intersectValue = otherValue + (value-\/otherValue)/(key-\/otherKey)*(intersectKey-\/otherKey);}
+\DoxyCodeLine{17393       \}}
+\DoxyCodeLine{17394       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17395     \}}
+\DoxyCodeLine{17396     \textcolor{keywordflow}{case} 4: \textcolor{comment}{// top edge}}
+\DoxyCodeLine{17397     \{}
+\DoxyCodeLine{17398       intersectValue = rectTop;}
+\DoxyCodeLine{17399       intersectKey = otherKey + (key-\/otherKey)/(value-\/otherValue)*(intersectValue-\/otherValue);}
+\DoxyCodeLine{17400       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17401     \}}
+\DoxyCodeLine{17402     \textcolor{keywordflow}{case} 5:}
+\DoxyCodeLine{17403     \{}
+\DoxyCodeLine{17404       \textcolor{keywordflow}{break}; \textcolor{comment}{// case 5 shouldn't happen for this function but we add it anyway to prevent potential discontinuity in branch table}}
+\DoxyCodeLine{17405     \}}
+\DoxyCodeLine{17406     \textcolor{keywordflow}{case} 6: \textcolor{comment}{// bottom edge}}
+\DoxyCodeLine{17407     \{}
+\DoxyCodeLine{17408       intersectValue = rectBottom;}
+\DoxyCodeLine{17409       intersectKey = otherKey + (key-\/otherKey)/(value-\/otherValue)*(intersectValue-\/otherValue);}
+\DoxyCodeLine{17410       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17411     \}}
+\DoxyCodeLine{17412     \textcolor{keywordflow}{case} 7: \textcolor{comment}{// top and right edge}}
+\DoxyCodeLine{17413     \{}
+\DoxyCodeLine{17414       intersectValue = rectTop;}
+\DoxyCodeLine{17415       intersectKey = otherKey + (key-\/otherKey)/(value-\/otherValue)*(intersectValue-\/otherValue);}
+\DoxyCodeLine{17416       \textcolor{keywordflow}{if} (intersectKey < rectLeft || intersectKey > rectRight) \textcolor{comment}{// doesn't intersect, so must intersect other:}}
+\DoxyCodeLine{17417       \{}
+\DoxyCodeLine{17418         intersectKey = rectRight;}
+\DoxyCodeLine{17419         intersectValue = otherValue + (value-\/otherValue)/(key-\/otherKey)*(intersectKey-\/otherKey);}
+\DoxyCodeLine{17420       \}}
+\DoxyCodeLine{17421       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17422     \}}
+\DoxyCodeLine{17423     \textcolor{keywordflow}{case} 8: \textcolor{comment}{// right edge}}
+\DoxyCodeLine{17424     \{}
+\DoxyCodeLine{17425       intersectKey = rectRight;}
+\DoxyCodeLine{17426       intersectValue = otherValue + (value-\/otherValue)/(key-\/otherKey)*(intersectKey-\/otherKey);}
+\DoxyCodeLine{17427       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17428     \}}
+\DoxyCodeLine{17429     \textcolor{keywordflow}{case} 9: \textcolor{comment}{// bottom and right edge}}
+\DoxyCodeLine{17430     \{}
+\DoxyCodeLine{17431       intersectValue = rectBottom;}
+\DoxyCodeLine{17432       intersectKey = otherKey + (key-\/otherKey)/(value-\/otherValue)*(intersectValue-\/otherValue);}
+\DoxyCodeLine{17433       \textcolor{keywordflow}{if} (intersectKey < rectLeft || intersectKey > rectRight) \textcolor{comment}{// doesn't intersect, so must intersect other:}}
+\DoxyCodeLine{17434       \{}
+\DoxyCodeLine{17435         intersectKey = rectRight;}
+\DoxyCodeLine{17436         intersectValue = otherValue + (value-\/otherValue)/(key-\/otherKey)*(intersectKey-\/otherKey);}
+\DoxyCodeLine{17437       \}}
+\DoxyCodeLine{17438       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17439     \}}
+\DoxyCodeLine{17440   \}}
+\DoxyCodeLine{17441   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(intersectKey, intersectValue);}
+\DoxyCodeLine{17442 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_ae729c9aef90af9b7463c379cb88459f6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_ae729c9aef90af9b7463c379cb88459f6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_curve_a316b216383dbff606f59c38bd72e6501}\label{class_q_c_p_curve_a316b216383dbff606f59c38bd72e6501}} 
+\index{QCPCurve@{QCPCurve}!getRegion@{getRegion}}
+\index{getRegion@{getRegion}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{getRegion()}{getRegion()}}
+{\footnotesize\ttfamily int QCPCurve\+::get\+Region (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{rect\+Left,  }\item[{double}]{rect\+Top,  }\item[{double}]{rect\+Right,  }\item[{double}]{rect\+Bottom }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 17318 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17319 \{}
+\DoxyCodeLine{17320   \textcolor{keywordflow}{if} (x < rectLeft) \textcolor{comment}{// region 123}}
+\DoxyCodeLine{17321   \{}
+\DoxyCodeLine{17322     \textcolor{keywordflow}{if} (y > rectTop)}
+\DoxyCodeLine{17323       \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{17324     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (y < rectBottom)}
+\DoxyCodeLine{17325       \textcolor{keywordflow}{return} 3;}
+\DoxyCodeLine{17326     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{17327       \textcolor{keywordflow}{return} 2;}
+\DoxyCodeLine{17328   \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (x > rectRight) \textcolor{comment}{// region 789}}
+\DoxyCodeLine{17329   \{}
+\DoxyCodeLine{17330     \textcolor{keywordflow}{if} (y > rectTop)}
+\DoxyCodeLine{17331       \textcolor{keywordflow}{return} 7;}
+\DoxyCodeLine{17332     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (y < rectBottom)}
+\DoxyCodeLine{17333       \textcolor{keywordflow}{return} 9;}
+\DoxyCodeLine{17334     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{17335       \textcolor{keywordflow}{return} 8;}
+\DoxyCodeLine{17336   \} \textcolor{keywordflow}{else} \textcolor{comment}{// region 456}}
+\DoxyCodeLine{17337   \{}
+\DoxyCodeLine{17338     \textcolor{keywordflow}{if} (y > rectTop)}
+\DoxyCodeLine{17339       \textcolor{keywordflow}{return} 4;}
+\DoxyCodeLine{17340     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (y < rectBottom)}
+\DoxyCodeLine{17341       \textcolor{keywordflow}{return} 6;}
+\DoxyCodeLine{17342     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{17343       \textcolor{keywordflow}{return} 5;}
+\DoxyCodeLine{17344   \}}
+\DoxyCodeLine{17345 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_a316b216383dbff606f59c38bd72e6501_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_curve_a82a78dffde71e7b9c40217fa7e381057}\label{class_q_c_p_curve_a82a78dffde71e7b9c40217fa7e381057}} 
+\index{QCPCurve@{QCPCurve}!getTraverse@{getTraverse}}
+\index{getTraverse@{getTraverse}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{getTraverse()}{getTraverse()}}
+{\footnotesize\ttfamily bool QCPCurve\+::get\+Traverse (\begin{DoxyParamCaption}\item[{double}]{prev\+Key,  }\item[{double}]{prev\+Value,  }\item[{double}]{key,  }\item[{double}]{value,  }\item[{double}]{rect\+Left,  }\item[{double}]{rect\+Top,  }\item[{double}]{rect\+Right,  }\item[{double}]{rect\+Bottom,  }\item[{QPointF \&}]{crossA,  }\item[{QPointF \&}]{crossB }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 17729 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17730 \{}
+\DoxyCodeLine{17731   QList<QPointF> intersections; \textcolor{comment}{// x of QPointF corresponds to key and y to value}}
+\DoxyCodeLine{17732   \textcolor{keywordflow}{if} (qFuzzyIsNull(key-\/prevKey)) \textcolor{comment}{// line is parallel to value axis}}
+\DoxyCodeLine{17733   \{}
+\DoxyCodeLine{17734     \textcolor{comment}{// due to region filter in mayTraverseR(), if line is parallel to value or key axis, R is traversed here}}
+\DoxyCodeLine{17735     intersections.append(QPointF(key, rectBottom)); \textcolor{comment}{// direction will be taken care of at end of method}}
+\DoxyCodeLine{17736     intersections.append(QPointF(key, rectTop));}
+\DoxyCodeLine{17737   \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (qFuzzyIsNull(value-\/prevValue)) \textcolor{comment}{// line is parallel to key axis}}
+\DoxyCodeLine{17738   \{}
+\DoxyCodeLine{17739     \textcolor{comment}{// due to region filter in mayTraverseR(), if line is parallel to value or key axis, R is traversed here}}
+\DoxyCodeLine{17740     intersections.append(QPointF(rectLeft, value)); \textcolor{comment}{// direction will be taken care of at end of method}}
+\DoxyCodeLine{17741     intersections.append(QPointF(rectRight, value));}
+\DoxyCodeLine{17742   \} \textcolor{keywordflow}{else} \textcolor{comment}{// line is skewed}}
+\DoxyCodeLine{17743   \{}
+\DoxyCodeLine{17744     \textcolor{keywordtype}{double} gamma;}
+\DoxyCodeLine{17745     \textcolor{keywordtype}{double} keyPerValue = (key-\/prevKey)/(value-\/prevValue);}
+\DoxyCodeLine{17746     \textcolor{comment}{// check top of rect:}}
+\DoxyCodeLine{17747     gamma = prevKey + (rectTop-\/prevValue)*keyPerValue;}
+\DoxyCodeLine{17748     \textcolor{keywordflow}{if} (gamma >= rectLeft \&\& gamma <= rectRight)}
+\DoxyCodeLine{17749       intersections.append(QPointF(gamma, rectTop));}
+\DoxyCodeLine{17750     \textcolor{comment}{// check bottom of rect:}}
+\DoxyCodeLine{17751     gamma = prevKey + (rectBottom-\/prevValue)*keyPerValue;}
+\DoxyCodeLine{17752     \textcolor{keywordflow}{if} (gamma >= rectLeft \&\& gamma <= rectRight)}
+\DoxyCodeLine{17753       intersections.append(QPointF(gamma, rectBottom));}
+\DoxyCodeLine{17754     \textcolor{keywordtype}{double} valuePerKey = 1.0/keyPerValue;}
+\DoxyCodeLine{17755     \textcolor{comment}{// check left of rect:}}
+\DoxyCodeLine{17756     gamma = prevValue + (rectLeft-\/prevKey)*valuePerKey;}
+\DoxyCodeLine{17757     \textcolor{keywordflow}{if} (gamma >= rectBottom \&\& gamma <= rectTop)}
+\DoxyCodeLine{17758       intersections.append(QPointF(rectLeft, gamma));}
+\DoxyCodeLine{17759     \textcolor{comment}{// check right of rect:}}
+\DoxyCodeLine{17760     gamma = prevValue + (rectRight-\/prevKey)*valuePerKey;}
+\DoxyCodeLine{17761     \textcolor{keywordflow}{if} (gamma >= rectBottom \&\& gamma <= rectTop)}
+\DoxyCodeLine{17762       intersections.append(QPointF(rectRight, gamma));}
+\DoxyCodeLine{17763   \}}
+\DoxyCodeLine{17764   }
+\DoxyCodeLine{17765   \textcolor{comment}{// handle cases where found points isn't exactly 2:}}
+\DoxyCodeLine{17766   \textcolor{keywordflow}{if} (intersections.size() > 2)}
+\DoxyCodeLine{17767   \{}
+\DoxyCodeLine{17768     \textcolor{comment}{// line probably goes through corner of rect, and we got duplicate points there. single out the point pair with greatest distance in between:}}
+\DoxyCodeLine{17769     \textcolor{keywordtype}{double} distSqrMax = 0;}
+\DoxyCodeLine{17770     QPointF pv1, pv2;}
+\DoxyCodeLine{17771     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<intersections.size()-\/1; ++i)}
+\DoxyCodeLine{17772     \{}
+\DoxyCodeLine{17773       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k=i+1; k<intersections.size(); ++k)}
+\DoxyCodeLine{17774       \{}
+\DoxyCodeLine{17775         QPointF distPoint = intersections.at(i)-\/intersections.at(k);}
+\DoxyCodeLine{17776         \textcolor{keywordtype}{double} distSqr = distPoint.x()*distPoint.x()+distPoint.y()+distPoint.y();}
+\DoxyCodeLine{17777         \textcolor{keywordflow}{if} (distSqr > distSqrMax)}
+\DoxyCodeLine{17778         \{}
+\DoxyCodeLine{17779           pv1 = intersections.at(i);}
+\DoxyCodeLine{17780           pv2 = intersections.at(k);}
+\DoxyCodeLine{17781           distSqrMax = distSqr;}
+\DoxyCodeLine{17782         \}}
+\DoxyCodeLine{17783       \}}
+\DoxyCodeLine{17784     \}}
+\DoxyCodeLine{17785     intersections = QList<QPointF>() << pv1 << pv2;}
+\DoxyCodeLine{17786   \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (intersections.size() != 2)}
+\DoxyCodeLine{17787   \{}
+\DoxyCodeLine{17788     \textcolor{comment}{// one or even zero points found (shouldn't happen unless line perfectly tangent to corner), no need to draw segment}}
+\DoxyCodeLine{17789     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{17790   \}}
+\DoxyCodeLine{17791   }
+\DoxyCodeLine{17792   \textcolor{comment}{// possibly re-\/sort points so optimized point segment has same direction as original segment:}}
+\DoxyCodeLine{17793   \textcolor{keywordflow}{if} ((key-\/prevKey)*(intersections.at(1).x()-\/intersections.at(0).x()) + (value-\/prevValue)*(intersections.at(1).y()-\/intersections.at(0).y()) < 0) \textcolor{comment}{// scalar product of both segments < 0 -\/> opposite direction}}
+\DoxyCodeLine{17794     intersections.move(0, 1);}
+\DoxyCodeLine{17795   crossA = \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(intersections.at(0).x(), intersections.at(0).y());}
+\DoxyCodeLine{17796   crossB = \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(intersections.at(1).x(), intersections.at(1).y());}
+\DoxyCodeLine{17797   \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{17798 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_a82a78dffde71e7b9c40217fa7e381057_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_a82a78dffde71e7b9c40217fa7e381057_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_curve_a592d6e3dbd42cb8cea35eda889ece1b1}\label{class_q_c_p_curve_a592d6e3dbd42cb8cea35eda889ece1b1}} 
+\index{QCPCurve@{QCPCurve}!getTraverseCornerPoints@{getTraverseCornerPoints}}
+\index{getTraverseCornerPoints@{getTraverseCornerPoints}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{getTraverseCornerPoints()}{getTraverseCornerPoints()}}
+{\footnotesize\ttfamily void QCPCurve\+::get\+Traverse\+Corner\+Points (\begin{DoxyParamCaption}\item[{int}]{prev\+Region,  }\item[{int}]{current\+Region,  }\item[{double}]{rect\+Left,  }\item[{double}]{rect\+Top,  }\item[{double}]{rect\+Right,  }\item[{double}]{rect\+Bottom,  }\item[{QVector$<$ QPointF $>$ \&}]{before\+Traverse,  }\item[{QVector$<$ QPointF $>$ \&}]{after\+Traverse }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 17825 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17826 \{}
+\DoxyCodeLine{17827   \textcolor{keywordflow}{switch} (prevRegion)}
+\DoxyCodeLine{17828   \{}
+\DoxyCodeLine{17829     \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{17830     \{}
+\DoxyCodeLine{17831       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17832       \{}
+\DoxyCodeLine{17833         \textcolor{keywordflow}{case} 6: \{ beforeTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17834         \textcolor{keywordflow}{case} 9: \{ beforeTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); afterTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17835         \textcolor{keywordflow}{case} 8: \{ beforeTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17836       \}}
+\DoxyCodeLine{17837       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17838     \}}
+\DoxyCodeLine{17839     \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{17840     \{}
+\DoxyCodeLine{17841       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17842       \{}
+\DoxyCodeLine{17843         \textcolor{keywordflow}{case} 7: \{ afterTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17844         \textcolor{keywordflow}{case} 9: \{ afterTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17845       \}}
+\DoxyCodeLine{17846       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17847     \}}
+\DoxyCodeLine{17848     \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{17849     \{}
+\DoxyCodeLine{17850       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17851       \{}
+\DoxyCodeLine{17852         \textcolor{keywordflow}{case} 4: \{ beforeTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17853         \textcolor{keywordflow}{case} 7: \{ beforeTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); afterTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17854         \textcolor{keywordflow}{case} 8: \{ beforeTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17855       \}}
+\DoxyCodeLine{17856       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17857     \}}
+\DoxyCodeLine{17858     \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{17859     \{}
+\DoxyCodeLine{17860       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17861       \{}
+\DoxyCodeLine{17862         \textcolor{keywordflow}{case} 3: \{ afterTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17863         \textcolor{keywordflow}{case} 9: \{ afterTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17864       \}}
+\DoxyCodeLine{17865       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17866     \}}
+\DoxyCodeLine{17867     \textcolor{keywordflow}{case} 5: \{ \textcolor{keywordflow}{break}; \} \textcolor{comment}{// shouldn't happen because this method only handles full traverses}}
+\DoxyCodeLine{17868     \textcolor{keywordflow}{case} 6:}
+\DoxyCodeLine{17869     \{}
+\DoxyCodeLine{17870       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17871       \{}
+\DoxyCodeLine{17872         \textcolor{keywordflow}{case} 1: \{ afterTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17873         \textcolor{keywordflow}{case} 7: \{ afterTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17874       \}}
+\DoxyCodeLine{17875       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17876     \}}
+\DoxyCodeLine{17877     \textcolor{keywordflow}{case} 7:}
+\DoxyCodeLine{17878     \{}
+\DoxyCodeLine{17879       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17880       \{}
+\DoxyCodeLine{17881         \textcolor{keywordflow}{case} 2: \{ beforeTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17882         \textcolor{keywordflow}{case} 3: \{ beforeTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); afterTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17883         \textcolor{keywordflow}{case} 6: \{ beforeTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17884       \}}
+\DoxyCodeLine{17885       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17886     \}}
+\DoxyCodeLine{17887     \textcolor{keywordflow}{case} 8:}
+\DoxyCodeLine{17888     \{}
+\DoxyCodeLine{17889       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17890       \{}
+\DoxyCodeLine{17891         \textcolor{keywordflow}{case} 1: \{ afterTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17892         \textcolor{keywordflow}{case} 3: \{ afterTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17893       \}}
+\DoxyCodeLine{17894       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17895     \}}
+\DoxyCodeLine{17896     \textcolor{keywordflow}{case} 9:}
+\DoxyCodeLine{17897     \{}
+\DoxyCodeLine{17898       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17899       \{}
+\DoxyCodeLine{17900         \textcolor{keywordflow}{case} 2: \{ beforeTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17901         \textcolor{keywordflow}{case} 1: \{ beforeTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); afterTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectLeft, rectTop); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17902         \textcolor{keywordflow}{case} 4: \{ beforeTraverse << \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(rectRight, rectBottom); \textcolor{keywordflow}{break}; \}}
+\DoxyCodeLine{17903       \}}
+\DoxyCodeLine{17904       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17905     \}}
+\DoxyCodeLine{17906   \}}
+\DoxyCodeLine{17907 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_a592d6e3dbd42cb8cea35eda889ece1b1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_a592d6e3dbd42cb8cea35eda889ece1b1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_curve_a12fcfce09ffa9965b3e01555d968d378}\label{class_q_c_p_curve_a12fcfce09ffa9965b3e01555d968d378}} 
+\index{QCPCurve@{QCPCurve}!getValueRange@{getValueRange}}
+\index{getValueRange@{getValueRange}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{getValueRange()}{getValueRange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} QCPCurve\+::get\+Value\+Range (\begin{DoxyParamCaption}\item[{bool \&}]{found\+Range,  }\item[{\mbox{\hyperlink{class_q_c_p_abstract_plottable_a661743478a1d3c09d28ec2711d7653d8}{Sign\+Domain}}}]{in\+Sign\+Domain = {\ttfamily \mbox{\hyperlink{class_q_c_p_abstract_plottable_a661743478a1d3c09d28ec2711d7653d8a082b98cfb91a7363a3b5cd17b0c1cd60}{sd\+Both}}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_plottable_aa3331b415b5939fe4df60b78831b2799}{QCPAbstract\+Plottable}}.
+
+
+
+Definition at line 17979 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17980 \{}
+\DoxyCodeLine{17981   \mbox{\hyperlink{class_q_c_p_range}{QCPRange}} range;}
+\DoxyCodeLine{17982   \textcolor{keywordtype}{bool} haveLower = \textcolor{keyword}{false};}
+\DoxyCodeLine{17983   \textcolor{keywordtype}{bool} haveUpper = \textcolor{keyword}{false};}
+\DoxyCodeLine{17984   }
+\DoxyCodeLine{17985   \textcolor{keywordtype}{double} current;}
+\DoxyCodeLine{17986   }
+\DoxyCodeLine{17987   QCPCurveDataMap::const\_iterator it = \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>constBegin();}
+\DoxyCodeLine{17988   \textcolor{keywordflow}{while} (it != \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>constEnd())}
+\DoxyCodeLine{17989   \{}
+\DoxyCodeLine{17990     current = it.value().value;}
+\DoxyCodeLine{17991     \textcolor{keywordflow}{if} (!qIsNaN(current) \&\& !qIsNaN(it.value().key))}
+\DoxyCodeLine{17992     \{}
+\DoxyCodeLine{17993       \textcolor{keywordflow}{if} (inSignDomain == \mbox{\hyperlink{class_q_c_p_abstract_plottable_a661743478a1d3c09d28ec2711d7653d8a082b98cfb91a7363a3b5cd17b0c1cd60}{sdBoth}} || (inSignDomain == \mbox{\hyperlink{class_q_c_p_abstract_plottable_a661743478a1d3c09d28ec2711d7653d8a0fc9a70796ef60ad18ddd18056e6dc63}{sdNegative}} \&\& current < 0) || (inSignDomain == \mbox{\hyperlink{class_q_c_p_abstract_plottable_a661743478a1d3c09d28ec2711d7653d8a02951859f243a4d24e779cfbb5471030}{sdPositive}} \&\& current > 0))}
+\DoxyCodeLine{17994       \{}
+\DoxyCodeLine{17995         \textcolor{keywordflow}{if} (current < range.\mbox{\hyperlink{class_q_c_p_range_aa3aca3edb14f7ca0c85d912647b91745}{lower}} || !haveLower)}
+\DoxyCodeLine{17996         \{}
+\DoxyCodeLine{17997           range.\mbox{\hyperlink{class_q_c_p_range_aa3aca3edb14f7ca0c85d912647b91745}{lower}} = current;}
+\DoxyCodeLine{17998           haveLower = \textcolor{keyword}{true};}
+\DoxyCodeLine{17999         \}}
+\DoxyCodeLine{18000         \textcolor{keywordflow}{if} (current > range.\mbox{\hyperlink{class_q_c_p_range_ae44eb3aafe1d0e2ed34b499b6d2e074f}{upper}} || !haveUpper)}
+\DoxyCodeLine{18001         \{}
+\DoxyCodeLine{18002           range.\mbox{\hyperlink{class_q_c_p_range_ae44eb3aafe1d0e2ed34b499b6d2e074f}{upper}} = current;}
+\DoxyCodeLine{18003           haveUpper = \textcolor{keyword}{true};}
+\DoxyCodeLine{18004         \}}
+\DoxyCodeLine{18005       \}}
+\DoxyCodeLine{18006     \}}
+\DoxyCodeLine{18007     ++it;}
+\DoxyCodeLine{18008   \}}
+\DoxyCodeLine{18009   }
+\DoxyCodeLine{18010   foundRange = haveLower \&\& haveUpper;}
+\DoxyCodeLine{18011   \textcolor{keywordflow}{return} range;}
+\DoxyCodeLine{18012 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_curve_a06e3cf3f8f1add689254b3cda66e040e}\label{class_q_c_p_curve_a06e3cf3f8f1add689254b3cda66e040e}} 
+\index{QCPCurve@{QCPCurve}!lineStyle@{lineStyle}}
+\index{lineStyle@{lineStyle}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{lineStyle()}{lineStyle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}{Line\+Style}} QCPCurve\+::line\+Style (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 2682 of file qcustomplot.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2682 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_curve_ae1f35ae2b15aee8e15bcdfec5be95156}{mLineStyle}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_curve_af5df2560b30333fe662ec676bd355415}\label{class_q_c_p_curve_af5df2560b30333fe662ec676bd355415}} 
+\index{QCPCurve@{QCPCurve}!mayTraverse@{mayTraverse}}
+\index{mayTraverse@{mayTraverse}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{mayTraverse()}{mayTraverse()}}
+{\footnotesize\ttfamily bool QCPCurve\+::may\+Traverse (\begin{DoxyParamCaption}\item[{int}]{prev\+Region,  }\item[{int}]{current\+Region }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 17626 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17627 \{}
+\DoxyCodeLine{17628   \textcolor{keywordflow}{switch} (prevRegion)}
+\DoxyCodeLine{17629   \{}
+\DoxyCodeLine{17630     \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{17631     \{}
+\DoxyCodeLine{17632       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17633       \{}
+\DoxyCodeLine{17634         \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{17635         \textcolor{keywordflow}{case} 7:}
+\DoxyCodeLine{17636         \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{17637         \textcolor{keywordflow}{case} 3: \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{17638         \textcolor{keywordflow}{default}: \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{17639       \}}
+\DoxyCodeLine{17640     \}}
+\DoxyCodeLine{17641     \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{17642     \{}
+\DoxyCodeLine{17643       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17644       \{}
+\DoxyCodeLine{17645         \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{17646         \textcolor{keywordflow}{case} 3: \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{17647         \textcolor{keywordflow}{default}: \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{17648       \}}
+\DoxyCodeLine{17649     \}}
+\DoxyCodeLine{17650     \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{17651     \{}
+\DoxyCodeLine{17652       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17653       \{}
+\DoxyCodeLine{17654         \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{17655         \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{17656         \textcolor{keywordflow}{case} 6:}
+\DoxyCodeLine{17657         \textcolor{keywordflow}{case} 9: \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{17658         \textcolor{keywordflow}{default}: \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{17659       \}}
+\DoxyCodeLine{17660     \}}
+\DoxyCodeLine{17661     \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{17662     \{}
+\DoxyCodeLine{17663       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17664       \{}
+\DoxyCodeLine{17665         \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{17666         \textcolor{keywordflow}{case} 7: \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{17667         \textcolor{keywordflow}{default}: \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{17668       \}}
+\DoxyCodeLine{17669     \}}
+\DoxyCodeLine{17670     \textcolor{keywordflow}{case} 5: \textcolor{keywordflow}{return} \textcolor{keyword}{false}; \textcolor{comment}{// should never occur}}
+\DoxyCodeLine{17671     \textcolor{keywordflow}{case} 6:}
+\DoxyCodeLine{17672     \{}
+\DoxyCodeLine{17673       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17674       \{}
+\DoxyCodeLine{17675         \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{17676         \textcolor{keywordflow}{case} 9: \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{17677         \textcolor{keywordflow}{default}: \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{17678       \}}
+\DoxyCodeLine{17679     \}}
+\DoxyCodeLine{17680     \textcolor{keywordflow}{case} 7:}
+\DoxyCodeLine{17681     \{}
+\DoxyCodeLine{17682       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17683       \{}
+\DoxyCodeLine{17684         \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{17685         \textcolor{keywordflow}{case} 4:}
+\DoxyCodeLine{17686         \textcolor{keywordflow}{case} 8:}
+\DoxyCodeLine{17687         \textcolor{keywordflow}{case} 9: \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{17688         \textcolor{keywordflow}{default}: \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{17689       \}}
+\DoxyCodeLine{17690     \}}
+\DoxyCodeLine{17691     \textcolor{keywordflow}{case} 8:}
+\DoxyCodeLine{17692     \{}
+\DoxyCodeLine{17693       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17694       \{}
+\DoxyCodeLine{17695         \textcolor{keywordflow}{case} 7:}
+\DoxyCodeLine{17696         \textcolor{keywordflow}{case} 9: \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{17697         \textcolor{keywordflow}{default}: \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{17698       \}}
+\DoxyCodeLine{17699     \}}
+\DoxyCodeLine{17700     \textcolor{keywordflow}{case} 9:}
+\DoxyCodeLine{17701     \{}
+\DoxyCodeLine{17702       \textcolor{keywordflow}{switch} (currentRegion)}
+\DoxyCodeLine{17703       \{}
+\DoxyCodeLine{17704         \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{17705         \textcolor{keywordflow}{case} 6:}
+\DoxyCodeLine{17706         \textcolor{keywordflow}{case} 8:}
+\DoxyCodeLine{17707         \textcolor{keywordflow}{case} 7: \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{17708         \textcolor{keywordflow}{default}: \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{17709       \}}
+\DoxyCodeLine{17710     \}}
+\DoxyCodeLine{17711     \textcolor{keywordflow}{default}: \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{17712   \}}
+\DoxyCodeLine{17713 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_af5df2560b30333fe662ec676bd355415_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_curve_adc3ab8051946f9097cdf7c0707ef1a25}\label{class_q_c_p_curve_adc3ab8051946f9097cdf7c0707ef1a25}} 
+\index{QCPCurve@{QCPCurve}!pointDistance@{pointDistance}}
+\index{pointDistance@{pointDistance}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{pointDistance()}{pointDistance()}}
+{\footnotesize\ttfamily double QCPCurve\+::point\+Distance (\begin{DoxyParamCaption}\item[{const QPointF \&}]{pixel\+Point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 17915 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17916 \{}
+\DoxyCodeLine{17917   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>isEmpty())}
+\DoxyCodeLine{17918   \{}
+\DoxyCodeLine{17919     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}requested point distance on curve"{}} << \mbox{\hyperlink{class_q_c_p_abstract_plottable_ac29ffef424e2488675930de18cde612a}{mName}} << \textcolor{stringliteral}{"{}without data"{}};}
+\DoxyCodeLine{17920     \textcolor{keywordflow}{return} 500;}
+\DoxyCodeLine{17921   \}}
+\DoxyCodeLine{17922   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>size() == 1)}
+\DoxyCodeLine{17923   \{}
+\DoxyCodeLine{17924     QPointF dataPoint = \mbox{\hyperlink{class_q_c_p_abstract_plottable_a7ad84a36472441cf1f555c5683d0da93}{coordsToPixels}}(\mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>constBegin().key(), \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>constBegin().value().value);}
+\DoxyCodeLine{17925     \textcolor{keywordflow}{return} QVector2D(dataPoint-\/pixelPoint).length();}
+\DoxyCodeLine{17926   \}}
+\DoxyCodeLine{17927   }
+\DoxyCodeLine{17928   \textcolor{comment}{// calculate minimum distance to line segments:}}
+\DoxyCodeLine{17929   QVector<QPointF> *lineData = \textcolor{keyword}{new} QVector<QPointF>;}
+\DoxyCodeLine{17930   \mbox{\hyperlink{class_q_c_p_curve_a3ca9d2c315c643f732cc85e20d18b551}{getCurveData}}(lineData);}
+\DoxyCodeLine{17931   \textcolor{keywordtype}{double} minDistSqr = std::numeric\_limits<double>::max();}
+\DoxyCodeLine{17932   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<lineData-\/>size()-\/1; ++i)}
+\DoxyCodeLine{17933   \{}
+\DoxyCodeLine{17934     \textcolor{keywordtype}{double} currentDistSqr = \mbox{\hyperlink{class_q_c_p_abstract_plottable_af7e992b638c8aa688abceac579bb90d7}{distSqrToLine}}(lineData-\/>at(i), lineData-\/>at(i+1), pixelPoint);}
+\DoxyCodeLine{17935     \textcolor{keywordflow}{if} (currentDistSqr < minDistSqr)}
+\DoxyCodeLine{17936       minDistSqr = currentDistSqr;}
+\DoxyCodeLine{17937   \}}
+\DoxyCodeLine{17938   \textcolor{keyword}{delete} lineData;}
+\DoxyCodeLine{17939   \textcolor{keywordflow}{return} qSqrt(minDistSqr);}
+\DoxyCodeLine{17940 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_adc3ab8051946f9097cdf7c0707ef1a25_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_adc3ab8051946f9097cdf7c0707ef1a25_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_curve_ad45bb5479be799163028ef2b776f7221}\label{class_q_c_p_curve_ad45bb5479be799163028ef2b776f7221}} 
+\index{QCPCurve@{QCPCurve}!removeData@{removeData}}
+\index{removeData@{removeData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{removeData()}{removeData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void QCPCurve\+::remove\+Data (\begin{DoxyParamCaption}\item[{double}]{fromt,  }\item[{double}]{tot }\end{DoxyParamCaption})}
+
+Removes all data points with curve parameter t between {\itshape fromt} and {\itshape tot}. if {\itshape fromt} is greater or equal to {\itshape tot}, the function does nothing. To remove a single data point with known t, use \mbox{\hyperlink{class_q_c_p_curve_a30c91acfa591ec534c49fed4c0fca39a}{remove\+Data(double t)}}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_curve_a4e24023c3b9ac75440c7a260172c99af}{add\+Data}}, \mbox{\hyperlink{class_q_c_p_curve_ae0462c61dbfbac07db0736ec64110241}{clear\+Data}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 17024 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17025 \{}
+\DoxyCodeLine{17026   \textcolor{keywordflow}{if} (fromt >= tot || \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>isEmpty()) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{17027   QCPCurveDataMap::iterator it = \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>upperBound(fromt);}
+\DoxyCodeLine{17028   QCPCurveDataMap::iterator itEnd = \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>upperBound(tot);}
+\DoxyCodeLine{17029   \textcolor{keywordflow}{while} (it != itEnd)}
+\DoxyCodeLine{17030     it = \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>erase(it);}
+\DoxyCodeLine{17031 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_curve_a30c91acfa591ec534c49fed4c0fca39a}\label{class_q_c_p_curve_a30c91acfa591ec534c49fed4c0fca39a}} 
+\index{QCPCurve@{QCPCurve}!removeData@{removeData}}
+\index{removeData@{removeData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{removeData()}{removeData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void QCPCurve\+::remove\+Data (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.
+
+Removes a single data point at curve parameter {\itshape t}. If the position is not known with absolute precision, consider using \mbox{\hyperlink{class_q_c_p_curve_ad45bb5479be799163028ef2b776f7221}{remove\+Data(double fromt, double tot)}} with a small fuzziness interval around the suspected position, depeding on the precision with which the curve parameter is known.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_curve_a4e24023c3b9ac75440c7a260172c99af}{add\+Data}}, \mbox{\hyperlink{class_q_c_p_curve_ae0462c61dbfbac07db0736ec64110241}{clear\+Data}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 17042 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17043 \{}
+\DoxyCodeLine{17044   \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>remove(t);}
+\DoxyCodeLine{17045 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_curve_a0365cb947c4e6d405ee22e00191d5f52}\label{class_q_c_p_curve_a0365cb947c4e6d405ee22e00191d5f52}} 
+\index{QCPCurve@{QCPCurve}!removeDataAfter@{removeDataAfter}}
+\index{removeDataAfter@{removeDataAfter}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{removeDataAfter()}{removeDataAfter()}}
+{\footnotesize\ttfamily void QCPCurve\+::remove\+Data\+After (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})}
+
+Removes all data points with curve parameter t greater than {\itshape t}. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_curve_a4e24023c3b9ac75440c7a260172c99af}{add\+Data}}, \mbox{\hyperlink{class_q_c_p_curve_ae0462c61dbfbac07db0736ec64110241}{clear\+Data}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 17009 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17010 \{}
+\DoxyCodeLine{17011   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>isEmpty()) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{17012   QCPCurveDataMap::iterator it = \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>upperBound(t);}
+\DoxyCodeLine{17013   \textcolor{keywordflow}{while} (it != \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>end())}
+\DoxyCodeLine{17014     it = \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>erase(it);}
+\DoxyCodeLine{17015 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_curve_af6f4284fbc2f34e676f24dce03c34fe5}\label{class_q_c_p_curve_af6f4284fbc2f34e676f24dce03c34fe5}} 
+\index{QCPCurve@{QCPCurve}!removeDataBefore@{removeDataBefore}}
+\index{removeDataBefore@{removeDataBefore}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{removeDataBefore()}{removeDataBefore()}}
+{\footnotesize\ttfamily void QCPCurve\+::remove\+Data\+Before (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})}
+
+Removes all data points with curve parameter t smaller than {\itshape t}. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_curve_a4e24023c3b9ac75440c7a260172c99af}{add\+Data}}, \mbox{\hyperlink{class_q_c_p_curve_ae0462c61dbfbac07db0736ec64110241}{clear\+Data}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 16998 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16999 \{}
+\DoxyCodeLine{17000   QCPCurveDataMap::iterator it = \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>begin();}
+\DoxyCodeLine{17001   \textcolor{keywordflow}{while} (it != \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>end() \&\& it.key() < t)}
+\DoxyCodeLine{17002     it = \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>erase(it);}
+\DoxyCodeLine{17003 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_curve_afa6bd72a3a331a5ed45d3e0c5843b592}\label{class_q_c_p_curve_afa6bd72a3a331a5ed45d3e0c5843b592}} 
+\index{QCPCurve@{QCPCurve}!scatterStyle@{scatterStyle}}
+\index{scatterStyle@{scatterStyle}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{scatterStyle()}{scatterStyle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} QCPCurve\+::scatter\+Style (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 2681 of file qcustomplot.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2681 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}{mScatterStyle}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_curve_a87a9fb34a2a48dcae4c1245ada235e7d}\label{class_q_c_p_curve_a87a9fb34a2a48dcae4c1245ada235e7d}} 
+\index{QCPCurve@{QCPCurve}!selectTest@{selectTest}}
+\index{selectTest@{selectTest}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{selectTest()}{selectTest()}}
+{\footnotesize\ttfamily double QCPCurve\+::select\+Test (\begin{DoxyParamCaption}\item[{const QPointF \&}]{pos,  }\item[{bool}]{only\+Selectable,  }\item[{QVariant $\ast$}]{details = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function is used to decide whether a click hits a layerable object or not.
+
+{\itshape pos} is a point in pixel coordinates on the \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} surface. This function returns the shortest pixel distance of this point to the object. If the object is either invisible or the distance couldn\textquotesingle{}t be determined, -\/1.\+0 is returned. Further, if {\itshape only\+Selectable} is true and the object is not selectable, -\/1.\+0 is returned, too.
+
+If the object is represented not by single lines but by an area like a \mbox{\hyperlink{class_q_c_p_item_text}{QCPItem\+Text}} or the bars of a \mbox{\hyperlink{class_q_c_p_bars}{QCPBars}} plottable, a click inside the area should also be considered a hit. In these cases this function thus returns a constant value greater zero but still below the parent plot\textquotesingle{}s selection tolerance. (typically the selection\+Tolerance multiplied by 0.\+99).
+
+Providing a constant value for area objects allows selecting line objects even when they are obscured by such area objects, by clicking close to the lines (i.\+e. closer than 0.\+99$\ast$selection\+Tolerance).
+
+The actual setting of the selection state is not done by this function. This is handled by the parent \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} when the mouse\+Release\+Event occurs, and the finally selected object is notified via the select\+Event/deselect\+Event methods.
+
+{\itshape details} is an optional output parameter. Every layerable subclass may place any information in {\itshape details}. This information will be passed to \mbox{\hyperlink{class_q_c_p_abstract_plottable_a16aaad02456aa23a759efd1ac90c79bf}{select\+Event}} when the parent \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}} decides on the basis of this select\+Test call, that the object was successfully selected. The subsequent call to \mbox{\hyperlink{class_q_c_p_abstract_plottable_a16aaad02456aa23a759efd1ac90c79bf}{select\+Event}} will carry the {\itshape details}. This is useful for multi-\/part objects (like \mbox{\hyperlink{class_q_c_p_axis}{QCPAxis}}). This way, a possibly complex calculation to decide which part was clicked is only done once in \mbox{\hyperlink{class_q_c_p_curve_a87a9fb34a2a48dcae4c1245ada235e7d}{select\+Test}}. The result (i.\+e. the actually clicked part) can then be placed in {\itshape details}. So in the subsequent \mbox{\hyperlink{class_q_c_p_abstract_plottable_a16aaad02456aa23a759efd1ac90c79bf}{select\+Event}}, the decision which part was selected doesn\textquotesingle{}t have to be done a second time for a single selection operation.
+
+You may pass 0 as {\itshape details} to indicate that you are not interested in those selection details.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_abstract_plottable_a16aaad02456aa23a759efd1ac90c79bf}{select\+Event}}, \mbox{\hyperlink{class_q_c_p_abstract_plottable_a6fa0d0f95560ea8b01ee13f296dab2b1}{deselect\+Event}}, \mbox{\hyperlink{class_q_custom_plot_a5ee1e2f6ae27419deca53e75907c27e5}{QCustom\+Plot\+::set\+Interactions}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{class_q_c_p_abstract_plottable_a38efe9641d972992a3d44204bc80ec1d}{QCPAbstract\+Plottable}}.
+
+
+
+Definition at line 17057 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17058 \{}
+\DoxyCodeLine{17059   Q\_UNUSED(details)}
+\DoxyCodeLine{17060   \textcolor{keywordflow}{if} ((onlySelectable \&\& !\mbox{\hyperlink{class_q_c_p_abstract_plottable_aceee52342c8e75727abcbd164986fdcb}{mSelectable}}) || \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>isEmpty())}
+\DoxyCodeLine{17061     \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{17062   \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_q_c_p_abstract_plottable_a426f42e254d0f8ce5436a868c61a6827}{mKeyAxis}} || !\mbox{\hyperlink{class_q_c_p_abstract_plottable_a2901452ca4aea911a1827717934a4bda}{mValueAxis}}) \{ qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}invalid key or value axis"{}}; \textcolor{keywordflow}{return} -\/1; \}}
+\DoxyCodeLine{17063   }
+\DoxyCodeLine{17064   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_abstract_plottable_a426f42e254d0f8ce5436a868c61a6827}{mKeyAxis}}.data()-\/>axisRect()-\/>rect().contains(pos.toPoint()))}
+\DoxyCodeLine{17065     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_q_c_p_curve_adc3ab8051946f9097cdf7c0707ef1a25}{pointDistance}}(pos);}
+\DoxyCodeLine{17066   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{17067     \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{17068 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_a87a9fb34a2a48dcae4c1245ada235e7d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_curve_a963d4c45777deef15848a8f56172d066}\label{class_q_c_p_curve_a963d4c45777deef15848a8f56172d066}} 
+\index{QCPCurve@{QCPCurve}!setData@{setData}}
+\index{setData@{setData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void QCPCurve\+::set\+Data (\begin{DoxyParamCaption}\item[{const QVector$<$ double $>$ \&}]{key,  }\item[{const QVector$<$ double $>$ \&}]{value }\end{DoxyParamCaption})}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.
+
+Replaces the current data with the provided {\itshape key} and {\itshape value} pairs. The t parameter of each data point will be set to the integer index of the respective key/value pair. 
+
+Definition at line 16885 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16886 \{}
+\DoxyCodeLine{16887   \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>clear();}
+\DoxyCodeLine{16888   \textcolor{keywordtype}{int} n = key.size();}
+\DoxyCodeLine{16889   n = qMin(n, value.size());}
+\DoxyCodeLine{16890   \mbox{\hyperlink{class_q_c_p_curve_data}{QCPCurveData}} newData;}
+\DoxyCodeLine{16891   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<n; ++i)}
+\DoxyCodeLine{16892   \{}
+\DoxyCodeLine{16893     newData.\mbox{\hyperlink{class_q_c_p_curve_data_aecc395525be28e9178a088793beb3ff3}{t}} = i; \textcolor{comment}{// no t vector given, so we assign t the index of the key/value pair}}
+\DoxyCodeLine{16894     newData.\mbox{\hyperlink{class_q_c_p_curve_data_a8a4ec5f2b9a396149fd842e309701bd4}{key}} = key[i];}
+\DoxyCodeLine{16895     newData.\mbox{\hyperlink{class_q_c_p_curve_data_a72b39b8e1dbf7b45382ebd48419b6828}{value}} = value[i];}
+\DoxyCodeLine{16896     \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>insertMulti(newData.\mbox{\hyperlink{class_q_c_p_curve_data_aecc395525be28e9178a088793beb3ff3}{t}}, newData);}
+\DoxyCodeLine{16897   \}}
+\DoxyCodeLine{16898 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_curve_affe80e011e2ced62a88f614acd6ab8d1}\label{class_q_c_p_curve_affe80e011e2ced62a88f614acd6ab8d1}} 
+\index{QCPCurve@{QCPCurve}!setData@{setData}}
+\index{setData@{setData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void QCPCurve\+::set\+Data (\begin{DoxyParamCaption}\item[{const QVector$<$ double $>$ \&}]{t,  }\item[{const QVector$<$ double $>$ \&}]{key,  }\item[{const QVector$<$ double $>$ \&}]{value }\end{DoxyParamCaption})}
+
+This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.
+
+Replaces the current data with the provided points in {\itshape t}, {\itshape key} and {\itshape value} tuples. The provided vectors should have equal length. Else, the number of added points will be the size of the smallest vector. 
+
+Definition at line 16864 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16865 \{}
+\DoxyCodeLine{16866   \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>clear();}
+\DoxyCodeLine{16867   \textcolor{keywordtype}{int} n = t.size();}
+\DoxyCodeLine{16868   n = qMin(n, key.size());}
+\DoxyCodeLine{16869   n = qMin(n, value.size());}
+\DoxyCodeLine{16870   \mbox{\hyperlink{class_q_c_p_curve_data}{QCPCurveData}} newData;}
+\DoxyCodeLine{16871   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<n; ++i)}
+\DoxyCodeLine{16872   \{}
+\DoxyCodeLine{16873     newData.\mbox{\hyperlink{class_q_c_p_curve_data_aecc395525be28e9178a088793beb3ff3}{t}} = t[i];}
+\DoxyCodeLine{16874     newData.\mbox{\hyperlink{class_q_c_p_curve_data_a8a4ec5f2b9a396149fd842e309701bd4}{key}} = key[i];}
+\DoxyCodeLine{16875     newData.\mbox{\hyperlink{class_q_c_p_curve_data_a72b39b8e1dbf7b45382ebd48419b6828}{value}} = value[i];}
+\DoxyCodeLine{16876     \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}}-\/>insertMulti(newData.\mbox{\hyperlink{class_q_c_p_curve_data_aecc395525be28e9178a088793beb3ff3}{t}}, newData);}
+\DoxyCodeLine{16877   \}}
+\DoxyCodeLine{16878 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_curve_a631ac886708460013b30052f49cbc9da}\label{class_q_c_p_curve_a631ac886708460013b30052f49cbc9da}} 
+\index{QCPCurve@{QCPCurve}!setData@{setData}}
+\index{setData@{setData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void QCPCurve\+::set\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{qcustomplot_8h_a444d37ec9cb2951b3a7fe443c34d1658}{QCPCurve\+Data\+Map}} $\ast$}]{data,  }\item[{bool}]{copy = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Replaces the current data with the provided {\itshape data}.
+
+If {\itshape copy} is set to true, data points in {\itshape data} will only be copied. if false, the plottable takes ownership of the passed data and replaces the internal data pointer with it. This is significantly faster than copying for large datasets. 
+
+Definition at line 16841 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16842 \{}
+\DoxyCodeLine{16843   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}} == \mbox{\hyperlink{class_q_c_p_curve_a667ca2594cf651e3032c624dbaa95add}{data}})}
+\DoxyCodeLine{16844   \{}
+\DoxyCodeLine{16845     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"{}The data pointer is already in (and owned by) this plottable"{}} << \textcolor{keyword}{reinterpret\_cast<}quintptr\textcolor{keyword}{>}(\mbox{\hyperlink{class_q_c_p_curve_a667ca2594cf651e3032c624dbaa95add}{data}});}
+\DoxyCodeLine{16846     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{16847   \}}
+\DoxyCodeLine{16848   \textcolor{keywordflow}{if} (copy)}
+\DoxyCodeLine{16849   \{}
+\DoxyCodeLine{16850     *\mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}} = *\mbox{\hyperlink{class_q_c_p_curve_a667ca2594cf651e3032c624dbaa95add}{data}};}
+\DoxyCodeLine{16851   \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{16852   \{}
+\DoxyCodeLine{16853     \textcolor{keyword}{delete} \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}};}
+\DoxyCodeLine{16854     \mbox{\hyperlink{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}{mData}} = \mbox{\hyperlink{class_q_c_p_curve_a667ca2594cf651e3032c624dbaa95add}{data}};}
+\DoxyCodeLine{16855   \}}
+\DoxyCodeLine{16856 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{class_q_c_p_curve_a631ac886708460013b30052f49cbc9da_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_curve_a4a377ec863ff81a1875c3094a6177c19}\label{class_q_c_p_curve_a4a377ec863ff81a1875c3094a6177c19}} 
+\index{QCPCurve@{QCPCurve}!setLineStyle@{setLineStyle}}
+\index{setLineStyle@{setLineStyle}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{setLineStyle()}{setLineStyle()}}
+{\footnotesize\ttfamily void QCPCurve\+::set\+Line\+Style (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}{QCPCurve\+::\+Line\+Style}}}]{style }\end{DoxyParamCaption})}
+
+Sets how the single data points are connected in the plot or how they are represented visually apart from the scatter symbol. For scatter-\/only plots, set {\itshape style} to \mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1aec1601a191cdf0b4e761c4c66092cc48}{ls\+None}} and \mbox{\hyperlink{class_q_c_p_curve_a55e43b44709bf50a35500644988aa706}{set\+Scatter\+Style}} to the desired scatter style.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_curve_a55e43b44709bf50a35500644988aa706}{set\+Scatter\+Style}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 16919 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16920 \{}
+\DoxyCodeLine{16921   \mbox{\hyperlink{class_q_c_p_curve_ae1f35ae2b15aee8e15bcdfec5be95156}{mLineStyle}} = style;}
+\DoxyCodeLine{16922 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_a4a377ec863ff81a1875c3094a6177c19_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_q_c_p_curve_a55e43b44709bf50a35500644988aa706}\label{class_q_c_p_curve_a55e43b44709bf50a35500644988aa706}} 
+\index{QCPCurve@{QCPCurve}!setScatterStyle@{setScatterStyle}}
+\index{setScatterStyle@{setScatterStyle}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{setScatterStyle()}{setScatterStyle()}}
+{\footnotesize\ttfamily void QCPCurve\+::set\+Scatter\+Style (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} \&}]{style }\end{DoxyParamCaption})}
+
+Sets the visual appearance of single data points in the plot. If set to \mbox{\hyperlink{class_q_c_p_scatter_style_adb31525af6b680e6f1b7472e43859349abd144c291ca274f77053ec68cab6c022}{QCPScatter\+Style\+::ss\+None}}, no scatter points are drawn (e.\+g. for line-\/only plots with appropriate line style).
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}}, \mbox{\hyperlink{class_q_c_p_curve_a4a377ec863ff81a1875c3094a6177c19}{set\+Line\+Style}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 16907 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16908 \{}
+\DoxyCodeLine{16909   \mbox{\hyperlink{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}{mScatterStyle}} = style;}
+\DoxyCodeLine{16910 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_c_p_curve_a55e43b44709bf50a35500644988aa706_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_q_c_p_curve_a8429035e7adfbd7f05805a6530ad5e3b}\label{class_q_c_p_curve_a8429035e7adfbd7f05805a6530ad5e3b}} 
+\index{QCPCurve@{QCPCurve}!QCPLegend@{QCPLegend}}
+\index{QCPLegend@{QCPLegend}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{QCPLegend}{QCPLegend}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_q_c_p_legend}{QCPLegend}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 2732 of file qcustomplot.\+h.
+
+\mbox{\Hypertarget{class_q_c_p_curve_a1cdf9df76adcfae45261690aa0ca2198}\label{class_q_c_p_curve_a1cdf9df76adcfae45261690aa0ca2198}} 
+\index{QCPCurve@{QCPCurve}!QCustomPlot@{QCustomPlot}}
+\index{QCustomPlot@{QCustomPlot}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{QCustomPlot}{QCustomPlot}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_q_custom_plot}{QCustom\+Plot}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 2731 of file qcustomplot.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}\label{class_q_c_p_curve_a88d533e455bca96004b049e99168731b}} 
+\index{QCPCurve@{QCPCurve}!mData@{mData}}
+\index{mData@{mData}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{mData}{mData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{qcustomplot_8h_a444d37ec9cb2951b3a7fe443c34d1658}{QCPCurve\+Data\+Map}}$\ast$ QCPCurve\+::m\+Data\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 2708 of file qcustomplot.\+h.
+
+\mbox{\Hypertarget{class_q_c_p_curve_ae1f35ae2b15aee8e15bcdfec5be95156}\label{class_q_c_p_curve_ae1f35ae2b15aee8e15bcdfec5be95156}} 
+\index{QCPCurve@{QCPCurve}!mLineStyle@{mLineStyle}}
+\index{mLineStyle@{mLineStyle}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{mLineStyle}{mLineStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_curve_a2710e9f79302152cff794c6e16cc01f1}{Line\+Style}} QCPCurve\+::m\+Line\+Style\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 2710 of file qcustomplot.\+h.
+
+\mbox{\Hypertarget{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}\label{class_q_c_p_curve_a08f803b4a30b01bbd7a1eab15d0f864f}} 
+\index{QCPCurve@{QCPCurve}!mScatterStyle@{mScatterStyle}}
+\index{mScatterStyle@{mScatterStyle}!QCPCurve@{QCPCurve}}
+\doxysubsubsection{\texorpdfstring{mScatterStyle}{mScatterStyle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_scatter_style}{QCPScatter\+Style}} QCPCurve\+::m\+Scatter\+Style\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 2709 of file qcustomplot.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\item 
+\mbox{\hyperlink{qcustomplot_8cpp}{qcustomplot.\+cpp}}\end{DoxyCompactItemize}

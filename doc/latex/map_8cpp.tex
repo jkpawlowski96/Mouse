@@ -1,0 +1,60 @@
+\hypertarget{map_8cpp}{}\doxysection{map.\+cpp File Reference}
+\label{map_8cpp}\index{map.cpp@{map.cpp}}
+{\ttfamily \#include \char`\"{}map.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include \char`\"{}geometry.\+h\char`\"{}}\newline
+Include dependency graph for map.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{struct_line}{Line}}$<$ double $>$ $>$ \mbox{\hyperlink{map_8cpp_a9de8fa2fd01f8830fce582101246bf6a}{Get\+Path\+Lines}} (\mbox{\hyperlink{struct_path}{Path}}$<$ int $>$ path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{map_8cpp_a9de8fa2fd01f8830fce582101246bf6a}\label{map_8cpp_a9de8fa2fd01f8830fce582101246bf6a}} 
+\index{map.cpp@{map.cpp}!GetPathLines@{GetPathLines}}
+\index{GetPathLines@{GetPathLines}!map.cpp@{map.cpp}}
+\doxysubsubsection{\texorpdfstring{GetPathLines()}{GetPathLines()}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{struct_line}{Line}}$<$double$>$ $>$ Get\+Path\+Lines (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_path}{Path}}$<$ int $>$}]{path }\end{DoxyParamCaption})}
+
+
+
+Definition at line 166 of file map.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{166                                                  \{}
+\DoxyCodeLine{167     vector<Line<double>> res;}
+\DoxyCodeLine{168     \textcolor{keywordtype}{double} x = (double)path.\mbox{\hyperlink{struct_path_ab5a37001eb09cf5c7dfb43338b46fd17}{localization}}.x;}
+\DoxyCodeLine{169     \textcolor{keywordtype}{double} y = (\textcolor{keywordtype}{double})path.\mbox{\hyperlink{struct_path_ab5a37001eb09cf5c7dfb43338b46fd17}{localization}}.y;}
+\DoxyCodeLine{170     \textcolor{keywordtype}{double} step = 1.0;}
+\DoxyCodeLine{171     \textcolor{keywordflow}{if} (path.\mbox{\hyperlink{struct_path_a3307f8d6b275f17ff24007e48a834c8c}{acces}}[\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2}{Up}}]==\mbox{\hyperlink{geometry_8h_a65cbcc4c6a0978be9e0985af854d7a0dae9dc4935ee596f33afde5762140c661c}{Forbiden}})}
+\DoxyCodeLine{172         res.push\_back(\mbox{\hyperlink{struct_line}{Line<double>}}(\mbox{\hyperlink{struct_point}{Point<double>}}(x, y+step), \mbox{\hyperlink{struct_point}{Point<double>}}(x+step,y+step)));}
+\DoxyCodeLine{173     \textcolor{keywordflow}{if} (path.\mbox{\hyperlink{struct_path_a3307f8d6b275f17ff24007e48a834c8c}{acces}}[\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaabcf8c79e9a5f5f9d606fb35645a0fb27}{Down}}]==\mbox{\hyperlink{geometry_8h_a65cbcc4c6a0978be9e0985af854d7a0dae9dc4935ee596f33afde5762140c661c}{Forbiden}})}
+\DoxyCodeLine{174         res.push\_back(\mbox{\hyperlink{struct_line}{Line<double>}}(\mbox{\hyperlink{struct_point}{Point<double>}}(x, y), \mbox{\hyperlink{struct_point}{Point<double>}}(x+step,y)));}
+\DoxyCodeLine{175     \textcolor{keywordflow}{if} (path.\mbox{\hyperlink{struct_path_a3307f8d6b275f17ff24007e48a834c8c}{acces}}[\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaa9d4d8b0b72fc2659da772d761a3c5ecb}{Left}}]==\mbox{\hyperlink{geometry_8h_a65cbcc4c6a0978be9e0985af854d7a0dae9dc4935ee596f33afde5762140c661c}{Forbiden}})}
+\DoxyCodeLine{176         res.push\_back(\mbox{\hyperlink{struct_line}{Line<double>}}(\mbox{\hyperlink{struct_point}{Point<double>}}(x, y), \mbox{\hyperlink{struct_point}{Point<double>}}(x,y+step)));}
+\DoxyCodeLine{177     \textcolor{keywordflow}{if} (path.\mbox{\hyperlink{struct_path_a3307f8d6b275f17ff24007e48a834c8c}{acces}}[\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaad48f7af8c070184f3774c8e85854eb66}{Right}}]==\mbox{\hyperlink{geometry_8h_a65cbcc4c6a0978be9e0985af854d7a0dae9dc4935ee596f33afde5762140c661c}{Forbiden}})}
+\DoxyCodeLine{178         res.push\_back(\mbox{\hyperlink{struct_line}{Line<double>}}(\mbox{\hyperlink{struct_point}{Point<double>}}(x+step, y), \mbox{\hyperlink{struct_point}{Point<double>}}(x+step,y+step)));}
+\DoxyCodeLine{179     \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{180 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map_8cpp_a9de8fa2fd01f8830fce582101246bf6a_icgraph}
+\end{center}
+\end{figure}

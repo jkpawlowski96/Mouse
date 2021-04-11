@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_sensor" kind="class" language="C++" prot="public">
+    <compoundname>Sensor</compoundname>
+    <includes refid="sensor_8h" local="no">sensor.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sensor_1a3577f9e8eb65eb3bc8f69e6396e97002" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_sensor_data" kindref="compound">SensorData</ref></type>
+        <definition>SensorData Sensor::Measure</definition>
+        <argsstring>(shared_ptr&lt; Map &gt; map, Position&lt; int &gt; loc)</argsstring>
+        <name>Measure</name>
+        <param>
+          <type>shared_ptr&lt; <ref refid="class_map" kindref="compound">Map</ref> &gt;</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_position" kindref="compound">Position</ref>&lt; int &gt;</type>
+          <declname>loc</declname>
+        </param>
+        <briefdescription>
+<para>Measure distance to wall to make detection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>loc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_sensor_data" kindref="compound">SensorData</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sensor.h" line="21" column="20" bodyfile="sensor.h" bodystart="21" bodyend="30"/>
+        <references refid="struct_position_1a7f5e11bbcbaaef0e8aa43e464c2da154" compoundref="geometry_8h" startline="51">Position&lt; T &gt;::direction</references>
+        <references refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dae9dc4935ee596f33afde5762140c661c" compoundref="geometry_8h" startline="40">Forbiden</references>
+        <references refid="struct_position_1aca485c4302d36798c29923a99a5f249d" compoundref="geometry_8h" startline="50">Position&lt; T &gt;::localization</references>
+        <references refid="struct_sensor_data_1a1a6a48546a1fece90c78c2b1704b9ee3" compoundref="sensor__data_8h" startline="9">SensorData::wallDetected</references>
+        <referencedby refid="class_mouse_1adc87ac2f6bf3df7db585f913fcc2a03e" compoundref="mouse_8cpp" startline="20" endline="69">Mouse::Call</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_sensor" kindref="compound">Sensor</ref> device for wall detection. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Sensor</label>
+        <link refid="class_sensor"/>
+      </node>
+    </collaborationgraph>
+    <location file="sensor.h" line="12" column="1" bodyfile="sensor.h" bodystart="12" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_sensor_1a3577f9e8eb65eb3bc8f69e6396e97002" prot="public" virt="non-virtual"><scope>Sensor</scope><name>Measure</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

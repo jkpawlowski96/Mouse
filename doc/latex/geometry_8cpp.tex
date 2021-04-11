@@ -1,0 +1,401 @@
+\hypertarget{geometry_8cpp}{}\doxysection{geometry.\+cpp File Reference}
+\label{geometry_8cpp}\index{geometry.cpp@{geometry.cpp}}
+{\ttfamily \#include \char`\"{}geometry.\+h\char`\"{}}\newline
+Include dependency graph for geometry.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{geometry_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{geometry_8h_a65cbcc4c6a0978be9e0985af854d7a0d}{Acces}} \mbox{\hyperlink{geometry_8cpp_a97ff506c2ff01f3a85f3a00da85ea023}{operator+}} (\mbox{\hyperlink{geometry_8h_a65cbcc4c6a0978be9e0985af854d7a0d}{Acces}} a, \mbox{\hyperlink{geometry_8h_a65cbcc4c6a0978be9e0985af854d7a0d}{Acces}} b)
+\begin{DoxyCompactList}\small\item\em Append acces. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{geometry_8cpp_a264f0b2001150ace7a2e82b20ec7a3f3}{measure\+Distance}} (\mbox{\hyperlink{struct_point}{Point}}$<$ double $>$a, \mbox{\hyperlink{struct_point}{Point}}$<$ int $>$b)
+\begin{DoxyCompactList}\small\item\em Distance from double point to int point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_position}{Position}}$<$ int $>$ \mbox{\hyperlink{geometry_8cpp_a15cfcdfc2a5e2beed54d3e46ae601b5e}{round\+Position}} (\mbox{\hyperlink{struct_position}{Position}}$<$ double $>$ pos)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_point}{Point$<$int$>$}} from \mbox{\hyperlink{struct_point}{Point$<$double$>$}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_point}{Point}}$<$ double $>$ \mbox{\hyperlink{geometry_8cpp_ab68f2572d521a97e8e9b7b16f429109c}{operator+}} (\mbox{\hyperlink{struct_point}{Point}}$<$ double $>$ a, \mbox{\hyperlink{struct_point}{Point}}$<$ double $>$ b)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_point}{Point$<$double$>$}} addition. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_point}{Point}}$<$ double $>$ \mbox{\hyperlink{geometry_8cpp_a78c7e9b84a6d9b52a0717595eebf0c97}{double\+Point}} (\mbox{\hyperlink{struct_point}{Point}}$<$ int $>$ p)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_point}{Point}} of double from point of int. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} \mbox{\hyperlink{geometry_8cpp_a0dc9f6b40d25cf8616686f98e47fdf77}{Rotate\+Direction\+Left}} (\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} d)
+\begin{DoxyCompactList}\small\item\em Rotate direction to left. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} \mbox{\hyperlink{geometry_8cpp_ab7059afff94c264c019615f0a68c96b5}{Rotate\+Direction\+Right}} (\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} d)
+\begin{DoxyCompactList}\small\item\em Rotate direction to right. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} \mbox{\hyperlink{geometry_8cpp_af1435e77f75031bb0bd2296a923c9ec4}{Turn\+Around\+Direction}} (\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} d)
+\begin{DoxyCompactList}\small\item\em Rotate direction of 180 degree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} \mbox{\hyperlink{geometry_8cpp_a61962e8d7ea292ce72316170122aa2fb}{Direction\+From\+Int}} (int x)
+\begin{DoxyCompactList}\small\item\em Get Direction form int representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{geometry_8cpp_a61962e8d7ea292ce72316170122aa2fb}\label{geometry_8cpp_a61962e8d7ea292ce72316170122aa2fb}} 
+\index{geometry.cpp@{geometry.cpp}!DirectionFromInt@{DirectionFromInt}}
+\index{DirectionFromInt@{DirectionFromInt}!geometry.cpp@{geometry.cpp}}
+\doxysubsubsection{\texorpdfstring{DirectionFromInt()}{DirectionFromInt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} Direction\+From\+Int (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Get Direction form int representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Direction 
+\end{DoxyReturn}
+
+
+Definition at line 62 of file geometry.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62                                  \{}
+\DoxyCodeLine{63     \textcolor{keywordflow}{if}(x==0)}
+\DoxyCodeLine{64         \textcolor{keywordflow}{return} \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaa9d4d8b0b72fc2659da772d761a3c5ecb}{Left}};}
+\DoxyCodeLine{65     \textcolor{keywordflow}{if}(x==1)}
+\DoxyCodeLine{66         \textcolor{keywordflow}{return} \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2}{Up}};}
+\DoxyCodeLine{67     \textcolor{keywordflow}{if}(x==2)}
+\DoxyCodeLine{68         \textcolor{keywordflow}{return} \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaad48f7af8c070184f3774c8e85854eb66}{Right}};}
+\DoxyCodeLine{69     \textcolor{keywordflow}{if}(x==3)}
+\DoxyCodeLine{70         \textcolor{keywordflow}{return} \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaabcf8c79e9a5f5f9d606fb35645a0fb27}{Down}};}
+\DoxyCodeLine{71 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{geometry_8cpp_a61962e8d7ea292ce72316170122aa2fb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{geometry_8cpp_a78c7e9b84a6d9b52a0717595eebf0c97}\label{geometry_8cpp_a78c7e9b84a6d9b52a0717595eebf0c97}} 
+\index{geometry.cpp@{geometry.cpp}!doublePoint@{doublePoint}}
+\index{doublePoint@{doublePoint}!geometry.cpp@{geometry.cpp}}
+\doxysubsubsection{\texorpdfstring{doublePoint()}{doublePoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_point}{Point}}$<$double$>$ double\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_point}{Point}}$<$ int $>$}]{p }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{struct_point}{Point}} of double from point of int. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_point}{Point$<$double$>$}} 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file geometry.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31                                        \{}
+\DoxyCodeLine{32     \textcolor{keywordflow}{return} \mbox{\hyperlink{struct_point}{Point<double>}}(p.\mbox{\hyperlink{struct_point_a401d07562afaf0079121218025e66b76}{x}}, p.\mbox{\hyperlink{struct_point_a65146418a33ebb2cd9acb85cade60ac9}{y}});}
+\DoxyCodeLine{33 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{geometry_8cpp_a78c7e9b84a6d9b52a0717595eebf0c97_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{geometry_8cpp_a264f0b2001150ace7a2e82b20ec7a3f3}\label{geometry_8cpp_a264f0b2001150ace7a2e82b20ec7a3f3}} 
+\index{geometry.cpp@{geometry.cpp}!measureDistance@{measureDistance}}
+\index{measureDistance@{measureDistance}!geometry.cpp@{geometry.cpp}}
+\doxysubsubsection{\texorpdfstring{measureDistance()}{measureDistance()}}
+{\footnotesize\ttfamily double measure\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_point}{Point}}$<$ double $>$}]{a,  }\item[{\mbox{\hyperlink{struct_point}{Point}}$<$ int $>$}]{b }\end{DoxyParamCaption})}
+
+
+
+Distance from double point to int point. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file geometry.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11                                                    \{}
+\DoxyCodeLine{12     \textcolor{keyword}{auto} \_b = \mbox{\hyperlink{geometry_8cpp_a78c7e9b84a6d9b52a0717595eebf0c97}{doublePoint}}(b);}
+\DoxyCodeLine{13     \textcolor{keywordflow}{return} measureDistance<double>(a,\_b);}
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{geometry_8cpp_a264f0b2001150ace7a2e82b20ec7a3f3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{geometry_8cpp_a264f0b2001150ace7a2e82b20ec7a3f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{geometry_8cpp_a97ff506c2ff01f3a85f3a00da85ea023}\label{geometry_8cpp_a97ff506c2ff01f3a85f3a00da85ea023}} 
+\index{geometry.cpp@{geometry.cpp}!operator+@{operator+}}
+\index{operator+@{operator+}!geometry.cpp@{geometry.cpp}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{geometry_8h_a65cbcc4c6a0978be9e0985af854d7a0d}{Acces}} operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{geometry_8h_a65cbcc4c6a0978be9e0985af854d7a0d}{Acces}}}]{a,  }\item[{\mbox{\hyperlink{geometry_8h_a65cbcc4c6a0978be9e0985af854d7a0d}{Acces}}}]{b }\end{DoxyParamCaption})}
+
+
+
+Append acces. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Acces 
+\end{DoxyReturn}
+
+
+Definition at line 3 of file geometry.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3                                  \{}
+\DoxyCodeLine{4     \textcolor{keywordflow}{if}(a==\mbox{\hyperlink{geometry_8h_a65cbcc4c6a0978be9e0985af854d7a0da4520b0236b62bed6c4529ec77b8e2543}{Allowed}} || b==\mbox{\hyperlink{geometry_8h_a65cbcc4c6a0978be9e0985af854d7a0da4520b0236b62bed6c4529ec77b8e2543}{Allowed}})}
+\DoxyCodeLine{5         \textcolor{keywordflow}{return} \mbox{\hyperlink{geometry_8h_a65cbcc4c6a0978be9e0985af854d7a0da4520b0236b62bed6c4529ec77b8e2543}{Allowed}};}
+\DoxyCodeLine{6     \textcolor{keywordflow}{if}(a==\mbox{\hyperlink{geometry_8h_a65cbcc4c6a0978be9e0985af854d7a0dae9dc4935ee596f33afde5762140c661c}{Forbiden}} || b==\mbox{\hyperlink{geometry_8h_a65cbcc4c6a0978be9e0985af854d7a0dae9dc4935ee596f33afde5762140c661c}{Forbiden}})}
+\DoxyCodeLine{7         \textcolor{keywordflow}{return} \mbox{\hyperlink{geometry_8h_a65cbcc4c6a0978be9e0985af854d7a0dae9dc4935ee596f33afde5762140c661c}{Forbiden}};}
+\DoxyCodeLine{8     \textcolor{keywordflow}{return} \mbox{\hyperlink{geometry_8h_a65cbcc4c6a0978be9e0985af854d7a0dac5f8b58110236bdfd956a108f5c45730}{Unnown}};}
+\DoxyCodeLine{9 \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{geometry_8cpp_ab68f2572d521a97e8e9b7b16f429109c}\label{geometry_8cpp_ab68f2572d521a97e8e9b7b16f429109c}} 
+\index{geometry.cpp@{geometry.cpp}!operator+@{operator+}}
+\index{operator+@{operator+}!geometry.cpp@{geometry.cpp}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_point}{Point}}$<$double$>$ operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_point}{Point}}$<$ double $>$}]{a,  }\item[{\mbox{\hyperlink{struct_point}{Point}}$<$ double $>$}]{b }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{struct_point}{Point$<$double$>$}} addition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_point}{Point$<$double$>$}} 
+\end{DoxyReturn}
+
+
+Definition at line 23 of file geometry.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25     \mbox{\hyperlink{struct_point}{Point<double>}} res;}
+\DoxyCodeLine{26     res.\mbox{\hyperlink{struct_point_a401d07562afaf0079121218025e66b76}{x}} = a.\mbox{\hyperlink{struct_point_a401d07562afaf0079121218025e66b76}{x}} + b.\mbox{\hyperlink{struct_point_a401d07562afaf0079121218025e66b76}{x}};}
+\DoxyCodeLine{27     res.\mbox{\hyperlink{struct_point_a65146418a33ebb2cd9acb85cade60ac9}{y}} = a.\mbox{\hyperlink{struct_point_a65146418a33ebb2cd9acb85cade60ac9}{y}} + b.\mbox{\hyperlink{struct_point_a65146418a33ebb2cd9acb85cade60ac9}{y}};}
+\DoxyCodeLine{28     \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{29 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{geometry_8cpp_a0dc9f6b40d25cf8616686f98e47fdf77}\label{geometry_8cpp_a0dc9f6b40d25cf8616686f98e47fdf77}} 
+\index{geometry.cpp@{geometry.cpp}!RotateDirectionLeft@{RotateDirectionLeft}}
+\index{RotateDirectionLeft@{RotateDirectionLeft}!geometry.cpp@{geometry.cpp}}
+\doxysubsubsection{\texorpdfstring{RotateDirectionLeft()}{RotateDirectionLeft()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} Rotate\+Direction\+Left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}}]{d }\end{DoxyParamCaption})}
+
+
+
+Rotate direction to left. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Direction 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file geometry.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35                                           \{}
+\DoxyCodeLine{36     \textcolor{keywordflow}{if}(d==\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaa9d4d8b0b72fc2659da772d761a3c5ecb}{Left}})}
+\DoxyCodeLine{37         \textcolor{keywordflow}{return} \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaabcf8c79e9a5f5f9d606fb35645a0fb27}{Down}};}
+\DoxyCodeLine{38     \textcolor{keywordflow}{if}(d==\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2}{Up}})}
+\DoxyCodeLine{39         \textcolor{keywordflow}{return} \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaa9d4d8b0b72fc2659da772d761a3c5ecb}{Left}};}
+\DoxyCodeLine{40     \textcolor{keywordflow}{if}(d==\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaad48f7af8c070184f3774c8e85854eb66}{Right}})}
+\DoxyCodeLine{41         \textcolor{keywordflow}{return} \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2}{Up}};}
+\DoxyCodeLine{42     \textcolor{keywordflow}{if}(d==\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaabcf8c79e9a5f5f9d606fb35645a0fb27}{Down}})}
+\DoxyCodeLine{43         \textcolor{keywordflow}{return} \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaad48f7af8c070184f3774c8e85854eb66}{Right}};}
+\DoxyCodeLine{44     \textcolor{keywordflow}{return} \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaac70c33bc5461cd83bab03a1fb84ed21a}{DirectionUnnown}};}
+\DoxyCodeLine{45 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{geometry_8cpp_a0dc9f6b40d25cf8616686f98e47fdf77_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{geometry_8cpp_ab7059afff94c264c019615f0a68c96b5}\label{geometry_8cpp_ab7059afff94c264c019615f0a68c96b5}} 
+\index{geometry.cpp@{geometry.cpp}!RotateDirectionRight@{RotateDirectionRight}}
+\index{RotateDirectionRight@{RotateDirectionRight}!geometry.cpp@{geometry.cpp}}
+\doxysubsubsection{\texorpdfstring{RotateDirectionRight()}{RotateDirectionRight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} Rotate\+Direction\+Right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}}]{d }\end{DoxyParamCaption})}
+
+
+
+Rotate direction to right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Direction 
+\end{DoxyReturn}
+
+
+Definition at line 47 of file geometry.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                                            \{}
+\DoxyCodeLine{48     \textcolor{keywordflow}{if}(d==\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaa9d4d8b0b72fc2659da772d761a3c5ecb}{Left}})}
+\DoxyCodeLine{49         \textcolor{keywordflow}{return} \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2}{Up}};}
+\DoxyCodeLine{50     \textcolor{keywordflow}{if}(d==\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2}{Up}})}
+\DoxyCodeLine{51         \textcolor{keywordflow}{return} \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaad48f7af8c070184f3774c8e85854eb66}{Right}};}
+\DoxyCodeLine{52     \textcolor{keywordflow}{if}(d==\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaad48f7af8c070184f3774c8e85854eb66}{Right}})}
+\DoxyCodeLine{53         \textcolor{keywordflow}{return} \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaabcf8c79e9a5f5f9d606fb35645a0fb27}{Down}};}
+\DoxyCodeLine{54     \textcolor{keywordflow}{if}(d==\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaabcf8c79e9a5f5f9d606fb35645a0fb27}{Down}})}
+\DoxyCodeLine{55         \textcolor{keywordflow}{return} \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaa9d4d8b0b72fc2659da772d761a3c5ecb}{Left}};}
+\DoxyCodeLine{56     \textcolor{keywordflow}{return} \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaac70c33bc5461cd83bab03a1fb84ed21a}{DirectionUnnown}};}
+\DoxyCodeLine{57 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{geometry_8cpp_ab7059afff94c264c019615f0a68c96b5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{geometry_8cpp_a15cfcdfc2a5e2beed54d3e46ae601b5e}\label{geometry_8cpp_a15cfcdfc2a5e2beed54d3e46ae601b5e}} 
+\index{geometry.cpp@{geometry.cpp}!roundPosition@{roundPosition}}
+\index{roundPosition@{roundPosition}!geometry.cpp@{geometry.cpp}}
+\doxysubsubsection{\texorpdfstring{roundPosition()}{roundPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_position}{Position}}$<$int$>$ round\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_position}{Position}}$<$ double $>$}]{pos }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{struct_point}{Point$<$int$>$}} from \mbox{\hyperlink{struct_point}{Point$<$double$>$}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position$<$int$>$ 
+\end{DoxyReturn}
+
+
+Definition at line 16 of file geometry.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16                                                  \{}
+\DoxyCodeLine{17     \mbox{\hyperlink{struct_position}{Position<int>}} \_pos;}
+\DoxyCodeLine{18     \_pos.\mbox{\hyperlink{struct_position_aca485c4302d36798c29923a99a5f249d}{localization}} = \mbox{\hyperlink{struct_point}{Point<int>}}((\textcolor{keywordtype}{int})(pos.\mbox{\hyperlink{struct_position_aca485c4302d36798c29923a99a5f249d}{localization}}.\mbox{\hyperlink{struct_point_a401d07562afaf0079121218025e66b76}{x}}+0.5),(\textcolor{keywordtype}{int})(pos.\mbox{\hyperlink{struct_position_aca485c4302d36798c29923a99a5f249d}{localization}}.\mbox{\hyperlink{struct_point_a65146418a33ebb2cd9acb85cade60ac9}{y}}+0.5));}
+\DoxyCodeLine{19     \_pos.\mbox{\hyperlink{struct_position_a7f5e11bbcbaaef0e8aa43e464c2da154}{direction}} = pos.\mbox{\hyperlink{struct_position_a7f5e11bbcbaaef0e8aa43e464c2da154}{direction}};}
+\DoxyCodeLine{20     \textcolor{keywordflow}{return} \_pos;}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{geometry_8cpp_a15cfcdfc2a5e2beed54d3e46ae601b5e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{geometry_8cpp_af1435e77f75031bb0bd2296a923c9ec4}\label{geometry_8cpp_af1435e77f75031bb0bd2296a923c9ec4}} 
+\index{geometry.cpp@{geometry.cpp}!TurnAroundDirection@{TurnAroundDirection}}
+\index{TurnAroundDirection@{TurnAroundDirection}!geometry.cpp@{geometry.cpp}}
+\doxysubsubsection{\texorpdfstring{TurnAroundDirection()}{TurnAroundDirection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}} Turn\+Around\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aa}{Direction}}}]{d }\end{DoxyParamCaption})}
+
+
+
+Rotate direction of 180 degree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Direction 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file geometry.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58                                           \{}
+\DoxyCodeLine{59     \textcolor{keywordflow}{return} \mbox{\hyperlink{geometry_8cpp_ab7059afff94c264c019615f0a68c96b5}{RotateDirectionRight}}(\mbox{\hyperlink{geometry_8cpp_ab7059afff94c264c019615f0a68c96b5}{RotateDirectionRight}}(d));}
+\DoxyCodeLine{60 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{geometry_8cpp_af1435e77f75031bb0bd2296a923c9ec4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{geometry_8cpp_af1435e77f75031bb0bd2296a923c9ec4_icgraph}
+\end{center}
+\end{figure}

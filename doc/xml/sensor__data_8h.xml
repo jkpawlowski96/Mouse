@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="sensor__data_8h" kind="file" language="C++">
+    <compoundname>sensor_data.h</compoundname>
+    <includedby refid="sensor_8h" local="yes">sensor.h</includedby>
+    <includedby refid="si_8h" local="yes">si.h</includedby>
+    <invincdepgraph>
+      <node id="15">
+        <label>si.cpp</label>
+        <link refid="si_8cpp"/>
+      </node>
+      <node id="12">
+        <label>expander.cpp</label>
+        <link refid="expander_8cpp"/>
+      </node>
+      <node id="4">
+        <label>mouse.cpp</label>
+        <link refid="mouse_8cpp"/>
+      </node>
+      <node id="1">
+        <label>sensor_data.h</label>
+        <link refid="sensor__data_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>expander.h</label>
+        <link refid="expander_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>humancontroll.cpp</label>
+        <link refid="humancontroll_8cpp"/>
+      </node>
+      <node id="6">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="8">
+        <label>mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="13">
+        <label>humancontroll.h</label>
+        <link refid="humancontroll_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>simulator.h</label>
+        <link refid="simulator_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>si.h</label>
+        <link refid="si_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>mouse.h</label>
+        <link refid="mouse_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>simulator.cpp</label>
+        <link refid="simulator_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_sensor_data" prot="public">SensorData</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SENSOR_DATA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_DATA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="struct_sensor_data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_sensor_data" kindref="compound">SensorData</ref>{</highlight></codeline>
+<codeline lineno="9" refid="struct_sensor_data_1a1a6a48546a1fece90c78c2b1704b9ee3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_sensor_data_1a1a6a48546a1fece90c78c2b1704b9ee3" kindref="member">wallDetected</ref>;</highlight></codeline>
+<codeline lineno="14" refid="struct_sensor_data_1a9c7635edc250b312fc895fb9a34bf4fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sensor_data_1a9c7635edc250b312fc895fb9a34bf4fb" kindref="member">SensorData</ref>(){};</highlight></codeline>
+<codeline lineno="20" refid="struct_sensor_data_1a2a3ae4cda88d4a286973d18828c99f8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_sensor_data_1a2a3ae4cda88d4a286973d18828c99f8e" kindref="member">SensorData</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_wallDetected):<ref refid="struct_sensor_data_1a1a6a48546a1fece90c78c2b1704b9ee3" kindref="member">wallDetected</ref>(_wallDetected){}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>SENSOR_DATA_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="sensor_data.h"/>
+  </compounddef>
+</doxygen>

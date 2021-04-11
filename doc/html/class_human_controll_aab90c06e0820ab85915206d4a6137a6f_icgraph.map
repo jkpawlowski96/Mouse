@@ -1,0 +1,4 @@
+<map id="HumanControll::SetDirection" name="HumanControll::SetDirection">
+<area shape="rect" id="node1" title="Set the Direction of mouse." alt="" coords="233,5,420,32"/>
+<area shape="rect" id="node2" href="$class_simulator.html#a73ef93cbf264c985f97531b873365d63" title="Human controll set direction." alt="" coords="5,5,185,32"/>
+</map>

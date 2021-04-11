@@ -1,0 +1,6 @@
+<map id="Map::FindPath" name="Map::FindPath">
+<area shape="rect" id="node1" title="Get path ptr by localization." alt="" coords="411,31,517,57"/>
+<area shape="rect" id="node2" href="$class_map.html#a3a77d131081f7ab04f66c451b9737538" title="Get const path by localization." alt="" coords="221,5,363,32"/>
+<area shape="rect" id="node3" href="$class_map.html#ad45eb0a8f95e00370fee56d29afcc333" title="Get vector of paths by localizations in vector." alt="" coords="235,56,349,83"/>
+<area shape="rect" id="node4" href="$class_map.html#a610b39d483eea9faae04ba337daab7fa" title="Update/refresh connections in specyfic paths." alt="" coords="5,56,173,83"/>
+</map>

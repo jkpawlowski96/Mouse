@@ -1,0 +1,6 @@
+<map id="QCPBars" name="QCPBars">
+<area shape="rect" id="node1" title="A plottable representing a bar chart in a plot." alt="" coords="5,1276,176,1720"/>
+<area shape="rect" id="node2" href="$class_q_c_p_abstract_plottable.html" title="The abstract base class for all data representing objects in a plot." alt="" coords="5,667,176,1228"/>
+<area shape="rect" id="node3" href="$class_q_c_p_layerable.html" title="Base class for all drawable objects." alt="" coords="5,131,176,619"/>
+<area shape="rect" id="node4" title=" " alt="" coords="55,5,126,83"/>
+</map>

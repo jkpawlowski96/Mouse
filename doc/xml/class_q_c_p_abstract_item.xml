@@ -1,0 +1,1231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_q_c_p_abstract_item" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>QCPAbstractItem</compoundname>
+    <basecompoundref refid="class_q_c_p_layerable" prot="public" virt="non-virtual">QCPLayerable</basecompoundref>
+    <derivedcompoundref refid="class_q_c_p_item_bracket" prot="public" virt="non-virtual">QCPItemBracket</derivedcompoundref>
+    <derivedcompoundref refid="class_q_c_p_item_curve" prot="public" virt="non-virtual">QCPItemCurve</derivedcompoundref>
+    <derivedcompoundref refid="class_q_c_p_item_ellipse" prot="public" virt="non-virtual">QCPItemEllipse</derivedcompoundref>
+    <derivedcompoundref refid="class_q_c_p_item_line" prot="public" virt="non-virtual">QCPItemLine</derivedcompoundref>
+    <derivedcompoundref refid="class_q_c_p_item_pixmap" prot="public" virt="non-virtual">QCPItemPixmap</derivedcompoundref>
+    <derivedcompoundref refid="class_q_c_p_item_rect" prot="public" virt="non-virtual">QCPItemRect</derivedcompoundref>
+    <derivedcompoundref refid="class_q_c_p_item_straight_line" prot="public" virt="non-virtual">QCPItemStraightLine</derivedcompoundref>
+    <derivedcompoundref refid="class_q_c_p_item_text" prot="public" virt="non-virtual">QCPItemText</derivedcompoundref>
+    <derivedcompoundref refid="class_q_c_p_item_tracer" prot="public" virt="non-virtual">QCPItemTracer</derivedcompoundref>
+    <includes refid="qcustomplot_8h" local="no">qcustomplot.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_q_c_p_abstract_item_1ad2a70ff6b658fcb84a9427f69d3f587d" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QCPAbstractItem::mClipToAxisRect</definition>
+        <argsstring></argsstring>
+        <name>mClipToAxisRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1648" column="8" bodyfile="qcustomplot.h" bodystart="1648" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_abstract_item_1a550ecff39195d9ff3d5cf239eb802ea7" compoundref="qcustomplot_8cpp" startline="8502" endline="8508">clipRect</referencedby>
+        <referencedby refid="class_q_c_p_abstract_item_1a7dc75fcbcd10206fe0b75d757ea7a347" compoundref="qcustomplot_8cpp" startline="8385" endline="8390">setClipAxisRect</referencedby>
+        <referencedby refid="class_q_c_p_abstract_item_1a39e05b9d4176b9accafc746d16ca6a06" compoundref="qcustomplot_8cpp" startline="8372" endline="8377">setClipToAxisRect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_abstract_item_1a3e57cfe7da4b1ac3d6fa7281ea437361" prot="protected" static="no" mutable="no">
+        <type>QPointer&lt; <ref refid="class_q_c_p_axis_rect" kindref="compound">QCPAxisRect</ref> &gt;</type>
+        <definition>QPointer&lt;QCPAxisRect&gt; QCPAbstractItem::mClipAxisRect</definition>
+        <argsstring></argsstring>
+        <name>mClipAxisRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1649" column="12" bodyfile="qcustomplot.h" bodystart="1649" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_abstract_item_1ae162314efd3fe1a6d4df11da1d275d52" compoundref="qcustomplot_8cpp" startline="8361" endline="8364">clipAxisRect</referencedby>
+        <referencedby refid="class_q_c_p_abstract_item_1a550ecff39195d9ff3d5cf239eb802ea7" compoundref="qcustomplot_8cpp" startline="8502" endline="8508">clipRect</referencedby>
+        <referencedby refid="class_q_c_p_abstract_item_1a7dc75fcbcd10206fe0b75d757ea7a347" compoundref="qcustomplot_8cpp" startline="8385" endline="8390">setClipAxisRect</referencedby>
+        <referencedby refid="class_q_c_p_abstract_item_1a39e05b9d4176b9accafc746d16ca6a06" compoundref="qcustomplot_8cpp" startline="8372" endline="8377">setClipToAxisRect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_abstract_item_1af94ff71b6a15ea6d028ab8bd8eccd012" prot="protected" static="no" mutable="no">
+        <type>QList&lt; <ref refid="class_q_c_p_item_position" kindref="compound">QCPItemPosition</ref> * &gt;</type>
+        <definition>QList&lt;QCPItemPosition*&gt; QCPAbstractItem::mPositions</definition>
+        <argsstring></argsstring>
+        <name>mPositions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1650" column="9" bodyfile="qcustomplot.h" bodystart="1650" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_abstract_item_1a75036d39c4d4e2e1a7dd145fff915d32" compoundref="qcustomplot_8cpp" startline="8632" endline="8645">createPosition</referencedby>
+        <referencedby refid="class_q_c_p_abstract_item_1a2589c3d298f9a576d77d9addb440a18d" compoundref="qcustomplot_8cpp" startline="8443" endline="8452">position</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_abstract_item_1a909a3abab783de302ebf0a0e6f2bbc15" prot="protected" static="no" mutable="no">
+        <type>QList&lt; <ref refid="class_q_c_p_item_anchor" kindref="compound">QCPItemAnchor</ref> * &gt;</type>
+        <definition>QList&lt;QCPItemAnchor*&gt; QCPAbstractItem::mAnchors</definition>
+        <argsstring></argsstring>
+        <name>mAnchors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1651" column="9" bodyfile="qcustomplot.h" bodystart="1651" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_abstract_item_1a139c255ea8831642fac91748e29a5adb" compoundref="qcustomplot_8cpp" startline="8464" endline="8473">anchor</referencedby>
+        <referencedby refid="class_q_c_p_abstract_item_1af3fc92527802078ca395138748b629a7" compoundref="qcustomplot_8cpp" startline="8666" endline="8673">createAnchor</referencedby>
+        <referencedby refid="class_q_c_p_abstract_item_1a75036d39c4d4e2e1a7dd145fff915d32" compoundref="qcustomplot_8cpp" startline="8632" endline="8645">createPosition</referencedby>
+        <referencedby refid="class_q_c_p_abstract_item_1a84914f4516f9b38ef0bd89eafe3dbda7" compoundref="qcustomplot_8cpp" startline="8483" endline="8491">hasAnchor</referencedby>
+        <referencedby refid="class_q_c_p_abstract_item_1a375bd1b7d3218b04a6ff7ff06fff917c" compoundref="qcustomplot_8cpp" startline="8354" endline="8358">~QCPAbstractItem</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_abstract_item_1ad81eb35c8726a0f458db9df9732e0e41" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QCPAbstractItem::mSelectable</definition>
+        <argsstring></argsstring>
+        <name>mSelectable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1652" column="8" bodyfile="qcustomplot.h" bodystart="1652" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_abstract_item_1a91f090d6763cfedb0749219c63788ae9" compoundref="qcustomplot_8cpp" startline="8690" endline="8699">deselectEvent</referencedby>
+        <referencedby refid="class_q_c_p_abstract_item_1aaf92af7b9893712959a6c073d334d88d" compoundref="qcustomplot_8cpp" startline="8676" endline="8687">selectEvent</referencedby>
+        <referencedby refid="class_q_c_p_item_straight_line_1a1e5d99d79efb5871600c72bcd2891a0f" compoundref="qcustomplot_8cpp" startline="21510" endline="21517">QCPItemStraightLine::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_item_line_1ae6cc5183f568e5fa9d7827abe4d405b5" compoundref="qcustomplot_8cpp" startline="21726" endline="21733">QCPItemLine::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_item_curve_1a8018b8b3fc552a44ba87ca4b64c1523f" compoundref="qcustomplot_8cpp" startline="21963" endline="21986">QCPItemCurve::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_item_rect_1abe1a6091591d3bad5e4efab2331f99ec" compoundref="qcustomplot_8cpp" startline="22113" endline="22122">QCPItemRect::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_item_text_1aca74494fd5e769f331a6eb3e29f32916" compoundref="qcustomplot_8cpp" startline="22370" endline="22391">QCPItemText::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_item_ellipse_1aa41be2180b2ace2e303b88d005c14243" compoundref="qcustomplot_8cpp" startline="22612" endline="22637">QCPItemEllipse::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_item_pixmap_1a7583a98ebd3f35d2ac5d6c05fad25a6c" compoundref="qcustomplot_8cpp" startline="22800" endline="22807">QCPItemPixmap::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_item_tracer_1ae1dc728384936184e7552a6d0d67fd75" compoundref="qcustomplot_8cpp" startline="23134" endline="23188">QCPItemTracer::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_item_bracket_1a971299aa6fef75730d6f10efdaf48616" compoundref="qcustomplot_8cpp" startline="23414" endline="23451">QCPItemBracket::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_abstract_item_1a8a8e32a55bc478b849756a78c2d87fd2" compoundref="qcustomplot_8cpp" startline="8401" endline="8408">setSelectable</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_abstract_item_1a4bdb3457dad1d268c0f78a44152b9645" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QCPAbstractItem::mSelected</definition>
+        <argsstring></argsstring>
+        <name>mSelected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1652" column="20" bodyfile="qcustomplot.h" bodystart="1652" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_abstract_item_1a91f090d6763cfedb0749219c63788ae9" compoundref="qcustomplot_8cpp" startline="8690" endline="8699">deselectEvent</referencedby>
+        <referencedby refid="class_q_c_p_item_rect_1a8813d2d670835ac9b8000c981b8ea6fe" compoundref="qcustomplot_8cpp" startline="22175" endline="22178">QCPItemRect::mainBrush</referencedby>
+        <referencedby refid="class_q_c_p_item_text_1acddddd3ce88cfc87ab57b1ec4b25acb9" compoundref="qcustomplot_8cpp" startline="22519" endline="22522">QCPItemText::mainBrush</referencedby>
+        <referencedby refid="class_q_c_p_item_ellipse_1a6218bdf5e703f609b934b0bf9c8d0971" compoundref="qcustomplot_8cpp" startline="22703" endline="22706">QCPItemEllipse::mainBrush</referencedby>
+        <referencedby refid="class_q_c_p_item_tracer_1a94f81c54197577e86c53a60cf39155cd" compoundref="qcustomplot_8cpp" startline="23312" endline="23315">QCPItemTracer::mainBrush</referencedby>
+        <referencedby refid="class_q_c_p_item_text_1abe3f10805baf62797cb91fd4a4464fcc" compoundref="qcustomplot_8cpp" startline="22499" endline="22502">QCPItemText::mainColor</referencedby>
+        <referencedby refid="class_q_c_p_item_text_1af30ac2a0b84afa86a1dec22ab48dd07d" compoundref="qcustomplot_8cpp" startline="22489" endline="22492">QCPItemText::mainFont</referencedby>
+        <referencedby refid="class_q_c_p_item_straight_line_1a5b1a39cfc54c3e22f65de2958d40eb59" compoundref="qcustomplot_8cpp" startline="21638" endline="21641">QCPItemStraightLine::mainPen</referencedby>
+        <referencedby refid="class_q_c_p_item_line_1af8b5370462515b279578d8b4a57bd3b4" compoundref="qcustomplot_8cpp" startline="21864" endline="21867">QCPItemLine::mainPen</referencedby>
+        <referencedby refid="class_q_c_p_item_curve_1a3a3a84518e8701211c8c5a40bf3c911f" compoundref="qcustomplot_8cpp" startline="22023" endline="22026">QCPItemCurve::mainPen</referencedby>
+        <referencedby refid="class_q_c_p_item_rect_1af94d87da501e9429c0e874f1c0369b03" compoundref="qcustomplot_8cpp" startline="22165" endline="22168">QCPItemRect::mainPen</referencedby>
+        <referencedby refid="class_q_c_p_item_text_1a2f67fcbb7ac10ea9a94c4ecc3b0f4dfc" compoundref="qcustomplot_8cpp" startline="22509" endline="22512">QCPItemText::mainPen</referencedby>
+        <referencedby refid="class_q_c_p_item_ellipse_1a9c11717026dfd685c83a9650666b7181" compoundref="qcustomplot_8cpp" startline="22693" endline="22696">QCPItemEllipse::mainPen</referencedby>
+        <referencedby refid="class_q_c_p_item_pixmap_1aad6dddd67163831538d40023a98a9fe7" compoundref="qcustomplot_8cpp" startline="22949" endline="22952">QCPItemPixmap::mainPen</referencedby>
+        <referencedby refid="class_q_c_p_item_tracer_1abffdcf64d0f84f7b41bd4af07d144642" compoundref="qcustomplot_8cpp" startline="23302" endline="23305">QCPItemTracer::mainPen</referencedby>
+        <referencedby refid="class_q_c_p_item_bracket_1af1c445df1a574bddc8a40efcd76dd2e1" compoundref="qcustomplot_8cpp" startline="23549" endline="23552">QCPItemBracket::mainPen</referencedby>
+        <referencedby refid="class_q_c_p_abstract_item_1aaf92af7b9893712959a6c073d334d88d" compoundref="qcustomplot_8cpp" startline="8676" endline="8687">selectEvent</referencedby>
+        <referencedby refid="class_q_c_p_abstract_item_1a203de94ad586cc44d16c9565f49d3378" compoundref="qcustomplot_8cpp" startline="8424" endline="8431">setSelected</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_q_c_p_abstract_item_1a1cdf9df76adcfae45261690aa0ca2198" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class QCustomPlot</definition>
+        <argsstring></argsstring>
+        <name>QCustomPlot</name>
+        <param>
+          <type><ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1675" column="3" bodyfile="qcustomplot.h" bodystart="1675" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_q_c_p_abstract_item_1a61767d414fd57af9eb1741b34268c7fc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class QCPItemAnchor</definition>
+        <argsstring></argsstring>
+        <name>QCPItemAnchor</name>
+        <param>
+          <type><ref refid="class_q_c_p_item_anchor" kindref="compound">QCPItemAnchor</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1676" column="3" bodyfile="qcustomplot.h" bodystart="1676" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_abstract_item_1af3fc92527802078ca395138748b629a7" compoundref="qcustomplot_8cpp" startline="8666" endline="8673">createAnchor</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a9922507d8b4503a1fe1ed0b1030e23b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPAbstractItem::QCPAbstractItem</definition>
+        <argsstring>(QCustomPlot *parentPlot)</argsstring>
+        <name>QCPAbstractItem</name>
+        <param>
+          <type><ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> *</type>
+          <declname>parentPlot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Base class constructor which initializes base class members. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1617" column="3" bodyfile="qcustomplot.cpp" bodystart="8340" bodyend="8352"/>
+        <references refid="class_q_custom_plot_1a12af771429e2d7e313c8c5d5fca068fe" compoundref="qcustomplot_8cpp" startline="10227" endline="10248">QCustomPlot::axisRects</references>
+        <references refid="class_q_c_p_layerable_1a473edb813a4c1929d6b6a8fe3ff3faf7" compoundref="qcustomplot_8h" startline="424" endline="424">QCPLayerable::parentPlot</references>
+        <references refid="class_q_c_p_abstract_item_1a7dc75fcbcd10206fe0b75d757ea7a347" compoundref="qcustomplot_8cpp" startline="8385" endline="8390">setClipAxisRect</references>
+        <references refid="class_q_c_p_abstract_item_1a39e05b9d4176b9accafc746d16ca6a06" compoundref="qcustomplot_8cpp" startline="8372" endline="8377">setClipToAxisRect</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a375bd1b7d3218b04a6ff7ff06fff917c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>QCPAbstractItem::~QCPAbstractItem</definition>
+        <argsstring>()</argsstring>
+        <name>~QCPAbstractItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1618" column="11" bodyfile="qcustomplot.cpp" bodystart="8354" bodyend="8358"/>
+        <references refid="class_q_c_p_abstract_item_1a909a3abab783de302ebf0a0e6f2bbc15" compoundref="qcustomplot_8h" startline="1651">mAnchors</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a42715ad5f3d7fca6854025fa5636f436" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPAbstractItem::clipToAxisRect</definition>
+        <argsstring>() const</argsstring>
+        <name>clipToAxisRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1621" column="8" bodyfile="qcustomplot.h" bodystart="1621" bodyend="1621"/>
+        <referencedby refid="class_q_custom_plot_1ac08578e0e6c059c83a8d340ba0038e8e" compoundref="qcustomplot_8cpp" startline="9941" endline="9962">QCustomPlot::itemAt</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1ae162314efd3fe1a6d4df11da1d275d52" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_q_c_p_axis_rect" kindref="compound">QCPAxisRect</ref> *</type>
+        <definition>QCPAxisRect * QCPAbstractItem::clipAxisRect</definition>
+        <argsstring>() const</argsstring>
+        <name>clipAxisRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1622" column="15" bodyfile="qcustomplot.cpp" bodystart="8361" bodyend="8364"/>
+        <references refid="class_q_c_p_abstract_item_1a3e57cfe7da4b1ac3d6fa7281ea437361" compoundref="qcustomplot_8h" startline="1649">mClipAxisRect</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1ae29aa489767352b40c4aaa7ea50c5582" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPAbstractItem::selectable</definition>
+        <argsstring>() const</argsstring>
+        <name>selectable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1623" column="8" bodyfile="qcustomplot.h" bodystart="1623" bodyend="1623"/>
+        <referencedby refid="class_q_custom_plot_1ac08578e0e6c059c83a8d340ba0038e8e" compoundref="qcustomplot_8cpp" startline="9941" endline="9962">QCustomPlot::itemAt</referencedby>
+        <referencedby refid="class_q_c_p_abstract_item_1a8a8e32a55bc478b849756a78c2d87fd2" compoundref="qcustomplot_8cpp" startline="8401" endline="8408">setSelectable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1aa069fba320a13639f119f82ad29ead96" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPAbstractItem::selected</definition>
+        <argsstring>() const</argsstring>
+        <name>selected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1624" column="8" bodyfile="qcustomplot.h" bodystart="1624" bodyend="1624"/>
+        <referencedby refid="class_q_custom_plot_1afda487bcf2d6cf1a57173d82495e29ba" compoundref="qcustomplot_8cpp" startline="9917" endline="9926">QCustomPlot::selectedItems</referencedby>
+        <referencedby refid="class_q_c_p_abstract_item_1a203de94ad586cc44d16c9565f49d3378" compoundref="qcustomplot_8cpp" startline="8424" endline="8431">setSelected</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a39e05b9d4176b9accafc746d16ca6a06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractItem::setClipToAxisRect</definition>
+        <argsstring>(bool clip)</argsstring>
+        <name>setClipToAxisRect</name>
+        <param>
+          <type>bool</type>
+          <declname>clip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets whether the item shall be clipped to an axis rect or whether it shall be visible on the entire <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref>. The axis rect can be set with <ref refid="class_q_c_p_abstract_item_1a7dc75fcbcd10206fe0b75d757ea7a347" kindref="member">setClipAxisRect</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_item_1a7dc75fcbcd10206fe0b75d757ea7a347" kindref="member">setClipAxisRect</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1627" column="8" bodyfile="qcustomplot.cpp" bodystart="8372" bodyend="8377"/>
+        <references refid="class_q_c_p_abstract_item_1a3e57cfe7da4b1ac3d6fa7281ea437361" compoundref="qcustomplot_8h" startline="1649">mClipAxisRect</references>
+        <references refid="class_q_c_p_abstract_item_1ad2a70ff6b658fcb84a9427f69d3f587d" compoundref="qcustomplot_8h" startline="1648">mClipToAxisRect</references>
+        <references refid="class_q_c_p_layerable_1aa23c893671f1f6744ac235cf2204cf3a" compoundref="qcustomplot_8cpp" startline="1108" endline="1111">QCPLayerable::setParentLayerable</references>
+        <referencedby refid="class_q_c_p_abstract_item_1a9922507d8b4503a1fe1ed0b1030e23b6" compoundref="qcustomplot_8cpp" startline="8340" endline="8352">QCPAbstractItem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a7dc75fcbcd10206fe0b75d757ea7a347" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractItem::setClipAxisRect</definition>
+        <argsstring>(QCPAxisRect *rect)</argsstring>
+        <name>setClipAxisRect</name>
+        <param>
+          <type><ref refid="class_q_c_p_axis_rect" kindref="compound">QCPAxisRect</ref> *</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the clip axis rect. It defines the rect that will be used to clip the item when <ref refid="class_q_c_p_abstract_item_1a39e05b9d4176b9accafc746d16ca6a06" kindref="member">setClipToAxisRect</ref> is set to true.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_item_1a39e05b9d4176b9accafc746d16ca6a06" kindref="member">setClipToAxisRect</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1628" column="8" bodyfile="qcustomplot.cpp" bodystart="8385" bodyend="8390"/>
+        <references refid="class_q_c_p_abstract_item_1a3e57cfe7da4b1ac3d6fa7281ea437361" compoundref="qcustomplot_8h" startline="1649">mClipAxisRect</references>
+        <references refid="class_q_c_p_abstract_item_1ad2a70ff6b658fcb84a9427f69d3f587d" compoundref="qcustomplot_8h" startline="1648">mClipToAxisRect</references>
+        <references refid="class_q_c_p_layerable_1aa23c893671f1f6744ac235cf2204cf3a" compoundref="qcustomplot_8cpp" startline="1108" endline="1111">QCPLayerable::setParentLayerable</references>
+        <referencedby refid="class_q_c_p_abstract_item_1a9922507d8b4503a1fe1ed0b1030e23b6" compoundref="qcustomplot_8cpp" startline="8340" endline="8352">QCPAbstractItem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a8a8e32a55bc478b849756a78c2d87fd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Q_SLOT void</type>
+        <definition>void QCPAbstractItem::setSelectable</definition>
+        <argsstring>(bool selectable)</argsstring>
+        <name>setSelectable</name>
+        <param>
+          <type>bool</type>
+          <declname>selectable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets whether the user can (de-)select this item by clicking on the <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> surface. (When <ref refid="class_q_custom_plot_1a5ee1e2f6ae27419deca53e75907c27e5" kindref="member">QCustomPlot::setInteractions</ref> contains QCustomPlot::iSelectItems.)</para>
+<para>However, even when <emphasis>selectable</emphasis> was set to false, it is possible to set the selection manually, by calling <ref refid="class_q_c_p_abstract_item_1a203de94ad586cc44d16c9565f49d3378" kindref="member">setSelected</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_custom_plot_1a5ee1e2f6ae27419deca53e75907c27e5" kindref="member">QCustomPlot::setInteractions</ref>, <ref refid="class_q_c_p_abstract_item_1a203de94ad586cc44d16c9565f49d3378" kindref="member">setSelected</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1629" column="15" bodyfile="qcustomplot.cpp" bodystart="8401" bodyend="8408"/>
+        <references refid="class_q_c_p_abstract_item_1ad81eb35c8726a0f458db9df9732e0e41" compoundref="qcustomplot_8h" startline="1652">mSelectable</references>
+        <references refid="class_q_c_p_abstract_item_1ae29aa489767352b40c4aaa7ea50c5582" compoundref="qcustomplot_8h" startline="1623" endline="1623">selectable</references>
+        <references refid="class_q_c_p_abstract_item_1a5b266c11aac61cb511901f3911dac2a3">selectableChanged</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a203de94ad586cc44d16c9565f49d3378" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Q_SLOT void</type>
+        <definition>void QCPAbstractItem::setSelected</definition>
+        <argsstring>(bool selected)</argsstring>
+        <name>setSelected</name>
+        <param>
+          <type>bool</type>
+          <declname>selected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets whether this item is selected or not. When selected, it might use a different visual appearance (e.g. pen and brush), this depends on the specific item though.</para>
+<para>The entire selection mechanism for items is handled automatically when <ref refid="class_q_custom_plot_1a5ee1e2f6ae27419deca53e75907c27e5" kindref="member">QCustomPlot::setInteractions</ref> contains QCustomPlot::iSelectItems. You only need to call this function when you wish to change the selection state manually.</para>
+<para>This function can change the selection state even when <ref refid="class_q_c_p_abstract_item_1a8a8e32a55bc478b849756a78c2d87fd2" kindref="member">setSelectable</ref> was set to false.</para>
+<para>emits the <ref refid="class_q_c_p_abstract_item_1aa5cffb034fc65dbb91c77e02c1c14251" kindref="member">selectionChanged</ref> signal when <emphasis>selected</emphasis> is different from the previous selection state.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_item_1a8a8e32a55bc478b849756a78c2d87fd2" kindref="member">setSelectable</ref>, <ref refid="class_q_c_p_abstract_item_1a96d522d10ffc0413b9a366c6f7f0476b" kindref="member">selectTest</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1630" column="15" bodyfile="qcustomplot.cpp" bodystart="8424" bodyend="8431"/>
+        <references refid="class_q_c_p_abstract_item_1a4bdb3457dad1d268c0f78a44152b9645" compoundref="qcustomplot_8h" startline="1652">mSelected</references>
+        <references refid="class_q_c_p_abstract_item_1aa069fba320a13639f119f82ad29ead96" compoundref="qcustomplot_8h" startline="1624" endline="1624">selected</references>
+        <references refid="class_q_c_p_abstract_item_1aa5cffb034fc65dbb91c77e02c1c14251">selectionChanged</references>
+        <referencedby refid="class_q_c_p_abstract_item_1a91f090d6763cfedb0749219c63788ae9" compoundref="qcustomplot_8cpp" startline="8690" endline="8699">deselectEvent</referencedby>
+        <referencedby refid="class_q_c_p_abstract_item_1aaf92af7b9893712959a6c073d334d88d" compoundref="qcustomplot_8cpp" startline="8676" endline="8687">selectEvent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a96d522d10ffc0413b9a366c6f7f0476b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double QCPAbstractItem::selectTest</definition>
+        <argsstring>(const QPointF &amp;pos, bool onlySelectable, QVariant *details=0) const =0</argsstring>
+        <name>selectTest</name>
+        <reimplements refid="class_q_c_p_layerable_1a04db8351fefd44cfdb77958e75c6288e">selectTest</reimplements>
+        <reimplementedby refid="class_q_c_p_item_straight_line_1a1e5d99d79efb5871600c72bcd2891a0f">selectTest</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_line_1ae6cc5183f568e5fa9d7827abe4d405b5">selectTest</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_curve_1a8018b8b3fc552a44ba87ca4b64c1523f">selectTest</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_rect_1abe1a6091591d3bad5e4efab2331f99ec">selectTest</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_text_1aca74494fd5e769f331a6eb3e29f32916">selectTest</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_ellipse_1aa41be2180b2ace2e303b88d005c14243">selectTest</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_pixmap_1a7583a98ebd3f35d2ac5d6c05fad25a6c">selectTest</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_tracer_1ae1dc728384936184e7552a6d0d67fd75">selectTest</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_bracket_1a971299aa6fef75730d6f10efdaf48616">selectTest</reimplementedby>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>onlySelectable</declname>
+        </param>
+        <param>
+          <type>QVariant *</type>
+          <declname>details</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to decide whether a click hits a layerable object or not.</para>
+<para><emphasis>pos</emphasis> is a point in pixel coordinates on the <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> surface. This function returns the shortest pixel distance of this point to the object. If the object is either invisible or the distance couldn&apos;t be determined, -1.0 is returned. Further, if <emphasis>onlySelectable</emphasis> is true and the object is not selectable, -1.0 is returned, too.</para>
+<para>If the object is represented not by single lines but by an area like a <ref refid="class_q_c_p_item_text" kindref="compound">QCPItemText</ref> or the bars of a <ref refid="class_q_c_p_bars" kindref="compound">QCPBars</ref> plottable, a click inside the area should also be considered a hit. In these cases this function thus returns a constant value greater zero but still below the parent plot&apos;s selection tolerance. (typically the selectionTolerance multiplied by 0.99).</para>
+<para>Providing a constant value for area objects allows selecting line objects even when they are obscured by such area objects, by clicking close to the lines (i.e. closer than 0.99*selectionTolerance).</para>
+<para>The actual setting of the selection state is not done by this function. This is handled by the parent <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> when the mouseReleaseEvent occurs, and the finally selected object is notified via the selectEvent/deselectEvent methods.</para>
+<para><emphasis>details</emphasis> is an optional output parameter. Every layerable subclass may place any information in <emphasis>details</emphasis>. This information will be passed to <ref refid="class_q_c_p_abstract_item_1aaf92af7b9893712959a6c073d334d88d" kindref="member">selectEvent</ref> when the parent <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> decides on the basis of this selectTest call, that the object was successfully selected. The subsequent call to <ref refid="class_q_c_p_abstract_item_1aaf92af7b9893712959a6c073d334d88d" kindref="member">selectEvent</ref> will carry the <emphasis>details</emphasis>. This is useful for multi-part objects (like <ref refid="class_q_c_p_axis" kindref="compound">QCPAxis</ref>). This way, a possibly complex calculation to decide which part was clicked is only done once in <ref refid="class_q_c_p_abstract_item_1a96d522d10ffc0413b9a366c6f7f0476b" kindref="member">selectTest</ref>. The result (i.e. the actually clicked part) can then be placed in <emphasis>details</emphasis>. So in the subsequent <ref refid="class_q_c_p_abstract_item_1aaf92af7b9893712959a6c073d334d88d" kindref="member">selectEvent</ref>, the decision which part was selected doesn&apos;t have to be done a second time for a single selection operation.</para>
+<para>You may pass 0 as <emphasis>details</emphasis> to indicate that you are not interested in those selection details.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_item_1aaf92af7b9893712959a6c073d334d88d" kindref="member">selectEvent</ref>, <ref refid="class_q_c_p_abstract_item_1a91f090d6763cfedb0749219c63788ae9" kindref="member">deselectEvent</ref>, <ref refid="class_q_custom_plot_1a5ee1e2f6ae27419deca53e75907c27e5" kindref="member">QCustomPlot::setInteractions</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1633" column="18"/>
+        <referencedby refid="class_q_custom_plot_1ac08578e0e6c059c83a8d340ba0038e8e" compoundref="qcustomplot_8cpp" startline="9941" endline="9962">QCustomPlot::itemAt</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a709f655ac3f7f22d452714134662b454" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QList&lt; <ref refid="class_q_c_p_item_position" kindref="compound">QCPItemPosition</ref> * &gt;</type>
+        <definition>QList&lt; QCPItemPosition * &gt; QCPAbstractItem::positions</definition>
+        <argsstring>() const</argsstring>
+        <name>positions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns all positions of the item in a list.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_item_1a81d1ecfea3368b836cf9675a0045e659" kindref="member">anchors</ref>, <ref refid="class_q_c_p_abstract_item_1a2589c3d298f9a576d77d9addb440a18d" kindref="member">position</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1636" column="9" bodyfile="qcustomplot.h" bodystart="1636" bodyend="1636"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a81d1ecfea3368b836cf9675a0045e659" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>QList&lt; <ref refid="class_q_c_p_item_anchor" kindref="compound">QCPItemAnchor</ref> * &gt;</type>
+        <definition>QList&lt; QCPItemAnchor * &gt; QCPAbstractItem::anchors</definition>
+        <argsstring>() const</argsstring>
+        <name>anchors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns all anchors of the item in a list. Note that since a position (<ref refid="class_q_c_p_item_position" kindref="compound">QCPItemPosition</ref>) is always also an anchor, the list will also contain the positions of this item.</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_item_1a709f655ac3f7f22d452714134662b454" kindref="member">positions</ref>, <ref refid="class_q_c_p_abstract_item_1a139c255ea8831642fac91748e29a5adb" kindref="member">anchor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1637" column="9" bodyfile="qcustomplot.h" bodystart="1637" bodyend="1637"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a2589c3d298f9a576d77d9addb440a18d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_q_c_p_item_position" kindref="compound">QCPItemPosition</ref> *</type>
+        <definition>QCPItemPosition * QCPAbstractItem::position</definition>
+        <argsstring>(const QString &amp;name) const</argsstring>
+        <name>position</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the <ref refid="class_q_c_p_item_position" kindref="compound">QCPItemPosition</ref> with the specified <emphasis>name</emphasis>. If this item doesn&apos;t have a position by that name, returns 0.</para>
+<para>This function provides an alternative way to access item positions. Normally, you access positions direcly by their member pointers (which typically have the same variable name as <emphasis>name</emphasis>).</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_item_1a709f655ac3f7f22d452714134662b454" kindref="member">positions</ref>, <ref refid="class_q_c_p_abstract_item_1a139c255ea8831642fac91748e29a5adb" kindref="member">anchor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1638" column="19" bodyfile="qcustomplot.cpp" bodystart="8443" bodyend="8452"/>
+        <references refid="class_q_c_p_abstract_item_1af94ff71b6a15ea6d028ab8bd8eccd012" compoundref="qcustomplot_8h" startline="1650">mPositions</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a139c255ea8831642fac91748e29a5adb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_q_c_p_item_anchor" kindref="compound">QCPItemAnchor</ref> *</type>
+        <definition>QCPItemAnchor * QCPAbstractItem::anchor</definition>
+        <argsstring>(const QString &amp;name) const</argsstring>
+        <name>anchor</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the <ref refid="class_q_c_p_item_anchor" kindref="compound">QCPItemAnchor</ref> with the specified <emphasis>name</emphasis>. If this item doesn&apos;t have an anchor by that name, returns 0.</para>
+<para>This function provides an alternative way to access item anchors. Normally, you access anchors direcly by their member pointers (which typically have the same variable name as <emphasis>name</emphasis>).</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_item_1a81d1ecfea3368b836cf9675a0045e659" kindref="member">anchors</ref>, <ref refid="class_q_c_p_abstract_item_1a2589c3d298f9a576d77d9addb440a18d" kindref="member">position</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1639" column="17" bodyfile="qcustomplot.cpp" bodystart="8464" bodyend="8473"/>
+        <references refid="class_q_c_p_abstract_item_1a909a3abab783de302ebf0a0e6f2bbc15" compoundref="qcustomplot_8h" startline="1651">mAnchors</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a84914f4516f9b38ef0bd89eafe3dbda7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPAbstractItem::hasAnchor</definition>
+        <argsstring>(const QString &amp;name) const</argsstring>
+        <name>hasAnchor</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns whether this item has an anchor with the specified <emphasis>name</emphasis>.</para>
+<para>Note that you can check for positions with this function, too. This is because every position is also an anchor (<ref refid="class_q_c_p_item_position" kindref="compound">QCPItemPosition</ref> inherits from <ref refid="class_q_c_p_item_anchor" kindref="compound">QCPItemAnchor</ref>).</para>
+<para><simplesect kind="see"><para><ref refid="class_q_c_p_abstract_item_1a139c255ea8831642fac91748e29a5adb" kindref="member">anchor</ref>, <ref refid="class_q_c_p_abstract_item_1a2589c3d298f9a576d77d9addb440a18d" kindref="member">position</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1640" column="8" bodyfile="qcustomplot.cpp" bodystart="8483" bodyend="8491"/>
+        <references refid="class_q_c_p_abstract_item_1a909a3abab783de302ebf0a0e6f2bbc15" compoundref="qcustomplot_8h" startline="1651">mAnchors</references>
+        <referencedby refid="class_q_c_p_abstract_item_1af3fc92527802078ca395138748b629a7" compoundref="qcustomplot_8cpp" startline="8666" endline="8673">createAnchor</referencedby>
+        <referencedby refid="class_q_c_p_abstract_item_1a75036d39c4d4e2e1a7dd145fff915d32" compoundref="qcustomplot_8cpp" startline="8632" endline="8645">createPosition</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="signal">
+      <memberdef kind="signal" id="class_q_c_p_abstract_item_1aa5cffb034fc65dbb91c77e02c1c14251" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractItem::selectionChanged</definition>
+        <argsstring>(bool selected)</argsstring>
+        <name>selectionChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>selected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This signal is emitted when the selection state of this item has changed, either by user interaction or by a direct call to <ref refid="class_q_c_p_abstract_item_1a203de94ad586cc44d16c9565f49d3378" kindref="member">setSelected</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1643" column="8"/>
+        <referencedby refid="class_q_c_p_abstract_item_1a203de94ad586cc44d16c9565f49d3378" compoundref="qcustomplot_8cpp" startline="8424" endline="8431">setSelected</referencedby>
+      </memberdef>
+      <memberdef kind="signal" id="class_q_c_p_abstract_item_1a5b266c11aac61cb511901f3911dac2a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractItem::selectableChanged</definition>
+        <argsstring>(bool selectable)</argsstring>
+        <name>selectableChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>selectable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1644" column="8"/>
+        <referencedby refid="class_q_c_p_abstract_item_1a8a8e32a55bc478b849756a78c2d87fd2" compoundref="qcustomplot_8cpp" startline="8401" endline="8408">setSelectable</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a59279d8123663b3b2fffbe54ca075244" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespace_q_c_p_1a2ad6bb6281c7c2d593d4277b44c2b037" kindref="member">QCP::Interaction</ref></type>
+        <definition>QCP::Interaction QCPAbstractItem::selectionCategory</definition>
+        <argsstring>() const</argsstring>
+        <name>selectionCategory</name>
+        <reimplements refid="class_q_c_p_layerable_1a908c9edda761886f33893be326dab77d">selectionCategory</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1655" column="28" bodyfile="qcustomplot.cpp" bodystart="8702" bodyend="8705"/>
+        <references refid="namespace_q_c_p_1a2ad6bb6281c7c2d593d4277b44c2b037aea2f7c105d674e76d9b187b02ef29260" compoundref="qcustomplot_8h" startline="161">QCP::iSelectItems</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a550ecff39195d9ff3d5cf239eb802ea7" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QRect</type>
+        <definition>QRect QCPAbstractItem::clipRect</definition>
+        <argsstring>() const</argsstring>
+        <name>clipRect</name>
+        <reimplements refid="class_q_c_p_layerable_1acbcfc9ecc75433747b1978a77b1864b3">clipRect</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1656" column="17" bodyfile="qcustomplot.cpp" bodystart="8502" bodyend="8508"/>
+        <references refid="class_q_c_p_abstract_item_1a3e57cfe7da4b1ac3d6fa7281ea437361" compoundref="qcustomplot_8h" startline="1649">mClipAxisRect</references>
+        <references refid="class_q_c_p_abstract_item_1ad2a70ff6b658fcb84a9427f69d3f587d" compoundref="qcustomplot_8h" startline="1648">mClipToAxisRect</references>
+        <references refid="class_q_c_p_layerable_1aa2a528433e44db02b8aef23c1f9f90ed" compoundref="qcustomplot_8h" startline="447">QCPLayerable::mParentPlot</references>
+        <references refid="class_q_custom_plot_1a19842409b18f556b256d05e97fffc670" compoundref="qcustomplot_8h" startline="1719" endline="1719">QCustomPlot::viewport</references>
+        <referencedby refid="class_q_c_p_item_straight_line_1a2daa1e1253216c26565d56a2d5530170" compoundref="qcustomplot_8cpp" startline="21520" endline="21533">QCPItemStraightLine::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_line_1a1fc045dd33919f8006df0692aeb0e84a" compoundref="qcustomplot_8cpp" startline="21736" endline="21757">QCPItemLine::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_curve_1a56cb5b72cd02db2eda598274a39839a9" compoundref="qcustomplot_8cpp" startline="21989" endline="22016">QCPItemCurve::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_rect_1a18cd583638b876cdd50f1a155ec182aa" compoundref="qcustomplot_8cpp" startline="22125" endline="22140">QCPItemRect::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_text_1a8793adb271ab79b4cf391dc55e9987f1" compoundref="qcustomplot_8cpp" startline="22394" endline="22423">QCPItemText::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_ellipse_1afe97ec827adb05f000fe007783faae3c" compoundref="qcustomplot_8cpp" startline="22640" endline="22665">QCPItemEllipse::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_pixmap_1a879e8076c2db01a38b34cfa73ec95d2f" compoundref="qcustomplot_8cpp" startline="22810" endline="22829">QCPItemPixmap::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_tracer_1aaaf49b48382c730ec9be0e74c2538315" compoundref="qcustomplot_8cpp" startline="23191" endline="23235">QCPItemTracer::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_bracket_1a8343cf0559c64886add7aa7f4b22f1a6" compoundref="qcustomplot_8cpp" startline="23454" endline="23520">QCPItemBracket::draw</referencedby>
+        <referencedby refid="class_q_custom_plot_1ac08578e0e6c059c83a8d340ba0038e8e" compoundref="qcustomplot_8cpp" startline="9941" endline="9962">QCustomPlot::itemAt</referencedby>
+        <referencedby refid="class_q_c_p_item_tracer_1ae1dc728384936184e7552a6d0d67fd75" compoundref="qcustomplot_8cpp" startline="23134" endline="23188">QCPItemTracer::selectTest</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a82a408b38a93be750b934fe847a018cb" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void QCPAbstractItem::applyDefaultAntialiasingHint</definition>
+        <argsstring>(QCPPainter *painter) const</argsstring>
+        <name>applyDefaultAntialiasingHint</name>
+        <reimplements refid="class_q_c_p_layerable_1afdf83ddc6a265cbf4c89fe99d3d93473">applyDefaultAntialiasingHint</reimplements>
+        <param>
+          <type><ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1657" column="16" bodyfile="qcustomplot.cpp" bodystart="8523" bodyend="8526"/>
+        <references refid="namespace_q_c_p_1ae55dbe315d41fe80f29ba88100843a0caf7712a85d6b0c75b24301d2fe9484db3" compoundref="qcustomplot_8h" startline="124">QCP::aeItems</references>
+        <references refid="class_q_c_p_layerable_1acb663e375d2d36dc5c55021ee5a2119b" compoundref="qcustomplot_8cpp" startline="1152" endline="1160">QCPLayerable::applyAntialiasingHint</references>
+        <references refid="class_q_c_p_layerable_1a3ab45a4c76a3333ce42eb217a81733ec" compoundref="qcustomplot_8h" startline="450">QCPLayerable::mAntialiased</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1ad0dc056f650c3ca73414e6b4f01674ef" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>void QCPAbstractItem::draw</definition>
+        <argsstring>(QCPPainter *painter)=0</argsstring>
+        <name>draw</name>
+        <reimplements refid="class_q_c_p_layerable_1aecf2f7087482d4b6a78cb2770e5ed12d">draw</reimplements>
+        <reimplementedby refid="class_q_c_p_item_straight_line_1a2daa1e1253216c26565d56a2d5530170">draw</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_line_1a1fc045dd33919f8006df0692aeb0e84a">draw</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_curve_1a56cb5b72cd02db2eda598274a39839a9">draw</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_rect_1a18cd583638b876cdd50f1a155ec182aa">draw</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_text_1a8793adb271ab79b4cf391dc55e9987f1">draw</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_ellipse_1afe97ec827adb05f000fe007783faae3c">draw</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_pixmap_1a879e8076c2db01a38b34cfa73ec95d2f">draw</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_tracer_1aaaf49b48382c730ec9be0e74c2538315">draw</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_bracket_1a8343cf0559c64886add7aa7f4b22f1a6">draw</reimplementedby>
+        <param>
+          <type><ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> *</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1658" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1aaf92af7b9893712959a6c073d334d88d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void QCPAbstractItem::selectEvent</definition>
+        <argsstring>(QMouseEvent *event, bool additive, const QVariant &amp;details, bool *selectionStateChanged)</argsstring>
+        <name>selectEvent</name>
+        <reimplements refid="class_q_c_p_layerable_1a7498c2d0d081cf7cad0fb3bb93aa0e91">selectEvent</reimplements>
+        <param>
+          <type>QMouseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>additive</declname>
+        </param>
+        <param>
+          <type>const QVariant &amp;</type>
+          <declname>details</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>selectionStateChanged</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1660" column="16" bodyfile="qcustomplot.cpp" bodystart="8676" bodyend="8687"/>
+        <references refid="class_q_c_p_abstract_item_1ad81eb35c8726a0f458db9df9732e0e41" compoundref="qcustomplot_8h" startline="1652">mSelectable</references>
+        <references refid="class_q_c_p_abstract_item_1a4bdb3457dad1d268c0f78a44152b9645" compoundref="qcustomplot_8h" startline="1652">mSelected</references>
+        <references refid="class_q_c_p_abstract_item_1a203de94ad586cc44d16c9565f49d3378" compoundref="qcustomplot_8cpp" startline="8424" endline="8431">setSelected</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a91f090d6763cfedb0749219c63788ae9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void QCPAbstractItem::deselectEvent</definition>
+        <argsstring>(bool *selectionStateChanged)</argsstring>
+        <name>deselectEvent</name>
+        <reimplements refid="class_q_c_p_layerable_1ae546370644a5551c76af739afc008bee">deselectEvent</reimplements>
+        <param>
+          <type>bool *</type>
+          <declname>selectionStateChanged</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1661" column="16" bodyfile="qcustomplot.cpp" bodystart="8690" bodyend="8699"/>
+        <references refid="class_q_c_p_abstract_item_1ad81eb35c8726a0f458db9df9732e0e41" compoundref="qcustomplot_8h" startline="1652">mSelectable</references>
+        <references refid="class_q_c_p_abstract_item_1a4bdb3457dad1d268c0f78a44152b9645" compoundref="qcustomplot_8h" startline="1652">mSelected</references>
+        <references refid="class_q_c_p_abstract_item_1a203de94ad586cc44d16c9565f49d3378" compoundref="qcustomplot_8cpp" startline="8424" endline="8431">setSelected</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a5681c190803e899bac9a240753fdba00" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QPointF</type>
+        <definition>QPointF QCPAbstractItem::anchorPixelPoint</definition>
+        <argsstring>(int anchorId) const</argsstring>
+        <name>anchorPixelPoint</name>
+        <reimplementedby refid="class_q_c_p_item_rect_1af1c42e6142d1137673335982856d0ea6">anchorPixelPoint</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_text_1a3f999a0a7664421373601206bc35cc7c">anchorPixelPoint</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_ellipse_1ac9de21db25a5b93594ee540533a4e7e4">anchorPixelPoint</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_pixmap_1a24d4072c0e50c608ddcc0840d853fc03">anchorPixelPoint</reimplementedby>
+        <reimplementedby refid="class_q_c_p_item_bracket_1a4ad167aab5d38e173171f0afc14a5dd3">anchorPixelPoint</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>anchorId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1664" column="19" bodyfile="qcustomplot.cpp" bodystart="8612" bodyend="8616"/>
+        <referencedby refid="class_q_c_p_item_anchor_1ae1a21d9471d1d788624cad297e1b8d6f" compoundref="qcustomplot_8cpp" startline="7481" endline="7498">QCPItemAnchor::pixelPoint</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a8f4d23e883cbb55219959ed6ce8f10ac" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPAbstractItem::distSqrToLine</definition>
+        <argsstring>(const QPointF &amp;start, const QPointF &amp;end, const QPointF &amp;point) const</argsstring>
+        <name>distSqrToLine</name>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1667" column="10" bodyfile="qcustomplot.cpp" bodystart="8540" bodyend="8559"/>
+        <referencedby refid="class_q_c_p_abstract_item_1a26aa3828d398e29116afee16216d6b36" compoundref="qcustomplot_8cpp" startline="8576" endline="8600">rectSelectTest</referencedby>
+        <referencedby refid="class_q_c_p_item_line_1ae6cc5183f568e5fa9d7827abe4d405b5" compoundref="qcustomplot_8cpp" startline="21726" endline="21733">QCPItemLine::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_item_curve_1a8018b8b3fc552a44ba87ca4b64c1523f" compoundref="qcustomplot_8cpp" startline="21963" endline="21986">QCPItemCurve::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_item_tracer_1ae1dc728384936184e7552a6d0d67fd75" compoundref="qcustomplot_8cpp" startline="23134" endline="23188">QCPItemTracer::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_item_bracket_1a971299aa6fef75730d6f10efdaf48616" compoundref="qcustomplot_8cpp" startline="23414" endline="23451">QCPItemBracket::selectTest</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a26aa3828d398e29116afee16216d6b36" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double QCPAbstractItem::rectSelectTest</definition>
+        <argsstring>(const QRectF &amp;rect, const QPointF &amp;pos, bool filledRect) const</argsstring>
+        <name>rectSelectTest</name>
+        <param>
+          <type>const QRectF &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>filledRect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1668" column="10" bodyfile="qcustomplot.cpp" bodystart="8576" bodyend="8600"/>
+        <references refid="class_q_c_p_abstract_item_1a8f4d23e883cbb55219959ed6ce8f10ac" compoundref="qcustomplot_8cpp" startline="8540" endline="8559">distSqrToLine</references>
+        <references refid="class_q_c_p_layerable_1aa2a528433e44db02b8aef23c1f9f90ed" compoundref="qcustomplot_8h" startline="447">QCPLayerable::mParentPlot</references>
+        <references refid="class_q_custom_plot_1a5441d11013afeaf4b8f2ea06e8624a25" compoundref="qcustomplot_8h" startline="1728" endline="1728">QCustomPlot::selectionTolerance</references>
+        <referencedby refid="class_q_c_p_item_rect_1abe1a6091591d3bad5e4efab2331f99ec" compoundref="qcustomplot_8cpp" startline="22113" endline="22122">QCPItemRect::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_item_text_1aca74494fd5e769f331a6eb3e29f32916" compoundref="qcustomplot_8cpp" startline="22370" endline="22391">QCPItemText::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_item_pixmap_1a7583a98ebd3f35d2ac5d6c05fad25a6c" compoundref="qcustomplot_8cpp" startline="22800" endline="22807">QCPItemPixmap::selectTest</referencedby>
+        <referencedby refid="class_q_c_p_item_tracer_1ae1dc728384936184e7552a6d0d67fd75" compoundref="qcustomplot_8cpp" startline="23134" endline="23188">QCPItemTracer::selectTest</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1a75036d39c4d4e2e1a7dd145fff915d32" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_q_c_p_item_position" kindref="compound">QCPItemPosition</ref> *</type>
+        <definition>QCPItemPosition * QCPAbstractItem::createPosition</definition>
+        <argsstring>(const QString &amp;name)</argsstring>
+        <name>createPosition</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1669" column="19" bodyfile="qcustomplot.cpp" bodystart="8632" bodyend="8645"/>
+        <references refid="class_q_custom_plot_1ae5eefcb5f6ca26689b1fd4f6e25b42f9" compoundref="qcustomplot_8cpp" startline="10209" endline="10220">QCustomPlot::axisRect</references>
+        <references refid="class_q_c_p_abstract_item_1a84914f4516f9b38ef0bd89eafe3dbda7" compoundref="qcustomplot_8cpp" startline="8483" endline="8491">hasAnchor</references>
+        <references refid="class_q_c_p_abstract_item_1a909a3abab783de302ebf0a0e6f2bbc15" compoundref="qcustomplot_8h" startline="1651">mAnchors</references>
+        <references refid="class_q_c_p_layerable_1aa2a528433e44db02b8aef23c1f9f90ed" compoundref="qcustomplot_8h" startline="447">QCPLayerable::mParentPlot</references>
+        <references refid="class_q_c_p_abstract_item_1af94ff71b6a15ea6d028ab8bd8eccd012" compoundref="qcustomplot_8h" startline="1650">mPositions</references>
+        <references refid="class_q_c_p_item_position_1aad9936c22bf43e3d358552f6e86dbdc8ad5ffb8dc99ad73263f7010c77342294c" compoundref="qcustomplot_8h" startline="1556">QCPItemPosition::ptPlotCoords</references>
+        <references refid="class_q_c_p_item_position_1a2185f45c75ac8cb9be89daeaaad50e37" compoundref="qcustomplot_8cpp" startline="8049" endline="8053">QCPItemPosition::setAxes</references>
+        <references refid="class_q_c_p_item_position_1a0cd9b326fb324710169e92e8ca0041c2" compoundref="qcustomplot_8cpp" startline="8060" endline="8063">QCPItemPosition::setAxisRect</references>
+        <references refid="class_q_c_p_item_position_1aa988ba4e87ab684c9021017dcaba945f" compoundref="qcustomplot_8cpp" startline="7927" endline="7931">QCPItemPosition::setCoords</references>
+        <references refid="class_q_c_p_item_position_1aa476abf71ed8fa4c537457ebb1a754ad" compoundref="qcustomplot_8cpp" startline="7689" endline="7693">QCPItemPosition::setType</references>
+        <references refid="class_q_custom_plot_1a9a79cd0158a4c7f30cbc702f0fd800e4" compoundref="qcustomplot_8h" startline="1819">QCustomPlot::xAxis</references>
+        <references refid="class_q_custom_plot_1af6fea5679725b152c14facd920b19367" compoundref="qcustomplot_8h" startline="1819">QCustomPlot::yAxis</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_abstract_item_1af3fc92527802078ca395138748b629a7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_q_c_p_item_anchor" kindref="compound">QCPItemAnchor</ref> *</type>
+        <definition>QCPItemAnchor * QCPAbstractItem::createAnchor</definition>
+        <argsstring>(const QString &amp;name, int anchorId)</argsstring>
+        <name>createAnchor</name>
+        <param>
+          <type>const QString &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>anchorId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="1670" column="17" bodyfile="qcustomplot.cpp" bodystart="8666" bodyend="8673"/>
+        <references refid="class_q_c_p_abstract_item_1a84914f4516f9b38ef0bd89eafe3dbda7" compoundref="qcustomplot_8cpp" startline="8483" endline="8491">hasAnchor</references>
+        <references refid="class_q_c_p_abstract_item_1a909a3abab783de302ebf0a0e6f2bbc15" compoundref="qcustomplot_8h" startline="1651">mAnchors</references>
+        <references refid="class_q_c_p_layerable_1aa2a528433e44db02b8aef23c1f9f90ed" compoundref="qcustomplot_8h" startline="447">QCPLayerable::mParentPlot</references>
+        <references refid="class_q_c_p_abstract_item_1a61767d414fd57af9eb1741b34268c7fc" compoundref="qcustomplot_8h" startline="1676">QCPItemAnchor</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The abstract base class for all items in a plot. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>In <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref>, items are supplemental graphical elements that are neither plottables (<ref refid="class_q_c_p_abstract_plottable" kindref="compound">QCPAbstractPlottable</ref>) nor axes (<ref refid="class_q_c_p_axis" kindref="compound">QCPAxis</ref>). While plottables are always tied to two axes and thus plot coordinates, items can also be placed in absolute coordinates independent of any axes. Each specific item has at least one <ref refid="class_q_c_p_item_position" kindref="compound">QCPItemPosition</ref> member which controls the positioning. Some items are defined by more than one coordinate and thus have two or more <ref refid="class_q_c_p_item_position" kindref="compound">QCPItemPosition</ref> members (For example, <ref refid="class_q_c_p_item_rect" kindref="compound">QCPItemRect</ref> has <emphasis>topLeft</emphasis> and <emphasis>bottomRight</emphasis>).</para>
+<para>This abstract base class defines a very basic interface like visibility and clipping. Since this class is abstract, it can&apos;t be instantiated. Use one of the subclasses or create a subclass yourself to create new items.</para>
+<para>The built-in items are: <table rows="9" cols="2"><row>
+<entry thead="no"><para><ref refid="class_q_c_p_item_line" kindref="compound">QCPItemLine</ref></para>
+</entry><entry thead="no"><para>A line defined by a start and an end point. May have different ending styles on each side (e.g. arrows). </para>
+</entry></row>
+<row>
+<entry thead="no"><para><ref refid="class_q_c_p_item_straight_line" kindref="compound">QCPItemStraightLine</ref></para>
+</entry><entry thead="no"><para>A straight line defined by a start and a direction point. Unlike <ref refid="class_q_c_p_item_line" kindref="compound">QCPItemLine</ref>, the straight line is infinitely long and has no endings. </para>
+</entry></row>
+<row>
+<entry thead="no"><para><ref refid="class_q_c_p_item_curve" kindref="compound">QCPItemCurve</ref></para>
+</entry><entry thead="no"><para>A curve defined by start, end and two intermediate control points. May have different ending styles on each side (e.g. arrows). </para>
+</entry></row>
+<row>
+<entry thead="no"><para><ref refid="class_q_c_p_item_rect" kindref="compound">QCPItemRect</ref></para>
+</entry><entry thead="no"><para>A rectangle </para>
+</entry></row>
+<row>
+<entry thead="no"><para><ref refid="class_q_c_p_item_ellipse" kindref="compound">QCPItemEllipse</ref></para>
+</entry><entry thead="no"><para>An ellipse </para>
+</entry></row>
+<row>
+<entry thead="no"><para><ref refid="class_q_c_p_item_pixmap" kindref="compound">QCPItemPixmap</ref></para>
+</entry><entry thead="no"><para>An arbitrary pixmap </para>
+</entry></row>
+<row>
+<entry thead="no"><para><ref refid="class_q_c_p_item_text" kindref="compound">QCPItemText</ref></para>
+</entry><entry thead="no"><para>A text label </para>
+</entry></row>
+<row>
+<entry thead="no"><para><ref refid="class_q_c_p_item_bracket" kindref="compound">QCPItemBracket</ref></para>
+</entry><entry thead="no"><para>A bracket which may be used to reference/highlight certain parts in the plot. </para>
+</entry></row>
+<row>
+<entry thead="no"><para><ref refid="class_q_c_p_item_tracer" kindref="compound">QCPItemTracer</ref></para>
+</entry><entry thead="no"><para>An item that can be attached to a <ref refid="class_q_c_p_graph" kindref="compound">QCPGraph</ref> and sticks to its data points, given a key coordinate. </para>
+</entry></row>
+</table>
+</para>
+<sect1 id="class_q_c_p_abstract_item_1items-clipping">
+<title>Clipping</title>
+<para>Items are by default clipped to the main axis rect (they are only visible inside the axis rect). To make an item visible outside that axis rect, disable clipping via <ref refid="class_q_c_p_abstract_item_1a39e05b9d4176b9accafc746d16ca6a06" kindref="member">setClipToAxisRect(false)</ref>.</para>
+<para>On the other hand if you want the item to be clipped to a different axis rect, specify it via <ref refid="class_q_c_p_abstract_item_1a7dc75fcbcd10206fe0b75d757ea7a347" kindref="member">setClipAxisRect</ref>. This clipAxisRect property of an item is only used for clipping behaviour, and in principle is independent of the coordinate axes the item might be tied to via its position members (<ref refid="class_q_c_p_item_position_1a2185f45c75ac8cb9be89daeaaad50e37" kindref="member">QCPItemPosition::setAxes</ref>). However, it is common that the axis rect for clipping also contains the axes used for the item positions.</para>
+</sect1>
+<sect1 id="class_q_c_p_abstract_item_1items-using">
+<title>Using items</title>
+<para>First you instantiate the item you want to use and add it to the plot: <programlisting filename="documentation/doc-code-snippets/mainwindow.cpp"></programlisting>by default, the positions of the item are bound to the x- and y-Axis of the plot. So we can just set the plot coordinates where the line should start/end: <programlisting filename="documentation/doc-code-snippets/mainwindow.cpp"></programlisting>If we don&apos;t want the line to be positioned in plot coordinates but a different coordinate system, e.g. absolute pixel positions on the <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref> surface, we need to change the position type like this: <programlisting filename="documentation/doc-code-snippets/mainwindow.cpp"></programlisting>Then we can set the coordinates, this time in pixels: <programlisting filename="documentation/doc-code-snippets/mainwindow.cpp"></programlisting>and make the line visible on the entire <ref refid="class_q_custom_plot" kindref="compound">QCustomPlot</ref>, by disabling clipping to the axis rect: <programlisting filename="documentation/doc-code-snippets/mainwindow.cpp"></programlisting> For more advanced plots, it is even possible to set different types and parent anchors per X/Y coordinate of an item position, using for example <ref refid="class_q_c_p_item_position_1a2113b2351d6d00457fb3559a4e20c3ea" kindref="member">QCPItemPosition::setTypeX</ref> or <ref refid="class_q_c_p_item_position_1add71461a973927c74e42179480916d9c" kindref="member">QCPItemPosition::setParentAnchorX</ref>. For details, see the documentation of <ref refid="class_q_c_p_item_position" kindref="compound">QCPItemPosition</ref>.</para>
+</sect1>
+<sect1 id="class_q_c_p_abstract_item_1items-subclassing">
+<title>Creating own items</title>
+<para>To create an own item, you implement a subclass of <ref refid="class_q_c_p_abstract_item" kindref="compound">QCPAbstractItem</ref>. These are the pure virtual functions, you must implement: <itemizedlist>
+<listitem><para><ref refid="class_q_c_p_abstract_item_1a96d522d10ffc0413b9a366c6f7f0476b" kindref="member">selectTest</ref> </para>
+</listitem>
+<listitem><para><ref refid="class_q_c_p_abstract_item_1ad0dc056f650c3ca73414e6b4f01674ef" kindref="member">draw</ref></para>
+</listitem>
+</itemizedlist>
+See the documentation of those functions for what they need to do.</para>
+<sect2 id="class_q_c_p_abstract_item_1items-positioning">
+<title>Allowing the item to be positioned</title>
+<para>As mentioned, item positions are represented by <ref refid="class_q_c_p_item_position" kindref="compound">QCPItemPosition</ref> members. Let&apos;s assume the new item shall have only one point as its position (as opposed to two like a rect or multiple like a polygon). You then add a public member of type <ref refid="class_q_c_p_item_position" kindref="compound">QCPItemPosition</ref> like so:</para>
+<para><programlisting><codeline><highlight class="normal">QCPItemPosition<sp/>*<sp/>const<sp/>myPosition;</highlight></codeline>
+</programlisting></para>
+<para>the const makes sure the pointer itself can&apos;t be modified from the user of your new item (the <ref refid="class_q_c_p_item_position" kindref="compound">QCPItemPosition</ref> instance it points to, can be modified, of course). The initialization of this pointer is made easy with the <ref refid="class_q_c_p_abstract_item_1a75036d39c4d4e2e1a7dd145fff915d32" kindref="member">createPosition</ref> function. Just assign the return value of this function to each <ref refid="class_q_c_p_item_position" kindref="compound">QCPItemPosition</ref> in the constructor of your item. <ref refid="class_q_c_p_abstract_item_1a75036d39c4d4e2e1a7dd145fff915d32" kindref="member">createPosition</ref> takes a string which is the name of the position, typically this is identical to the variable name. For example, the constructor of QCPItemExample could look like this:</para>
+<para><programlisting><codeline><highlight class="normal">QCPItemExample::QCPItemExample(QCustomPlot<sp/>*parentPlot)<sp/>:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>QCPAbstractItem(parentPlot),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>myPosition(createPosition(&quot;myPosition&quot;))</highlight></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>other<sp/>constructor<sp/>code</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="class_q_c_p_abstract_item_1items-drawing">
+<title>The draw function</title>
+<para>To give your item a visual representation, reimplement the <ref refid="class_q_c_p_abstract_item_1ad0dc056f650c3ca73414e6b4f01674ef" kindref="member">draw</ref> function and use the passed <ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> to draw the item. You can retrieve the item position in pixel coordinates from the position member(s) via <ref refid="class_q_c_p_item_position_1a6cad070c22801295231f5bd6045afe70" kindref="member">QCPItemPosition::pixelPoint</ref>.</para>
+<para>To optimize performance you should calculate a bounding rect first (don&apos;t forget to take the pen width into account), check whether it intersects the <ref refid="class_q_c_p_abstract_item_1a550ecff39195d9ff3d5cf239eb802ea7" kindref="member">clipRect</ref>, and only draw the item at all if this is the case.</para>
+</sect2>
+<sect2 id="class_q_c_p_abstract_item_1items-selection">
+<title>The selectTest function</title>
+<para>Your implementation of the <ref refid="class_q_c_p_abstract_item_1a96d522d10ffc0413b9a366c6f7f0476b" kindref="member">selectTest</ref> function may use the helpers <ref refid="class_q_c_p_abstract_item_1a8f4d23e883cbb55219959ed6ce8f10ac" kindref="member">distSqrToLine</ref> and <ref refid="class_q_c_p_abstract_item_1a26aa3828d398e29116afee16216d6b36" kindref="member">rectSelectTest</ref>. With these, the implementation of the selection test becomes significantly simpler for most items. See the documentation of <ref refid="class_q_c_p_abstract_item_1a96d522d10ffc0413b9a366c6f7f0476b" kindref="member">selectTest</ref> for what the function parameters mean and what the function should return.</para>
+</sect2>
+<sect2 id="class_q_c_p_abstract_item_1anchors">
+<title>Providing anchors</title>
+<para>Providing anchors (<ref refid="class_q_c_p_item_anchor" kindref="compound">QCPItemAnchor</ref>) starts off like adding a position. First you create a public member, e.g.</para>
+<para><programlisting><codeline><highlight class="normal">QCPItemAnchor<sp/>*<sp/>const<sp/>bottom;</highlight></codeline>
+</programlisting></para>
+<para>and create it in the constructor with the <ref refid="class_q_c_p_abstract_item_1af3fc92527802078ca395138748b629a7" kindref="member">createAnchor</ref> function, assigning it a name and an anchor id (an integer enumerating all anchors on the item, you may create an own enum for this). Since anchors can be placed anywhere, relative to the item&apos;s position(s), your item needs to provide the position of every anchor with the reimplementation of the <ref refid="class_q_c_p_abstract_item_1a5681c190803e899bac9a240753fdba00" kindref="member">anchorPixelPoint</ref>(int anchorId) function.</para>
+<para>In essence the <ref refid="class_q_c_p_item_anchor" kindref="compound">QCPItemAnchor</ref> is merely an intermediary that itself asks your item for the pixel position when anything attached to the anchor needs to know the coordinates. </para>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>QCPItemBracket</label>
+        <link refid="class_q_c_p_item_bracket"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="5">
+        <label>QCPItemCurve</label>
+        <link refid="class_q_c_p_item_curve"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QCPItemLine</label>
+        <link refid="class_q_c_p_item_line"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>QCPItemTracer</label>
+        <link refid="class_q_c_p_item_tracer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>QCPItemText</label>
+        <link refid="class_q_c_p_item_text"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>QCPItemPixmap</label>
+        <link refid="class_q_c_p_item_pixmap"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>QCPItemRect</label>
+        <link refid="class_q_c_p_item_rect"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>QCPAbstractItem</label>
+        <link refid="class_q_c_p_abstract_item"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>QCPItemStraightLine</label>
+        <link refid="class_q_c_p_item_straight_line"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QCPItemEllipse</label>
+        <link refid="class_q_c_p_item_ellipse"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QCPLayerable</label>
+        <link refid="class_q_c_p_layerable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="16">
+        <label>QCPLayoutInset</label>
+        <link refid="class_q_c_p_layout_inset"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>QCPLayoutElement</label>
+        <link refid="class_q_c_p_layout_element"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>#mParentLayout</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>QObject</label>
+      </node>
+      <node id="11">
+        <label>QCPRange</label>
+        <link refid="class_q_c_p_range"/>
+      </node>
+      <node id="17">
+        <label>QCPLegend</label>
+        <link refid="class_q_c_p_legend"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>QCPLineEnding</label>
+        <link refid="class_q_c_p_line_ending"/>
+      </node>
+      <node id="8">
+        <label>QCPLayout</label>
+        <link refid="class_q_c_p_layout"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>QCPGrid</label>
+        <link refid="class_q_c_p_grid"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>#mParentAxis</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>QCPAxisPainterPrivate</label>
+        <link refid="class_q_c_p_axis_painter_private"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>+lowerEnding</edgelabel>
+          <edgelabel>+upperEnding</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>#mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>QCPAbstractItem</label>
+        <link refid="class_q_c_p_abstract_item"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>QWidget</label>
+      </node>
+      <node id="4">
+        <label>QCPLayer</label>
+        <link refid="class_q_c_p_layer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>#mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>QCPLayoutGrid</label>
+        <link refid="class_q_c_p_layout_grid"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QCPLayerable</label>
+        <link refid="class_q_c_p_layerable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>#mLayer</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>#mParentPlot</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>QCPAxis</label>
+        <link refid="class_q_c_p_axis"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>#mRange</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>#mAxisPainter</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>#mGrid</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>#mAxisRect</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>QCPAxisRect</label>
+        <link refid="class_q_c_p_axis_rect"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>#mInsetLayout</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>#mDragStartHorzRange</edgelabel>
+          <edgelabel>#mDragStartVertRange</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>QCustomPlot</label>
+        <link refid="class_q_custom_plot"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>#mCurrentLayer</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>#mPlotLayout</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+xAxis</edgelabel>
+          <edgelabel>+xAxis2</edgelabel>
+          <edgelabel>+yAxis</edgelabel>
+          <edgelabel>+yAxis2</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>+legend</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="qcustomplot.h" line="1607" column="1" bodyfile="qcustomplot.h" bodystart="1608" bodyend="1677"/>
+    <listofallmembers>
+      <member refid="class_q_c_p_abstract_item_1a139c255ea8831642fac91748e29a5adb" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>anchor</name></member>
+      <member refid="class_q_c_p_abstract_item_1a5681c190803e899bac9a240753fdba00" prot="protected" virt="virtual"><scope>QCPAbstractItem</scope><name>anchorPixelPoint</name></member>
+      <member refid="class_q_c_p_abstract_item_1a81d1ecfea3368b836cf9675a0045e659" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>anchors</name></member>
+      <member refid="class_q_c_p_layerable_1a71cbd212fde2703cee076e204a475709" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>antialiased</name></member>
+      <member refid="class_q_c_p_layerable_1acb663e375d2d36dc5c55021ee5a2119b" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>applyAntialiasingHint</name></member>
+      <member refid="class_q_c_p_abstract_item_1a82a408b38a93be750b934fe847a018cb" prot="protected" virt="virtual"><scope>QCPAbstractItem</scope><name>applyDefaultAntialiasingHint</name></member>
+      <member refid="class_q_c_p_abstract_item_1ae162314efd3fe1a6d4df11da1d275d52" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>clipAxisRect</name></member>
+      <member refid="class_q_c_p_abstract_item_1a550ecff39195d9ff3d5cf239eb802ea7" prot="protected" virt="virtual"><scope>QCPAbstractItem</scope><name>clipRect</name></member>
+      <member refid="class_q_c_p_abstract_item_1a42715ad5f3d7fca6854025fa5636f436" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>clipToAxisRect</name></member>
+      <member refid="class_q_c_p_abstract_item_1af3fc92527802078ca395138748b629a7" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>createAnchor</name></member>
+      <member refid="class_q_c_p_abstract_item_1a75036d39c4d4e2e1a7dd145fff915d32" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>createPosition</name></member>
+      <member refid="class_q_c_p_abstract_item_1a91f090d6763cfedb0749219c63788ae9" prot="protected" virt="virtual"><scope>QCPAbstractItem</scope><name>deselectEvent</name></member>
+      <member refid="class_q_c_p_abstract_item_1a8f4d23e883cbb55219959ed6ce8f10ac" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>distSqrToLine</name></member>
+      <member refid="class_q_c_p_abstract_item_1ad0dc056f650c3ca73414e6b4f01674ef" prot="protected" virt="pure-virtual"><scope>QCPAbstractItem</scope><name>draw</name></member>
+      <member refid="class_q_c_p_abstract_item_1a84914f4516f9b38ef0bd89eafe3dbda7" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>hasAnchor</name></member>
+      <member refid="class_q_c_p_layerable_1a8cbe5a0c9a5674249982f5ca5f8e02bc" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>initializeParentPlot</name></member>
+      <member refid="class_q_c_p_layerable_1a5ff4862e8c784c9f5986dbc1533ba2a4" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>layer</name></member>
+      <member refid="class_q_c_p_layerable_1abbf8657cedea73ac1c3499b521c90eba" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>layerChanged</name></member>
+      <member refid="class_q_c_p_abstract_item_1a909a3abab783de302ebf0a0e6f2bbc15" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>mAnchors</name></member>
+      <member refid="class_q_c_p_layerable_1a3ab45a4c76a3333ce42eb217a81733ec" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>mAntialiased</name></member>
+      <member refid="class_q_c_p_abstract_item_1a3e57cfe7da4b1ac3d6fa7281ea437361" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>mClipAxisRect</name></member>
+      <member refid="class_q_c_p_abstract_item_1ad2a70ff6b658fcb84a9427f69d3f587d" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>mClipToAxisRect</name></member>
+      <member refid="class_q_c_p_layerable_1aa38ec5891aff0f50b36fd63e9372a0cd" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>mLayer</name></member>
+      <member refid="class_q_c_p_layerable_1af94484cfb7cbbddb7de522e9be71d9a4" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>moveToLayer</name></member>
+      <member refid="class_q_c_p_layerable_1a3291445a980053e2d17a21d15957624e" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>mParentLayerable</name></member>
+      <member refid="class_q_c_p_layerable_1aa2a528433e44db02b8aef23c1f9f90ed" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>mParentPlot</name></member>
+      <member refid="class_q_c_p_abstract_item_1af94ff71b6a15ea6d028ab8bd8eccd012" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>mPositions</name></member>
+      <member refid="class_q_c_p_abstract_item_1ad81eb35c8726a0f458db9df9732e0e41" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>mSelectable</name></member>
+      <member refid="class_q_c_p_abstract_item_1a4bdb3457dad1d268c0f78a44152b9645" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>mSelected</name></member>
+      <member refid="class_q_c_p_layerable_1a62e3aed8427d6ce3ccf716f285106cb3" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>mVisible</name></member>
+      <member refid="class_q_c_p_layerable_1aa78b7e644d2c519e1a9a6f2ac5fcd858" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>parentLayerable</name></member>
+      <member refid="class_q_c_p_layerable_1a473edb813a4c1929d6b6a8fe3ff3faf7" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>parentPlot</name></member>
+      <member refid="class_q_c_p_layerable_1ab20b7dbd8e0249ed61adb9622c427382" prot="protected" virt="virtual"><scope>QCPAbstractItem</scope><name>parentPlotInitialized</name></member>
+      <member refid="class_q_c_p_abstract_item_1a2589c3d298f9a576d77d9addb440a18d" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>position</name></member>
+      <member refid="class_q_c_p_abstract_item_1a709f655ac3f7f22d452714134662b454" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>positions</name></member>
+      <member refid="class_q_c_p_abstract_item_1a9922507d8b4503a1fe1ed0b1030e23b6" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>QCPAbstractItem</name></member>
+      <member refid="class_q_c_p_abstract_item_1a61767d414fd57af9eb1741b34268c7fc" prot="private" virt="non-virtual"><scope>QCPAbstractItem</scope><name>QCPItemAnchor</name></member>
+      <member refid="class_q_c_p_layerable_1a74c0fa237f29bf0e49565013fc5d1ec0" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>QCPLayerable</name></member>
+      <member refid="class_q_c_p_abstract_item_1a1cdf9df76adcfae45261690aa0ca2198" prot="private" virt="non-virtual"><scope>QCPAbstractItem</scope><name>QCustomPlot</name></member>
+      <member refid="class_q_c_p_layerable_1ab054e88f15d485defcb95e7376f119e7" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>realVisibility</name></member>
+      <member refid="class_q_c_p_abstract_item_1a26aa3828d398e29116afee16216d6b36" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>rectSelectTest</name></member>
+      <member refid="class_q_c_p_abstract_item_1ae29aa489767352b40c4aaa7ea50c5582" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>selectable</name></member>
+      <member refid="class_q_c_p_abstract_item_1a5b266c11aac61cb511901f3911dac2a3" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>selectableChanged</name></member>
+      <member refid="class_q_c_p_abstract_item_1aa069fba320a13639f119f82ad29ead96" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>selected</name></member>
+      <member refid="class_q_c_p_abstract_item_1aaf92af7b9893712959a6c073d334d88d" prot="protected" virt="virtual"><scope>QCPAbstractItem</scope><name>selectEvent</name></member>
+      <member refid="class_q_c_p_abstract_item_1a59279d8123663b3b2fffbe54ca075244" prot="protected" virt="virtual"><scope>QCPAbstractItem</scope><name>selectionCategory</name></member>
+      <member refid="class_q_c_p_abstract_item_1aa5cffb034fc65dbb91c77e02c1c14251" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>selectionChanged</name></member>
+      <member refid="class_q_c_p_abstract_item_1a96d522d10ffc0413b9a366c6f7f0476b" prot="public" virt="pure-virtual"><scope>QCPAbstractItem</scope><name>selectTest</name></member>
+      <member refid="class_q_c_p_layerable_1a4fd43e89be4a553ead41652565ff0581" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>setAntialiased</name></member>
+      <member refid="class_q_c_p_abstract_item_1a7dc75fcbcd10206fe0b75d757ea7a347" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>setClipAxisRect</name></member>
+      <member refid="class_q_c_p_abstract_item_1a39e05b9d4176b9accafc746d16ca6a06" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>setClipToAxisRect</name></member>
+      <member refid="class_q_c_p_layerable_1ab0d0da6d2de45a118886d2c8e16d5a54" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>setLayer</name></member>
+      <member refid="class_q_c_p_layerable_1ab25a0e7b897993b44447caee0f142083" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>setLayer</name></member>
+      <member refid="class_q_c_p_layerable_1aa23c893671f1f6744ac235cf2204cf3a" prot="protected" virt="non-virtual"><scope>QCPAbstractItem</scope><name>setParentLayerable</name></member>
+      <member refid="class_q_c_p_abstract_item_1a8a8e32a55bc478b849756a78c2d87fd2" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>setSelectable</name></member>
+      <member refid="class_q_c_p_abstract_item_1a203de94ad586cc44d16c9565f49d3378" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>setSelected</name></member>
+      <member refid="class_q_c_p_layerable_1a3bed99ddc396b48ce3ebfdc0418744f8" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>setVisible</name></member>
+      <member refid="class_q_c_p_layerable_1af0297b944b6192b6d67d00bff41b6b70" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>visible</name></member>
+      <member refid="class_q_c_p_abstract_item_1a375bd1b7d3218b04a6ff7ff06fff917c" prot="public" virt="virtual"><scope>QCPAbstractItem</scope><name>~QCPAbstractItem</name></member>
+      <member refid="class_q_c_p_layerable_1a4231cf5b3601d6d3a5781283e7a9735b" prot="public" virt="non-virtual"><scope>QCPAbstractItem</scope><name>~QCPLayerable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

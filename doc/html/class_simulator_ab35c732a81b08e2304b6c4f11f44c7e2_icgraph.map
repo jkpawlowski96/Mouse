@@ -1,0 +1,6 @@
+<map id="Simulator::DrawMouseCircle" name="Simulator::DrawMouseCircle">
+<area shape="rect" id="node1" title=" " alt="" coords="388,31,575,57"/>
+<area shape="rect" id="node2" href="$class_simulator.html#a5a7f9537737abd907827b552fcd7f172" title=" " alt="" coords="193,31,340,57"/>
+<area shape="rect" id="node3" href="$class_simulator.html#a960bd333fe2c1ce66f45eca8f26a81f7" title="Construct a new Simulator object." alt="" coords="5,5,145,32"/>
+<area shape="rect" id="node4" href="$class_simulator.html#a1a18b212eda4277c622502177f302c11" title="Single tick (step) of simulation." alt="" coords="21,56,130,83"/>
+</map>

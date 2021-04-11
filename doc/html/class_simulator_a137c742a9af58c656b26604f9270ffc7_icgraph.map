@@ -1,0 +1,4 @@
+<map id="Simulator::Start" name="Simulator::Start">
+<area shape="rect" id="node1" title="Start simulation." alt="" coords="239,5,352,32"/>
+<area shape="rect" id="node2" href="$class_simulator.html#a130532d06105b866550fbd27aa88f228" title="Get the Timer Elapsed object." alt="" coords="5,5,191,32"/>
+</map>

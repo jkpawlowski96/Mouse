@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_sensor_data" kind="struct" language="C++" prot="public">
+    <compoundname>SensorData</compoundname>
+    <includes refid="sensor__data_8h" local="no">sensor_data.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_sensor_data_1a1a6a48546a1fece90c78c2b1704b9ee3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SensorData::wallDetected</definition>
+        <argsstring></argsstring>
+        <name>wallDetected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sensor_data.h" line="9" column="10" bodyfile="sensor_data.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_expander_1ae87a3f6bccca98e9fa3b39b6f32b0da9" compoundref="expander_8cpp" startline="13" endline="64">Expander::Logic</referencedby>
+        <referencedby refid="class_human_controll_1a195ef119c96c65152c6deb9d8ad706d7" compoundref="humancontroll_8cpp" startline="7" endline="22">HumanControll::Logic</referencedby>
+        <referencedby refid="class_sensor_1a3577f9e8eb65eb3bc8f69e6396e97002" compoundref="sensor_8h" startline="21" endline="30">Sensor::Measure</referencedby>
+        <referencedby refid="class_s_i_1acdfb2bcec6d3a99c84bf5cae7097a37f" compoundref="si_8cpp" startline="16" endline="24">SI::RandomTask</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_sensor_data_1a9c7635edc250b312fc895fb9a34bf4fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SensorData::SensorData</definition>
+        <argsstring>()</argsstring>
+        <name>SensorData</name>
+        <briefdescription>
+<para>Construct a new <ref refid="class_sensor" kindref="compound">Sensor</ref> Data object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sensor_data.h" line="14" column="5" bodyfile="sensor_data.h" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_sensor_data_1a2a3ae4cda88d4a286973d18828c99f8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SensorData::SensorData</definition>
+        <argsstring>(bool _wallDetected)</argsstring>
+        <name>SensorData</name>
+        <param>
+          <type>bool</type>
+          <declname>_wallDetected</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="class_sensor" kindref="compound">Sensor</ref> Data object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_wallDetected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sensor_data.h" line="20" column="5" bodyfile="sensor_data.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data received from sensor device. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>SensorData</label>
+        <link refid="struct_sensor_data"/>
+      </node>
+    </collaborationgraph>
+    <location file="sensor_data.h" line="8" column="1" bodyfile="sensor_data.h" bodystart="8" bodyend="21"/>
+    <listofallmembers>
+      <member refid="struct_sensor_data_1a9c7635edc250b312fc895fb9a34bf4fb" prot="public" virt="non-virtual"><scope>SensorData</scope><name>SensorData</name></member>
+      <member refid="struct_sensor_data_1a2a3ae4cda88d4a286973d18828c99f8e" prot="public" virt="non-virtual"><scope>SensorData</scope><name>SensorData</name></member>
+      <member refid="struct_sensor_data_1a1a6a48546a1fece90c78c2b1704b9ee3" prot="public" virt="non-virtual"><scope>SensorData</scope><name>wallDetected</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,6 @@
+<map id="SI::RandomTask" name="SI::RandomTask">
+<area shape="rect" id="node1" title=" " alt="" coords="377,5,496,32"/>
+<area shape="rect" id="node2" href="$class_s_i.html#a326ec6f6f3ed4d936f9dc09db30dd973" title="Logic implementation." alt="" coords="256,5,329,32"/>
+<area shape="rect" id="node3" href="$class_s_i.html#a5737c9e037d2019fee1db9f969638bf4" title="Call SI to get task." alt="" coords="144,5,208,32"/>
+<area shape="rect" id="node4" href="$class_mouse.html#adc87ac2f6bf3df7db585f913fcc2a03e" title="Call mouse object (single tick)" alt="" coords="5,5,96,32"/>
+</map>

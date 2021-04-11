@@ -1,0 +1,438 @@
+\hypertarget{class_main_window}{}\doxysection{Main\+Window Class Reference}
+\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+Application main window.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Inheritance diagram for Main\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{class_main_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Main\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{class_main_window__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window_a472a8fb0458be9e28d2e138d24f05ba0}{Main\+Window}} (QWidget $\ast$parent=nullptr, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_simulator}{Simulator}} $>$ \+\_\+simulator=nullptr)
+\begin{DoxyCompactList}\small\item\em Construct a new Main Window object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Main Window object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_a55ae3e0d4303334ccabae0a5050cfd88}{key\+Press\+Event}} (QKey\+Event $\ast$event) override
+\begin{DoxyCompactList}\small\item\em keyboard key events handles \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_a3c7f7e81db750a0acadddd00d4b27405}{on\+\_\+maps\+Combo\+Box\+\_\+text\+Activated}} (const QString \&arg1)
+\item 
+void \mbox{\hyperlink{class_main_window_abcc096120205197b50fa55cb603acb95}{on\+\_\+start\+Button\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_main_window_abf27a1e863dc2350626ba16c83e925f4}{on\+\_\+stop\+Button\+\_\+clicked}} ()
+\item 
+void \mbox{\hyperlink{class_main_window_a69efa09d058fbf25a6c940b0e11b6322}{simulator\+\_\+plot}} ()
+\item 
+void \mbox{\hyperlink{class_main_window_a9fdec4edb19b978b5ab67df5590479c3}{on\+\_\+speed\+Slider\+\_\+value\+Changed}} (int value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_a7c5de18a3099b890fab55bef52ffab03}{Init\+Simulator}} ()
+\item 
+void \mbox{\hyperlink{class_main_window_abcd9c185928c2ce785b0831248fd534b}{Plot\+Map}} ()
+\item 
+\mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}} $\ast$ \mbox{\hyperlink{class_main_window_a52dccaa3ccabdf7b048f116960cf8ddc}{Draw\+Line}} (double x0, double y0, double x1, double y1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Main\+Window $\ast$ \mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_simulator}{Simulator}} $>$ \mbox{\hyperlink{class_main_window_af01c4789130bb9381d003ddd6d45c1c7}{simulator}}
+\item 
+QTimer $\ast$ \mbox{\hyperlink{class_main_window_a356578805ed1248a7f2807434cb0e5ee}{timer}}
+\item 
+double \mbox{\hyperlink{class_main_window_a7849e1daf757f67c0a376d4f0511130c}{time\+\_\+seconds}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Application main window. 
+
+Definition at line 17 of file mainwindow.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_main_window_a472a8fb0458be9e28d2e138d24f05ba0}\label{class_main_window_a472a8fb0458be9e28d2e138d24f05ba0}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr},  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_simulator}{Simulator}} $>$}]{\+\_\+simulator = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Construct a new Main Window object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+{\em \+\_\+simulator} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 6 of file mainwindow.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7     : QMainWindow(parent)}
+\DoxyCodeLine{8     , \mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}(\textcolor{keyword}{new} Ui::MainWindow)}
+\DoxyCodeLine{9     , \mbox{\hyperlink{class_main_window_af01c4789130bb9381d003ddd6d45c1c7}{simulator}}(\_simulator)}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}-\/>setupUi(\textcolor{keyword}{this});}
+\DoxyCodeLine{12     \mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}-\/>plot-\/>xAxis-\/>setVisible(\textcolor{keyword}{false});}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}-\/>plot-\/>yAxis-\/>setVisible(\textcolor{keyword}{false});}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15     \textcolor{comment}{//maps}}
+\DoxyCodeLine{16     \textcolor{keyword}{auto} mapFiles = \mbox{\hyperlink{utils_8cpp_ae02648d07b0195cde8676a5cb2582760}{GetMapFiles}}();}
+\DoxyCodeLine{17     \textcolor{keywordflow}{if}(mapFiles.size()>0)}
+\DoxyCodeLine{18     \{}
+\DoxyCodeLine{19         \mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}-\/>mapsComboBox-\/>addItems(mapFiles);}
+\DoxyCodeLine{20     \}}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_main_window_a7c5de18a3099b890fab55bef52ffab03}{InitSimulator}}();}
+\DoxyCodeLine{22 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a472a8fb0458be9e28d2e138d24f05ba0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\index{MainWindow@{MainWindow}!````~MainWindow@{$\sim$MainWindow}}
+\index{````~MainWindow@{$\sim$MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{$\sim$MainWindow()}{~MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::$\sim$\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the Main Window object. 
+
+
+
+Definition at line 44 of file mainwindow.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45 \{}
+\DoxyCodeLine{46     \textcolor{keyword}{delete} \mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}};}
+\DoxyCodeLine{47 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_window_a52dccaa3ccabdf7b048f116960cf8ddc}\label{class_main_window_a52dccaa3ccabdf7b048f116960cf8ddc}} 
+\index{MainWindow@{MainWindow}!DrawLine@{DrawLine}}
+\index{DrawLine@{DrawLine}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{DrawLine()}{DrawLine()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}}$\ast$ Main\+Window\+::\+Draw\+Line (\begin{DoxyParamCaption}\item[{double}]{x0,  }\item[{double}]{y0,  }\item[{double}]{x1,  }\item[{double}]{y1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a7c5de18a3099b890fab55bef52ffab03}\label{class_main_window_a7c5de18a3099b890fab55bef52ffab03}} 
+\index{MainWindow@{MainWindow}!InitSimulator@{InitSimulator}}
+\index{InitSimulator@{InitSimulator}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{InitSimulator()}{InitSimulator()}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Init\+Simulator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 24 of file mainwindow.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24                               \{}
+\DoxyCodeLine{25     \textcolor{comment}{//plot}}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}-\/>plot-\/>clearGraphs();}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}-\/>plot-\/>replot();}
+\DoxyCodeLine{28     \textcolor{comment}{//simulator}}
+\DoxyCodeLine{29     QString text = \mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}-\/>mapsComboBox-\/>currentText();}
+\DoxyCodeLine{30     QString path = QDir(\mbox{\hyperlink{utils_8h_ae11f03ae1d868d9f02f43ae00d975727}{MAPS\_LOCATION}}).filePath(text);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     \textcolor{keywordtype}{int} si\_mode = 0;}
+\DoxyCodeLine{33     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}-\/>humanButton-\/>isChecked())}
+\DoxyCodeLine{34         si\_mode = -\/1;}
+\DoxyCodeLine{35     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}-\/>siButton-\/>isChecked())}
+\DoxyCodeLine{36         si\_mode = 0;}
+\DoxyCodeLine{37     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}-\/>expanderButton-\/>isChecked())}
+\DoxyCodeLine{38         si\_mode = 1;}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40     \mbox{\hyperlink{class_main_window_af01c4789130bb9381d003ddd6d45c1c7}{simulator}} = make\_shared<Simulator>(\mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}-\/>plot, path.toStdString(), \mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}-\/>speedSlider-\/>value(), si\_mode);}
+\DoxyCodeLine{41     \mbox{\hyperlink{class_main_window_a7849e1daf757f67c0a376d4f0511130c}{time\_seconds}} = 0.0;}
+\DoxyCodeLine{42 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a7c5de18a3099b890fab55bef52ffab03_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a55ae3e0d4303334ccabae0a5050cfd88}\label{class_main_window_a55ae3e0d4303334ccabae0a5050cfd88}} 
+\index{MainWindow@{MainWindow}!keyPressEvent@{keyPressEvent}}
+\index{keyPressEvent@{keyPressEvent}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{keyPressEvent()}{keyPressEvent()}}
+{\footnotesize\ttfamily void Main\+Window\+::key\+Press\+Event (\begin{DoxyParamCaption}\item[{QKey\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+keyboard key events handles 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 56 of file mainwindow.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57 \{}
+\DoxyCodeLine{58      \textcolor{keywordflow}{if}(event-\/>key() == Qt::Key\_Up)}
+\DoxyCodeLine{59      \{}
+\DoxyCodeLine{60          \mbox{\hyperlink{class_main_window_af01c4789130bb9381d003ddd6d45c1c7}{simulator}}-\/>ControllDirection(\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2}{Up}});}
+\DoxyCodeLine{61      \}}
+\DoxyCodeLine{62      \textcolor{keywordflow}{if}(event-\/>key() == Qt::Key\_Down)}
+\DoxyCodeLine{63      \{}
+\DoxyCodeLine{64          \mbox{\hyperlink{class_main_window_af01c4789130bb9381d003ddd6d45c1c7}{simulator}}-\/>ControllDirection(\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaabcf8c79e9a5f5f9d606fb35645a0fb27}{Down}});}
+\DoxyCodeLine{65      \}}
+\DoxyCodeLine{66      \textcolor{keywordflow}{if}(event-\/>key() == Qt::Key\_Left)}
+\DoxyCodeLine{67      \{}
+\DoxyCodeLine{68          \mbox{\hyperlink{class_main_window_af01c4789130bb9381d003ddd6d45c1c7}{simulator}}-\/>ControllDirection(\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaa9d4d8b0b72fc2659da772d761a3c5ecb}{Left}});}
+\DoxyCodeLine{69      \}}
+\DoxyCodeLine{70      \textcolor{keywordflow}{if}(event-\/>key() == Qt::Key\_Right)}
+\DoxyCodeLine{71      \{}
+\DoxyCodeLine{72          \mbox{\hyperlink{class_main_window_af01c4789130bb9381d003ddd6d45c1c7}{simulator}}-\/>ControllDirection(\mbox{\hyperlink{geometry_8h_a224b9163917ac32fc95a60d8c1eec3aaad48f7af8c070184f3774c8e85854eb66}{Right}});}
+\DoxyCodeLine{73      \}}
+\DoxyCodeLine{74 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_main_window_a3c7f7e81db750a0acadddd00d4b27405}\label{class_main_window_a3c7f7e81db750a0acadddd00d4b27405}} 
+\index{MainWindow@{MainWindow}!on\_mapsComboBox\_textActivated@{on\_mapsComboBox\_textActivated}}
+\index{on\_mapsComboBox\_textActivated@{on\_mapsComboBox\_textActivated}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_mapsComboBox\_textActivated}{on\_mapsComboBox\_textActivated}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+maps\+Combo\+Box\+\_\+text\+Activated (\begin{DoxyParamCaption}\item[{const QString \&}]{arg1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definition at line 50 of file mainwindow.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51 \{}
+\DoxyCodeLine{52     \textcolor{keywordflow}{if}(!\mbox{\hyperlink{class_main_window_af01c4789130bb9381d003ddd6d45c1c7}{simulator}}-\/>isRunning())}
+\DoxyCodeLine{53         \mbox{\hyperlink{class_main_window_a7c5de18a3099b890fab55bef52ffab03}{InitSimulator}}();}
+\DoxyCodeLine{54 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a3c7f7e81db750a0acadddd00d4b27405_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a9fdec4edb19b978b5ab67df5590479c3}\label{class_main_window_a9fdec4edb19b978b5ab67df5590479c3}} 
+\index{MainWindow@{MainWindow}!on\_speedSlider\_valueChanged@{on\_speedSlider\_valueChanged}}
+\index{on\_speedSlider\_valueChanged@{on\_speedSlider\_valueChanged}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_speedSlider\_valueChanged}{on\_speedSlider\_valueChanged}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+speed\+Slider\+\_\+value\+Changed (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definition at line 107 of file mainwindow.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{108 \{}
+\DoxyCodeLine{109     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_main_window_af01c4789130bb9381d003ddd6d45c1c7}{simulator}})}
+\DoxyCodeLine{110         \mbox{\hyperlink{class_main_window_af01c4789130bb9381d003ddd6d45c1c7}{simulator}}-\/>SetSpeed(value);}
+\DoxyCodeLine{111 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_main_window_abcc096120205197b50fa55cb603acb95}\label{class_main_window_abcc096120205197b50fa55cb603acb95}} 
+\index{MainWindow@{MainWindow}!on\_startButton\_clicked@{on\_startButton\_clicked}}
+\index{on\_startButton\_clicked@{on\_startButton\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_startButton\_clicked}{on\_startButton\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+start\+Button\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definition at line 76 of file mainwindow.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77 \{}
+\DoxyCodeLine{78     \mbox{\hyperlink{class_main_window_a7c5de18a3099b890fab55bef52ffab03}{InitSimulator}}();}
+\DoxyCodeLine{79     \mbox{\hyperlink{class_main_window_af01c4789130bb9381d003ddd6d45c1c7}{simulator}}-\/>Start();}
+\DoxyCodeLine{80     \mbox{\hyperlink{class_main_window_a356578805ed1248a7f2807434cb0e5ee}{timer}} = \textcolor{keyword}{new} QTimer(\textcolor{keyword}{this});}
+\DoxyCodeLine{81     QObject::connect(\mbox{\hyperlink{class_main_window_a356578805ed1248a7f2807434cb0e5ee}{timer}}, SIGNAL(timeout()), \textcolor{keyword}{this}, SLOT(\mbox{\hyperlink{class_main_window_a69efa09d058fbf25a6c940b0e11b6322}{simulator\_plot}}()));}
+\DoxyCodeLine{82     \mbox{\hyperlink{class_main_window_a356578805ed1248a7f2807434cb0e5ee}{timer}}-\/>start(33); \textcolor{comment}{//time specified in ms}}
+\DoxyCodeLine{83 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_abcc096120205197b50fa55cb603acb95_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_abf27a1e863dc2350626ba16c83e925f4}\label{class_main_window_abf27a1e863dc2350626ba16c83e925f4}} 
+\index{MainWindow@{MainWindow}!on\_stopButton\_clicked@{on\_stopButton\_clicked}}
+\index{on\_stopButton\_clicked@{on\_stopButton\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_stopButton\_clicked}{on\_stopButton\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+stop\+Button\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definition at line 101 of file mainwindow.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{102 \{}
+\DoxyCodeLine{103     \mbox{\hyperlink{class_main_window_a356578805ed1248a7f2807434cb0e5ee}{timer}}-\/>stop();}
+\DoxyCodeLine{104     \mbox{\hyperlink{class_main_window_a7c5de18a3099b890fab55bef52ffab03}{InitSimulator}}();}
+\DoxyCodeLine{105 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_abf27a1e863dc2350626ba16c83e925f4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_abcd9c185928c2ce785b0831248fd534b}\label{class_main_window_abcd9c185928c2ce785b0831248fd534b}} 
+\index{MainWindow@{MainWindow}!PlotMap@{PlotMap}}
+\index{PlotMap@{PlotMap}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{PlotMap()}{PlotMap()}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Plot\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_main_window_a69efa09d058fbf25a6c940b0e11b6322}\label{class_main_window_a69efa09d058fbf25a6c940b0e11b6322}} 
+\index{MainWindow@{MainWindow}!simulator\_plot@{simulator\_plot}}
+\index{simulator\_plot@{simulator\_plot}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{simulator\_plot}{simulator\_plot}}
+{\footnotesize\ttfamily void Main\+Window\+::simulator\+\_\+plot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definition at line 85 of file mainwindow.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85                                \{}
+\DoxyCodeLine{86     \mbox{\hyperlink{class_main_window_af01c4789130bb9381d003ddd6d45c1c7}{simulator}}-\/>Tick();}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88     \textcolor{comment}{//timer}}
+\DoxyCodeLine{89     quint64 \_miliseconds = \mbox{\hyperlink{class_main_window_af01c4789130bb9381d003ddd6d45c1c7}{simulator}}-\/>GetTimerElapsed();}
+\DoxyCodeLine{90     \textcolor{keywordtype}{double} \_seconds = ((double)\_miliseconds / 1000);}
+\DoxyCodeLine{91     \_seconds = \_seconds * \mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}-\/>speedSlider-\/>value() / 100;}
+\DoxyCodeLine{92     \mbox{\hyperlink{class_main_window_a7849e1daf757f67c0a376d4f0511130c}{time\_seconds}} = \mbox{\hyperlink{class_main_window_a7849e1daf757f67c0a376d4f0511130c}{time\_seconds}} + \_seconds;}
+\DoxyCodeLine{93     std::ostringstream out;}
+\DoxyCodeLine{94     out.precision(2);}
+\DoxyCodeLine{95     out << std::fixed << \mbox{\hyperlink{class_main_window_a7849e1daf757f67c0a376d4f0511130c}{time\_seconds}};}
+\DoxyCodeLine{96     \textcolor{keywordtype}{string} lcdText = out.str();}
+\DoxyCodeLine{97     QString qlcdText = QString::fromStdString(lcdText);}
+\DoxyCodeLine{98     \mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}-\/>lcdTimer-\/>display(qlcdText);}
+\DoxyCodeLine{99 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a69efa09d058fbf25a6c940b0e11b6322_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_main_window_af01c4789130bb9381d003ddd6d45c1c7}\label{class_main_window_af01c4789130bb9381d003ddd6d45c1c7}} 
+\index{MainWindow@{MainWindow}!simulator@{simulator}}
+\index{simulator@{simulator}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{simulator}{simulator}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$\mbox{\hyperlink{class_simulator}{Simulator}}$>$ Main\+Window\+::simulator\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 56 of file mainwindow.\+h.
+
+\mbox{\Hypertarget{class_main_window_a7849e1daf757f67c0a376d4f0511130c}\label{class_main_window_a7849e1daf757f67c0a376d4f0511130c}} 
+\index{MainWindow@{MainWindow}!time\_seconds@{time\_seconds}}
+\index{time\_seconds@{time\_seconds}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{time\_seconds}{time\_seconds}}
+{\footnotesize\ttfamily double Main\+Window\+::time\+\_\+seconds\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 59 of file mainwindow.\+h.
+
+\mbox{\Hypertarget{class_main_window_a356578805ed1248a7f2807434cb0e5ee}\label{class_main_window_a356578805ed1248a7f2807434cb0e5ee}} 
+\index{MainWindow@{MainWindow}!timer@{timer}}
+\index{timer@{timer}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily QTimer$\ast$ Main\+Window\+::timer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 57 of file mainwindow.\+h.
+
+\mbox{\Hypertarget{class_main_window_a35466a70ed47252a0191168126a352a5}\label{class_main_window_a35466a70ed47252a0191168126a352a5}} 
+\index{MainWindow@{MainWindow}!ui@{ui}}
+\index{ui@{ui}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Main\+Window$\ast$ Main\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 55 of file mainwindow.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mainwindow_8h}{mainwindow.\+h}}\item 
+\mbox{\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="HumanControll" name="HumanControll">
+<area shape="rect" id="node1" title="Human controlled si." alt="" coords="5,175,132,296"/>
+<area shape="rect" id="node2" href="$class_s_i.html" title="SI &#45; mouse controll logic." alt="" coords="11,5,126,127"/>
+</map>

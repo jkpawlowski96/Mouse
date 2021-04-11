@@ -1,0 +1,209 @@
+\hypertarget{class_s_i}{}\doxysection{SI Class Reference}
+\label{class_s_i}\index{SI@{SI}}
+
+
+\mbox{\hyperlink{class_s_i}{SI}} -\/ mouse controll logic.  
+
+
+
+
+{\ttfamily \#include $<$si.\+h$>$}
+
+
+
+Inheritance diagram for SI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_s_i__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for SI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_s_i__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_i_a8baebeea11cb5472a2141f7d49ecfb9e}{SI}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_s_i}{SI}} object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{si_8h_a8564c478026655cd8718601a4514e1b7}{Task}} \mbox{\hyperlink{class_s_i_a5737c9e037d2019fee1db9f969638bf4}{Call}} (\mbox{\hyperlink{struct_sensor_data}{Sensor\+Data}} sensor\+Data)
+\begin{DoxyCompactList}\small\item\em Call \mbox{\hyperlink{class_s_i}{SI}} to get task. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{si_8h_a8564c478026655cd8718601a4514e1b7}{Task}} \mbox{\hyperlink{class_s_i_a326ec6f6f3ed4d936f9dc09db30dd973}{Logic}} (\mbox{\hyperlink{struct_sensor_data}{Sensor\+Data}} sensor\+Data)
+\begin{DoxyCompactList}\small\item\em Logic implementation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{si_8h_a8564c478026655cd8718601a4514e1b7}{Task}} \mbox{\hyperlink{class_s_i_acdfb2bcec6d3a99c84bf5cae7097a37f}{Random\+Task}} (\mbox{\hyperlink{struct_sensor_data}{Sensor\+Data}} sensor\+Data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_s_i}{SI}} -\/ mouse controll logic. 
+
+Definition at line 26 of file si.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_s_i_a8baebeea11cb5472a2141f7d49ecfb9e}\label{class_s_i_a8baebeea11cb5472a2141f7d49ecfb9e}} 
+\index{SI@{SI}!SI@{SI}}
+\index{SI@{SI}!SI@{SI}}
+\doxysubsubsection{\texorpdfstring{SI()}{SI()}}
+{\footnotesize\ttfamily SI\+::\+SI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_s_i}{SI}} object. 
+
+
+
+Definition at line 3 of file si.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4 \{}
+\DoxyCodeLine{5 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s_i_a5737c9e037d2019fee1db9f969638bf4}\label{class_s_i_a5737c9e037d2019fee1db9f969638bf4}} 
+\index{SI@{SI}!Call@{Call}}
+\index{Call@{Call}!SI@{SI}}
+\doxysubsubsection{\texorpdfstring{Call()}{Call()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{si_8h_a8564c478026655cd8718601a4514e1b7}{Task}} SI\+::\+Call (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sensor_data}{Sensor\+Data}}}]{sensor\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Call \mbox{\hyperlink{class_s_i}{SI}} to get task. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor\+Data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Task 
+\end{DoxyReturn}
+
+
+Definition at line 7 of file si.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_s_i_a326ec6f6f3ed4d936f9dc09db30dd973}{Logic}}(sensorData);}
+\DoxyCodeLine{10 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_s_i_a5737c9e037d2019fee1db9f969638bf4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{class_s_i_a5737c9e037d2019fee1db9f969638bf4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_i_a326ec6f6f3ed4d936f9dc09db30dd973}\label{class_s_i_a326ec6f6f3ed4d936f9dc09db30dd973}} 
+\index{SI@{SI}!Logic@{Logic}}
+\index{Logic@{Logic}!SI@{SI}}
+\doxysubsubsection{\texorpdfstring{Logic()}{Logic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{si_8h_a8564c478026655cd8718601a4514e1b7}{Task}} SI\+::\+Logic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sensor_data}{Sensor\+Data}}}]{sensor\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Logic implementation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor\+Data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Task 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_human_controll_a195ef119c96c65152c6deb9d8ad706d7}{Human\+Controll}}, and \mbox{\hyperlink{class_expander_ae87a3f6bccca98e9fa3b39b6f32b0da9}{Expander}}.
+
+
+
+Definition at line 12 of file si.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12                                    \{}
+\DoxyCodeLine{13     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_s_i_acdfb2bcec6d3a99c84bf5cae7097a37f}{RandomTask}}(sensorData);}
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{class_s_i_a326ec6f6f3ed4d936f9dc09db30dd973_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{class_s_i_a326ec6f6f3ed4d936f9dc09db30dd973_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_i_acdfb2bcec6d3a99c84bf5cae7097a37f}\label{class_s_i_acdfb2bcec6d3a99c84bf5cae7097a37f}} 
+\index{SI@{SI}!RandomTask@{RandomTask}}
+\index{RandomTask@{RandomTask}!SI@{SI}}
+\doxysubsubsection{\texorpdfstring{RandomTask()}{RandomTask()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{si_8h_a8564c478026655cd8718601a4514e1b7}{Task}} SI\+::\+Random\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sensor_data}{Sensor\+Data}}}]{sensor\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 16 of file si.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16                                         \{}
+\DoxyCodeLine{17     \textcolor{keywordtype}{int} n = rand() \% 100;}
+\DoxyCodeLine{18     \textcolor{keywordflow}{if}(sensorData.\mbox{\hyperlink{struct_sensor_data_a1a6a48546a1fece90c78c2b1704b9ee3}{wallDetected}} || n>=50 )\{}
+\DoxyCodeLine{19         vector<Task> possible = \{\mbox{\hyperlink{si_8h_a8564c478026655cd8718601a4514e1b7a71a430c6d5330629f5c6c5373553bb63}{RotateLeft}}, \mbox{\hyperlink{si_8h_a8564c478026655cd8718601a4514e1b7a82a1fed01fbf25cc855cd02b12b6f63c}{RotateRight}}, \mbox{\hyperlink{si_8h_a8564c478026655cd8718601a4514e1b7a4a3ae1217253da6a37e695ce19e883d3}{TurnAround}}\};}
+\DoxyCodeLine{20         n = rand() \% 3;}
+\DoxyCodeLine{21         \textcolor{keywordflow}{return} possible[n];}
+\DoxyCodeLine{22     \}}
+\DoxyCodeLine{23     \textcolor{keywordflow}{return} \mbox{\hyperlink{si_8h_a8564c478026655cd8718601a4514e1b7ae204c9c3e62b1e9a6b60e40cd05256c5}{Forward}};}
+\DoxyCodeLine{24 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_i_acdfb2bcec6d3a99c84bf5cae7097a37f_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{si_8h}{si.\+h}}\item 
+\mbox{\hyperlink{si_8cpp}{si.\+cpp}}\end{DoxyCompactItemize}

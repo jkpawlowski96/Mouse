@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="mainwindow_8cpp" kind="file" language="C++">
+    <compoundname>mainwindow.cpp</compoundname>
+    <includes refid="mainwindow_8h" local="yes">mainwindow.h</includes>
+    <includes local="yes">ui_mainwindow.h</includes>
+    <includes refid="utils_8h" local="yes">utils.h</includes>
+    <incdepgraph>
+      <node id="29">
+        <label>QtNumeric</label>
+      </node>
+      <node id="44">
+        <label>utils.h</label>
+        <link refid="utils_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>QVector2D</label>
+      </node>
+      <node id="28">
+        <label>limits</label>
+      </node>
+      <node id="19">
+        <label>QDateTime</label>
+      </node>
+      <node id="10">
+        <label>QObject</label>
+      </node>
+      <node id="7">
+        <label>stdlib.h</label>
+      </node>
+      <node id="9">
+        <label>qcustomplot.h</label>
+        <link refid="qcustomplot_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>QStack</label>
+      </node>
+      <node id="27">
+        <label>qmath.h</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>QMainWindow</label>
+      </node>
+      <node id="35">
+        <label>sensor_data.h</label>
+        <link refid="sensor__data_8h"/>
+      </node>
+      <node id="40">
+        <label>expander.h</label>
+        <link refid="expander_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>QFlags</label>
+      </node>
+      <node id="25">
+        <label>QCache</label>
+      </node>
+      <node id="13">
+        <label>QPainter</label>
+      </node>
+      <node id="15">
+        <label>QMouseEvent</label>
+      </node>
+      <node id="47">
+        <label>sys/types.h</label>
+      </node>
+      <node id="11">
+        <label>QPointer</label>
+      </node>
+      <node id="43">
+        <label>ui_mainwindow.h</label>
+      </node>
+      <node id="22">
+        <label>QDebug</label>
+      </node>
+      <node id="32">
+        <label>vector</label>
+      </node>
+      <node id="12">
+        <label>QWidget</label>
+      </node>
+      <node id="42">
+        <label>sstream</label>
+      </node>
+      <node id="18">
+        <label>QString</label>
+      </node>
+      <node id="31">
+        <label>geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>time.h</label>
+      </node>
+      <node id="26">
+        <label>QMargins</label>
+      </node>
+      <node id="1">
+        <label>mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>iostream</label>
+      </node>
+      <node id="30">
+        <label>QtPrintSupport/QtPrintSupport</label>
+      </node>
+      <node id="16">
+        <label>QPixmap</label>
+      </node>
+      <node id="41">
+        <label>humancontroll.h</label>
+        <link refid="humancontroll_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>sensor.h</label>
+        <link refid="sensor_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>simulator.h</label>
+        <link refid="simulator_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>QStringList</label>
+      </node>
+      <node id="34">
+        <label>si.h</label>
+        <link refid="si_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>stdio.h</label>
+      </node>
+      <node id="33">
+        <label>mouse.h</label>
+        <link refid="mouse_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>QPaintEvent</label>
+      </node>
+      <node id="6">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>memory</label>
+      </node>
+      <node id="17">
+        <label>QVector</label>
+      </node>
+      <node id="20">
+        <label>QMultiMap</label>
+      </node>
+      <node id="46">
+        <label>dirent.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mainwindow_8h" kindref="compound">mainwindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_mainwindow.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="utils_8h" kindref="compound">utils.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_main_window_1a472a8fb0458be9e28d2e138d24f05ba0" refkind="member"><highlight class="normal"><ref refid="class_main_window_1a472a8fb0458be9e28d2e138d24f05ba0" kindref="member">MainWindow::MainWindow</ref>(QWidget<sp/>*parent,<sp/>shared_ptr&lt;Simulator&gt;<sp/>_simulator)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>QMainWindow(parent)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>ui(new<sp/><ref refid="namespace_ui" kindref="compound">Ui</ref>::<ref refid="class_main_window" kindref="compound">MainWindow</ref>)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>,<sp/>simulator(_simulator)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kindref="member">ui</ref>-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kindref="member">ui</ref>-&gt;plot-&gt;xAxis-&gt;setVisible(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kindref="member">ui</ref>-&gt;plot-&gt;yAxis-&gt;setVisible(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//maps</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>mapFiles<sp/>=<sp/><ref refid="utils_8cpp_1ae02648d07b0195cde8676a5cb2582760" kindref="member">GetMapFiles</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(mapFiles.size()&gt;0)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kindref="member">ui</ref>-&gt;mapsComboBox-&gt;addItems(mapFiles);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a7c5de18a3099b890fab55bef52ffab03" kindref="member">InitSimulator</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_main_window_1a7c5de18a3099b890fab55bef52ffab03" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a7c5de18a3099b890fab55bef52ffab03" kindref="member">MainWindow::InitSimulator</ref>(){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//plot</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kindref="member">ui</ref>-&gt;plot-&gt;clearGraphs();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kindref="member">ui</ref>-&gt;plot-&gt;replot();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//simulator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>text<sp/>=<sp/><ref refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kindref="member">ui</ref>-&gt;mapsComboBox-&gt;currentText();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>path<sp/>=<sp/>QDir(<ref refid="utils_8h_1ae11f03ae1d868d9f02f43ae00d975727" kindref="member">MAPS_LOCATION</ref>).filePath(text);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>si_mode<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kindref="member">ui</ref>-&gt;humanButton-&gt;isChecked())</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>si_mode<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kindref="member">ui</ref>-&gt;siButton-&gt;isChecked())</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>si_mode<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kindref="member">ui</ref>-&gt;expanderButton-&gt;isChecked())</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>si_mode<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" kindref="member">simulator</ref><sp/>=<sp/>make_shared&lt;Simulator&gt;(<ref refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kindref="member">ui</ref>-&gt;plot,<sp/>path.toStdString(),<sp/><ref refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kindref="member">ui</ref>-&gt;speedSlider-&gt;value(),<sp/>si_mode);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a7849e1daf757f67c0a376d4f0511130c" kindref="member">time_seconds</ref><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" refkind="member"><highlight class="normal"><ref refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" kindref="member">MainWindow::~MainWindow</ref>()</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kindref="member">ui</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="class_main_window_1a3c7f7e81db750a0acadddd00d4b27405" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a3c7f7e81db750a0acadddd00d4b27405" kindref="member">MainWindow::on_mapsComboBox_textActivated</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QString<sp/>&amp;arg1)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" kindref="member">simulator</ref>-&gt;isRunning())</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a7c5de18a3099b890fab55bef52ffab03" kindref="member">InitSimulator</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="class_main_window_1a55ae3e0d4303334ccabae0a5050cfd88" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a55ae3e0d4303334ccabae0a5050cfd88" kindref="member">MainWindow::keyPressEvent</ref>(QKeyEvent<sp/>*event)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(event-&gt;key()<sp/>==<sp/>Qt::Key_Up)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" kindref="member">simulator</ref>-&gt;ControllDirection(<ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2" kindref="member">Up</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(event-&gt;key()<sp/>==<sp/>Qt::Key_Down)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" kindref="member">simulator</ref>-&gt;ControllDirection(<ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaabcf8c79e9a5f5f9d606fb35645a0fb27" kindref="member">Down</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(event-&gt;key()<sp/>==<sp/>Qt::Key_Left)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" kindref="member">simulator</ref>-&gt;ControllDirection(<ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa9d4d8b0b72fc2659da772d761a3c5ecb" kindref="member">Left</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(event-&gt;key()<sp/>==<sp/>Qt::Key_Right)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" kindref="member">simulator</ref>-&gt;ControllDirection(<ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaad48f7af8c070184f3774c8e85854eb66" kindref="member">Right</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="class_main_window_1abcc096120205197b50fa55cb603acb95" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1abcc096120205197b50fa55cb603acb95" kindref="member">MainWindow::on_startButton_clicked</ref>()</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a7c5de18a3099b890fab55bef52ffab03" kindref="member">InitSimulator</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" kindref="member">simulator</ref>-&gt;Start();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a356578805ed1248a7f2807434cb0e5ee" kindref="member">timer</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTimer(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>QObject::connect(<ref refid="class_main_window_1a356578805ed1248a7f2807434cb0e5ee" kindref="member">timer</ref>,<sp/>SIGNAL(timeout()),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="class_main_window_1a69efa09d058fbf25a6c940b0e11b6322" kindref="member">simulator_plot</ref>()));</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a356578805ed1248a7f2807434cb0e5ee" kindref="member">timer</ref>-&gt;start(33);<sp/></highlight><highlight class="comment">//time<sp/>specified<sp/>in<sp/>ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="class_main_window_1a69efa09d058fbf25a6c940b0e11b6322" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a69efa09d058fbf25a6c940b0e11b6322" kindref="member">MainWindow::simulator_plot</ref>(){</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" kindref="member">simulator</ref>-&gt;Tick();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>quint64<sp/>_miliseconds<sp/>=<sp/><ref refid="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" kindref="member">simulator</ref>-&gt;GetTimerElapsed();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_seconds<sp/>=<sp/>((double)_miliseconds<sp/>/<sp/>1000);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>_seconds<sp/>=<sp/>_seconds<sp/>*<sp/><ref refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kindref="member">ui</ref>-&gt;speedSlider-&gt;value()<sp/>/<sp/>100;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a7849e1daf757f67c0a376d4f0511130c" kindref="member">time_seconds</ref><sp/>=<sp/><ref refid="class_main_window_1a7849e1daf757f67c0a376d4f0511130c" kindref="member">time_seconds</ref><sp/>+<sp/>_seconds;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostringstream<sp/>out;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>out.precision(2);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>std::fixed<sp/>&lt;&lt;<sp/><ref refid="class_main_window_1a7849e1daf757f67c0a376d4f0511130c" kindref="member">time_seconds</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>lcdText<sp/>=<sp/>out.str();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>qlcdText<sp/>=<sp/>QString::fromStdString(lcdText);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kindref="member">ui</ref>-&gt;lcdTimer-&gt;display(qlcdText);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="class_main_window_1abf27a1e863dc2350626ba16c83e925f4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1abf27a1e863dc2350626ba16c83e925f4" kindref="member">MainWindow::on_stopButton_clicked</ref>()</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a356578805ed1248a7f2807434cb0e5ee" kindref="member">timer</ref>-&gt;stop();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1a7c5de18a3099b890fab55bef52ffab03" kindref="member">InitSimulator</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="class_main_window_1a9fdec4edb19b978b5ab67df5590479c3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a9fdec4edb19b978b5ab67df5590479c3" kindref="member">MainWindow::on_speedSlider_valueChanged</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" kindref="member">simulator</ref>)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_main_window_1af01c4789130bb9381d003ddd6d45c1c7" kindref="member">simulator</ref>-&gt;SetSpeed(value);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="mainwindow.cpp"/>
+  </compounddef>
+</doxygen>

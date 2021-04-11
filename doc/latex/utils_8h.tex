@@ -1,0 +1,99 @@
+\hypertarget{utils_8h}{}\doxysection{utils.\+h File Reference}
+\label{utils_8h}\index{utils.h@{utils.h}}
+{\ttfamily \#include $<$QString\+List$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$dirent.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+Include dependency graph for utils.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{utils_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{utils_8h_ae11f03ae1d868d9f02f43ae00d975727}{MAPS\+\_\+\+LOCATION}}~\char`\"{}maps\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+QString\+List \mbox{\hyperlink{utils_8h_ac716ce6bae14594892e60964f5a12d84}{Get\+Map\+Files}} (const char $\ast$path=\mbox{\hyperlink{utils_8h_ae11f03ae1d868d9f02f43ae00d975727}{MAPS\+\_\+\+LOCATION}})
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_map}{Map}} Files list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{utils_8h_ae11f03ae1d868d9f02f43ae00d975727}\label{utils_8h_ae11f03ae1d868d9f02f43ae00d975727}} 
+\index{utils.h@{utils.h}!MAPS\_LOCATION@{MAPS\_LOCATION}}
+\index{MAPS\_LOCATION@{MAPS\_LOCATION}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{MAPS\_LOCATION}{MAPS\_LOCATION}}
+{\footnotesize\ttfamily \#define MAPS\+\_\+\+LOCATION~\char`\"{}maps\char`\"{}}
+
+
+
+Definition at line 9 of file utils.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{utils_8h_ac716ce6bae14594892e60964f5a12d84}\label{utils_8h_ac716ce6bae14594892e60964f5a12d84}} 
+\index{utils.h@{utils.h}!GetMapFiles@{GetMapFiles}}
+\index{GetMapFiles@{GetMapFiles}!utils.h@{utils.h}}
+\doxysubsubsection{\texorpdfstring{GetMapFiles()}{GetMapFiles()}}
+{\footnotesize\ttfamily QString\+List Get\+Map\+Files (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path = {\ttfamily \mbox{\hyperlink{utils_8h_ae11f03ae1d868d9f02f43ae00d975727}{MAPS\+\_\+\+LOCATION}}} }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{class_map}{Map}} Files list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+QString\+List 
+\end{DoxyReturn}
+
+
+Definition at line 3 of file utils.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3                                          \{}
+\DoxyCodeLine{4     QStringList forbiden = \{\textcolor{stringliteral}{"{}."{}},\textcolor{stringliteral}{"{}.."{}}\};}
+\DoxyCodeLine{5     QStringList files;}
+\DoxyCodeLine{6     \textcolor{keyword}{struct }dirent *entry;}
+\DoxyCodeLine{7     DIR *dir = opendir(path);}
+\DoxyCodeLine{8     \textcolor{keywordflow}{if} (dir == NULL) \{}
+\DoxyCodeLine{9         \textcolor{keywordflow}{return} files;}
+\DoxyCodeLine{10     \}}
+\DoxyCodeLine{11     \textcolor{keywordflow}{while} ((entry = readdir(dir)) != NULL) \{}
+\DoxyCodeLine{12         QString file = entry-\/>d\_name;}
+\DoxyCodeLine{13         \textcolor{keywordflow}{if}(!forbiden.contains(file))}
+\DoxyCodeLine{14             files.push\_back(entry-\/>d\_name);}
+\DoxyCodeLine{15     \}}
+\DoxyCodeLine{16     closedir(dir);}
+\DoxyCodeLine{17     \textcolor{keywordflow}{return} files;}
+\DoxyCodeLine{18 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{utils_8h_ac716ce6bae14594892e60964f5a12d84_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,4 @@
+<map id="GetMapFiles" name="GetMapFiles">
+<area shape="rect" id="node1" title="Get the Map Files list." alt="" coords="232,5,328,32"/>
+<area shape="rect" id="node2" href="$class_main_window.html#a472a8fb0458be9e28d2e138d24f05ba0" title="Construct a new Main Window object." alt="" coords="5,5,184,32"/>
+</map>

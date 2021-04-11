@@ -1,0 +1,587 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_q_c_p_painter" kind="class" language="C++" prot="public">
+    <compoundname>QCPPainter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">QPainter</basecompoundref>
+    <includes refid="qcustomplot_8h" local="no">qcustomplot.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_q_c_p_painter_1a156cf16444ff5e0d81a73c615fdb156d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>PainterMode</name>
+        <enumvalue id="class_q_c_p_painter_1a156cf16444ff5e0d81a73c615fdb156da3bac5e87e3d58553b297befb4eee2a45" prot="public">
+          <name>pmDefault</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para><computeroutput>0x00</computeroutput> Default mode for painting on screen devices </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_q_c_p_painter_1a156cf16444ff5e0d81a73c615fdb156daeda679cd55dcd468341d07d48a30b6ab" prot="public">
+          <name>pmVectorized</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para><computeroutput>0x01</computeroutput> Mode for vectorized painting (e.g. PDF export). For example, this prevents some antialiasing fixes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_q_c_p_painter_1a156cf16444ff5e0d81a73c615fdb156dae78f9a4eb277a5f9207f50850a51a0b0" prot="public">
+          <name>pmNoCaching</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+<para><computeroutput>0x02</computeroutput> Mode for all sorts of exports (e.g. PNG, PDF,...). For example, this prevents using cached pixmap labels </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_q_c_p_painter_1a156cf16444ff5e0d81a73c615fdb156dac1e481bfaf408f2bd2eaad3ec341f36b" prot="public">
+          <name>pmNonCosmetic</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+<para><computeroutput>0x04</computeroutput> Turns pen widths 0 to 1, i.e. disables cosmetic pens. (A cosmetic pen is always drawn with width 1 pixel in the vector image/pdf viewer, independent of zoom.) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines special modes the painter can operate in. They disable or enable certain subsets of features/fixes/workarounds, depending on whether they are wanted on the respective output device. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="320" column="3" bodyfile="qcustomplot.h" bodystart="320" bodyend="324"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_q_c_p_painter_1af5d1d6e5df0adbc7de5633250fb3396c" prot="protected" static="no" mutable="no">
+        <type>PainterModes</type>
+        <definition>PainterModes QCPPainter::mModes</definition>
+        <argsstring></argsstring>
+        <name>mModes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="356" column="16" bodyfile="qcustomplot.h" bodystart="356" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_painter_1a0b4b1b9bd495e182c731774dc800e6e0" compoundref="qcustomplot_8cpp" startline="129" endline="135">drawLine</referencedby>
+        <referencedby refid="class_q_c_p_painter_1aaba1deb9188244d9ea65b035112b4d05" compoundref="qcustomplot_8cpp" startline="143" endline="157">setAntialiasing</referencedby>
+        <referencedby refid="class_q_c_p_painter_1af6b1f7d2bbc548b10aa55d8b6ad49577" compoundref="qcustomplot_8cpp" startline="194" endline="200">setMode</referencedby>
+        <referencedby refid="class_q_c_p_painter_1a5fac93adc29c7c4dea9f3e171e9e635e" compoundref="qcustomplot_8cpp" startline="163" endline="166">setModes</referencedby>
+        <referencedby refid="class_q_c_p_painter_1af9c7a4cd1791403901f8c5b82a150195" compoundref="qcustomplot_8cpp" startline="86" endline="91">setPen</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_painter_1a7055085da176aee0f6b23298f1003d08" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool QCPPainter::mIsAntialiasing</definition>
+        <argsstring></argsstring>
+        <name>mIsAntialiasing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="357" column="8" bodyfile="qcustomplot.h" bodystart="357" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_painter_1a0b4b1b9bd495e182c731774dc800e6e0" compoundref="qcustomplot_8cpp" startline="129" endline="135">drawLine</referencedby>
+        <referencedby refid="class_q_c_p_painter_1a64908e6298d5bbd83457dc987cc3a022" compoundref="qcustomplot_8cpp" startline="224" endline="231">restore</referencedby>
+        <referencedby refid="class_q_c_p_painter_1a8fd6821ee6fecbfa04444c9062912abd" compoundref="qcustomplot_8cpp" startline="210" endline="214">save</referencedby>
+        <referencedby refid="class_q_c_p_painter_1aaba1deb9188244d9ea65b035112b4d05" compoundref="qcustomplot_8cpp" startline="143" endline="157">setAntialiasing</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_q_c_p_painter_1a0189e641bbf7dc31ac15aef7b36501fa" prot="protected" static="no" mutable="no">
+        <type>QStack&lt; bool &gt;</type>
+        <definition>QStack&lt;bool&gt; QCPPainter::mAntialiasingStack</definition>
+        <argsstring></argsstring>
+        <name>mAntialiasingStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="360" column="10" bodyfile="qcustomplot.h" bodystart="360" bodyend="-1"/>
+        <referencedby refid="class_q_c_p_painter_1a64908e6298d5bbd83457dc987cc3a022" compoundref="qcustomplot_8cpp" startline="224" endline="231">restore</referencedby>
+        <referencedby refid="class_q_c_p_painter_1a8fd6821ee6fecbfa04444c9062912abd" compoundref="qcustomplot_8cpp" startline="210" endline="214">save</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_q_c_p_painter_1a3c52cb0f43f34573d29bea487da28fe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPPainter::QCPPainter</definition>
+        <argsstring>()</argsstring>
+        <name>QCPPainter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a new <ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> instance and sets default values </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="328" column="3" bodyfile="qcustomplot.cpp" bodystart="50" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_painter_1ae58dbb1795ddc4351ab324dc9898aa22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPPainter::QCPPainter</definition>
+        <argsstring>(QPaintDevice *device)</argsstring>
+        <name>QCPPainter</name>
+        <param>
+          <type>QPaintDevice *</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a new <ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> instance on the specified paint <emphasis>device</emphasis> and sets default values. Just like the analogous QPainter constructor, begins painting on <emphasis>device</emphasis> immediately.</para>
+<para>Like <ref refid="class_q_c_p_painter_1a0a41146ccd619dceab6e25ec7b46b044" kindref="member">begin</ref>, this method sets QPainter::NonCosmeticDefaultPen in Qt versions before Qt5. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="329" column="3" bodyfile="qcustomplot.cpp" bodystart="65" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_painter_1aa8491da26c0bf7704a93e2dcbb0c5ba1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QCPPainter::~QCPPainter</definition>
+        <argsstring>()</argsstring>
+        <name>~QCPPainter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="330" column="3" bodyfile="qcustomplot.cpp" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_painter_1a5aff96296e995f6f35b2596a482aae37" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPPainter::antialiasing</definition>
+        <argsstring>() const</argsstring>
+        <name>antialiasing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="333" column="8" bodyfile="qcustomplot.h" bodystart="333" bodyend="333"/>
+        <referencedby refid="class_q_c_p_axis_painter_private_1a0207a99bdf9c4f70af20928898ddc2fc" compoundref="qcustomplot_8cpp" startline="6098" endline="6284">QCPAxisPainterPrivate::draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_painter_1aef102658219b24165f7ee2aad1b9e48f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>PainterModes</type>
+        <definition>PainterModes QCPPainter::modes</definition>
+        <argsstring>() const</argsstring>
+        <name>modes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="334" column="16" bodyfile="qcustomplot.h" bodystart="334" bodyend="334"/>
+        <referencedby refid="class_q_c_p_curve_1a2361302d2fc6ec669849bd3bca00c4b2" compoundref="qcustomplot_8cpp" startline="17071" endline="17156">QCPCurve::draw</referencedby>
+        <referencedby refid="class_q_c_p_color_map_1a3b0f45a3177be9522d5e9b8cd8ae122d" compoundref="qcustomplot_8cpp" startline="20404" endline="20470">QCPColorMap::draw</referencedby>
+        <referencedby refid="class_q_c_p_line_ending_1a13321409a5570be5d58d99b67bc73cd5" compoundref="qcustomplot_8cpp" startline="3517" endline="3638">QCPLineEnding::draw</referencedby>
+        <referencedby refid="class_q_c_p_graph_1af460db06d4d6466806721fe101f512e3" compoundref="qcustomplot_8cpp" startline="15560" endline="15626">QCPGraph::drawLinePlot</referencedby>
+        <referencedby refid="class_q_c_p_axis_painter_private_1af8fe7350c19575bc33ca770f9b3a15fd" compoundref="qcustomplot_8cpp" startline="6373" endline="6440">QCPAxisPainterPrivate::placeTickLabel</referencedby>
+        <referencedby refid="class_q_c_p_painter_1a5fac93adc29c7c4dea9f3e171e9e635e" compoundref="qcustomplot_8cpp" startline="163" endline="166">setModes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_painter_1aaba1deb9188244d9ea65b035112b4d05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::setAntialiasing</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>setAntialiasing</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets whether painting uses antialiasing or not. Use this method instead of using setRenderHint with QPainter::Antialiasing directly, as it allows <ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> to regain pixel exactness between antialiased and non-antialiased painting (Since Qt &lt; 5.0 uses slightly different coordinate systems for AA/Non-AA painting). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="337" column="8" bodyfile="qcustomplot.cpp" bodystart="143" bodyend="157"/>
+        <references refid="class_q_c_p_painter_1a7055085da176aee0f6b23298f1003d08" compoundref="qcustomplot_8h" startline="357">mIsAntialiasing</references>
+        <references refid="class_q_c_p_painter_1af5d1d6e5df0adbc7de5633250fb3396c" compoundref="qcustomplot_8h" startline="356">mModes</references>
+        <references refid="class_q_c_p_painter_1a156cf16444ff5e0d81a73c615fdb156daeda679cd55dcd468341d07d48a30b6ab" compoundref="qcustomplot_8h" startline="321">pmVectorized</references>
+        <referencedby refid="class_q_c_p_layerable_1acb663e375d2d36dc5c55021ee5a2119b" compoundref="qcustomplot_8cpp" startline="1152" endline="1160">QCPLayerable::applyAntialiasingHint</referencedby>
+        <referencedby refid="class_q_c_p_axis_rect_1aa954ebda9ddbc74146ab9b47abad277b" compoundref="qcustomplot_8cpp" startline="12167" endline="12170">QCPAxisRect::applyDefaultAntialiasingHint</referencedby>
+        <referencedby refid="class_q_c_p_color_scale_1adcd2fa0d7f53d73788ec1cf54e44a6e2" compoundref="qcustomplot_8cpp" startline="14158" endline="14161">QCPColorScale::applyDefaultAntialiasingHint</referencedby>
+        <referencedby refid="class_q_c_p_axis_painter_private_1a0207a99bdf9c4f70af20928898ddc2fc" compoundref="qcustomplot_8cpp" startline="6098" endline="6284">QCPAxisPainterPrivate::draw</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a474a3994b081892f1dbdd1162e055b96" compoundref="qcustomplot_8cpp" startline="21024" endline="21080">QCPFinancial::drawLegendIcon</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_painter_1af6b1f7d2bbc548b10aa55d8b6ad49577" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::setMode</definition>
+        <argsstring>(PainterMode mode, bool enabled=true)</argsstring>
+        <name>setMode</name>
+        <param>
+          <type><ref refid="class_q_c_p_painter_1a156cf16444ff5e0d81a73c615fdb156d" kindref="member">PainterMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</para>
+<para>Sets the mode of the painter. This controls whether the painter shall adjust its fixes/workarounds optimized for certain output devices. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="338" column="8" bodyfile="qcustomplot.cpp" bodystart="194" bodyend="200"/>
+        <references refid="class_q_c_p_painter_1af5d1d6e5df0adbc7de5633250fb3396c" compoundref="qcustomplot_8h" startline="356">mModes</references>
+        <referencedby refid="class_q_custom_plot_1a632da44c6d94ea8b271eb483b08b5114" compoundref="qcustomplot_8cpp" startline="10449" endline="10510">QCustomPlot::savePdf</referencedby>
+        <referencedby refid="class_q_custom_plot_1a1be68d5c0f1e086d6374d1340a193fb9" compoundref="qcustomplot_8cpp" startline="11116" endline="11141">QCustomPlot::toPainter</referencedby>
+        <referencedby refid="class_q_custom_plot_1aabb974d71ce96c137dc04eb6eab844fe" compoundref="qcustomplot_8cpp" startline="11060" endline="11102">QCustomPlot::toPixmap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_painter_1a5fac93adc29c7c4dea9f3e171e9e635e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::setModes</definition>
+        <argsstring>(PainterModes modes)</argsstring>
+        <name>setModes</name>
+        <param>
+          <type>PainterModes</type>
+          <declname>modes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the mode of the painter. This controls whether the painter shall adjust its fixes/workarounds optimized for certain output devices. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="339" column="8" bodyfile="qcustomplot.cpp" bodystart="163" bodyend="166"/>
+        <references refid="class_q_c_p_painter_1af5d1d6e5df0adbc7de5633250fb3396c" compoundref="qcustomplot_8h" startline="356">mModes</references>
+        <references refid="class_q_c_p_painter_1aef102658219b24165f7ee2aad1b9e48f" compoundref="qcustomplot_8h" startline="334" endline="334">modes</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_painter_1a0a41146ccd619dceab6e25ec7b46b044" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool QCPPainter::begin</definition>
+        <argsstring>(QPaintDevice *device)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>QPaintDevice *</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the QPainter::NonCosmeticDefaultPen in Qt versions before Qt5 after beginning painting on <emphasis>device</emphasis>. This is necessary to get cosmetic pen consistency across Qt versions, because since Qt5, all pens are non-cosmetic by default, and in Qt4 this render hint must be set to get that behaviour.</para>
+<para>The Constructor <ref refid="class_q_c_p_painter_1ae58dbb1795ddc4351ab324dc9898aa22" kindref="member">QCPPainter(QPaintDevice *device)</ref> which directly starts painting also sets the render hint as appropriate.</para>
+<para><simplesect kind="note"><para>this function hides the non-virtual base class implementation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="342" column="8" bodyfile="qcustomplot.cpp" bodystart="179" bodyend="187"/>
+        <referencedby refid="class_q_custom_plot_1a606fd384b2a637ce2c24899bcbde77d6" compoundref="qcustomplot_8cpp" startline="10366" endline="10392">QCustomPlot::replot</referencedby>
+        <referencedby refid="class_q_custom_plot_1a632da44c6d94ea8b271eb483b08b5114" compoundref="qcustomplot_8cpp" startline="10449" endline="10510">QCustomPlot::savePdf</referencedby>
+        <referencedby refid="class_q_custom_plot_1aabb974d71ce96c137dc04eb6eab844fe" compoundref="qcustomplot_8cpp" startline="11060" endline="11102">QCustomPlot::toPixmap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_painter_1af9c7a4cd1791403901f8c5b82a150195" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::setPen</definition>
+        <argsstring>(const QPen &amp;pen)</argsstring>
+        <name>setPen</name>
+        <param>
+          <type>const QPen &amp;</type>
+          <declname>pen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the pen of the painter and applies certain fixes to it, depending on the mode of this <ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref>.</para>
+<para><simplesect kind="note"><para>this function hides the non-virtual base class implementation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="343" column="8" bodyfile="qcustomplot.cpp" bodystart="86" bodyend="91"/>
+        <references refid="class_q_c_p_painter_1a7e63fbcf47e35c6f2ecd11b8fef7c7d8" compoundref="qcustomplot_8cpp" startline="237" endline="245">makeNonCosmetic</references>
+        <references refid="class_q_c_p_painter_1af5d1d6e5df0adbc7de5633250fb3396c" compoundref="qcustomplot_8h" startline="356">mModes</references>
+        <references refid="class_q_c_p_painter_1a156cf16444ff5e0d81a73c615fdb156dac1e481bfaf408f2bd2eaad3ec341f36b" compoundref="qcustomplot_8h" startline="323">pmNonCosmetic</references>
+        <referencedby refid="class_q_c_p_scatter_style_1afd8044ece445300499ca0dc164821e0f" compoundref="qcustomplot_8cpp" startline="520" endline="524">QCPScatterStyle::applyTo</referencedby>
+        <referencedby refid="class_q_c_p_axis_painter_private_1a0207a99bdf9c4f70af20928898ddc2fc" compoundref="qcustomplot_8cpp" startline="6098" endline="6284">QCPAxisPainterPrivate::draw</referencedby>
+        <referencedby refid="class_q_c_p_plottable_legend_item_1a68a781c3de4f9959fdf82075052d43aa" compoundref="qcustomplot_8cpp" startline="12865" endline="12887">QCPPlottableLegendItem::draw</referencedby>
+        <referencedby refid="class_q_c_p_legend_1a4462151bf875ca85fa3815457c683fdc" compoundref="qcustomplot_8cpp" startline="13408" endline="13414">QCPLegend::draw</referencedby>
+        <referencedby refid="class_q_c_p_plot_title_1ae4f1f8d24489628dabb7256363b097d2" compoundref="qcustomplot_8cpp" startline="13637" endline="13642">QCPPlotTitle::draw</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a2361302d2fc6ec669849bd3bca00c4b2" compoundref="qcustomplot_8cpp" startline="17071" endline="17156">QCPCurve::draw</referencedby>
+        <referencedby refid="class_q_c_p_bars_1a42b894e34dac799f90ff3700706b31df" compoundref="qcustomplot_8cpp" startline="18780" endline="18812">QCPBars::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_straight_line_1a2daa1e1253216c26565d56a2d5530170" compoundref="qcustomplot_8cpp" startline="21520" endline="21533">QCPItemStraightLine::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_line_1a1fc045dd33919f8006df0692aeb0e84a" compoundref="qcustomplot_8cpp" startline="21736" endline="21757">QCPItemLine::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_curve_1a56cb5b72cd02db2eda598274a39839a9" compoundref="qcustomplot_8cpp" startline="21989" endline="22016">QCPItemCurve::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_rect_1a18cd583638b876cdd50f1a155ec182aa" compoundref="qcustomplot_8cpp" startline="22125" endline="22140">QCPItemRect::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_text_1a8793adb271ab79b4cf391dc55e9987f1" compoundref="qcustomplot_8cpp" startline="22394" endline="22423">QCPItemText::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_ellipse_1afe97ec827adb05f000fe007783faae3c" compoundref="qcustomplot_8cpp" startline="22640" endline="22665">QCPItemEllipse::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_pixmap_1a879e8076c2db01a38b34cfa73ec95d2f" compoundref="qcustomplot_8cpp" startline="22810" endline="22829">QCPItemPixmap::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_tracer_1aaaf49b48382c730ec9be0e74c2538315" compoundref="qcustomplot_8cpp" startline="23191" endline="23235">QCPItemTracer::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_bracket_1a8343cf0559c64886add7aa7f4b22f1a6" compoundref="qcustomplot_8cpp" startline="23454" endline="23520">QCPItemBracket::draw</referencedby>
+        <referencedby refid="class_q_c_p_line_ending_1a13321409a5570be5d58d99b67bc73cd5" compoundref="qcustomplot_8cpp" startline="3517" endline="3638">QCPLineEnding::draw</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a71f5081da0e5ab9c40a488ad40cff122" compoundref="qcustomplot_8cpp" startline="21230" endline="21314">QCPFinancial::drawCandlestickPlot</referencedby>
+        <referencedby refid="class_q_c_p_graph_1a9e6ce6db9aa7b29fc397c724fcf7b126" compoundref="qcustomplot_8cpp" startline="15481" endline="15502">QCPGraph::drawFill</referencedby>
+        <referencedby refid="class_q_c_p_grid_1aee4e95d54acabbe298d6dda0dd86c0a4" compoundref="qcustomplot_8cpp" startline="3779" endline="3845">QCPGrid::drawGridLines</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ac62c84f51d85b78ee583455b8c37ba56" compoundref="qcustomplot_8cpp" startline="15635" endline="15647">QCPGraph::drawImpulsePlot</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ae962caca309faae29ce0988d0d0eff4b" compoundref="qcustomplot_8cpp" startline="15125" endline="15157">QCPGraph::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_curve_1acccc86e9f496bb0392529f59f3a69dbc" compoundref="qcustomplot_8cpp" startline="17159" endline="17191">QCPCurve::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_bars_1ad466f06b0fa561b6e12c92fdb8fa3c7f" compoundref="qcustomplot_8cpp" startline="18815" endline="18824">QCPBars::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a41c6193fd24f5c1b6c754e7bcfe3e174" compoundref="qcustomplot_8cpp" startline="19431" endline="19440">QCPStatisticalBox::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a474a3994b081892f1dbdd1162e055b96" compoundref="qcustomplot_8cpp" startline="21024" endline="21080">QCPFinancial::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_graph_1af460db06d4d6466806721fe101f512e3" compoundref="qcustomplot_8cpp" startline="15560" endline="15626">QCPGraph::drawLinePlot</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a642b90dd4ab5ab6e16188a9230401bcc" compoundref="qcustomplot_8cpp" startline="19465" endline="19473">QCPStatisticalBox::drawMedian</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a3c3007a7434e29d042c77ccf4f497e66" compoundref="qcustomplot_8cpp" startline="21169" endline="21222">QCPFinancial::drawOhlcPlot</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a699ede353d6a7207d9fb36dd3aabf348" compoundref="qcustomplot_8cpp" startline="19448" endline="19459">QCPStatisticalBox::drawQuartileBox</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ae1f3edd5eb41aa5782e61673488fd3e0" compoundref="qcustomplot_8cpp" startline="15513" endline="15549">QCPGraph::drawScatterPlot</referencedby>
+        <referencedby refid="class_q_c_p_grid_1a751ce8aef815bcc9193432a30c8b6b6e" compoundref="qcustomplot_8cpp" startline="3853" endline="3875">QCPGrid::drawSubGridLines</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1ae64401aa18b9c45d4d33f9b46cf4bbd0" compoundref="qcustomplot_8cpp" startline="19479" endline="19493">QCPStatisticalBox::drawWhiskers</referencedby>
+        <referencedby refid="class_q_c_p_axis_painter_private_1af8fe7350c19575bc33ca770f9b3a15fd" compoundref="qcustomplot_8cpp" startline="6373" endline="6440">QCPAxisPainterPrivate::placeTickLabel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_painter_1a5c4d88f21564e156e88ef807f7cf0003" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::setPen</definition>
+        <argsstring>(const QColor &amp;color)</argsstring>
+        <name>setPen</name>
+        <param>
+          <type>const QColor &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</para>
+<para>Sets the pen (by color) of the painter and applies certain fixes to it, depending on the mode of this <ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref>.</para>
+<para><simplesect kind="note"><para>this function hides the non-virtual base class implementation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="344" column="8" bodyfile="qcustomplot.cpp" bodystart="100" bodyend="105"/>
+        <references refid="class_q_c_p_painter_1a7e63fbcf47e35c6f2ecd11b8fef7c7d8" compoundref="qcustomplot_8cpp" startline="237" endline="245">makeNonCosmetic</references>
+        <references refid="class_q_c_p_painter_1af5d1d6e5df0adbc7de5633250fb3396c" compoundref="qcustomplot_8h" startline="356">mModes</references>
+        <references refid="class_q_c_p_painter_1a156cf16444ff5e0d81a73c615fdb156dac1e481bfaf408f2bd2eaad3ec341f36b" compoundref="qcustomplot_8h" startline="323">pmNonCosmetic</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_painter_1a25e76095aae41da0d08035060e5f81ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::setPen</definition>
+        <argsstring>(Qt::PenStyle penStyle)</argsstring>
+        <name>setPen</name>
+        <param>
+          <type>Qt::PenStyle</type>
+          <declname>penStyle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</para>
+<para>Sets the pen (by style) of the painter and applies certain fixes to it, depending on the mode of this <ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref>.</para>
+<para><simplesect kind="note"><para>this function hides the non-virtual base class implementation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="345" column="8" bodyfile="qcustomplot.cpp" bodystart="114" bodyend="119"/>
+        <references refid="class_q_c_p_painter_1a7e63fbcf47e35c6f2ecd11b8fef7c7d8" compoundref="qcustomplot_8cpp" startline="237" endline="245">makeNonCosmetic</references>
+        <references refid="class_q_c_p_painter_1af5d1d6e5df0adbc7de5633250fb3396c" compoundref="qcustomplot_8h" startline="356">mModes</references>
+        <references refid="class_q_c_p_painter_1a156cf16444ff5e0d81a73c615fdb156dac1e481bfaf408f2bd2eaad3ec341f36b" compoundref="qcustomplot_8h" startline="323">pmNonCosmetic</references>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_painter_1a0b4b1b9bd495e182c731774dc800e6e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::drawLine</definition>
+        <argsstring>(const QLineF &amp;line)</argsstring>
+        <name>drawLine</name>
+        <param>
+          <type>const QLineF &amp;</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</para>
+<para>Works around a Qt bug introduced with Qt 4.8 which makes drawing QLineF unpredictable when antialiasing is disabled. Thus when antialiasing is disabled, it rounds the <emphasis>line</emphasis> to integer coordinates and then passes it to the original drawLine.</para>
+<para><simplesect kind="note"><para>this function hides the non-virtual base class implementation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="346" column="8" bodyfile="qcustomplot.cpp" bodystart="129" bodyend="135"/>
+        <references refid="class_q_c_p_painter_1a7055085da176aee0f6b23298f1003d08" compoundref="qcustomplot_8h" startline="357">mIsAntialiasing</references>
+        <references refid="class_q_c_p_painter_1af5d1d6e5df0adbc7de5633250fb3396c" compoundref="qcustomplot_8h" startline="356">mModes</references>
+        <references refid="class_q_c_p_painter_1a156cf16444ff5e0d81a73c615fdb156daeda679cd55dcd468341d07d48a30b6ab" compoundref="qcustomplot_8h" startline="321">pmVectorized</references>
+        <referencedby refid="class_q_c_p_axis_painter_private_1a0207a99bdf9c4f70af20928898ddc2fc" compoundref="qcustomplot_8cpp" startline="6098" endline="6284">QCPAxisPainterPrivate::draw</referencedby>
+        <referencedby refid="class_q_c_p_curve_1a2361302d2fc6ec669849bd3bca00c4b2" compoundref="qcustomplot_8cpp" startline="17071" endline="17156">QCPCurve::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_straight_line_1a2daa1e1253216c26565d56a2d5530170" compoundref="qcustomplot_8cpp" startline="21520" endline="21533">QCPItemStraightLine::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_line_1a1fc045dd33919f8006df0692aeb0e84a" compoundref="qcustomplot_8cpp" startline="21736" endline="21757">QCPItemLine::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_tracer_1aaaf49b48382c730ec9be0e74c2538315" compoundref="qcustomplot_8cpp" startline="23191" endline="23235">QCPItemTracer::draw</referencedby>
+        <referencedby refid="class_q_c_p_item_bracket_1a8343cf0559c64886add7aa7f4b22f1a6" compoundref="qcustomplot_8cpp" startline="23454" endline="23520">QCPItemBracket::draw</referencedby>
+        <referencedby refid="class_q_c_p_line_ending_1a13321409a5570be5d58d99b67bc73cd5" compoundref="qcustomplot_8cpp" startline="3517" endline="3638">QCPLineEnding::draw</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a71f5081da0e5ab9c40a488ad40cff122" compoundref="qcustomplot_8cpp" startline="21230" endline="21314">QCPFinancial::drawCandlestickPlot</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ab51aeba7e9d29754e58852cfad3436cc" compoundref="qcustomplot_8cpp" startline="15849" endline="15944">QCPGraph::drawError</referencedby>
+        <referencedby refid="class_q_c_p_grid_1aee4e95d54acabbe298d6dda0dd86c0a4" compoundref="qcustomplot_8cpp" startline="3779" endline="3845">QCPGrid::drawGridLines</referencedby>
+        <referencedby refid="class_q_c_p_graph_1ae962caca309faae29ce0988d0d0eff4b" compoundref="qcustomplot_8cpp" startline="15125" endline="15157">QCPGraph::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_curve_1acccc86e9f496bb0392529f59f3a69dbc" compoundref="qcustomplot_8cpp" startline="17159" endline="17191">QCPCurve::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a474a3994b081892f1dbdd1162e055b96" compoundref="qcustomplot_8cpp" startline="21024" endline="21080">QCPFinancial::drawLegendIcon</referencedby>
+        <referencedby refid="class_q_c_p_graph_1af460db06d4d6466806721fe101f512e3" compoundref="qcustomplot_8cpp" startline="15560" endline="15626">QCPGraph::drawLinePlot</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a642b90dd4ab5ab6e16188a9230401bcc" compoundref="qcustomplot_8cpp" startline="19465" endline="19473">QCPStatisticalBox::drawMedian</referencedby>
+        <referencedby refid="class_q_c_p_financial_1a3c3007a7434e29d042c77ccf4f497e66" compoundref="qcustomplot_8cpp" startline="21169" endline="21222">QCPFinancial::drawOhlcPlot</referencedby>
+        <referencedby refid="class_q_c_p_scatter_style_1a95c297b114c77c22428ef40f54620ddf" compoundref="qcustomplot_8cpp" startline="542" endline="664">QCPScatterStyle::drawShape</referencedby>
+        <referencedby refid="class_q_c_p_grid_1a751ce8aef815bcc9193432a30c8b6b6e" compoundref="qcustomplot_8cpp" startline="3853" endline="3875">QCPGrid::drawSubGridLines</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1ae64401aa18b9c45d4d33f9b46cf4bbd0" compoundref="qcustomplot_8cpp" startline="19479" endline="19493">QCPStatisticalBox::drawWhiskers</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_painter_1ad1638db27929491b3f1beb74d6cbad5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::drawLine</definition>
+        <argsstring>(const QPointF &amp;p1, const QPointF &amp;p2)</argsstring>
+        <name>drawLine</name>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>const QPointF &amp;</type>
+          <declname>p2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="347" column="8" bodyfile="qcustomplot.h" bodystart="347" bodyend="347"/>
+        <references refid="class_q_c_p_painter_1ad1638db27929491b3f1beb74d6cbad5e" compoundref="qcustomplot_8h" startline="347" endline="347">drawLine</references>
+        <referencedby refid="class_q_c_p_painter_1ad1638db27929491b3f1beb74d6cbad5e" compoundref="qcustomplot_8h" startline="347" endline="347">drawLine</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_painter_1a8fd6821ee6fecbfa04444c9062912abd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::save</definition>
+        <argsstring>()</argsstring>
+        <name>save</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Saves the painter (see QPainter::save). Since <ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> adds some new internal state to QPainter, the save/restore functions are reimplemented to also save/restore those members.</para>
+<para><simplesect kind="note"><para>this function hides the non-virtual base class implementation.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_q_c_p_painter_1a64908e6298d5bbd83457dc987cc3a022" kindref="member">restore</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="348" column="8" bodyfile="qcustomplot.cpp" bodystart="210" bodyend="214"/>
+        <references refid="class_q_c_p_painter_1a0189e641bbf7dc31ac15aef7b36501fa" compoundref="qcustomplot_8h" startline="360">mAntialiasingStack</references>
+        <references refid="class_q_c_p_painter_1a7055085da176aee0f6b23298f1003d08" compoundref="qcustomplot_8h" startline="357">mIsAntialiasing</references>
+        <referencedby refid="class_q_custom_plot_1ad7a7d878bf050f101a43008e7d8fdb52" compoundref="qcustomplot_8cpp" startline="10874" endline="10910">QCustomPlot::draw</referencedby>
+        <referencedby refid="class_q_c_p_plottable_legend_item_1a68a781c3de4f9959fdf82075052d43aa" compoundref="qcustomplot_8cpp" startline="12865" endline="12887">QCPPlottableLegendItem::draw</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317" compoundref="qcustomplot_8cpp" startline="19403" endline="19428">QCPStatisticalBox::draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_painter_1a64908e6298d5bbd83457dc987cc3a022" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::restore</definition>
+        <argsstring>()</argsstring>
+        <name>restore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Restores the painter (see QPainter::restore). Since <ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> adds some new internal state to QPainter, the save/restore functions are reimplemented to also save/restore those members.</para>
+<para><simplesect kind="note"><para>this function hides the non-virtual base class implementation.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="class_q_c_p_painter_1a8fd6821ee6fecbfa04444c9062912abd" kindref="member">save</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="349" column="8" bodyfile="qcustomplot.cpp" bodystart="224" bodyend="231"/>
+        <references refid="class_q_c_p_painter_1a0189e641bbf7dc31ac15aef7b36501fa" compoundref="qcustomplot_8h" startline="360">mAntialiasingStack</references>
+        <references refid="class_q_c_p_painter_1a7055085da176aee0f6b23298f1003d08" compoundref="qcustomplot_8h" startline="357">mIsAntialiasing</references>
+        <referencedby refid="class_q_custom_plot_1ad7a7d878bf050f101a43008e7d8fdb52" compoundref="qcustomplot_8cpp" startline="10874" endline="10910">QCustomPlot::draw</referencedby>
+        <referencedby refid="class_q_c_p_plottable_legend_item_1a68a781c3de4f9959fdf82075052d43aa" compoundref="qcustomplot_8cpp" startline="12865" endline="12887">QCPPlottableLegendItem::draw</referencedby>
+        <referencedby refid="class_q_c_p_statistical_box_1a753b62761217dd6b92f8a29e286a1317" compoundref="qcustomplot_8cpp" startline="19403" endline="19428">QCPStatisticalBox::draw</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_q_c_p_painter_1a7e63fbcf47e35c6f2ecd11b8fef7c7d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QCPPainter::makeNonCosmetic</definition>
+        <argsstring>()</argsstring>
+        <name>makeNonCosmetic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Changes the pen width to 1 if it currently is 0. This function is called in the <ref refid="class_q_c_p_painter_1af9c7a4cd1791403901f8c5b82a150195" kindref="member">setPen</ref> overrides when the <ref refid="class_q_c_p_painter_1a156cf16444ff5e0d81a73c615fdb156dac1e481bfaf408f2bd2eaad3ec341f36b" kindref="member">pmNonCosmetic</ref> mode is set. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="qcustomplot.h" line="352" column="8" bodyfile="qcustomplot.cpp" bodystart="237" bodyend="245"/>
+        <referencedby refid="class_q_c_p_painter_1af9c7a4cd1791403901f8c5b82a150195" compoundref="qcustomplot_8cpp" startline="86" endline="91">setPen</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>QPainter subclass used internally. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This QPainter subclass is used to provide some extended functionality e.g. for tweaking position consistency between antialiased and non-antialiased painting. Further it provides workarounds for QPainter quirks.</para>
+<para><simplesect kind="warning"><para>This class intentionally hides non-virtual functions of QPainter, e.g. setPen, save and restore. So while it is possible to pass a <ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref> instance to a function that expects a QPainter pointer, some of the workarounds and tweaks will be unavailable to the function (because it will call the base class implementations of the functions actually hidden by <ref refid="class_q_c_p_painter" kindref="compound">QCPPainter</ref>). </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>QCPPainter</label>
+        <link refid="class_q_c_p_painter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QPainter</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>QCPPainter</label>
+        <link refid="class_q_c_p_painter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QPainter</label>
+      </node>
+    </collaborationgraph>
+    <location file="qcustomplot.h" line="312" column="1" bodyfile="qcustomplot.h" bodystart="313" bodyend="361"/>
+    <listofallmembers>
+      <member refid="class_q_c_p_painter_1a5aff96296e995f6f35b2596a482aae37" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>antialiasing</name></member>
+      <member refid="class_q_c_p_painter_1a0a41146ccd619dceab6e25ec7b46b044" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>begin</name></member>
+      <member refid="class_q_c_p_painter_1a0b4b1b9bd495e182c731774dc800e6e0" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>drawLine</name></member>
+      <member refid="class_q_c_p_painter_1ad1638db27929491b3f1beb74d6cbad5e" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>drawLine</name></member>
+      <member refid="class_q_c_p_painter_1a7e63fbcf47e35c6f2ecd11b8fef7c7d8" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>makeNonCosmetic</name></member>
+      <member refid="class_q_c_p_painter_1a0189e641bbf7dc31ac15aef7b36501fa" prot="protected" virt="non-virtual"><scope>QCPPainter</scope><name>mAntialiasingStack</name></member>
+      <member refid="class_q_c_p_painter_1a7055085da176aee0f6b23298f1003d08" prot="protected" virt="non-virtual"><scope>QCPPainter</scope><name>mIsAntialiasing</name></member>
+      <member refid="class_q_c_p_painter_1af5d1d6e5df0adbc7de5633250fb3396c" prot="protected" virt="non-virtual"><scope>QCPPainter</scope><name>mModes</name></member>
+      <member refid="class_q_c_p_painter_1aef102658219b24165f7ee2aad1b9e48f" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>modes</name></member>
+      <member refid="class_q_c_p_painter_1a156cf16444ff5e0d81a73c615fdb156d" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>PainterMode</name></member>
+      <member refid="class_q_c_p_painter_1a156cf16444ff5e0d81a73c615fdb156da3bac5e87e3d58553b297befb4eee2a45" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>pmDefault</name></member>
+      <member refid="class_q_c_p_painter_1a156cf16444ff5e0d81a73c615fdb156dae78f9a4eb277a5f9207f50850a51a0b0" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>pmNoCaching</name></member>
+      <member refid="class_q_c_p_painter_1a156cf16444ff5e0d81a73c615fdb156dac1e481bfaf408f2bd2eaad3ec341f36b" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>pmNonCosmetic</name></member>
+      <member refid="class_q_c_p_painter_1a156cf16444ff5e0d81a73c615fdb156daeda679cd55dcd468341d07d48a30b6ab" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>pmVectorized</name></member>
+      <member refid="class_q_c_p_painter_1a3c52cb0f43f34573d29bea487da28fe8" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>QCPPainter</name></member>
+      <member refid="class_q_c_p_painter_1ae58dbb1795ddc4351ab324dc9898aa22" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>QCPPainter</name></member>
+      <member refid="class_q_c_p_painter_1a64908e6298d5bbd83457dc987cc3a022" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>restore</name></member>
+      <member refid="class_q_c_p_painter_1a8fd6821ee6fecbfa04444c9062912abd" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>save</name></member>
+      <member refid="class_q_c_p_painter_1aaba1deb9188244d9ea65b035112b4d05" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>setAntialiasing</name></member>
+      <member refid="class_q_c_p_painter_1af6b1f7d2bbc548b10aa55d8b6ad49577" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>setMode</name></member>
+      <member refid="class_q_c_p_painter_1a5fac93adc29c7c4dea9f3e171e9e635e" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>setModes</name></member>
+      <member refid="class_q_c_p_painter_1af9c7a4cd1791403901f8c5b82a150195" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>setPen</name></member>
+      <member refid="class_q_c_p_painter_1a5c4d88f21564e156e88ef807f7cf0003" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>setPen</name></member>
+      <member refid="class_q_c_p_painter_1a25e76095aae41da0d08035060e5f81ca" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>setPen</name></member>
+      <member refid="class_q_c_p_painter_1aa8491da26c0bf7704a93e2dcbb0c5ba1" prot="public" virt="non-virtual"><scope>QCPPainter</scope><name>~QCPPainter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

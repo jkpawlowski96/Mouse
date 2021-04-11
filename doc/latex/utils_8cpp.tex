@@ -1,0 +1,69 @@
+\hypertarget{utils_8cpp}{}\doxysection{utils.\+cpp File Reference}
+\label{utils_8cpp}\index{utils.cpp@{utils.cpp}}
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+Include dependency graph for utils.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+QString\+List \mbox{\hyperlink{utils_8cpp_ae02648d07b0195cde8676a5cb2582760}{Get\+Map\+Files}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_map}{Map}} Files list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{utils_8cpp_ae02648d07b0195cde8676a5cb2582760}\label{utils_8cpp_ae02648d07b0195cde8676a5cb2582760}} 
+\index{utils.cpp@{utils.cpp}!GetMapFiles@{GetMapFiles}}
+\index{GetMapFiles@{GetMapFiles}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{GetMapFiles()}{GetMapFiles()}}
+{\footnotesize\ttfamily QString\+List Get\+Map\+Files (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path = {\ttfamily \mbox{\hyperlink{utils_8h_ae11f03ae1d868d9f02f43ae00d975727}{MAPS\+\_\+\+LOCATION}}} }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{class_map}{Map}} Files list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+QString\+List 
+\end{DoxyReturn}
+
+
+Definition at line 3 of file utils.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3                                          \{}
+\DoxyCodeLine{4     QStringList forbiden = \{\textcolor{stringliteral}{"{}."{}},\textcolor{stringliteral}{"{}.."{}}\};}
+\DoxyCodeLine{5     QStringList files;}
+\DoxyCodeLine{6     \textcolor{keyword}{struct }dirent *entry;}
+\DoxyCodeLine{7     DIR *dir = opendir(path);}
+\DoxyCodeLine{8     \textcolor{keywordflow}{if} (dir == NULL) \{}
+\DoxyCodeLine{9         \textcolor{keywordflow}{return} files;}
+\DoxyCodeLine{10     \}}
+\DoxyCodeLine{11     \textcolor{keywordflow}{while} ((entry = readdir(dir)) != NULL) \{}
+\DoxyCodeLine{12         QString file = entry-\/>d\_name;}
+\DoxyCodeLine{13         \textcolor{keywordflow}{if}(!forbiden.contains(file))}
+\DoxyCodeLine{14             files.push\_back(entry-\/>d\_name);}
+\DoxyCodeLine{15     \}}
+\DoxyCodeLine{16     closedir(dir);}
+\DoxyCodeLine{17     \textcolor{keywordflow}{return} files;}
+\DoxyCodeLine{18 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{utils_8cpp_ae02648d07b0195cde8676a5cb2582760_icgraph}
+\end{center}
+\end{figure}

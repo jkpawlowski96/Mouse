@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="humancontroll_8cpp" kind="file" language="C++">
+    <compoundname>humancontroll.cpp</compoundname>
+    <includes refid="humancontroll_8h" local="yes">humancontroll.h</includes>
+    <incdepgraph>
+      <node id="31">
+        <label>QtNumeric</label>
+      </node>
+      <node id="25">
+        <label>QVector2D</label>
+      </node>
+      <node id="30">
+        <label>limits</label>
+      </node>
+      <node id="21">
+        <label>QDateTime</label>
+      </node>
+      <node id="12">
+        <label>QObject</label>
+      </node>
+      <node id="5">
+        <label>stdlib.h</label>
+      </node>
+      <node id="11">
+        <label>qcustomplot.h</label>
+        <link refid="qcustomplot_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>QStack</label>
+      </node>
+      <node id="29">
+        <label>qmath.h</label>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="33">
+        <label>sensor_data.h</label>
+        <link refid="sensor__data_8h"/>
+      </node>
+      <node id="7">
+        <label>expander.h</label>
+        <link refid="expander_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>QFlags</label>
+      </node>
+      <node id="27">
+        <label>QCache</label>
+      </node>
+      <node id="15">
+        <label>QPainter</label>
+      </node>
+      <node id="1">
+        <label>humancontroll.cpp</label>
+        <link refid="humancontroll_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>QMouseEvent</label>
+      </node>
+      <node id="13">
+        <label>QPointer</label>
+      </node>
+      <node id="24">
+        <label>QDebug</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+      <node id="14">
+        <label>QWidget</label>
+      </node>
+      <node id="20">
+        <label>QString</label>
+      </node>
+      <node id="3">
+        <label>geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>time.h</label>
+      </node>
+      <node id="28">
+        <label>QMargins</label>
+      </node>
+      <node id="32">
+        <label>QtPrintSupport/QtPrintSupport</label>
+      </node>
+      <node id="18">
+        <label>QPixmap</label>
+      </node>
+      <node id="2">
+        <label>humancontroll.h</label>
+        <link refid="humancontroll_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>si.h</label>
+        <link refid="si_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>stdio.h</label>
+      </node>
+      <node id="16">
+        <label>QPaintEvent</label>
+      </node>
+      <node id="9">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>memory</label>
+      </node>
+      <node id="19">
+        <label>QVector</label>
+      </node>
+      <node id="22">
+        <label>QMultiMap</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="humancontroll_8h" kindref="compound">humancontroll.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_human_controll_1a2f1909c210305f2045285b383da6a8db" refkind="member"><highlight class="normal"><ref refid="class_human_controll_1a2f1909c210305f2045285b383da6a8db" kindref="member">HumanControll::HumanControll</ref>(<ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref><sp/>initDirection):</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>mouseDirection(initDirection),<sp/>nextDirection(initDirection)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_human_controll_1a195ef119c96c65152c6deb9d8ad706d7" refkind="member"><highlight class="normal"><ref refid="si_8h_1a8564c478026655cd8718601a4514e1b7" kindref="member">Task</ref><sp/><ref refid="class_human_controll_1a195ef119c96c65152c6deb9d8ad706d7" kindref="member">HumanControll::Logic</ref>(<ref refid="struct_sensor_data" kindref="compound">SensorData</ref><sp/>sensorData){</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_human_controll_1aa7cbbf261b81ddeb8ed2a51041b52246" kindref="member">nextDirection</ref><sp/>==<sp/><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaac70c33bc5461cd83bab03a1fb84ed21a" kindref="member">DirectionUnnown</ref>)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="si_8h_1a8564c478026655cd8718601a4514e1b7a10b9ec1e134717a2f8f03a01eb48cd80" kindref="member">TaskUnnown</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_human_controll_1aa7cbbf261b81ddeb8ed2a51041b52246" kindref="member">nextDirection</ref><sp/>==<sp/><ref refid="class_human_controll_1aba50871e3deb9da6188ee43d3ef46065" kindref="member">mouseDirection</ref>)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!sensorData.<ref refid="struct_sensor_data_1a1a6a48546a1fece90c78c2b1704b9ee3" kindref="member">wallDetected</ref>){</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_human_controll_1aa7cbbf261b81ddeb8ed2a51041b52246" kindref="member">nextDirection</ref><sp/>=<sp/><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaac70c33bc5461cd83bab03a1fb84ed21a" kindref="member">DirectionUnnown</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="si_8h_1a8564c478026655cd8718601a4514e1b7ae204c9c3e62b1e9a6b60e40cd05256c5" kindref="member">Forward</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="si_8h_1a8564c478026655cd8718601a4514e1b7a10b9ec1e134717a2f8f03a01eb48cd80" kindref="member">TaskUnnown</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="si_8h_1a8564c478026655cd8718601a4514e1b7" kindref="member">Task</ref><sp/>task<sp/>=<sp/><ref refid="class_human_controll_1aba50871e3deb9da6188ee43d3ef46065" kindref="member">mouseDirection</ref><sp/>&gt;<sp/><ref refid="class_human_controll_1aa7cbbf261b81ddeb8ed2a51041b52246" kindref="member">nextDirection</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_human_controll_1aba50871e3deb9da6188ee43d3ef46065" kindref="member">mouseDirection</ref><sp/>=<sp/><ref refid="class_human_controll_1aa7cbbf261b81ddeb8ed2a51041b52246" kindref="member">nextDirection</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>task;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_human_controll_1aab90c06e0820ab85915206d4a6137a6f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_human_controll_1aab90c06e0820ab85915206d4a6137a6f" kindref="member">HumanControll::SetDirection</ref>(<ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref><sp/>d){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_human_controll_1aa7cbbf261b81ddeb8ed2a51041b52246" kindref="member">nextDirection</ref><sp/>=<sp/>d;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="humancontroll.cpp"/>
+  </compounddef>
+</doxygen>

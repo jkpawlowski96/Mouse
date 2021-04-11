@@ -1,0 +1,4 @@
+<map id="Map::FindPaths" name="Map::FindPaths">
+<area shape="rect" id="node1" title="Get vector of paths by localizations in vector." alt="" coords="221,5,336,32"/>
+<area shape="rect" id="node2" href="$class_map.html#a610b39d483eea9faae04ba337daab7fa" title="Update/refresh connections in specyfic paths." alt="" coords="5,5,173,32"/>
+</map>

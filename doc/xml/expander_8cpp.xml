@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="expander_8cpp" kind="file" language="C++">
+    <compoundname>expander.cpp</compoundname>
+    <includes refid="expander_8h" local="yes">expander.h</includes>
+    <incdepgraph>
+      <node id="30">
+        <label>QtNumeric</label>
+      </node>
+      <node id="24">
+        <label>QVector2D</label>
+      </node>
+      <node id="29">
+        <label>limits</label>
+      </node>
+      <node id="20">
+        <label>QDateTime</label>
+      </node>
+      <node id="11">
+        <label>QObject</label>
+      </node>
+      <node id="6">
+        <label>stdlib.h</label>
+      </node>
+      <node id="10">
+        <label>qcustomplot.h</label>
+        <link refid="qcustomplot_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>QStack</label>
+      </node>
+      <node id="28">
+        <label>qmath.h</label>
+      </node>
+      <node id="1">
+        <label>expander.cpp</label>
+        <link refid="expander_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="32">
+        <label>sensor_data.h</label>
+        <link refid="sensor__data_8h"/>
+      </node>
+      <node id="2">
+        <label>expander.h</label>
+        <link refid="expander_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>QFlags</label>
+      </node>
+      <node id="26">
+        <label>QCache</label>
+      </node>
+      <node id="14">
+        <label>QPainter</label>
+      </node>
+      <node id="16">
+        <label>QMouseEvent</label>
+      </node>
+      <node id="12">
+        <label>QPointer</label>
+      </node>
+      <node id="23">
+        <label>QDebug</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+      <node id="13">
+        <label>QWidget</label>
+      </node>
+      <node id="19">
+        <label>QString</label>
+      </node>
+      <node id="4">
+        <label>geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>time.h</label>
+      </node>
+      <node id="27">
+        <label>QMargins</label>
+      </node>
+      <node id="31">
+        <label>QtPrintSupport/QtPrintSupport</label>
+      </node>
+      <node id="17">
+        <label>QPixmap</label>
+      </node>
+      <node id="3">
+        <label>si.h</label>
+        <link refid="si_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>stdio.h</label>
+      </node>
+      <node id="15">
+        <label>QPaintEvent</label>
+      </node>
+      <node id="8">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>memory</label>
+      </node>
+      <node id="18">
+        <label>QVector</label>
+      </node>
+      <node id="21">
+        <label>QMultiMap</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="expander_8h" kindref="compound">expander.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_expander_1a019c4cd00bcf2c8dab680af3d92ebcbc" refkind="member"><highlight class="normal"><ref refid="class_expander_1a019c4cd00bcf2c8dab680af3d92ebcbc" kindref="member">Expander::Expander</ref>()</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_path" kindref="compound">Path&lt;int&gt;</ref><sp/>path(<ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dac5f8b58110236bdfd956a108f5c45730" kindref="member">Unnown</ref>);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>path.<ref refid="struct_path_1ab5a37001eb09cf5c7dfb43338b46fd17" kindref="member">localization</ref>.x=0;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>path.<ref refid="struct_path_1ab5a37001eb09cf5c7dfb43338b46fd17" kindref="member">localization</ref>.y=0;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref><sp/>=<sp/>make_shared&lt;Path&lt;int&gt;&gt;(path);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_expander_1a3c94a32fa9d3fa7a583609e20c4c1682" kindref="member">pathList</ref>.push_back(<ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref>);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref><sp/>=<sp/><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2" kindref="member">Up</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_expander_1ae87a3f6bccca98e9fa3b39b6f32b0da9" refkind="member"><highlight class="normal"><ref refid="si_8h_1a8564c478026655cd8718601a4514e1b7" kindref="member">Task</ref><sp/><ref refid="class_expander_1ae87a3f6bccca98e9fa3b39b6f32b0da9" kindref="member">Expander::Logic</ref>(<ref refid="struct_sensor_data" kindref="compound">SensorData</ref><sp/>sensorData){</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sensorData.<ref refid="struct_sensor_data_1a1a6a48546a1fece90c78c2b1704b9ee3" kindref="member">wallDetected</ref>){</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref>-&gt;acces[<ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref>]<sp/>=<sp/><ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dae9dc4935ee596f33afde5762140c661c" kindref="member">Forbiden</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref>-&gt;next[<ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref>]<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//new<sp/>path<sp/>ahead</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>newLoc<sp/>=<sp/><ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref>-&gt;localization;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref>==<ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2" kindref="member">Up</ref>)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newLoc.y<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref>==<ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaabcf8c79e9a5f5f9d606fb35645a0fb27" kindref="member">Down</ref>)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newLoc.y<sp/>-=<sp/>1;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref>==<ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaa9d4d8b0b72fc2659da772d761a3c5ecb" kindref="member">Left</ref>)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newLoc.x<sp/>-=<sp/>1;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref>==<ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaad48f7af8c070184f3774c8e85854eb66" kindref="member">Right</ref>)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newLoc.x<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shared_ptr&lt;Path&lt;int&gt;&gt;<sp/>newPath<sp/>=<sp/><ref refid="class_expander_1aa7b7d5bfc67172f3ec47aa78466dbe5a" kindref="member">GetPathByLoc</ref>(newLoc);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(newPath<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newPath<sp/>=<sp/>make_shared&lt;Path&lt;int&gt;&gt;(<ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dac5f8b58110236bdfd956a108f5c45730" kindref="member">Unnown</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newPath-&gt;localization<sp/>=<sp/>newLoc;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_expander_1a3c94a32fa9d3fa7a583609e20c4c1682" kindref="member">pathList</ref>.push_back(newPath);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref><sp/>_d<sp/>=<sp/><ref refid="geometry_8cpp_1af1435e77f75031bb0bd2296a923c9ec4" kindref="member">TurnAroundDirection</ref>(<ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref>-&gt;acces[<ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref>]<sp/>=<sp/><ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0da4520b0236b62bed6c4529ec77b8e2543" kindref="member">Allowed</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newPath-&gt;acces[_d]<sp/>=<sp/><ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0da4520b0236b62bed6c4529ec77b8e2543" kindref="member">Allowed</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref>-&gt;next[<ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref>]<sp/>=<sp/>newPath;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newPath-&gt;next[_d]=<sp/><ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref><sp/>=<sp/>newPath;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="si_8h_1a8564c478026655cd8718601a4514e1b7ae204c9c3e62b1e9a6b60e40cd05256c5" kindref="member">Forward</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>taskDirection<sp/>=<sp/><ref refid="class_expander_1a5c9fd9863c6b709d8ad6abad05a8c073" kindref="member">NearestPathToUnnown</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(taskDirection<sp/>==<sp/><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaac70c33bc5461cd83bab03a1fb84ed21a" kindref="member">DirectionUnnown</ref>)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;4;i++){</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref>-&gt;acces[i]==<ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dac5f8b58110236bdfd956a108f5c45730" kindref="member">Unnown</ref>)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>taskDirection=<ref refid="geometry_8cpp_1a61962e8d7ea292ce72316170122aa2fb" kindref="member">DirectionFromInt</ref>(i);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref><sp/>==<sp/>taskDirection){</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref><sp/>=<sp/><ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref>-&gt;next[taskDirection];</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="si_8h_1a8564c478026655cd8718601a4514e1b7ae204c9c3e62b1e9a6b60e40cd05256c5" kindref="member">Forward</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="si_8h_1a8564c478026655cd8718601a4514e1b7" kindref="member">Task</ref><sp/>task<sp/>=<sp/><ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref><sp/>&gt;<sp/>taskDirection;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(task==<ref refid="si_8h_1a8564c478026655cd8718601a4514e1b7a71a430c6d5330629f5c6c5373553bb63" kindref="member">RotateLeft</ref>)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref><sp/>=<sp/><ref refid="geometry_8cpp_1a0dc9f6b40d25cf8616686f98e47fdf77" kindref="member">RotateDirectionLeft</ref>(<ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(task==<ref refid="si_8h_1a8564c478026655cd8718601a4514e1b7a82a1fed01fbf25cc855cd02b12b6f63c" kindref="member">RotateRight</ref>)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref><sp/>=<sp/><ref refid="geometry_8cpp_1ab7059afff94c264c019615f0a68c96b5" kindref="member">RotateDirectionRight</ref>(<ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(task==<ref refid="si_8h_1a8564c478026655cd8718601a4514e1b7a4a3ae1217253da6a37e695ce19e883d3" kindref="member">TurnAround</ref>)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref><sp/>=<sp/><ref refid="geometry_8cpp_1af1435e77f75031bb0bd2296a923c9ec4" kindref="member">TurnAroundDirection</ref>(<ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>task;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="class_expander_1a5f4d9f016e0a1a2156bd34e99f3ff987" refkind="member"><highlight class="normal">shared_ptr&lt;Path&lt;int&gt;&gt;<sp/><ref refid="class_expander_1a5f4d9f016e0a1a2156bd34e99f3ff987" kindref="member">Expander::FirstUnnown</ref>(){</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>path:<sp/><ref refid="class_expander_1a3c94a32fa9d3fa7a583609e20c4c1682" kindref="member">pathList</ref>)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;4;i++)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(path-&gt;acces[i]==<ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dac5f8b58110236bdfd956a108f5c45730" kindref="member">Unnown</ref>)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>path;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="class_expander_1aff009bd0ad90f2d37dc9bc803b315167" refkind="member"><highlight class="normal"><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref><sp/><ref refid="class_expander_1aff009bd0ad90f2d37dc9bc803b315167" kindref="member">Expander::NearestPath</ref>(shared_ptr&lt;<ref refid="struct_path" kindref="compound">Path&lt;int&gt;</ref>&gt;<sp/>target){</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(target-&gt;localization<sp/>==<sp/><ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref>-&gt;localization)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaac70c33bc5461cd83bab03a1fb84ed21a" kindref="member">DirectionUnnown</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;ExpanderPath&gt;<sp/>nodes;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d=0;<sp/>d&lt;4;<sp/>d++){</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref>-&gt;next[d]<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_expander_path" kindref="compound">ExpanderPath</ref><sp/>_ep;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_ep.<ref refid="struct_expander_path_1a1a931915c102b9249561e7426e1734cb" kindref="member">path</ref><sp/>=<sp/><ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref>-&gt;next[d];</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_ep.<ref refid="struct_expander_path_1a900996a46bbc238e3139b80001f0fa2e" kindref="member">origin</ref><sp/>=<sp/><ref refid="geometry_8cpp_1a61962e8d7ea292ce72316170122aa2fb" kindref="member">DirectionFromInt</ref>(d);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nodes.push_back(_ep);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(</highlight><highlight class="keyword">true</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>find<sp/>target</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;ExpanderPath&gt;<sp/>newNodes;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>new<sp/>nodes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;ep<sp/>:<sp/>nodes){</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d=0;<sp/>d&lt;4;<sp/>d++){</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ep.path-&gt;next[d]<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_expander_path" kindref="compound">ExpanderPath</ref><sp/>_ep;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_ep.<ref refid="struct_expander_path_1a1a931915c102b9249561e7426e1734cb" kindref="member">path</ref><sp/>=<sp/>ep.path-&gt;next[d];</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_ep.<ref refid="struct_expander_path_1a900996a46bbc238e3139b80001f0fa2e" kindref="member">origin</ref><sp/>=<sp/>ep.origin;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newNodes.push_back(_ep);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;ep<sp/>:<sp/>nodes){</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ep.path-&gt;localization<sp/>==<sp/>target-&gt;localization){</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ep.origin;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nodes<sp/>=<sp/>newNodes;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="class_expander_1a5c9fd9863c6b709d8ad6abad05a8c073" refkind="member"><highlight class="normal"><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref><sp/><ref refid="class_expander_1a5c9fd9863c6b709d8ad6abad05a8c073" kindref="member">Expander::NearestPathToUnnown</ref>(){</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_expander_path" kindref="compound">ExpanderPath</ref><sp/>ep;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>ep.<ref refid="struct_expander_path_1a1a931915c102b9249561e7426e1734cb" kindref="member">path</ref><sp/>=<sp/><ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>ep.<ref refid="struct_expander_path_1a900996a46bbc238e3139b80001f0fa2e" kindref="member">origin</ref><sp/>=<sp/><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aaac70c33bc5461cd83bab03a1fb84ed21a" kindref="member">DirectionUnnown</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;ExpanderPath&gt;<sp/>nodes<sp/>={ep};</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d=0;<sp/>d&lt;4;<sp/>d++){</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref>-&gt;next[d]<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_expander_path" kindref="compound">ExpanderPath</ref><sp/>_ep;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_ep.<ref refid="struct_expander_path_1a1a931915c102b9249561e7426e1734cb" kindref="member">path</ref><sp/>=<sp/><ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref>-&gt;next[d];</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_ep.<ref refid="struct_expander_path_1a900996a46bbc238e3139b80001f0fa2e" kindref="member">origin</ref><sp/>=<sp/><ref refid="geometry_8cpp_1a61962e8d7ea292ce72316170122aa2fb" kindref="member">DirectionFromInt</ref>(d);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nodes.push_back(_ep);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(</highlight><highlight class="keyword">true</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>find<sp/>target</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;ExpanderPath&gt;<sp/>newNodes;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>new<sp/>nodes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;ep<sp/>:<sp/>nodes){</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d=0;<sp/>d&lt;4;<sp/>d++){</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ep.<ref refid="struct_expander_path_1a1a931915c102b9249561e7426e1734cb" kindref="member">path</ref>-&gt;next[d]<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_expander_path" kindref="compound">ExpanderPath</ref><sp/>_ep;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_ep.<ref refid="struct_expander_path_1a1a931915c102b9249561e7426e1734cb" kindref="member">path</ref><sp/>=<sp/>ep.<ref refid="struct_expander_path_1a1a931915c102b9249561e7426e1734cb" kindref="member">path</ref>-&gt;next[d];</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_ep.<ref refid="struct_expander_path_1a900996a46bbc238e3139b80001f0fa2e" kindref="member">origin</ref><sp/>=<sp/>ep.<ref refid="struct_expander_path_1a900996a46bbc238e3139b80001f0fa2e" kindref="member">origin</ref>;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newNodes.push_back(_ep);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;ep<sp/>:<sp/>nodes){</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;4;i++)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ep.<ref refid="struct_expander_path_1a1a931915c102b9249561e7426e1734cb" kindref="member">path</ref>-&gt;acces[i]==<ref refid="geometry_8h_1a65cbcc4c6a0978be9e0985af854d7a0dac5f8b58110236bdfd956a108f5c45730" kindref="member">Unnown</ref>){</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ep.<ref refid="struct_expander_path_1a900996a46bbc238e3139b80001f0fa2e" kindref="member">origin</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nodes<sp/>=<sp/>newNodes;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="class_expander_1aa7b7d5bfc67172f3ec47aa78466dbe5a" refkind="member"><highlight class="normal">shared_ptr&lt;Path&lt;int&gt;&gt;<sp/><ref refid="class_expander_1aa7b7d5bfc67172f3ec47aa78466dbe5a" kindref="member">Expander::GetPathByLoc</ref>(<ref refid="struct_point" kindref="compound">Point&lt;int&gt;</ref><sp/>loc){</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>path:<sp/><ref refid="class_expander_1a3c94a32fa9d3fa7a583609e20c4c1682" kindref="member">pathList</ref>)</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(path-&gt;localization<sp/>==<sp/>loc)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>path;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="expander.cpp"/>
+  </compounddef>
+</doxygen>

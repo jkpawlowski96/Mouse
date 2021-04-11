@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="expander_8h" kind="file" language="C++">
+    <compoundname>expander.h</compoundname>
+    <includes refid="si_8h" local="yes">si.h</includes>
+    <includedby refid="expander_8cpp" local="yes">expander.cpp</includedby>
+    <includedby refid="humancontroll_8h" local="yes">humancontroll.h</includedby>
+    <includedby refid="simulator_8h" local="yes">simulator.h</includedby>
+    <incdepgraph>
+      <node id="29">
+        <label>QtNumeric</label>
+      </node>
+      <node id="23">
+        <label>QVector2D</label>
+      </node>
+      <node id="28">
+        <label>limits</label>
+      </node>
+      <node id="19">
+        <label>QDateTime</label>
+      </node>
+      <node id="10">
+        <label>QObject</label>
+      </node>
+      <node id="5">
+        <label>stdlib.h</label>
+      </node>
+      <node id="9">
+        <label>qcustomplot.h</label>
+        <link refid="qcustomplot_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>QStack</label>
+      </node>
+      <node id="27">
+        <label>qmath.h</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="31">
+        <label>sensor_data.h</label>
+        <link refid="sensor__data_8h"/>
+      </node>
+      <node id="1">
+        <label>expander.h</label>
+        <link refid="expander_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>QFlags</label>
+      </node>
+      <node id="25">
+        <label>QCache</label>
+      </node>
+      <node id="13">
+        <label>QPainter</label>
+      </node>
+      <node id="15">
+        <label>QMouseEvent</label>
+      </node>
+      <node id="11">
+        <label>QPointer</label>
+      </node>
+      <node id="22">
+        <label>QDebug</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+      <node id="12">
+        <label>QWidget</label>
+      </node>
+      <node id="18">
+        <label>QString</label>
+      </node>
+      <node id="3">
+        <label>geometry.h</label>
+        <link refid="geometry_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>time.h</label>
+      </node>
+      <node id="26">
+        <label>QMargins</label>
+      </node>
+      <node id="30">
+        <label>QtPrintSupport/QtPrintSupport</label>
+      </node>
+      <node id="16">
+        <label>QPixmap</label>
+      </node>
+      <node id="2">
+        <label>si.h</label>
+        <link refid="si_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>stdio.h</label>
+      </node>
+      <node id="14">
+        <label>QPaintEvent</label>
+      </node>
+      <node id="7">
+        <label>map.h</label>
+        <link refid="map_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>memory</label>
+      </node>
+      <node id="17">
+        <label>QVector</label>
+      </node>
+      <node id="20">
+        <label>QMultiMap</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>expander.cpp</label>
+        <link refid="expander_8cpp"/>
+      </node>
+      <node id="1">
+        <label>expander.h</label>
+        <link refid="expander_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>humancontroll.cpp</label>
+        <link refid="humancontroll_8cpp"/>
+      </node>
+      <node id="6">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="8">
+        <label>mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="3">
+        <label>humancontroll.h</label>
+        <link refid="humancontroll_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>simulator.h</label>
+        <link refid="simulator_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>simulator.cpp</label>
+        <link refid="simulator_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_expander_path" prot="public">ExpanderPath</innerclass>
+    <innerclass refid="class_expander" prot="public">Expander</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>EXPANDER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXPANDER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="si_8h" kindref="compound">si.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="struct_expander_path" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_expander_path" kindref="compound">ExpanderPath</ref>{</highlight></codeline>
+<codeline lineno="11" refid="struct_expander_path_1a1a931915c102b9249561e7426e1734cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>shared_ptr&lt;Path&lt;int&gt;&gt;<sp/><ref refid="struct_expander_path_1a1a931915c102b9249561e7426e1734cb" kindref="member">path</ref>;</highlight></codeline>
+<codeline lineno="12" refid="struct_expander_path_1a900996a46bbc238e3139b80001f0fa2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref><sp/><ref refid="struct_expander_path_1a900996a46bbc238e3139b80001f0fa2e" kindref="member">origin</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_expander" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_expander" kindref="compound">Expander</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_s_i" kindref="compound">SI</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_expander_1a019c4cd00bcf2c8dab680af3d92ebcbc" kindref="member">Expander</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="si_8h_1a8564c478026655cd8718601a4514e1b7" kindref="member">Task</ref><sp/><ref refid="class_expander_1ae87a3f6bccca98e9fa3b39b6f32b0da9" kindref="member">Logic</ref>(<ref refid="struct_sensor_data" kindref="compound">SensorData</ref><sp/>sensorData);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>shared_ptr&lt;Path&lt;int&gt;&gt;<sp/><ref refid="class_expander_1a5f4d9f016e0a1a2156bd34e99f3ff987" kindref="member">FirstUnnown</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref><sp/><ref refid="class_expander_1aff009bd0ad90f2d37dc9bc803b315167" kindref="member">NearestPath</ref>(shared_ptr&lt;<ref refid="struct_path" kindref="compound">Path&lt;int&gt;</ref>&gt;<sp/>target);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref><sp/><ref refid="class_expander_1a5c9fd9863c6b709d8ad6abad05a8c073" kindref="member">NearestPathToUnnown</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>shared_ptr&lt;Path&lt;int&gt;&gt;<sp/><ref refid="class_expander_1aa7b7d5bfc67172f3ec47aa78466dbe5a" kindref="member">GetPathByLoc</ref>(<ref refid="struct_point" kindref="compound">Point&lt;int&gt;</ref><sp/>loc);</highlight></codeline>
+<codeline lineno="40" refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>shared_ptr&lt;Path&lt;int&gt;&gt;<sp/><ref refid="class_expander_1a7bc6040112b83c9f5a1f83a571378096" kindref="member">nowPath</ref>;</highlight></codeline>
+<codeline lineno="41" refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="geometry_8h_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref><sp/><ref refid="class_expander_1a859ba68af4df072dfc93bd36bf089021" kindref="member">nowDireciton</ref>;</highlight></codeline>
+<codeline lineno="42" refid="class_expander_1a3c94a32fa9d3fa7a583609e20c4c1682" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;shared_ptr&lt;Path&lt;int&gt;&gt;&gt;<sp/><ref refid="class_expander_1a3c94a32fa9d3fa7a583609e20c4c1682" kindref="member">pathList</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EXPANDER_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="expander.h"/>
+  </compounddef>
+</doxygen>

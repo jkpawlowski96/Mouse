@@ -1,0 +1,177 @@
+\hypertarget{class_q_c_p_data}{}\doxysection{QCPData Class Reference}
+\label{class_q_c_p_data}\index{QCPData@{QCPData}}
+
+
+Holds the data of one single data point for \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}}.  
+
+
+
+
+{\ttfamily \#include $<$qcustomplot.\+h$>$}
+
+
+
+Collaboration diagram for QCPData\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_q_c_p_data__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_q_c_p_data_a1f06d624e36ba0ed72ac36d42aa5c7ee}{QCPData}} ()
+\item 
+\mbox{\hyperlink{class_q_c_p_data_aa274181ae8de2a0907ba5464d3c2c103}{QCPData}} (double \mbox{\hyperlink{class_q_c_p_data_a2f5ba9aca61bb74f88516e148a4cf71b}{key}}, double \mbox{\hyperlink{class_q_c_p_data_aefe1ecf8fa2e34ed875b67523e542373}{value}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_q_c_p_data_a2f5ba9aca61bb74f88516e148a4cf71b}{key}}
+\item 
+double \mbox{\hyperlink{class_q_c_p_data_aefe1ecf8fa2e34ed875b67523e542373}{value}}
+\item 
+double \mbox{\hyperlink{class_q_c_p_data_ae468c3808107c2fd23052481156ab5b5}{key\+Error\+Plus}}
+\item 
+double \mbox{\hyperlink{class_q_c_p_data_af107d650b8ee5c3b2961ecddcfb1bccb}{key\+Error\+Minus}}
+\item 
+double \mbox{\hyperlink{class_q_c_p_data_ad26912552d03485ea20d91dcad16aa8f}{value\+Error\+Plus}}
+\item 
+double \mbox{\hyperlink{class_q_c_p_data_a51d8f42bf4d49a1f263531e70cadd6a3}{value\+Error\+Minus}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Holds the data of one single data point for \mbox{\hyperlink{class_q_c_p_graph}{QCPGraph}}. 
+
+The container for storing multiple data points is \mbox{\hyperlink{qcustomplot_8h_a84a9c4a4c2216ccfdcb5f3067cda76e3}{QCPData\+Map}}.
+
+The stored data is\+: \begin{DoxyItemize}
+\item {\itshape key\+:} coordinate on the key axis of this data point \item {\itshape value\+:} coordinate on the value axis of this data point \item {\itshape key\+Error\+Minus\+:} negative error in the key dimension (for error bars) \item {\itshape key\+Error\+Plus\+:} positive error in the key dimension (for error bars) \item {\itshape value\+Error\+Minus\+:} negative error in the value dimension (for error bars) \item {\itshape value\+Error\+Plus\+:} positive error in the value dimension (for error bars)\end{DoxyItemize}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{qcustomplot_8h_a84a9c4a4c2216ccfdcb5f3067cda76e3}{QCPData\+Map}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 2467 of file qcustomplot.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_q_c_p_data_a1f06d624e36ba0ed72ac36d42aa5c7ee}\label{class_q_c_p_data_a1f06d624e36ba0ed72ac36d42aa5c7ee}} 
+\index{QCPData@{QCPData}!QCPData@{QCPData}}
+\index{QCPData@{QCPData}!QCPData@{QCPData}}
+\doxysubsubsection{\texorpdfstring{QCPData()}{QCPData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily QCPData\+::\+QCPData (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructs a data point with key, value and all errors set to zero. 
+
+Definition at line 14395 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14395                  :}
+\DoxyCodeLine{14396   \mbox{\hyperlink{class_q_c_p_data_a2f5ba9aca61bb74f88516e148a4cf71b}{key}}(0),}
+\DoxyCodeLine{14397   \mbox{\hyperlink{class_q_c_p_data_aefe1ecf8fa2e34ed875b67523e542373}{value}}(0),}
+\DoxyCodeLine{14398   \mbox{\hyperlink{class_q_c_p_data_ae468c3808107c2fd23052481156ab5b5}{keyErrorPlus}}(0),}
+\DoxyCodeLine{14399   \mbox{\hyperlink{class_q_c_p_data_af107d650b8ee5c3b2961ecddcfb1bccb}{keyErrorMinus}}(0),}
+\DoxyCodeLine{14400   \mbox{\hyperlink{class_q_c_p_data_ad26912552d03485ea20d91dcad16aa8f}{valueErrorPlus}}(0),}
+\DoxyCodeLine{14401   \mbox{\hyperlink{class_q_c_p_data_a51d8f42bf4d49a1f263531e70cadd6a3}{valueErrorMinus}}(0)}
+\DoxyCodeLine{14402 \{}
+\DoxyCodeLine{14403 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_q_c_p_data_aa274181ae8de2a0907ba5464d3c2c103}\label{class_q_c_p_data_aa274181ae8de2a0907ba5464d3c2c103}} 
+\index{QCPData@{QCPData}!QCPData@{QCPData}}
+\index{QCPData@{QCPData}!QCPData@{QCPData}}
+\doxysubsubsection{\texorpdfstring{QCPData()}{QCPData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily QCPData\+::\+QCPData (\begin{DoxyParamCaption}\item[{double}]{key,  }\item[{double}]{value }\end{DoxyParamCaption})}
+
+Constructs a data point with the specified {\itshape key} and {\itshape value}. All errors are set to zero. 
+
+Definition at line 14408 of file qcustomplot.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14408                                          :}
+\DoxyCodeLine{14409   \mbox{\hyperlink{class_q_c_p_data_a2f5ba9aca61bb74f88516e148a4cf71b}{key}}(\mbox{\hyperlink{class_q_c_p_data_a2f5ba9aca61bb74f88516e148a4cf71b}{key}}),}
+\DoxyCodeLine{14410   \mbox{\hyperlink{class_q_c_p_data_aefe1ecf8fa2e34ed875b67523e542373}{value}}(\mbox{\hyperlink{class_q_c_p_data_aefe1ecf8fa2e34ed875b67523e542373}{value}}),}
+\DoxyCodeLine{14411   \mbox{\hyperlink{class_q_c_p_data_ae468c3808107c2fd23052481156ab5b5}{keyErrorPlus}}(0),}
+\DoxyCodeLine{14412   \mbox{\hyperlink{class_q_c_p_data_af107d650b8ee5c3b2961ecddcfb1bccb}{keyErrorMinus}}(0),}
+\DoxyCodeLine{14413   \mbox{\hyperlink{class_q_c_p_data_ad26912552d03485ea20d91dcad16aa8f}{valueErrorPlus}}(0),}
+\DoxyCodeLine{14414   \mbox{\hyperlink{class_q_c_p_data_a51d8f42bf4d49a1f263531e70cadd6a3}{valueErrorMinus}}(0)}
+\DoxyCodeLine{14415 \{}
+\DoxyCodeLine{14416 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_q_c_p_data_a2f5ba9aca61bb74f88516e148a4cf71b}\label{class_q_c_p_data_a2f5ba9aca61bb74f88516e148a4cf71b}} 
+\index{QCPData@{QCPData}!key@{key}}
+\index{key@{key}!QCPData@{QCPData}}
+\doxysubsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily double QCPData\+::key}
+
+
+
+Definition at line 2472 of file qcustomplot.\+h.
+
+\mbox{\Hypertarget{class_q_c_p_data_af107d650b8ee5c3b2961ecddcfb1bccb}\label{class_q_c_p_data_af107d650b8ee5c3b2961ecddcfb1bccb}} 
+\index{QCPData@{QCPData}!keyErrorMinus@{keyErrorMinus}}
+\index{keyErrorMinus@{keyErrorMinus}!QCPData@{QCPData}}
+\doxysubsubsection{\texorpdfstring{keyErrorMinus}{keyErrorMinus}}
+{\footnotesize\ttfamily double QCPData\+::key\+Error\+Minus}
+
+
+
+Definition at line 2473 of file qcustomplot.\+h.
+
+\mbox{\Hypertarget{class_q_c_p_data_ae468c3808107c2fd23052481156ab5b5}\label{class_q_c_p_data_ae468c3808107c2fd23052481156ab5b5}} 
+\index{QCPData@{QCPData}!keyErrorPlus@{keyErrorPlus}}
+\index{keyErrorPlus@{keyErrorPlus}!QCPData@{QCPData}}
+\doxysubsubsection{\texorpdfstring{keyErrorPlus}{keyErrorPlus}}
+{\footnotesize\ttfamily double QCPData\+::key\+Error\+Plus}
+
+
+
+Definition at line 2473 of file qcustomplot.\+h.
+
+\mbox{\Hypertarget{class_q_c_p_data_aefe1ecf8fa2e34ed875b67523e542373}\label{class_q_c_p_data_aefe1ecf8fa2e34ed875b67523e542373}} 
+\index{QCPData@{QCPData}!value@{value}}
+\index{value@{value}!QCPData@{QCPData}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily double QCPData\+::value}
+
+
+
+Definition at line 2472 of file qcustomplot.\+h.
+
+\mbox{\Hypertarget{class_q_c_p_data_a51d8f42bf4d49a1f263531e70cadd6a3}\label{class_q_c_p_data_a51d8f42bf4d49a1f263531e70cadd6a3}} 
+\index{QCPData@{QCPData}!valueErrorMinus@{valueErrorMinus}}
+\index{valueErrorMinus@{valueErrorMinus}!QCPData@{QCPData}}
+\doxysubsubsection{\texorpdfstring{valueErrorMinus}{valueErrorMinus}}
+{\footnotesize\ttfamily double QCPData\+::value\+Error\+Minus}
+
+
+
+Definition at line 2474 of file qcustomplot.\+h.
+
+\mbox{\Hypertarget{class_q_c_p_data_ad26912552d03485ea20d91dcad16aa8f}\label{class_q_c_p_data_ad26912552d03485ea20d91dcad16aa8f}} 
+\index{QCPData@{QCPData}!valueErrorPlus@{valueErrorPlus}}
+\index{valueErrorPlus@{valueErrorPlus}!QCPData@{QCPData}}
+\doxysubsubsection{\texorpdfstring{valueErrorPlus}{valueErrorPlus}}
+{\footnotesize\ttfamily double QCPData\+::value\+Error\+Plus}
+
+
+
+Definition at line 2474 of file qcustomplot.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{qcustomplot_8h}{qcustomplot.\+h}}\item 
+\mbox{\hyperlink{qcustomplot_8cpp}{qcustomplot.\+cpp}}\end{DoxyCompactItemize}
