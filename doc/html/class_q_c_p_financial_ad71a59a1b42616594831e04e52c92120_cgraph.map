@@ -1,21 +1,21 @@
 <map id="QCPFinancial::draw" name="QCPFinancial::draw">
-<area shape="rect" id="node1" title=" " alt="" coords="5,190,143,217"/>
-<area shape="rect" id="node2" href="$class_q_c_p_financial.html#a71f5081da0e5ab9c40a488ad40cff122" title=" " alt="" coords="191,190,419,217"/>
-<area shape="rect" id="node18" href="$class_q_c_p_financial.html#a3c3007a7434e29d042c77ccf4f497e66" title=" " alt="" coords="211,140,398,166"/>
-<area shape="rect" id="node19" href="$class_q_c_p_financial.html#ab74167a55319771c5da0e06406c2c2f2" title=" " alt="" coords="221,242,388,283"/>
-<area shape="rect" id="node3" href="$class_q_c_p_axis.html#af15d1b3a7f7e9b53d759d3ccff1fe4b4" title=" " alt="" coords="467,266,625,293"/>
-<area shape="rect" id="node8" href="$class_q_c_p_axis.html#ab988ef4538e2655bb77bd138189cd42e" title=" " alt="" coords="706,38,850,65"/>
-<area shape="rect" id="node13" href="$class_q_c_p_painter.html#a0b4b1b9bd495e182c731774dc800e6e0" title=" " alt="" coords="471,165,621,192"/>
-<area shape="rect" id="node14" href="$class_q_c_p_abstract_plottable.html#a2cdd6f0dd5e9a979037f86b4000d9cfe" title=" " alt="" coords="471,34,621,75"/>
-<area shape="rect" id="node15" href="$class_q_c_p_painter.html#af9c7a4cd1791403901f8c5b82a150195" title=" " alt="" coords="476,317,616,344"/>
-<area shape="rect" id="node17" href="$class_q_c_p_abstract_plottable.html#af47809a644a68ffd955fb30b01fb4f2f" title=" " alt="" coords="471,99,621,140"/>
-<area shape="rect" id="node4" href="$class_q_c_p_axis.html#ae759538b7eeb12259944e75a6bc359da" title=" " alt="" coords="711,140,845,166"/>
-<area shape="rect" id="node5" href="$class_q_c_p_axis_rect.html#acefdf1abaa8a8ab681e906cc2be9581e" title=" " alt="" coords="703,190,853,217"/>
-<area shape="rect" id="node6" href="$class_q_c_p_axis_rect.html#acc4377809e79d9a089ab790f39429b0d" title=" " alt="" coords="705,241,851,268"/>
-<area shape="rect" id="node7" href="$class_q_c_p_axis_rect.html#afb4a3de02046b20b9310bdb8fca781c3" title=" " alt="" coords="714,292,842,318"/>
-<area shape="rect" id="node9" href="$class_q_c_p_axis_rect.html#a3f819d4a1b2193723d1fdafc573eea10" title=" " alt="" coords="710,342,846,369"/>
-<area shape="rect" id="node10" href="$class_q_c_p_range.html#a62326e7cc4316b96df6a60813230e63f" title=" " alt="" coords="719,393,837,420"/>
-<area shape="rect" id="node11" href="$class_q_c_p_axis_rect.html#a45dbad181cbb9f09d068dbb76c817c95" title=" " alt="" coords="713,444,843,470"/>
-<area shape="rect" id="node12" href="$class_q_c_p_axis_rect.html#a204645398a4f9d0b0189385c7c2cfb91" title=" " alt="" coords="707,89,849,116"/>
-<area shape="rect" id="node16" href="$class_q_c_p_painter.html#a7e63fbcf47e35c6f2ecd11b8fef7c7d8" title=" " alt="" coords="673,494,883,521"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,164,143,190"/>
+<area shape="rect" id="node2" href="$class_q_c_p_financial.html#a71f5081da0e5ab9c40a488ad40cff122" title=" " alt="" coords="196,164,424,190"/>
+<area shape="rect" id="node18" href="$class_q_c_p_financial.html#a3c3007a7434e29d042c77ccf4f497e66" title=" " alt="" coords="217,113,403,140"/>
+<area shape="rect" id="node19" href="$class_q_c_p_financial.html#ab74167a55319771c5da0e06406c2c2f2" title=" " alt="" coords="191,214,429,241"/>
+<area shape="rect" id="node3" href="$class_q_c_p_axis.html#af15d1b3a7f7e9b53d759d3ccff1fe4b4" title=" " alt="" coords="505,240,663,266"/>
+<area shape="rect" id="node8" href="$class_q_c_p_axis.html#ab988ef4538e2655bb77bd138189cd42e" title=" " alt="" coords="771,12,915,38"/>
+<area shape="rect" id="node13" href="$class_q_c_p_painter.html#a0b4b1b9bd495e182c731774dc800e6e0" title=" " alt="" coords="509,138,659,165"/>
+<area shape="rect" id="node14" href="$class_q_c_p_abstract_plottable.html#a2cdd6f0dd5e9a979037f86b4000d9cfe" title=" " alt="" coords="481,37,687,64"/>
+<area shape="rect" id="node15" href="$class_q_c_p_painter.html#af9c7a4cd1791403901f8c5b82a150195" title=" " alt="" coords="514,290,654,317"/>
+<area shape="rect" id="node17" href="$class_q_c_p_abstract_plottable.html#af47809a644a68ffd955fb30b01fb4f2f" title=" " alt="" coords="477,88,691,114"/>
+<area shape="rect" id="node4" href="$class_q_c_p_axis.html#ae759538b7eeb12259944e75a6bc359da" title=" " alt="" coords="777,113,910,140"/>
+<area shape="rect" id="node5" href="$class_q_c_p_axis_rect.html#acefdf1abaa8a8ab681e906cc2be9581e" title=" " alt="" coords="768,164,919,190"/>
+<area shape="rect" id="node6" href="$class_q_c_p_axis_rect.html#acc4377809e79d9a089ab790f39429b0d" title=" " alt="" coords="770,214,917,241"/>
+<area shape="rect" id="node7" href="$class_q_c_p_axis_rect.html#afb4a3de02046b20b9310bdb8fca781c3" title=" " alt="" coords="779,265,907,292"/>
+<area shape="rect" id="node9" href="$class_q_c_p_axis_rect.html#a3f819d4a1b2193723d1fdafc573eea10" title=" " alt="" coords="775,316,911,342"/>
+<area shape="rect" id="node10" href="$class_q_c_p_range.html#a62326e7cc4316b96df6a60813230e63f" title=" " alt="" coords="784,366,903,393"/>
+<area shape="rect" id="node11" href="$class_q_c_p_axis_rect.html#a45dbad181cbb9f09d068dbb76c817c95" title=" " alt="" coords="779,417,908,444"/>
+<area shape="rect" id="node12" href="$class_q_c_p_axis_rect.html#a204645398a4f9d0b0189385c7c2cfb91" title=" " alt="" coords="773,62,914,89"/>
+<area shape="rect" id="node16" href="$class_q_c_p_painter.html#a7e63fbcf47e35c6f2ecd11b8fef7c7d8" title=" " alt="" coords="739,468,948,494"/>
 </map>

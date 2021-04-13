@@ -1,13 +1,13 @@
 <map id="QCPLayerable::initializeParentPlot" name="QCPLayerable::initializeParentPlot">
-<area shape="rect" id="node1" title=" " alt="" coords="2004,205,2165,246"/>
-<area shape="rect" id="node2" href="$class_q_c_p_layout.html#af6dbbc24156a808da29cd1ec031729a3" title=" " alt="" coords="1771,132,1949,159"/>
-<area shape="rect" id="node16" href="$class_q_custom_plot.html#a45b99626558651a6428b83972b0b34b8" title=" " alt="" coords="1287,132,1473,159"/>
-<area shape="rect" id="node18" href="$class_q_c_p_layout_element.html#a1478899e80e8244b411e96ec3b2e5ce2" title=" " alt="" coords="1769,234,1951,275"/>
-<area shape="rect" id="node19" href="$class_q_c_p_axis_rect.html#a60b31dece805462c1b82eea2e69ba042" title=" " alt="" coords="1764,300,1956,327"/>
-<area shape="rect" id="node3" href="$class_q_c_p_layout_grid.html#adff1a2ca691ed83d2d24a4cd1fe17012" title=" " alt="" coords="1523,81,1714,108"/>
-<area shape="rect" id="node17" href="$class_q_c_p_layout_inset.html#ad61529eb576af7f04dff94abb10c745a" title=" " alt="" coords="1521,132,1716,159"/>
-<area shape="rect" id="node4" href="$class_q_c_p_legend.html#a3ab274de52d2951faea45a6d975e6b3f" title=" " alt="" coords="1307,81,1453,108"/>
-<area shape="rect" id="node5" href="$class_q_c_p_abstract_plottable.html#a70f8cabfd808f7d5204b9f18c45c13f5" title=" " alt="" coords="1088,74,1239,115"/>
+<area shape="rect" id="node1" title=" " alt="" coords="2155,208,2377,235"/>
+<area shape="rect" id="node2" href="$class_q_c_p_layout.html#af6dbbc24156a808da29cd1ec031729a3" title=" " alt="" coords="1889,132,2066,159"/>
+<area shape="rect" id="node16" href="$class_q_custom_plot.html#a45b99626558651a6428b83972b0b34b8" title=" " alt="" coords="1371,132,1557,159"/>
+<area shape="rect" id="node18" href="$class_q_c_p_layout_element.html#a1478899e80e8244b411e96ec3b2e5ce2" title=" " alt="" coords="1848,233,2107,260"/>
+<area shape="rect" id="node19" href="$class_q_c_p_axis_rect.html#a60b31dece805462c1b82eea2e69ba042" title=" " alt="" coords="1881,284,2073,311"/>
+<area shape="rect" id="node3" href="$class_q_c_p_layout_grid.html#adff1a2ca691ed83d2d24a4cd1fe17012" title=" " alt="" coords="1607,81,1798,108"/>
+<area shape="rect" id="node17" href="$class_q_c_p_layout_inset.html#ad61529eb576af7f04dff94abb10c745a" title=" " alt="" coords="1605,132,1800,159"/>
+<area shape="rect" id="node4" href="$class_q_c_p_legend.html#a3ab274de52d2951faea45a6d975e6b3f" title=" " alt="" coords="1391,81,1537,108"/>
+<area shape="rect" id="node5" href="$class_q_c_p_abstract_plottable.html#a70f8cabfd808f7d5204b9f18c45c13f5" title=" " alt="" coords="1088,81,1323,108"/>
 <area shape="rect" id="node6" href="$class_q_custom_plot.html#ab7ad9174f701f9c6f64e378df77927a6" title=" " alt="" coords="860,81,1040,108"/>
 <area shape="rect" id="node7" href="$class_q_custom_plot.html#a6fb2873d35a8a8089842d81a70a54167" title=" " alt="" coords="648,81,812,108"/>
 <area shape="rect" id="node8" href="$class_simulator.html#a214b53f24cdf3663eda13331d63929bd" title=" " alt="" coords="437,31,576,57"/>

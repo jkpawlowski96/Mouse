@@ -1,12 +1,12 @@
 <map id="QCPGraph::rescaleKeyAxis" name="QCPGraph::rescaleKeyAxis">
-<area shape="rect" id="node1" title=" " alt="" coords="5,123,189,149"/>
-<area shape="rect" id="node2" href="$class_q_c_p_graph.html#ad65bc571de3bd0af36296a3cbd0d77ee" title=" " alt="" coords="237,5,408,32"/>
-<area shape="rect" id="node3" href="$class_q_c_p_abstract_plottable.html#a2cdd6f0dd5e9a979037f86b4000d9cfe" title=" " alt="" coords="247,57,398,98"/>
-<area shape="rect" id="node4" href="$class_q_c_p_axis.html#ac4058855a81f1a883cf2e754f6a6acb1" title=" " alt="" coords="491,123,607,149"/>
-<area shape="rect" id="node5" href="$class_q_c_p_axis.html#ad23e9ad97b44e9aeaf4fab8904280098" title=" " alt="" coords="251,173,394,200"/>
-<area shape="rect" id="node6" href="$class_q_c_p_axis.html#aebdfea5d44c3a0ad2b4700cd4d25b641" title=" " alt="" coords="253,224,392,251"/>
-<area shape="rect" id="node7" href="$class_q_c_p_range.html#a808751fdd9b17ef52327ba011df2e5f1" title=" " alt="" coords="458,174,641,215"/>
-<area shape="rect" id="node9" href="$class_q_c_p_range.html#a3d66288d66e1d6df3636075eb42502ee" title=" " alt="" coords="456,239,643,281"/>
-<area shape="rect" id="node10" href="$class_q_c_p_range.html#ab38bd4841c77c7bb86c9eea0f142dcc0" title=" " alt="" coords="471,305,628,332"/>
-<area shape="rect" id="node8" href="$class_q_c_p_range.html#af914a7740269b0604d0827c634a878a9" title=" " alt="" coords="691,215,841,241"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,189,133"/>
+<area shape="rect" id="node2" href="$class_q_c_p_graph.html#ad65bc571de3bd0af36296a3cbd0d77ee" title=" " alt="" coords="255,5,425,32"/>
+<area shape="rect" id="node3" href="$class_q_c_p_abstract_plottable.html#a2cdd6f0dd5e9a979037f86b4000d9cfe" title=" " alt="" coords="237,56,443,83"/>
+<area shape="rect" id="node4" href="$class_q_c_p_axis.html#ac4058855a81f1a883cf2e754f6a6acb1" title=" " alt="" coords="543,107,659,133"/>
+<area shape="rect" id="node5" href="$class_q_c_p_axis.html#ad23e9ad97b44e9aeaf4fab8904280098" title=" " alt="" coords="269,157,411,184"/>
+<area shape="rect" id="node6" href="$class_q_c_p_axis.html#aebdfea5d44c3a0ad2b4700cd4d25b641" title=" " alt="" coords="271,208,409,235"/>
+<area shape="rect" id="node7" href="$class_q_c_p_range.html#a808751fdd9b17ef52327ba011df2e5f1" title=" " alt="" coords="493,157,709,184"/>
+<area shape="rect" id="node9" href="$class_q_c_p_range.html#a3d66288d66e1d6df3636075eb42502ee" title=" " alt="" coords="491,208,711,235"/>
+<area shape="rect" id="node10" href="$class_q_c_p_range.html#ab38bd4841c77c7bb86c9eea0f142dcc0" title=" " alt="" coords="522,259,679,285"/>
+<area shape="rect" id="node8" href="$class_q_c_p_range.html#af914a7740269b0604d0827c634a878a9" title=" " alt="" coords="759,183,909,209"/>
 </map>

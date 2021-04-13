@@ -1,5 +1,5 @@
 <map id="SI" name="SI">
-<area shape="rect" id="node1" title="SI &#45; mouse controll logic." alt="" coords="120,5,235,127"/>
-<area shape="rect" id="node2" href="$class_expander.html" title="Expander SI algorithm." alt="" coords="5,175,176,355"/>
-<area shape="rect" id="node3" href="$class_human_controll.html" title="Human controlled si." alt="" coords="201,204,327,325"/>
+<area shape="rect" id="node1" title="SI &#45; mouse controll logic." alt="" coords="121,5,236,141"/>
+<area shape="rect" id="node2" href="$class_expander.html" title="Expander SI algorithm." alt="" coords="5,189,176,369"/>
+<area shape="rect" id="node3" href="$class_human_controll.html" title="Human controlled si." alt="" coords="201,211,335,347"/>
 </map>

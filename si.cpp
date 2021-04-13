@@ -4,6 +4,11 @@ SI::SI()
 {
 }
 
+SI::~SI(){
+
+}
+
+
 Task SI::Call(SensorData sensorData)
 {
     return Logic(sensorData);

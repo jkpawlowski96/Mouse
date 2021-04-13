@@ -87,10 +87,8 @@ public:
 
 private:
     bool SetMap(string mapFilePath);
-    void Loop();
     void PlotMap();
     void PlotMouse(bool init=false);
-    void PlotSI();
     void Finish();
 
     QCPGraph* DrawLine(Line<double> line, const QColor color=GRAY, const int width=2);
@@ -103,7 +101,6 @@ private:
     shared_ptr<Map> map;
     shared_ptr<Mouse> mouse;
 
-    SI * si;
     HumanControll *controll;
     QCustomPlot *plot;
     shared_ptr<QElapsedTimer> timer;

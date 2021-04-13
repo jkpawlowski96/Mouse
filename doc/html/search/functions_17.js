@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['_7emainwindow_2468',['~MainWindow',['../class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7',1,'MainWindow']]],
-  ['_7emap_2469',['~Map',['../class_map.html#aa403fbe09394ccf39747588f5168e3b2',1,'Map']]],
+  ['_7ehumancontroll_2466',['~HumanControll',['../class_human_controll.html#a1a2a1c31f78af78b74b9e206f7752bdc',1,'HumanControll']]],
+  ['_7emainwindow_2467',['~MainWindow',['../class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7',1,'MainWindow']]],
+  ['_7emap_2468',['~Map',['../class_map.html#aa403fbe09394ccf39747588f5168e3b2',1,'Map']]],
+  ['_7emouse_2469',['~Mouse',['../class_mouse.html#afdf7d8abef29c10be77ead773f964f4f',1,'Mouse']]],
   ['_7eqcpabstractitem_2470',['~QCPAbstractItem',['../class_q_c_p_abstract_item.html#a375bd1b7d3218b04a6ff7ff06fff917c',1,'QCPAbstractItem']]],
   ['_7eqcpaxis_2471',['~QCPAxis',['../class_q_c_p_axis.html#a7cfa27ea9da0bb1fe0ae995572c0b85d',1,'QCPAxis']]],
   ['_7eqcpaxispainterprivate_2472',['~QCPAxisPainterPrivate',['../class_q_c_p_axis_painter_private.html#a7c7f95313f0f78c3c3975f822a5fea35',1,'QCPAxisPainterPrivate']]],
@@ -34,5 +36,6 @@ var searchData=
   ['_7eqcpmargingroup_2499',['~QCPMarginGroup',['../class_q_c_p_margin_group.html#a42c62becdaac41406ca90f1c2a755e1c',1,'QCPMarginGroup']]],
   ['_7eqcppainter_2500',['~QCPPainter',['../class_q_c_p_painter.html#aa8491da26c0bf7704a93e2dcbb0c5ba1',1,'QCPPainter']]],
   ['_7eqcustomplot_2501',['~QCustomPlot',['../class_q_custom_plot.html#a75d9b6f599dcae706e45efd425c5499e',1,'QCustomPlot']]],
-  ['_7esimulator_2502',['~Simulator',['../class_simulator.html#a0f49aa04f42060a785adf77346b9de9f',1,'Simulator']]]
+  ['_7esi_2502',['~SI',['../class_s_i.html#a5ed576123b8f63a23f4e664c40ccda7d',1,'SI']]],
+  ['_7esimulator_2503',['~Simulator',['../class_simulator.html#a0f49aa04f42060a785adf77346b9de9f',1,'Simulator']]]
 ];

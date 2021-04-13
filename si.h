@@ -32,12 +32,17 @@ public:
      */
     SI();
     /**
+     * @brief Destroy the SI object
+     * 
+     */
+    virtual ~SI();
+    /**
      * @brief Call SI to get task
      * 
      * @param sensorData 
      * @return Task 
      */
-    virtual Task Call(SensorData sensorData);
+    Task Call(SensorData sensorData);
     /**
      * @brief Logic implementation
      * 

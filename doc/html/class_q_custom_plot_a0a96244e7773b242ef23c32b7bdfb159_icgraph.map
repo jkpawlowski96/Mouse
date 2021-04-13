@@ -1,24 +1,24 @@
 <map id="QCustomPlot::layer" name="QCustomPlot::layer">
-<area shape="rect" id="node1" title=" " alt="" coords="952,245,1088,272"/>
-<area shape="rect" id="node2" href="$class_q_custom_plot.html#ad5255393df078448bb6ac83fa5db5f52" title=" " alt="" coords="723,68,885,95"/>
-<area shape="rect" id="node3" href="$class_q_custom_plot.html#a9d4808ab925b003054085246c92a257c" title=" " alt="" coords="718,119,890,145"/>
-<area shape="rect" id="node4" href="$class_q_custom_plot.html#ad7a7d878bf050f101a43008e7d8fdb52" title=" " alt="" coords="737,169,871,196"/>
-<area shape="rect" id="node7" href="$class_q_custom_plot.html#a724e97d2e8c03e68adac5f4b6164a1b3" title=" " alt="" coords="223,107,418,149"/>
-<area shape="rect" id="node20" href="$class_q_custom_plot.html#ae896140beff19424e9e9e02d6e331104" title=" " alt="" coords="719,372,889,399"/>
-<area shape="rect" id="node21" href="$class_q_custom_plot.html#a40f75e342c5eaab6a86066a42a0e2a94" title=" " alt="" coords="475,372,656,399"/>
-<area shape="rect" id="node22" href="$class_q_custom_plot.html#a73a6dc47c653bb6f8f030abca5a11852" title=" " alt="" coords="704,271,904,297"/>
-<area shape="rect" id="node23" href="$class_q_c_p_layerable.html#ab25a0e7b897993b44447caee0f142083" title=" " alt="" coords="722,423,886,449"/>
-<area shape="rect" id="node5" href="$class_q_custom_plot.html#a606fd384b2a637ce2c24899bcbde77d6" title=" " alt="" coords="495,271,635,297"/>
-<area shape="rect" id="node13" href="$class_q_custom_plot.html#a632da44c6d94ea8b271eb483b08b5114" title=" " alt="" coords="489,119,642,145"/>
-<area shape="rect" id="node14" href="$class_q_custom_plot.html#a1be68d5c0f1e086d6374d1340a193fb9" title=" " alt="" coords="485,169,645,196"/>
-<area shape="rect" id="node15" href="$class_q_custom_plot.html#aabb974d71ce96c137dc04eb6eab844fe" title=" " alt="" coords="484,60,647,87"/>
-<area shape="rect" id="node6" href="$class_q_c_p_axis_rect.html#a4baf3d5dd69166788f6ceda0ea182c6e" title=" " alt="" coords="215,275,427,301"/>
-<area shape="rect" id="node8" href="$class_q_custom_plot.html#a45b99626558651a6428b83972b0b34b8" title=" " alt="" coords="227,427,414,453"/>
-<area shape="rect" id="node9" href="$class_q_custom_plot.html#a13e05523a40c3f08875df5cde85cf0d9" title=" " alt="" coords="233,325,408,352"/>
-<area shape="rect" id="node10" href="$class_simulator.html#a960bd333fe2c1ce66f45eca8f26a81f7" title="Construct a new Simulator object." alt="" coords="251,376,391,403"/>
-<area shape="rect" id="node11" href="$class_simulator.html#a1a18b212eda4277c622502177f302c11" title="Single tick (step) of simulation." alt="" coords="266,173,375,200"/>
-<area shape="rect" id="node12" href="$class_q_c_p_axis_rect.html#a5acf41fc30aa68ea263246ecfad85c31" title=" " alt="" coords="233,224,409,251"/>
-<area shape="rect" id="node16" href="$class_q_custom_plot.html#ab528b84cf92baabe29b1d0ef2f77c93e" title=" " alt="" coords="227,56,414,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="967,233,1103,260"/>
+<area shape="rect" id="node2" href="$class_q_custom_plot.html#ad5255393df078448bb6ac83fa5db5f52" title=" " alt="" coords="738,56,899,83"/>
+<area shape="rect" id="node3" href="$class_q_custom_plot.html#a9d4808ab925b003054085246c92a257c" title=" " alt="" coords="733,107,905,133"/>
+<area shape="rect" id="node4" href="$class_q_custom_plot.html#ad7a7d878bf050f101a43008e7d8fdb52" title=" " alt="" coords="751,157,886,184"/>
+<area shape="rect" id="node7" href="$class_q_custom_plot.html#a724e97d2e8c03e68adac5f4b6164a1b3" title=" " alt="" coords="215,107,441,133"/>
+<area shape="rect" id="node20" href="$class_q_custom_plot.html#ae896140beff19424e9e9e02d6e331104" title=" " alt="" coords="733,360,904,387"/>
+<area shape="rect" id="node21" href="$class_q_custom_plot.html#a40f75e342c5eaab6a86066a42a0e2a94" title=" " alt="" coords="489,360,671,387"/>
+<area shape="rect" id="node22" href="$class_q_custom_plot.html#a73a6dc47c653bb6f8f030abca5a11852" title=" " alt="" coords="719,259,919,285"/>
+<area shape="rect" id="node23" href="$class_q_c_p_layerable.html#ab25a0e7b897993b44447caee0f142083" title=" " alt="" coords="737,411,901,437"/>
+<area shape="rect" id="node5" href="$class_q_custom_plot.html#a606fd384b2a637ce2c24899bcbde77d6" title=" " alt="" coords="510,259,650,285"/>
+<area shape="rect" id="node13" href="$class_q_custom_plot.html#a632da44c6d94ea8b271eb483b08b5114" title=" " alt="" coords="503,107,657,133"/>
+<area shape="rect" id="node14" href="$class_q_custom_plot.html#a1be68d5c0f1e086d6374d1340a193fb9" title=" " alt="" coords="500,157,660,184"/>
+<area shape="rect" id="node15" href="$class_q_custom_plot.html#aabb974d71ce96c137dc04eb6eab844fe" title=" " alt="" coords="499,56,661,83"/>
+<area shape="rect" id="node6" href="$class_q_c_p_axis_rect.html#a4baf3d5dd69166788f6ceda0ea182c6e" title=" " alt="" coords="222,259,434,285"/>
+<area shape="rect" id="node8" href="$class_q_custom_plot.html#a45b99626558651a6428b83972b0b34b8" title=" " alt="" coords="235,411,421,437"/>
+<area shape="rect" id="node9" href="$class_q_custom_plot.html#a13e05523a40c3f08875df5cde85cf0d9" title=" " alt="" coords="241,309,415,336"/>
+<area shape="rect" id="node10" href="$class_simulator.html#a960bd333fe2c1ce66f45eca8f26a81f7" title="Construct a new Simulator object." alt="" coords="258,360,398,387"/>
+<area shape="rect" id="node11" href="$class_simulator.html#a1a18b212eda4277c622502177f302c11" title="Single tick (step) of simulation." alt="" coords="273,157,383,184"/>
+<area shape="rect" id="node12" href="$class_q_c_p_axis_rect.html#a5acf41fc30aa68ea263246ecfad85c31" title=" " alt="" coords="240,208,416,235"/>
+<area shape="rect" id="node16" href="$class_q_custom_plot.html#ab528b84cf92baabe29b1d0ef2f77c93e" title=" " alt="" coords="235,56,421,83"/>
 <area shape="rect" id="node17" href="$class_q_custom_plot.html#a6629d9e8e6da4bf18055ee0257fdce9a" title=" " alt="" coords="5,5,167,32"/>
 <area shape="rect" id="node18" href="$class_q_custom_plot.html#a490c722092d1771e8ce4a7a73dfd84ab" title=" " alt="" coords="9,56,163,83"/>
 <area shape="rect" id="node19" href="$class_q_custom_plot.html#a7636261aff1f6d25c9da749ece3fc8b8" title=" " alt="" coords="7,107,165,133"/>

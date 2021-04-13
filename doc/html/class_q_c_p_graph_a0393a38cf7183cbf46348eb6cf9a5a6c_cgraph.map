@@ -1,17 +1,17 @@
 <map id="QCPGraph::QCPGraph" name="QCPGraph::QCPGraph">
-<area shape="rect" id="node1" title=" " alt="" coords="5,312,161,339"/>
-<area shape="rect" id="node2" href="$class_q_c_p_graph.html#ab468cd600160f327836aa0644291e64c" title=" " alt="" coords="209,5,424,32"/>
-<area shape="rect" id="node3" href="$class_q_c_p_abstract_plottable.html#a7a4b92144dca6453a1f0f210e27edc74" title=" " alt="" coords="241,305,392,346"/>
-<area shape="rect" id="node5" href="$class_q_c_p_graph.html#a2d03156df1b64037a2e36cfa50351ca3" title=" " alt="" coords="229,122,404,163"/>
-<area shape="rect" id="node6" href="$class_q_c_p_graph.html#a10f50c5495ce45ef559ec2066194a335" title=" " alt="" coords="224,188,409,215"/>
-<area shape="rect" id="node7" href="$class_q_c_p_graph.html#ab1c1ee03d8dd94676a564e5e5f11aac2" title=" " alt="" coords="224,239,409,281"/>
-<area shape="rect" id="node8" href="$class_q_c_p_graph.html#abd4c7f81939e10776ea64603a704f22a" title=" " alt="" coords="235,539,398,565"/>
-<area shape="rect" id="node10" href="$class_q_c_p_graph.html#ac3614d799c3894f2bc646e99c7f73d38" title=" " alt="" coords="233,371,400,397"/>
-<area shape="rect" id="node12" href="$class_q_c_p_graph.html#a513fecccff5b2a50ce53f665338c60ff" title=" " alt="" coords="234,421,399,448"/>
-<area shape="rect" id="node13" href="$class_q_c_p_abstract_plottable.html#ab74b09ae4c0e7e13142fe4b5bf46cac7" title=" " alt="" coords="241,473,392,514"/>
-<area shape="rect" id="node14" href="$class_q_c_p_abstract_plottable.html#ae8c816874089f7a44001e8618e81a9dc" title=" " alt="" coords="241,57,392,98"/>
-<area shape="rect" id="node15" href="$class_q_c_p_abstract_plottable.html#a6911603cad23ab0469b108224517516f" title=" " alt="" coords="241,590,392,631"/>
-<area shape="rect" id="node4" href="$class_q_c_p_abstract_plottable.html#a893b4896dfd92b68b05b2600b80f5826" title=" " alt="" coords="486,181,637,222"/>
-<area shape="rect" id="node9" href="$class_q_c_p_abstract_plottable.html#ad5972efc31344e5a7a78ab4f8864b2d3" title=" " alt="" coords="472,539,651,565"/>
-<area shape="rect" id="node11" href="$class_q_c_p_graph.html#a1efa62c4b826f34716b505b15d2b2583" title=" " alt="" coords="488,371,635,397"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,259,161,285"/>
+<area shape="rect" id="node2" href="$class_q_c_p_graph.html#ab468cd600160f327836aa0644291e64c" title=" " alt="" coords="233,5,447,32"/>
+<area shape="rect" id="node3" href="$class_q_c_p_abstract_plottable.html#a7a4b92144dca6453a1f0f210e27edc74" title=" " alt="" coords="235,259,445,285"/>
+<area shape="rect" id="node5" href="$class_q_c_p_graph.html#a2d03156df1b64037a2e36cfa50351ca3" title=" " alt="" coords="235,107,445,133"/>
+<area shape="rect" id="node6" href="$class_q_c_p_graph.html#a10f50c5495ce45ef559ec2066194a335" title=" " alt="" coords="247,157,433,184"/>
+<area shape="rect" id="node7" href="$class_q_c_p_graph.html#ab1c1ee03d8dd94676a564e5e5f11aac2" title=" " alt="" coords="225,208,455,235"/>
+<area shape="rect" id="node8" href="$class_q_c_p_graph.html#abd4c7f81939e10776ea64603a704f22a" title=" " alt="" coords="259,461,421,488"/>
+<area shape="rect" id="node10" href="$class_q_c_p_graph.html#ac3614d799c3894f2bc646e99c7f73d38" title=" " alt="" coords="257,309,423,336"/>
+<area shape="rect" id="node12" href="$class_q_c_p_graph.html#a513fecccff5b2a50ce53f665338c60ff" title=" " alt="" coords="257,360,423,387"/>
+<area shape="rect" id="node13" href="$class_q_c_p_abstract_plottable.html#ab74b09ae4c0e7e13142fe4b5bf46cac7" title=" " alt="" coords="241,411,439,437"/>
+<area shape="rect" id="node14" href="$class_q_c_p_abstract_plottable.html#ae8c816874089f7a44001e8618e81a9dc" title=" " alt="" coords="209,56,471,83"/>
+<area shape="rect" id="node15" href="$class_q_c_p_abstract_plottable.html#a6911603cad23ab0469b108224517516f" title=" " alt="" coords="215,512,465,539"/>
+<area shape="rect" id="node4" href="$class_q_c_p_abstract_plottable.html#a893b4896dfd92b68b05b2600b80f5826" title=" " alt="" coords="519,157,709,184"/>
+<area shape="rect" id="node9" href="$class_q_c_p_abstract_plottable.html#ad5972efc31344e5a7a78ab4f8864b2d3" title=" " alt="" coords="525,461,703,488"/>
+<area shape="rect" id="node11" href="$class_q_c_p_graph.html#a1efa62c4b826f34716b505b15d2b2583" title=" " alt="" coords="541,309,687,336"/>
 </map>

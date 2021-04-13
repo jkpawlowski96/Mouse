@@ -1,15 +1,15 @@
 <map id="QCPLayerable::layerChanged" name="QCPLayerable::layerChanged">
-<area shape="rect" id="node1" title=" " alt="" coords="1572,380,1765,407"/>
-<area shape="rect" id="node2" href="$class_q_c_p_layerable.html#af94484cfb7cbbddb7de522e9be71d9a4" title=" " alt="" coords="1333,355,1524,381"/>
-<area shape="rect" id="node16" href="$class_q_c_p_color_scale_axis_rect_private.html#ad3b242f75dd2b33581364a4e668a80db" title=" " alt="" coords="860,453,1073,494"/>
-<area shape="rect" id="node3" href="$class_q_c_p_layerable.html#ab0d0da6d2de45a118886d2c8e16d5a54" title=" " alt="" coords="1121,300,1285,327"/>
-<area shape="rect" id="node4" href="$class_q_custom_plot.html#ab7ad9174f701f9c6f64e378df77927a6" title=" " alt="" coords="877,81,1057,108"/>
-<area shape="rect" id="node14" href="$class_q_c_p_abstract_legend_item.html#afaff87610e8da0fa238ecf552872d774" title=" " alt="" coords="879,133,1054,174"/>
-<area shape="rect" id="node15" href="$class_q_c_p_axis.html#ac62c042968bae0e6d474fcfc57c9b71f" title=" " alt="" coords="897,199,1036,225"/>
-<area shape="rect" id="node17" href="$class_q_c_p_layerable.html#a74c0fa237f29bf0e49565013fc5d1ec0" title=" " alt="" coords="867,249,1066,276"/>
-<area shape="rect" id="node18" href="$class_q_c_p_plot_title.html#aaae17bee2de6d6a1e695f76fb1abed03" title=" " alt="" coords="877,300,1057,327"/>
-<area shape="rect" id="node19" href="$class_q_custom_plot.html#a45b99626558651a6428b83972b0b34b8" title=" " alt="" coords="873,351,1060,377"/>
-<area shape="rect" id="node20" href="$class_q_c_p_layerable.html#ab25a0e7b897993b44447caee0f142083" title=" " alt="" coords="885,401,1049,428"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1755,341,1948,368"/>
+<area shape="rect" id="node2" href="$class_q_c_p_layerable.html#af94484cfb7cbbddb7de522e9be71d9a4" title=" " alt="" coords="1516,321,1707,348"/>
+<area shape="rect" id="node16" href="$class_q_c_p_color_scale_axis_rect_private.html#ad3b242f75dd2b33581364a4e668a80db" title=" " alt="" coords="860,436,1256,463"/>
+<area shape="rect" id="node3" href="$class_q_c_p_layerable.html#ab0d0da6d2de45a118886d2c8e16d5a54" title=" " alt="" coords="1304,284,1468,311"/>
+<area shape="rect" id="node4" href="$class_q_custom_plot.html#ab7ad9174f701f9c6f64e378df77927a6" title=" " alt="" coords="968,81,1148,108"/>
+<area shape="rect" id="node14" href="$class_q_c_p_abstract_legend_item.html#afaff87610e8da0fa238ecf552872d774" title=" " alt="" coords="899,132,1217,159"/>
+<area shape="rect" id="node15" href="$class_q_c_p_axis.html#ac62c042968bae0e6d474fcfc57c9b71f" title=" " alt="" coords="989,183,1127,209"/>
+<area shape="rect" id="node17" href="$class_q_c_p_layerable.html#a74c0fa237f29bf0e49565013fc5d1ec0" title=" " alt="" coords="959,233,1157,260"/>
+<area shape="rect" id="node18" href="$class_q_c_p_plot_title.html#aaae17bee2de6d6a1e695f76fb1abed03" title=" " alt="" coords="968,284,1148,311"/>
+<area shape="rect" id="node19" href="$class_q_custom_plot.html#a45b99626558651a6428b83972b0b34b8" title=" " alt="" coords="965,335,1151,361"/>
+<area shape="rect" id="node20" href="$class_q_c_p_layerable.html#ab25a0e7b897993b44447caee0f142083" title=" " alt="" coords="976,385,1140,412"/>
 <area shape="rect" id="node5" href="$class_q_custom_plot.html#a6fb2873d35a8a8089842d81a70a54167" title=" " alt="" coords="648,81,812,108"/>
 <area shape="rect" id="node6" href="$class_simulator.html#a214b53f24cdf3663eda13331d63929bd" title=" " alt="" coords="437,31,576,57"/>
 <area shape="rect" id="node10" href="$class_simulator.html#ab35c732a81b08e2304b6c4f11f44c7e2" title=" " alt="" coords="413,81,600,108"/>

@@ -1,10 +1,10 @@
 <map id="QCPAbstractItem::QCPAbstractItem" name="QCPAbstractItem::QCPAbstractItem">
-<area shape="rect" id="node1" title=" " alt="" coords="5,85,240,112"/>
-<area shape="rect" id="node2" href="$class_q_custom_plot.html#a12af771429e2d7e313c8c5d5fca068fe" title=" " alt="" coords="291,5,458,32"/>
-<area shape="rect" id="node4" href="$class_q_c_p_layerable.html#a473edb813a4c1929d6b6a8fe3ff3faf7" title=" " alt="" coords="288,56,461,83"/>
-<area shape="rect" id="node5" href="$class_q_c_p_abstract_item.html#a7dc75fcbcd10206fe0b75d757ea7a347" title=" " alt="" coords="289,107,461,149"/>
-<area shape="rect" id="node8" href="$class_q_c_p_abstract_item.html#a39e05b9d4176b9accafc746d16ca6a06" title=" " alt="" coords="289,173,461,214"/>
-<area shape="rect" id="node3" href="$class_q_c_p_layout_element.html#a76dec8cb31e498994a944d7647a43309" title=" " alt="" coords="523,5,722,32"/>
-<area shape="rect" id="node6" href="$class_q_c_p_layerable.html#aa23c893671f1f6744ac235cf2204cf3a" title=" " alt="" coords="509,147,736,173"/>
-<area shape="rect" id="node7" href="$class_q_c_p_layerable.html#aa78b7e644d2c519e1a9a6f2ac5fcd858" title=" " alt="" coords="784,147,991,173"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,240,108"/>
+<area shape="rect" id="node2" href="$class_q_custom_plot.html#a12af771429e2d7e313c8c5d5fca068fe" title=" " alt="" coords="324,5,491,32"/>
+<area shape="rect" id="node4" href="$class_q_c_p_layerable.html#a473edb813a4c1929d6b6a8fe3ff3faf7" title=" " alt="" coords="321,56,494,83"/>
+<area shape="rect" id="node5" href="$class_q_c_p_abstract_item.html#a7dc75fcbcd10206fe0b75d757ea7a347" title=" " alt="" coords="295,107,520,133"/>
+<area shape="rect" id="node8" href="$class_q_c_p_abstract_item.html#a39e05b9d4176b9accafc746d16ca6a06" title=" " alt="" coords="288,157,527,184"/>
+<area shape="rect" id="node3" href="$class_q_c_p_layout_element.html#a76dec8cb31e498994a944d7647a43309" title=" " alt="" coords="589,5,787,32"/>
+<area shape="rect" id="node6" href="$class_q_c_p_layerable.html#aa23c893671f1f6744ac235cf2204cf3a" title=" " alt="" coords="575,132,801,159"/>
+<area shape="rect" id="node7" href="$class_q_c_p_layerable.html#aa78b7e644d2c519e1a9a6f2ac5fcd858" title=" " alt="" coords="849,132,1056,159"/>
 </map>

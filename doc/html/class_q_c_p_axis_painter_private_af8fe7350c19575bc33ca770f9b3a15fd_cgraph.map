@@ -1,11 +1,11 @@
 <map id="QCPAxisPainterPrivate::placeTickLabel" name="QCPAxisPainterPrivate::placeTickLabel">
-<area shape="rect" id="node1" title=" " alt="" coords="5,195,161,236"/>
-<area shape="rect" id="node2" href="$class_q_c_p_axis_painter_private.html#aab666e1d85b234afbc88076c7ba9424a" title=" " alt="" coords="221,5,377,47"/>
-<area shape="rect" id="node3" href="$class_q_c_p_axis_painter_private.html#a5331f78e398da5442767c261578da502" title=" " alt="" coords="221,71,377,112"/>
-<area shape="rect" id="node4" href="$class_q_c_p_axis_painter_private.html#a6205b60c7d305854ffd7602139433f6e" title=" " alt="" coords="216,136,383,177"/>
-<area shape="rect" id="node5" href="$class_q_c_p_painter.html#aef102658219b24165f7ee2aad1b9e48f" title=" " alt="" coords="230,202,369,229"/>
-<area shape="rect" id="node6" href="$class_q_c_p_axis.html#ab988ef4538e2655bb77bd138189cd42e" title=" " alt="" coords="227,253,371,279"/>
-<area shape="rect" id="node7" href="$class_q_custom_plot.html#ac724f4075822f74f7b676a790095b877" title=" " alt="" coords="209,303,389,330"/>
-<area shape="rect" id="node8" href="$class_q_c_p_painter.html#af9c7a4cd1791403901f8c5b82a150195" title=" " alt="" coords="229,354,369,381"/>
-<area shape="rect" id="node9" href="$class_q_c_p_painter.html#a7e63fbcf47e35c6f2ecd11b8fef7c7d8" title=" " alt="" coords="437,354,647,381"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,157,256,184"/>
+<area shape="rect" id="node2" href="$class_q_c_p_axis_painter_private.html#aab666e1d85b234afbc88076c7ba9424a" title=" " alt="" coords="331,5,577,32"/>
+<area shape="rect" id="node3" href="$class_q_c_p_axis_painter_private.html#a5331f78e398da5442767c261578da502" title=" " alt="" coords="322,56,586,83"/>
+<area shape="rect" id="node4" href="$class_q_c_p_axis_painter_private.html#a6205b60c7d305854ffd7602139433f6e" title=" " alt="" coords="304,107,604,133"/>
+<area shape="rect" id="node5" href="$class_q_c_p_painter.html#aef102658219b24165f7ee2aad1b9e48f" title=" " alt="" coords="385,157,523,184"/>
+<area shape="rect" id="node6" href="$class_q_c_p_axis.html#ab988ef4538e2655bb77bd138189cd42e" title=" " alt="" coords="382,208,526,235"/>
+<area shape="rect" id="node7" href="$class_q_custom_plot.html#ac724f4075822f74f7b676a790095b877" title=" " alt="" coords="364,259,544,285"/>
+<area shape="rect" id="node8" href="$class_q_c_p_painter.html#af9c7a4cd1791403901f8c5b82a150195" title=" " alt="" coords="384,309,524,336"/>
+<area shape="rect" id="node9" href="$class_q_c_p_painter.html#a7e63fbcf47e35c6f2ecd11b8fef7c7d8" title=" " alt="" coords="652,309,861,336"/>
 </map>

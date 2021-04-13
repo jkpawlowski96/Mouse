@@ -21,8 +21,7 @@ var searchData=
   ['linestyle_1904',['lineStyle',['../class_q_c_p_graph.html#ac3e6f4b3387338df45992b47691b2551',1,'QCPGraph::lineStyle()'],['../class_q_c_p_curve.html#a06e3cf3f8f1add689254b3cda66e040e',1,'QCPCurve::lineStyle()']]],
   ['loadpreset_1905',['loadPreset',['../class_q_c_p_color_gradient.html#aa0aeec1528241728b9671bf8e60b1622',1,'QCPColorGradient']]],
   ['logic_1906',['Logic',['../class_expander.html#ae87a3f6bccca98e9fa3b39b6f32b0da9',1,'Expander::Logic()'],['../class_human_controll.html#a195ef119c96c65152c6deb9d8ad706d7',1,'HumanControll::Logic()'],['../class_s_i.html#a326ec6f6f3ed4d936f9dc09db30dd973',1,'SI::Logic()']]],
-  ['loop_1907',['Loop',['../class_simulator.html#a0a391fbace185bc06f55e7a6fc7dfd2d',1,'Simulator']]],
-  ['lowerending_1908',['lowerEnding',['../class_q_c_p_axis.html#a0cc60e5694ed4df6a2c3554e53ee6ae7',1,'QCPAxis']]],
-  ['lowerfillbasepoint_1909',['lowerFillBasePoint',['../class_q_c_p_graph.html#ace7c17a07e9aa824853e469816a5aa1c',1,'QCPGraph']]],
-  ['lowerquartile_1910',['lowerQuartile',['../class_q_c_p_statistical_box.html#afe9c3814cb02e3dffbe260f6bdb42d5e',1,'QCPStatisticalBox']]]
+  ['lowerending_1907',['lowerEnding',['../class_q_c_p_axis.html#a0cc60e5694ed4df6a2c3554e53ee6ae7',1,'QCPAxis']]],
+  ['lowerfillbasepoint_1908',['lowerFillBasePoint',['../class_q_c_p_graph.html#ace7c17a07e9aa824853e469816a5aa1c',1,'QCPGraph']]],
+  ['lowerquartile_1909',['lowerQuartile',['../class_q_c_p_statistical_box.html#afe9c3814cb02e3dffbe260f6bdb42d5e',1,'QCPStatisticalBox']]]
 ];

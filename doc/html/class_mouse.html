@@ -79,11 +79,11 @@ Collaboration diagram for Mouse:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_mouse__coll__graph.png" border="0" usemap="#a_mouse_coll__map" alt="Collaboration graph"/></div>
 <map name="a_mouse_coll__map" id="a_mouse_coll__map">
-<area shape="rect" title="Mouse (agent) representation in simulation." alt="" coords="210,204,321,355"/>
-<area shape="rect" href="struct_point.html" title=" " alt="" coords="5,13,120,119"/>
-<area shape="rect" href="class_s_i.html" title="SI &#45; mouse controll logic." alt="" coords="144,5,259,127"/>
-<area shape="rect" href="class_sensor.html" title="Sensor device for wall detection." alt="" coords="283,27,375,105"/>
-<area shape="rect" href="struct_position.html" title=" " alt="" coords="400,20,531,112"/>
+<area shape="rect" title="Mouse (agent) representation in simulation." alt="" coords="210,219,321,384"/>
+<area shape="rect" href="struct_point.html" title=" " alt="" coords="5,20,120,127"/>
+<area shape="rect" href="class_s_i.html" title="SI &#45; mouse controll logic." alt="" coords="144,5,259,141"/>
+<area shape="rect" href="class_sensor.html" title="Sensor device for wall detection." alt="" coords="283,35,375,112"/>
+<area shape="rect" href="struct_position.html" title=" " alt="" coords="400,27,531,119"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -98,6 +98,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a99024d3700d649ae19c1537b42a3e86d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#a99024d3700d649ae19c1537b42a3e86d">Mouse</a> ()</td></tr>
 <tr class="memdesc:a99024d3700d649ae19c1537b42a3e86d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="class_mouse.html" title="Mouse (agent) representation in simulation.">Mouse</a> object.  <a href="class_mouse.html#a99024d3700d649ae19c1537b42a3e86d">More...</a><br /></td></tr>
 <tr class="separator:a99024d3700d649ae19c1537b42a3e86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf7d8abef29c10be77ead773f964f4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#afdf7d8abef29c10be77ead773f964f4f">~Mouse</a> ()</td></tr>
+<tr class="memdesc:afdf7d8abef29c10be77ead773f964f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the <a class="el" href="class_mouse.html" title="Mouse (agent) representation in simulation.">Mouse</a> object.  <a href="class_mouse.html#afdf7d8abef29c10be77ead773f964f4f">More...</a><br /></td></tr>
+<tr class="separator:afdf7d8abef29c10be77ead773f964f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc87ac2f6bf3df7db585f913fcc2a03e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mouse.html#adc87ac2f6bf3df7db585f913fcc2a03e">Call</a> (shared_ptr&lt; <a class="el" href="class_map.html">Map</a> &gt; map)</td></tr>
 <tr class="memdesc:adc87ac2f6bf3df7db585f913fcc2a03e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call mouse object (single tick)  <a href="class_mouse.html#adc87ac2f6bf3df7db585f913fcc2a03e">More...</a><br /></td></tr>
 <tr class="separator:adc87ac2f6bf3df7db585f913fcc2a03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,9 +180,9 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a> = direction;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a> = <a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7a10b9ec1e134717a2f8f03a01eb48cd80">TaskUnnown</a>;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
-<div class="ttc" id="aclass_mouse_html_a813d5945e52a6ce6d7b2bd1af7d6c3cc"><div class="ttname"><a href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">Mouse::task</a></div><div class="ttdeci">Task task</div><div class="ttdef"><b>Definition:</b> <a href="mouse_8h_source.html#l00055">mouse.h:55</a></div></div>
-<div class="ttc" id="aclass_mouse_html_ab63d02c2ef0f9e4aafce474cfffb542e"><div class="ttname"><a href="class_mouse.html#ab63d02c2ef0f9e4aafce474cfffb542e">Mouse::si</a></div><div class="ttdeci">SI * si</div><div class="ttdef"><b>Definition:</b> <a href="mouse_8h_source.html#l00053">mouse.h:53</a></div></div>
-<div class="ttc" id="aclass_mouse_html_abc885089dbe2a69f9b05dada91d5eb2e"><div class="ttname"><a href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">Mouse::position</a></div><div class="ttdeci">Position&lt; double &gt; position</div><div class="ttdef"><b>Definition:</b> <a href="mouse_8h_source.html#l00051">mouse.h:51</a></div></div>
+<div class="ttc" id="aclass_mouse_html_a813d5945e52a6ce6d7b2bd1af7d6c3cc"><div class="ttname"><a href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">Mouse::task</a></div><div class="ttdeci">Task task</div><div class="ttdef"><b>Definition:</b> <a href="mouse_8h_source.html#l00059">mouse.h:59</a></div></div>
+<div class="ttc" id="aclass_mouse_html_ab63d02c2ef0f9e4aafce474cfffb542e"><div class="ttname"><a href="class_mouse.html#ab63d02c2ef0f9e4aafce474cfffb542e">Mouse::si</a></div><div class="ttdeci">SI * si</div><div class="ttdef"><b>Definition:</b> <a href="mouse_8h_source.html#l00057">mouse.h:57</a></div></div>
+<div class="ttc" id="aclass_mouse_html_abc885089dbe2a69f9b05dada91d5eb2e"><div class="ttname"><a href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">Mouse::position</a></div><div class="ttdeci">Position&lt; double &gt; position</div><div class="ttdef"><b>Definition:</b> <a href="mouse_8h_source.html#l00056">mouse.h:56</a></div></div>
 <div class="ttc" id="ageometry_8cpp_html_a78c7e9b84a6d9b52a0717595eebf0c97"><div class="ttname"><a href="geometry_8cpp.html#a78c7e9b84a6d9b52a0717595eebf0c97">doublePoint</a></div><div class="ttdeci">Point&lt; double &gt; doublePoint(Point&lt; int &gt; p)</div><div class="ttdoc">Point of double from point of int.</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8cpp_source.html#l00031">geometry.cpp:31</a></div></div>
 <div class="ttc" id="asi_8h_html_a8564c478026655cd8718601a4514e1b7a10b9ec1e134717a2f8f03a01eb48cd80"><div class="ttname"><a href="si_8h.html#a8564c478026655cd8718601a4514e1b7a10b9ec1e134717a2f8f03a01eb48cd80">TaskUnnown</a></div><div class="ttdeci">@ TaskUnnown</div><div class="ttdef"><b>Definition:</b> <a href="si_8h_source.html#l00015">si.h:15</a></div></div>
 <div class="ttc" id="astruct_position_html_a7f5e11bbcbaaef0e8aa43e464c2da154"><div class="ttname"><a href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">Position::direction</a></div><div class="ttdeci">Direction direction</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8h_source.html#l00051">geometry.h:51</a></div></div>
@@ -226,6 +229,30 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="afdf7d8abef29c10be77ead773f964f4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdf7d8abef29c10be77ead773f964f4f">&#9670;&nbsp;</a></span>~Mouse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mouse::~Mouse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroy the <a class="el" href="class_mouse.html" title="Mouse (agent) representation in simulation.">Mouse</a> object. </p>
+
+<p class="definition">Definition at line <a class="el" href="mouse_8cpp_source.html#l00011">11</a> of file <a class="el" href="mouse_8cpp_source.html">mouse.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;             {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_mouse.html#ab63d02c2ef0f9e4aafce474cfffb542e">si</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="adc87ac2f6bf3df7db585f913fcc2a03e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adc87ac2f6bf3df7db585f913fcc2a03e">&#9670;&nbsp;</a></span>Call()</h2>
@@ -254,63 +281,63 @@ Here is the call graph for this function:</div>
 <dd>
 false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mouse_8cpp_source.html#l00020">20</a> of file <a class="el" href="mouse_8cpp_source.html">mouse.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                                   {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="struct_position.html">Position&lt;double&gt;</a> _loc = <a class="code" href="class_mouse.html#a2c17b092ad22586a4fe3a30403b6b58a">GetPosition</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="struct_position.html">Position&lt;int&gt;</a> loc = <a class="code" href="geometry_8cpp.html#a15cfcdfc2a5e2beed54d3e46ae601b5e">roundPosition</a>(_loc);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="struct_sensor_data.html">SensorData</a> sensorData = <a class="code" href="class_mouse.html#ae1a2520ab7ef19ccc3f7e562f3239b73">sensor</a>.<a class="code" href="class_sensor.html#a3577f9e8eb65eb3bc8f69e6396e97002">Measure</a>(map, loc);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a>&gt;=0){</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a>==<a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7ae204c9c3e62b1e9a6b60e40cd05256c5">Forward</a>){</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordtype">double</span> _distance = <a class="code" href="geometry_8cpp.html#a264f0b2001150ace7a2e82b20ec7a3f3">measureDistance</a>(<a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#aca485c4302d36798c29923a99a5f249d">localization</a>, <a class="code" href="class_mouse.html#af8d8330d8faca021576458771db5eddc">moveTarget</a>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keywordflow">if</span>(_distance&gt;<a class="code" href="mouse_8h.html#a1f98dd72ca62af59cb4d6417173b66dd">MOVE_STEP</a>)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            {<span class="comment">//move</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#aca485c4302d36798c29923a99a5f249d">localization</a> = <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#aca485c4302d36798c29923a99a5f249d">localization</a> + <a class="code" href="class_mouse.html#a5b701eec90d9f148ac05833ca9f10e50">move</a> * <a class="code" href="mouse_8h.html#a1f98dd72ca62af59cb4d6417173b66dd">MOVE_STEP</a> * <a class="code" href="class_mouse.html#a8832492d428a841b5f07daccbe106b52">speed</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">else</span>{<span class="comment">//skip</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#aca485c4302d36798c29923a99a5f249d">localization</a> = <a class="code" href="class_mouse.html#af8d8330d8faca021576458771db5eddc">moveTarget</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a> = <a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7a10b9ec1e134717a2f8f03a01eb48cd80">TaskUnnown</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span> stop : map-&gt;mapStop)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="geometry_8cpp.html#a15cfcdfc2a5e2beed54d3e46ae601b5e">roundPosition</a>(<a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>).localization == stop)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a>==<a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7a82a1fed01fbf25cc855cd02b12b6f63c">RotateRight</a>){</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a> = <a class="code" href="geometry_8cpp.html#ab7059afff94c264c019615f0a68c96b5">RotateDirectionRight</a>(<a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a>=<a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7a10b9ec1e134717a2f8f03a01eb48cd80">TaskUnnown</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a>==<a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7a71a430c6d5330629f5c6c5373553bb63">RotateLeft</a>){</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a>= <a class="code" href="geometry_8cpp.html#a0dc9f6b40d25cf8616686f98e47fdf77">RotateDirectionLeft</a>(<a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a>=<a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7a10b9ec1e134717a2f8f03a01eb48cd80">TaskUnnown</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a>==<a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7a4a3ae1217253da6a37e695ce19e883d3">TurnAround</a>){</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a>=<a class="code" href="geometry_8cpp.html#ab7059afff94c264c019615f0a68c96b5">RotateDirectionRight</a>(<a class="code" href="geometry_8cpp.html#ab7059afff94c264c019615f0a68c96b5">RotateDirectionRight</a>(<a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a>));</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a>=<a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7a10b9ec1e134717a2f8f03a01eb48cd80">TaskUnnown</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }<span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a> = <a class="code" href="class_mouse.html#ab63d02c2ef0f9e4aafce474cfffb542e">si</a>-&gt;<a class="code" href="class_s_i.html#a5737c9e037d2019fee1db9f969638bf4">Call</a>(sensorData);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a>==<a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7ae204c9c3e62b1e9a6b60e40cd05256c5">Forward</a>){</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <a class="code" href="class_mouse.html#a5b701eec90d9f148ac05833ca9f10e50">move</a> = <a class="code" href="struct_point.html">Point&lt;double&gt;</a>(0.0,0.0);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;task: move direction: &quot;</span> &lt;&lt; <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a> &lt;&lt; endl;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a>==<a class="code" href="geometry_8h.html#a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2">Up</a>)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <a class="code" href="class_mouse.html#a5b701eec90d9f148ac05833ca9f10e50">move</a>.<a class="code" href="struct_point.html#a65146418a33ebb2cd9acb85cade60ac9">y</a> = 1.0;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a>==<a class="code" href="geometry_8h.html#a224b9163917ac32fc95a60d8c1eec3aaabcf8c79e9a5f5f9d606fb35645a0fb27">Down</a>)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <a class="code" href="class_mouse.html#a5b701eec90d9f148ac05833ca9f10e50">move</a>.<a class="code" href="struct_point.html#a65146418a33ebb2cd9acb85cade60ac9">y</a> = -1.0;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a>==<a class="code" href="geometry_8h.html#a224b9163917ac32fc95a60d8c1eec3aaa9d4d8b0b72fc2659da772d761a3c5ecb">Left</a>)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <a class="code" href="class_mouse.html#a5b701eec90d9f148ac05833ca9f10e50">move</a>.<a class="code" href="struct_point.html#a401d07562afaf0079121218025e66b76">x</a> = -1.0;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a>==<a class="code" href="geometry_8h.html#a224b9163917ac32fc95a60d8c1eec3aaad48f7af8c070184f3774c8e85854eb66">Right</a>)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <a class="code" href="class_mouse.html#a5b701eec90d9f148ac05833ca9f10e50">move</a>.<a class="code" href="struct_point.html#a401d07562afaf0079121218025e66b76">x</a> = 1.0;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="class_mouse.html#af8d8330d8faca021576458771db5eddc">moveTarget</a> = <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#aca485c4302d36798c29923a99a5f249d">localization</a> + <a class="code" href="class_mouse.html#a5b701eec90d9f148ac05833ca9f10e50">move</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="ttc" id="aclass_mouse_html_a2c17b092ad22586a4fe3a30403b6b58a"><div class="ttname"><a href="class_mouse.html#a2c17b092ad22586a4fe3a30403b6b58a">Mouse::GetPosition</a></div><div class="ttdeci">Position&lt; double &gt; GetPosition()</div><div class="ttdoc">Get the Position object.</div><div class="ttdef"><b>Definition:</b> <a href="mouse_8cpp_source.html#l00012">mouse.cpp:12</a></div></div>
-<div class="ttc" id="aclass_mouse_html_a5b701eec90d9f148ac05833ca9f10e50"><div class="ttname"><a href="class_mouse.html#a5b701eec90d9f148ac05833ca9f10e50">Mouse::move</a></div><div class="ttdeci">Point&lt; double &gt; move</div><div class="ttdef"><b>Definition:</b> <a href="mouse_8h_source.html#l00056">mouse.h:56</a></div></div>
-<div class="ttc" id="aclass_mouse_html_a8832492d428a841b5f07daccbe106b52"><div class="ttname"><a href="class_mouse.html#a8832492d428a841b5f07daccbe106b52">Mouse::speed</a></div><div class="ttdeci">double speed</div><div class="ttdef"><b>Definition:</b> <a href="mouse_8h_source.html#l00058">mouse.h:58</a></div></div>
-<div class="ttc" id="aclass_mouse_html_ae1a2520ab7ef19ccc3f7e562f3239b73"><div class="ttname"><a href="class_mouse.html#ae1a2520ab7ef19ccc3f7e562f3239b73">Mouse::sensor</a></div><div class="ttdeci">Sensor sensor</div><div class="ttdef"><b>Definition:</b> <a href="mouse_8h_source.html#l00054">mouse.h:54</a></div></div>
-<div class="ttc" id="aclass_mouse_html_af8d8330d8faca021576458771db5eddc"><div class="ttname"><a href="class_mouse.html#af8d8330d8faca021576458771db5eddc">Mouse::moveTarget</a></div><div class="ttdeci">Point&lt; double &gt; moveTarget</div><div class="ttdef"><b>Definition:</b> <a href="mouse_8h_source.html#l00057">mouse.h:57</a></div></div>
-<div class="ttc" id="aclass_s_i_html_a5737c9e037d2019fee1db9f969638bf4"><div class="ttname"><a href="class_s_i.html#a5737c9e037d2019fee1db9f969638bf4">SI::Call</a></div><div class="ttdeci">virtual Task Call(SensorData sensorData)</div><div class="ttdoc">Call SI to get task.</div><div class="ttdef"><b>Definition:</b> <a href="si_8cpp_source.html#l00007">si.cpp:7</a></div></div>
+<p class="definition">Definition at line <a class="el" href="mouse_8cpp_source.html#l00023">23</a> of file <a class="el" href="mouse_8cpp_source.html">mouse.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                   {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="struct_position.html">Position&lt;double&gt;</a> _loc = <a class="code" href="class_mouse.html#a2c17b092ad22586a4fe3a30403b6b58a">GetPosition</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="struct_position.html">Position&lt;int&gt;</a> loc = <a class="code" href="geometry_8cpp.html#a15cfcdfc2a5e2beed54d3e46ae601b5e">roundPosition</a>(_loc);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="struct_sensor_data.html">SensorData</a> sensorData = <a class="code" href="class_mouse.html#ae1a2520ab7ef19ccc3f7e562f3239b73">sensor</a>.<a class="code" href="class_sensor.html#a3577f9e8eb65eb3bc8f69e6396e97002">Measure</a>(map, loc);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a>&gt;=0){</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a>==<a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7ae204c9c3e62b1e9a6b60e40cd05256c5">Forward</a>){</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordtype">double</span> _distance = <a class="code" href="geometry_8cpp.html#a264f0b2001150ace7a2e82b20ec7a3f3">measureDistance</a>(<a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#aca485c4302d36798c29923a99a5f249d">localization</a>, <a class="code" href="class_mouse.html#af8d8330d8faca021576458771db5eddc">moveTarget</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">if</span>(_distance&gt;<a class="code" href="mouse_8h.html#a1f98dd72ca62af59cb4d6417173b66dd">MOVE_STEP</a>)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            {<span class="comment">//move</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#aca485c4302d36798c29923a99a5f249d">localization</a> = <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#aca485c4302d36798c29923a99a5f249d">localization</a> + <a class="code" href="class_mouse.html#a5b701eec90d9f148ac05833ca9f10e50">move</a> * <a class="code" href="mouse_8h.html#a1f98dd72ca62af59cb4d6417173b66dd">MOVE_STEP</a> * <a class="code" href="class_mouse.html#a8832492d428a841b5f07daccbe106b52">speed</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">else</span>{<span class="comment">//skip</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#aca485c4302d36798c29923a99a5f249d">localization</a> = <a class="code" href="class_mouse.html#af8d8330d8faca021576458771db5eddc">moveTarget</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a> = <a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7a10b9ec1e134717a2f8f03a01eb48cd80">TaskUnnown</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">auto</span> <span class="keyword">const</span> stop : map-&gt;mapStop)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="geometry_8cpp.html#a15cfcdfc2a5e2beed54d3e46ae601b5e">roundPosition</a>(<a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>).localization == stop)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a>==<a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7a82a1fed01fbf25cc855cd02b12b6f63c">RotateRight</a>){</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a> = <a class="code" href="geometry_8cpp.html#ab7059afff94c264c019615f0a68c96b5">RotateDirectionRight</a>(<a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a>=<a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7a10b9ec1e134717a2f8f03a01eb48cd80">TaskUnnown</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a>==<a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7a71a430c6d5330629f5c6c5373553bb63">RotateLeft</a>){</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a>= <a class="code" href="geometry_8cpp.html#a0dc9f6b40d25cf8616686f98e47fdf77">RotateDirectionLeft</a>(<a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a>=<a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7a10b9ec1e134717a2f8f03a01eb48cd80">TaskUnnown</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a>==<a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7a4a3ae1217253da6a37e695ce19e883d3">TurnAround</a>){</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a>=<a class="code" href="geometry_8cpp.html#ab7059afff94c264c019615f0a68c96b5">RotateDirectionRight</a>(<a class="code" href="geometry_8cpp.html#ab7059afff94c264c019615f0a68c96b5">RotateDirectionRight</a>(<a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a>));</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a>=<a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7a10b9ec1e134717a2f8f03a01eb48cd80">TaskUnnown</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a> = <a class="code" href="class_mouse.html#ab63d02c2ef0f9e4aafce474cfffb542e">si</a>-&gt;<a class="code" href="class_s_i.html#a5737c9e037d2019fee1db9f969638bf4">Call</a>(sensorData);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#a813d5945e52a6ce6d7b2bd1af7d6c3cc">task</a>==<a class="code" href="si_8h.html#a8564c478026655cd8718601a4514e1b7ae204c9c3e62b1e9a6b60e40cd05256c5">Forward</a>){</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <a class="code" href="class_mouse.html#a5b701eec90d9f148ac05833ca9f10e50">move</a> = <a class="code" href="struct_point.html">Point&lt;double&gt;</a>(0.0,0.0);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;task: move direction: &quot;</span> &lt;&lt; <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a> &lt;&lt; endl;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a>==<a class="code" href="geometry_8h.html#a224b9163917ac32fc95a60d8c1eec3aaa57a7edcbc04d6175683383cad5c3e0a2">Up</a>)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <a class="code" href="class_mouse.html#a5b701eec90d9f148ac05833ca9f10e50">move</a>.<a class="code" href="struct_point.html#a65146418a33ebb2cd9acb85cade60ac9">y</a> = 1.0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a>==<a class="code" href="geometry_8h.html#a224b9163917ac32fc95a60d8c1eec3aaabcf8c79e9a5f5f9d606fb35645a0fb27">Down</a>)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <a class="code" href="class_mouse.html#a5b701eec90d9f148ac05833ca9f10e50">move</a>.<a class="code" href="struct_point.html#a65146418a33ebb2cd9acb85cade60ac9">y</a> = -1.0;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a>==<a class="code" href="geometry_8h.html#a224b9163917ac32fc95a60d8c1eec3aaa9d4d8b0b72fc2659da772d761a3c5ecb">Left</a>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <a class="code" href="class_mouse.html#a5b701eec90d9f148ac05833ca9f10e50">move</a>.<a class="code" href="struct_point.html#a401d07562afaf0079121218025e66b76">x</a> = -1.0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#a7f5e11bbcbaaef0e8aa43e464c2da154">direction</a>==<a class="code" href="geometry_8h.html#a224b9163917ac32fc95a60d8c1eec3aaad48f7af8c070184f3774c8e85854eb66">Right</a>)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <a class="code" href="class_mouse.html#a5b701eec90d9f148ac05833ca9f10e50">move</a>.<a class="code" href="struct_point.html#a401d07562afaf0079121218025e66b76">x</a> = 1.0;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <a class="code" href="class_mouse.html#af8d8330d8faca021576458771db5eddc">moveTarget</a> = <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>.<a class="code" href="struct_position.html#aca485c4302d36798c29923a99a5f249d">localization</a> + <a class="code" href="class_mouse.html#a5b701eec90d9f148ac05833ca9f10e50">move</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="ttc" id="aclass_mouse_html_a2c17b092ad22586a4fe3a30403b6b58a"><div class="ttname"><a href="class_mouse.html#a2c17b092ad22586a4fe3a30403b6b58a">Mouse::GetPosition</a></div><div class="ttdeci">Position&lt; double &gt; GetPosition()</div><div class="ttdoc">Get the Position object.</div><div class="ttdef"><b>Definition:</b> <a href="mouse_8cpp_source.html#l00015">mouse.cpp:15</a></div></div>
+<div class="ttc" id="aclass_mouse_html_a5b701eec90d9f148ac05833ca9f10e50"><div class="ttname"><a href="class_mouse.html#a5b701eec90d9f148ac05833ca9f10e50">Mouse::move</a></div><div class="ttdeci">Point&lt; double &gt; move</div><div class="ttdef"><b>Definition:</b> <a href="mouse_8h_source.html#l00060">mouse.h:60</a></div></div>
+<div class="ttc" id="aclass_mouse_html_a8832492d428a841b5f07daccbe106b52"><div class="ttname"><a href="class_mouse.html#a8832492d428a841b5f07daccbe106b52">Mouse::speed</a></div><div class="ttdeci">double speed</div><div class="ttdef"><b>Definition:</b> <a href="mouse_8h_source.html#l00062">mouse.h:62</a></div></div>
+<div class="ttc" id="aclass_mouse_html_ae1a2520ab7ef19ccc3f7e562f3239b73"><div class="ttname"><a href="class_mouse.html#ae1a2520ab7ef19ccc3f7e562f3239b73">Mouse::sensor</a></div><div class="ttdeci">Sensor sensor</div><div class="ttdef"><b>Definition:</b> <a href="mouse_8h_source.html#l00058">mouse.h:58</a></div></div>
+<div class="ttc" id="aclass_mouse_html_af8d8330d8faca021576458771db5eddc"><div class="ttname"><a href="class_mouse.html#af8d8330d8faca021576458771db5eddc">Mouse::moveTarget</a></div><div class="ttdeci">Point&lt; double &gt; moveTarget</div><div class="ttdef"><b>Definition:</b> <a href="mouse_8h_source.html#l00061">mouse.h:61</a></div></div>
+<div class="ttc" id="aclass_s_i_html_a5737c9e037d2019fee1db9f969638bf4"><div class="ttname"><a href="class_s_i.html#a5737c9e037d2019fee1db9f969638bf4">SI::Call</a></div><div class="ttdeci">Task Call(SensorData sensorData)</div><div class="ttdoc">Call SI to get task.</div><div class="ttdef"><b>Definition:</b> <a href="si_8cpp_source.html#l00012">si.cpp:12</a></div></div>
 <div class="ttc" id="aclass_sensor_html_a3577f9e8eb65eb3bc8f69e6396e97002"><div class="ttname"><a href="class_sensor.html#a3577f9e8eb65eb3bc8f69e6396e97002">Sensor::Measure</a></div><div class="ttdeci">SensorData Measure(shared_ptr&lt; Map &gt; map, Position&lt; int &gt; loc)</div><div class="ttdoc">Measure distance to wall to make detection.</div><div class="ttdef"><b>Definition:</b> <a href="sensor_8h_source.html#l00021">sensor.h:21</a></div></div>
 <div class="ttc" id="ageometry_8cpp_html_a0dc9f6b40d25cf8616686f98e47fdf77"><div class="ttname"><a href="geometry_8cpp.html#a0dc9f6b40d25cf8616686f98e47fdf77">RotateDirectionLeft</a></div><div class="ttdeci">Direction RotateDirectionLeft(Direction d)</div><div class="ttdoc">Rotate direction to left.</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8cpp_source.html#l00035">geometry.cpp:35</a></div></div>
 <div class="ttc" id="ageometry_8cpp_html_a15cfcdfc2a5e2beed54d3e46ae601b5e"><div class="ttname"><a href="geometry_8cpp.html#a15cfcdfc2a5e2beed54d3e46ae601b5e">roundPosition</a></div><div class="ttdeci">Position&lt; int &gt; roundPosition(Position&lt; double &gt; pos)</div><div class="ttdoc">Point&lt;int&gt; from Point&lt;double&gt;</div><div class="ttdef"><b>Definition:</b> <a href="geometry_8cpp_source.html#l00016">geometry.cpp:16</a></div></div>
@@ -369,10 +396,10 @@ Here is the call graph for this function:</div>
 <p>Get the <a class="el" href="struct_position.html" title="Position of mouse.">Position</a> object. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_position.html">Position&lt;double&gt;</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mouse_8cpp_source.html#l00012">12</a> of file <a class="el" href="mouse_8cpp_source.html">mouse.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                                   {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="mouse_8cpp_source.html#l00015">15</a> of file <a class="el" href="mouse_8cpp_source.html">mouse.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                   {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_mouse.html#abc885089dbe2a69f9b05dada91d5eb2e">position</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -409,10 +436,10 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mouse_8cpp_source.html#l00016">16</a> of file <a class="el" href="mouse_8cpp_source.html">mouse.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                              {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_mouse.html#a8832492d428a841b5f07daccbe106b52">speed</a> = (double)_speed / 100;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="mouse_8cpp_source.html#l00019">19</a> of file <a class="el" href="mouse_8cpp_source.html">mouse.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                              {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_mouse.html#a8832492d428a841b5f07daccbe106b52">speed</a> = (double)_speed / 100;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -437,7 +464,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mouse_8h_source.html#l00056">56</a> of file <a class="el" href="mouse_8h_source.html">mouse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mouse_8h_source.html#l00060">60</a> of file <a class="el" href="mouse_8h_source.html">mouse.h</a>.</p>
 
 </div>
 </div>
@@ -461,7 +488,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mouse_8h_source.html#l00057">57</a> of file <a class="el" href="mouse_8h_source.html">mouse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mouse_8h_source.html#l00061">61</a> of file <a class="el" href="mouse_8h_source.html">mouse.h</a>.</p>
 
 </div>
 </div>
@@ -485,7 +512,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mouse_8h_source.html#l00051">51</a> of file <a class="el" href="mouse_8h_source.html">mouse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mouse_8h_source.html#l00056">56</a> of file <a class="el" href="mouse_8h_source.html">mouse.h</a>.</p>
 
 </div>
 </div>
@@ -509,7 +536,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mouse_8h_source.html#l00054">54</a> of file <a class="el" href="mouse_8h_source.html">mouse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mouse_8h_source.html#l00058">58</a> of file <a class="el" href="mouse_8h_source.html">mouse.h</a>.</p>
 
 </div>
 </div>
@@ -533,7 +560,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mouse_8h_source.html#l00053">53</a> of file <a class="el" href="mouse_8h_source.html">mouse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mouse_8h_source.html#l00057">57</a> of file <a class="el" href="mouse_8h_source.html">mouse.h</a>.</p>
 
 </div>
 </div>
@@ -557,7 +584,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mouse_8h_source.html#l00058">58</a> of file <a class="el" href="mouse_8h_source.html">mouse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mouse_8h_source.html#l00062">62</a> of file <a class="el" href="mouse_8h_source.html">mouse.h</a>.</p>
 
 </div>
 </div>
@@ -581,7 +608,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mouse_8h_source.html#l00055">55</a> of file <a class="el" href="mouse_8h_source.html">mouse.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mouse_8h_source.html#l00059">59</a> of file <a class="el" href="mouse_8h_source.html">mouse.h</a>.</p>
 
 </div>
 </div>

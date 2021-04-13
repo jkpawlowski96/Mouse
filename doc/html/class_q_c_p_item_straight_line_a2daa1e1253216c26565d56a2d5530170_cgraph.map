@@ -1,13 +1,13 @@
 <map id="QCPItemStraightLine::draw" name="QCPItemStraightLine::draw">
-<area shape="rect" id="node1" title=" " alt="" coords="5,141,149,182"/>
-<area shape="rect" id="node2" href="$class_q_c_p_abstract_item.html#a550ecff39195d9ff3d5cf239eb802ea7" title=" " alt="" coords="201,5,380,32"/>
-<area shape="rect" id="node4" href="$class_q_c_p_painter.html#a0b4b1b9bd495e182c731774dc800e6e0" title=" " alt="" coords="215,56,366,83"/>
-<area shape="rect" id="node5" href="$class_q_c_p_item_straight_line.html#af0c893b7196ba210555a8f4332707eab" title=" " alt="" coords="197,107,384,149"/>
-<area shape="rect" id="node6" href="$class_q_c_p_item_straight_line.html#a5b1a39cfc54c3e22f65de2958d40eb59" title=" " alt="" coords="219,173,363,214"/>
-<area shape="rect" id="node7" href="$class_q_c_p_item_position.html#a6cad070c22801295231f5bd6045afe70" title=" " alt="" coords="197,239,384,265"/>
-<area shape="rect" id="node10" href="$class_q_c_p_painter.html#af9c7a4cd1791403901f8c5b82a150195" title=" " alt="" coords="221,289,361,316"/>
-<area shape="rect" id="node3" href="$class_q_custom_plot.html#a19842409b18f556b256d05e97fffc670" title=" " alt="" coords="459,97,614,124"/>
-<area shape="rect" id="node8" href="$class_q_c_p_item_anchor.html#ae1a21d9471d1d788624cad297e1b8d6f" title=" " alt="" coords="446,239,627,265"/>
-<area shape="rect" id="node9" href="$class_q_c_p_abstract_item.html#a5681c190803e899bac9a240753fdba00" title=" " alt="" coords="689,231,889,273"/>
-<area shape="rect" id="node11" href="$class_q_c_p_painter.html#a7e63fbcf47e35c6f2ecd11b8fef7c7d8" title=" " alt="" coords="432,289,641,316"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,184,159"/>
+<area shape="rect" id="node2" href="$class_q_c_p_abstract_item.html#a550ecff39195d9ff3d5cf239eb802ea7" title=" " alt="" coords="297,5,476,32"/>
+<area shape="rect" id="node4" href="$class_q_c_p_painter.html#a0b4b1b9bd495e182c731774dc800e6e0" title=" " alt="" coords="311,56,462,83"/>
+<area shape="rect" id="node5" href="$class_q_c_p_item_straight_line.html#af0c893b7196ba210555a8f4332707eab" title=" " alt="" coords="232,107,541,133"/>
+<area shape="rect" id="node6" href="$class_q_c_p_item_straight_line.html#a5b1a39cfc54c3e22f65de2958d40eb59" title=" " alt="" coords="285,157,488,184"/>
+<area shape="rect" id="node7" href="$class_q_c_p_item_position.html#a6cad070c22801295231f5bd6045afe70" title=" " alt="" coords="293,208,480,235"/>
+<area shape="rect" id="node10" href="$class_q_c_p_painter.html#af9c7a4cd1791403901f8c5b82a150195" title=" " alt="" coords="317,259,457,285"/>
+<area shape="rect" id="node3" href="$class_q_custom_plot.html#a19842409b18f556b256d05e97fffc670" title=" " alt="" coords="617,81,771,108"/>
+<area shape="rect" id="node8" href="$class_q_c_p_item_anchor.html#ae1a21d9471d1d788624cad297e1b8d6f" title=" " alt="" coords="603,208,785,235"/>
+<area shape="rect" id="node9" href="$class_q_c_p_abstract_item.html#a5681c190803e899bac9a240753fdba00" title=" " alt="" coords="847,208,1077,235"/>
+<area shape="rect" id="node11" href="$class_q_c_p_painter.html#a7e63fbcf47e35c6f2ecd11b8fef7c7d8" title=" " alt="" coords="589,259,799,285"/>
 </map>

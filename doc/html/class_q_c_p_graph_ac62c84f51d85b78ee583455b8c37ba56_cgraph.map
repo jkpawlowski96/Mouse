@@ -1,12 +1,12 @@
 <map id="QCPGraph::drawImpulsePlot" name="QCPGraph::drawImpulsePlot">
-<area shape="rect" id="node1" title=" " alt="" coords="5,173,193,199"/>
-<area shape="rect" id="node2" href="$class_q_c_p_abstract_plottable.html#a59a80773c5cefc05a0646ac8e1149ed5" title=" " alt="" coords="241,71,432,112"/>
-<area shape="rect" id="node7" href="$class_q_c_p_abstract_plottable.html#abd790a3b229239f49067f136633a4b98" title=" " alt="" coords="261,136,412,177"/>
-<area shape="rect" id="node8" href="$class_q_c_p_abstract_plottable.html#ad5972efc31344e5a7a78ab4f8864b2d3" title=" " alt="" coords="247,202,426,229"/>
-<area shape="rect" id="node9" href="$class_q_c_p_painter.html#af9c7a4cd1791403901f8c5b82a150195" title=" " alt="" coords="267,253,407,279"/>
-<area shape="rect" id="node3" href="$class_q_c_p_layerable.html#acb663e375d2d36dc5c55021ee5a2119b" title=" " alt="" coords="480,78,715,105"/>
-<area shape="rect" id="node4" href="$class_q_custom_plot.html#a631762eb183aceecee73d30e108641ee" title=" " alt="" coords="773,5,943,47"/>
-<area shape="rect" id="node5" href="$class_q_custom_plot.html#a75571bc5b2167e83def132fc993091b3" title=" " alt="" coords="763,71,953,112"/>
-<area shape="rect" id="node6" href="$class_q_c_p_painter.html#aaba1deb9188244d9ea65b035112b4d05" title=" " alt="" coords="766,137,950,163"/>
-<area shape="rect" id="node10" href="$class_q_c_p_painter.html#a7e63fbcf47e35c6f2ecd11b8fef7c7d8" title=" " alt="" coords="493,253,702,279"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,193,159"/>
+<area shape="rect" id="node2" href="$class_q_c_p_abstract_plottable.html#a59a80773c5cefc05a0646ac8e1149ed5" title=" " alt="" coords="241,56,560,83"/>
+<area shape="rect" id="node7" href="$class_q_c_p_abstract_plottable.html#abd790a3b229239f49067f136633a4b98" title=" " alt="" coords="296,107,505,133"/>
+<area shape="rect" id="node8" href="$class_q_c_p_abstract_plottable.html#ad5972efc31344e5a7a78ab4f8864b2d3" title=" " alt="" coords="311,157,490,184"/>
+<area shape="rect" id="node9" href="$class_q_c_p_painter.html#af9c7a4cd1791403901f8c5b82a150195" title=" " alt="" coords="331,208,471,235"/>
+<area shape="rect" id="node3" href="$class_q_c_p_layerable.html#acb663e375d2d36dc5c55021ee5a2119b" title=" " alt="" coords="608,56,843,83"/>
+<area shape="rect" id="node4" href="$class_q_custom_plot.html#a631762eb183aceecee73d30e108641ee" title=" " alt="" coords="901,5,1126,32"/>
+<area shape="rect" id="node5" href="$class_q_custom_plot.html#a75571bc5b2167e83def132fc993091b3" title=" " alt="" coords="891,56,1136,83"/>
+<area shape="rect" id="node6" href="$class_q_c_p_painter.html#aaba1deb9188244d9ea65b035112b4d05" title=" " alt="" coords="921,107,1105,133"/>
+<area shape="rect" id="node10" href="$class_q_c_p_painter.html#a7e63fbcf47e35c6f2ecd11b8fef7c7d8" title=" " alt="" coords="621,208,830,235"/>
 </map>

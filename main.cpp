@@ -5,10 +5,9 @@
 
 int main(int argc, char *argv[])
 {
-    Simulator simulator;
-    //shared_ptr<Simulator> simulator;
+    shared_ptr<Simulator> simulator = make_shared<Simulator>();
     QApplication a(argc, argv);
-    MainWindow w(nullptr, make_shared<Simulator>(simulator));
+    MainWindow w(nullptr, simulator);
     w.show();
     return a.exec();
 }

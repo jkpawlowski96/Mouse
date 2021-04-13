@@ -16,6 +16,7 @@ public:
      * @param initDirection 
      */
     HumanControll(Direction initDirection);
+    ~HumanControll(){};
     /**
      * @brief Login implementation
      * 

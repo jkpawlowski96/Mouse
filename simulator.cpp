@@ -15,6 +15,7 @@ Simulator::Simulator(QCustomPlot *_plot, string mapFilePath, int _speed, int _si
     //map
     SetMap(mapFilePath);
     //si
+    SI *si;
     if(_si_mode==-1){
         controll = new HumanControll(initDirection);
         si = controll;
@@ -23,7 +24,6 @@ Simulator::Simulator(QCustomPlot *_plot, string mapFilePath, int _speed, int _si
         si = new SI();
     //si
     if(_si_mode==1){
-        //SI *ex = new Expander();
         si = new Expander();
 
     }
@@ -52,10 +52,6 @@ void Simulator::Start(){
 }
 
 void Simulator::Stop(){
-    //simMutex.lock();
-    //closeThread = true;
-    //simMutex.unlock();
-    //simThread->join();
     timeElapsed = timer->elapsed();
     running = false;
 }
@@ -99,12 +95,7 @@ QCPGraph* Simulator::DrawLine(Line<double> line, const QColor color,const int wi
         pen.setWidth(width);
         graph->setPen(pen);
         graph->setLineStyle((QCPGraph::LineStyle)1);
-        //graph->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 5));
-        //ui->plot->graph(i)->setPen(pen);
-        //ui->plot->graph(i)->setLineStyle((QCPGraph::LineStyle)1);
-        //ui->plot->graph(i)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 5));
         QVector<double> x{line.a.x,line.b.x},y{line.a.y,line.b.y};
-
         graph->setData(x,y);
         return graph;
 }
@@ -116,7 +107,6 @@ QCPGraph* Simulator::DrawMouseCircle(QVector<double>&x, QVector<double>&y, const
     pen.setWidth(width);
     graph->setPen(pen);
     graph->setScatterStyle(QCPScatterStyle::ssCircle);
-    //ui->plot->graph(0)->setLineStyle(QCPGraph::lsNone);
     graph->setLineStyle((QCPGraph::LineStyle)0);
     graph->setData(x,y);
     return graph;
@@ -174,32 +164,6 @@ void Simulator::PlotMap(){
 }
 
 void Simulator::PlotMouse(bool init){
-    /*for(auto graph: bodyGraphs)
-        plot->removeGraph(graph);
-    for(auto graph: headGraphs)
-        plot->removeGraph(graph);
-    auto pos = mouse->GetPosition();
-    Point<double> head;
-    bodyGraphs = DrawRectangle<double>(pos.localization, BLUE, 2, 0.3);
-
-    switch(pos.direction){
-        case Up:
-            head = pos.localization + Point<double>(0.5, 0.8);
-            break;
-        case Down:
-            head = pos.localization + Point<double>(0.5, 0.2);
-            break;
-        case Left:
-            head = pos.localization + Point<double>(0.2, 0.5);
-            break;
-        case Right:
-            head = pos.localization + Point<double>(0.8, 0.5);
-            break;
-        default:
-            break;
-    }
-    //headGraphs = DrawRectangle<double>(head, YELLOW, 1, 0.1, 0);
-    */
     mouseBodyX.clear();
     mouseBodyY.clear();
     mouseHeadX.clear();

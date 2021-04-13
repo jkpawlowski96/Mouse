@@ -65,7 +65,6 @@ Map::Map(string mapFilePath)
     mapPaths.clear();
     for(auto const& line: pathLines){
         auto newPaths = GetPaths<int>(line);
-        //mapPaths.insert(mapPaths.end(), newPaths.begin(), newPaths.end());
         InsertPaths(newPaths);
     }
 

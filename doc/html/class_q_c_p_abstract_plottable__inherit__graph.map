@@ -1,11 +1,11 @@
 <map id="QCPAbstractPlottable" name="QCPAbstractPlottable">
-<area shape="rect" id="node1" title="The abstract base class for all data representing objects in a plot." alt="" coords="525,667,696,1228"/>
-<area shape="rect" id="node4" href="$class_q_c_p_bars.html" title="A plottable representing a bar chart in a plot." alt="" coords="5,1313,176,1757"/>
-<area shape="rect" id="node5" href="$class_q_c_p_color_map.html" title="A plottable representing a two&#45;dimensional color map in a plot." alt="" coords="200,1313,387,1757"/>
-<area shape="rect" id="node6" href="$class_q_c_p_curve.html" title="A plottable representing a parametric curve in a plot." alt="" coords="411,1313,605,1757"/>
-<area shape="rect" id="node7" href="$class_q_c_p_financial.html" title="A plottable representing a financial stock chart." alt="" coords="629,1298,798,1771"/>
-<area shape="rect" id="node8" href="$class_q_c_p_graph.html" title="A plottable representing a graph in a plot." alt="" coords="823,1283,985,1786"/>
-<area shape="rect" id="node9" href="$class_q_c_p_statistical_box.html" title="A plottable representing a single statistical box in a plot." alt="" coords="1010,1276,1161,1793"/>
-<area shape="rect" id="node2" href="$class_q_c_p_layerable.html" title="Base class for all drawable objects." alt="" coords="525,131,696,619"/>
+<area shape="rect" id="node1" title="The abstract base class for all data representing objects in a plot." alt="" coords="502,652,719,1624"/>
+<area shape="rect" id="node4" href="$class_q_c_p_bars.html" title="A plottable representing a bar chart in a plot." alt="" coords="5,1965,176,2644"/>
+<area shape="rect" id="node5" href="$class_q_c_p_color_map.html" title="A plottable representing a two&#45;dimensional color map in a plot." alt="" coords="200,2017,387,2593"/>
+<area shape="rect" id="node6" href="$class_q_c_p_curve.html" title="A plottable representing a parametric curve in a plot." alt="" coords="411,2009,605,2600"/>
+<area shape="rect" id="node7" href="$class_q_c_p_financial.html" title="A plottable representing a financial stock chart." alt="" coords="629,1936,798,2673"/>
+<area shape="rect" id="node8" href="$class_q_c_p_graph.html" title="A plottable representing a graph in a plot." alt="" coords="823,1672,1001,2937"/>
+<area shape="rect" id="node9" href="$class_q_c_p_statistical_box.html" title="A plottable representing a single statistical box in a plot." alt="" coords="1026,1907,1177,2703"/>
+<area shape="rect" id="node2" href="$class_q_c_p_layerable.html" title="Base class for all drawable objects." alt="" coords="509,131,712,604"/>
 <area shape="rect" id="node3" title=" " alt="" coords="575,5,646,83"/>
 </map>

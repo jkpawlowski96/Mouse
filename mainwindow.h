@@ -57,8 +57,5 @@ private:
     QTimer *timer;
 
     double time_seconds;
-
-    void PlotMap();
-    QCPGraph* DrawLine(double x0, double y0, double x1, double y1);
 };
 #endif // MAINWINDOW_H

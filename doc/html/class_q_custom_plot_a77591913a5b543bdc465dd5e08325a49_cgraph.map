@@ -1,11 +1,11 @@
 <map id="QCustomPlot::mouseDoubleClickEvent" name="QCustomPlot::mouseDoubleClickEvent">
-<area shape="rect" id="node1" title=" " alt="" coords="5,68,192,109"/>
-<area shape="rect" id="node2" href="$class_q_custom_plot.html#a12536fa6d5deb34ec620acb5134ca82a" title=" " alt="" coords="255,25,429,51"/>
-<area shape="rect" id="node5" href="$class_q_custom_plot.html#afaa1d304e0287d140fd238e90889ef3c" title=" " alt="" coords="240,101,444,127"/>
-<area shape="rect" id="node3" href="$class_q_custom_plot.html#a5441d11013afeaf4b8f2ea06e8624a25" title=" " alt="" coords="745,50,961,77"/>
-<area shape="rect" id="node4" href="$class_q_c_p_layerable.html#a04db8351fefd44cfdb77958e75c6288e" title=" " alt="" coords="507,25,682,51"/>
-<area shape="rect" id="node6" href="$class_q_c_p_layout_element.html#a76dec8cb31e498994a944d7647a43309" title=" " alt="" coords="495,75,694,102"/>
-<area shape="rect" id="node7" href="$class_q_c_p_layerable.html#ab054e88f15d485defcb95e7376f119e7" title=" " alt="" coords="503,177,687,203"/>
-<area shape="rect" id="node9" href="$class_q_c_p_layout_element.html#a0b96ae0d7bcfa6e38188fcb1e73e143f" title=" " alt="" coords="492,126,697,153"/>
-<area shape="rect" id="node8" href="$class_q_c_p_layer.html#ad1cc2d6b32d2abb33c7f449b964e068c" title=" " alt="" coords="791,177,916,203"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,75,253,102"/>
+<area shape="rect" id="node2" href="$class_q_custom_plot.html#a12536fa6d5deb34ec620acb5134ca82a" title=" " alt="" coords="317,25,490,51"/>
+<area shape="rect" id="node5" href="$class_q_custom_plot.html#afaa1d304e0287d140fd238e90889ef3c" title=" " alt="" coords="301,101,505,127"/>
+<area shape="rect" id="node3" href="$class_q_custom_plot.html#a5441d11013afeaf4b8f2ea06e8624a25" title=" " alt="" coords="807,50,1023,77"/>
+<area shape="rect" id="node4" href="$class_q_c_p_layerable.html#a04db8351fefd44cfdb77958e75c6288e" title=" " alt="" coords="569,25,743,51"/>
+<area shape="rect" id="node6" href="$class_q_c_p_layout_element.html#a76dec8cb31e498994a944d7647a43309" title=" " alt="" coords="557,75,755,102"/>
+<area shape="rect" id="node7" href="$class_q_c_p_layerable.html#ab054e88f15d485defcb95e7376f119e7" title=" " alt="" coords="564,177,748,203"/>
+<area shape="rect" id="node9" href="$class_q_c_p_layout_element.html#a0b96ae0d7bcfa6e38188fcb1e73e143f" title=" " alt="" coords="553,126,759,153"/>
+<area shape="rect" id="node8" href="$class_q_c_p_layer.html#ad1cc2d6b32d2abb33c7f449b964e068c" title=" " alt="" coords="852,177,977,203"/>
 </map>

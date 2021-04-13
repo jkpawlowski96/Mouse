@@ -1,8 +1,8 @@
 <map id="QCPLegend::itemWithPlottable" name="QCPLegend::itemWithPlottable">
-<area shape="rect" id="node1" title=" " alt="" coords="1659,132,1861,159"/>
-<area shape="rect" id="node2" href="$class_q_c_p_legend.html#a4b90a442af871582df85c2bc13f91e88" title=" " alt="" coords="1387,103,1611,129"/>
-<area shape="rect" id="node14" href="$class_q_c_p_abstract_plottable.html#ac95fb2604d9106d0852ad9ceb326fe8c" title=" " alt="" coords="1423,154,1574,195"/>
-<area shape="rect" id="node3" href="$class_q_c_p_abstract_plottable.html#a70f8cabfd808f7d5204b9f18c45c13f5" title=" " alt="" coords="1163,85,1314,126"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1740,129,1943,156"/>
+<area shape="rect" id="node2" href="$class_q_c_p_legend.html#a4b90a442af871582df85c2bc13f91e88" title=" " alt="" coords="1445,92,1669,119"/>
+<area shape="rect" id="node14" href="$class_q_c_p_abstract_plottable.html#ac95fb2604d9106d0852ad9ceb326fe8c" title=" " alt="" coords="1421,155,1692,181"/>
+<area shape="rect" id="node3" href="$class_q_c_p_abstract_plottable.html#a70f8cabfd808f7d5204b9f18c45c13f5" title=" " alt="" coords="1139,85,1373,112"/>
 <area shape="rect" id="node4" href="$class_q_custom_plot.html#ab7ad9174f701f9c6f64e378df77927a6" title=" " alt="" coords="901,81,1081,108"/>
 <area shape="rect" id="node5" href="$class_q_custom_plot.html#a6fb2873d35a8a8089842d81a70a54167" title=" " alt="" coords="663,81,827,108"/>
 <area shape="rect" id="node6" href="$class_simulator.html#a214b53f24cdf3663eda13331d63929bd" title=" " alt="" coords="437,31,576,57"/>
@@ -13,7 +13,7 @@
 <area shape="rect" id="node9" href="$class_simulator.html#a960bd333fe2c1ce66f45eca8f26a81f7" title="Construct a new Simulator object." alt="" coords="5,56,145,83"/>
 <area shape="rect" id="node11" href="$class_simulator.html#a5a7f9537737abd907827b552fcd7f172" title=" " alt="" coords="206,107,353,133"/>
 <area shape="rect" id="node12" href="$class_simulator.html#a1a18b212eda4277c622502177f302c11" title="Single tick (step) of simulation." alt="" coords="21,107,130,133"/>
-<area shape="rect" id="node15" href="$class_q_custom_plot.html#af3dafd56884208474f311d6226513ab2" title=" " alt="" coords="1139,161,1339,188"/>
+<area shape="rect" id="node15" href="$class_q_custom_plot.html#af3dafd56884208474f311d6226513ab2" title=" " alt="" coords="1156,180,1356,207"/>
 <area shape="rect" id="node16" href="$class_q_custom_plot.html#a9a409bb3201878adb7ffba1c89c4e004" title=" " alt="" coords="893,132,1088,159"/>
 <area shape="rect" id="node18" href="$class_q_custom_plot.html#a903561be895fb6528a770d66ac5e6713" title=" " alt="" coords="899,183,1083,209"/>
 <area shape="rect" id="node21" href="$class_q_custom_plot.html#afc210e0021480f8119bccf37839dbcc8" title=" " alt="" coords="891,233,1091,260"/>

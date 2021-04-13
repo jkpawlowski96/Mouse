@@ -34,6 +34,11 @@ public:
      */
     Mouse(){}
     /**
+     * @brief Destroy the Mouse object
+     * 
+     */
+    ~Mouse();
+    /**
      * @brief Call mouse object (single tick)
      * 
      * @param map 
@@ -49,7 +54,6 @@ public:
     void SetSpeed(int _speed);
 private:
     Position<double> position;
-    //shared_ptr<SI> si;
     SI *si;
     Sensor sensor;
     Task task;

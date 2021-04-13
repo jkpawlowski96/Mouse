@@ -91,6 +91,6 @@ var searchData=
   ['axisselectablechanged_88',['axisSelectableChanged',['../class_q_c_p_color_scale_axis_rect_private.html#a66d2baed86966bb03a6d7c32dc7d59f7',1,'QCPColorScaleAxisRectPrivate']]],
   ['axisselectionbox_89',['axisSelectionBox',['../class_q_c_p_axis_painter_private.html#ab29635564acb5d0012fa9e297477db05',1,'QCPAxisPainterPrivate']]],
   ['axisselectionchanged_90',['axisSelectionChanged',['../class_q_c_p_color_scale_axis_rect_private.html#a6112ad4291ac1695d37659cb049d598d',1,'QCPColorScaleAxisRectPrivate']]],
-  ['axistype_91',['AxisType',['../class_q_c_p_axis.html#ae2bcc1728b382f10f064612b368bc18a',1,'QCPAxis']]],
-  ['axistype_92',['axisType',['../class_q_c_p_axis.html#aa19679359783c5ecd27757b7e5619976',1,'QCPAxis']]]
+  ['axistype_91',['axisType',['../class_q_c_p_axis.html#aa19679359783c5ecd27757b7e5619976',1,'QCPAxis']]],
+  ['axistype_92',['AxisType',['../class_q_c_p_axis.html#ae2bcc1728b382f10f064612b368bc18a',1,'QCPAxis']]]
 ];

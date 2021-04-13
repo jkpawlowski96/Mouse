@@ -8,6 +8,9 @@ Mouse::Mouse(Point<int> start, Direction direction, SI *_si):
     task = TaskUnnown;
 }
 
+Mouse::~Mouse(){
+    delete si;
+}
 
 Position<double> Mouse::GetPosition(){
     return position;
